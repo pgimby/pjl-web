@@ -633,7 +633,7 @@ function createRecordSnapshots(lab) {
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
 		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("name")[0].childNodes[0].nodeValue);
 		var dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
-		var dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", "../img/dropdown-arrow.png");
+		var dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", "./img/dropdown-arrow.png");
 
 		var extendedlabdata = detailsbox.append("div").classed("extended-lab-data-flex", true).attr("style", "display: none");
 		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
