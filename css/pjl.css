@@ -568,7 +568,7 @@ footer h2, footer h3, footer h4 {
 	}
 
 	.sort-span-mobile {
-		display: block;
+		display: inline;
 	}
 
 	.sort-span-desktop {
