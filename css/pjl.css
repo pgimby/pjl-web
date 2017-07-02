@@ -200,6 +200,10 @@ select {
 	cursor: pointer;
 }
 
+.sort-span-mobile {
+	display: none;
+}
+
 #records-header p span:hover {
 	color: #FFF;
 	cursor: pointer;
@@ -560,6 +564,14 @@ footer h2, footer h3, footer h4 {
 	}
 
 	#sort-course {
+		display: none;
+	}
+
+	.sort-span-mobile {
+		display: block;
+	}
+
+	.sort-span-desktop {
 		display: none;
 	}
 
