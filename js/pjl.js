@@ -106,13 +106,13 @@ function getLabId(lab) {
 
 function mayISeeYourSillyWalk() {
 	var itsnotparticularlysillyisit = "The right leg isn't silly at all and the left leg merely does a forward aerial half turn every alternate step.";
-	$(".search-icon").attr("src","../img/silly-walk.png");
+	$(".search-icon").attr("src","./img/silly-walk.png");
 	$(".search-icon").css({height: "45px", width: "35px", top: "-49px", right: "-35px"})
 	$("#search-bar").attr("placeholder", itsnotparticularlysillyisit);
 	$("#search-bar").css("font-size", "11px");
 	$("#search-bar").val("");
 	setTimeout(function() {
-		$(".search-icon").attr("src","../img/search-icon.png");
+		$(".search-icon").attr("src","./img/search-icon.png");
 		$(".search-icon").css({height: "40px", width: "40px", top: "-45px", right: "-35px"})
 		$("#search-bar").attr("placeholder", "Keyword, topic, course...");
 		$("#search-bar").css("font-size", "1rem");
@@ -183,13 +183,13 @@ function getExtraLabDocs(lab) {
 
 function iCameHereForAnArgument() {
 	var i = 0;
-	$(".search-icon").attr("src","../img/silly-walk.png");
+	$(".search-icon").attr("src","./img/silly-walk.png");
 	$(".search-icon").css({height: "45px", width: "35px", top: "-49px", right: "-35px"})
 	$("#search-bar").val("");
 	var id = setInterval(function() {
 		if (i == argument.length - 1) {
 			clearInterval(id);
-			$(".search-icon").attr("src","../img/search-icon.png");
+			$(".search-icon").attr("src","./img/search-icon.png");
 			$(".search-icon").css({height: "40px", width: "40px", top: "-45px", right: "-35px"});
 			$("#search-bar").val("");
 			$("#search-bar").attr("placeholder", "Keyword, topic, course...");
