@@ -85,6 +85,11 @@ header {
 	height: 140px;
 }
 
+#logo-link {
+	margin:	0;
+	padding: 0;
+}
+
 .title-flex {
 	display: -webkit-flex;
 	display: flex;
