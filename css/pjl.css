@@ -1,0 +1,591 @@
+
+/*******************************************************************/
+/*              GENERAL SITE-WIDE STYLES                           */
+/*******************************************************************/
+
+h1, h2, h3, h4, p, a {
+	line-height: 1.3em;
+	margin: 2px 10px;
+	padding: 2px;
+	font-size: .9em;
+	font-family: 'Gotham Book', sans-serif;
+	text-decoration: none;
+}
+
+a {
+	color: #454565;
+}
+
+a:hover {
+	transition: all .3s ease;
+	color: #0000EE;
+}
+
+h4 {
+	font-weight: 500;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+	min-width: 300px;
+}
+
+
+
+
+
+
+/*******************************************************************/
+/*                 HEADER                                          */
+/*******************************************************************/
+
+header {
+	min-height: 60px;
+	background-color: #DDD;
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	margin-bottom: 3px;
+}
+
+#header-baseline {
+	height: 30px;
+	width: 100%;
+	background-color: #333;
+	position: relative;
+}
+
+
+
+
+
+
+/*******************************************************************/
+/*                    MAIN PAGE STYLES                             */
+/*******************************************************************/
+
+
+.hero {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 240px;
+}
+
+#logo {
+	width: 600px;
+	height: 140px;
+}
+
+.title-flex {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+}
+
+#title {
+	font-weight: 500;
+	font-size: 2em;
+}
+
+#subtitle {
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+#or {
+	font-size: 2em;
+	margin: 20px 10px;
+	font-weight: 400
+}
+
+.filter {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+select {
+	width: auto;
+	margin: 5px 10px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+#clear-filters-button {
+	padding: 0;
+	margin: auto 0;
+	white-space: normal;
+
+}
+
+#search-results {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+#num-results {
+	font-size: 1.5em;
+	color: #555;
+	font-weight: 500;
+}
+
+#zip-icon {
+	display: none;
+	background: url("../img/zip-icon.png");
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 38px;
+	cursor: pointer;
+	float: right;
+	border-radius: 8px;
+}
+
+#zip-icon:hover {
+	box-shadow: 0 0 3px 1px rgba(0,0,0,.1) inset;
+}
+
+#zip-icon:active {
+	box-shadow: 0 0 3px 1px rgba(0,0,0,.2) inset;
+}
+
+
+
+
+
+
+/*SEARCH BAR STYLES - BASICALLY RIPPED FROM THE WEB*/
+
+.search-container{
+	position: relative;
+  	max-width: 490px;
+  	display: block;
+  	margin: 5px 5px 5px 10px;
+  	transition: all .3s ease;
+}
+
+input#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 40px;
+  top: -45px;
+  right: -35px;
+}
+
+.search-icon:hover {
+	cursor: pointer;
+}
+
+#search-help-btn {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	top: 49px;
+	left: 8px;
+	color: #454565;
+}
+
+#search-help-btn:hover {
+	color: #0000EE;
+	cursor: pointer;
+}
+
+#search-help-btn:active {
+	color: #3333FF;
+}
+
+#search-help {
+	display: none;
+	width: 490px;
+	padding: 20px 20px;
+	border: 1px solid #D0CFCE;
+	border-radius: 0 0 4px 4px;
+	background-color: rgba(0,0,0,.02);
+	border-top: 0;
+	top: 46px;
+	position: absolute;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	z-index: -1;
+}
+
+#search-help p:not(:first-child) {
+	font-size: 12px;
+	color: #555;
+}
+
+#search-help #tips {
+	position: relative;
+	left: -16px;
+}
+
+.code {
+	border: 1px solid #D0CFCE;
+	background-color: #FFF;
+	padding: 1px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-family: 'Gotham Book', sans-serif;
+	color: #222;
+}
+
+.example {
+	border: 1px solid #D0CFCE;
+	background-color: rgba(0,0,0,.03);
+	padding: 10px;
+	border-radius: 3px;
+	position: relative;
+	margin: 5px 40px 0 40px;
+	box-shadow: 0 0 3px 1px #444 inset;
+}
+
+.example p {
+	margin: 0;
+}
+
+#help-ex {
+	position: absolute;
+	left: -41px;
+	top: -8px;
+}
+
+.search-help-opened {
+	transition: all .3s ease;
+	margin-bottom: 190px;
+}
+
+
+
+
+/*LAB RECORD LIST DISPLAY*/
+
+#lab-list-box {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.lab-record-flex {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+	border: solid 1px;
+    border-radius: 4px;
+    margin: 2px;
+    min-width: 285px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.snapshot-flex {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.snapshot-flex p {
+    flex: 1;
+}
+
+
+
+/*REVEAL LAB DETAILS ARROW - KIND OF A MESS TO GET SIZING RIGHT IN A FLEX BOX*/
+
+.lab-details-drop-icon-flex {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	border-left: solid 1px;
+	padding: 6px 8px;
+	cursor: pointer;
+}
+
+.lab-details-drop-icon {
+	max-width: 30px;
+	max-height: 21px;
+	margin: auto auto;
+	pointer-events: none;
+	-webkit-user-select: none; /*this is to prevent drop icon highlighting (user selecting)*/
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.lab-details-drop-icon-flex:hover {
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.4) inset;
+}
+
+.lab-details-drop-icon-flex:active {
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.6) inset;
+	padding-top: 5px;
+}
+
+
+
+/*THIS IS THE FLEX BOX THAT CONTAINS THE EXTENDED LAB DETAILS*/
+
+.extended-lab-data-flex {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	display: none;
+	border-top: solid 1px;
+}
+
+.extra-docs {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+
+
+/*******************************************************************/
+/*                 FOOTER                                          */
+/*******************************************************************/
+
+footer {
+	min-height: 200px;
+	background-color: #CCC;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+}
+
+footer .wrap {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+}
+
+#footer-baseline {
+	height: 40px;
+	width: 100%;
+	background-color: #333;
+	position: relative;
+	bottom: -100%;
+}
+
+#footer-left {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 40px;
+}
+
+#footer-mid {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 4;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+#footer-right {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: 0;
+	margin-top: 40px;
+}
+
+footer a, footer p {
+	text-decoration: none;
+	color: #555;
+	padding: 0;
+	margin: 0;
+}
+
+footer a:hover {
+	color: #FFF;
+}
+
+.staff-small-detail {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	margin-top: 4px;
+}
+
+.staff-member {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}
+
+.staff-details {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.staff-phone {
+	margin-top:	14px;
+}
+
+.contact-icon {
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+}
+
+.staff-mugshot {
+	height: 120px;
+	width: 120px;
+	margin-right: 12px;
+}
+
+.staff-details h3, .staff-details h4 {
+ 	padding: 0;
+ 	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************/
+/*    MEDIA QUERIES FOR SCREEN SIZE STYLE MODIFICATIONS            */
+/*******************************************************************/
+
+
+
+
+
+@media screen and (max-width: 630px) {
+	.hero {
+		flex-direction: column;
+	}
+
+
+
+	.snapshot-flex .courses {
+		display: none;
+	}
+
+	#logo {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.search-icon{
+  		right: -55px;
+	}
+
+	h2 {
+		font-size: .9em;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+		width: 90%;
+		position: relative;
+	}
+
+	#title {
+		font-size: 1.4em;
+		text-align: center;
+	}
+
+	#subtitle {
+		font-size: .9em;
+		text-align: center;
+	}
+
+	#or {
+		position: relative;
+		padding: 0;
+		font-size: 1.4em;
+		width: 90%;
+	}
+
+	#search-help-btn, #search-help {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 1100px) {
+	#footer-right, #footer-left {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	#footer-mid {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.staff-details p, .staff-details a {
+		font-size: .6em;
+	}
+
+	.staff-details h4 {
+		font-size: .8em;
+	}
+
+	.staff-member {
+		width: 320px;
+	}
+	
+	#footer-left, #footer-right {
+		display:none;
+	}
+}

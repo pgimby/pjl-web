@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>PJL</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/d3.min.js"></script>
+    <script src="./js/jszip.min.js"></script>
+    <script src="./js/FileSaver.js"></script>
+    <script src="./js/argument.js"></script>
+    <script src="./js/pjl.js"></script>
+    <meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pjl.css">
+  </head>
+
+<!-- PJL document dump -->
+<!-- Created by P. Gimby and W. Kyle -->
+<!-- June 2017, University of Calgary -->
+<!-- Despite the lack of rubber duckies -->
+
+
+
+
+
+  <body onload=initPage()>
+
+    <header>
+      <div id="header-baseline">
+        
+      </div>
+    </header>
+
+    <div class="wrap">
+      
+    
+
+      <div class="hero">
+        <a href="http://www.ucalgary.ca/science/"><img id="logo" src="./img/uc-science.jpg"/></a>
+        <div class="title-flex">
+          <h1 id="title">Department of Physics and Astronomy</h1>
+          <h1 id="subtitle">Physics Junior Labs Document Repository</h1>
+        </div>
+      </div>
+
+
+
+      <h2>Search labs by topic, keyword, or course</h2>
+
+      <form class="search-container">
+        <input type="text" id="search-bar" placeholder="Keyword, topic, course...">
+        <a><img class="search-icon" src="./img/search-icon.png"></a>
+        <p id="search-help-btn">search help</p>
+        <div id="search-help">
+          <p id="tips">Tips</p>
+          <p>Searches try to match against all lab meta data</p>
+          <p>Preface your search terms with <span class="code">Meta Value:</span> to match against only that identifier</p>
+          <div class="example"><p id="help-ex">Ex.</p><p><span class="code">Course:PHYS 325</span> will match the query <span class="code">PHYS 325</span> against only course names</p>
+            <span class="code">Course:</span>
+            <span class="code">Lab:</span>
+            <span class="code">Year:</span>
+            <span class="code">Semester:</span>
+            <span class="code">Topic:</span>
+            <span class="code">Discipline:</span>
+            <span class="code">Equipment:</span>
+          </div>
+        </div>
+      </form>
+
+
+
+      <span>
+        <h2 id="or">OR</h2>
+        <h2>Search by filtering the lab database</h2>    
+      </span>
+      
+
+
+
+      <div class="filter">
+        <div id="course-filter">
+          <h3>Course</h3>
+          <select id="course-select" multiple="multiple">
+          </select>
+        </div>
+        <div id="year-filter">
+          <h3>Year</h3>
+          <select id="year-select" multiple="multiple">
+          </select>
+        </div>
+        <div id="semester-filter">
+          <h3>Semester</h3>
+          <select id="semester-select" multiple="multiple">
+          </select>
+        </div>
+        <div id="discipline-filter">
+          <h3>Discipline</h3>
+          <select id="discipline-select" multiple="multiple">
+          </select>
+        </div>
+        <button id="clear-filters-button">Clear filters</button>
+      </div>
+
+      <p id="search-results">Showing <span id="num-results"></span> search results</p>
+      <div id="zip-icon"></div>
+      
+
+      <div id="lab-list-box">
+        
+      </div>
+
+
+
+    </div>  <!-- close main wrap -->
+
+
+    <footer>
+      
+
+
+      <div class="wrap">
+      
+      <div id="footer-left">
+        <p>University of Calgary</p>
+        <p>2500 University Dr. NW</p>
+        <p>Calgary, Alberta, Canada</p>
+        <p>T2N 1N4</p>
+        <p>Copyright © 2017</p>
+        <a href="http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf"> privacy policy</a>
+      </div>
+      <div id="footer-mid">
+        <div class="staff-member">
+          <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740"><img class="staff-mugshot" src="../img/pgimby-crop.png"/></a>
+          <div class="staff-details">
+            <h3 class="staff-name staff-big-detail">Peter Gimby</h3>
+            <h4 class="staff-title staff-medium-detail">Physics Junior Labs Supervisor</h4>
+            <div class="staff-phone staff-small-detail">
+              <img class="contact-icon" src="../img/phone-icon.png"/>
+              <p>+1 (403) 220-5403</p>
+            </div>
+            <div class="staff-office staff-small-detail">
+              <img class="contact-icon" src="../img/location-icon.png"/>
+              <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=068&thickbox=1&TB_iframe=true&height=600&width=980">Science Theatres 068</a>
+            </div>
+            <div class="staff-email staff-small-detail">
+              <img class="contact-icon" src="../img/email-icon.png"/>
+              <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
+            </div>
+          </div>  
+        </div>
+        
+        <div class="staff-member">
+          <a href="http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst"><img class="staff-mugshot" src="../img/wernst-crop.png"/></a>
+          <div class="staff-details">
+            <h3 class="staff-name">Wesley Ernst</h3>
+            <h4 class="staff-title">Physics and Astronomy Technician</h4>
+            <div class="staff-phone staff-small-detail">
+              <img class="contact-icon" src="../img/phone-icon.png"/>
+              <p>+1 (403) 220-7401</p>
+            </div>
+            <div class="staff-office staff-small-detail">
+              <img class="contact-icon" src="../img/location-icon.png"/>
+              <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=068&thickbox=1&TB_iframe=true&height=600&width=980">Science Theatres 068</a>
+            </div>
+            <div class="staff-email staff-small-detail">
+              <img class="contact-icon" src="../img/email-icon.png"/>
+              <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div id="footer-right"></div>
+
+      </div>
+
+      
+    </footer>
+
+    <div id="footer-baseline">
+        
+    </div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<labs>
+<lab LABID="1101">
+	<names>
+		<name>Units</name>
+	</names>
+	<disciplines>
+		<discipline>Mechanics</discipline>
+		<discipline>Math</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 355</course>
+	<course>PHYS 369</course>
+	</courses>
+	<topics>
+		<topic>Unit Conversion</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Fall</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Fall</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="lab-notes">location of pdf</doc>
+		<doc type="equipment manual">location of pdf</doc>
+		<doc type="warranty">location of pdf</doc>
+		<doc type="experimental design">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1103">
+	<names>
+		<name>Gauss' Law</name>
+	</names>
+	<disciplines>
+		<discipline>Electrostatics</discipline>
+		<discipline>Math</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 255</course>
+	<course>PHYS 455</course>
+	</courses>
+	<topics>
+		<topic>Integration</topic>
+		<topic>Electric Fields</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2014</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Fall</semester>
+			<year>2016</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Fall</semester>
+			<year>2013</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="equipment manual">location of pdf</doc>
+		<doc type="warranty">location of pdf</doc>
+		<doc type="experimental design">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="equipment manual">location of pdf</doc>
+		<doc type="warranty">location of pdf</doc>
+		<doc type="experimental design">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="equipment manual">location of pdf</doc>
+		<doc type="warranty">location of pdf</doc>
+		<doc type="experimental design">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="equipment manual">location of pdf</doc>
+		<doc type="warranty">location of pdf</doc>
+		<doc type="experimental design">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Electron Gas in Metals</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 325</course>
+	<course>PHYS 341</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="hugo-notes">location of pdf</doc>
+	</supportDocs>
+	
+</lab>
+</labs>
+
