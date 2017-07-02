@@ -6,7 +6,7 @@
 
 var mainxmlpath = "../data/pjl-lab-database.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-
+var siteroot = "/pjl-web"
 
 
 
@@ -46,7 +46,7 @@ function loadXML() {
             populateFilters(docXML);
     	}
   	};
-  	xhttp.open("GET", mainxmlpath, true);
+  	xhttp.open("GET", siteroot + mainxmlpath, true);
   	xhttp.send();
 } 
 
