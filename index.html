@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <title>PJL</title>
+    <title>Physics Junior Labs</title>
     <script src="./js/jquery.js"></script>
     <script src="./js/d3.min.js"></script>
     <script src="./js/jszip.min.js"></script>
@@ -25,15 +25,32 @@
 
   <body onload=initPage()>
 
+
+
+
+    <!-- HEADER FOR STYLE - MAYBE THROW SOME NAVIGATION IN HERE EVENTUALLY -->
+
     <header>
       <div id="header-baseline">
         
       </div>
     </header>
 
-    <div class="wrap">
+
+
+
+
+
+
+    <!-- MAIN PAGE CONTENT -->
+
+
+
+
+    <div class="wrap" id="main-wrap">
       
     
+      <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
 
       <div class="hero">
         <a href="http://www.ucalgary.ca/science/"><img id="logo" src="./img/uc-science.jpg"/></a>
@@ -45,16 +62,19 @@
 
 
 
+
+      <!-- SEARCH BAR WITH SEARCH HELP DROPDOWN -->
+
       <h2>Search labs by topic, keyword, or course</h2>
 
       <form class="search-container">
-        <input type="text" id="search-bar" placeholder="Keyword, topic, course...">
-        <a><img class="search-icon" src="./img/search-icon.png"></a>
+        <input type="text" id="search-bar" placeholder="Keyword, topic, course..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Keyword, topic, course...'">
+        <a><img class="search-icon" src="./img/search-icon.png"></a> <!-- may I see your silly walk? -->
         <p id="search-help-btn">search help</p>
         <div id="search-help">
           <p id="tips">Tips</p>
-          <p>Searches try to match against all lab meta data</p>
-          <p>Preface your search terms with <span class="code">Meta Value:</span> to match against only that identifier</p>
+          <p>Searches try to match against all lab record meta data</p>
+          <p>Prefix your search terms with <span class="code">Meta Value:</span> to match against only that identifier</p>
           <div class="example"><p id="help-ex">Ex.</p><p><span class="code">Course:PHYS 325</span> will match the query <span class="code">PHYS 325</span> against only course names</p>
             <span class="code">Course:</span>
             <span class="code">Lab:</span>
@@ -69,6 +89,7 @@
 
 
 
+
       <span>
         <h2 id="or">OR</h2>
         <h2>Search by filtering the lab database</h2>    
@@ -76,6 +97,11 @@
       
 
 
+
+
+
+
+      <!-- LAB RECORDS FILTER SELECTIONS -->
 
       <div class="filter">
         <div id="course-filter">
@@ -101,85 +127,127 @@
         <button id="clear-filters-button">Clear filters</button>
       </div>
 
+
+
+
+      <!-- SEARCH RESULTS DISPLAY WITH ZIP BUTTON -->
+
+
       <p id="search-results">Showing <span id="num-results"></span> search results</p>
       <div id="zip-icon"></div>
       
 
+
+
+
+      <!-- LAB RECORDS DISPLAY AND HEADER FOR SORTING FUNCTIONALITY -->
+
+
       <div id="lab-list-box">
+        <div id="records-header">
+          <a style="visibility: hidden; margin: 0 11px">Download</a>
+          <p class="record-header-button" id="sort-course" sorted="false">Course</p>
+          <p class="record-header-button" id="sort-version"><span id="sort-semester" sorted="false">Sem.</span>/<span id="sort-year" sorted="false">Year</span></p>
+          <p class="record-header-button" id="sort-name" sorted="false">Lab</p>
+          <div style="width:46px"></div>
+        </div>
         
       </div>
-
 
 
     </div>  <!-- close main wrap -->
 
 
+
+
+
+
+
+
+
+    <!-- FOOTER CONTENT -->
+
+
     <footer>
       
 
-
-      <div class="wrap">
+      <div class="wrap" id="footer-wrap">
       
-      <div id="footer-left">
-        <p>University of Calgary</p>
-        <p>2500 University Dr. NW</p>
-        <p>Calgary, Alberta, Canada</p>
-        <p>T2N 1N4</p>
-        <p>Copyright © 2017</p>
-        <a href="http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf"> privacy policy</a>
-      </div>
-      <div id="footer-mid">
-        <div class="staff-member">
-          <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740"><img class="staff-mugshot" src="../img/pgimby-crop.png"/></a>
-          <div class="staff-details">
-            <h3 class="staff-name staff-big-detail">Peter Gimby</h3>
-            <h4 class="staff-title staff-medium-detail">Physics Junior Labs Supervisor</h4>
-            <div class="staff-phone staff-small-detail">
-              <img class="contact-icon" src="../img/phone-icon.png"/>
-              <p>+1 (403) 220-5403</p>
-            </div>
-            <div class="staff-office staff-small-detail">
-              <img class="contact-icon" src="../img/location-icon.png"/>
-              <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=068&thickbox=1&TB_iframe=true&height=600&width=980">Science Theatres 068</a>
-            </div>
-            <div class="staff-email staff-small-detail">
-              <img class="contact-icon" src="../img/email-icon.png"/>
-              <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
-            </div>
-          </div>  
-        </div>
-        
-        <div class="staff-member">
-          <a href="http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst"><img class="staff-mugshot" src="../img/wernst-crop.png"/></a>
-          <div class="staff-details">
-            <h3 class="staff-name">Wesley Ernst</h3>
-            <h4 class="staff-title">Physics and Astronomy Technician</h4>
-            <div class="staff-phone staff-small-detail">
-              <img class="contact-icon" src="../img/phone-icon.png"/>
-              <p>+1 (403) 220-7401</p>
-            </div>
-            <div class="staff-office staff-small-detail">
-              <img class="contact-icon" src="../img/location-icon.png"/>
-              <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=068&thickbox=1&TB_iframe=true&height=600&width=980">Science Theatres 068</a>
-            </div>
-            <div class="staff-email staff-small-detail">
-              <img class="contact-icon" src="../img/email-icon.png"/>
-              <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
-            </div>
-          </div>  
-        </div>
-      </div>
-      <div id="footer-right"></div>
+        <div id="footer-left">
+          <p>University of Calgary</p>
+          <p>2500 University Dr. NW</p>
+          <p>Calgary, Alberta, Canada</p>
+          <p>T2N 1N4</p>
+          <p style="visibility: hidden">UofC's copyright</p>
+          <a href="http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf"> privacy policy</a>
+        </div> <!-- end footer left -->
 
-      </div>
 
-      
+        <div id="footer-mid">
+
+          <!-- Staff member - Peter -->
+          <div class="staff-member">
+            <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740"><img class="staff-mugshot" src="../img/pgimby-crop.png"/></a>
+            <div class="staff-details">
+              <h3 class="staff-name staff-big-detail">Peter Gimby</h3>
+              <h4 class="staff-title staff-medium-detail">Physics Junior Labs Supervisor</h4>
+              <div class="staff-phone staff-small-detail">
+                <img class="contact-icon" src="../img/phone-icon.png"/>
+                <p>+1 (403) 220-5403</p>
+              </div>
+              <div class="staff-office staff-small-detail">
+                <img class="contact-icon" src="../img/location-icon.png"/>
+                <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=068&thickbox=1&TB_iframe=true&height=600&width=980">Science Theatres 068</a>
+              </div>
+              <div class="staff-email staff-small-detail">
+                <img class="contact-icon" src="../img/email-icon.png"/>
+                <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
+              </div>
+            </div>  
+          </div>
+          
+
+
+          <!-- Staff member - Wes -->
+          <div class="staff-member">
+            <a href="http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst"><img class="staff-mugshot" src="../img/wernst-crop.png"/></a>
+            <div class="staff-details">
+              <h3 class="staff-name">Wesley Ernst</h3>
+              <h4 class="staff-title">Laboratory Technician</h4>
+              <div class="staff-phone staff-small-detail">
+                <img class="contact-icon" src="../img/phone-icon.png"/>
+                <p>+1 (403) 220-7401</p>
+              </div>
+              <div class="staff-office staff-small-detail">
+                <img class="contact-icon" src="../img/location-icon.png"/>
+                <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=068&thickbox=1&TB_iframe=true&height=600&width=980">Science Theatres 068</a>
+              </div>
+              <div class="staff-email staff-small-detail">
+                <img class="contact-icon" src="../img/email-icon.png"/>
+                <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
+              </div>
+            </div>  
+          </div>
+
+        </div>  <!-- end footer mid -->
+
+
+
+        <div id="footer-right">
+          <h2>Resources</h2>
+          <a href="http://pjl.ucalgary.ca/courses/lab-schedules/schedule-WI2017.pdf" target="_blank">Laboratory Schedule</a>
+          <a href="http://pjl.ucalgary.ca/courses/lab-schedules/rooms-WI2017.pdf" target="_blank">Room Assignments</a>
+          <a href="http://pjl.ucalgary.ca/reference.html" target="_blank">References</a>
+          <a href="http://www.phas.ucalgary.ca/teaching_learning/demonstrations" target="_blank">Demonstrations</a>
+          <a href="http://pjl.ucalgary.ca/staff-resources/staff.html" target="_blank">Staff Resources</a>
+        </div>  <!-- end footer right -->
+
+      </div>  <!-- end footer wrap -->
+
+      <div id="footer-baseline"></div>
+
+
     </footer>
-
-    <div id="footer-baseline">
-        
-    </div>
-
 
   </body>
 

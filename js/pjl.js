@@ -20,6 +20,7 @@ var zipoutputfilename = "PJL-lab-docs.zip";
 
 function initPage() {
 	loadXML();
+	$("#search-bar").val("");
 }
 
 
@@ -237,6 +238,59 @@ function getCurrentRecordPaths() {
 
 
 
+function compareLabsByCourse(a, b) {
+	var a = a.find(".courses").text().split(", ")[0];
+	var b = b.find(".courses").text().split(", ")[0];
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+function compareLabsBySemester(a, b) {
+	var a = a.find(".version-semester").text().split(" ")[0];
+	var b = b.find(".version-semester").text().split(" ")[0];
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+function compareLabsByYear(a, b) {
+	var a = a.find(".version-semester").text().split(" ")[1];
+	var b = b.find(".version-semester").text().split(" ")[1];
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+function compareLabsByName(a, b) {
+	var a = a.find(".lab-title").text();
+	var b = b.find(".lab-title").text();
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
 
 
 
@@ -581,15 +635,15 @@ function createRecordSnapshots(lab) {
 		var dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
 		var dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", "../img/dropdown-arrow.png");
 
-		var extendedlabdata = detailsbox.append("div").classed("extended-lab-data-flex", true);
-		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("Lab ID: " + getLabId(lab));
-		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("Topics: " + getLabTopicsList(lab).join(", "));
-		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("Disciplines: " + getLabDisciplinesList(lab).join(", "));
-		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("Equipment: " + getLabEquipmentList(lab).join(", "));
+		var extendedlabdata = detailsbox.append("div").classed("extended-lab-data-flex", true).attr("style", "display: none");
+		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
+		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
+		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
+		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + getLabEquipmentList(lab).join(", "));
 		
 		var labdoclist = getExtraLabDocs(lab);
 		var labdocs = extendedlabdata.append("div").classed("extra-docs", true);
-		labdocs.append("p").html("Additional Documents: ");
+		labdocs.append("p").html("<span>Additional Documents:</span> ");
 		for (var j = labdoclist.length - 1; j >= 0; j--) {
 			labdocs.append("a").classed("extra-doc", true).attr("href", labdoclist[j].url).html(labdoclist[j].name);
 		}
@@ -613,6 +667,7 @@ function createRecordSnapshots(lab) {
 $(document).on("click", ".lab-details-drop-icon-flex", function(e) {
 	var extendeddataflex = $(e.target).parent().siblings(".extended-lab-data-flex");
 	extendeddataflex.slideToggle("fast");
+	// extendeddataflex.toggleClass("extended-lab-data-visible");
 });
 
 
@@ -671,6 +726,28 @@ $(document).on("click", "#zip-icon", function(e) {
 });
 
 
+
+$(document).on("click", "#sort-name", function(e) {
+	sortRecords("name");
+});
+
+
+
+$(document).on("click", "#sort-year", function(e) {
+	sortRecords("year");
+});
+
+
+
+$(document).on("click", "#sort-semester", function(e) {
+	sortRecords("semester");
+});
+
+
+
+$(document).on("click", "#sort-course", function(e) {
+	sortRecords("course");
+});
 
 
 
@@ -788,8 +865,104 @@ function updateZipStatus() {
 
 
 
+function sortRecords(by) {
+	var records = getCurrentRecords();
+	var sorted = [];
+	for (var i = records.length - 1; i >= 0; i--) {
+		records[i].detach();
+	}
+	switch (by) {
+		case "course":
+			if ($("#sort-course").attr("sorted") == "true") {
+				records.reverse();
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-course")]);
+				falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name")]);
+			} else {
+				records.sort(compareLabsByCourse);
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-course")]);
+				falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name")]);
+			}
+			break;
+		case "semester":
+			if ($("#sort-semester").attr("sorted") == "true") {
+				records.reverse();
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-semester")]);
+				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-name")]);
+			} else {
+				records.sort(compareLabsBySemester);
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-semester")]);
+				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-name")]);
+			}
+			break;
+		case "year":
+			if ($("#sort-year").attr("sorted") == "true") {
+				records.reverse();
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-year")]);
+				falsifySort([$("#sort-semester"), $("#sort-course"), $("#sort-name")]);
+			} else {
+				records.sort(compareLabsByYear);
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-year")]);
+				falsifySort([$("#sort-semester"), $("#sort-course"), $("#sort-name")]);
+			}
+			break;
+		case "name":
+			if ($("#sort-name").attr("sorted") == "true") {
+				records.reverse();
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-name")]);
+				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester")]);
+			} else {
+				records.sort(compareLabsByName);
+				var lablistbox = $("#lab-list-box");
+				for (var i = records.length - 1; i >= 0; i--) {
+					lablistbox.append(records[i]);
+				}
+				truifySort([$("#sort-name")]);
+				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester")]);
+			}
+			break;
+	}
+}
 
 
 
+function falsifySort(headers) {
+	for (var i = headers.length - 1; i >= 0; i--) {
+		headers[i].attr("sorted", "false")
+	}
+}
 
 
+
+function truifySort(headers) {
+	for (var i = headers.length - 1; i >= 0; i--) {
+		headers[i].attr("sorted", "true")
+	}
+}
