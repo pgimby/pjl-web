@@ -530,7 +530,7 @@ function equipmentSearchHandler(searchphrase) {
 
 function makePromisesBeginZip() {
 	var zip = new JSZip();
-	var files = ["../data/testfiles/1.txt","../data/testfiles/2.dat","../data/testfiles/3.js","../data/testfiles/4.jpg"];//getCurrentRecordPaths();
+	var files = ["/data/testfiles/1.txt","/data/testfiles/2.dat","/data/testfiles/3.js","/data/testfiles/4.jpg"];//getCurrentRecordPaths();
 	var promises = []
 	for (var i = files.length - 1; i >= 0; i--) {
 		var downloadingfile = fileDownloadPromise();
@@ -571,7 +571,7 @@ function beginDownload(filepath, promise) {
     		console.log("Error on XHTTP Request - Error Code: " + String(this.status));
     	}
   	};
-  	xhttp.open("GET", filepath, true);
+  	xhttp.open("GET", siteroot + filepath, true);
   	xhttp.send();
 }
 
