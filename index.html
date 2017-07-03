@@ -82,19 +82,19 @@
         <form class="search-box">
           <input type="text" id="search-bar" placeholder="Keyword, topic, course..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Keyword, topic, course...'">
           <a><img class="search-icon" src="./img/search-icon.png"></a> <!-- may I see your silly walk? -->
-          <p id="search-help-button">search help</p>
+          <p id="search-help-button">search tips</p>
           <div id="search-help">
             <p id="tips">Tips</p>
             <p>Searches try to match against all lab record meta data</p>
-            <p>Prefix your search terms with <span class="code">Meta Value:</span> to match against only that identifier</p>
-            <div class="example"><p id="help-ex">Ex.</p><p><span class="code">Course:PHYS 325</span> will match the query <span class="code">PHYS 325</span> against only course names</p>
-              <span class="code">Course:</span>
-              <span class="code">Lab:</span>
-              <span class="code">Year:</span>
-              <span class="code">Semester:</span>
-              <span class="code">Topic:</span>
-              <span class="code">Discipline:</span>
-              <span class="code">Equipment:</span>
+            <p>Prefix your search terms with <span class="code">meta:</span> to match against only that identifier</p>
+            <div class="example"><p id="help-ex">Ex.</p><p><span class="code">course:PHYS 325</span> will match the query <span class="code">PHYS 325</span> against only course names</p>
+              <span class="code">course:</span>
+              <span class="code">lab:</span>
+              <span class="code">year:</span>
+              <span class="code">semester:</span>
+              <span class="code">topic:</span>
+              <span class="code">discipline:</span>
+              <span class="code">equipment:</span>
             </div>
           </div>
         </form>

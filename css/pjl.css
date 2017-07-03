@@ -491,6 +491,7 @@ select {
 	flex-direction: row;
 	flex-wrap: wrap;
 	border-top: solid 1px;
+	border-left: 3px solid #555;
 }
 
 	.lab-record-detailed-flex span {

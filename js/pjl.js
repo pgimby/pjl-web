@@ -10,7 +10,15 @@ var siteroot = "/pjl-web";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
+//I wouldn't mind adding a "show more" or "show all" button at the bottom of the record list
+//or maybe have a scroll box of a specific size. When we load all the labs from the final XML
+//the initial length will be huge and you'll have to scroll forever to get to the footer.
 
+//Also would like to have the zip, expand all, maybe search bar pinned to the top while scrolling
+//down through the list alond with a "back to top" button.
+
+//Footer isn't bold enough. Feels off compared with rest of page. Maybe have dark frame around
+//staff details.
 
 
 
@@ -521,26 +529,26 @@ function searchQueryHandler() {  //handle search request by checking for search 
 	var split = query.split(":");
 	var selector = split[0];
 	var searchphrase = split.slice(1,).join(" ");
-	switch (selector) {
-		case "Course":
+	switch (selector.toLowerCase()) {
+		case "course":
 			courseSearchHandler(searchphrase);
 			break;
-		case "Lab":
+		case "lab":
 			labSearchHandler(searchphrase);
 			break;
-		case "Year":
+		case "year":
 			yearSearchHandler(searchphrase);
 			break;
-		case "Semester":
+		case "semester":
 			semesterSearchHandler(searchphrase);
 			break;
-		case "Topic":
+		case "topic":
 			topicSearchHandler(searchphrase);
 			break;
-		case "Discipline":
+		case "discipline":
 			disciplineSearchHandler(searchphrase);
 			break;
-		case "Equipment":
+		case "equipment":
 			equipmentSearchHandler(searchphrase);
 			break;
 		default:
