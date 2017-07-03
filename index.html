@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Physics Junior Labs</title>
+    <title>Physics Junior Laboratory</title>
     <script src="./js/jquery.js"></script>
     <script src="./js/d3.min.js"></script>
     <script src="./js/jszip.min.js"></script>
@@ -18,6 +18,10 @@
 <!-- Created by P. Gimby and W. Kyle -->
 <!-- June 2017, University of Calgary -->
 <!-- Despite the lack of rubber duckies -->
+<!-- Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code -->
+
+
+
 
 
 
@@ -32,7 +36,7 @@
 
     <header>
       <div id="header-baseline">
-        
+
       </div>
     </header>
 
@@ -45,119 +49,124 @@
     <!-- MAIN PAGE CONTENT -->
 
 
+    <main>
+
+      <div class="wrap">
 
 
-    <div class="wrap" id="main-wrap">
-      
-    
-      <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
+        <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
 
-      <div class="hero">
-        <a href="http://www.ucalgary.ca/science/" target="_blank" id="logo-link"><img id="logo" src="./img/uc-science.jpg"/></a>
-        <div class="title-flex">
-          <h1 id="title">Department of Physics and Astronomy</h1>
-          <h1 id="subtitle">Physics Junior Labs Document Repository</h1>
-        </div>
-      </div>
-
-
-
-
-      <!-- SEARCH BAR WITH SEARCH HELP DROPDOWN -->
-
-      <h2>Search labs by topic, keyword, or course</h2>
-
-      <form class="search-container">
-        <input type="text" id="search-bar" placeholder="Keyword, topic, course..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Keyword, topic, course...'">
-        <a><img class="search-icon" src="./img/search-icon.png"></a> <!-- may I see your silly walk? -->
-        <p id="search-help-btn">search help</p>
-        <div id="search-help">
-          <p id="tips">Tips</p>
-          <p>Searches try to match against all lab record meta data</p>
-          <p>Prefix your search terms with <span class="code">Meta Value:</span> to match against only that identifier</p>
-          <div class="example"><p id="help-ex">Ex.</p><p><span class="code">Course:PHYS 325</span> will match the query <span class="code">PHYS 325</span> against only course names</p>
-            <span class="code">Course:</span>
-            <span class="code">Lab:</span>
-            <span class="code">Year:</span>
-            <span class="code">Semester:</span>
-            <span class="code">Topic:</span>
-            <span class="code">Discipline:</span>
-            <span class="code">Equipment:</span>
+        <div class="hero">
+          <!-- <a href="http://www.ucalgary.ca/science/" target="_blank" id="logo-link"><img id="logo" src="./img/uc-logo.png"/></a> -->
+          <div class="title-flex">
+            <h1 id="title">Department of Physics and Astronomy</h1>
+            <h1 id="subtitle">Physics Junior Laboratory Document Repository</h1>
           </div>
         </div>
-      </form>
 
 
 
 
-      <span>
-        <h2 id="or">OR</h2>
-        <h2>Search by filtering the lab database</h2>    
-      </span>
-      
+        <!-- SEARCH BAR WITH SEARCH HELP DROPDOWN -->
+
+        <h2>Find labs by search term</h2>
+
+        <form class="search-container">
+          <input type="text" id="search-bar" placeholder="Keyword, topic, course..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Keyword, topic, course...'">
+          <a><img class="search-icon" src="./img/search-icon.png"></a> <!-- may I see your silly walk? -->
+          <p id="search-help-button">search help</p>
+          <div id="search-help">
+            <p id="tips">Tips</p>
+            <p>Searches try to match against all lab record meta data</p>
+            <p>Prefix your search terms with <span class="code">Meta Value:</span> to match against only that identifier</p>
+            <div class="example"><p id="help-ex">Ex.</p><p><span class="code">Course:PHYS 325</span> will match the query <span class="code">PHYS 325</span> against only course names</p>
+              <span class="code">Course:</span>
+              <span class="code">Lab:</span>
+              <span class="code">Year:</span>
+              <span class="code">Semester:</span>
+              <span class="code">Topic:</span>
+              <span class="code">Discipline:</span>
+              <span class="code">Equipment:</span>
+            </div>
+          </div>
+        </form>
+
+
+
+
+        <span>
+          <h2 id="or">OR</h2>
+          <h2>Find labs by filtering the database</h2>
+        </span>
 
 
 
 
 
 
-      <!-- LAB RECORDS FILTER SELECTIONS -->
 
-      <div class="filter">
-        <div id="course-filter">
-          <h3>Course</h3>
-          <select id="course-select" multiple="multiple">
-          </select>
+        <!-- LAB RECORDS FILTER SELECTIONS - FILLED DYNAMICALLY -->
+
+        <div class="filter">
+          <div id="course-filter">
+            <h3>Course</h3>
+            <select id="course-select" multiple="multiple">
+            </select>
+          </div>
+          <div id="year-filter">
+            <h3>Year</h3>
+            <select id="year-select" multiple="multiple">
+            </select>
+          </div>
+          <div id="semester-filter">
+            <h3>Semester</h3>
+            <select id="semester-select" multiple="multiple">
+            </select>
+          </div>
+          <div id="discipline-filter">
+            <h3>Discipline</h3>
+            <select id="discipline-select" multiple="multiple">
+            </select>
+          </div>
+          <p id="clear-filters-button">clear filters</p>
         </div>
-        <div id="year-filter">
-          <h3>Year</h3>
-          <select id="year-select" multiple="multiple">
-          </select>
+
+
+
+
+        <!-- SEARCH RESULTS COUNTER WITH ZIP ICON -->
+
+
+        <p id="search-results">Showing <span id="num-results"></span> search results</p>
+        <div id="zip-icon"></div>
+
+
+
+
+
+        <!-- LAB RECORDS DISPLAY AND HEADER FOR SORTING FUNCTIONALITY -->
+
+
+        <div id="lab-list-box">
+          <div id="records-header">
+            <a style="visibility: hidden; margin: 0 11px">Download</a> <!-- just here to match spacing on records display -->
+            <p class="record-header-button" id="sort-course" sorted="false"><span>Course</span></p>
+            <p class="record-header-button" id="sort-version">
+              <span class="sort-span-mobile" id="sort-semester" sorted="false">Sem.</span>
+              <span class="sort-span-desktop" id="sort-semester" sorted="false">Semester</span>
+              /
+              <span id="sort-year" sorted="false">Year</span>
+            </p>
+            <p class="record-header-button" id="sort-name" sorted="false"><span>Lab<span></p>
+            <div style="width:46px"></div>
+          </div>
+
         </div>
-        <div id="semester-filter">
-          <h3>Semester</h3>
-          <select id="semester-select" multiple="multiple">
-          </select>
-        </div>
-        <div id="discipline-filter">
-          <h3>Discipline</h3>
-          <select id="discipline-select" multiple="multiple">
-          </select>
-        </div>
-        <button id="clear-filters-button">Clear filters</button>
-      </div>
 
 
+      </div>  <!-- close main wrap -->
 
-
-      <!-- SEARCH RESULTS DISPLAY WITH ZIP BUTTON -->
-
-
-      <p id="search-results">Showing <span id="num-results"></span> search results</p>
-      <div id="zip-icon"></div>
-      
-
-
-
-
-      <!-- LAB RECORDS DISPLAY AND HEADER FOR SORTING FUNCTIONALITY -->
-
-
-      <div id="lab-list-box">
-        <div id="records-header">
-          <a style="visibility: hidden; margin: 0 11px">Download</a>
-          <p class="record-header-button" id="sort-course" sorted="false">Course</p>
-          <p class="record-header-button" id="sort-version"><span class="sort-span-mobile" id="sort-semester" sorted="false">Sem.</span><span class="sort-span-desktop" id="sort-semester" sorted="false">Semester</span>/<span id="sort-year" sorted="false">Year</span></p>
-          <p class="record-header-button" id="sort-name" sorted="false">Lab</p>
-          <div style="width:46px"></div>
-        </div>
-        
-      </div>
-
-
-    </div>  <!-- close main wrap -->
-
-
+    </main>
 
 
 
@@ -169,10 +178,10 @@
 
 
     <footer>
-      
 
-      <div class="wrap" id="footer-wrap">
-      
+
+      <div class="wrap">
+
         <div id="footer-left">
           <p>University of Calgary</p>
           <p>2500 University Dr. NW</p>
@@ -189,8 +198,8 @@
           <div class="staff-member">
             <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740" target="_blank"><img class="staff-mugshot" src="./img/pgimby-crop.png"/></a>
             <div class="staff-details">
-              <h3 class="staff-name staff-big-detail">Peter Gimby</h3>
-              <h4 class="staff-title staff-medium-detail">Physics Junior Labs Supervisor</h4>
+              <h3 class="staff-name">Peter Gimby</h3>
+              <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
               <div class="staff-phone staff-small-detail">
                 <img class="contact-icon" src="./img/phone-icon.png"/>
                 <p>+1 (403) 220-5403</p>
@@ -203,9 +212,9 @@
                 <img class="contact-icon" src="./img/email-icon.png"/>
                 <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
               </div>
-            </div>  
+            </div>
           </div>
-          
+
 
 
           <!-- Staff member - Wes -->
@@ -226,7 +235,7 @@
                 <img class="contact-icon" src="./img/email-icon.png"/>
                 <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
               </div>
-            </div>  
+            </div>
           </div>
 
         </div>  <!-- end footer mid -->
