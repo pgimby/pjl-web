@@ -8,6 +8,8 @@
     <script src="./js/FileSaver.js"></script>
     <script src="./js/argument.js"></script>
     <script src="./js/pjl.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+
     <meta charset="utf-8">
   	<meta http-equiv="x-ua-compatible" content="ie=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,14 +66,20 @@
           </div>
         </div>
 
-
+        <!-- <h1 style="font-family: 'Finger Paint';font-size:30px">WELCOME TO THE PJL!</h1></br>
+        <img style="width: 180px; height:auto" src="./img/definitelynotpeter.jpg"/>
+        <img style="width: 180px; height:auto" src="./img/notpeter.jpg"/>
+        <img style="width: 180px; height:auto" src="./img/certainlynotpeter.jpg"/></br>
+        <h2 style="margin-bottom: 50px">...we're really weird.</h2>
+ -->
 
 
         <!-- SEARCH BAR WITH SEARCH HELP DROPDOWN -->
 
         <h2>Find labs by search term</h2>
 
-        <form class="search-container">
+        <div class="search-container">
+        <form class="search-box">
           <input type="text" id="search-bar" placeholder="Keyword, topic, course..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Keyword, topic, course...'">
           <a><img class="search-icon" src="./img/search-icon.png"></a> <!-- may I see your silly walk? -->
           <p id="search-help-button">search help</p>
@@ -90,7 +98,7 @@
             </div>
           </div>
         </form>
-
+        </div>
 
 
 
@@ -139,6 +147,8 @@
 
         <p id="search-results">Showing <span id="num-results"></span> search results</p>
         <div id="zip-icon"></div>
+        <p id="expand-all-button" expanded="false">expand all</p>
+        <!-- <p id="collapse-all">collapse all</p> -->
 
 
 
@@ -160,8 +170,8 @@
             <p class="record-header-button" id="sort-name" sorted="false"><span>Lab<span></p>
             <div style="width:46px"></div>
           </div>
-
         </div>
+
 
 
       </div>  <!-- close main wrap -->
@@ -254,6 +264,12 @@
       </div>  <!-- end footer wrap -->
 
       <div id="footer-baseline"></div>
+
+      <div id=zip-progress-bar>
+        <h2 id="file-prep">Preparing files...</h2>
+        <progress value="0" max="1"></progress>
+
+      </div>
 
 
     </footer>

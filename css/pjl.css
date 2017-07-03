@@ -161,7 +161,12 @@ header {
 
 /*SEARCH BAR STYLES*/
 
-.search-container{
+.search-container {
+	margin: 5px 5px 5px 10px;
+	transition: all .3s ease;
+}
+
+.search-box{
 	position: relative;
   	max-width: 490px;
   	display: block;
@@ -281,10 +286,14 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
     margin: 35px 0;
     max-width: 600px;
 }
+
+/*.filter div {
+	flex: 1;
+}*/
 
 select {
 	width: auto;
@@ -388,7 +397,28 @@ select {
 	display: none;
 }
 
+#expand-all-button {
+	padding: 3px;
+	margin: 0;
+	position: relative;
+	top: 8px;
+	font-size: .6em;
+	height: 12px;
+	color: #454565;
+	right: 13px;
+	float: right;
+}
 
+	#expand-all-button:hover {
+		cursor: pointer;
+		color: #0000EE;
+		transition: all .3s ease;
+	}
+
+	#expand-all-button:active {
+		color: #7777FF;
+		transition: none;
+	}
 
 
 
@@ -435,6 +465,15 @@ select {
 	cursor: pointer;
 }
 
+	.lab-details-drop-icon-flex:hover {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,.4) inset;
+	}
+
+	.lab-details-drop-icon-flex:active {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,.6) inset;
+		padding-top: 5px;
+	}
+
 .lab-details-drop-icon {
 	max-height: 21px;
 	margin: auto auto;
@@ -445,15 +484,6 @@ select {
     -o-user-select: none;
     user-select: none;
 }
-
-	.lab-details-drop-icon-flex:hover {
-		box-shadow: 0 0 3px 0 rgba(0,0,0,.4) inset;
-	}
-
-	.lab-details-drop-icon-flex:active {
-		box-shadow: 0 0 3px 0 rgba(0,0,0,.6) inset;
-		padding-top: 5px;
-	}
 
 .lab-record-detailed-flex {
 	display: -webkit-flex;
@@ -467,6 +497,12 @@ select {
 		font-weight: 600;
 		color: #777777;
 	}
+
+.download-icon {
+	display: none;
+	padding: 4px 6px;
+	margin-right: 6px;
+}
 
 .extra-docs {
 	display: -webkit-flex;
@@ -486,7 +522,7 @@ select {
 footer {
 	min-height: 200px;
 	background-color: #CCCCCC;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+	box-shadow: 0 0 7px 1px rgba(0,0,0,.6);
 }
 
 	footer .wrap {
@@ -619,8 +655,8 @@ footer {
 		flex-direction: column;
 	}
 
-	main .wrap {
-		text-align: center;
+	.filter {
+		width: 100%;
 	}
 
 	.lab-record-detailed-flex {
@@ -631,17 +667,44 @@ footer {
 		display: none;
 	}
 
+	.download-icon {
+		display: inline-block;
+	}
+
+		.download-icon:hover {
+			cursor: pointer;
+			transform: translateY(1px);
+		}
+
+		.download-icon:active {
+			transform: translateY(2px);
+		}
+
+	a.version-path {
+		display: none;
+	}
+
+	#records-header a, #records-header p {
+		margin: 0;
+		width: 10px;
+	}
+
+	#expand-all-button {
+		display: none;
+	}
+
 	#logo {
 		display: block;
 		width: 100%;
 		height: 100%;
 	}
 
-	.search-container {
-		width: 240px;
-		display: inline-block;
+	#search-container {
+		width: 87%;
+	}
+
+	.search-box {
 		margin: 5px;
-		left: -24px;
 	}
 
 	.search-icon{
@@ -715,4 +778,39 @@ footer {
 	.staff-details h4 {
 		font-size: .8em;
 	}
+}
+
+
+
+
+
+#zip-progress-bar {
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	bottom: -100px;
+	background-color: rgba(250,250,250,.8);
+	display: none;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 4px 4px 0 0;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,.7) inset, 0 0 32px 2px rgba(0,0,0,.3);
+}
+
+#zip-progress-bar progress {
+	position: relative;
+	width: 360px;
+	height: 20px;
+	left: 20px;
+	bottom: -50px;
+	padding: 0px;
+	border: none;
+}
+
+#zip-progress-bar #file-prep {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	color: #555;
 }

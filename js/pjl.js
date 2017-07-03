@@ -6,7 +6,7 @@
 
 var mainxmlpath = "/data/pjl-lab-database.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
+var siteroot = "";//"/pjl-web";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -41,7 +41,6 @@ function initPage() {  //initialize the page
 $(document).on("click", ".lab-details-drop-icon-flex", function(e) {
 	var extendeddataflex = $(e.target).parent().siblings(".lab-record-detailed-flex");
 	extendeddataflex.slideToggle("fast");
-	// extendeddataflex.toggleClass("extended-lab-data-visible");
 });
 
 
@@ -96,6 +95,7 @@ $(document).on("click", "#search-help-button", function(e) {
 
 
 $(document).on("click", "#zip-icon", function(e) {
+	$("#zip-progress-bar").slideDown(100);
 	makePromisesBeginZip();
 });
 
@@ -124,6 +124,22 @@ $(document).on("click", "#sort-course", function(e) {
 });
 
 
+
+$(document).on("click", ".download-icon", function(e) {
+	window.open($(e.target).parent().parent().find(".version-path").attr("href"), "_blank");
+});
+
+
+
+$(document).on("click", "#expand-all-button", function(e) {
+	flash($("#records-header"));
+	var expanded = $(e.target).attr("expanded");
+	if (expanded == "true") {
+		toggleRecordExpansion(false);
+	} else {
+		toggleRecordExpansion(true);
+	}
+});
 
 
 
@@ -168,7 +184,8 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var detailsbox = d3.select("#lab-list-box").append("div").classed("lab-record-flex", true);
 
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
-		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path);
+		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path).attr("target", "_blank");
+		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "../img/download-icon.svg");  //alternate for mobile display
 		var courses = snapshot.append("p").classed("courses", true).html(getCourseList(lab).join(", "));
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
 		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("name")[0].childNodes[0].nodeValue);
@@ -185,7 +202,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labdocs = extendedlabdata.append("div").classed("extra-docs", true);
 		labdocs.append("p").html("<span>Additional Documents:</span> ");
 		for (var j = labdoclist.length - 1; j >= 0; j--) {
-			labdocs.append("a").classed("extra-doc", true).attr("href", labdoclist[j].url).html(labdoclist[j].name);
+			labdocs.append("a").classed("extra-doc", true).attr("href", labdoclist[j].url).html(labdoclist[j].name).attr("target", "_blank");
 		}
 	}
 }
@@ -371,7 +388,30 @@ function truifySort(headers) {  //set these headers' (jQuery selections) attribu
 
 
 
+function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts if falsy - type-safe
+	var button = $("#expand-all-button");
+	if (Boolean(truthy)) {
+		var extendeddatarecords = $(".lab-record-detailed-flex");
+		extendeddatarecords.slideDown();
+		setExpandedButtonTruth(true)
+	} else {
+		var extendeddatarecords = $(".lab-record-detailed-flex");
+		extendeddatarecords.slideUp();
+		setExpandedButtonTruth(false)
+	}
+}
 
+
+
+function setExpandedButtonTruth(truthy) {  //sets "expand-all-button" epanded=truthy - type safe
+	var button = $("#expand-all-button");
+	button.attr("expanded", String(Boolean(truthy)));
+	if (Boolean(truthy)) {
+		button.html("collapse all");
+	} else {
+		button.html("expand all");
+	}
+}
 
 
 
@@ -614,8 +654,17 @@ function equipmentSearchHandler(searchphrase) {  //handle the search request for
 
 function makePromisesBeginZip() {  //take URLs for currently displayed records, create promises, and zip for download upon resolution of all promises
 	var zip = new JSZip();
-	var files = ["/data/testfiles/1.txt","/data/testfiles/2.dat","/data/testfiles/3.js","/data/testfiles/4.jpg"];//getCurrentRecordPaths();
+	var files = ["/data/testfiles/3.pdf","/data/testfiles/4.pdf","/data/testfiles/5.pdf",
+	"/data/testfiles/6.pdf","/data/testfiles/1.txt","/data/testfiles/2.txt","/data/testfiles/3.txt",
+	"/data/testfiles/4.txt","/data/testfiles/5.txt","/data/testfiles/6.txt","/data/testfiles/7.txt",
+	"/data/testfiles/8.txt","/data/testfiles/9.txt","/data/testfiles/10.txt","/data/testfiles/11.txt",
+	"/data/testfiles/12.txt","/data/testfiles/13.txt","/data/testfiles/14.txt","/data/testfiles/15.txt",
+	"/data/testfiles/1.pdf","/data/testfiles/2.pdf","/data/testfiles/3.pdf","/data/testfiles/4.pdf",
+	"/data/testfiles/5.pdf","/data/testfiles/6.pdf","/data/testfiles/7.pdf","/data/testfiles/8.pdf",
+	"/data/testfiles/9.pdf"];//getCurrentRecordPaths();
 	var promises = []
+	var progresscount = 0;
+	var progress = function(i) {return i/files.length};
 	for (var i = files.length - 1; i >= 0; i--) {
 		var downloadingfile = fileDownloadPromise();
 		downloadingfile.done(function(filename, blob) {
@@ -624,9 +673,15 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 		promises.push(downloadingfile);
 		beginDownload(files[i], downloadingfile);
 	}
-	$.when.apply(this, promises).done(function() {
+	var deferredzip = $.when.apply(this, promises);
+	deferredzip.progress(function() {
+		progresscount++;
+		$("#zip-progress-bar progress").attr("value", String(progress(progresscount)));
+	});
+	deferredzip.done(function() {
 		zip.generateAsync({type:"blob"}).then(function (blob) {
 		saveAs(blob, zipoutputfilename);
+		$("#zip-progress-bar").slideUp(500);
 	}, function (err) {
           console.log(err); //this should never be thrown as I checked for browser compat. already in canZip()
           					//but for completeness' sake we could write a modal dialog to throw up here.
@@ -649,6 +704,7 @@ function beginDownload(filepath, promise) {  //start downloading PDF and resolve
             blob = this.response;
             var filename = filepath.split("/");
             filename = filename[filename.length-1];
+            promise.notify();
             promise.resolve(filename, blob);
             console.log("File " + filename + " successfully loaded");
     	} else {
@@ -940,6 +996,11 @@ function compareLabsByName(a, b) {  //comparison function for Array.prototype.so
 }
 
 
+
+function flash(jQueryDOMSelection) {
+	jQueryDOMSelection.css("opacity", ".8");
+	jQueryDOMSelection.animate({opacity: 1}, 800);
+}
 
 
 
