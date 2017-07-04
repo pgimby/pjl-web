@@ -12,7 +12,7 @@ var siteroot = "/pjl-web";
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
 //I wouldn't mind adding a "show more" or "show all" button at the bottom of the record list
 //or maybe have a scroll box of a specific size. When we load all the labs from the final XML
-//the initial length will be huge and you'll have to scroll forever to get to the footer.
+//the initial length will be huge and you'll have to scroll forever to get to the footer. - Donesies
 
 //Also would like to have the zip, expand all, maybe search bar pinned to the top while scrolling
 //down through the list alond with a "back to top" button.
@@ -60,6 +60,7 @@ $(document).on("click", "#clear-filters-button", function(e) {
 	}
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
+	applyRecordsMask(true)
 });
 
 
@@ -67,6 +68,7 @@ $(document).on("click", "#clear-filters-button", function(e) {
 $(document).on("click", "select", function(e) {
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
+	applyRecordsMask(true)
 });
 
 
@@ -81,6 +83,7 @@ $(document).on("mousedown", "option", function(e) {
 
 $(document).on("click", ".search-icon", function(e) {
 	searchQueryHandler();
+	applyRecordsMask(true)
 });
 
 
@@ -149,6 +152,12 @@ $(document).on("click", "#expand-all-button", function(e) {
 	}
 });
 
+
+
+$(document).on("click", "#show-all-button", function(e) {
+	$(e.target).css("visibility", "hidden");
+	applyRecordsMask(false);
+});
 
 
 
@@ -420,6 +429,40 @@ function setExpandedButtonTruth(truthy) {  //sets "expand-all-button" epanded=tr
 		button.html("expand all");
 	}
 }
+
+
+
+function applyRecordsMask(truthy) {
+	var masksize = 20;
+	var records = getCurrentRecords();
+	if (records.length > masksize && Boolean(truthy)) {
+		for (var i = records.length - 1 - masksize; i >= 0; i--) {
+			records[i].addClass("masked");
+		}
+		$("#num-unmasked-results").text(String(masksize));
+		$("#show-all-button").css("visibility", "visible");
+	} else {
+		for (var i = records.length - 1; i >= 0; i--) {
+			records[i].removeClass("masked");
+		}
+		$("#num-unmasked-results").text(String(records.length));
+		$("#show-all-button").css("visibility", "hidden");
+	}
+}
+
+
+
+function getNumberRecordsUnmasked() {
+	var records = getCurrentRecords();
+	var num = records.length;
+	for (var i = records.length - 1; i >= 0; i--) {
+		if (records[i].hasClass("masked")) {
+			num--;
+		}
+	}
+	$("#num-unmasked-results").html(String(num));
+}
+
 
 
 
@@ -757,6 +800,7 @@ function loadXML() {  //load the XML document holding all the lab records (see g
             docXML = this.responseXML;
             populateRecordList(docXML);
             populateFilters(docXML);
+            applyRecordsMask(true);
     	}
   	};
   	xhttp.open("GET", siteroot + mainxmlpath, true);
@@ -1007,7 +1051,7 @@ function compareLabsByName(a, b) {  //comparison function for Array.prototype.so
 
 function flash(jQueryDOMSelection) {
 	jQueryDOMSelection.css("opacity", ".8");
-	jQueryDOMSelection.animate({opacity: 1}, 800);
+	jQueryDOMSelection.animate({opacity: 1}, 600);
 }
 
 

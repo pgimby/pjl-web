@@ -149,7 +149,7 @@ header {
 	margin-bottom: 16px;
 }
 
-#num-results {
+#num-results, #num-unmasked-results {
 	font-size: 1.5em;
 	color: #555555;
 	font-weight: 500;
@@ -446,6 +446,13 @@ select {
 	box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
 
+	.lab-record-flex.masked {
+		visibility: hidden;
+		height: 0;
+		border: none;
+		margin: 0;
+	}
+
 .lab-record-simple-flex {
 	display: -webkit-flex;
     display: flex;
@@ -491,7 +498,7 @@ select {
 	flex-direction: row;
 	flex-wrap: wrap;
 	border-top: solid 1px;
-	border-left: 3px solid #555;
+	border-left: 6px solid #555;
 }
 
 	.lab-record-detailed-flex span {
@@ -512,6 +519,28 @@ select {
 	flex-wrap: wrap;
 }
 
+#show-all-button {
+	padding: 3px;
+	margin: 0;
+	position: relative;
+	bottom: 200px;
+	right: -4px;
+	float: left;
+	font-size: .9em;
+	height: 12px;
+	color: #454565;
+}
+
+	#show-all-button:hover {
+		cursor: pointer;
+		color: #0000EE;
+		transition: all .3s ease;
+	}
+
+	#show-all-button:active {
+		color: #7777FF;
+		transition: none;
+	}
 
 
 
