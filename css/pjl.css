@@ -21,7 +21,7 @@ a {
 }
 
 a {
-	color: #454565;
+	color: #456545;
 }
 
 	a:hover {
@@ -57,7 +57,7 @@ html {
 
 header {
 	min-height: 60px;
-	background-color: #939393;
+	background: linear-gradient(#bbbbbb, #939393);
 	box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	margin-bottom: 3px;
 }
@@ -67,6 +67,7 @@ header {
 	width: 100%;
 	background-color: #333333;
 	position: relative;
+	border-bottom: 1px solid #DDDDDD;
 }
 
 
@@ -206,17 +207,19 @@ header {
 	font-size: .6em;
 	top: 49px;
 	left: 8px;
-	color: #454565;
+	color: #456545;
+	transition: all .3s ease;
 }
 
 	#search-help-button:hover {
-		color: #0000EE;
+		color: #009900;/*#0000EE;*/
 		cursor: pointer;
 		transition: all .3s ease;
 	}
 
 	#search-help-button:active {
-		color: #7777FF;
+		/*color: #7777FF;*/
+		opacity: .7;
 		transition: none;
 	}
 
@@ -317,17 +320,19 @@ select {
 	top: 30px;
 	font-size: .6em;
 	height: 12px;
-	color: #454565
+	color: #456545;
+	transition: all .3s ease;
 }
 
 	#clear-filters-button:hover {
 		cursor: pointer;
-		color: #0000EE;
+		color: #009900;/*#0000EE;*/
 		transition: all .3s ease;
 	}
 
 	#clear-filters-button:active {
-		color: #7777FF;
+		/*color: #7777FF;*/
+		opacity: .7;
 		transition: none;
 	}
 
@@ -401,19 +406,21 @@ select {
 	top: 8px;
 	font-size: .6em;
 	height: 12px;
-	color: #454565;
+	color: #456545;
 	right: 13px;
 	float: right;
+	transition: all .3s ease;
 }
 
 	#expand-all-button:hover {
 		cursor: pointer;
-		color: #0000EE;
+		color: #009900;/*#0000EE;*/
 		transition: all .3s ease;
 	}
 
 	#expand-all-button:active {
-		color: #7777FF;
+		/*color: #7777FF;*/
+		opacity: .7;
 		transition: none;
 	}
 
@@ -525,17 +532,19 @@ select {
 	float: left;
 	font-size: .9em;
 	height: 12px;
-	color: #454565;
+	color: #456545;
+	transition: all .3s ease;
 }
 
 	#show-all-button:hover {
 		cursor: pointer;
-		color: #0000EE;
+		color: #009900;/*#0000EE;*/
 		transition: all .3s ease;
 	}
 
 	#show-all-button:active {
-		color: #7777FF;
+		/*color: #7777FF;*/
+		opacity: .7;
 		transition: none;
 	}
 
@@ -548,7 +557,7 @@ select {
 
 footer {
 	min-height: 200px;
-	background-color: #939393;
+	background: linear-gradient(#939393, #939393, #939393, #bbbbbb);
 	box-shadow: 0 0 7px 1px rgba(0,0,0,.6);
 }
 
@@ -585,6 +594,7 @@ footer {
 	background-color: #333333;
 	position: relative;
 	bottom: -100%;
+	border-top: 1px solid #DDDDDD;
 }
 
 #footer-left {
@@ -648,7 +658,7 @@ footer {
 	width: 116px;
 	margin-right: 12px;
 	border-radius: 4px;
-	border: 2px solid #FFF;
+	border: 1px solid #252525;
 }
 
 	.staff-mugshot:hover {
@@ -865,4 +875,20 @@ footer {
 	left: 20px;
 	top: 20px;
 	color: #555;
+}
+
+#zip-progress-bar progress {
+	color: #009900;
+}
+
+#zip-progress-bar progress::-webkit-progress-bar {
+	background-color: #009900;
+}
+
+#zip-progress-bar progress::-webkit-progress-value {
+	background: #009900;
+}
+
+#zip-progress-bar progress::-moz-progress-bar {
+	background: #009900;
 }
