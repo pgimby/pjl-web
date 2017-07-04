@@ -17,8 +17,11 @@ var siteroot = "/pjl-web";
 //Also would like to have the zip, expand all, maybe search bar pinned to the top while scrolling
 //down through the list alond with a "back to top" button.
 
-//Footer isn't bold enough. Feels off compared with rest of page. Maybe have dark frame around
-//staff details.
+//Footer isn't bold enough. Feels too light compared with rest of page. Maybe have dark
+//frame around staff details.
+
+//Somehow need to deal with file errors in the zip call. Think about how to bail gracefully.
+//The top-level promis is waiting for all the files to load, what happens if one doesn't?
 
 
 

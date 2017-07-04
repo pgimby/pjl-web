@@ -291,10 +291,6 @@ header {
     max-width: 600px;
 }
 
-/*.filter div {
-	flex: 1;
-}*/
-
 select {
 	width: auto;
 	margin: 5px 10px;
@@ -654,6 +650,10 @@ footer {
 	border: 2px solid #FFF;
 }
 
+	.staff-mugshot:hover {
+		opacity: .85;
+	}
+
 
 
 
@@ -741,6 +741,13 @@ footer {
   		right: -37px;
 	}
 
+	#search-results {
+		margin-left: 0;
+	}
+		#search-results span {
+			font-size: 1.2em;
+		}
+
 	#title {
 		font-size: 1.4em;
 		text-align: center;
@@ -811,6 +818,20 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************/
+/*                 STYLING FOR MODAL CONTAINERS                    */
+/*******************************************************************/
 
 
 
