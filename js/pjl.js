@@ -22,6 +22,7 @@ var siteroot = "/pjl-web";
 
 //Somehow need to deal with file errors in the zip call. Think about how to bail gracefully.
 //The top-level promis is waiting for all the files to load, what happens if one doesn't?
+//---set a deferred.fail() callback on the top-level promise. easy peasy.
 
 
 

@@ -57,7 +57,7 @@ html {
 
 header {
 	min-height: 60px;
-	background-color: #DDDDDD;
+	background-color: #939393;
 	box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	margin-bottom: 3px;
 }
@@ -172,6 +172,7 @@ header {
   	display: block;
   	margin: 5px 5px 5px 10px;
   	transition: all .3s ease;
+  	width: 80%;
 }
 
 #search-bar {
@@ -547,7 +548,7 @@ select {
 
 footer {
 	min-height: 200px;
-	background-color: #CCCCCC;
+	background-color: #939393;
 	box-shadow: 0 0 7px 1px rgba(0,0,0,.6);
 }
 
