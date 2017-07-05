@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../rooms/rooms.css"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="968.12" width="647.3" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 647.29715 968.12085">
+  <g transform="translate(597.93 .26965)" fill="none">
+
+    <g id="pjl-rooms">
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('026')" id="026" d="m-126.89 814.36-17.857-29.643-38.929 25-65-102.86 2.1429-2.1429-17.962-27.447 142.02-54.444 59.874 142.6-19.75 10.982 5.8214 10.089z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('030')" id="030" d="m-122.6 622.57-33.414-99.895-162.55 50.543 8.817 30.067-5 1.7857 46.071 73.571z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('032')" id="032" d="m-318.68 572.93-7.8571-27.857-13.214 3.2143-23.571-83.214 21.071-5.3572 157.86-38.929 28.214 101.43z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('034')" id="034" d="m-351.91 461.97-5.3414-29.753-12.5 2.1429-17.5-83.214 181.07-33.929 21.721 103.3z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('036')" id="036" d="m-376.87 348.67-3.9444-30.022-11.786 1.0714-12.143-84.643 182.5-21.786 15.983 103.6z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('038')" id="038" d="m-387.96 232.86-2.9018-32.433h-13.571l0.78125-82.969 174.93-4.8884 6.4286 100.36z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('042')" id="042" d="m-403.68 117.22-0.35714-69.643 50 0.35714-0.625 67.701z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('042A')" id="042A" d="m-353.73 47.943 39.73 0.06188-0.17362 66.665-40.193 1.0741z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('046')" id="046" d="m-313.61 47.984 49.58 0.07364-0.0316 65.142-49.858 1.245z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('048')" id="048" d="m-263.78 48.058 48.91 0.33548-0.10078 63.258-48.702 1.5483z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('050')" id="050" d="m-214.63 111.64 48.504-1.183 0.26786-61.473-48.641-0.57746z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('052')" id="052" d="m-165.46 49.003 50.357 0.35714 3.9286 61.429-54.643-0.35714z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('025A')" id="025A" d="m-310.64 967.17 41.164-23.739-26.453-46.798-42 23.881z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('025')" id="025" d="m-338.04 920.32 121.6-68.817-27.527-43.942-11.119 7.381-12.554-20.195-106.64 61.302z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('027')" id="027" d="m-374.52 855.67-44.153-74.266 114.56-65.612 34.612 52.276-10.682 6.7522 12.361 19.6z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('027A')" id="027A" d="m-304.27 715.52-32.382-52.658-12.374 6.3134-10.859-20.203-102.03 57.831 43.184 74.499z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('029')" id="029" d="m-461.89 706.86-93.214-161.07 110-60.357 13.571 27.143 11.071-5.3572 60.714 115.36-11.071 6.0714 10.88 20.201z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('09A')" id="09A" d="m-572.6 509-24.643-42.5 50.404-28.049 23.794 41.664z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('09')" id="09" d="m-522.72 479.93 22.395-12.888-16.205-28.393-9.2857 5.3572-7.5-12.857-13.214 7.1429z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('09B')" id="09B" d="m-511.09 447.8 24.196-13.438v-39.643l-56.802 0.0342 0.0219 41.68 10.307-5.7769 7.6339 12.857 9.1964-5.4911z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('037')" id="037" d="m-451.18 394.36 0.71429-120-12.5-0.35714v-27.143h-80.714v147.5z"/>
+      <path onclick="parent.roomClick(evt)" onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('039')" id="039" d="m-462.96 246.5v-27.857h10.357v-62.857l-91.113 0.0631 0.0631 90.799z"/>
+    </g>
+
+    <g id="stairwells">
+      <path onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('North Stairs')" id="stair-a" d="m-455.1 50.075v-49.75l-87.531-0.09375 0.0326 50.005z"/>
+      <path onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('South Stairs')" id="stair-b" d="m-269.21 943.29 50-28.393-26.786-47.143-49.643 29.107z"/>
+    </g>
+
+    <g id="non-pjl-rooms">
+      <path onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('none')" id="null-0" d="m-183.57 809.95 14.34 23.337 42.125-18.816-17.729-29.444z"/>
+      <path onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('none')" id="null-1" d="m-62.649 765.39 5.6808 9.7329 105.69-58.725-2.0203-4.5457-12.374 6.0609-8.5863-18.94 11.617-5.3033-32.577-80.055-11.364 5.0508-8.0812-19.445 10.859-5.3033-18.435-43.942-20.708-66.67-35.103 11.364-10.607-36.113 35.355-9.849-17.93-68.69-9.3439-38.891-8.0812-48.235-55.811 9.3439-3.7881-21.466 56.063-9.0914-9.849-59.346-7.2676-80.978-55.867 0.67095-0.78919-21.403-62.408 1.894 6.4713 100.54 15.994 103.93 21.917 103.61 28.065 101.72 33.556 100.38z"/>
+      <path onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('none')" id="null-2" d="m-451.1 123.82v-73.5h-91.5v73.25z"/>
+      <path onmouseout="parent.mouseLeftRoom()" onmouseover="parent.roomMouseOver('none')" id="null-3" d="m-510.71 448.09 24.42-13.605-0.25141-39.785 35.357-0.0118 0.0573 45.221-48.98 26.953z"/>
+    </g>
+  </g>
+</svg>
