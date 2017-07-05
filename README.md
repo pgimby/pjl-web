@@ -43,7 +43,7 @@ Optics
 Thermodynamics  
 Fluid Mechanics  
 Statistical Mechanics  
-Quantium Mechanics  
+Quantum Mechanics  
 Relativity  
 Math  
 
