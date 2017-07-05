@@ -6,7 +6,7 @@
 
 var mainxmlpath = "/data/pjl-lab-database.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
+var siteroot = "";//"/pjl-web";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -206,7 +206,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
 		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path).attr("target", "_blank");
-		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "../img/download-icon.svg");  //alternate for mobile display
+		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "./img/download-icon.svg");  //alternate for mobile display
 		var courses = snapshot.append("p").classed("courses", true).html(getCourseList(lab).join(", "));
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
 		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("name")[0].childNodes[0].nodeValue);
