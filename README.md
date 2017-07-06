@@ -5,21 +5,21 @@ Document dump for the PJL at UofC
 
 **To Do List**
 
-GUI to edit xml  
-Populate equipment tags in lab xml (link equip to equip.xml)  
-Home Page for PJL  
-Populate topics / diciplines / ID#s  
+Dashboard to edit XMLs  
+Populate equipment tags in lab XML (link equip to equip.xml)  
+Landing page for PJL  
+Populate topics / diciplines / ID#s (in progress)  
 401/404 pages  
-Add forgoten labs  
-Staff Profiles  
-Room Scheduling  
-Lab Scheduling  
-Student Guide  
-Support Docs  
-Sample Data  
-References  
-Companion Guides  
-325 Ideas  
+Add forgotten labs  
+Staff profiles  
+Room scheduling  
+Lab scheduling  
+Student guide  
+Support docs  
+Sample data  
+External references  
+Companion guides  
+325 ideas  
 
 
 
@@ -28,10 +28,10 @@ Companion Guides
 Home Page  
 Archives  
 Equipment  
-Edit GUI  
-Profiles  
+XML Editing Dashboard(s)  
+Staff profiles  
 Scheduling  
-Link to Demo  
+Link to demos  
 
 
 
