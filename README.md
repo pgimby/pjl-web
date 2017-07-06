@@ -46,6 +46,7 @@ Fluid Mechanics
 Statistical Mechanics  
 Quantum Mechanics  
 Relativity  
+Particle Physics  
 Math  
 Laboratory Skills  
 Computer Skills  
