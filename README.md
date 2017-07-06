@@ -53,7 +53,7 @@ Computer Skills
 
 
 ## **Topics**  
-###### Labs are identified with topics when the topic constitutes a significant focus of the lab
+###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is a necessary pre-requisite
 
 Electrostatics  
 Circuits  
@@ -76,5 +76,5 @@ Conservation Laws
 Magnetism  
 Interference  
 Polarization  
-
+Newton's Laws  
 
