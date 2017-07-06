@@ -80,9 +80,6 @@ $(document).on("click", "select", function(e) {
 $(document).on("mousedown", "option", function(e) {
     e.preventDefault();
     $(this).prop('selected', !$(this).prop('selected'));
-    filterResults(getCurrentFilter());
-	displayNumResults(countNumRecords());
-	applyRecordsMask(true)
     return false;
 });
 
