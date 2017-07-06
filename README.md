@@ -46,6 +46,7 @@ Statistical Mechanics
 Quantum Mechanics  
 Relativity  
 Math  
+Laboratory Skills  
 
 
 
@@ -65,10 +66,12 @@ Kinematics
 Collisions  
 Dynamics  
 Measurements  
-Work/Energy  
-Friction/Drag  
+Work and Energy  
+Friction and Drag  
 Momentum  
 Conservation Laws  
 Magnetism  
+Interference  
+Polarization  
 
 
