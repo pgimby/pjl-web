@@ -709,9 +709,9 @@ function equipmentSearchHandler(searchphrase) {  //handle the search request for
 
 function makePromisesBeginZip() {  //take URLs for currently displayed records, create promises, and zip for download upon resolution of all promises
 	var zip = new JSZip();
-	var files = ["/data/testfiles/3.pdf","/data/testfiles/4.pdf","/data/testfiles/5.pdf",
-	"/data/testfiles/6.pdf","/data/testfiles/1.txt","/data/testfiles/2.txt","/data/testfiles/3.txt",
-	"/data/testfiles/4.txt","/data/testfiles/5.txt","/data/testfiles/6.txt","/data/testfiles/7.txt",
+	var files = ["/data/testfiles/3.pdf","/data/testfiles/1.txt","/data/testfiles/4.pdf",
+	"/data/testfiles/3.txt","/data/testfiles/5.pdf","/data/testfiles/3.txt","/data/testfiles/6.pdf",
+	"/data/testfiles/2.txt","/data/testfiles/4.pdf","/data/testfiles/4.txt","/data/testfiles/4.pdf",
 	"/data/testfiles/8.txt","/data/testfiles/9.txt","/data/testfiles/10.txt","/data/testfiles/11.txt",
 	"/data/testfiles/12.txt","/data/testfiles/13.txt","/data/testfiles/14.txt","/data/testfiles/15.txt",
 	"/data/testfiles/1.pdf","/data/testfiles/2.pdf","/data/testfiles/3.pdf","/data/testfiles/4.pdf",
