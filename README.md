@@ -1,9 +1,9 @@
 # pjl-web
-Document dump for the PJL at UofC
+### Document dump for the PJL at UofC
 
 
 
-**To Do List**
+## **To Do List**
 
 Dashboard to edit XMLs  
 Populate equipment tags in lab XML (link equip to equip.xml)  
@@ -23,7 +23,7 @@ Companion guides
 
 
 
-**Pages to add**
+## **Pages to add**
 
 Home Page  
 Archives  
@@ -35,8 +35,8 @@ Link to demos
 
 
 
-**Disciplines**
-Labs are identified with disciplines when the discipline constitutes a significant focus of the lab
+## **Disciplines**  
+###### Labs are identified with disciplines when the discipline constitutes a significant focus of the lab
 
 Newtonian Mechanics  
 Electricity and Magnetism  
@@ -52,8 +52,8 @@ Computer Skills
 
 
 
-**Topics**
-Labs are identified with topics when the topic constitutes a significant focus of the lab
+## **Topics**  
+###### Labs are identified with topics when the topic constitutes a significant focus of the lab
 
 Electrostatics  
 Circuits  
