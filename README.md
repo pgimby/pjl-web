@@ -36,6 +36,7 @@ Link to demos
 
 
 **Disciplines**
+Labs are identified with disciplines when the discipline constitutes a significant focus of the lab
 
 Newtonian Mechanics  
 Electricity and Magnetism  
@@ -52,6 +53,7 @@ Computer Skills
 
 
 **Topics**
+Labs are identified with topics when the topic constitutes a significant focus of the lab
 
 Electrostatics  
 Circuits  
