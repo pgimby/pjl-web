@@ -69,7 +69,7 @@ $(document).on("click", "#clear-filters-button", function(e) {
 
 
 
-$(document).on("click", "select", function(e) {
+$(document).on("click", "select option", function(e) {
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
