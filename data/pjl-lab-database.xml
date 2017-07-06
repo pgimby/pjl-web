@@ -3,7 +3,7 @@
 <labs>
 <lab LABID="1101">
 	<names>
-		<name>Units</name>
+		<name>Planck's Constant with LEDs</name>
 	</names>
 	<disciplines>
 		<discipline>Mechanics</discipline>
@@ -11,7 +11,7 @@
 	</disciplines>
 	<courses>
 	<course>PHYS 355</course>
-	<course>PHYS 369</course>
+	<course>PHYS 497</course>
 	</courses>
 	<topics>
 		<topic>Unit Conversion</topic>
@@ -84,7 +84,7 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 		<doc type="equipment manual">location of pdf</doc>
 		<doc type="warranty">location of pdf</doc>
 		<doc type="experimental design">location of pdf</doc>
@@ -92,7 +92,7 @@
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Ideal Gas Law</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -100,8 +100,7 @@
 		<discipline>Statistical Mechanics</discipline>
 	</disciplines>
 	<courses>
-	<course>PHYS 325</course>
-	<course>PHYS 341</course>
+	<course>PHYS PHYS 497</course>
 	</courses>
 	<topics>
 		<topic>Statistics</topic>
@@ -130,7 +129,7 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 		<doc type="equipment manual">location of pdf</doc>
 		<doc type="warranty">location of pdf</doc>
 		<doc type="experimental design">location of pdf</doc>
@@ -138,7 +137,7 @@
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Polarization</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -146,8 +145,7 @@
 		<discipline>Statistical Mechanics</discipline>
 	</disciplines>
 	<courses>
-	<course>PHYS 325</course>
-	<course>PHYS 341</course>
+	<course>PHYS PHYS 497</course>
 	</courses>
 	<topics>
 		<topic>Statistics</topic>
@@ -176,7 +174,7 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 		<doc type="equipment manual">location of pdf</doc>
 		<doc type="warranty">location of pdf</doc>
 		<doc type="experimental design">location of pdf</doc>
@@ -184,7 +182,7 @@
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Biot-Savart Law</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -222,7 +220,7 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 		<doc type="equipment manual">location of pdf</doc>
 		<doc type="warranty">location of pdf</doc>
 		<doc type="experimental design">location of pdf</doc>
@@ -230,7 +228,7 @@
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Units</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -268,7 +266,92 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Quantum Entanglement</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS PHYS 497</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="additional notes">location of pdf</doc>
+	</supportDocs>
+</lab>
+<lab LABID="1102">
+	<names>
+		<name>Malus' Law</name>
+	</names>
+	<disciplines>
+		<discipline>Quantum Mechanics</discipline>
+		<discipline>Electronics</discipline>
+		<discipline>Statistical Mechanics</discipline>
+	</disciplines>
+	<courses>
+	<course>PHYS 227</course>
+	<course>PHYS 223</course>
+	</courses>
+	<topics>
+		<topic>Statistics</topic>
+		<topic>Thermionic Emission</topic>
+	</topics>
+	<versions>	
+		<version>
+			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
+			<semester>Spring</semester>
+			<year>2012</year>		
+		</version>
+		<version>
+			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
+			<semester>Winter</semester>
+			<year>2015</year>		
+		</version>
+		<version>
+			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
+			<semester>Spring</semester>
+			<year>2016</year>		
+		</version>
+	</versions>		
+	<equipment>
+		<item name="Anatek" number="2" />
+		<item name="Niquied Nitrogen" number="7" />
+	</equipment>
+	<type>Labatorial</type>
+	<supportDocs>
+		<doc type="additional notes">location of pdf</doc>
 	</supportDocs>
 </lab>
 <lab LABID="1102">
@@ -281,7 +364,7 @@
 		<discipline>Statistical Mechanics</discipline>
 	</disciplines>
 	<courses>
-	<course>PHYS 325</course>
+	<course>PHYS 223</course>
 	<course>PHYS 341</course>
 	</courses>
 	<topics>
@@ -311,12 +394,12 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 	</supportDocs>
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Spectroscopy</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -354,12 +437,12 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 	</supportDocs>
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Units</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -397,12 +480,12 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 	</supportDocs>
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Blackbody Radiation</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -440,12 +523,12 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 	</supportDocs>
 </lab>
 <lab LABID="1102">
 	<names>
-		<name>Electron Gas in Metals</name>
+		<name>Michelson Interferometry</name>
 	</names>
 	<disciplines>
 		<discipline>Quantum Mechanics</discipline>
@@ -483,93 +566,7 @@
 	</equipment>
 	<type>Labatorial</type>
 	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
-	</supportDocs>
-</lab>
-<lab LABID="1102">
-	<names>
-		<name>Electron Gas in Metals</name>
-	</names>
-	<disciplines>
-		<discipline>Quantum Mechanics</discipline>
-		<discipline>Electronics</discipline>
-		<discipline>Statistical Mechanics</discipline>
-	</disciplines>
-	<courses>
-	<course>PHYS 325</course>
-	<course>PHYS 341</course>
-	</courses>
-	<topics>
-		<topic>Statistics</topic>
-		<topic>Thermionic Emission</topic>
-	</topics>
-	<versions>	
-		<version>
-			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
-			<semester>Spring</semester>
-			<year>2012</year>		
-		</version>
-		<version>
-			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
-			<semester>Winter</semester>
-			<year>2015</year>		
-		</version>
-		<version>
-			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
-			<semester>Spring</semester>
-			<year>2016</year>		
-		</version>
-	</versions>		
-	<equipment>
-		<item name="Anatek" number="2" />
-		<item name="Niquied Nitrogen" number="7" />
-	</equipment>
-	<type>Labatorial</type>
-	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
-	</supportDocs>
-</lab>
-<lab LABID="1102">
-	<names>
-		<name>Electron Gas in Metals</name>
-	</names>
-	<disciplines>
-		<discipline>Quantum Mechanics</discipline>
-		<discipline>Electronics</discipline>
-		<discipline>Statistical Mechanics</discipline>
-	</disciplines>
-	<courses>
-	<course>PHYS 325</course>
-	<course>PHYS 341</course>
-	</courses>
-	<topics>
-		<topic>Statistics</topic>
-		<topic>Thermionic Emission</topic>
-	</topics>
-	<versions>	
-		<version>
-			<path>2015/physics211-221-SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</path>
-			<semester>Spring</semester>
-			<year>2012</year>		
-		</version>
-		<version>
-			<path>2015/physics211-221-FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</path>
-			<semester>Winter</semester>
-			<year>2015</year>		
-		</version>
-		<version>
-			<path>2016/physics211-221-FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</path>
-			<semester>Spring</semester>
-			<year>2016</year>		
-		</version>
-	</versions>		
-	<equipment>
-		<item name="Anatek" number="2" />
-		<item name="Niquied Nitrogen" number="7" />
-	</equipment>
-	<type>Labatorial</type>
-	<supportDocs>
-		<doc type="hugo-notes">location of pdf</doc>
+		<doc type="additional notes">location of pdf</doc>
 	</supportDocs>
 	
 </lab>
