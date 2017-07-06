@@ -47,6 +47,7 @@ Quantum Mechanics
 Relativity  
 Math  
 Laboratory Skills  
+Computer Skills  
 
 
 
