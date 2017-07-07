@@ -175,7 +175,7 @@ $(document).on("click", "#show-all-button", function(e) {
 
 
 function populateRecordList(docXML) {  //read XML and append all lab records to DOM; update displayed records counter - not type safe
-	var labs = docXML.getElementsByTagName("lab");
+	var labs = docXML.getElementsByTagName("Lab");
 	for (var i = labs.length - 1; i >= 0; i--) {
 		createRecordSnapshots(labs[i]);
 	}
@@ -185,11 +185,11 @@ function populateRecordList(docXML) {  //read XML and append all lab records to 
 
 
 function populateFilters(docXML) {  //read XML and populate the HTML select boxes with available filter options - not type safe
-	var types = ["course", "year", "semester", "discipline"];
+	var types = ["Course", "Year", "Semester", "Discipline"];
 	for (var i = types.length - 1; i >= 0; i--) {
 		var validlist = getValidFilterOptions(docXML, types[i]);
 		for (var j = validlist.length - 1; j >= 0; j--) {
-			d3.select("#" + types[i] + "-select")
+			d3.select("#" + types[i].toLowerCase() + "-select")
 			  .append("option")
 			  .attr("value", validlist[j])
 			  .html(validlist[j]);
@@ -209,7 +209,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "./img/download-icon.svg");  //alternate for mobile display
 		var courses = snapshot.append("p").classed("courses", true).html(getCourseList(lab).join(", "));
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
-		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("name")[0].childNodes[0].nodeValue);
+		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 		var dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
 		var dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", "./img/dropdown-arrow.png");
 
@@ -860,7 +860,7 @@ function getCurrentFilter() {  //return a filter object of currently activated f
 
 
 function getLabId(lab) {  //return lab ID as a string for an XML "lab" node - not type safe
-	return lab.getAttribute("LABID");
+	return lab.getAttribute("LabId");
 }
 
 
@@ -886,7 +886,7 @@ function mayISeeYourSillyWalk() {  //I'd like to apply for a government grant to
 
 function getLabTopicsList(lab) {  //return an array of topics (strings) for an XML "lab" node - not type safe
 	var list = [];
-	var topics = lab.getElementsByTagName("topic");
+	var topics = lab.getElementsByTagName("Topic");
 	for (var i = topics.length - 1; i >= 0; i--) {
 		list.push(topics[i].childNodes[0].nodeValue);
 	}
@@ -897,7 +897,7 @@ function getLabTopicsList(lab) {  //return an array of topics (strings) for an X
 
 function getLabDisciplinesList(lab) {  //return an array of disciplines (strings) for an XML "lab" node - not type safe
 	var list = [];
-	var disciplines = lab.getElementsByTagName("discipline");
+	var disciplines = lab.getElementsByTagName("Discipline");
 	for (var i = disciplines.length - 1; i >= 0; i--) {
 		list.push(disciplines[i].childNodes[0].nodeValue);
 	}
@@ -908,10 +908,10 @@ function getLabDisciplinesList(lab) {  //return an array of disciplines (strings
 
 function getLabEquipmentList(lab) {  //return an array of equipment (strings) for an XML "lab" node - not type safe
 	var list = [];
-	var equipment = lab.getElementsByTagName("item");
+	var equipment = lab.getElementsByTagName("Item");
 	// console.log(equipment)
 	for (var i = equipment.length - 1; i >= 0; i--) {
-		list.push(equipment[i].getAttribute("name"));
+		list.push(equipment[i].childNodes[0].nodeValue);
 	}
 	return list;
 }
@@ -920,7 +920,7 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 
 function getCourseList(lab) {  //return an array of courses (strings) for an XML "lab" node - not type safe
 	var list = [];
-	var courses = lab.getElementsByTagName("course");
+	var courses = lab.getElementsByTagName("Course");
 	for (var i = courses.length - 1; i >= 0; i--) {
 		list.push(courses[i].childNodes[0].nodeValue);
 	}
@@ -931,7 +931,7 @@ function getCourseList(lab) {  //return an array of courses (strings) for an XML
 
 function getExtraLabDocs(lab) {  //return an array of extra doc objects for an XML "lab" node - not type safe
 	var list = [];
-	var docs = lab.getElementsByTagName("doc");
+	var docs = lab.getElementsByTagName("Doc");
 	for (var i = docs.length - 1; i >= 0; i--) {
 		list.push({name: docs[i].getAttribute("type"), url: docs[i].childNodes[0].nodeValue});
 	}
@@ -963,11 +963,11 @@ function iCameHereForAnArgument() {  //Oh, I'm sorry, this is abuse...
 
 function getVersionList(lab) {  //return an array of version objects for a given XML "lab" node
 	var versionlist = [];
-	var list = lab.getElementsByTagName("version");
+	var list = lab.getElementsByTagName("Version");
 	for (var i = list.length - 1; i >= 0; i--) {
-		versionlist.push({path: list[i].getElementsByTagName("path")[0].childNodes[0].nodeValue,
-						  semester: list[i].getElementsByTagName("semester")[0].childNodes[0].nodeValue,
-						  year: list[i].getElementsByTagName("year")[0].childNodes[0].nodeValue});
+		versionlist.push({path: list[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue,
+						  semester: list[i].getElementsByTagName("Semester")[0].childNodes[0].nodeValue,
+						  year: list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue});
 	}
 	return versionlist;
 }
