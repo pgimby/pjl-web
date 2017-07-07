@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="">
     <Names>
       <Name>Magnetic Force between Current-Carrying Wires</Name>
@@ -4190,7 +4190,7 @@
   </Lab>
   <Lab labId="">
     <Names>
-      <Name>Linear Polorization</Name>
+      <Name>Linear Polarization</Name>
     </Names>
     <Disciplines /><Courses><Course>PHYS 323</Course></Courses><Topics /><Versions>
       <Version>

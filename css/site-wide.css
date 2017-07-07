@@ -1,0 +1,321 @@
+
+
+/*Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code*/
+
+/*******************************************************************/
+/*              GENERAL SITE-WIDE STYLES                           */
+/*******************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+	line-height: 1.3em;
+	margin: 2px 10px;
+	padding: 2px;
+	font-size: .9em;
+	font-family: 'Proxima Nova', sans-serif;
+	text-decoration: none;
+}
+
+a {
+	color: #454565;
+}
+
+	a:hover {
+		transition: all .3s ease;
+		color: #0000EE;
+	}
+
+h4 {
+	font-weight: 500;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+	min-width: 300px;
+}
+
+
+
+
+
+/*******************************************************************/
+/*                 HEADER                                          */
+/*******************************************************************/
+
+header {
+	min-height: 60px;
+	background: linear-gradient(#bbbbbb, #939393);
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	margin-bottom: 3px;
+}
+
+#header-baseline {
+	height: 30px;
+	width: 100%;
+	background-color: #333333;
+	position: relative;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+
+
+
+
+
+/*******************************************************************/
+/*                    MAIN PAGE STYLES                             */
+/*******************************************************************/
+
+
+
+
+.hero {
+	width: 100%;
+	min-height: 240px;
+}
+
+
+
+/*TITLE*/
+
+.title-flex {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+}
+
+#title {
+	font-weight: 600;
+	font-size: 2.3em;
+}
+
+#subtitle {
+	font-weight: 400;
+	font-size: 1.3em;
+	letter-spacing: 5px;
+}
+
+#page-title {
+	font-weight: 500;
+	font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************/
+/*                 FOOTER                                          */
+/*******************************************************************/
+
+footer {
+	min-height: 200px;
+	background: linear-gradient(#939393, #939393, #939393, #bbbbbb);
+	box-shadow: 0 0 7px 1px rgba(0,0,0,.6);
+}
+
+	footer .wrap {
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 20px 0;
+	}
+
+	footer a,
+	footer p {
+		text-decoration: none;
+		color: #555555;
+		padding: 0;
+		margin: 0;
+	}
+
+	footer a:hover {
+		color: #FFFFFF;
+	}
+
+	footer h2,
+	footer h3,
+	footer h4 {
+	 	padding: 0;
+	 	margin: 0 0 2px 0;
+	}
+
+#footer-baseline {
+	height: 40px;
+	width: 100%;
+	background-color: #333333;
+	position: relative;
+	bottom: -100%;
+	border-top: 1px solid #DDDDDD;
+}
+
+#footer-left {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 10px;
+}
+
+#footer-mid {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 4;
+	justify-content: left;
+}
+
+#footer-right {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 10px;
+}
+
+.staff-member {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}
+
+.staff-details {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.staff-small-detail {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	margin-top: 4px;
+}
+
+	.staff-small-detail:nth-child(3) {
+		margin-top: 14px;
+	}
+
+.contact-icon {
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+}
+
+.staff-mugshot {
+	height: 116px;
+	width: 116px;
+	margin-right: 12px;
+	border-radius: 4px;
+	border: 1px solid #252525;
+}
+
+	.staff-mugshot:hover {
+		opacity: .85;
+	}
+
+
+
+
+
+
+
+
+
+/*******************************************************************/
+/*                 STYLING FOR MODAL CONTAINERS                    */
+/*******************************************************************/
+
+
+
+#zip-progress-bar {
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	bottom: -100px;
+	background-color: rgba(250,250,250,.8);
+	display: none;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 4px 4px 0 0;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,.7) inset, 0 0 32px 2px rgba(0,0,0,.3);
+}
+
+#zip-progress-bar progress {
+	position: relative;
+	width: 360px;
+	height: 20px;
+	left: 20px;
+	bottom: -50px;
+	padding: 0px;
+	border: none;
+}
+
+#zip-progress-bar #file-prep {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	color: #555;
+}
+
+#zip-progress-bar progress {
+	color: #009900;
+}
+
+#zip-progress-bar progress::-webkit-progress-bar {
+	background-color: #009900;
+}
+
+#zip-progress-bar progress::-webkit-progress-value {
+	background: #009900;
+}
+
+#zip-progress-bar progress::-moz-progress-bar {
+	background: #009900;
+}

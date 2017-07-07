@@ -1,0 +1,205 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Physics Junior Laboratory</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/d3.min.js"></script>
+    <script src="../js/jszip.min.js"></script>
+    <script src="../js/FileSaver.js"></script>
+    <script src="../js/argument.js"></script>
+    <script src="../js/pjl.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+
+    <meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/site-wide.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+  </head>
+
+<!-- PJL document dump -->
+<!-- Created by P. Gimby and W. Kyle -->
+<!-- June 2017, University of Calgary -->
+<!-- Despite the lack of rubber duckies -->
+<!-- Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code -->
+
+
+
+
+
+
+
+
+  <body onload=initPage()>
+
+
+
+
+    <!-- HEADER FOR STYLE - MAYBE THROW SOME NAVIGATION IN HERE EVENTUALLY -->
+
+    <header>
+      <div id="header-baseline">
+
+      </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- MAIN PAGE CONTENT -->
+
+
+    <main>
+
+      <div class="wrap">
+
+
+        <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
+
+        <div class="hero">
+          <!-- <a href="http://www.ucalgary.ca/science/" target="_blank" id="logo-link"><img id="logo" src="./img/uc-logo.png"/></a> -->
+          <div class="title-flex">
+            <h1 id="title">Department of Physics and Astronomy</h1>
+            <h1 id="subtitle">Physics Junior Laboratory Document Repository</h1>
+            <h1 id="page-title">Database Dashboard</h1>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- dashboard tabs -->
+
+        <input id="lab-dashboard-tab" type="radio" name="tabs" checked>
+  		<label for="lab-dashboard-tab">Lab Database</label>
+
+  		<input id="equipment-dashboard-tab" type="radio" name="tabs">
+  		<label for="equipment-dashboard-tab">Equipment Database</label>
+
+
+
+
+  		<!-- dashboard tab content -->
+
+  		<section id="lab-dashboard-content">
+
+  		</section>
+
+
+  		<section id="equipment-dashboard-content">
+
+  		</section>
+
+
+
+
+
+
+      </div>  <!-- close main wrap -->
+
+    </main>
+
+
+
+
+
+
+
+    <!-- FOOTER CONTENT -->
+
+
+    <footer>
+
+
+      <div class="wrap">
+
+        <div id="footer-left">
+          <p>University of Calgary</p>
+          <p>2500 University Dr. NW</p>
+          <p>Calgary, Alberta, Canada</p>
+          <p>T2N 1N4</p>
+          <p style="visibility: hidden">UofC's copyright</p>
+          <a href="http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf"> privacy policy</a>
+        </div> <!-- end footer left -->
+
+
+        <div id="footer-mid">
+
+          <!-- Staff member - Peter -->
+          <div class="staff-member">
+            <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740" target="_blank"><img class="staff-mugshot" src="../img/pgimby-crop.png"/></a>
+            <div class="staff-details">
+              <h3 class="staff-name">Peter Gimby</h3>
+              <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
+              <div class="staff-phone staff-small-detail">
+                <img class="contact-icon" src="../img/phone-icon.png"/>
+                <p>+1 (403) 220-5403</p>
+              </div>
+              <div class="staff-office staff-small-detail">
+                <img class="contact-icon" src="../img/location-icon.png"/>
+                <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=68" target="_blank">Science Theatres 068</a>
+              </div>
+              <div class="staff-email staff-small-detail">
+                <img class="contact-icon" src="../img/email-icon.png"/>
+                <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Staff member - Wes -->
+          <div class="staff-member">
+            <a href="http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst" target="_blank"><img class="staff-mugshot" src="../img/wernst-crop.png"/></a>
+            <div class="staff-details">
+              <h3 class="staff-name">Wesley Ernst</h3>
+              <h4 class="staff-title">Laboratory Technician</h4>
+              <div class="staff-phone staff-small-detail">
+                <img class="contact-icon" src="../img/phone-icon.png"/>
+                <p>+1 (403) 220-7401</p>
+              </div>
+              <div class="staff-office staff-small-detail">
+                <img class="contact-icon" src="../img/location-icon.png"/>
+                <a href="http://ucalgary.ca/map/interactive/?Building=ST&Room=68" target="_blank">Science Theatres 068</a>
+              </div>
+              <div class="staff-email staff-small-detail">
+                <img class="contact-icon" src="../img/email-icon.png"/>
+                <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
+              </div>
+            </div>
+          </div>
+
+        </div>  <!-- end footer mid -->
+
+
+
+        <div id="footer-right">
+          <h2>Resources</h2>
+          <a href="http://pjl.ucalgary.ca/courses/lab-schedules/schedule-WI2017.pdf" target="_blank">Laboratory Schedule</a>
+          <a href="http://pjl.ucalgary.ca/courses/lab-schedules/rooms-WI2017.pdf" target="_blank">Room Assignments</a>
+          <a href="http://pjl.ucalgary.ca/reference.html" target="_blank">References</a>
+          <a href="http://www.phas.ucalgary.ca/teaching_learning/demonstrations" target="_blank">Demonstrations</a>
+          <a href="http://pjl.ucalgary.ca/staff-resources/staff.html" target="_blank">Staff Resources</a>
+        </div>  <!-- end footer right -->
+
+      </div>  <!-- end footer wrap -->
+
+      <div id="footer-baseline"></div>
+
+      <div id=zip-progress-bar>
+        <h2 id="file-prep">Preparing files...</h2>
+        <progress value="0" max="1"></progress>
+
+      </div>
+
+
+    </footer>
+
+  </body>
+
+</html>

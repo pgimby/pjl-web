@@ -6,7 +6,7 @@
 
 var mainxmlpath = "/data/archives-mod.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
+var siteroot = "";//"/pjl-web";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -439,8 +439,9 @@ function setExpandedButtonTruth(truthy) {  //sets "expand-all-button" epanded=tr
 function applyRecordsMask(truthy) {
 	var masksize = 20;
 	var records = getCurrentRecords();
+	unmaskAll(records);
 	if (records.length > masksize && Boolean(truthy)) {
-		for (var i = records.length - 1 - masksize; i >= 0; i--) {
+		for (var i = records.length - 1; i >= masksize; i--) {
 			records[i].addClass("masked");
 		}
 		$("#num-unmasked-results").text(String(masksize));
@@ -451,6 +452,14 @@ function applyRecordsMask(truthy) {
 		}
 		$("#num-unmasked-results").text(String(records.length));
 		$("#show-all-button").css("visibility", "hidden");
+	}
+}
+
+
+
+function unmaskAll(records) {
+	for (var i = records.length - 1; i >= 0; i--) {
+		records[i].removeClass("masked");
 	}
 }
 
@@ -1057,6 +1066,22 @@ function flash(jQueryDOMSelection) {
 	jQueryDOMSelection.css("opacity", ".8");
 	jQueryDOMSelection.animate({opacity: 1}, 600);
 }
+
+
+
+
+
+
+
+
+
+
+//*******************************************************************************************
+//   DASHBOARDS
+//*******************************************************************************************
+
+
+
 
 
 
