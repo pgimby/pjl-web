@@ -47,6 +47,7 @@ Statistical Mechanics
 Quantum Mechanics  
 Relativity  
 Particle Physics  
+Nuclear Physics  
 Math  
 Laboratory Skills  
 Computer Skills  
@@ -54,7 +55,7 @@ Computer Skills
 
 
 ## **Topics**  
-###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is a necessary pre-requisite
+###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is an explicitly necessary pre-requisite
 
 Electrostatics  
 Circuits  
