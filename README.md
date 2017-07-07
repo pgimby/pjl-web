@@ -5,6 +5,7 @@
 
 ## **To Do List**
 
+XML validation with regex  
 Dashboard to edit XMLs  
 Populate equipment tags in lab XML (link equip to equip.xml)  
 Landing page for PJL  
