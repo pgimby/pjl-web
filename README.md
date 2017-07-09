@@ -25,13 +25,22 @@ Companion guides
 
 Landing page  
 Repository (alpha finished)  
-Equipment page template with  
+Equipment page template with URL string queries  
 Database editing dashboard(s) (in progress)  
 Staff profiles  
 Room scheduling interactive map (in progress)  
 Demos repository (not confirmed)  
 403, 404, 500, 503 HTTP error pages  
 
+
+# Site Map
+
+![sitemap](https://github.com/wkyle/pjl-web/tree/master/dev/pagemap.png)
+
+
+# Source Map
+
+![sourcemap](https://github.com/wkyle/pjl-web/tree/master/dev/sourcemap.png)
 
 
 # Lab Meta Data
