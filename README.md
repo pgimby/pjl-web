@@ -5,16 +5,13 @@
 
 ## **To Do List**
 
-XML validation with regex  
-Dashboard to edit XMLs  
-Populate equipment tags in lab XML (link equip to equip.xml)  
-Landing page for PJL  
-Populate topics / diciplines / ID#s (in progress)  
-401/404 pages  
+XML validation  
+PHP to handle database edit POSTS  
+Refine site-wide/page-specific scripts and stylesheets and implement page-specific JS namespaces (dashboard done - repo not done)  
+Dashboard to edit XMLs (in progress)  
+Populate equipment tags in lab XML (first pass done - needs refinement)  
+Populate topics / disciplines / ID#s (in progress)  
 Add forgotten labs  
-Staff profiles  
-Room scheduling  
-Lab scheduling  
 Student guide  
 Support docs  
 Sample data  
@@ -26,14 +23,18 @@ Companion guides
 
 ## **Pages to add**
 
-Home Page  
-Archives  
-Equipment  
-XML Editing Dashboard(s)  
+Landing page  
+Repository (alpha finished)  
+Equipment page template with  
+Database editing dashboard(s) (in progress)  
 Staff profiles  
-Scheduling  
-Link to demos  
+Room scheduling interactive map (in progress)  
+Demos repository (not confirmed)  
+403, 404, 500, 503 HTTP error pages  
 
+
+
+# Lab Meta Data
 
 
 ## **Disciplines**  

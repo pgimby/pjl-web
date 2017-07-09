@@ -1,6 +1,5 @@
 
 
-
 section {
 	display: none;
 	padding: 20px 0 0;
@@ -11,7 +10,7 @@ section {
 	margin-bottom: 20px
 }
 
-input {
+input[id*="dashboard"] {
   	display: none;
 }
 
@@ -26,13 +25,9 @@ label {
 	font-family: 'Proxima Nova', sans-serif;
 }
 
-label:before {
-  	font-weight: 500;
+.text-pre-icon {
   	margin-right: 10px;
 }
-
-label[for*='lab-dashboard']:before { content: '\f044'; }
-label[for*='equipment-dashboard']:before { content: '\f044'; }
 
 label:hover {
 	color: #888;
@@ -49,4 +44,15 @@ input:checked + label {
 #lab-dashboard-tab:checked ~ #lab-dashboard-content,
 #equipment-dashboard-tab:checked ~ #equipment-dashboard-content {
   	display: block;
+}
+
+
+#lab-dashboard-content {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+#lab-selection {
+	height: 100px;
 }

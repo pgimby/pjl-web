@@ -9,12 +9,14 @@
     <script src="../js/FileSaver.js"></script>
     <script src="../js/argument.js"></script>
     <script src="../js/pjl.js"></script>
-    <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
+    <script src="../js/pjl-dashboard.js"></script>
+    <!-- <script src="https://use.fontawesome.com/59ed6512fd.js"></script> -->
 
 
     <meta charset="utf-8">
   	<meta http-equiv="x-ua-compatible" content="ie=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<!-- <link rel="stylesheet" href="../css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="../css/site-wide.css">
     <link rel="stylesheet" href="../css/dashboard.css">
   </head>
@@ -32,7 +34,7 @@
 
 
 
-  <body onload=initPage()>
+  <body>
 
 
 
@@ -77,10 +79,10 @@
         <!-- dashboard tabs -->
 
         <input id="lab-dashboard-tab" type="radio" name="tabs" checked>
-  		<label for="lab-dashboard-tab">Lab Database</label>
+  		<label for="lab-dashboard-tab"><i class="fa fa-list-alt text-pre-icon"></i>Lab Database</label>
 
   		<input id="equipment-dashboard-tab" type="radio" name="tabs">
-  		<label for="equipment-dashboard-tab">Equipment Database</label>
+  		<label for="equipment-dashboard-tab"><i class="fa fa-list-alt text-pre-icon"></i>Equipment Database</label>
 
 
 
@@ -89,7 +91,12 @@
 
   		<section id="lab-dashboard-content">
   			<div id="lab-selection">
-
+  				<div class="search-container">
+			        <form class="search-box">
+			          <input type="text" id="search-bar" placeholder="Lab name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lab name...'">
+			          <a><img class="search-icon" src="../img/search-icon.png"></a>
+			        </form>
+		        </div>
   			</div>
 
 

@@ -251,34 +251,42 @@ function filterResults(filter) {  //given a filter object, filter displayed reco
 		var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
 
 		if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4))       || filter["year-filter"].length == 0) {
-			lab.css("display", "-webkit-flex");
-			lab.css("display", "flex");
+			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			// lab.css("display", "-webkit-flex");
+			// lab.css("display", "flex");
 		} else {
-			lab.css("display", "none");
+			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+			// lab.css("display", "none");
 			numrecords--;
 			continue;
 		}
 		if (doArraysOverlap(courses, filter["course-filter"])                                    || filter["course-filter"].length == 0) {
-			lab.css("display", "-webkit-flex");
-			lab.css("display", "flex");
+			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			// lab.css("display", "-webkit-flex");
+			// lab.css("display", "flex");
 		} else {
-			lab.css("display", "none");
+			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+			// lab.css("display", "none");
 			numrecords--;
 			continue;
 		}
 		if (filter["semester-filter"].includes(lab.find(".version-semester").text().slice(0,-5)) || filter["semester-filter"].length == 0) {
-			lab.css("display", "-webkit-flex");
-			lab.css("display", "flex");
+			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			// lab.css("display", "-webkit-flex");
+			// lab.css("display", "flex");
 		} else {
-			lab.css("display", "none");
+			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+			// lab.css("display", "none");
 			numrecords--;
 			continue;
 		}
 		if (doArraysOverlap(disciplines, filter["discipline-filter"])                            || filter["discipline-filter"].length == 0) {
-			lab.css("display", "-webkit-flex");
-			lab.css("display", "flex");
+			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			// lab.css("display", "-webkit-flex");
+			// lab.css("display", "flex");
 		} else {
-			lab.css("display", "none");
+			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+			// lab.css("display", "none");
 			numrecords--;
 			continue;
 		}
@@ -413,18 +421,29 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 	var button = $("#expand-all-button");
 	if (Boolean(truthy)) {
 		var extendeddatarecords = $(".lab-record-detailed-flex");
-		extendeddatarecords.slideDown();
+		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
+			if ($(extendeddatarecords[i]).parent().hasClass("record-rendered")) {
+				$(extendeddatarecords[i]).slideDown()
+			}
+		}
+		// extendeddatarecords.slideDown();
 		setExpandedButtonTruth(true)
 	} else {
 		var extendeddatarecords = $(".lab-record-detailed-flex");
-		extendeddatarecords.slideUp();
+		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
+			if ($(extendeddatarecords[i]).parent().hasClass("record-rendered")) {
+				$(extendeddatarecords[i]).slideUp()
+			}
+		}
+		// var extendeddatarecords = $(".lab-record-detailed-flex");
+		// extendeddatarecords.slideUp();
 		setExpandedButtonTruth(false)
 	}
 }
 
 
 
-function setExpandedButtonTruth(truthy) {  //sets "expand-all-button" epanded=truthy - type safe
+function setExpandedButtonTruth(truthy) {  //sets "expand-all-button" expanded=truthy - type safe
 	var button = $("#expand-all-button");
 	button.attr("expanded", String(Boolean(truthy)));
 	if (Boolean(truthy)) {
@@ -809,8 +828,8 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 function loadXML() {  //load the XML document holding all the lab records (see global var for XML URL)
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
-    	if (this.readyState == 4 && this.status == 200) {
-            docXML = this.responseXML;
+    	if (xhttp.readyState == 4 && xhttp.status == 200) {
+            docXML = xhttp.responseXML;
             populateRecordList(docXML);
             populateFilters(docXML);
             applyRecordsMask(true);
@@ -826,7 +845,7 @@ function getCurrentRecords() {  //returns currently displayed lab records as arr
 	var list = [];
 	var lablist = $(".lab-record-flex");
 	for (var i = lablist.length - 1; i >= 0; i--) {
-		if($(lablist[i]).css("display") != "none") {
+		if($(lablist[i]).hasClass("record-rendered")) {
 			list.push($(lablist[i]));
 		}
 	}
@@ -1066,20 +1085,6 @@ function flash(jQueryDOMSelection) {
 	jQueryDOMSelection.css("opacity", ".8");
 	jQueryDOMSelection.animate({opacity: 1}, 600);
 }
-
-
-
-
-
-
-
-
-
-
-//*******************************************************************************************
-//   DASHBOARDS
-//*******************************************************************************************
-
 
 
 
