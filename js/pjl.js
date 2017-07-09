@@ -202,7 +202,7 @@ function populateFilters(docXML) {  //read XML and populate the HTML select boxe
 function createRecordSnapshots(lab) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
 	var versionlist = getVersionList(lab);
 	for (var i = versionlist.length - 1; i >= 0; i--) {
-		var detailsbox = d3.select("#lab-list-box").append("div").classed("lab-record-flex", true);
+		var detailsbox = d3.select("#lab-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
 
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
 		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path).attr("target", "_blank");

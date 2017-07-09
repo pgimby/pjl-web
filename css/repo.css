@@ -368,6 +368,10 @@ select {
 		font-weight: 600;
 	}
 
+	#records-header #sort-name {
+		flex: 2;
+	}
+
 	#records-header span:hover {
 		color: #FFFFFF;
 		cursor: pointer;
@@ -444,6 +448,10 @@ select {
 
 	.lab-record-simple-flex p {
 	    flex: 1;
+	}
+
+	.lab-record-simple-flex .lab-title {
+		flex: 2;
 	}
 
 .lab-details-drop-icon-flex {
