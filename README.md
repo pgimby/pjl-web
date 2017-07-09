@@ -35,7 +35,7 @@ Demos repository (not confirmed)
 
 # Site Map
 
-![sitemap](https://github.com/wkyle/pjl-web/tree/master/dev/pagemap.png)
+![sitemap](/dev/pagemap.png)
 
 
 # Source Map
