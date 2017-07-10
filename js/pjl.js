@@ -4,9 +4,9 @@
 //   GLOBALS
 //*******************************************************************************************
 
-var mainxmlpath = "/data/labDB.xml";
+var mainxmlpath = "/data/labDB.xml.0";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
+var siteroot = "";//"/pjl-web";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
