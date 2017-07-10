@@ -604,11 +604,53 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 		// lablist[i].css("display", "-webkit-flex");
 		// lablist[i].css("display", "flex");
 		var similarity = compareQueryWithLabRecord(querybigrams, lablist[i], selector);
-		if (similarity < minsimilarity) {
+		if (similarity < minsimilarity && !queryLiteralInLabRecord(query, lablist[i], selector)) {
 			lablist[i].removeClass("record-rendered").addClass("record-not-rendered");
 			// lablist[i].css("display", "none");
 		}
 	}
+}
+
+
+
+function queryLiteralInLabRecord(query, lab, selector) {
+	var courses = lab.find(".courses").text().toLowerCase();
+	var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).toLowerCase();
+	var topics = lab.find(".lab-data-topics").text().slice(8,).toLowerCase();
+	var equipment = lab.find(".lab-data-equipment").text().slice(11,).toLowerCase();
+	var semester = lab.find(".version-semester").text().split(" ")[0].toLowerCase();
+	var year = lab.find(".version-semester").text().split(" ")[1].toLowerCase();
+	var labtitle = lab.find(".lab-title").text().toLowerCase();
+	switch (selector) {
+		case "all":
+		console.log(courses.includes(query) || disciplines.includes(query) || topics.includes(query) || equipment.includes(query) || semester.includes(query) || year.includes(query) || labtitle.includes(query))
+			return courses.includes(query) || disciplines.includes(query) || topics.includes(query) || equipment.includes(query) || semester.includes(query) || year.includes(query) || labtitle.includes(query);
+			break;
+		case "course":
+			return courses.includes(query);
+			break;
+		case "lab":
+			console.log(labtitle.includes(query));
+			return labtitle.includes(query);
+			break;
+		case "year":
+			return year.includes(query)
+			break;
+		case "semester":
+			return semester.includes(query)
+			break;
+		case "topic":
+			return topics.includes(query)
+			break;
+		case "discipline":
+			return discipline.includes(query)
+			break;
+		case "equipment":
+			return equipment.includes(query)
+			break;
+	}
+
+
 }
 
 
