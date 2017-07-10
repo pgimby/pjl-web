@@ -600,11 +600,13 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 	var querybigrams = makeBigramList(query);
 	var lablist = getAllRecords();
 	for (var i = lablist.length - 1; i >= 0; i--) {
-		lablist[i].css("display", "-webkit-flex");
-		lablist[i].css("display", "flex");
+		lablist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
+		// lablist[i].css("display", "-webkit-flex");
+		// lablist[i].css("display", "flex");
 		var similarity = compareQueryWithLabRecord(querybigrams, lablist[i], selector);
 		if (similarity < minsimilarity) {
-			lablist[i].css("display", "none");
+			lablist[i].removeClass("record-rendered").addClass("record-not-rendered");
+			// lablist[i].css("display", "none");
 		}
 	}
 }
