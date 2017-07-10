@@ -1093,7 +1093,7 @@ function getValidFilterOptions(docXML, type) {  //return the set of values avail
 	    var value = nodelist[i].childNodes[0].nodeValue;
 	    valueslist.push(value);
     }
-    return Array.from(new Set(valueslist));
+    return Array.from(new Set(valueslist)).sort();
 }
 
 
