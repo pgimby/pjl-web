@@ -245,6 +245,7 @@ $(document).on("click", "#expand-all-button", function(e) {
 $(document).on("click", "#show-all-button", function(e) {
 	$(e.target).css("visibility", "hidden");
 	applyRecordsMask(false);
+	falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester"), $("#sort-name")]);
 });
 
 
