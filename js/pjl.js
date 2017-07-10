@@ -4,7 +4,7 @@
 //   GLOBALS
 //*******************************************************************************************
 
-var mainxmlpath = "/data/labDB.xml.0";
+var mainxmlpath = "/data/labDB-revert.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
 var siteroot = "/pjl-web";
 
