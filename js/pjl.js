@@ -1152,8 +1152,8 @@ function compareLabsByYear(a, b) {  //comparison function for Array.prototype.so
 
 
 function compareLabsByName(a, b) {  //comparison function for Array.prototype.sort on lab name of jQuery ".lab-record-flex" selection - not type safe
-	var a = a.find(".lab-title").text();
-	var b = b.find(".lab-title").text();
+	var a = a.find(".lab-title").text().toLowerCase();
+	var b = b.find(".lab-title").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}
