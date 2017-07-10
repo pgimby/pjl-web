@@ -245,6 +245,7 @@ $(document).on("click", "#expand-all-button", function(e) {
 $(document).on("click", "#show-all-button", function(e) {
 	$(e.target).css("visibility", "hidden");
 	applyRecordsMask(false);
+	falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester"), $("#sort-name")]);
 });
 
 
@@ -599,11 +600,13 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 	var querybigrams = makeBigramList(query);
 	var lablist = getAllRecords();
 	for (var i = lablist.length - 1; i >= 0; i--) {
-		lablist[i].css("display", "-webkit-flex");
-		lablist[i].css("display", "flex");
+		lablist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
+		// lablist[i].css("display", "-webkit-flex");
+		// lablist[i].css("display", "flex");
 		var similarity = compareQueryWithLabRecord(querybigrams, lablist[i], selector);
 		if (similarity < minsimilarity) {
-			lablist[i].css("display", "none");
+			lablist[i].removeClass("record-rendered").addClass("record-not-rendered");
+			// lablist[i].css("display", "none");
 		}
 	}
 }
@@ -1152,8 +1155,8 @@ function compareLabsByYear(a, b) {  //comparison function for Array.prototype.so
 
 
 function compareLabsByName(a, b) {  //comparison function for Array.prototype.sort on lab name of jQuery ".lab-record-flex" selection - not type safe
-	var a = a.find(".lab-title").text();
-	var b = b.find(".lab-title").text();
+	var a = a.find(".lab-title").text().toLowerCase();
+	var b = b.find(".lab-title").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}
