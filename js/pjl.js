@@ -643,7 +643,7 @@ function queryLiteralInLabRecord(query, lab, selector) {
 			return topics.includes(query)
 			break;
 		case "discipline":
-			return discipline.includes(query)
+			return disciplines.includes(query)
 			break;
 		case "equipment":
 			return equipment.includes(query)
