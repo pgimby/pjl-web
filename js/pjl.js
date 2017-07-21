@@ -27,86 +27,6 @@ var siteroot = "/pjl-web";
 
 
 
-var LabRepository = {
-	mainxmlpath: "/data/labDB.xml",
-
-
-	zipoutputfilename: "PJL-lab-docs.zip",
-
-
-	siteroot: "/pjl-web",
-
-
-	docXML: null,
-
-
-	initPage: function() {  //initialize the page
-		LabRepository.loadXML();
-		$("#search-bar").val("");
-	},
-
-
-	populateRecordList: function(docXML) {  //read XML and append all lab records to DOM; update displayed records counter - not type safe
-		var labs = LabRepository.docXML.getElementsByTagName("Lab");
-		for (var i = labs.length - 1; i >= 0; i--) {
-			LabRepository.createRecordSnapshots(labs[i]);
-		}
-		LabRepository.displayNumResults(LabRepository.countNumRecords());
-	},
-
-
-	populateFilters: function(docXML) {  //read XML and populate the HTML select boxes with available filter options - not type safe
-		var types = ["Course", "Year", "Semester", "Discipline"];
-		for (var i = types.length - 1; i >= 0; i--) {
-			var validlist = getValidFilterOptions(docXML, types[i]);
-			for (var j = validlist.length - 1; j >= 0; j--) {
-				d3.select("#" + types[i].toLowerCase() + "-select")
-				  .append("option")
-				  .attr("value", validlist[j])
-				  .html(validlist[j]);
-			}
-		}
-	},
-
-
-
-	createRecordSnapshots: function(lab) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
-		var versionlist = getVersionList(lab);
-		for (var i = versionlist.length - 1; i >= 0; i--) {
-			var detailsbox = d3.select("#lab-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
-
-			var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
-			var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path).attr("target", "_blank");
-			snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "./img/download-icon.svg");  //alternate for mobile display
-			var courses = snapshot.append("p").classed("courses", true).html(getCourseList(lab).join(", "));
-			var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
-			var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
-			var dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
-			var dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", "./img/dropdown-arrow.png");
-
-			var extendedlabdata = detailsbox.append("div").classed("lab-record-detailed-flex", true).attr("style", "display: none");
-			var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
-			var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
-			var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
-			var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + getLabEquipmentList(lab).join(", "));
-
-			var labdoclist = getExtraLabDocs(lab);
-			var labdocs = extendedlabdata.append("div").classed("extra-docs", true);
-			labdocs.append("p").html("<span>Additional Documents:</span> ");
-			for (var j = labdoclist.length - 1; j >= 0; j--) {
-				labdocs.append("a").classed("extra-doc", true).attr("href", labdoclist[j].url).html(labdoclist[j].name).attr("target", "_blank");
-			}
-		}
-	}
-};
-
-
-
-
-
-
-
-
 
 
 
@@ -270,7 +190,7 @@ function populateRecordList(docXML) {  //read XML and append all lab records to 
 
 
 function populateFilters(docXML) {  //read XML and populate the HTML select boxes with available filter options - not type safe
-	var types = ["Course", "Year", "Semester", "Discipline"];
+	var types = ["Course", "Year", "Semester", "Discipline", "Topic"];
 	for (var i = types.length - 1; i >= 0; i--) {
 		var validlist = getValidFilterOptions(docXML, types[i]);
 		for (var j = validlist.length - 1; j >= 0; j--) {
@@ -334,44 +254,40 @@ function filterResults(filter) {  //given a filter object, filter displayed reco
 		var lab = $(lablist[i]);
 		var courses = lab.find(".courses").text().split(", ");
 		var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
+		var topics = lab.find(".lab-data-topics").text().slice(8,).split(", ");
 
 		if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4))       || filter["year-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-			// lab.css("display", "-webkit-flex");
-			// lab.css("display", "flex");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			// lab.css("display", "none");
 			numrecords--;
 			continue;
 		}
 		if (doArraysOverlap(courses, filter["course-filter"])                                    || filter["course-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-			// lab.css("display", "-webkit-flex");
-			// lab.css("display", "flex");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			// lab.css("display", "none");
 			numrecords--;
 			continue;
 		}
 		if (filter["semester-filter"].includes(lab.find(".version-semester").text().slice(0,-5)) || filter["semester-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-			// lab.css("display", "-webkit-flex");
-			// lab.css("display", "flex");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			// lab.css("display", "none");
 			numrecords--;
 			continue;
 		}
 		if (doArraysOverlap(disciplines, filter["discipline-filter"])                            || filter["discipline-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-			// lab.css("display", "-webkit-flex");
-			// lab.css("display", "flex");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			// lab.css("display", "none");
+			numrecords--;
+			continue;
+		}
+		if (doArraysOverlap(topics, filter["topic-filter"])                            || filter["topic-filter"].length == 0) {
+			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+		} else {
+			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
 			numrecords--;
 			continue;
 		}

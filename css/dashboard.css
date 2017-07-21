@@ -3,7 +3,7 @@
 section {
 	display: none;
 	padding: 20px 0 0;
-	border: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	padding: 8px;
 	height: 400px;
 	width: 80%;
@@ -48,9 +48,7 @@ input:checked + label {
 
 
 #lab-dashboard-content {
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
+	display: none;
 }
 
 #lab-selection {
