@@ -321,7 +321,7 @@ footer {
 	position: fixed;
 	bottom: -100px;
 	background-color: rgba(250,250,250,.8);
-	/*display: none;*/
+	display: none;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
