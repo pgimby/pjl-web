@@ -119,7 +119,6 @@ $(document).on("click", "#zip-icon", function(e) {
 });
 
 
-
 $(document).on("click", "#sort-name", function(e) {
 	sortRecords("name");
 });
@@ -787,10 +786,52 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 	"/data/testfiles/2.txt","/data/testfiles/4.pdf","/data/testfiles/4.txt","/data/testfiles/4.pdf",
 	"/data/testfiles/8.txt","/data/testfiles/9.txt","/data/testfiles/10.txt","/data/testfiles/11.txt",
 	"/data/testfiles/12.txt","/data/testfiles/13.txt","/data/testfiles/14.txt","/data/testfiles/15.txt",
-	"/data/testfiles/1.pdf","/data/testfiles/2.pdf","/data/testfiles/3.pdf","/data/testfiles/4.pdf",
-	"/data/testfiles/5.pdf","/data/testfiles/6.pdf","/data/testfiles/7.pdf","/data/testfiles/8.pdf",
-	"/data/testfiles/9.pdf"];//getCurrentRecordPaths();
-	var promises = []
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf",
+	"/data/testfiles/1.pdf"];//getCurrentRecordPaths();
+	var promises = [];
+	var xhrs = [];
 	var progresscount = 0;
 	var progress = function(i) {return i/files.length};
 	for (var i = files.length - 1; i >= 0; i--) {
@@ -799,8 +840,16 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 			zip.file(filename, blob);
 		});
 		promises.push(downloadingfile);
-		beginDownload(files[i], downloadingfile);
+		xhrs.push(beginDownload(files[i], downloadingfile));
 	}
+	$(document).on("click", "#cancel-download", function(e) {
+		for (var i = xhrs.length - 1; i >= 0; i--) {
+			xhrs[i].abort();
+		}
+		console.log("cancelled")
+		$("#zip-progress-bar").slideUp(500);
+		return;
+	});
 	var deferredzip = $.when.apply(this, promises);
 	deferredzip.progress(function() {
 		progresscount++;
@@ -841,6 +890,7 @@ function beginDownload(filepath, promise) {  //start downloading PDF and resolve
   	};
   	xhttp.open("GET", siteroot + filepath, true);
   	xhttp.send();
+  	return xhttp;
 }
 
 
