@@ -531,7 +531,10 @@ function applyRecordsMask(truthy) {
 		$("#show-all-button").css("visibility", "hidden");
 	}
 	falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name"), $("#sort-course")]);
-	$("#lab-list-box").removeClass("records-unmasked");
+	$("#lab-list-box").addClass("records-unmasked");
+	if (Boolean(truthy)) {
+		$("#lab-list-box").removeClass("records-unmasked");
+	}
 }
 
 
