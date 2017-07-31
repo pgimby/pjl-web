@@ -10,6 +10,7 @@ var siteroot = "/pjl-web";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
+
 //I wouldn't mind adding a "show more" or "show all" button at the bottom of the record list
 //or maybe have a scroll box of a specific size. When we load all the labs from the final XML
 //the initial length will be huge and you'll have to scroll forever to get to the footer. - Donesies
@@ -17,8 +18,6 @@ var siteroot = "/pjl-web";
 //Also would like to have the zip, expand all, maybe search bar pinned to the top while scrolling
 //down through the list alond with a "back to top" button.
 
-//Footer isn't bold enough. Feels too light compared with rest of page. Maybe have dark
-//frame around staff details.
 
 //Somehow need to deal with file errors in the zip call. Think about how to bail gracefully.
 //The top-level promis is waiting for all the files to load, what happens if one doesn't?
@@ -73,7 +72,7 @@ $(document).on("click", "#clear-filters-button", function(e) {
 
 
 
-$(document).on("click", "select option", function(e) {
+$(document).on("click", "select", function(e) {
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
@@ -945,6 +944,7 @@ function loadXML() {  //load the XML document holding all the lab records (see g
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
     	if (xhttp.readyState == 4 && xhttp.status == 200) {
+    		console.log(xhttp.status)
             docXML = xhttp.responseXML;
             populateRecordList(docXML);
             populateFilters(docXML);
