@@ -1,11 +1,15 @@
 
 
+main {
+	height: 100vh;
+}
+
 section {
 	display: none;
 	padding: 20px 0 0;
-	border: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	padding: 8px;
-	height: 400px;
+	/*height: 400px;*/
 	width: 80%;
 	margin-bottom: 20px
 }
@@ -15,21 +19,24 @@ input[id*="dashboard"] {
 }
 
 label {
+	color: #bbb;
+	font-family: 'Proxima Nova', sans-serif;
+}
+
+label.tabs {
 	display: inline-block;
 	margin: 0 0 -1px;
 	padding: 15px 25px;
-	font-weight: 600;
 	text-align: center;
-	color: #bbb;
 	border: 1px solid transparent;
-	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 600;
 }
 
 .text-pre-icon {
   	margin-right: 10px;
 }
 
-label:hover {
+label.tabs:hover {
 	color: #888;
 	cursor: pointer;
 }
@@ -48,11 +55,84 @@ input:checked + label {
 
 
 #lab-dashboard-content {
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
+	display: none;
 }
 
 #lab-selection {
 	height: 100px;
+}
+
+
+
+
+
+#edit-lab, #edit-equip {
+	display: none;
+}
+
+#new-lab, #new-equip {
+	display: none;
+}
+
+form {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+	form div {
+		margin: 10px 10px;
+	}
+
+	form label {
+		color: #333;
+		font-weight: 400;
+	}
+
+
+#lab-db-select, #equip-db-select {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	margin: 80px;
+}
+
+#lab-db-select img, #equip-db-select img  {
+	width: 100px;
+}
+
+	#lab-db-select img:hover, #equip-db-select img:hover {
+		cursor: pointer;
+	}
+
+#lab-db-select div, #equip-db-select div  {
+	text-align: center;
+}
+
+#lab-db-select h3, #equip-db-select h3 {
+	border-radius: 8px;
+	background-color: #444;
+	color: #eee;
+	padding: 7px;
+	box-shadow: 0px 1px 5px 0px #222;
+}
+
+	#lab-db-select h3:hover, #equip-db-select h3:hover {
+		background-color: #393939;
+		color: #fff;
+		box-shadow: 0px 1px 5px 0px #222, 0px 1px 5px 0px #222 inset;
+		cursor: pointer;
+	}
+
+#lab-select-divider, #equip-select-divider {
+	width: 2px;
+	background-color: #ddd;
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid #555;
+}
+
+#lab-select-new, #lab-select-edit, #equip-select-new, #equip-select-edit {
+	margin: 30px;
 }

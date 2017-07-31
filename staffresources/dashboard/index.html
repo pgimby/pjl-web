@@ -79,10 +79,10 @@
         <!-- dashboard tabs -->
 
         <input id="lab-dashboard-tab" type="radio" name="tabs" checked>
-  		<label for="lab-dashboard-tab"><i class="fa fa-list-alt text-pre-icon"></i>Lab Database</label>
+  		<label class="tabs" for="lab-dashboard-tab"><i class="fa fa-list-alt text-pre-icon"></i>Lab Database</label>
 
   		<input id="equipment-dashboard-tab" type="radio" name="tabs">
-  		<label for="equipment-dashboard-tab"><i class="fa fa-list-alt text-pre-icon"></i>Equipment Database</label>
+  		<label class="tabs" for="equipment-dashboard-tab"><i class="fa fa-list-alt text-pre-icon"></i>Equipment Database</label>
 
 
 
@@ -90,8 +90,15 @@
   		<!-- dashboard tab content -->
 
   		<section id="lab-dashboard-content">
-  			<div id="lab-selection">
-  				<div class="search-container">
+
+  			<div id="lab-db-select">
+  				<div id="lab-select-edit"><img src="/img/edit-icon.png"><h3>Edit existing</br>database entry</h3></div>
+  				<div id="lab-select-divider"></div>
+  				<div id="lab-select-new"><img src="/img/new-icon.png"><h3>Create new</br>database entry</h3></div>
+  			</div>
+
+  			<div id="edit-lab">
+  				<div class="search-container" id="lab-search">
 			        <form class="search-box">
 			          <input type="text" id="search-bar" placeholder="Lab name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lab name...'">
 			          <a><img class="search-icon" src="../../img/search-icon.png"></a>
@@ -100,21 +107,69 @@
   			</div>
 
 
-  			<form id="modify-lab-form">
+  			<div id="new-lab">
+  				<form>
+  					<div>
+  						<label for="lab-id">Lab ID</label>
+  						<input id="lab-id" type="text" name="labId" value="null">
+  					</div>
 
-  			</form>
+  					<div>
+  						<label for="name">Name</label>
+  						<input id="name" type="text" name="Name">
+  					</div>
+
+  					<div>
+  						<label for="courses">Courses</label>
+  						<input id="courses" type="text" name="Courses">
+  					</div>
+
+  					<div>
+  						<label for="disciplines">Disciplines</label>
+  						<input id="disciplines" type="text" name="Disciplines">
+  					</div>
+
+  					<div>
+  						<label for="topics">Topics</label>
+  						<input id="topics" type="text" name="Topics">
+  					</div>
+
+  					<div>
+  						<label for="equipment">Equipment</label>
+  						<input id="equipment" type="text" name="Equipment">
+  					</div>
+
+  					<div>
+  						<label for="support-docs">Supporting Documents</label>
+  						<input id="support-docs" type="text" name="SupportDocs">
+  					</div>
+  				</form>
+  			</div>
   		</section>
 
 
-  		<section id="equipment-dashboard-content">
-  			<div id="equipment-selection">
 
+
+  		<section id="equipment-dashboard-content">
+  			<div id="equip-db-select">
+  				<div id="equip-select-edit"><img src="/img/edit-icon.png"><h3>Edit existing</br>database entry</h3></div>
+  				<div id="equip-select-divider"></div>
+  				<div id="equip-select-new"><img src="/img/new-icon.png"><h3>Create new</br>database entry</h3></div>
+  			</div>
+
+  			<div id="edit-equip">
+  				<div class="search-container" id="equip-search">
+			        <form class="search-box">
+			          <input type="text" id="search-bar" placeholder="Equipment name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Equipment name...'">
+			          <a><img class="search-icon" src="../../img/search-icon.png"></a>
+			        </form>
+		        </div>
   			</div>
 
 
-  			<form id="modify-equipment-form">
+  			<div id="new-equip">
 
-  			</form>
+  			</div>
   		</section>
 
 

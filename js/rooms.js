@@ -21,7 +21,7 @@ function roomMouseOver(d) {
 				$("#room-name").html("Photoelectric Effect Experiment");
 				break;
 			case "026":
-				$("#room-name").html("Hugo Graumann Memorial Computational Physics Lab");
+				$("#room-name").html("Computational Physics Lab");
 				break;
 			case "025":
 				$("#room-name").html("Study Room");

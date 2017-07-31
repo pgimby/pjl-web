@@ -35,12 +35,11 @@ Demos repository (not confirmed)
 
 # Site Map
 
-![sitemap](/dev/pagemap.png)
-
+<img src="/dev/pagemap.png" width="480">
 
 # Source Map
 
-![sourcemap](/dev/sourcemap.png)
+<img src="/dev/sourcemap.png" width="480">
 
 
 # Lab Meta Data
