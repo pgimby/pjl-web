@@ -291,6 +291,8 @@ function filterResults(filter) {  //given a filter object, filter displayed reco
 			continue;
 		}
 	}
+	falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name"), $("#sort-course")]);
+	$("#lab-list-box").removeClass("records-unmasked");
 }
 
 
@@ -325,6 +327,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.reverse();
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-course")]);
@@ -333,6 +342,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.sort(compareLabsByCourse);
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-course")]);
@@ -344,6 +360,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.reverse();
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-semester")]);
@@ -352,6 +375,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.sort(compareLabsBySemester);
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-semester")]);
@@ -363,6 +393,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.reverse();
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-year")]);
@@ -371,6 +408,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.sort(compareLabsByYear);
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-year")]);
@@ -382,6 +426,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.reverse();
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-name")]);
@@ -390,6 +441,13 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 				records.sort(compareLabsByName);
 				var lablistbox = $("#lab-list-box");
 				for (var i = records.length - 1; i >= 0; i--) {
+					if (!$("#lab-list-box").hasClass("records-unmasked")) {
+						if (i > records.length - 21) {
+							records[i].removeClass("masked");
+						} else {
+							records[i].addClass("masked");
+						}
+					}
 					lablistbox.append(records[i]);
 				}
 				truifySort([$("#sort-name")]);
@@ -472,11 +530,17 @@ function applyRecordsMask(truthy) {
 		$("#num-unmasked-results").text(String(records.length));
 		$("#show-all-button").css("visibility", "hidden");
 	}
+	falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name"), $("#sort-course")]);
+	$("#lab-list-box").addClass("records-unmasked");
+	if (Boolean(truthy)) {
+		$("#lab-list-box").removeClass("records-unmasked");
+	}
 }
 
 
 
 function unmaskAll(records) {
+	$("#lab-list-box").addClass("records-unmasked");
 	for (var i = records.length - 1; i >= 0; i--) {
 		records[i].removeClass("masked");
 	}
