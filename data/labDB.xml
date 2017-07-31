@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="">
     <Names>
       <Name>Magnetic Force between Current-Carrying Wires</Name>
@@ -203,6 +203,11 @@
         <Semester>Fall</Semester>
         <Year>2010</Year>
       </Version>
+      <Version>
+        <Path>2010/physics211-221-SP2010/PHYS211Lab_08_collisions.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2010</Year>
+      </Version>
     </Versions>
     <Equipment><Item>Vernier capable computer</Item><Item>2 carts</Item><Item>2 sails</Item><Item>2 Vernier motion sensors</Item><Item>air track</Item><Item>air supply</Item><Item>collisions accessory kit</Item><Item>digital scale</Item><Item>metal levelling shims</Item><Item>2 lab stands with 90 degree clamps</Item><Item>and collisions.cmbl</Item></Equipment><Type>Labatorial</Type>
     <SupportDocs />
@@ -284,6 +289,18 @@
         <Semester>Fall</Semester>
         <Year>2016</Year>
       </Version>
+<<<<<<< HEAD
+      </Versions>
+    <Equipment><Item>driven harmonic motion apparatus</Item><Item>assortment of slotted masses</Item><Item>assortment of red springs</Item><Item>calipers</Item><Item>digital balance</Item></Equipment><Type>Lab</Type>
+    <SupportDocs />
+  </Lab>
+  <Lab labId="">
+    <Names>
+      <Name>Damped Mechanical Oscillations</Name>
+    </Names>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Math</Discipline></Disciplines><Courses><Course>PHYS 341</Course></Courses><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Dynamics</Topic><Topic>ODE</Topic><Topic>Wave Mechanics</Topic></Topics><Versions>    
+=======
+>>>>>>> e5cdd2d4ec933c480d1302c2a1d31c0508a8d99d
       <Version>
         <Path>2015/physics341-FA2015/Damped-Mechanical-Oscillations-FA2015.pdf</Path>
         <Semester>Fall</Semester>
@@ -423,6 +440,11 @@
         <Path>2011/physics211-221-SP2011/PHYS211Lab_03_inclined_plane_v01.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2011</Year>
+      </Version>
+      <Version>
+        <Path>2010/physics211-221-SP2010/PHYS211Lab_03_inclined_plane.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2010</Year>
       </Version>
       <Version>
         <Path>2010/physics211-221-FA2010/PHYS211Lab_03_inclined_plane_v04.pdf</Path>
@@ -658,20 +680,6 @@
   </Lab>
   <Lab labId="">
     <Names>
-      <Name>Units, Conversion, and Order of Magnitude</Name>
-    </Names>
-    <Disciplines /><Courses><Course>PHYS 211</Course></Courses><Topics /><Versions>
-      <Version>
-        <Path>2010/physics211-221-SP2010/PHYS211Lab_01_units_Fermi.pdf</Path>
-        <Semester>Spring</Semester>
-        <Year>2010</Year>
-      </Version>
-    </Versions>
-    <Equipment /><Type />
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
-    <Names>
       <Name>Forced Damped Mechanical Oscillations</Name>
     </Names>
     <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Math</Discipline></Disciplines><Courses><Course>PHYS 341</Course></Courses><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Dynamics</Topic><Topic>ODE</Topic><Topic>Wave Mechanics</Topic></Topics><Versions>
@@ -895,8 +903,18 @@
         <Year>2011</Year>
       </Version>
       <Version>
+        <Path>2011/physics211-221-SP2011/Phys_211_221_Labatorial1_Units_SP2011.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2011</Year>
+      </Version>
+      <Version>
         <Path>2010/physics211-221-FA2010/PHYS211Lab_01_units_v05.pdf</Path>
         <Semester>Fall</Semester>
+        <Year>2010</Year>
+      </Version>
+      <Version>
+        <Path>2010/physics211-221-SP2010/PHYS211Lab_01_units_Fermi.pdf</Path>
+        <Semester>Spring</Semester>
         <Year>2010</Year>
       </Version>
     </Versions>
@@ -1603,6 +1621,8 @@
   </Lab>
   <Lab labId="">
     <Names>
+<<<<<<< HEAD
+=======
       <Name>Version D</Name>
     </Names>
     <Disciplines /><Courses><Course>PHYS 259</Course></Courses><Topics /><Versions>
@@ -1681,6 +1701,7 @@
   </Lab>
   <Lab labId="">
     <Names>
+>>>>>>> e5cdd2d4ec933c480d1302c2a1d31c0508a8d99d
       <Name>Newton's Second Law</Name>
     </Names>
     <Disciplines /><Courses><Course>PHYS 227</Course></Courses><Topics /><Versions>
@@ -1715,20 +1736,6 @@
       </Version>
     </Versions>
     <Equipment><Item>introductory student spectroscope</Item><Item>600 lines/mm diffraction grating</Item><Item>spectrum tube power supply</Item><Item>hydrogen and helium geissler tubes</Item><Item>low pressure sodium lamp</Item><Item>cadmium osram lamp</Item><Item>laboratory jack</Item><Item>magnifying glass</Item></Equipment><Type>Lab</Type>
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
-    <Names>
-      <Name>Inclined Plane</Name>
-    </Names>
-    <Disciplines /><Courses><Course>PHYS 211</Course></Courses><Topics /><Versions>
-      <Version>
-        <Path>2010/physics211-221-SP2010/PHYS211Lab_03_inclined_plane.pdf</Path>
-        <Semester>Spring</Semester>
-        <Year>2010</Year>
-      </Version>
-    </Versions>
-    <Equipment /><Type />
     <SupportDocs />
   </Lab>
   <Lab labId="">
@@ -1801,25 +1808,6 @@
       </Version>
     </Versions>
     <Equipment><Item>Pasco WA-9307A Fourier synthesizer</Item><Item>set of connecting leads (2)</Item><Item>Fluke multimeter</Item><Item>oscilloscope</Item></Equipment><Type>Lab</Type>
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
-    <Names>
-      <Name>Magnetif Fields and Forces</Name>
-    </Names>
-    <Disciplines /><Courses><Course>PHYS 255</Course></Courses><Topics /><Versions>
-      <Version>
-        <Path>2013/physics255-WI2013/magforce.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-      </Version>
-      <Version>
-        <Path>2012/physics255-WI2012/magforce.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-      </Version>
-    </Versions>
-    <Equipment /><Type />
     <SupportDocs />
   </Lab>
   <Lab labId="">
@@ -3459,6 +3447,16 @@
         <Path>2014/physics255-WI2014/Magnetic-Fields-and-Forces-WI2014.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2014</Year>
+      <Version>
+        <Path>2013/physics255-WI2013/magforce.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+      </Version>
+      <Version>
+        <Path>2012/physics255-WI2012/magforce.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+      </Version>
       </Version>
     </Versions>
     <Equipment><Item>Anatek power supply</Item><Item>Teachspin magnetic force apparatus</Item><Item>meter stick</Item><Item>digital balance</Item><Item>Fluke digital multimeter</Item><Item>set of connecting leads</Item><Item>1 gram ball bearings</Item></Equipment><Type>Lab</Type>
@@ -3741,20 +3739,6 @@
       </Version>
     </Versions>
     <Equipment><Item>function generator</Item><Item>breadboard</Item><Item>power supply or battery</Item><Item>1N914 diode</Item><Item>potentiometer</Item><Item>LM555</Item><Item>LM3900/LM3301</Item><Item>CM3130</Item><Item>resistor: 100kOhm (7)/3.3kOhm (7)/910kOhm/620kOhm</Item><Item>capacitor: 10 microF/1 microF (2)/0.01 microF</Item></Equipment><Type>Lab</Type>
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
-    <Names>
-      <Name>Collisions</Name>
-    </Names>
-    <Disciplines /><Courses><Course>PHYS 211</Course></Courses><Topics /><Versions>
-      <Version>
-        <Path>2010/physics211-221-SP2010/PHYS211Lab_08_collisions.pdf</Path>
-        <Semester>Spring</Semester>
-        <Year>2010</Year>
-      </Version>
-    </Versions>
-    <Equipment /><Type />
     <SupportDocs />
   </Lab>
   <Lab labId="">
@@ -4684,6 +4668,11 @@
         <Semester>Fall</Semester>
         <Year>2010</Year>
       </Version>
+      <Version>
+        <Path>2010/physics211-221-SP2010/PHYS211Lab_04_projectile.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2010</Year>
+      </Version>
     </Versions>
     <Equipment /><Type />
     <SupportDocs />
@@ -4942,20 +4931,6 @@
       </Version>
     </Versions>
     <Equipment><Item>Fluke multimeter (3)</Item><Item>Cenco high voltage DC power supply</Item><Item>100 Ohm decade resistance box</Item><Item>high voltage probe</Item><Item>Neva mains recitifer</Item><Item>illuminated optical scale projector</Item><Item>electron diffraction tube with stand and 2 mm pin-banana adapter and adjustable magnet</Item><Item>lab jack</Item><Item>calipers</Item><Item>Ne-He laser</Item><Item>lab stand</Item><Item>right angle clamp</Item><Item>fork clamp</Item><Item>spinning wheel optical analogue</Item><Item>banana connecting sleeve</Item><Item>set of connecting leads (3)</Item></Equipment><Type>Lab</Type>
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
-    <Names>
-      <Name>Projectile Motion</Name>
-    </Names>
-    <Disciplines /><Courses><Course>PHYS 211</Course></Courses><Topics /><Versions>
-      <Version>
-        <Path>2010/physics211-221-SP2010/PHYS211Lab_04_projectile.pdf</Path>
-        <Semester>Spring</Semester>
-        <Year>2010</Year>
-      </Version>
-    </Versions>
-    <Equipment /><Type />
     <SupportDocs />
   </Lab>
   <Lab labId="">
