@@ -289,7 +289,6 @@
         <Semester>Fall</Semester>
         <Year>2016</Year>
       </Version>
-<<<<<<< HEAD
       </Versions>
     <Equipment><Item>driven harmonic motion apparatus</Item><Item>assortment of slotted masses</Item><Item>assortment of red springs</Item><Item>calipers</Item><Item>digital balance</Item></Equipment><Type>Lab</Type>
     <SupportDocs />
@@ -1621,9 +1620,7 @@
   </Lab>
   <Lab labId="">
     <Names>
-<<<<<<< HEAD
-=======
-      <Name>Version D</Name>
+     <Name>Version D</Name>
     </Names>
     <Disciplines /><Courses><Course>PHYS 259</Course></Courses><Topics /><Versions>
       <Version>
