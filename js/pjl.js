@@ -6,8 +6,8 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
-//var siteroot = "";
+//var siteroot = "/pjl-web";
+var siteroot = "";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -1005,7 +1005,7 @@ function getCurrentFilter() {  //return a filter object of currently activated f
 
 
 function getLabId(lab) {  //return lab ID as a string for an XML "lab" node - not type safe
-	return lab.getAttribute("LabId");
+	return lab.getAttribute("labId");
 }
 
 
