@@ -6,6 +6,10 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
+<<<<<<< HEAD
+=======
+//var siteroot = "";
+>>>>>>> 8b42021a31d7c442c6f7fbafe00c42a224ec26aa
 var siteroot = "/pjl-web";
 
 
