@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="">
       <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines /><Topics /><Versions>
@@ -121,7 +121,7 @@
     <Equipment><Item>oscilloscope</Item><Item>function generator</Item><Item>breadboard</Item><Item>resistors: 15kOhm/27kOhm</Item><Item>capacitors: 0.0056 microF/0.01 microF</Item></Equipment><Type>Lab</Type>
     <SupportDocs />
   </Lab>
-  <Lab labId="">
+  <Lab labId="0001">
       <Name>Collisions in One Dimension</Name>
     <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Collisions</Topic><Topic>Work and Energy</Topic><Topic>Momentum</Topic></Topics><Versions>
       <Version>
@@ -341,7 +341,7 @@
     <Equipment /><Type />
     <SupportDocs />
   </Lab>
-  <Lab labId="">
+  <Lab labId="0003">
       <Name>Motion on the Inclined Plane</Name>
     <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Kinematics</Topic></Topics><Versions>
       <Version>
@@ -965,7 +965,7 @@
     <Equipment /><Type />
     <SupportDocs />
   </Lab>
-  <Lab labId="">
+  <Lab labId="0006">
       <Name>Simple Harmonic Oscillation and Conservation of Energy</Name>
     <Disciplines /><Topics /><Versions>
       <Version>
@@ -1038,6 +1038,16 @@
         <Semester>Spring</Semester>
         <Year>2010</Year>
       <Course>PHYS 211</Course></Version>
+            <Version>
+        <Path>2012/physics227-FA2012/Phys-227-Labatorial5-SHO-FA2012.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2012</Year>
+      <Course>PHYS 227</Course></Version>
+      <Version>
+        <Path>2011/physics227-FA2011/Phys-227-Labatorial5-SHO-FA2011.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2011</Year>
+      <Course>PHYS 227</Course></Version>
     </Versions>
     <Equipment /><Type />
     <SupportDocs />
@@ -1455,18 +1465,6 @@
     <SupportDocs />
   </Lab>
   <Lab labId="">
-      <Name>Jumping-up.pdf</Name>
-    <Disciplines /><Topics /><Versions>
-      <Version>
-        <Path>2013/physics227-FA2013/Jumping-up.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2013</Year>
-      <Course>PHYS 227</Course></Version>
-    </Versions>
-    <Equipment /><Type />
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
       <Name>Biot-Savart Law</Name>
     <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Newtonian Mechanics</Discipline><Discipline>Math</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Magnetism</Topic><Topic>Integration</Topic><Topic>Linear Algebra</Topic></Topics><Versions>
       <Version>
@@ -1548,23 +1546,6 @@
         <Semester>Winter</Semester>
         <Year>2012</Year>
       <Course>PHYS 259</Course></Version>
-    </Versions>
-    <Equipment /><Type />
-    <SupportDocs />
-  </Lab>
-    <Lab labId="">
-      <Name>Newton's Second Law</Name>
-    <Disciplines /><Topics /><Versions>
-      <Version>
-        <Path>2012/physics227-FA2012/Phys-227-Labatorial2-Newtons2ndLaw-FA2012.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2012</Year>
-      <Course>PHYS 227</Course></Version>
-      <Version>
-        <Path>2011/physics227-FA2011/Phys-227-Labatorial2-Newtons2ndLaw-FA2011.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2011</Year>
-      <Course>PHYS 227</Course></Version>
     </Versions>
     <Equipment /><Type />
     <SupportDocs />
@@ -1933,23 +1914,6 @@
       <Course>PHYS 227</Course></Version>
     </Versions>
     <Equipment><Item>computer with Vpython</Item><Item>access to internet</Item></Equipment><Type>Labatorial</Type>
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
-      <Name>Simple Harmonic Oscillation, and Conservation of Energy</Name>
-    <Disciplines /><Topics /><Versions>
-      <Version>
-        <Path>2012/physics227-FA2012/Phys-227-Labatorial5-SHO-FA2012.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2012</Year>
-      <Course>PHYS 227</Course></Version>
-      <Version>
-        <Path>2011/physics227-FA2011/Phys-227-Labatorial5-SHO-FA2011.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2011</Year>
-      <Course>PHYS 227</Course></Version>
-    </Versions>
-    <Equipment /><Type />
     <SupportDocs />
   </Lab>
   <Lab labId="">
@@ -2898,7 +2862,7 @@
     <Equipment /><Type />
     <SupportDocs />
   </Lab>
-  <Lab labId="">
+  <Lab labId="0005">
       <Name>Newton's Third Law</Name>
     <Disciplines /><Topics /><Versions>
       <Version>
@@ -2971,6 +2935,16 @@
         <Semester>Spring</Semester>
         <Year>2010</Year>
       <Course>PHYS 211</Course></Version>
+            <Version>
+        <Path>2012/physics227-FA2012/Phys-227-Labatorial3-Newtons3rdlaw-FA2012.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2012</Year>
+      <Course>PHYS 227</Course></Version>
+      <Version>
+        <Path>2011/physics227-FA2011/Phys-227-Labatorial3-Newtons3rdlaw-FA2011.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2011</Year>
+      <Course>PHYS 227</Course></Version>
     </Versions>
     <Equipment /><Type />
     <SupportDocs />
@@ -3074,7 +3048,7 @@
     <Equipment><Item>Rotating mirror apparatus</Item><Item>set of connecting leads</Item><Item>laboratory stand (2)</Item><Item>screen</Item><Item>stopwatch</Item><Item>Anatek DC power supply</Item><Item>illuminated test object</Item><Item>isolation transformer</Item><Item>meter stick</Item></Equipment><Type>Lab</Type>
     <SupportDocs />
   </Lab>
-  <Lab labId="">
+  <Lab labId="0004">
       <Name>Newton's Second Law</Name>
     <Disciplines /><Topics /><Versions>
       <Version>
@@ -3147,6 +3121,16 @@
         <Semester>Spring</Semester>
         <Year>2010</Year>
       <Course>PHYS 211</Course></Version>
+      <Version>
+        <Path>2012/physics227-FA2012/Phys-227-Labatorial2-Newtons2ndLaw-FA2012.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2012</Year>
+      <Course>PHYS 227</Course></Version>
+      <Version>
+        <Path>2011/physics227-FA2011/Phys-227-Labatorial2-Newtons2ndLaw-FA2011.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2011</Year>
+      <Course>PHYS 227</Course></Version>
     </Versions>
     <Equipment /><Type />
     <SupportDocs />
@@ -3457,7 +3441,7 @@
     <Equipment /><Type />
     <SupportDocs />
   </Lab>
-  <Lab labId="">
+  <Lab labId="0002">
       <Name>Measuring Motion</Name>
     <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Kinematics</Topic></Topics><Versions>
       <Version>
@@ -3523,6 +3507,11 @@
       <Version>
         <Path>2010/physics211-221-FA2010/PHYS211Lab_02_motion_diagrams_v05.pdf</Path>
         <Semester>Fall</Semester>
+        <Year>2010</Year>
+      <Course>PHYS 211</Course></Version>
+      <Version>
+        <Path>2010/physics211-221-SP2010/PHYS211Lab_02_motion_diagrams.pdf</Path>
+        <Semester>Spring</Semester>
         <Year>2010</Year>
       <Course>PHYS 211</Course></Version>
     </Versions>
@@ -3593,18 +3582,6 @@
         <Semester>Winter</Semester>
         <Year>2011</Year>
       <Course>PHYS 223</Course></Version>
-    </Versions>
-    <Equipment /><Type />
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
-      <Name>Jumping-Up.pdf</Name>
-    <Disciplines /><Topics /><Versions>
-      <Version>
-        <Path>2015/physics227-FA2015/Jumping-Up-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-      <Course>PHYS 227</Course></Version>
     </Versions>
     <Equipment /><Type />
     <SupportDocs />
@@ -4087,18 +4064,6 @@
     <SupportDocs />
   </Lab>
   <Lab labId="">
-      <Name>Motion Diagrams</Name>
-    <Disciplines /><Topics /><Versions>
-      <Version>
-        <Path>2010/physics211-221-SP2010/PHYS211Lab_02_motion_diagrams.pdf</Path>
-        <Semester>Spring</Semester>
-        <Year>2010</Year>
-      <Course>PHYS 211</Course></Version>
-    </Versions>
-    <Equipment /><Type />
-    <SupportDocs />
-  </Lab>
-  <Lab labId="">
       <Name>Nuclear Decay</Name>
     <Disciplines><Discipline>Nuclear Physics</Discipline><Discipline>Laboratory Skills</Discipline><Discipline>Particle Physics</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Conservation Laws</Topic></Topics><Versions>
       <Version>
@@ -4236,7 +4201,7 @@
     <Equipment /><Type />
     <SupportDocs />
   </Lab>
-  <Lab labId="">
+  <Lab labId="0007">
       <Name>Two Dimensional Motion</Name>
     <Disciplines /><Topics /><Versions>
       <Version>
@@ -4338,7 +4303,18 @@
         <Semester>Fall</Semester>
         <Year>2016</Year>
       <Course>PHYS 227</Course></Version>
-    </Versions>
+      <Version>
+        <Path>2015/physics227-FA2015/Jumping-Up-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+      <Course>PHYS 227</Course></Version>
+      <Version>
+        <Path>2013/physics227-FA2013/Jumping-up.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2013</Year>
+      <Course>PHYS 227</Course></Version>
+    
+     </Versions>
     <Equipment><Item>none</Item></Equipment><Type>Labatorial</Type>
     <SupportDocs />
   </Lab>
@@ -4600,21 +4576,4 @@
     <Equipment><Item>Leybold photocell</Item><Item>Jarrell Ash monochromator</Item><Item>Cary vibrating reed electrometer</Item><Item>tungsten-halogen lamp</Item><Item>Metrologic He-Ne laser</Item><Item>Fluke multimeter</Item><Item>precision voltage divider</Item><Item>10V DC power supply</Item><Item>flashlight</Item><Item>nanoAmpere current source</Item><Item>1 m optical bench</Item></Equipment><Type>Lab</Type>
     <SupportDocs />
   </Lab>
-  <Lab labId="">
-      <Name>Newton's Third Law</Name>
-    <Disciplines /><Topics /><Versions>
-      <Version>
-        <Path>2012/physics227-FA2012/Phys-227-Labatorial3-Newtons3rdlaw-FA2012.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2012</Year>
-      <Course>PHYS 227</Course></Version>
-      <Version>
-        <Path>2011/physics227-FA2011/Phys-227-Labatorial3-Newtons3rdlaw-FA2011.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2011</Year>
-      <Course>PHYS 227</Course></Version>
-    </Versions>
-    <Equipment /><Type />
-    <SupportDocs />
-  </Lab>
-</Labs>
+  </Labs>
