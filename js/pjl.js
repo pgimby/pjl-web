@@ -1113,11 +1113,6 @@ function getVersionList(lab) {  //return an array of version objects for a given
 						  semester: list[i].getElementsByTagName("Semester")[0].childNodes[0].nodeValue,
 						  year: list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue,
 						  course: list[i].getElementsByTagName("Course")[0].childNodes[0].nodeValue});
-		try{
-			console.log(list[i].getElementsByTagName("Course")[0].childNodes[0].nodeValue)
-		} catch(err) {
-			console.log(list[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue)
-		}
 	}
 	return versionlist;
 }
