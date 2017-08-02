@@ -15,8 +15,6 @@ import xml.etree.ElementTree as ET
 xml_path = "./archives.xml"
 details_data_path = "./lab-details.dat"
 
-
-
 #functions
 
 def getXML(filepath):
