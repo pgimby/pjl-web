@@ -6,12 +6,7 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-<<<<<<< HEAD
-var siteroot = "";//"/pjl-web";
-=======
-var siteroot = "";
-//var siteroot = "/pjl-web";
->>>>>>> c2c43a9806d7c24319184571f2d3bb4922cde0f8
+var siteroot = "/pjl-web";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -215,7 +210,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
 		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path).attr("target", "_blank");
 		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "./img/download-icon.svg");  //alternate for mobile display
-		var courses = snapshot.append("p").classed("courses", true).html(getCourseList(lab).join(", "));
+		var course = snapshot.append("p").classed("courses", true).html(getCourse(lab));
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
 		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 		var dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
@@ -1067,13 +1062,13 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 
 
 
-function getCourseList(lab) {  //return an array of courses (strings) for an XML "lab" node - not type safe
-	var list = [];
-	var courses = lab.getElementsByTagName("Course");
-	for (var i = courses.length - 1; i >= 0; i--) {
-		list.push(courses[i].childNodes[0].nodeValue);
-	}
-	return list;
+function getCourse(lab) {  //return course string for an XML "lab" node - not type safe
+	// var list = [];
+	var course = lab.getElementsByTagName("Course")[0].childNodes[0].nodeValue;
+	// for (var i = courses.length - 1; i >= 0; i--) {
+	// 	list.push(courses[i].childNodes[0].nodeValue);
+	// }
+	return course;
 }
 
 
