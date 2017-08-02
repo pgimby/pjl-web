@@ -283,7 +283,7 @@
         <Year>2010</Year>
         <Course>PHYS 211</Course>
       </Version>
-            <Version>
+      <Version>
         <Path>2012/physics227-FA2012/Phys-227-Labatorial4-collisions-FA2012.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2012</Year>
@@ -313,7 +313,7 @@
       <Item>digital scale</Item>
       <Item>metal levelling shims</Item>
       <Item>2 lab stands with 90 degree clamps</Item>
-      <Item>and collisions.cmbl</Item>
+      <Item>collisions.cmbl</Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
@@ -1045,37 +1045,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Electric Charges and Forces</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Electrostatics</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial01-Electric-Charges-and-Forces-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial01-Electric-Charges-and-Forces-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>Rods made of acrylic and PVC</Item>
-      <Item>string and support to hang these rods from</Item>
-      <Item>rayon cloth</Item>
-      <Item>leaf electroscope. Electric Fields from Point Charges applet</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Motion of Electric Charges in Electric Fields</Name>
     <Disciplines/>
     <Topics/>
@@ -1204,18 +1173,20 @@
         <Path>2013/physics369-FA2013/Standing-Waves-FA2013.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2013</Year>
+        <Course>PHYS 369</Course>
+        </Version>
         <Version>
           <Path>2012/physics369-FA2012/stanwav2.pdf</Path>
           <Semester>Fall</Semester>
           <Year>2012</Year>
+          <Course>PHYS 369</Course>
         </Version>
         <Version>
           <Path>2011/physics369-FA2011/stanwav2.pdf</Path>
           <Semester>Fall</Semester>
           <Year>2011</Year>
+           <Course>PHYS 369</Course>
         </Version>
-        <Course>PHYS 369</Course>
-      </Version>
     </Versions>
     <Equipment>
       <Item>standing waves wire apparatus</Item>
@@ -2693,7 +2664,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0010">
     <Name>Current Balance</Name>
     <Disciplines/>
     <Topics/>
@@ -4738,17 +4709,19 @@
         <Path>2014/physics255-WI2014/Magnetic-Fields-and-Forces-WI2014.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2014</Year>
+        <Course>PHYS 255</Course>
+        </Version>
         <Version>
           <Path>2013/physics255-WI2013/magforce.pdf</Path>
           <Semester>Winter</Semester>
           <Year>2013</Year>
+          <Course>PHYS 255</Course>
         </Version>
         <Version>
           <Path>2012/physics255-WI2012/magforce.pdf</Path>
           <Semester>Winter</Semester>
           <Year>2012</Year>
-        </Version>
-        <Course>PHYS 255</Course>
+           <Course>PHYS 255</Course>
       </Version>
     </Versions>
     <Equipment>
@@ -5137,7 +5110,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0011">
     <Name>Electric Charges and Forces</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -5146,6 +5119,18 @@
       <Topic>Electrostatics</Topic>
     </Topics>
     <Versions>
+        <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial01-Electric-Charges-and-Forces-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial01-Electric-Charges-and-Forces-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial05-Electric-Charges-and-Forces-WI2015.pdf</Path>
         <Semester>Winter</Semester>
