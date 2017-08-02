@@ -211,7 +211,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
 		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path).attr("target", "_blank");
 		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "./img/download-icon.svg");  //alternate for mobile display
-		var course = snapshot.append("p").classed("courses", true).html(getCourse(lab));
+		var course = snapshot.append("p").classed("courses", true).html(versionlist[i].course);
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
 		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 		var dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
@@ -945,7 +945,6 @@ function loadXML() {  //load the XML document holding all the lab records (see g
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
     	if (xhttp.readyState == 4 && xhttp.status == 200) {
-    		console.log(xhttp.status)
             docXML = xhttp.responseXML;
             populateRecordList(docXML);
             populateFilters(docXML);
@@ -1063,14 +1062,14 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 
 
 
-function getCourse(lab) {  //return course string for an XML "lab" node - not type safe
-	// var list = [];
-	var course = lab.getElementsByTagName("Course")[0].childNodes[0].nodeValue;
-	// for (var i = courses.length - 1; i >= 0; i--) {
-	// 	list.push(courses[i].childNodes[0].nodeValue);
-	// }
-	return course;
-}
+// function getCourse(version) {  //return course string for an XML "lab" node - not type safe
+// 	// var list = [];
+// 	var course = version.getElementsByTagName("Course")[0].childNodes[0].nodeValue;
+// 	// for (var i = courses.length - 1; i >= 0; i--) {
+// 	// 	list.push(courses[i].childNodes[0].nodeValue);
+// 	// }
+// 	return course;
+// }
 
 
 
@@ -1112,7 +1111,13 @@ function getVersionList(lab) {  //return an array of version objects for a given
 	for (var i = list.length - 1; i >= 0; i--) {
 		versionlist.push({path: list[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue,
 						  semester: list[i].getElementsByTagName("Semester")[0].childNodes[0].nodeValue,
-						  year: list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue});
+						  year: list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue,
+						  course: list[i].getElementsByTagName("Course")[0].childNodes[0].nodeValue});
+		try{
+			console.log(list[i].getElementsByTagName("Course")[0].childNodes[0].nodeValue)
+		} catch(err) {
+			console.log(list[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue)
+		}
 	}
 	return versionlist;
 }
