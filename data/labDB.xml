@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Labs>
-  <Lab labId="">
+  <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
       <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial11-CurrentBalance-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+       <Version>
         <Path>2011/physics259-SU2011/Phys259-Labatorial11-CurrentBalance-SU2011.pdf</Path>
         <Semester>Summer</Semester>
         <Year>2011</Year>
@@ -118,28 +124,6 @@
         <Semester>Fall</Semester>
         <Year>2011</Year>
         <Course>PHYS 397</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Motion of Electric Charges in Electric Fields</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics259-WI2017/Phys259-Labatorial04-Moving-Charges-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics259-WI2016/Phys259-Labatorial04-Moving-Charges-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 259</Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -625,7 +609,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0044">
     <Name>Capacitors</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -644,6 +628,42 @@
         <Path>2016/physics259-WI2016/Phys259-Labatorial06-Capacitors-WI2016.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics259-WI2015/Phys259-Labatorial07-Capacitors-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics259-WI2014/Phys259-Labatorial07-Capacitors-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics259-WI2013/Phys259-Labatorial07-Capacitors-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial07-Capacitors-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-SU2011/Phys259-Labatorial07-CircuitElements-SU2011.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-WI2011/Phys259_Labitorial7_CircuitElements_W2011.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
     </Versions>
@@ -799,6 +819,18 @@
     <Disciplines/>
     <Topics/>
     <Versions>
+    <Version>
+        <Path>2017/physics259-WI2017/Phys259-Labatorial03-Gauss-Law-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics259-WI2016/Phys259-Labatorial03-Gauss-Law-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
       <Version>
         <Path>2015/physics259-WI2015/Phys259-Labatorial04-Gauss-Law-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -815,6 +847,12 @@
         <Path>2013/physics259-WI2013/Phys259-Labatorial04-Gauss-Law-WI2013.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorail04-GaussLaw-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
         <Course>PHYS 259</Course>
       </Version>
       <Version>
@@ -959,11 +997,23 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0052">
     <Name>Motion of Electric Charges in Electric Fields</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2017/physics259-WI2017/Phys259-Labatorial04-Moving-Charges-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics259-WI2016/Phys259-Labatorial04-Moving-Charges-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
       <Version>
         <Path>2015/physics259-WI2015/Phys259-Labatorial05-Moving-Charges-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -980,6 +1030,12 @@
         <Path>2013/physics259-WI2013/Phys259-Labatorial05-Moving-Charges-WI2013.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial05-MovingCharges-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
         <Course>PHYS 259</Course>
       </Version>
       <Version>
@@ -1303,22 +1359,6 @@
         <Semester>Fall</Semester>
         <Year>2015</Year>
         <Course>PHYS 341</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Electron Current and Energy in a Circuit</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2016/physics259-WI2016/Phys259-Labatorial07-Electron-Current-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 259</Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -1678,121 +1718,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Electric Potential</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Electrostatics</Topic>
-      <Topic>Circuits</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2017/physics259-WI2017/Phys259-Labatorial05-Electric-Potential-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics259-WI2016/Phys259-Labatorial05-Electric-Potential-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>computer with LoggerPro</Item>
-      <Item>multimeter</Item>
-      <Item>power supply</Item>
-      <Item>field probe</Item>
-      <Item>potential mapping apparatus</Item>
-      <Item>parallel plate conductor board</Item>
-      <Item>connecting cables</Item>
-      <Item>potential mapping graph paper</Item>
-      <Item>tape</Item>
-      <Item>ruler</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Version C</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial01-Mechanics-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial02-ElectricForces-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial03-ElectricFields-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorail04-GaussLaw-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial05-MovingCharges-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial06-ElectricPotential-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial07-Capacitors-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial09-Circuits-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial10-MagneticFields-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial11-DCMotor-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial12-CurrentBalance-C-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+    <Lab labId="">
     <Name>Error Analysis</Name>
     <Disciplines/>
     <Topics/>
@@ -1873,7 +1799,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0045">
     <Name>Electric Charges and the Forces between them</Name>
     <Disciplines/>
     <Topics/>
@@ -1890,16 +1816,58 @@
         <Year>2016</Year>
         <Course>PHYS 259</Course>
       </Version>
+      <Version>
+        <Path>2015/physics259-WI2015/Phys259-Labatorial02-Charges-and-Forces-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics259-WI2014/Phys259-Labatorial02-Electric-Forces-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics259-WI2013/Phys259-Labatorial02-Electric-Forces-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+     <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial02-ElectricForces-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-SU2011/Phys259-Labatorial02-ElectricForces-SU2011.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-WI2011/Phys259_Labitorial2_ElectricForces_W2011.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+      </Version>
     </Versions>
     <Equipment/>
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0048">
     <Name>Electron Current and Energy in a Circuit</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2016/physics259-WI2016/Phys259-Labatorial07-Electron-Current-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
       <Version>
         <Path>2015/physics259-WI2015/Phys259-Labatorial08-Electron-Current-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -1918,6 +1886,14 @@
         <Year>2013</Year>
         <Course>PHYS 259</Course>
       </Version>
+            <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial07-ElectronCurrent-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      
+      
     </Versions>
     <Equipment/>
     <Type/>
@@ -2016,7 +1992,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0051">
     <Name>Mechanics Review</Name>
     <Disciplines/>
     <Topics/>
@@ -2027,80 +2003,40 @@
         <Year>2016</Year>
         <Course>PHYS 259</Course>
       </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Version D</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
       <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial01-Mechanics-D-WI2012.pdf</Path>
+        <Path>2015/physics259-WI2015/Phys259-Labatorial01-Mechanics-Review-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics259-WI2014/Phys259-Labatorial01-Mechanics-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics259-WI2013/Phys259-Labatorial01-Mechanics-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial01-Mechanics-WI2012.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2012</Year>
         <Course>PHYS 259</Course>
       </Version>
       <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial02-ElectricForces-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
+        <Path>2011/physics259-SU2011/Phys259-Labatorial01-Mechanics-SU2011.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
       <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial03-ElectricFields-D-WI2012.pdf</Path>
+        <Path>2011/physics259-WI2011/Phys259_Labitorial1_Mechanics_W2011.pdf</Path>
         <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorail04-GaussLaw-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial05-MovingCharges-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial06-ElectricPotential-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial07-Capacitors-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial09-Circuits-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial10-MagneticFields-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial11-DCMotor-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial12-CurrentBalance-D-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
+        <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
     </Versions>
@@ -2108,7 +2044,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+    <Lab labId="">
     <Name>Hydrogen Balmer Series</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -2281,117 +2217,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Version B</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial01-Mechanics-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial02-ElectricForces-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial03-ElectricFields-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorail04-GaussLaw-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial05-MovingCharges-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial06-ElectricPotential-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial07-Capacitors-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial09-Circuits-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial10-MagneticFields-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial11-DCMotor-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial12-CurrentBalance-B-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Angle of Minimum Deviation and Dispersion</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics375-FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 375</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics375-FA2014/Angle-of-Minimum-Deviation-and-Dispersion-FA2014.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 375</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics375-FA2013/Angle-of-Minimum-Deviation-and-Dispersion.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 375</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics375-FA2012/mindev.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 375</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+    <Lab labId="">
     <Name>OpAmps I/V</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -2763,7 +2589,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-    <Lab labId="">
+    <Lab labId="0049">
     <Name>Magnetic Force and Torque on a Loop</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -2785,6 +2611,42 @@
         <Path>2016/physics259-WI2016/Phys259-Labatorial09-Magnetic-Force-and-Torque-on-a-Loop-WI2016.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics259-WI2015/Phys259-Labatorial11-Magnetic-Force-and-Torque-on-a-Loop-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics259-WI2014/Phys259-Labatorial11-Magnetic-Force-and-Torque-on-a-Loop-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics259-WI2013/Phys259-Labatorial11-Magnetic-Force-and-Torque-on-a-Loop-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+         <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial10-DCMotor-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-SU2011/Phys259-Labatorial10-Motor-SU2011.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-WI2011/Phys259_Labitorial10_Motor_W2011.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
     </Versions>
@@ -3244,34 +3106,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Circuit Elements</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2013/physics259-WI2013/Phys259-Labatorial07-Capacitors-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-SU2011/Phys259-Labatorial07-CircuitElements-SU2011.pdf</Path>
-        <Semester>Summer</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-WI2011/Phys259_Labitorial7_CircuitElements_W2011.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Lock-In Detector</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -3300,34 +3134,6 @@
       <Item>resistors: 1MOhm/100kOhm (3)/47kOhm (3)/10kOhm (3)/1kOhm</Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Capacitors</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Circuits</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2015/physics259-WI2015/Phys259-Labatorial07-Capacitors-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics259-WI2014/Phys259-Labatorial07-Capacitors-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>computer with browser to use the “Circuit Construction Kit (AC/DC)” simulation</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
   <Lab labId="">
@@ -3495,7 +3301,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0046">
     <Name>Electric Potential</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -3505,6 +3311,18 @@
       <Topic>Circuits</Topic>
     </Topics>
     <Versions>
+      <Version>
+        <Path>2017/physics259-WI2017/Phys259-Labatorial05-Electric-Potential-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics259-WI2016/Phys259-Labatorial05-Electric-Potential-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
       <Version>
         <Path>2015/physics259-WI2015/Phys259-Labatorial06-Electric-Potential-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -3521,6 +3339,12 @@
         <Path>2013/physics259-WI2013/Phys259-Labatorial06-Electric-Potential-WI2013.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial06-ElectricPotential-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
         <Course>PHYS 259</Course>
       </Version>
       <Version>
@@ -3551,83 +3375,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Version A</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial01-Mechanics-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial02-ElectricForces-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial03-ElectricFields-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorail04-GaussLaw-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial05-MovingCharges-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial06-ElectricPotential-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial07-Capacitors-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial09-Circuits-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial10-MagneticFields-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial11-DCMotor-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics259-WI2012/Phys259-Labatorial12-CurrentBalance-A-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+    <Lab labId="">
     <Name>Uniform Circular Motion</Name>
     <Disciplines/>
     <Topics/>
@@ -3784,47 +3532,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Mechanics Review</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics259-WI2015/Phys259-Labatorial01-Mechanics-Review-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics259-WI2014/Phys259-Labatorial01-Mechanics-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics259-WI2013/Phys259-Labatorial01-Mechanics-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-SU2011/Phys259-Labatorial01-Mechanics-SU2011.pdf</Path>
-        <Semester>Summer</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-WI2011/Phys259_Labitorial1_Mechanics_W2011.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="0035">
+   <Lab labId="0035">
     <Name>Electric Fields of Charge Configurations</Name>
     <Disciplines/>
     <Topics/>
@@ -3860,6 +3568,12 @@
         <Course>PHYS 259</Course>
       </Version>
       <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial03-ElectricFields-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+       <Version>
         <Path>2011/physics259-SU2011/Phys259-Labatorial03-ElectricFields-SU2011.pdf</Path>
         <Semester>Summer</Semester>
         <Year>2011</Year>
@@ -3962,28 +3676,6 @@
         <Semester>Winter</Semester>
         <Year>2012</Year>
         <Course>PHYS 325</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Gauss' Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics259-WI2017/Phys259-Labatorial03-Gauss-Law-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics259-WI2016/Phys259-Labatorial03-Gauss-Law-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 259</Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -4480,47 +4172,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Electric Charges and the Forces between them</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics259-WI2015/Phys259-Labatorial02-Charges-and-Forces-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics259-WI2014/Phys259-Labatorial02-Electric-Forces-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics259-WI2013/Phys259-Labatorial02-Electric-Forces-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-SU2011/Phys259-Labatorial02-ElectricForces-SU2011.pdf</Path>
-        <Semester>Summer</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-WI2011/Phys259_Labitorial2_ElectricForces_W2011.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+    <Lab labId="">
     <Name>Compton Scattering</Name>
     <Disciplines>
       <Discipline>Relativity</Discipline>
@@ -4626,48 +4278,6 @@
       <Item>sail</Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Magnetic Force and Torque on a Loop</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Magnetism</Topic>
-      <Topic>Linear Algebra</Topic>
-      <Topic>Circuits</Topic>
-      <Topic>Newton’s Laws</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2015/physics259-WI2015/Phys259-Labatorial11-Magnetic-Force-and-Torque-on-a-Loop-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics259-WI2014/Phys259-Labatorial11-Magnetic-Force-and-Torque-on-a-Loop-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics259-WI2013/Phys259-Labatorial11-Magnetic-Force-and-Torque-on-a-Loop-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>Anatek power supply</Item>
-      <Item>high current power supply</Item>
-      <Item>motor-generator apparatus with brake</Item>
-      <Item>rubber mat</Item>
-      <Item>Fluke multimeter</Item>
-      <Item>set of connecting leads</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
   <Lab labId="0013">
@@ -5217,42 +4827,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Magnetic Force and Torque on a Loop</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Magnetism</Topic>
-      <Topic>Linear Algebra</Topic>
-      <Topic>Circuits</Topic>
-      <Topic>Newton’s Laws</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2011/physics259-SU2011/Phys259-Labatorial10-Motor-SU2011.pdf</Path>
-        <Semester>Summer</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-WI2011/Phys259_Labitorial10_Motor_W2011.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>Anatek power supply</Item>
-      <Item>high current power supply</Item>
-      <Item>motor-generator apparatus with brake</Item>
-      <Item>rubber mat</Item>
-      <Item>Fluke multimeter</Item>
-      <Item>set of connecting leads</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Measurements and Uncertainties</Name>
     <Disciplines/>
     <Topics/>
@@ -5391,6 +4965,12 @@
         <Course>PHYS 259</Course>
       </Version>
       <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial08-Circuits-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
         <Path>2011/physics259-SU2011/Phys259-Labatorial08-Circuits-SU2011.pdf</Path>
         <Semester>Summer</Semester>
         <Year>2011</Year>
@@ -5484,7 +5064,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0047">
     <Name>Electric Resistivity of Play-Doh</Name>
     <Disciplines/>
     <Topics/>
@@ -5640,6 +5220,12 @@
         <Path>2013/physics259-WI2013/Phys259-Labatorial10-Magnetic-Fields-WI2013.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics259-WI2012/Phys259-Labatorial09-MagneticFields-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
         <Course>PHYS 259</Course>
       </Version>
       <Version>
