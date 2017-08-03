@@ -294,8 +294,8 @@
         <Semester>Fall</Semester>
         <Year>2011</Year>
         <Course>PHYS 227</Course>
-        </Version>
-     <Version>
+      </Version>
+      <Version>
         <Path>2015/physics227-FA2015/Collisions-in-one-Dimension-FA2015.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2015</Year>
@@ -316,22 +316,6 @@
       <Item>collisions.cmbl</Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Measurement Uncertainties Part I</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2016/physics255-WI2016/Measurement-Uncertainties-PartI-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
     <SupportDocs/>
   </Lab>
   <Lab labId="">
@@ -499,7 +483,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0043">
     <Name>The Electric Motor and Generator</Name>
     <Disciplines/>
     <Topics/>
@@ -515,7 +499,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0021">
     <Name>Calculating and Displaying Gravitational Force</Name>
     <Disciplines/>
     <Topics/>
@@ -525,28 +509,6 @@
         <Semester>Fall</Semester>
         <Year>2016</Year>
         <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Magnetic Fields and Magnetic Force</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics259-WI2017/Phys259-Labatorial08-Magnetic-Fields-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics259-WI2016/Phys259-Labatorial08-Magnetic-Fields-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 259</Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -720,22 +682,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Throw a Ball up in the Air</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2013/physics227-FA2013/Throw-a-Ball-up-in-the-Air.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Malus's Law</Name>
     <Disciplines/>
     <Topics/>
@@ -757,7 +703,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0020">
     <Name>Angular Impule and Anglular Momentum Change</Name>
     <Disciplines/>
     <Topics/>
@@ -773,23 +719,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Microscopic Springs</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2016/physics227-FA2016/227_2016_Lab04_Macroscopic_Springs.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+  <Lab labId="0030">
     <Name>Capacitor Measurements</Name>
     <Disciplines/>
     <Topics/>
@@ -823,7 +753,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0025">
     <Name>Macroscopic Springs</Name>
     <Disciplines>
       <Discipline>Computer Skills</Discipline>
@@ -835,6 +765,12 @@
       <Topic>Dynamics</Topic>
     </Topics>
     <Versions>
+       <Version>
+        <Path>2016/physics227-FA2016/227_2016_Lab04_Macroscopic_Springs.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 227</Course>
+      </Version>
       <Version>
         <Path>2015/physics227-FA2015/Macroscopic-Springs-FA2015.pdf</Path>
         <Semester>Fall</Semester>
@@ -858,7 +794,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0033">
     <Name>Gauss' Law</Name>
     <Disciplines/>
     <Topics/>
@@ -893,18 +829,38 @@
         <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Circuits</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
       <Version>
-        <Path>2012/physics255-WI2012/Phys255-Labatorial03-Circuits-WI2012.pdf</Path>
+        <Path>2017/physics255-WI2017/Gauss-Law-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics255-WI2016/Gauss-Law-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics255-WI2015/Gauss-Law-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics255-WI2014/Phys255-Labatorial02-Gauss-Law-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics255-WI2013/Phys255-Labatorial02-Gauss-Law-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics255-WI2012/Phys255-Labatorail02-GaussLaw-WI2012.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2012</Year>
         <Course>PHYS 255</Course>
@@ -942,47 +898,6 @@
       <Item>LF411 or LF351 OpAmp (3)</Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Magnetic Field in a Slinky</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-      <Discipline>Math</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Magnetism</Topic>
-      <Topic>Circuits</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial05-Magnetic-Field-in-a-Slinky-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial05-Magnetic-Field-in-a-Slinky-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>Slinky</Item>
-      <Item>2 c-clamps</Item>
-      <Item>meter stick</Item>
-      <Item>lab stand</Item>
-      <Item>right-angle clamp</Item>
-      <Item>fork clamp</Item>
-      <Item>connecting leads</Item>
-      <Item>Fluke digital multimeter</Item>
-      <Item>Anatek DC power supply</Item>
-      <Item>Vernier magnetic field probe</Item>
-      <Item>Vernier LabPro Data Log- ger</Item>
-      <Item>Computer with Vernier Logger Pro.</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
   <Lab labId="">
@@ -1174,19 +1089,19 @@
         <Semester>Fall</Semester>
         <Year>2013</Year>
         <Course>PHYS 369</Course>
-        </Version>
-        <Version>
-          <Path>2012/physics369-FA2012/stanwav2.pdf</Path>
-          <Semester>Fall</Semester>
-          <Year>2012</Year>
-          <Course>PHYS 369</Course>
-        </Version>
-        <Version>
-          <Path>2011/physics369-FA2011/stanwav2.pdf</Path>
-          <Semester>Fall</Semester>
-          <Year>2011</Year>
-           <Course>PHYS 369</Course>
-        </Version>
+      </Version>
+      <Version>
+        <Path>2012/physics369-FA2012/2.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 369</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics369-FA2011/stanwav2.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 369</Course>
+      </Version>
     </Versions>
     <Equipment>
       <Item>standing waves wire apparatus</Item>
@@ -1395,56 +1310,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Temperature at the Microscopic Level</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial08-Temperature-at-Microscopic-Level-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial08-Temperature-at-Microscopic-Level-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Electric Potential Mapping</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics255-WI2017/Electric-Potential-Mapping-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics255-WI2016/Electric-Field-Mapping-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2015/physics255-WI2015/Electric-Field-Mapping-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Electron Current and Energy in a Circuit</Name>
     <Disciplines/>
     <Topics/>
@@ -1567,28 +1432,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Introduction to Electric Circuits</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial04-Electric-Circuits-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial04-Electric-Circuits-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>The NPN Transistor Bias and Switching</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -1649,69 +1492,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Measurement Uncertainties Handout</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics255-WI2017/Measurement-Uncertainties-Handout-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Gauss' Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics255-WI2017/Gauss-Law-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics255-WI2016/Gauss-Law-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2015/physics255-WI2015/Gauss-Law-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics255-WI2014/Phys255-Labatorial02-Gauss-Law-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics255-WI2013/Phys255-Labatorial02-Gauss-Law-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics255-WI2012/Phys255-Labatorail02-GaussLaw-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+   <Lab labId="">
     <Name>Radioactive Decay</Name>
     <Disciplines/>
     <Topics/>
@@ -1767,7 +1548,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0014">
     <Name>Ideal Gas Law</Name>
     <Disciplines>
       <Discipline>Thermodynamics</Discipline>
@@ -1777,6 +1558,18 @@
       <Topic>Measurements</Topic>
     </Topics>
     <Versions>
+      <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial06-Ideal-Gas-Law-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial06-Ideal-Gas-Law-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial02-Ideal-Gas-Law-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -2176,7 +1969,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0029">
     <Name>Biot-Savart Law</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -2194,6 +1987,18 @@
         <Path>2017/physics255-WI2017/Biot-Savart-Law-WI2017.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2017</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics255-WI2016/Magnetic-Field-of-a-Current-Carrying-Wire-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics255-WI2015/Magnetic-Field-of-Current-Carrying-Wires-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
         <Course>PHYS 255</Course>
       </Version>
     </Versions>
@@ -2373,28 +2178,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Speed Dependance of the Air Resistance Force</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics227-FA2015/Speed-Dependence-of-the-Air-Resistance-Force-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics227-FA2013/Speed-Dependance-of-the-Air-Resistance-Force.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Fourier Series</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -2567,34 +2350,6 @@
         <Path>2012/physics259-WI2012/Phys259-Labatorial12-CurrentBalance-B-WI2012.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2012</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Magnetic Fields and Magnetic Force</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics259-WI2015/Phys259-Labatorial10-Magnetic-Fields-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics259-WI2014/Phys259-Labatorial10-Magnetic-Fields-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics259-WI2013/Phys259-Labatorial10-Magnetic-Fields-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
         <Course>PHYS 259</Course>
       </Version>
     </Versions>
@@ -2819,8 +2574,8 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Computational Models of Motion: Part 2</Name>
+  <Lab labId="0022">
+    <Name>Computational Models of Motion</Name>
     <Disciplines>
       <Discipline>Computer Skills</Discipline>
     </Disciplines>
@@ -2829,12 +2584,18 @@
     </Topics>
     <Versions>
       <Version>
-        <Path>2016/physics227-FA2016/227_2016_Lab03_Modelling_Motion.pdf</Path>
+        <Path>2016/physics227-FA2016/227_2016_Lab02-02-Computing-Motion.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2016</Year>
         <Course>PHYS 227</Course>
       </Version>
-    </Versions>
+      <Version>
+        <Path>2015/physics227-FA2015/Computer-Models-of-Motion-Iterative-Calculations-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 227</Course>
+      </Version>
+      </Versions>
     <Equipment>
       <Item>computer with Vpython</Item>
       <Item>access to internet</Item>
@@ -3002,23 +2763,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Computer Models of Motion: Iterative Calculations</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics227-FA2015/Computer-Models-of-Motion-Iterative-Calculations-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+    <Lab labId="">
     <Name>Magnetic Force and Torque on a Loop</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -3092,7 +2837,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0017">
     <Name>Pressure and Density</Name>
     <Disciplines/>
     <Topics/>
@@ -3190,7 +2935,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0042">
     <Name>Power Supplies, Lights, and Switches</Name>
     <Disciplines/>
     <Topics/>
@@ -3290,7 +3035,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0037">
     <Name>Faraday's Law</Name>
     <Disciplines/>
     <Topics/>
@@ -3345,8 +3090,8 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Measuring v P and Changes in P in 1D</Name>
+  <Lab labId="0026">
+    <Name>Measuring Velocity, Momentum, and Changes in Momentum in 1D</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
@@ -3373,11 +3118,23 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0019">
     <Name>The First Law of Thermodynamics</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial07-First-Law-of-Thermodynamics-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial07-First-Law-of-Thermodynamics-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial03-First-Law-of-Thermodynamics-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -3413,39 +3170,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Magnetic Fields and Forces</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-      <Discipline>Math</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Magnetism</Topic>
-      <Topic>Integration</Topic>
-      <Topic>Differentiation</Topic>
-      <Topic>Newton’s Laws</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2012/physics255-WI2012/Phys255-Labatorial04-MagneticFields-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>Anatek power supply</Item>
-      <Item>Teachspin magnetic force apparatus</Item>
-      <Item>meter stick</Item>
-      <Item>digital balance</Item>
-      <Item>Fluke digital multimeter</Item>
-      <Item>set of connecting leads</Item>
-      <Item>1 gram ball bearings</Item>
-    </Equipment>
-    <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+  <Lab labId="0028">
     <Name>The Momentum and Energy Principles</Name>
     <Disciplines>
       <Discipline>Computer Skills</Discipline>
@@ -3463,6 +3188,18 @@
         <Path>2016/physics227-FA2016/227_2016_Lab07_E_and_p_principles.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2016</Year>
+        <Course>PHYS 227</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics227-FA2015/Throw-a-Ball-Up-in-the-Air-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 227</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics227-FA2013/Throw-a-Ball-up-in-the-Air.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2013</Year>
         <Course>PHYS 227</Course>
       </Version>
     </Versions>
@@ -3566,45 +3303,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Equipotential Lines</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Electrostatics</Topic>
-      <Topic>Circuits</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial03-Equipotential-Lines-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial03-Equipotential-Lines-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>Fluke multimeter</Item>
-      <Item>Anatek power supply</Item>
-      <Item>field probe</Item>
-      <Item>potential mapping apparatus</Item>
-      <Item>parallel plate  conductor  board</Item>
-      <Item>dipole  conductor  board</Item>
-      <Item>connecting  cables</Item>
-      <Item>potential  mapping  graph  paper</Item>
-      <Item>tape</Item>
-      <Item>ruler</Item>
-      <Item>pencils; Electric Fields from Point Charges applet</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Capacitors</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -3630,60 +3328,6 @@
       <Item>computer with browser to use the “Circuit Construction Kit (AC/DC)” simulation</Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Ideal Gas Law</Name>
-    <Disciplines>
-      <Discipline>Thermodynamics</Discipline>
-      <Discipline>Laboratory Skills</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Measurements</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial06-Ideal-Gas-Law-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial06-Ideal-Gas-Law-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>Constant volume gas apparatus</Item>
-      <Item>beaker with water</Item>
-      <Item>cork</Item>
-      <Item>hot plate</Item>
-      <Item>Vernier temperature probe and holder</Item>
-      <Item>laboratory stand</Item>
-      <Item>meter stick</Item>
-      <Item>clamps</Item>
-      <Item>stiring rod</Item>
-      <Item>computer with Logger Pro analysis software and the file “Ideal Gas Law.cmbl”</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Newton's Second Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics227-FA2015/Newtons-2nd-Law-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
     <SupportDocs/>
   </Lab>
   <Lab labId="">
@@ -3787,7 +3431,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0031">
     <Name>Charge to Mass Ratio of the Electron</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -3984,22 +3628,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Measurement and Uncertainties Workshop</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics255-WI2012/meas.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Uniform Circular Motion</Name>
     <Disciplines/>
     <Topics/>
@@ -4076,11 +3704,23 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0012">
     <Name>Electric Fields and Motion of Charged Particles</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial02-Electric-Fields-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial02-Electric-Fields-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial06-Electric-Fields-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -4116,7 +3756,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0038">
     <Name>Kirchoff's Laws</Name>
     <Disciplines/>
     <Topics/>
@@ -4184,11 +3824,23 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0035">
     <Name>Electric Fields of Charge Configurations</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2017/physics259-WI2017/Phys259-Labatorial02-Electric-Fields-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics259-WI2016/Phys259-Labatorial02-Electric-Fields-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
       <Version>
         <Path>2015/physics259-WI2015/Phys259-Labatorial03-Electric-Fields-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -4219,27 +3871,41 @@
         <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Electric Fields and Motion of Charged Particles</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial02-Electric-Fields-WI2017.pdf</Path>
+            <Version>
+        <Path>2017/physics255-WI2017/Electric-Charges-and-Forces-WI2017.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2017</Year>
-        <Course>PHYS 223</Course>
+        <Course>PHYS 255</Course>
       </Version>
       <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial02-Electric-Fields-WI2016.pdf</Path>
+        <Path>2016/physics255-WI2016/Electric-Charges-and-Forces-WI2016.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2016</Year>
-        <Course>PHYS 223</Course>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics255-WI2015/Electric-Charges-and-Forces-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics255-WI2014/Phys255-Labatorial01-Electric-Charges-and-Forces-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics255-WI2013/Phys255-Labatorial01-Electric-Charges-and-Forces-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics255-WI2012/Phys255-Labatorial01-ElectricFields-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 255</Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -4430,11 +4096,23 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0018">
     <Name>Temperature at the Microscopic Level</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial08-Temperature-at-Microscopic-Level-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial08-Temperature-at-Microscopic-Level-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial04-Temperature-at-Microscopic-Level-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -4658,6 +4336,12 @@
         <Course>PHYS 211</Course>
       </Version>
       <Version>
+        <Path>2015/physics227-FA2015/Newtons-2nd-Law-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 227</Course>
+      </Version>
+      <Version>
         <Path>2012/physics227-FA2012/Phys-227-Labatorial2-Newtons2ndLaw-FA2012.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2012</Year>
@@ -4674,7 +4358,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0040">
     <Name>Magnetic Fields and Forces</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -4710,18 +4394,18 @@
         <Semester>Winter</Semester>
         <Year>2014</Year>
         <Course>PHYS 255</Course>
-        </Version>
-        <Version>
-          <Path>2013/physics255-WI2013/magforce.pdf</Path>
-          <Semester>Winter</Semester>
-          <Year>2013</Year>
-          <Course>PHYS 255</Course>
-        </Version>
-        <Version>
-          <Path>2012/physics255-WI2012/magforce.pdf</Path>
-          <Semester>Winter</Semester>
-          <Year>2012</Year>
-           <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics255-WI2013/magforce.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics255-WI2012/magforce.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 255</Course>
       </Version>
     </Versions>
     <Equipment>
@@ -4734,22 +4418,6 @@
       <Item>1 gram ball bearings</Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Magnetic Field of Current-Carrying Wires</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics255-WI2015/Magnetic-Field-of-Current-Carrying-Wires-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
     <SupportDocs/>
   </Lab>
   <Lab labId="">
@@ -5002,30 +4670,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Computational Models of Motion: Part 1</Name>
-    <Disciplines>
-      <Discipline>Computer Skills</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Kinematics</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2016/physics227-FA2016/227_2016_Lab02_Computing_Motion.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>computer with Vpython</Item>
-      <Item>access to internet</Item>
-    </Equipment>
-    <Type>Labatorial</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+  <Lab labId="0013">
     <Name>Equipotential Lines</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -5035,6 +4680,18 @@
       <Topic>Circuits</Topic>
     </Topics>
     <Versions>
+      <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial03-Equipotential-Lines-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial03-Equipotential-Lines-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial07-Equipotential-Lines-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -5119,7 +4776,7 @@
       <Topic>Electrostatics</Topic>
     </Topics>
     <Versions>
-        <Version>
+      <Version>
         <Path>2017/physics223-WI2017/Phys223-Labatorial01-Electric-Charges-and-Forces-WI2017.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2017</Year>
@@ -5202,8 +4859,8 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Introduction to 3D Computational Modelling in Physics</Name>
+  <Lab labId="0023">
+    <Name>Introduction to 3D Computational Modelling</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
@@ -5211,6 +4868,18 @@
         <Path>2016/physics227-FA2016/227_2016_Lab01_Introduction_to_computation.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2016</Year>
+        <Course>PHYS 227</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics227-FA2015/Introduction-to-3D-Computer-Modelling-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 227</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics227-FA2013/Introduction-to-3D-Computer-Modelling.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2013</Year>
         <Course>PHYS 227</Course>
       </Version>
     </Versions>
@@ -5322,22 +4991,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Electromagnetic Induction</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics255-WI2012/Phys255-Labatorial05-Induction-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Wave Superposition</Name>
     <Disciplines/>
     <Topics/>
@@ -5353,7 +5006,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0027">
     <Name>Power and Energy</Name>
     <Disciplines>
       <Discipline>Computer Skills</Discipline>
@@ -5371,6 +5024,18 @@
         <Year>2016</Year>
         <Course>PHYS 227</Course>
       </Version>
+      <Version>
+        <Path>2015/physics227-FA2015/Speed-Dependence-of-the-Air-Resistance-Force-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 227</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics227-FA2013/Speed-Dependance-of-the-Air-Resistance-Force.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 227</Course>
+      </Version>
     </Versions>
     <Equipment>
       <Item>3 flat-bottomed coffee filters</Item>
@@ -5382,11 +5047,23 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0015">
     <Name>Introduction to Electric Circuits</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial04-Electric-Circuits-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial04-Electric-Circuits-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial08-Electric-Circuits-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -5540,28 +5217,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Introduction to 3D Computer Modelling</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics227-FA2015/Introduction-to-3D-Computer-Modelling-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics227-FA2013/Introduction-to-3D-Computer-Modelling.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Magnetic Force and Torque on a Loop</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -5598,28 +5253,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Electric Fields of Charge Configurations</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics259-WI2017/Phys259-Labatorial02-Electric-Fields-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics259-WI2016/Phys259-Labatorial02-Electric-Fields-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Measurements and Uncertainties</Name>
     <Disciplines/>
     <Topics/>
@@ -5653,7 +5286,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0016">
     <Name>Magnetic Field in a Slinky</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
@@ -5664,6 +5297,18 @@
       <Topic>Circuits</Topic>
     </Topics>
     <Versions>
+      <Version>
+        <Path>2017/physics223-WI2017/Phys223-Labatorial05-Magnetic-Field-in-a-Slinky-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 223</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics223-WI2016/Phys223-Labatorial05-Magnetic-Field-in-a-Slinky-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 223</Course>
+      </Version>
       <Version>
         <Path>2015/physics223-WI2015/Phys223-Labatorial09-Magnetic-Field-in-a-Slinky-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -5728,29 +5373,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>The First Law of Thermodynamics</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics223-WI2017/Phys223-Labatorial07-First-Law-of-Thermodynamics-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics223-WI2016/Phys223-Labatorial07-First-Law-of-Thermodynamics-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 223</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+  <Lab labId="0032">
     <Name>Circuits</Name>
     <Disciplines/>
     <Topics/>
@@ -5766,6 +5389,24 @@
         <Semester>Winter</Semester>
         <Year>2013</Year>
         <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-SU2011/Phys259-Labatorial08-Circuits-SU2011.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-WI2011/Phys259_Labitorial8_Circuits_W2011.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics255-WI2012/Phys255-Labatorial03-Circuits-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 255</Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -5844,44 +5485,6 @@
     <SupportDocs/>
   </Lab>
   <Lab labId="">
-    <Name>Throw a Ball Up in the Air</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2015/physics227-FA2015/Throw-a-Ball-Up-in-the-Air-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 227</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Circuits</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2011/physics259-SU2011/Phys259-Labatorial08-Circuits-SU2011.pdf</Path>
-        <Semester>Summer</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-WI2011/Phys259_Labitorial8_Circuits_W2011.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
     <Name>Electric Resistivity of Play-Doh</Name>
     <Disciplines/>
     <Topics/>
@@ -5890,28 +5493,6 @@
         <Path>2017/physics259-WI2017/Phys259-Labatorial07-Play-Doh-Resistors-WI2017.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2017</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Electromagnetic Induction</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2011/physics259-SU2011/Phys259-L12-Induction-Final.pdf</Path>
-        <Semester>Summer</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics259-WI2011/Phys259_Labitorial12_Induction_W2011.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
     </Versions>
@@ -5980,11 +5561,29 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0034">
     <Name>Electric Field Mapping</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+      <Version>
+        <Path>2017/physics255-WI2017/Electric-Potential-Mapping-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics255-WI2016/Electric-Field-Mapping-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics255-WI2015/Electric-Field-Mapping-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 255</Course>
+      </Version>
       <Version>
         <Path>2014/physics255-WI2014/Electric-Field-Mapping-WI2014.pdf</Path>
         <Semester>Winter</Semester>
@@ -6008,11 +5607,41 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0039">
     <Name>Magnetic Fields and Magnetic Force</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
+          <Version>
+        <Path>2017/physics259-WI2017/Phys259-Labatorial08-Magnetic-Fields-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics259-WI2016/Phys259-Labatorial08-Magnetic-Fields-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+            <Version>
+        <Path>2015/physics259-WI2015/Phys259-Labatorial10-Magnetic-Fields-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics259-WI2014/Phys259-Labatorial10-Magnetic-Fields-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics259-WI2013/Phys259-Labatorial10-Magnetic-Fields-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 259</Course>
+      </Version>
       <Version>
         <Path>2011/physics259-SU2011/Phys259-Labatorial09-Magnetism-SU2011.pdf</Path>
         <Semester>Summer</Semester>
@@ -6025,13 +5654,19 @@
         <Year>2011</Year>
         <Course>PHYS 259</Course>
       </Version>
+      <Version>
+        <Path>2012/physics255-WI2012/Phys255-Labatorial04-MagneticFields-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 255</Course>
+      </Version>
     </Versions>
     <Equipment/>
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Measurement Uncertainties</Name>
+  <Lab labId="0041">
+    <Name>Introduction to Measurements and Uncertainties</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
     </Disciplines>
@@ -6041,9 +5676,15 @@
     </Topics>
     <Versions>
       <Version>
-        <Path>2017/physics255-WI2017/Measurement-Uncertainties-WI2017.pdf</Path>
+        <Path>2017/physics255-WI2017/Measurement-Uncertainties-FULL-WI2017.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2017</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics255-WI2016/Measurement-Uncertainties-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
         <Course>PHYS 255</Course>
       </Version>
       <Version>
@@ -6064,6 +5705,17 @@
         <Year>2013</Year>
         <Course>PHYS 255</Course>
       </Version>
+      <Version>
+        <Path>2012/physics255-WI2012/meas.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 255</Course>
+      </Version>
+      
+      
+      
+      
+      
       <Version>
         <Path>2016/physics323-FA2016/Measurement-Uncertainties-FA2016.pdf</Path>
         <Semester>Fall</Semester>
@@ -6308,32 +5960,34 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0036">
     <Name>Electromagnetic Induction</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
-      <Version>
+       <Version>
         <Path>2012/physics259-WI2012/Phys259-Labatorial13-Induction-WI2012.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2012</Year>
         <Course>PHYS 259</Course>
       </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Magnetic Field of Current-Carrying Wire</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
       <Version>
-        <Path>2016/physics255-WI2016/Magnetic-Field-of-a-Current-Carrying-Wire-WI2016.pdf</Path>
+        <Path>2012/physics255-WI2012/Phys255-Labatorial05-Induction-WI2012.pdf</Path>
         <Semester>Winter</Semester>
-        <Year>2016</Year>
+        <Year>2012</Year>
         <Course>PHYS 255</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-SU2011/Phys259-L12-Induction-Final.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics259-WI2011/Phys259_Labitorial12_Induction_W2011.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -6434,7 +6088,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0024">
     <Name>Jumping Up</Name>
     <Disciplines>
       <Discipline>Computer Skills</Discipline>
@@ -6563,52 +6217,6 @@
       <Item>LF411 or LF351 OpAmp</Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Electric Fields of Charge Configurations</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2017/physics255-WI2017/Electric-Charges-and-Forces-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics255-WI2016/Electric-Charges-and-Forces-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2015/physics255-WI2015/Electric-Charges-and-Forces-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics255-WI2014/Phys255-Labatorial01-Electric-Charges-and-Forces-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics255-WI2013/Phys255-Labatorial01-Electric-Charges-and-Forces-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-      <Version>
-        <Path>2012/physics255-WI2012/Phys255-Labatorial01-ElectricFields-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
     <SupportDocs/>
   </Lab>
   <Lab labId="">
@@ -6845,22 +6453,6 @@
       <Item>set of connecting leads (3)</Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Measurement Uncertainties Part II</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2016/physics255-WI2016/Measurement-Uncertainties-PartII-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 255</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
     <SupportDocs/>
   </Lab>
   <Lab labId="">
