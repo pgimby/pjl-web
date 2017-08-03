@@ -480,8 +480,11 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 	if (Boolean(truthy)) {
 		var extendeddatarecords = $(".lab-record-detailed-flex");
 		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
-			if ($(extendeddatarecords[i]).parent().hasClass("record-rendered")) {
+			var record = $(extendeddatarecords[i]).parent();
+			if (record.hasClass("record-rendered") && record.filter(".record-rendered").length < 100) {
 				$(extendeddatarecords[i]).slideDown()
+			} else {
+				$(extendeddatarecords[i]).css("display", "flex");
 			}
 		}
 		// extendeddatarecords.slideDown();
@@ -489,8 +492,11 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 	} else {
 		var extendeddatarecords = $(".lab-record-detailed-flex");
 		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
-			if ($(extendeddatarecords[i]).parent().hasClass("record-rendered")) {
+			var record = $(extendeddatarecords[i]).parent();
+			if (record.hasClass("record-rendered") && record.filter(".record-rendered").length < 100) {
 				$(extendeddatarecords[i]).slideUp()
+			} else {
+				$(extendeddatarecords[i]).css("display", "none");
 			}
 		}
 		// var extendeddatarecords = $(".lab-record-detailed-flex");
@@ -1053,23 +1059,11 @@ function getLabDisciplinesList(lab) {  //return an array of disciplines (strings
 function getLabEquipmentList(lab) {  //return an array of equipment (strings) for an XML "lab" node - not type safe
 	var list = [];
 	var equipment = lab.getElementsByTagName("Item");
-	// console.log(equipment)
 	for (var i = equipment.length - 1; i >= 0; i--) {
-		list.push(equipment[i].childNodes[0].nodeValue);
+		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 	}
 	return list;
 }
-
-
-
-// function getCourse(version) {  //return course string for an XML "lab" node - not type safe
-// 	// var list = [];
-// 	var course = version.getElementsByTagName("Course")[0].childNodes[0].nodeValue;
-// 	// for (var i = courses.length - 1; i >= 0; i--) {
-// 	// 	list.push(courses[i].childNodes[0].nodeValue);
-// 	// }
-// 	return course;
-// }
 
 
 
