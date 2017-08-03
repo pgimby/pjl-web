@@ -90,7 +90,7 @@ Interference
 Polarization  
 Newton's Laws  
 Wave Mechanics  
-
+Malus' Law
 
 
 

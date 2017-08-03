@@ -28,7 +28,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0062">
     <Name>Travelling Waves</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -114,7 +114,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0097">
     <Name>Radiation Absorption and Exposure</Name>
     <Disciplines/>
     <Topics/>
@@ -130,7 +130,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0076">
     <Name>Radiation Counting Statistics</Name>
     <Disciplines/>
     <Topics/>
@@ -146,7 +146,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0102">
     <Name>AC Circuits and Voltage Dividers</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -302,7 +302,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0091">
     <Name>Fizeau Bands</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -363,7 +363,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0064">
     <Name>Linear Regression</Name>
     <Disciplines/>
     <Topics/>
@@ -385,7 +385,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0086">
     <Name>Damped Mechanical Oscillations</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -404,30 +404,6 @@
         <Year>2016</Year>
         <Course>PHYS 341</Course>
       </Version>
-    </Versions>
-    <Equipment>
-      <Item>driven harmonic motion apparatus</Item>
-      <Item>assortment of slotted masses</Item>
-      <Item>assortment of red springs</Item>
-      <Item>calipers</Item>
-      <Item>digital balance</Item>
-    </Equipment>
-    <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Damped Mechanical Oscillations</Name>
-    <Disciplines>
-      <Discipline>Newtonian Mechanics</Discipline>
-      <Discipline>Math</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Newton’s Laws</Topic>
-      <Topic>Dynamics</Topic>
-      <Topic>ODE</Topic>
-      <Topic>Wave Mechanics</Topic>
-    </Topics>
-    <Versions>
       <Version>
         <Path>2015/physics341-FA2015/Damped-Mechanical-Oscillations-FA2015.pdf</Path>
         <Semester>Fall</Semester>
@@ -445,7 +421,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0120">
     <Name>Torsional Oscillations</Name>
     <Disciplines/>
     <Topics/>
@@ -673,7 +649,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0116">
     <Name>Resistor Capacitor Inductor (LRC) Filters</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -699,28 +675,6 @@
       <Item>10 kOhm potentiometer</Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
-    <Name>Malus's Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics323-FA2012/malus.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 323</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics323-FA2011/malus.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 323</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
     <SupportDocs/>
   </Lab>
   <Lab labId="0020">
@@ -908,7 +862,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0114">
     <Name>Operational Amplifier Comparator</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -938,7 +892,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0085">
     <Name>Forced Damped Mechanical Oscillations</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -968,7 +922,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0107">
     <Name>Basic OpAmp Difference Amplifier</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -1055,7 +1009,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0074">
     <Name>Planck's Constant with LEDs</Name>
     <Disciplines/>
     <Topics/>
@@ -1090,12 +1044,24 @@
         <Year>2013</Year>
         <Course>PHYS 325</Course>
       </Version>
+            <Version>
+        <Path>2016/physics365-FA2016/Plancks-Constant-from-LEDs-FA2016.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 365</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics365-FA2015/Plancks-Constant-from-LEDs-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 365</Course>
+      </Version>
     </Versions>
     <Equipment/>
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0090">
     <Name>Standing Waves</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -1262,7 +1228,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0094">
     <Name>Photometry</Name>
     <Disciplines/>
     <Topics/>
@@ -1296,7 +1262,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0115">
     <Name>Phase Locked Loop Frequency Synthesizer</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -1327,7 +1293,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0058">
     <Name>Oscilloscope and Multimeter</Name>
     <Disciplines/>
     <Topics/>
@@ -1349,7 +1315,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0084">
     <Name>Balloon Physics</Name>
     <Disciplines/>
     <Topics/>
@@ -1471,7 +1437,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0118">
     <Name>The NPN Transistor Bias and Switching</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -1500,39 +1466,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Planck's Constant from LEDs</Name>
-    <Disciplines>
-      <Discipline>Quantum Mechanics</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Circuits</Topic>
-      <Topic>Work and Energy</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>2016/physics365-FA2016/Plancks-Constant-from-LEDs-FA2016.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 365</Course>
-      </Version>
-      <Version>
-        <Path>2015/physics365-FA2015/Plancks-Constant-from-LEDs-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 365</Course>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item>LED apparatus</Item>
-      <Item>Fluke multimeter (2)</Item>
-      <Item>Anatek power supply</Item>
-      <Item>set of connecting leads (2)</Item>
-    </Equipment>
-    <Type>Lab</Type>
-    <SupportDocs/>
-  </Lab>
-   <Lab labId="">
+   <Lab labId="0077">
     <Name>Radioactive Decay</Name>
     <Disciplines/>
     <Topics/>
@@ -1572,7 +1506,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0075">
     <Name>Quantum Defects in Sodium</Name>
     <Disciplines/>
     <Topics/>
@@ -1656,7 +1590,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0101">
     <Name>Voltage Dividers and Voltage Sources</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -1718,8 +1652,8 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-    <Lab labId="">
-    <Name>Error Analysis</Name>
+    <Lab labId="0055">
+    <Name>Advanced Measurements and Uncertainties</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
@@ -1734,7 +1668,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0089">
     <Name>Simple Harmonic Oscillations</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -1899,7 +1833,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0096">
     <Name>Hall Effect and Magnetic Hysteresis</Name>
     <Disciplines/>
     <Topics/>
@@ -2044,7 +1978,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-    <Lab labId="">
+    <Lab labId="0088">
     <Name>Hydrogen Balmer Series</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -2084,7 +2018,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0108">
     <Name>DC Circuits</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -2113,7 +2047,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0063">
     <Name>Fourier Series</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -2125,6 +2059,12 @@
       <Topic>Measurements</Topic>
     </Topics>
     <Versions>
+    <Version>
+        <Path>2013/physics323-FA2013/Wave-Superposition-FA2013.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 323</Course>
+      </Version>
       <Version>
         <Path>2016/physics397-FA2016/Fourier-Series-FA2016.pdf</Path>
         <Semester>Fall</Semester>
@@ -2171,7 +2111,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0100">
     <Name>Vacuum Technology Laboratory</Name>
     <Disciplines/>
     <Topics/>
@@ -2217,7 +2157,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-    <Lab labId="">
+    <Lab labId="0113">
     <Name>OpAmps I/V</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -2273,7 +2213,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0061">
     <Name>Thin Lenses and Optical Instruments</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -2378,7 +2318,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0054">
     <Name>Electromagnetic Induction</Name>
     <Disciplines/>
     <Topics/>
@@ -2429,7 +2369,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0083">
     <Name>Drag Forces</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -2468,7 +2408,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0099">
     <Name>Spectroscopy</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -2531,7 +2471,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0093">
     <Name>Michelson Interferometer</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -2661,7 +2601,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0059">
     <Name>Parallel Plate Capacitors</Name>
     <Disciplines/>
     <Topics/>
@@ -2683,7 +2623,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0117">
     <Name>Swept Frequency Waveform Generator, DFT</Name>
     <Disciplines/>
     <Topics/>
@@ -2739,7 +2679,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0079">
     <Name>X-Ray Diffraction</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -2783,6 +2723,12 @@
         <Year>2012</Year>
         <Course>PHYS 397</Course>
       </Version>
+      <Version>
+        <Path>2012/physics325-WI2012/xray.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 325</Course>
+      </Version>
     </Versions>
     <Equipment>
       <Item>Tel-X-ometer x-ray spectrometer</Item>
@@ -2813,7 +2759,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0060">
     <Name>Reflection and Refraction</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -2869,35 +2815,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Malus' Law and Birefringence</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics369-FA2012/malus.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 369</Course>
-      </Version>
-      <Version>
-        <Path>2011/physics369-FA2011/malus.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 369</Course>
-      </Version>
-      <Version>
-        <Path>2016/physics375-FA2016/Malus-Law-and-Birefringence-FA2016.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 375</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="0037">
+   <Lab labId="0037">
     <Name>Faraday's Law</Name>
     <Disciplines/>
     <Topics/>
@@ -2925,7 +2843,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0110">
     <Name>Introduction to OpAmps</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -3074,7 +2992,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0119">
     <Name>The Transformer and the PN Rectifier Bridge</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -3105,7 +3023,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0112">
     <Name>Lock-In Detector</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -3136,7 +3054,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0069">
     <Name>Electron Gas in Metals</Name>
     <Disciplines>
       <Discipline>Statistical Mechanics</Discipline>
@@ -3194,8 +3112,8 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Linear Polarization</Name>
+  <Lab labId="0057">
+    <Name>Malus' Law and Birefringence</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
       <Discipline>Math</Discipline>
@@ -3204,8 +3122,63 @@
     <Topics>
       <Topic>Integration</Topic>
       <Topic>Polarization</Topic>
+      <Topic>Malus' Law</Topic>
     </Topics>
     <Versions>
+    <Version>
+        <Path>2016/physics323-FA2016/Linear-Polorization-FA2016.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 323</Course>
+      </Version>
+      <Version>
+        <Path>2015/physics323-FA2015/Linear-Polorization-FA2015.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 323</Course>
+      </Version>
+      <Version>
+        <Path>2014/physics323-FA2014/Linear-Polorization-FA2014.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 323</Course>
+      </Version>
+      <Version>
+        <Path>2013/physics323-FA2013/Linear-Polorization-FA2013.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 323</Course>
+      </Version>
+    <Version>
+        <Path>2012/physics323-FA2012/malus.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 323</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics323-FA2011/malus.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 323</Course>
+      </Version>
+      <Version>
+        <Path>2012/physics369-FA2012/malus.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 369</Course>
+      </Version>
+      <Version>
+        <Path>2011/physics369-FA2011/malus.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 369</Course>
+      </Version>
+      <Version>
+        <Path>2016/physics375-FA2016/Malus-Law-and-Birefringence-FA2016.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 375</Course>
+      </Version> 
       <Version>
         <Path>2014/physics369-FA2014/Linear-Polorization-FA2014.pdf</Path>
         <Semester>Fall</Semester>
@@ -3218,7 +3191,7 @@
         <Year>2013</Year>
         <Course>PHYS 369</Course>
       </Version>
-    </Versions>
+      </Versions>
     <Equipment>
       <Item>1 m optical bench</Item>
       <Item>Optical mounts (6)</Item>
@@ -3375,7 +3348,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-    <Lab labId="">
+    <Lab labId="0082">
     <Name>Uniform Circular Motion</Name>
     <Disciplines/>
     <Topics/>
@@ -3391,7 +3364,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0071">
     <Name>Faraday Effect</Name>
     <Disciplines>
       <Discipline>Quantum Mechanics</Discipline>
@@ -3626,7 +3599,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0092">
     <Name>Laser Beams</Name>
     <Disciplines/>
     <Topics/>
@@ -3666,22 +3639,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>X-ray Diffraction</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2012/physics325-WI2012/xray.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 325</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
+
   <Lab labId="0005">
     <Name>Newton's Third Law</Name>
     <Disciplines/>
@@ -3840,7 +3798,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0053">
     <Name>Concave Mirrors</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -4112,7 +4070,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0095">
     <Name>AC Measurements and Sources</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -4172,7 +4130,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-    <Lab labId="">
+    <Lab labId="0067">
     <Name>Compton Scattering</Name>
     <Disciplines>
       <Discipline>Relativity</Discipline>
@@ -4238,7 +4196,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0081">
     <Name>Inclined Atwood Machine</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -4349,7 +4307,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0111">
     <Name>Introduction to Phase Locked Loop</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -4438,7 +4396,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0106">
     <Name>Basic Digital Instruments</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -4600,22 +4558,6 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Wave Superposition</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2013/physics323-FA2013/Wave-Superposition-FA2013.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 323</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
   <Lab labId="0027">
     <Name>Power and Energy</Name>
     <Disciplines>
@@ -4709,7 +4651,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0056">
     <Name>Fraunhofer Diffraction</Name>
     <Disciplines>
       <Discipline>Optics</Discipline>
@@ -4780,7 +4722,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0070">
     <Name>Evidence for Quantized Atomic Energy Levels</Name>
     <Disciplines/>
     <Topics/>
@@ -4826,8 +4768,8 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Measurements and Uncertainties</Name>
+  <Lab labId="0087">
+    <Name>Measurements and Uncertainties for Engineers</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
@@ -4931,7 +4873,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0103">
     <Name>AC Circuits, Waveforms, and Phase</Name>
     <Disciplines/>
     <Topics/>
@@ -4993,41 +4935,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
-    <Name>Linear Polorization</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>2016/physics323-FA2016/Linear-Polorization-FA2016.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 323</Course>
-      </Version>
-      <Version>
-        <Path>2015/physics323-FA2015/Linear-Polorization-FA2015.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 323</Course>
-      </Version>
-      <Version>
-        <Path>2014/physics323-FA2014/Linear-Polorization-FA2014.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 323</Course>
-      </Version>
-      <Version>
-        <Path>2013/physics323-FA2013/Linear-Polorization-FA2013.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 323</Course>
-      </Version>
-    </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-  </Lab>
-  <Lab labId="">
+  <Lab labId="0080">
     <Name>Hanging Chain</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
@@ -5080,7 +4988,7 @@
     <Type/>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0098">
     <Name>RLC Resonant Circuits</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -5348,7 +5256,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0104">
     <Name>Active Filters and Anti-Aliasing Filters</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -5378,7 +5286,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0072">
     <Name>Nuclear Decay</Name>
     <Disciplines>
       <Discipline>Nuclear Physics</Discipline>
@@ -5712,7 +5620,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0066">
     <Name>Colour Temperature</Name>
     <Disciplines>
       <Discipline>Quantum Mechanics</Discipline>
@@ -5777,7 +5685,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0105">
     <Name>Bandwidth and Stabillity</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -5805,7 +5713,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0078">
     <Name>Rutherford Scattering</Name>
     <Disciplines>
       <Discipline>Particle Physics</Discipline>
@@ -5864,7 +5772,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0065">
     <Name>Black Body Radiation</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -5934,7 +5842,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0109">
     <Name>Introduction to Digital Logic</Name>
     <Disciplines>
       <Discipline>Laboratory Skills</Discipline>
@@ -5967,7 +5875,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0068">
     <Name>Electron Diffraction</Name>
     <Disciplines>
       <Discipline>Particle Physics</Discipline>
@@ -6041,7 +5949,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
   </Lab>
-  <Lab labId="">
+  <Lab labId="0073">
     <Name>Photoelectric Effect</Name>
     <Disciplines>
       <Discipline>Quantum Mechanics</Discipline>
