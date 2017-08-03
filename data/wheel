@@ -23,11 +23,16 @@ def increment_files(files):
         index += 1
         f = f[:-1] + str(index)
         os.rename(db_storage + files[i], db_storage + f)
-        os.rename(db_storage + "labDB.xml", db_storage + "labDB.0")
-        os.system("cp " + new_xml + " " + db_storage + "labDB.xml")
+    os.rename(db_storage + "labDB.xml", db_storage + "labDB.0")
+    os.system("cp " + new_xml + " " + db_storage + "labDB.xml")
 
+
+
+
+
+    
 #MAIN
         
 if __name__ == "__main__":
     files = get_db_files()
-    increment_files(files)
+    increment_files(list(reversed(files)))
