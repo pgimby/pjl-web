@@ -365,7 +365,7 @@
         <Number>2</Number>
       </Item>
       <Item id="0050">
-        <Name>Vernier position sensors</Name>
+        <Name>Vernier position sensor</Name>
         <Number>2</Number>
       </Item>
       <Item id="0097">
@@ -5765,8 +5765,16 @@
         <Name>CM3130</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistor: 3.3kOhm (7)/910kOhm/620kOhm</Name>
+      <Item id="0127">
+        <Name>910 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0128">
+        <Name>620 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0126">
+        <Name>3.3 kOhm resistor</Name>
         <Number>7</Number>
       </Item>
       <Item id="0124">
@@ -6823,8 +6831,12 @@
         <Name>0.01 microF capacitor</Name>
         <Number>8</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 47kOhm (4)/27kOhm (2)</Name>
+      <Item id="0129">
+        <Name>47 kOhm resistor</Name>
+        <Number>4</Number>
+      </Item>
+      <Item id="0130">
+        <Name>27 kOhm resistor</Name>
         <Number>2</Number>
       </Item>
       <Item id="0126">
@@ -6905,15 +6917,15 @@
         <Name>Maestro pulse height analyzer software</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0141">
         <Name>0.15 mCi Pu-239-Am-241-Cm-244 triple alpha reference source</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0142">
         <Name>0.1 mCi Po-210 alpha source</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0143">
         <Name>5.89 nCi Th-230 alpha source</Name>
         <Number>1</Number>
       </Item>
