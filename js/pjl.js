@@ -144,7 +144,7 @@ $(document).on("click", "#sort-course", function(e) {
 
 
 $(document).on("click", ".download-icon", function(e) {
-	window.open($(e.target).parent().parent().find(".version-path").attr("href"), "_blank");
+	window.open(siteroot + $(e.target).parent().parent().find(".version-path").attr("href"), "_blank");
 });
 
 
