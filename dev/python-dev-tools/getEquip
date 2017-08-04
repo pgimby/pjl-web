@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+
+#import packages
+import argparse
+import os
+from xml.etree import ElementTree as ET
+
+#params
+xml_file = "../labDB.xml"
+outputwidth = 100
+
+
+
+#command line arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("idnum")
+args = parser.parse_args()
+i = args.idnum
+
+
+#open XML file
+tree = ET.parse(xml_file)
+root = tree.getroot()
+
+
+#show names of equipment and count number of hits
+count = 0
+for item in root.findall(".//Item"):
+    if item.attrib["id"] == i:
+        count += 1
+        s1 = "Name: " + item[0].text
+        s2 = "Amount: " + item[1].text
+        gap = outputwidth - len(s1) - len(s2)
+        s = s1
+        for j in range(gap):
+            s += " "
+        s += s2
+        print(s)
+
+print("\nFound " + str(count) + " equipment records in " + str(os.path.abspath(xml_file)) + "\n\n")
