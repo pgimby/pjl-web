@@ -13,19 +13,19 @@ def get_db_files():
     all_files = os.listdir(db_storage)
     db_files = []
     for f in all_files:
-        if f.startswith("labDB.") and f[-1] in ['0','1','2','3','4','5','6','7']:
+        if f.startswith("labDB") and f.split(".")[0][-1] in ['0','1','2','3','4','5','6','7']:
             db_files.append(f)
     return sorted(db_files)
 
 def increment_files(files):
     for i,f in enumerate(files):
-        index = int(f[-1])
+        name = f.split(".")[0]
+        index = int(name[-1])
         index += 1
-        f = f[:-1] + str(index)
+        f = name[:-1] + str(index) + ".xml"
         os.rename(db_storage + files[i], db_storage + f)
-    os.rename(db_storage + "labDB.xml", db_storage + "labDB.0")
+    os.rename(db_storage + "labDB.xml", db_storage + "labDB-0.xml")
     os.system("cp " + new_xml + " " + db_storage + "labDB.xml")
-
 
 
 
