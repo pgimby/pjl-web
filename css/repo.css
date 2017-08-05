@@ -731,6 +731,7 @@ select {
 	#records-header a, #records-header p {
 		margin: 0;
 		width: 10px;
+		padding-left: 15px;
 	}
 
 	#expand-all-button {

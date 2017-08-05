@@ -35,7 +35,7 @@ Demos repository (not confirmed)
 
 # Site Map
 
-<img src="/dev/pagemap.png" width="480">
+<img src="/dev/sitemap.png" width="480">
 
 # Source Map
 

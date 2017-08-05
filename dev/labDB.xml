@@ -221,8 +221,12 @@
         <Name>breadboard</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 15kOhm/27kOhm</Name>
+      <Item id="0131">
+        <Name>15 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0130">
+        <Name>27 kOhm resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0120">
@@ -1849,7 +1853,11 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>resistors: 47kOhm/4.7kOhm</Name>
+        <Name>resistors: 4.7kOhm</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0129">
+        <Name>47 kOhm resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
@@ -3933,8 +3941,8 @@
         <Name>div 1/div 10 probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 15kOhm (2)</Name>
+      <Item id="0131">
+        <Name>15 kOhm resistor</Name>
         <Number>2</Number>
       </Item>
       <Item id="0124">
@@ -4018,8 +4026,8 @@
         <Name>0.1 microF capacitor</Name>
         <Number>4</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 47kOhm (3)</Name>
+      <Item id="0129">
+        <Name>47 kOhm resistor</Name>
         <Number>3</Number>
       </Item>
       <Item id="0126">
@@ -7621,8 +7629,16 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>resistors: 6.8kOhm (8)/15kOhm (6)/30kOhm (8)</Name>
+        <Name>resistors: 6.8kOhm (8)</Name>
         <Number>4</Number>
+      </Item>
+      <Item id="0132">
+        <Name>30 kOhm resistor</Name>
+        <Number>8</Number>
+      </Item>
+      <Item id="0131">
+        <Name>15 kOhm resistor</Name>
+        <Number>6</Number>
       </Item>
       <Item id="0124">
         <Name>100 kOhm resistor</Name>
