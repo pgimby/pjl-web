@@ -142,10 +142,11 @@ $(document).on("click", ".modal-content", function(e) {
 
 
 $(document).on("click", "#zip-download-confirm", function(e) {
+	console.log("ff")
 	$("main").removeClass("blurred-page");
 	$(".modal-screen").css({display: 'none', paddingTop: 0});
 	$("#zip-progress-bar").stop().slideDown(100);
-	makePromisesBeginZip();
+	// makePromisesBeginZip();
 });
 
 
@@ -198,6 +199,17 @@ $(document).on("click", "#show-all-button", function(e) {
 	falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester"), $("#sort-name")]);
 });
 
+
+
+$(document).on("click", "#staff-name-ernst", function(e) {
+	window.open("http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst");
+});
+
+
+
+$(document).on("click", "#staff-name-gimby", function(e) {
+	window.open("http://phas.ucalgary.ca/phas_info/profiles/peter-gimby");
+});
 
 
 

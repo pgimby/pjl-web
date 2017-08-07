@@ -12,20 +12,6 @@
     src: url(../fonts/webfonts_Flipside-BRK/Flipside-BRK.ttf.woff);
 }
 
-#pjl-logo {
-	color: #EEE;
-	font-family: logoFont;
-	margin: 1px 10px;
-	padding: 0;
-	font-size: 1.7em;
-	display: inline-block;
-}
-
-	#pjl-logo:hover {
-		cursor: pointer;
-		color: #FFF;
-	}
-
 h1,
 h2,
 h3,
@@ -88,9 +74,36 @@ header {
 	height: 36px;
 	width: 100%;
 	background-color: #333;
-	position: relative;
+	position: fixed;
 	border-bottom: 1px solid #FFF;
+	z-index: 1;
 }
+
+#pjl-logo {
+	color: #EEE;
+	font-family: logoFont;
+	margin: 1px 10px;
+	padding: 0;
+	font-size: 1.7em;
+	display: inline-block;
+}
+
+	#pjl-logo:hover {
+		cursor: pointer;
+		color: #FFF;
+	}
+
+#header-accordion {
+	color: #EEE;
+	font-size: 1.4em;
+	position: relative;
+	top: -3px;
+}
+
+	#header-accordion:hover {
+		color: #FFF;
+		cursor: pointer;
+	}
 
 
 
@@ -215,7 +228,7 @@ header {
 
 footer {
 	min-height: 200px;
-	background: linear-gradient(#939393, #939393, #939393, #bbbbbb);
+	background-color: #222;
 	box-shadow: 0 0 2px 1px rgba(0,0,0,1);
 }
 
@@ -239,17 +252,19 @@ footer {
 		color: #FFFFFF;
 	}
 
+	footer h1,
 	footer h2,
 	footer h3,
 	footer h4 {
 	 	padding: 0;
 	 	margin: 0 0 2px 0;
+	 	color: #EEE;
 	}
 
 #footer-baseline {
 	height: 40px;
 	width: 100%;
-	background-color: #333333;
+	background-color: #939393;
 	position: relative;
 	bottom: -100%;
 	border-top: 1px solid #FFF;
@@ -259,24 +274,37 @@ footer {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 	padding: 10px;
 }
 
 #footer-mid {
 	display: -webkit-flex;
 	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	padding: 10px;
+}
+
+.footer-title {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 2px;
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+
+#staff-members {
+	display: -webkit-flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	flex: 4;
-	justify-content: left;
+	justify-content: space-between;
 }
 
 #footer-right {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 	padding: 10px;
 }
 
@@ -284,7 +312,11 @@ footer {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
-	margin: 10px;
+	margin: 0 100px 10px 0;
+}
+
+.staff-name:hover {
+	cursor: pointer;
 }
 
 .staff-details {
@@ -332,7 +364,7 @@ footer {
 
 
 /*******************************************************************/
-/*                 STYLING FOR MODAL CONTAINERS                    */
+/*                 STYLING FOR DIALOGS & MODALS                    */
 /*******************************************************************/
 
 
@@ -421,7 +453,9 @@ footer {
 #download-options {
 	display: -webkit-flex;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 10px;
 }
 
 	#download-options > div {
