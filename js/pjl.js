@@ -145,11 +145,16 @@ $(document).on("click", "#zip-download-confirm", function(e) {
 	var pdf = $("#PDF").prop("checked");
 	var tex = $("#TEX").prop("checked");
 	var extradocs = $("#EXTRA").prop("checked");
-	console.log("Download .tex: " + String(tex) + "   Download .pdf: " + String(pdf) +"   Download extra docs: " + String(extradocs));
+	if (!pdf && !tex && !extradocs) {
+		$("#zip-options-warning").stop().slideDown(400, function() {
+			setTimeout(function(){$("#zip-options-warning").stop().slideUp(400)}, 2000);
+		});
+		return false;
+	}
 	$("main").removeClass("blurred-page");
 	$(".modal-screen").css({display: 'none', paddingTop: 0});
 	$("#zip-progress-bar").stop().slideDown(100);
-	makePromisesBeginZip();
+	makePromisesBeginZip(collectFiles2Zip(pdf, tex, extradocs));
 });
 
 
@@ -895,14 +900,15 @@ function equipmentSearchHandler(searchphrase) {  //handle the search request for
 
 
 
-function makePromisesBeginZip() {  //take URLs for currently displayed records, create promises, and zip for download upon resolution of all promises
+function makePromisesBeginZip(filelist) {  //take URLs for currently displayed records, create promises, and zip for download upon resolution of all promises
 	var zip = new JSZip();
-	var files = ["/data/testfiles/3.pdf","/data/testfiles/1.txt","/data/testfiles/4.pdf",
-	"/data/testfiles/3.txt","/data/testfiles/5.pdf","/data/testfiles/3.txt","/data/testfiles/6.pdf",
-	"/data/testfiles/2.txt","/data/testfiles/4.pdf","/data/testfiles/4.txt","/data/testfiles/4.pdf",
-	"/data/testfiles/8.txt","/data/testfiles/9.txt","/data/testfiles/10.txt","/data/testfiles/11.txt",
-	"/data/testfiles/12.txt","/data/testfiles/13.txt","/data/testfiles/14.txt","/data/testfiles/15.txt",
-	"/data/testfiles/1.pdf","/data/testfiles/2.pdf","/data/testfiles/3.pdf","/data/testfiles/4.pdf"];//getCurrentRecordPaths();
+	//var files = ["/data/testfiles/3.pdf","/data/testfiles/1.txt","/data/testfiles/4.pdf",
+	//"/data/testfiles/3.txt","/data/testfiles/5.pdf","/data/testfiles/3.txt","/data/testfiles/6.pdf",
+	//"/data/testfiles/2.txt","/data/testfiles/4.pdf","/data/testfiles/4.txt","/data/testfiles/4.pdf",
+	//"/data/testfiles/8.txt","/data/testfiles/9.txt","/data/testfiles/10.txt","/data/testfiles/11.txt",
+	//"/data/testfiles/12.txt","/data/testfiles/13.txt","/data/testfiles/14.txt","/data/testfiles/15.txt",
+	//"/data/testfiles/1.pdf","/data/testfiles/2.pdf","/data/testfiles/3.pdf","/data/testfiles/4.pdf"];
+	var files = filelist;
 	var promises = [];
 	var xhrs = [];
 	var progresscount = 0;
@@ -933,11 +939,16 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 		zip.generateAsync({type:"blob"}).then(function (blob) {
 		saveAs(blob, zipoutputfilename);
 		$("#zip-progress-bar").stop().slideUp(500);
-	}, function (err) {
-          console.log(err); //this should never be thrown as I checked for browser compat. already in canZip()
-          					//but for completeness' sake we could write a modal dialog to throw up here.
-      });
+	});
 	return false;
+	});
+	deferredzip.fail(function() {
+		$("#file-prep").text("Download failed.");
+		setTimeout(function() {
+			$("#zip-progress-bar").stop().slideUp(500, function() {
+				$("#file-prep").text("Preparing files...");
+			});
+		}, 2000);
 	});
 }
 
@@ -958,8 +969,9 @@ function beginDownload(filepath, promise) {  //start downloading PDF and resolve
             promise.notify();
             promise.resolve(filename, blob);
             console.log("File " + filename + " successfully loaded");
-    	} else {
-    		console.log("waiting on HTTP readystate...");
+    	} else if(this.status == 404 || this.status == 403) {
+    		console.log(this.status)
+    		promise.reject();
     	}
   	};
   	xhttp.open("GET", siteroot + filepath, true);
@@ -979,6 +991,25 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 
 
 
+function collectFiles2Zip(doPDF, doTEX, doEXTRA) {  //return an array of file paths to be zipped based on user type selection
+	var filelist = [];
+	var records = getCurrentRecords();
+	for (var i = records.length - 1; i >= 0; i--) {
+		var extradocs = records[i].find(".extra-doc");
+		if (Boolean(doPDF)) {
+			filelist.push(records[i].find(".version-path").attr("href"));
+		}
+		extradocs.each(function(i, doc) {
+			console.log(doc)
+			if (Boolean(doTEX) && $(doc).attr("href").endsWith(".tex")) {
+				filelist.push($(doc).attr("href"));
+			} else if (Boolean(doEXTRA)) {
+				filelist.push($(doc).attr("href"));
+			}
+		});
+	}
+	return filelist;
+}
 
 
 

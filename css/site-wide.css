@@ -533,6 +533,13 @@ footer {
 		cursor: pointer;
 	}
 
+#zip-options-warning {
+	position: relative;
+	bottom: 3px;
+	width: 100%;
+	display: none;
+}
+
 
 .blurred-page {
 	-webkit-filter: blur(1px);
