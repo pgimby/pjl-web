@@ -142,11 +142,14 @@ $(document).on("click", ".modal-content", function(e) {
 
 
 $(document).on("click", "#zip-download-confirm", function(e) {
-	console.log("ff")
+	var pdf = $("#PDF").prop("checked");
+	var tex = $("#TEX").prop("checked");
+	var extradocs = $("#EXTRA").prop("checked");
+	console.log("Download .tex: " + String(tex) + "   Download .pdf: " + String(pdf) +"   Download extra docs: " + String(extradocs));
 	$("main").removeClass("blurred-page");
 	$(".modal-screen").css({display: 'none', paddingTop: 0});
 	$("#zip-progress-bar").stop().slideDown(100);
-	// makePromisesBeginZip();
+	makePromisesBeginZip();
 });
 
 
@@ -899,7 +902,7 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 	"/data/testfiles/2.txt","/data/testfiles/4.pdf","/data/testfiles/4.txt","/data/testfiles/4.pdf",
 	"/data/testfiles/8.txt","/data/testfiles/9.txt","/data/testfiles/10.txt","/data/testfiles/11.txt",
 	"/data/testfiles/12.txt","/data/testfiles/13.txt","/data/testfiles/14.txt","/data/testfiles/15.txt",
-	"/data/testfiles/1.pdf"];//getCurrentRecordPaths();
+	"/data/testfiles/1.pdf","/data/testfiles/2.pdf","/data/testfiles/3.pdf","/data/testfiles/4.pdf"];//getCurrentRecordPaths();
 	var promises = [];
 	var xhrs = [];
 	var progresscount = 0;
@@ -915,6 +918,7 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 	$(document).on("click", "#cancel-download", function(e) {
 		for (var i = xhrs.length - 1; i >= 0; i--) {
 			xhrs[i].abort();
+			promises[i].reject();
 		}
 		console.log("cancelled")
 		$("#zip-progress-bar").stop().slideUp(500);
@@ -955,7 +959,7 @@ function beginDownload(filepath, promise) {  //start downloading PDF and resolve
             promise.resolve(filename, blob);
             console.log("File " + filename + " successfully loaded");
     	} else {
-    		console.log("Error on XHTTP Request - Error Code: " + String(this.status));
+    		console.log("waiting on HTTP readystate...");
     	}
   	};
   	xhttp.open("GET", siteroot + filepath, true);
