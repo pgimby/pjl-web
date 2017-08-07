@@ -269,15 +269,59 @@
 
       <div id="footer-baseline"></div>
 
-      <div id=zip-progress-bar>
-        <h2 id="file-prep">Preparing files...</h2>
-        <h3 id="cancel-download">cancel</h3>
-        <progress value="0" max="1"></progress>
 
+      <div id=zip-progress-bar>
+        <div id="zip-progress-header">
+          <h2 id="file-prep">Preparing files...</h2>
+          <div class="modal-close-button" id="cancel-download">
+            <!-- <img class="modal-close-icon" src="./img/close-icon-bright.png"> -->
+          </div>
+        </div>
+        <!-- <h2 id="file-prep">Preparing files...</h2> -->
+        <progress value="0" max="1"></progress>
       </div>
 
 
     </footer>
+
+
+
+
+
+  <!-- MODAL DIALOGS -->
+
+  <div class="modal-screen">
+    <div class="modal-content" id="zip-options">
+      <div id="zip-options-header">
+        <h1 id="zip-options-title">Download Options</h1>
+        <div class="modal-close-button">
+          <!-- <img class="modal-close-icon" src="./img/close-icon-bright.png"> -->
+        </div>
+      </div>
+
+      <div id="zip-options-body">
+        <p>Which files do you want to download?</p>
+        <div id="download-options">
+          <div>
+            <input type="checkbox" name="PDF" id="PDF">
+            <label for="PDF">PDF</label>
+          </div>
+          <div>
+            <input type="checkbox" name="TEX" id="TEX">
+            <label for="TEX">TEX</label>
+          </div>
+          <div>
+            <input type="checkbox" name="EXTRA" id="EXTRA">
+            <label for="EXTRA">Extra</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="zip-options-footer">
+      <h1 id="zip-download-confirm">Download</h1>
+      </div>
+    </div>
+  </div>
 
   </body>
 

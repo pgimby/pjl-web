@@ -56,7 +56,7 @@ function initPage() {  //initialize the page
 
 $(document).on("click", ".lab-details-drop-icon-flex", function(e) {
 	var extendeddataflex = $(e.target).parent().siblings(".lab-record-detailed-flex");
-	extendeddataflex.slideToggle("fast");
+	extendeddataflex.stop().slideToggle("fast");
 });
 
 
@@ -108,15 +108,46 @@ $(document).on("keypress", "#search-bar", function(e) {
 
 $(document).on("click", "#search-help-button", function(e) {
 	$(".search-container").toggleClass("search-help-opened");
-	$(e.target).next().slideToggle(300);
+	$(e.target).next().stop().slideToggle(300);
 });
 
 
 
 $(document).on("click", "#zip-icon", function(e) {
-	$("#zip-progress-bar").slideDown(100);
+	$("main").addClass("blurred-page");
+	$(".modal-screen").css("display", "block");
+	$(".modal-screen").stop().animate({paddingTop: 300}, 200);
+});
+
+
+
+$(document).on("click", ".modal-close-button", function(e) {
+	$("main").removeClass("blurred-page");
+	$(".modal-screen").css({display: 'none', paddingTop: 0});
+});
+
+
+
+$(document).on("click", ".modal-screen", function(e) {
+	$("main").removeClass("blurred-page");
+	$(".modal-screen").css({display: 'none', paddingTop: 0});
+});
+
+
+
+$(document).on("click", ".modal-content", function(e) {
+	e.stopPropagation();
+});
+
+
+
+$(document).on("click", "#zip-download-confirm", function(e) {
+	$("main").removeClass("blurred-page");
+	$(".modal-screen").css({display: 'none', paddingTop: 0});
+	$("#zip-progress-bar").stop().slideDown(100);
 	makePromisesBeginZip();
 });
+
 
 
 $(document).on("click", "#sort-name", function(e) {
@@ -482,7 +513,7 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
 			var record = $(extendeddatarecords[i]).parent();
 			if (record.hasClass("record-rendered") && record.filter(".record-rendered").length < 100) {
-				$(extendeddatarecords[i]).slideDown()
+				$(extendeddatarecords[i]).stop().slideDown()
 			} else {
 				$(extendeddatarecords[i]).css("display", "flex");
 			}
@@ -494,7 +525,7 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
 			var record = $(extendeddatarecords[i]).parent();
 			if (record.hasClass("record-rendered") && record.filter(".record-rendered").length < 100) {
-				$(extendeddatarecords[i]).slideUp()
+				$(extendeddatarecords[i]).stop().slideUp()
 			} else {
 				$(extendeddatarecords[i]).css("display", "none");
 			}
@@ -874,7 +905,7 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 			xhrs[i].abort();
 		}
 		console.log("cancelled")
-		$("#zip-progress-bar").slideUp(500);
+		$("#zip-progress-bar").stop().slideUp(500);
 		return;
 	});
 	var deferredzip = $.when.apply(this, promises);
@@ -885,7 +916,7 @@ function makePromisesBeginZip() {  //take URLs for currently displayed records, 
 	deferredzip.done(function() {
 		zip.generateAsync({type:"blob"}).then(function (blob) {
 		saveAs(blob, zipoutputfilename);
-		$("#zip-progress-bar").slideUp(500);
+		$("#zip-progress-bar").stop().slideUp(500);
 	}, function (err) {
           console.log(err); //this should never be thrown as I checked for browser compat. already in canZip()
           					//but for completeness' sake we could write a modal dialog to throw up here.
@@ -1194,7 +1225,7 @@ function compareLabsByName(a, b) {  //comparison function for Array.prototype.so
 
 function flash(jQueryDOMSelection) {
 	jQueryDOMSelection.css("opacity", ".8");
-	jQueryDOMSelection.animate({opacity: 1}, 600);
+	jQueryDOMSelection.stop().animate({opacity: 1}, 600);
 }
 
 

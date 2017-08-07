@@ -31,7 +31,8 @@ h2,
 h3,
 h4,
 p,
-a {
+a,
+label {
 	line-height: 1.3em;
 	margin: 2px 10px;
 	padding: 2px;
@@ -341,13 +342,13 @@ footer {
 	height: 200px;
 	position: fixed;
 	bottom: -100px;
-	background-color: rgba(250,250,250,.8);
+	background-color: rgba(250,250,250,.9);
 	display: none;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	border-radius: 4px 4px 0 0;
-	box-shadow: 0 0 6px 2px rgba(0,0,0,.7) inset, 0 0 32px 2px rgba(0,0,0,.3);
+	box-shadow: 0 0 32px 2px rgba(0,0,0,.3);
 }
 
 #zip-progress-bar progress {
@@ -355,32 +356,26 @@ footer {
 	width: 360px;
 	height: 20px;
 	left: 20px;
-	bottom: -50px;
+	bottom: -26px;
 	padding: 0px;
 	border: none;
 }
 
 #zip-progress-bar #file-prep {
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	color: #555;
+	padding: 6px;
+	color: #FFF;
+	background-color: #424242;
+	border-radius: 4px 4px 0 0;
+	font-size: 1em;
 }
 
-#cancel-download {
-	position: absolute;
-	right: 20px;
-	top: 15px;
-	color: #654545;
-	margin: 0;
-	padding: 5px;
-	font-weight: 400;
+#zip-progress-header {
+	display: flex;
+	display: -webkit-flex;
+	background-color: #424242;
+	justify-content: space-between;
+	border-radius: 4px 4px 0 0;
 }
-
-	#cancel-download:hover {
-		color: #990000;
-		cursor: pointer;
-	}
 
 #zip-progress-bar progress {
 	color: #009900;
@@ -396,4 +391,117 @@ footer {
 
 #zip-progress-bar progress::-moz-progress-bar {
 	background: #009900;
+}
+
+
+
+
+
+.modal-screen {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+    top: 0;
+    padding-top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.03);
+}
+
+#zip-options {
+	margin: auto;
+	width: 30%;
+	border:	0px;
+	border-radius: 4px;
+	box-shadow: 0 0 32px 2px rgba(0,0,0,.3);
+	background-color: #FFF;
+}
+
+#download-options {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+	#download-options > div {
+		display: -webkit-flex;
+		display: flex;
+		margin: 0 20px;
+		padding: 0;
+	}
+
+	#download-options label {
+		font-size: 1em;
+		padding: 10px 20px;
+		font-weight: 600;
+	}
+
+	#download-options input {
+		outline: 0;
+	}
+
+.modal-close-icon {
+	height: 34px;
+	padding: 2px;
+}
+
+#zip-options-header {
+	display: flex;
+	display: -webkit-flex;
+	background-color: #424242;
+	justify-content: space-between;
+	border-radius: 4px 4px 0 0;
+}
+
+#zip-options-title {
+	color: #FFF;
+	font-size: 1.2em;
+	padding: 2px;
+	margin: auto 10px;
+}
+
+#zip-options-body > p {
+	font-size: 1em;
+	padding: 10px;
+}
+
+.modal-close-button {
+	border-left: 1px solid #555;
+	background-image: url("../img/close-icon-dim.png");
+	background-size: 100% 100%;
+	width: 34px;
+	height: 34px;
+}
+
+	.modal-close-button:hover {
+		background-image: url("../img/close-icon-bright.png");
+		cursor: pointer;
+	}
+
+
+#zip-options-footer {
+	text-align: center;
+}
+
+#zip-download-confirm {
+	background-color: #555;
+	color: #EEE;
+	padding: 4px;
+	font-size: 1.2em;
+	margin: 0;
+	border-radius: 0 0 4px 4px;
+}
+
+	#zip-download-confirm:hover {
+		background-color: #424242;
+		color: #FFF;
+		cursor: pointer;
+	}
+
+
+.blurred-page {
+	-webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
 }
