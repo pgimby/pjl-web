@@ -26,7 +26,7 @@ def increment_files(files):
         os.rename(db_storage + files[i], db_storage + f)
     os.rename(db_storage + "labDB.xml", db_storage + "labDB-0.xml")
     os.system("cp " + new_xml + " " + db_storage + "labDB.xml")
-
+    os.system("chmod 644 labDB.xml")
 
 
 
