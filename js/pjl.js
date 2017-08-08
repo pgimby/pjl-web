@@ -116,21 +116,23 @@ $(document).on("click", "#search-help-button", function(e) {
 $(document).on("click", "#zip-icon", function(e) {
 	$("main").addClass("blurred-page");
 	$(".modal-screen").css("display", "block");
-	$(".modal-screen").stop().animate({paddingTop: 300}, 200);
+	$("#zip-options").stop().fadeIn(200);
 });
 
 
 
 $(document).on("click", ".modal-close-button", function(e) {
 	$("main").removeClass("blurred-page");
-	$(".modal-screen").css({display: 'none', paddingTop: 0});
+	$(".modal-screen").css({display: 'none'});
+	$("#zip-options").css({display: 'none'});
 });
 
 
 
 $(document).on("click", ".modal-screen", function(e) {
 	$("main").removeClass("blurred-page");
-	$(".modal-screen").css({display: 'none', paddingTop: 0});
+	$(".modal-screen").css({display: 'none'});
+	$("#zip-options").css({display: 'none'});
 });
 
 
@@ -152,9 +154,11 @@ $(document).on("click", "#zip-download-confirm", function(e) {
 		return false;
 	}
 	$("main").removeClass("blurred-page");
-	$(".modal-screen").css({display: 'none', paddingTop: 0});
-	$("#zip-progress-bar").stop().slideDown(100);
-	makePromisesBeginZip(collectFiles2Zip(pdf, tex, extradocs));
+	$(".modal-screen").css({display: 'none'});
+	$("#zip-options").css({display: 'none'});
+	$("#zip-progress-bar").slideDown(200, function() {
+		makePromisesBeginZip(collectFiles2Zip(pdf, tex, extradocs));
+	});
 });
 
 
@@ -943,12 +947,14 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 	return false;
 	});
 	deferredzip.fail(function() {
-		$("#file-prep").text("Download failed.");
 		setTimeout(function() {
-			$("#zip-progress-bar").stop().slideUp(500, function() {
+			$("#file-prep").text("Download failed.");
+			setTimeout(function() {
+				$("#zip-progress-bar").stop().slideUp(500, function() {
 				$("#file-prep").text("Preparing files...");
-			});
-		}, 2000);
+				});
+			}, 2000);
+		}, 700);
 	});
 }
 
