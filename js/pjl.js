@@ -264,7 +264,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var detailsbox = d3.select("#lab-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
 
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
-		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", versionlist[i].path).attr("target", "_blank");
+		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", siteroot + versionlist[i].path).attr("target", "_blank");
 		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", "./img/download-icon.svg");  //alternate for mobile display
 		var course = snapshot.append("p").classed("courses", true).html(versionlist[i].course);
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
