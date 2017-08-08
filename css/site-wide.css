@@ -457,18 +457,17 @@ footer {
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin: 10px;
+	flex-wrap: wrap;
 }
 
 	#download-options > div {
 		display: -webkit-flex;
 		display: flex;
-		margin: 0 20px;
-		padding: 0;
 	}
 
 	#download-options label {
 		font-size: 1em;
-		padding: 10px 20px;
+		padding: 10px 10px;
 		font-weight: 600;
 	}
 
