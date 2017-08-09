@@ -6,8 +6,8 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
-//var siteroot = "";
+//var siteroot = "/pjl-web";
+var siteroot = "";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -69,6 +69,12 @@ $(document).on("click", "#clear-filters-button", function(e) {
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
+});
+
+
+
+$(document).on("click", "#show-recent-button", function(e) {
+	showMostRecent();
 });
 
 
@@ -624,8 +630,56 @@ function getNumberRecordsUnmasked() {
 
 
 
+function showMostRecent() {
+	var records = getCurrentRecords();
+	unmaskAll(records);
+	getNumberRecordsUnmasked();
+	$("#show-all-button").css("visibility", "hidden");
+	var uniquelabs = [];
+	for (var i = records.length - 1; i >= 0; i--) {
+		var labid = records[i].find(".lab-data-id").text().slice(-4,);
+		if(!uniquelabs.includes(labid)) {
+			uniquelabs.push(labid);
+		}
+	}
+	var mostrecentlist = [];
+	for (var i = uniquelabs.length - 1; i >= 0; i--) {
+		var year = 0000;
+		var mostrecent = null;
+		var sameyeardifcourse = [];
+		for (var j = records.length - 1; j >= 0; j--) {
+			if (records[j].find(".lab-data-id").text().slice(-4,) == uniquelabs[i]) {
+				var recordsemester = records[j].find(".version-semester").text();
+				var date = parseFloat(recordsemester.split(" ")[1]) + parseFloat(semesterDecimal[recordsemester.split(" ")[0]]);
+				if (date > year) {
+					mostrecent = records[j];
+					year = date;
+					sameyeardifcourse = [];
+				} else if(date == year) {
+					sameyeardifcourse.push(records[j])
+					year = date;
+				}
+			}
+		}
+		mostrecentlist.push(mostrecent);
+		for (var j = sameyeardifcourse.length - 1; j >= 0; j--) {
+			mostrecentlist.push(sameyeardifcourse[j]);
+		}
+	}
+	for (var i = records.length - 1; i >= 0; i--) {
+		records[i].removeClass("record-rendered").addClass("record-not-rendered");
+	}
+	for (var i = mostrecentlist.length - 1; i >= 0; i--) {
+		mostrecentlist[i].addClass("record-rendered");
+	}
+	displayNumResults(countNumRecords());
+	getNumberRecordsUnmasked();
+}
 
 
+
+
+var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.50}
 
 
 

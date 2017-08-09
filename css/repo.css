@@ -291,7 +291,15 @@ select {
 		transition: all .1s ease;
 	}
 
-#clear-filters-button {
+#filter-mod-buttons {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#clear-filters-button,
+#show-recent-button {
+	display: block;
 	padding: 3px;
 	margin: 0;
 	position: relative;
@@ -302,13 +310,15 @@ select {
 	transition: all .3s ease;
 }
 
-	#clear-filters-button:hover {
+	#clear-filters-button:hover,
+	#show-recent-button:hover {
 		cursor: pointer;
 		color: #009900;/*#0000EE;*/
 		transition: all .3s ease;
 	}
 
-	#clear-filters-button:active {
+	#clear-filters-button:active,
+	#show-recent-button:active {
 		/*color: #7777FF;*/
 		opacity: .7;
 		transition: none;
