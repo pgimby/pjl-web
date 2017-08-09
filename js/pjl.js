@@ -1154,7 +1154,6 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 
 function getLabSoftwareList(lab) {  //return an array of software (strings) for an XML "lab" node - not type safe
 	var list = [];
-	console.log(software)
 	var software = lab.getElementsByTagName("Software")[0];
 	var names = software.getElementsByTagName("Name");
 	for (var i = names.length - 1; i >= 0; i--) {
