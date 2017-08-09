@@ -6,8 +6,8 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
-//var siteroot = "";
+//var siteroot = "/pjl-web";
+var siteroot = "";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -1154,6 +1154,7 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 
 function getLabSoftwareList(lab) {  //return an array of software (strings) for an XML "lab" node - not type safe
 	var list = [];
+	console.log(software)
 	var software = lab.getElementsByTagName("Software")[0];
 	var names = software.getElementsByTagName("Name");
 	for (var i = names.length - 1; i >= 0; i--) {
