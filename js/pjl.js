@@ -277,6 +277,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
 		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
 		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + getLabEquipmentList(lab).join(", "));
+		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
 
 		var labdoclist = getExtraLabDocs(lab);
 		var labdocs = extendedlabdata.append("div").classed("extra-docs", true);
@@ -1145,6 +1146,18 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 	var equipment = lab.getElementsByTagName("Item");
 	for (var i = equipment.length - 1; i >= 0; i--) {
 		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+	}
+	return list;
+}
+
+
+
+function getLabSoftwareList(lab) {  //return an array of software (strings) for an XML "lab" node - not type safe
+	var list = [];
+	var software = lab.getElementsByTagName("Software")[0];
+	var names = software.getElementsByTagName("Name");
+	for (var i = names.length - 1; i >= 0; i--) {
+		list.push(names[i].childNodes[0].nodeValue);
 	}
 	return list;
 }

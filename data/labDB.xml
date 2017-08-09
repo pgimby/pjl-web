@@ -27,6 +27,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0062">
     <Name>Travelling Waves</Name>
@@ -104,43 +105,43 @@
         <Name>50 Ohm BNC feedthrough termination</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>HP 8011A pulse generator</Name>
+      <Item id="0189">
+        <Name>HP pulse generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>10 meter RG58 coaxial cable</Name>
+      <Item id="0190">
+        <Name>10 m RG58 coaxial cable</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>7 meter RG59 coaxial cable</Name>
+      <Item id="0191">
+        <Name>7 m RG59 coaxial cable</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>7 meter twinaxial cable</Name>
+      <Item id="0192">
+        <Name>7 m twinaxial cable</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0193">
         <Name>reflectionless signal splitter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>0.5 meter RG58 coaxial cable</Name>
+      <Item id="0194">
+        <Name>0.5 m RG58 coaxial cable</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>BNC male-male adapter (2)</Name>
+      <Item id="0195">
+        <Name>BNC male-male adapter</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0196">
         <Name>BNC female-female adapter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0197">
         <Name>male BNC to female banana adapter</Name>
         <Number>1</Number>
       </Item>
@@ -148,17 +149,18 @@
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0198">
         <Name>variable resistive termination</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0199">
         <Name>short circuit termination</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0097">
     <Name>Radiation Absorption and Exposure</Name>
@@ -175,6 +177,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0076">
     <Name>Radiation Counting Statistics</Name>
@@ -191,6 +194,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0102">
     <Name>AC Circuits and Voltage Dividers</Name>
@@ -240,6 +244,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0001">
     <Name>Collisions in One Dimension</Name>
@@ -357,12 +362,16 @@
     </Versions>
     <Equipment>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
+        <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>2 carts</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
+      </Item>
+      <Item id="0206">
+        <Name>air track cart</Name>
+        <Number>2</Number>
       </Item>
       <Item id="0093">
         <Name>sail</Name>
@@ -376,19 +385,19 @@
         <Name>air track</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>air supply</Name>
+      <Item id="0011">
+        <Name>air blower</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>collisions accessory kit</Name>
+      <Item id="0095">
+        <Name>air track accessory kit</Name>
         <Number>1</Number>
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0095">
         <Name>metal levelling shims</Name>
         <Number>1</Number>
       </Item>
@@ -400,13 +409,13 @@
         <Name>right angle clamp</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>collisions.cmbl</Name>
-        <Number>1</Number>
-      </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>collisions.cmbl</Name>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0091">
     <Name>Fizeau Bands</Name>
@@ -450,11 +459,11 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0208">
         <Name>large and small Newton rings apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0209">
         <Name>air wedge apparatus</Name>
         <Number>1</Number>
       </Item>
@@ -462,11 +471,11 @@
         <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0210">
         <Name>travelling microscope</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0067">
         <Name>sodium lamp</Name>
         <Number>1</Number>
       </Item>
@@ -490,11 +499,11 @@
         <Name>aluminum foil</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>beam splitter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0212">
         <Name>beam splitter stand</Name>
         <Number>1</Number>
       </Item>
@@ -502,17 +511,18 @@
         <Name>lens cleaner</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0214">
         <Name>interference colour chart</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0215">
         <Name>diffuser</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0064">
     <Name>Linear Regression</Name>
@@ -535,6 +545,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0086">
     <Name>Damped Mechanical Oscillations</Name>
@@ -567,8 +578,8 @@
         <Name>Pasco driven harmonic motion apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>assortment of slotted masses</Name>
+      <Item id="0186">
+        <Name>set of slotted masses</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -586,6 +597,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0120">
     <Name>Torsional Oscillations</Name>
@@ -608,6 +620,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0043">
     <Name>The Electric Motor and Generator</Name>
@@ -624,6 +637,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0021">
     <Name>Calculating and Displaying Gravitational Force</Name>
@@ -640,6 +654,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0003">
     <Name>Motion on the Inclined Plane</Name>
@@ -737,19 +752,23 @@
     </Versions>
     <Equipment>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
+        <Name>computer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0050">
         <Name>Vernier position sensor</Name>
         <Number>1</Number>
       </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro Data Logger</Name>
+        <Number>1</Number>
+      </Item>
       <Item id="0097">
         <Name>air track</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>air supply</Name>
+      <Item id="0011">
+        <Name>air blower</Name>
         <Number>1</Number>
       </Item>
       <Item id="0044">
@@ -760,29 +779,24 @@
         <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0205">
         <Name>inclinometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>masses to put on cart.  1D Motion.cmbl</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>Inclined Down.avi</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>Inclined Up.avi</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>and Inclined Up and Down.avi</Name>
+      <Item id="0095">
+        <Name>masses to put on cart</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+      <Name>1D Motion.cmbl</Name>
+      <Name>Inclined Up.avi</Name>
+      <Name>Inclined Down.avi</Name>
+      <Name>Inclined Up and Down.avi</Name>
+    </Software>
   </Lab>
   <Lab labId="0044">
     <Name>Capacitors</Name>
@@ -843,13 +857,17 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>computer with browser to use the “Circuit Construction Kit (AC/DC)” simulation</Name>
+      <Item id="0024">
+        <Name>computer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Circuit Construction Kit (AC/DC) simulation</Name>
+      <Name>browser</Name>
+    </Software>
   </Lab>
   <Lab labId="0116">
     <Name>Resistor Capacitor Inductor (LRC) Filters</Name>
@@ -892,13 +910,14 @@
         <Name>0.1 microF capacitor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0151">
         <Name>10 kOhm potentiometer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0020">
     <Name>Angular Impule and Anglular Momentum Change</Name>
@@ -915,6 +934,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0030">
     <Name>Capacitor Measurements</Name>
@@ -949,6 +969,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0025">
     <Name>Macroscopic Springs</Name>
@@ -986,8 +1007,8 @@
         <Name>Pasco springs of the same color (2)</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>hooked mass set</Name>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
         <Number>1</Number>
       </Item>
       <Item id="0007">
@@ -1005,6 +1026,7 @@
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0033">
     <Name>Gauss' Law</Name>
@@ -1099,6 +1121,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0114">
     <Name>Operational Amplifier Comparator</Name>
@@ -1149,8 +1172,8 @@
         <Name>10 kOhm resistor</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>100 kOhm potentiometer (2)</Name>
+      <Item id="0152">
+        <Name>100 kOhm potentiometer</Name>
         <Number>2</Number>
       </Item>
       <Item id="0121">
@@ -1168,6 +1191,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0085">
     <Name>Forced Damped Mechanical Oscillations</Name>
@@ -1194,8 +1218,8 @@
         <Name>Pasco driven harmonic motion apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>assortment of slotted masses</Name>
+      <Item id="0186">
+        <Name>set of slotted masses</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -1213,6 +1237,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0107">
     <Name>Basic OpAmp Difference Amplifier</Name>
@@ -1259,8 +1284,8 @@
         <Name>CDS photocell (2)</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 2.2kOhm</Name>
+      <Item id="0133">
+        <Name>2.2 kOhm resistor</Name>
         <Number>2</Number>
       </Item>
       <Item id="0122">
@@ -1274,6 +1299,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0052">
     <Name>Motion of Electric Charges in Electric Fields</Name>
@@ -1332,6 +1358,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0074">
     <Name>Planck's Constant with LEDs</Name>
@@ -1384,6 +1411,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0090">
     <Name>Standing Waves</Name>
@@ -1450,12 +1478,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0213">
         <Name>standing waves wire apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>set of masses</Name>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
         <Number>1</Number>
       </Item>
       <Item id="0042">
@@ -1469,6 +1497,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0009">
     <Name>Units, Equipment Introduction, and Motion Diagrams</Name>
@@ -1563,6 +1592,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0094">
     <Name>Photometry</Name>
@@ -1597,6 +1627,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0115">
     <Name>Phase Locked Loop Frequency Synthesizer</Name>
@@ -1647,8 +1678,16 @@
         <Name>breadboard</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 5.1kOhm/20kOhm/100Ohm</Name>
+      <Item id="0148">
+        <Name>5.1 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0140">
+        <Name>100 Ohm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0139">
+        <Name>20 kOhm resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0122">
@@ -1670,6 +1709,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0058">
     <Name>Oscilloscope and Multimeter</Name>
@@ -1692,6 +1732,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0084">
     <Name>Balloon Physics</Name>
@@ -1708,6 +1749,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0006">
     <Name>Simple Harmonic Oscillation and Conservation of Energy</Name>
@@ -1814,6 +1856,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0118">
     <Name>The NPN Transistor Bias and Switching</Name>
@@ -1852,8 +1895,8 @@
         <Name>leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 4.7kOhm</Name>
+      <Item id="0147">
+        <Name>4.7 kOhm resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0129">
@@ -1872,13 +1915,14 @@
         <Name>NPN transistor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>potentiometer</Name>
+      <Item id="0150">
+        <Name>unknown potentiometer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0077">
     <Name>Radioactive Decay</Name>
@@ -1919,6 +1963,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0075">
     <Name>Quantum Defects in Sodium</Name>
@@ -1935,6 +1980,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0014">
     <Name>Ideal Gas Law</Name>
@@ -2010,6 +2056,10 @@
         <Name>Vernier temperature probe</Name>
         <Number>1</Number>
       </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro Data Logger</Name>
+        <Number>1</Number>
+      </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
         <Number>1</Number>
@@ -2039,16 +2089,16 @@
         <Number>1</Number>
       </Item>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>“Ideal Gas Law.cmbl</Name>
+        <Name>computer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Ideal Gas Law.cmbl</Name>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0101">
     <Name>Voltage Dividers and Voltage Sources</Name>
@@ -2107,8 +2157,8 @@
         <Name>Philips multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Sanwa 501 analog multimeter</Name>
+      <Item id="0204">
+        <Name>Sanwa analog multimeter</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -2119,11 +2169,11 @@
         <Name>set of 2 resistors</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Eico 1171 decade resistor box</Name>
+      <Item id="0149">
+        <Name>Eico decade resistor box</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0154">
         <Name>25 Ohm potentiometer</Name>
         <Number>1</Number>
       </Item>
@@ -2138,6 +2188,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0055">
     <Name>Advanced Measurements and Uncertainties</Name>
@@ -2154,6 +2205,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0089">
     <Name>Simple Harmonic Oscillations</Name>
@@ -2204,7 +2256,11 @@
     </Versions>
     <Equipment>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
+        <Name>computer</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0097">
@@ -2258,6 +2314,9 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0045">
     <Name>Electric Charges and the Forces between them</Name>
@@ -2316,6 +2375,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0048">
     <Name>Electron Current and Energy in a Circuit</Name>
@@ -2356,6 +2416,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0096">
     <Name>Hall Effect and Magnetic Hysteresis</Name>
@@ -2402,6 +2463,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0029">
     <Name>Biot-Savart Law</Name>
@@ -2437,19 +2499,19 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0200">
         <Name>aluminum rail</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0201">
         <Name>large compass</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0202">
         <Name>compass holder</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0203">
         <Name>coil with assorted turn counts</Name>
         <Number>1</Number>
       </Item>
@@ -2476,6 +2538,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0051">
     <Name>Mechanics Review</Name>
@@ -2528,6 +2591,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0088">
     <Name>Hydrogen Balmer Series</Name>
@@ -2561,7 +2625,7 @@
         <Name>introductory student spectroscope</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0184">
         <Name>600 lines/mm diffraction grating</Name>
         <Number>1</Number>
       </Item>
@@ -2596,6 +2660,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0108">
     <Name>DC Circuits</Name>
@@ -2630,12 +2695,24 @@
         <Name>breadboard</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 11kOhm/22kOhm/33kOhm/2.2MOhm (2)</Name>
+      <Item id="0134">
+        <Name>11 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0135">
+        <Name>22 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0136">
+        <Name>33 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0137">
+        <Name>2.2 MOhm resistor</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>potentiometer; 70kOhm with centimeter scale</Name>
+      <Item id="0153">
+        <Name>70 kOhm potentiometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0108">
@@ -2649,6 +2726,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0063">
     <Name>Fourier Series</Name>
@@ -2725,6 +2803,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0100">
     <Name>Vacuum Technology Laboratory</Name>
@@ -2771,6 +2850,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0113">
     <Name>OpAmps I/V</Name>
@@ -2828,6 +2908,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0010">
     <Name>Current Balance</Name>
@@ -2856,6 +2937,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0061">
     <Name>Thin Lenses and Optical Instruments</Name>
@@ -2997,6 +3079,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0054">
     <Name>Electromagnetic Induction</Name>
@@ -3019,6 +3102,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0022">
     <Name>Computational Models of Motion</Name>
@@ -3043,17 +3127,17 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>computer with Vpython</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>access to internet</Name>
+      <Item id="0024">
+        <Name>computer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>browser</Name>
+      <Name>VPython</Name>
+    </Software>
   </Lab>
   <Lab labId="0083">
     <Name>Drag Forces</Name>
@@ -3096,45 +3180,46 @@
         <Name>5 mL pipet</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0224">
         <Name>dry erase marker</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0223">
         <Name>forceps</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>1/8” diameter sphere (12)</Name>
+      <Item id="0216">
+        <Name>1/8” diameter sphere</Name>
         <Number>12</Number>
       </Item>
-      <Item id="0000">
-        <Name>5/32” diameter sphere (12)</Name>
+      <Item id="0217">
+        <Name>5/32” diameter sphere</Name>
         <Number>12</Number>
       </Item>
-      <Item id="0000">
-        <Name>3/16” diameter sphere (12)</Name>
+      <Item id="0218">
+        <Name>3/16” diameter sphere</Name>
         <Number>12</Number>
       </Item>
-      <Item id="0000">
-        <Name>1/4” diameter sphere (12)</Name>
+      <Item id="0219">
+        <Name>1/4” diameter sphere</Name>
         <Number>12</Number>
       </Item>
-      <Item id="0000">
-        <Name>5/16” diameter sphere (12)</Name>
+      <Item id="0220">
+        <Name>5/16” diameter sphere</Name>
         <Number>12</Number>
       </Item>
-      <Item id="0000">
-        <Name>3/8” diameter sphere (12)</Name>
+      <Item id="0221">
+        <Name>3/8” diameter sphere</Name>
         <Number>12</Number>
       </Item>
-      <Item id="0000">
-        <Name>1/2” diameter sphere (12)</Name>
+      <Item id="0222">
+        <Name>1/2” diameter sphere</Name>
         <Number>12</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0099">
     <Name>Spectroscopy</Name>
@@ -3192,7 +3277,7 @@
         <Name>introductory student spectroscope</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0184">
         <Name>600 lines/mm diffraction grating</Name>
         <Number>1</Number>
       </Item>
@@ -3223,6 +3308,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0093">
     <Name>Michelson Interferometer</Name>
@@ -3266,8 +3352,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Pasco OS-9255A precision interferometer apparatus</Name>
+      <Item id="0188">
+        <Name>Pasco precision interferometer apparatus</Name>
         <Number>1</Number>
       </Item>
       <Item id="0021">
@@ -3278,7 +3364,7 @@
         <Name>optical screen</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0166">
         <Name>Nalgene vacuum pump with air cell</Name>
         <Number>1</Number>
       </Item>
@@ -3290,7 +3376,7 @@
         <Name>Wooden stand</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0183">
         <Name>18 mm focal length convex lens</Name>
         <Number>1</Number>
       </Item>
@@ -3302,8 +3388,8 @@
         <Name>plastic ruler</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Digital barometer</Name>
+      <Item id="0165">
+        <Name>digital barometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0034">
@@ -3317,6 +3403,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0049">
     <Name>Magnetic Force and Torque on a Loop</Name>
@@ -3407,6 +3494,7 @@
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0059">
     <Name>Parallel Plate Capacitors</Name>
@@ -3429,6 +3517,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0117">
     <Name>Swept Frequency Waveform Generator, DFT</Name>
@@ -3445,6 +3534,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0017">
     <Name>Pressure and Density</Name>
@@ -3485,6 +3575,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0079">
     <Name>X-Ray Diffraction</Name>
@@ -3557,6 +3648,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0042">
     <Name>Power Supplies, Lights, and Switches</Name>
@@ -3573,6 +3665,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0060">
     <Name>Reflection and Refraction</Name>
@@ -3609,7 +3702,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0227">
         <Name>acrylic block set</Name>
         <Number>1</Number>
       </Item>
@@ -3629,15 +3722,15 @@
         <Name>1 m optical bench</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0226">
         <Name>protractor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0171">
         <Name>mirror worksheet</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0169">
         <Name>rectangular block worksheet</Name>
         <Number>1</Number>
       </Item>
@@ -3645,8 +3738,8 @@
         <Name>small optical bench mount</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>laser in mount</Name>
+      <Item id="0021">
+        <Name>He-Ne laser</Name>
         <Number>1</Number>
       </Item>
       <Item id="0037">
@@ -3657,29 +3750,30 @@
         <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>pins</Name>
+      <Item id="0225">
+        <Name>push pins</Name>
         <Number>1</Number>
       </Item>
       <Item id="0038">
         <Name>flashlight</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0170">
         <Name>equilateral prism worksheet</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0168">
         <Name>converging lens worksheet</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0167">
         <Name>diverging lens worksheet</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0037">
     <Name>Faraday's Law</Name>
@@ -3708,6 +3802,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0110">
     <Name>Introduction to OpAmps</Name>
@@ -3746,9 +3841,17 @@
         <Name>LF411 or LF351 OpAmp</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 10MOhm/100Ohm/10Ohm</Name>
-        <Number>2</Number>
+      <Item id="0144">
+        <Name>10 Ohm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0140">
+        <Name>100 Ohm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0138">
+        <Name>10 MOhm resistor</Name>
+        <Number>1</Number>
       </Item>
       <Item id="0126">
         <Name>1 kOhm resistor</Name>
@@ -3765,6 +3868,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0026">
     <Name>Measuring Velocity, Momentum, and Changes in Momentum in 1D</Name>
@@ -3793,6 +3897,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0019">
     <Name>The First Law of Thermodynamics</Name>
@@ -3845,6 +3950,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0028">
     <Name>The Momentum and Energy Principles</Name>
@@ -3892,13 +3998,17 @@
         <Name>meter stick</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>computer with ability to use GlowScript and Vpython</Name>
+      <Item id="0024">
+        <Name>computer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>VPython</Name>
+      <Name>GlowScript</Name>
+    </Software>
   </Lab>
   <Lab labId="0119">
     <Name>The Transformer and the PN Rectifier Bridge</Name>
@@ -3929,8 +4039,8 @@
         <Name>9 V battery</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>leads</Name>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -3968,6 +4078,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0112">
     <Name>Lock-In Detector</Name>
@@ -4049,6 +4160,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0069">
     <Name>Electron Gas in Metals</Name>
@@ -4103,7 +4215,7 @@
         <Name>Neva thermionic emission tube</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0162">
         <Name>Korad DC power supply</Name>
         <Number>1</Number>
       </Item>
@@ -4122,6 +4234,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0057">
     <Name>Malus' Law and Birefringence</Name>
@@ -4252,13 +4365,14 @@
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>20 cm focal length lens</Name>
+      <Item id="0182">
+        <Name>20 cm focal length convex lens</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0031">
     <Name>Charge to Mass Ratio of the Electron</Name>
@@ -4324,7 +4438,7 @@
         <Name>Neva mains rectifier</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0164">
         <Name>E/M apparatus</Name>
         <Number>1</Number>
       </Item>
@@ -4335,6 +4449,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0046">
     <Name>Electric Potential</Name>
@@ -4397,7 +4512,11 @@
     </Versions>
     <Equipment>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
+        <Name>computer</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0001">
@@ -4408,15 +4527,15 @@
         <Name>Anatek power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>field probe</Name>
+      <Item id="0179">
+        <Name>potential mapping field probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0175">
         <Name>potential mapping apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0177">
         <Name>parallel plate conductor board</Name>
         <Number>1</Number>
       </Item>
@@ -4424,7 +4543,7 @@
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0176">
         <Name>potential mapping graph paper</Name>
         <Number>1</Number>
       </Item>
@@ -4439,6 +4558,9 @@
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0082">
     <Name>Uniform Circular Motion</Name>
@@ -4455,6 +4577,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0071">
     <Name>Faraday Effect</Name>
@@ -4517,7 +4640,7 @@
         <Name>laser mount</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0160">
         <Name>Newport Instruments water cooled electromagnet</Name>
         <Number>1</Number>
       </Item>
@@ -4533,8 +4656,8 @@
         <Name>polarizer</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>Pasco (model 9152) fibre-optics photometer</Name>
+      <Item id="0163">
+        <Name>Pasco fibre-optics photometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -4552,6 +4675,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0012">
     <Name>Electric Fields and Motion of Charged Particles</Name>
@@ -4604,6 +4728,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0038">
     <Name>Kirchoff's Laws</Name>
@@ -4632,6 +4757,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0035">
     <Name>Electric Fields of Charge Configurations</Name>
@@ -4726,6 +4852,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0092">
     <Name>Laser Beams</Name>
@@ -4766,6 +4893,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0005">
     <Name>Newton's Third Law</Name>
@@ -4872,6 +5000,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0018">
     <Name>Temperature at the Microscopic Level</Name>
@@ -4924,6 +5053,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0053">
     <Name>Concave Mirrors</Name>
@@ -5049,6 +5179,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0004">
     <Name>Newton's Second Law</Name>
@@ -5161,6 +5292,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0040">
     <Name>Magnetic Fields and Forces</Name>
@@ -5217,7 +5349,7 @@
         <Name>Anatek power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0159">
         <Name>Teachspin magnetic force apparatus</Name>
         <Number>1</Number>
       </Item>
@@ -5244,6 +5376,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0095">
     <Name>AC Measurements and Sources</Name>
@@ -5319,6 +5452,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0067">
     <Name>Compton Scattering</Name>
@@ -5409,6 +5543,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0081">
     <Name>Inclined Atwood Machine</Name>
@@ -5448,12 +5583,16 @@
         <Name>air track accessory kit</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0181">
         <Name>rubber bands</Name>
         <Number>1</Number>
       </Item>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
+        <Name>computer</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0050">
@@ -5487,6 +5626,9 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0013">
     <Name>Equipotential Lines</Name>
@@ -5550,28 +5692,28 @@
         <Name>Anatek power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>field probe</Name>
+      <Item id="0179">
+        <Name>potential mapping field probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0175">
         <Name>potential mapping apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>parallel plate  conductor  board</Name>
+      <Item id="0177">
+        <Name>parallel plate conductor board</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>dipole  conductor  board</Name>
+      <Item id="0178">
+        <Name>dipole conductor board</Name>
         <Number>1</Number>
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>potential  mapping  graph  paper</Name>
+      <Item id="0176">
+        <Name>potential mapping graph paper</Name>
         <Number>1</Number>
       </Item>
       <Item id="0052">
@@ -5582,13 +5724,16 @@
         <Name>plastic ruler</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>pencils; Electric Fields from Point Charges applet</Name>
+      <Item id="0187">
+        <Name>pencils</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Electric Fields from Point Charges applet</Name>
+    </Software>
   </Lab>
   <Lab labId="0111">
     <Name>Introduction to Phase Locked Loop</Name>
@@ -5623,8 +5768,12 @@
         <Name>breadboard</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors:20kOhm/10MOhm</Name>
+      <Item id="0139">
+        <Name>20 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0138">
+        <Name>10 MOhm resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
@@ -5650,6 +5799,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0011">
     <Name>Electric Charges and Forces</Name>
@@ -5723,6 +5873,7 @@
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0106">
     <Name>Basic Digital Instruments</Name>
@@ -5757,8 +5908,8 @@
         <Name>1N914 diode</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>potentiometer</Name>
+      <Item id="0150">
+        <Name>unknown potentiometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -5804,6 +5955,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0023">
     <Name>Introduction to 3D Computational Modelling</Name>
@@ -5832,6 +5984,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0002">
     <Name>Measuring Motion</Name>
@@ -5929,7 +6082,11 @@
     </Versions>
     <Equipment>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
+        <Name>computer</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0050">
@@ -5940,13 +6097,13 @@
         <Name>meter stick</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>and 1D Motion.cmbl</Name>
-        <Number>1</Number>
-      </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>1D Motion.cmbl</Name>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0027">
     <Name>Power and Energy</Name>
@@ -5984,8 +6141,8 @@
         <Name>3 flat-bottomed coffee filters</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>electronic balance</Name>
+      <Item id="0012">
+        <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
       <Item id="0051">
@@ -6003,6 +6160,7 @@
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0015">
     <Name>Introduction to Electric Circuits</Name>
@@ -6055,6 +6213,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0056">
     <Name>Fraunhofer Diffraction</Name>
@@ -6146,7 +6305,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0090">
-        <Name>slide with quare and hexagonal gratings and 2 pinholes</Name>
+        <Name>slide with square and hexagonal gratings and 2 pinholes</Name>
         <Number>1</Number>
       </Item>
       <Item id="0037">
@@ -6164,6 +6323,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0070">
     <Name>Evidence for Quantized Atomic Energy Levels</Name>
@@ -6210,6 +6370,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0087">
     <Name>Measurements and Uncertainties for Engineers</Name>
@@ -6244,6 +6405,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0016">
     <Name>Magnetic Field in a Slinky</Name>
@@ -6340,17 +6502,20 @@
         <Name>Vernier magnetic field probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0207">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0024">
-        <Name>Vernier capable computer</Name>
+        <Name>computer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0103">
     <Name>AC Circuits, Waveforms, and Phase</Name>
@@ -6367,6 +6532,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0032">
     <Name>Circuits</Name>
@@ -6413,6 +6579,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0080">
     <Name>Hanging Chain</Name>
@@ -6468,6 +6635,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0047">
     <Name>Electric Resistivity of Play-Doh</Name>
@@ -6484,6 +6652,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0098">
     <Name>RLC Resonant Circuits</Name>
@@ -6538,7 +6707,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0174">
         <Name>series and parallel RLC circuit board</Name>
         <Number>1</Number>
       </Item>
@@ -6557,6 +6726,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0034">
     <Name>Electric Field Mapping</Name>
@@ -6603,6 +6773,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0039">
     <Name>Magnetic Fields and Magnetic Force</Name>
@@ -6667,6 +6838,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0041">
     <Name>Introduction to Measurements and Uncertainties</Name>
@@ -6766,8 +6938,8 @@
         <Name>Rectangles with different lengths (2)</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>Sextant</Name>
+      <Item id="0180">
+        <Name>sextant</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -6789,6 +6961,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0104">
     <Name>Active Filters and Anti-Aliasing Filters</Name>
@@ -6858,6 +7031,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0072">
     <Name>Nuclear Decay</Name>
@@ -6909,7 +7083,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0161">
         <Name>radium isolation nuclear chemistry station</Name>
         <Number>1</Number>
       </Item>
@@ -6917,12 +7091,8 @@
         <Name>Ortec Ametek dual input alpha spectrometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>vacuum pump</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>Maestro pulse height analyzer software</Name>
+      <Item id="0157">
+        <Name>roughing pump</Name>
         <Number>1</Number>
       </Item>
       <Item id="0141">
@@ -6937,13 +7107,16 @@
         <Name>5.89 nCi Th-230 alpha source</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0158">
         <Name>Firestone isotope tables</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software>
+      <Name>Maestro pulse height analyzer software</Name>
+    </Software>
   </Lab>
   <Lab labId="0007">
     <Name>Statics (Newton's First Law in 2 Dimensions)</Name>
@@ -7050,6 +7223,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0036">
     <Name>Electromagnetic Induction</Name>
@@ -7084,6 +7258,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0008">
     <Name>Two Dimensional Motion</Name>
@@ -7178,6 +7353,7 @@
     <Equipment/>
     <Type/>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0024">
     <Name>Jumping Up</Name>
@@ -7211,14 +7387,10 @@
         <Course>PHYS 227</Course>
       </Version>
     </Versions>
-    <Equipment>
-      <Item id="0000">
-        <Name>none</Name>
-        <Number>1</Number>
-      </Item>
-    </Equipment>
+    <Equipment />
     <Type>Labatorial</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0066">
     <Name>Colour Temperature</Name>
@@ -7295,7 +7467,7 @@
         <Name>AC line separator</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0173">
         <Name>quartz halogen lamp</Name>
         <Number>1</Number>
       </Item>
@@ -7314,6 +7486,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0105">
     <Name>Bandwidth and Stabillity</Name>
@@ -7348,8 +7521,12 @@
         <Name>9 V battery</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 1MOhm/9.1kOhm</Name>
+      <Item id="0145">
+        <Name>9.1 kOhm resistor</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0122">
+        <Name>1 MOhm resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0126">
@@ -7379,6 +7556,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0078">
     <Name>Rutherford Scattering</Name>
@@ -7436,8 +7614,8 @@
         <Name>Rutherford scattering apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>vacuum system</Name>
+      <Item id="0157">
+        <Name>roughing pump</Name>
         <Number>1</Number>
       </Item>
       <Item id="0029">
@@ -7447,6 +7625,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0065">
     <Name>Black Body Radiation</Name>
@@ -7562,6 +7741,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0109">
     <Name>Introduction to Digital Logic</Name>
@@ -7592,11 +7772,11 @@
         <Name>9 V battery</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>potentiometer</Name>
+      <Item id="0150">
+        <Name>unknown potentiometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0172">
         <Name>push-button switch</Name>
         <Number>1</Number>
       </Item>
@@ -7628,9 +7808,9 @@
         <Name>0.1 microF capacitor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>resistors: 6.8kOhm (8)</Name>
-        <Number>4</Number>
+      <Item id="0146">
+        <Name>6.8 kOhm resistor</Name>
+        <Number>8</Number>
       </Item>
       <Item id="0132">
         <Name>30 kOhm resistor</Name>
@@ -7647,6 +7827,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0068">
     <Name>Electron Diffraction</Name>
@@ -7714,7 +7895,7 @@
         <Name>100 Ohm decade resistance box</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0155">
         <Name>high voltage probe</Name>
         <Number>1</Number>
       </Item>
@@ -7769,6 +7950,7 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
   <Lab labId="0073">
     <Name>Photoelectric Effect</Name>
@@ -7828,7 +8010,7 @@
         <Name>Jarrell Ash monochromator</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0156">
         <Name>Cary vibrating reed electrometer</Name>
         <Number>1</Number>
       </Item>
@@ -7867,5 +8049,6 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
+    <Software/>
   </Lab>
 </Labs>
