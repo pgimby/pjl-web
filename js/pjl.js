@@ -549,7 +549,6 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 				$(extendeddatarecords[i]).css("display", "flex");
 			}
 		}
-		// extendeddatarecords.slideDown();
 		setExpandedButtonTruth(true)
 	} else {
 		var extendeddatarecords = $(".lab-record-detailed-flex");
@@ -561,8 +560,6 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 				$(extendeddatarecords[i]).css("display", "none");
 			}
 		}
-		// var extendeddatarecords = $(".lab-record-detailed-flex");
-		// extendeddatarecords.slideUp();
 		setExpandedButtonTruth(false)
 	}
 }
@@ -612,11 +609,12 @@ function unmaskAll(records) {
 	for (var i = records.length - 1; i >= 0; i--) {
 		records[i].removeClass("masked");
 	}
+	$("#show-all-button").css("visibility", "hidden");
 }
 
 
 
-function getNumberRecordsUnmasked() {
+function setNumberRecordsUnmasked() {
 	var records = getCurrentRecords();
 	var num = records.length;
 	for (var i = records.length - 1; i >= 0; i--) {
@@ -631,20 +629,21 @@ function getNumberRecordsUnmasked() {
 
 
 function showMostRecent() {
+	var uniquelabs = [];
 	var records = getCurrentRecords();
 	unmaskAll(records);
-	getNumberRecordsUnmasked();
-	$("#show-all-button").css("visibility", "hidden");
-	var uniquelabs = [];
+	setNumberRecordsUnmasked();
+
 	for (var i = records.length - 1; i >= 0; i--) {
 		var labid = records[i].find(".lab-data-id").text().slice(-4,);
 		if(!uniquelabs.includes(labid)) {
 			uniquelabs.push(labid);
 		}
+		records[i].removeClass("record-rendered").addClass("record-not-rendered");
 	}
 	var mostrecentlist = [];
 	for (var i = uniquelabs.length - 1; i >= 0; i--) {
-		var year = 0000;
+		var year = 0;
 		var mostrecent = null;
 		var sameyeardifcourse = [];
 		for (var j = records.length - 1; j >= 0; j--) {
@@ -661,25 +660,26 @@ function showMostRecent() {
 				}
 			}
 		}
-		mostrecentlist.push(mostrecent);
+		mostrecent.removeClass("record-not-rendered").addClass("record-rendered");
 		for (var j = sameyeardifcourse.length - 1; j >= 0; j--) {
-			mostrecentlist.push(sameyeardifcourse[j]);
+			sameyeardifcourse[j].removeClass("record-not-rendered").addClass("record-rendered");
 		}
 	}
-	for (var i = records.length - 1; i >= 0; i--) {
-		records[i].removeClass("record-rendered").addClass("record-not-rendered");
-	}
-	for (var i = mostrecentlist.length - 1; i >= 0; i--) {
-		mostrecentlist[i].addClass("record-rendered");
-	}
 	displayNumResults(countNumRecords());
-	getNumberRecordsUnmasked();
+	setNumberRecordsUnmasked();
 }
 
 
 
 
 var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.50}
+
+
+
+
+
+
+
 
 
 
@@ -696,12 +696,9 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 	var lablist = getAllRecords();
 	for (var i = lablist.length - 1; i >= 0; i--) {
 		lablist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
-		// lablist[i].css("display", "-webkit-flex");
-		// lablist[i].css("display", "flex");
 		var similarity = compareQueryWithLabRecord(querybigrams, lablist[i], selector);
 		if (similarity < minsimilarity && !queryLiteralInLabRecord(query, lablist[i], selector)) {
 			lablist[i].removeClass("record-rendered").addClass("record-not-rendered");
-			// lablist[i].css("display", "none");
 		}
 	}
 }
@@ -718,14 +715,12 @@ function queryLiteralInLabRecord(query, lab, selector) {
 	var labtitle = lab.find(".lab-title").text().toLowerCase();
 	switch (selector) {
 		case "all":
-		console.log(courses.includes(query) || disciplines.includes(query) || topics.includes(query) || equipment.includes(query) || semester.includes(query) || year.includes(query) || labtitle.includes(query))
 			return courses.includes(query) || disciplines.includes(query) || topics.includes(query) || equipment.includes(query) || semester.includes(query) || year.includes(query) || labtitle.includes(query);
 			break;
 		case "course":
 			return courses.includes(query);
 			break;
 		case "lab":
-			console.log(labtitle.includes(query));
 			return labtitle.includes(query);
 			break;
 		case "year":
@@ -985,7 +980,6 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 			xhrs[i].abort();
 			promises[i].reject();
 		}
-		console.log("cancelled")
 		$("#zip-progress-bar").stop().slideUp(500);
 		return;
 	});
@@ -1029,9 +1023,9 @@ function beginDownload(filepath, promise) {  //start downloading PDF and resolve
             filename = filename[filename.length-1];
             promise.notify();
             promise.resolve(filename, blob);
-            console.log("File " + filename + " successfully loaded");
-    	} else if(this.status == 404 || this.status == 403) {
-    		console.log(this.status)
+    	} else if(this.status == 404) {
+    		promise.reject();
+    	} else if (this.status == 403) {
     		promise.reject();
     	}
   	};
@@ -1061,7 +1055,6 @@ function collectFiles2Zip(doPDF, doTEX, doEXTRA) {  //return an array of file pa
 			filelist.push(records[i].find(".version-path").attr("href"));
 		}
 		extradocs.each(function(i, doc) {
-			console.log(doc)
 			if (Boolean(doTEX) && $(doc).attr("href").endsWith(".tex")) {
 				filelist.push($(doc).attr("href"));
 			} else if (Boolean(doEXTRA)) {
@@ -1199,7 +1192,7 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 	var list = [];
 	var equipment = lab.getElementsByTagName("Item");
 	for (var i = equipment.length - 1; i >= 0; i--) {
-		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Number")[0].childNodes[0].nodeValue + ")");
 	}
 	return list;
 }
@@ -1391,7 +1384,9 @@ function isEmptyString(string) {  //checks if string is empty - not type safe
 
 
 
-
-
+function mostRecentDecimalSemester() {
+	var date = new Date();
+	return Math.round(date.getMonth() / 3) / 4;
+}
 
 
