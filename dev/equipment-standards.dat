@@ -44,9 +44,9 @@
 0044	plastic ruler
 0045	cork board
 0046	fork clamp
-0047	Pasco driven harmonic motion analyzer
+0047	Pasco driven harmonic motion apparatus
 0048	light detector
-0049	50 Ohm BNC feedthrough termination
+0049	50 Ω BNC feedthrough termination
 0050	Vernier position sensor
 0051	stopwatch
 0052	tape
@@ -72,7 +72,7 @@
 0072	Vernier temperature probe
 0073	hot plate
 0074	beaker
-0075	constant volume gas apparatus
+0075	constant volume gas apparatus (air filled)
 0076	CIE chromaticity diagram
 0077	hook collar
 0078	green spring scale
@@ -111,47 +111,47 @@
 0111	thin cover glass
 0112	riser block
 0113	aluminum foil
-0114	0.1 microF capacitor
-0115	1 microF capacitor
-0116	0.01 microF capacitor
+0114	0.1 µF capacitor
+0115	1 µF capacitor
+0116	0.01 µF capacitor
 0117	100 pF capacitor
-0118	0.001 microF capacitor
-0119	10 microF capacitor
-0120	0.0056 microF capacitor
-0121	100 microF capacitor
-0122	1 MOhm resistor
-0123	10 kOhm resistor
-0124	100 kOhm resistor
-0125	1 kOhm resistor
-0126	3.3 kOhm resistor
-0127	910 kOhm resistor
-0128	620 kOhm resistor
-0129	47 kOhm resistor
-0130	27 kOhm resistor
-0131	15 kOhm resistor
-0132	30 kOhm resistor
-0133	2.2 kOhm resistor
-0134	11 kOhm resistor
-0135	22 kOhm resistor
-0136	33 kOhm resistor
-0137	2.2 MOhm resistor
-0138	10 MOhm resistor
-0139	20 kOhm resistor
-0140	100 Ohm resistor
+0118	0.001 µF capacitor
+0119	10 µF capacitor
+0120	0.0056 µF capacitor
+0121	100 µF capacitor
+0122	1 MΩ resistor
+0123	10 kΩ resistor
+0124	100 kΩ resistor
+0125	1 kΩ resistor
+0126	3.3 kΩ resistor
+0127	910 kΩ resistor
+0128	620 kΩ resistor
+0129	47 kΩ resistor
+0130	27 kΩ resistor
+0131	15 kΩ resistor
+0132	30 kΩ resistor
+0133	2.2 kΩ resistor
+0134	11 kΩ resistor
+0135	22 kΩ resistor
+0136	33 kΩ resistor
+0137	2.2 MΩ resistor
+0138	10 MΩ resistor
+0139	20 kΩ resistor
+0140	100 Ω resistor
 0141	0.15 mCi Pu-239-Am-241-Cm-244 triple alpha reference source
 0142	0.1 mCi Po-210 alpha source
 0143	5.89 nCi Th-230 alpha source
-0144	10 Ohm resistor
-0145	9.1 kOhm resistor
-0146	6.8 kOhm resistor
-0147	4.7 kOhm resistor
-0148	5.1 kOhm resistor
+0144	10 Ω resistor
+0145	9.1 kΩ resistor
+0146	6.8 kΩ resistor
+0147	4.7 kΩ resistor
+0148	5.1 kΩ resistor
 0149	Eico decade resitor box
 0150	unknown potentiometer
-0151	10 kOhm potentiometer
-0152	100 kOhm potentiometer
-0153	70 kOhm potentiometer
-0154	25 Ohm potentiometer
+0151	10 kΩ potentiometer
+0152	100 kΩ potentiometer
+0153	70 kΩ potentiometer
+0154	25 Ω potentiometer
 0155	high voltage probe
 0156	Cary vibrating reed electrometer
 0157	roughing pump
@@ -237,7 +237,7 @@
 0237	solder
 0238	soldering iron
 0239	dry ice
-0240	liquid nitrogen
+0240	bucket
 0241	250 mL glass beaker
 0242	400 mL glass beaker
 0243	250 mL plastic beaker
@@ -247,3 +247,62 @@
 0247	250 mL graduated cylinder
 0248	500 mL graduated cylinder
 0249	variac
+0250	HP high voltage power supply
+0251	RCA photomultiplier manual
+0252	Harshaw manual
+0253	Harshaw NaI(Ti) scintillator unit
+0254	two-stage regulator
+0255	blue spring scale
+0256	pipette bulb
+0257	wooden stand
+0258	spark timer
+0259	spark tape
+0260	pendulum apparatus
+0261	Hammond 10 H inductor
+0262	Rex rheostat
+0263	100 Ω decade resistance box
+0264	10 kΩ decade resistance box
+0265	1 kΩ decade resistance box
+0266	Abbe diagram
+0267	set of short connecting leads
+0268	Kater's pendulum
+0269	15 cm focal length convex lens
+0270	Fresnel biprism
+0271	1 µCi Co-60
+0272	water reservoir
+0273	Venturi meter
+0274	3.8 cm focal length concave lens
+0275	1 µCi Am-241
+0276	10 µCi Tl-204
+0277	0.1 µCi Sr-90
+0278	motor driven turntable
+0279	centripetal force apparatus
+0280	Phywe gas apparatus
+0281	funnel
+0282	female BNC to male banana adapter
+0283	standard magnet
+0284	Topward power supply
+0285	vacuum manifold cart
+0286	helium cylinder
+0287	leaky weld assembly
+0288	thermocouple vacuum gauge
+0289	sorption pump
+0290	board mounted gauges
+0291	hand operated vacuum pump
+0292	Cannon-Fenske viscometer
+0293	set of torsion pendulums
+0294	stand for PV diagram
+0295	tangent galvanometer
+0296	Stirling engine
+0297	vector board
+0298	air column apparatus with speaker
+0299	hydrometer
+0300	plastic pan
+0301	dish soap
+0302	paper towels
+0303	constant volume gas apparatus (helium filled
+0304	styrofoam cup
+0305	ice
+0306	liquid nitrogen
+0307	Mettler balance
+0308	BNC coaxial cable

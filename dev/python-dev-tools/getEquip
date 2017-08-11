@@ -28,7 +28,8 @@ count = 0
 for item in root.findall(".//Item"):
     if item.attrib["id"] == i:
         count += 1
-        s1 = "Name: " + item[0].text
+
+        s1 = "Name: " + str(item[0].text)
         s2 = "Amount: " + item[1].text
         gap = outputwidth - len(s1) - len(s2)
         s = s1

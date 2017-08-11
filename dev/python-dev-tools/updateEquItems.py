@@ -17,7 +17,7 @@ def getNumber(s):
             return str(i)
     return "1"
 
-
+#.replace("Ohm", "&#8486;").replace("micro", "&#181;")
 def itemIdDic(filename):
     itemdic = {}
     with open(filename, "r") as f:
@@ -26,7 +26,11 @@ def itemIdDic(filename):
     return itemdic
 
 
-
+def fixItemQuantity(xmlitem):
+    num = getNumber(xmlitem[0].text)
+    xmlitem[0].text = item[0].text.strip().replace("("+num+")", "").replace("  ", " ").strip()
+    xmlitem[1].text = num
+    return xmlitem[0].text, xmlitem[1].text
 
 
 count = 0
@@ -44,10 +48,8 @@ for child in root:
 for equip in root.findall(".//Equipment"): #XPath syntax for getting all descendants
     for item in equip.findall("Item"):
         num_children = len(item.getchildren())
-        if num_children != 0 and item.get("id") == "0000":
-            #num = getNumber(item[0].text)
-            #item[0].text = item[0].text.strip().replace("("+num+")", "").replace("  ", " ").strip()
-            #item[1].text = num
+        if num_children != 0:
+            #item[0].text, item[1].text = fixItemQuantity(item)
             
             count += 1
             try:
@@ -55,7 +57,8 @@ for equip in root.findall(".//Equipment"): #XPath syntax for getting all descend
                 item.attrib["id"] = i
             except:
                 bad += 1
-                print("no match")
+                item.attrib["id"] = "0000"
+                print("no match - setting to id='0000'")
 
 
 print("matched ",str(100*(1-bad/count))[:4], "%")
