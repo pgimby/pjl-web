@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines />
@@ -2910,7 +2910,7 @@
       </Item>
       <Item id="0157">
         <Name>roughing pump</Name>
-        <Number>4</Number>
+        <Number>6</Number>
       </Item>
       <Item id="0291">
         <Name>hand operated vacuum pump</Name>
@@ -3001,17 +3001,37 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name />
+        <Name>Vernier data acquisition system with printer support</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name />
+        <Name>Vernier instrumentation amplifier</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>pumpdown and leakout curve apparatus</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>stopwatch</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>Diffstak equipment cart</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>RG-83 ionization gauge controller</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>Turbo V80 pump cart</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
     <Type />
     <SupportDocs />
-    <Software />
+    <Software>pumpdown_template.cmbl</Software>
   </Lab>
   <Lab labId="0113">
     <Name>OpAmps I/V</Name>

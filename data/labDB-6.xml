@@ -101,7 +101,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0049">
-        <Name>50 Ohm BNC feedthrough termination</Name>
+        <Name>50 Ω BNC feedthrough termination</Name>
         <Number>1</Number>
       </Item>
       <Item id="0189">
@@ -225,19 +225,19 @@
         <Number>1</Number>
       </Item>
       <Item id="0131">
-        <Name>15 kOhm resistor</Name>
+        <Name>15 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0130">
-        <Name>27 kOhm resistor</Name>
+        <Name>27 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0120">
-        <Name>0.0056 microF capacitor</Name>
+        <Name>0.0056 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0116">
-        <Name>0.01 microF capacitor</Name>
+        <Name>0.01 µF capacitor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -902,15 +902,15 @@
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0114">
-        <Name>0.1 microF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0151">
-        <Name>10 kOhm potentiometer</Name>
+        <Name>10 kΩ potentiometer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -1160,27 +1160,27 @@
         <Number>1</Number>
       </Item>
       <Item id="0122">
-        <Name>1 MOhm resistor</Name>
+        <Name>1 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
-        <Name>10 kOhm resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0152">
-        <Name>100 kOhm potentiometer</Name>
+        <Name>100 kΩ potentiometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0121">
-        <Name>100 microF capacitor</Name>
+        <Name>100 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0114">
-        <Name>0.1 microF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -1284,15 +1284,15 @@
         <Number>1</Number>
       </Item>
       <Item id="0133">
-        <Name>2.2 kOhm resistor</Name>
+        <Name>2.2 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0122">
-        <Name>1 MOhm resistor</Name>
+        <Name>1 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -1678,19 +1678,19 @@
         <Number>1</Number>
       </Item>
       <Item id="0148">
-        <Name>5.1 kOhm resistor</Name>
+        <Name>5.1 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0140">
-        <Name>100 Ohm resistor</Name>
+        <Name>100 Ω resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0139">
-        <Name>20 kOhm resistor</Name>
+        <Name>20 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0122">
-        <Name>1 MOhm resistor</Name>
+        <Name>1 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0117">
@@ -1698,11 +1698,11 @@
         <Number>1</Number>
       </Item>
       <Item id="0116">
-        <Name>0.01 microF capacitor</Name>
+        <Name>0.01 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0115">
-        <Name>1 microF capacitor</Name>
+        <Name>1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -1895,19 +1895,19 @@
         <Number>1</Number>
       </Item>
       <Item id="0147">
-        <Name>4.7 kOhm resistor</Name>
+        <Name>4.7 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0129">
-        <Name>47 kOhm resistor</Name>
+        <Name>47 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
-        <Name>10 kOhm resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0115">
-        <Name>1 microF capacitor</Name>
+        <Name>1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -2036,7 +2036,7 @@
     </Versions>
     <Equipment>
       <Item id="0075">
-        <Name>Constant volume gas apparatus</Name>
+        <Name>constant volume gas apparatus (air filled)</Name>
         <Number>1</Number>
       </Item>
       <Item id="0074">
@@ -2173,7 +2173,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0154">
-        <Name>25 Ohm potentiometer</Name>
+        <Name>25 Ω potentiometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -2695,23 +2695,23 @@
         <Number>1</Number>
       </Item>
       <Item id="0134">
-        <Name>11 kOhm resistor</Name>
+        <Name>11 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0135">
-        <Name>22 kOhm resistor</Name>
+        <Name>22 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0136">
-        <Name>33 kOhm resistor</Name>
+        <Name>33 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0137">
-        <Name>2.2 MOhm resistor</Name>
+        <Name>2.2 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0153">
-        <Name>70 kOhm potentiometer</Name>
+        <Name>70 kΩ potentiometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0108">
@@ -2885,19 +2885,19 @@
         <Number>1</Number>
       </Item>
       <Item id="0123">
-        <Name>10 kOhm resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0122">
-        <Name>1 MOhm resistor</Name>
+        <Name>1 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0121">
-        <Name>100 microF capacitor</Name>
+        <Name>100 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0114">
-        <Name>0.1 microF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0051">
@@ -3371,8 +3371,8 @@
         <Name>Glass slide with control apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Wooden stand</Name>
+      <Item id="0257">
+        <Name>wooden stand</Name>
         <Number>1</Number>
       </Item>
       <Item id="0183">
@@ -3841,27 +3841,27 @@
         <Number>1</Number>
       </Item>
       <Item id="0144">
-        <Name>10 Ohm resistor</Name>
+        <Name>10 Ω resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0140">
-        <Name>100 Ohm resistor</Name>
+        <Name>100 Ω resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0138">
-        <Name>10 MOhm resistor</Name>
+        <Name>10 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0125">
-        <Name>1 kOhm resistor</Name>
+        <Name>1 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
-        <Name>10 kOhm resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -4051,15 +4051,15 @@
         <Number>1</Number>
       </Item>
       <Item id="0131">
-        <Name>15 kOhm resistor</Name>
+        <Name>15 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0115">
-        <Name>1 microF capacitor</Name>
+        <Name>1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -4129,31 +4129,31 @@
         <Number>1</Number>
       </Item>
       <Item id="0115">
-        <Name>1 microF capacitor</Name>
+        <Name>1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0114">
-        <Name>0.1 microF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0129">
-        <Name>47 kOhm resistor</Name>
+        <Name>47 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0125">
-        <Name>1 kOhm resistor</Name>
+        <Name>1 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0122">
-        <Name>1 MOhm resistor</Name>
+        <Name>1 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
-        <Name>10 kOhm resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -4321,7 +4321,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0030">
-        <Name>small optical mounts</Name>
+        <Name>small optical bench mount</Name>
         <Number>1</Number>
       </Item>
       <Item id="0001">
@@ -5516,15 +5516,15 @@
         <Number>1</Number>
       </Item>
       <Item id="0105">
-        <Name>1.0 mCi cobalt-57 gamma source</Name>
+        <Name>1.0 mCi Co-57 gamma source</Name>
         <Number>1</Number>
       </Item>
       <Item id="0104">
-        <Name>1.0 mCi barium-133 gamma source</Name>
+        <Name>1.0 mCi Ba-133 gamma source</Name>
         <Number>1</Number>
       </Item>
       <Item id="0103">
-        <Name>1.0 mCi caesium-137 gamma source</Name>
+        <Name>1.0 mCi Cs-137 gamma source</Name>
         <Number>1</Number>
       </Item>
       <Item id="0102">
@@ -5768,27 +5768,27 @@
         <Number>1</Number>
       </Item>
       <Item id="0139">
-        <Name>20 kOhm resistor</Name>
+        <Name>20 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0138">
-        <Name>10 MOhm resistor</Name>
+        <Name>10 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
-        <Name>10 kOhm resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0118">
-        <Name>0.001 microF capacitor</Name>
+        <Name>0.001 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0115">
-        <Name>1 microF capacitor</Name>
+        <Name>1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0114">
-        <Name>0.1 microF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0108">
@@ -5924,31 +5924,31 @@
         <Number>1</Number>
       </Item>
       <Item id="0127">
-        <Name>910 kOhm resistor</Name>
+        <Name>910 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0128">
-        <Name>620 kOhm resistor</Name>
+        <Name>620 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0126">
-        <Name>3.3 kOhm resistor</Name>
+        <Name>3.3 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0119">
-        <Name>10 microF capacitor</Name>
+        <Name>10 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0116">
-        <Name>0.01 microF capacitor</Name>
+        <Name>0.01 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0115">
-        <Name>1 microF capacitor</Name>
+        <Name>1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -7008,23 +7008,23 @@
         <Number>1</Number>
       </Item>
       <Item id="0116">
-        <Name>0.01 microF capacitor</Name>
+        <Name>0.01 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0129">
-        <Name>47 kOhm resistor</Name>
+        <Name>47 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0130">
-        <Name>27 kOhm resistor</Name>
+        <Name>27 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0125">
-        <Name>1 kOhm resistor</Name>
+        <Name>1 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0123">
-        <Name>10 kOhm resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -7521,19 +7521,19 @@
         <Number>1</Number>
       </Item>
       <Item id="0145">
-        <Name>9.1 kOhm resistor</Name>
+        <Name>9.1 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0122">
-        <Name>1 MOhm resistor</Name>
+        <Name>1 MΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0125">
-        <Name>1 kOhm resistor</Name>
+        <Name>1 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0117">
@@ -7541,11 +7541,11 @@
         <Number>1</Number>
       </Item>
       <Item id="0116">
-        <Name>0.01 microF capacitor</Name>
+        <Name>0.01 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0114">
-        <Name>0.1 microF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -7800,27 +7800,27 @@
         <Number>1</Number>
       </Item>
       <Item id="0119">
-        <Name>10 microF capacitor</Name>
+        <Name>10 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0114">
-        <Name>0.1 microF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0146">
-        <Name>6.8 kOhm resistor</Name>
+        <Name>6.8 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0132">
-        <Name>30 kOhm resistor</Name>
+        <Name>30 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0131">
-        <Name>15 kOhm resistor</Name>
+        <Name>15 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0124">
-        <Name>100 kOhm resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -7890,8 +7890,8 @@
         <Name>Cenco high voltage DC power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>100 Ohm decade resistance box</Name>
+      <Item id="0263">
+        <Name>100 Ω decade resistance box</Name>
         <Number>1</Number>
       </Item>
       <Item id="0155">
@@ -8088,8 +8088,8 @@
         <Name>solid metal cylinder</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>loop of string</Name>
+      <Item id="0092">
+        <Name>string</Name>
         <Number>1</Number>
       </Item>
       <Item id="0034">
@@ -8097,14 +8097,10 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>tap water</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
         <Name>salt water solution of 230 g salt/L</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0241">
         <Name>hydrometer</Name>
         <Number>1</Number>
       </Item>
@@ -8119,7 +8115,7 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
+      <Item id="0280">
         <Name>Phywe gas apparatus</Name>
         <Number>1</Number>
       </Item>
@@ -8150,12 +8146,12 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
+      <Item id="0272">
         <Name>water reservoir</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>venturi meter</Name>
+      <Item id="0273">
+        <Name>Venturi meter</Name>
         <Number>1</Number>
       </Item>
       <Item id="0051">
@@ -8178,7 +8174,7 @@
         <Name>laboratory jack</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0281">
         <Name>funnel</Name>
         <Number>1</Number>
       </Item>
@@ -8279,8 +8275,8 @@
         <Name>5 mW solid state diode laser pointer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>10 cm diameter polarizer</Name>
+      <Item id="0035">
+        <Name>polarizer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8404,8 +8400,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Centripetal force apparatus</Name>
+      <Item id="0279">
+        <Name>centripetal force apparatus</Name>
         <Number>1</Number>
       </Item>
       <Item id="0044">
@@ -8443,8 +8439,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Motor driven turn table</Name>
+      <Item id="0278">
+        <Name>motor driven turntable</Name>
         <Number>1</Number>
       </Item>
       <Item id="0002">
@@ -8459,8 +8455,12 @@
         <Name>bubble level</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>pan with water and soap</Name>
+      <Item id="0242">
+        <Name>plastic pan</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0243">
+        <Name>dish soap</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8511,7 +8511,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>plastercine target</Name>
+        <Name>plasticine target</Name>
         <Number>1</Number>
       </Item>
       <Item id="0007">
@@ -8565,7 +8565,7 @@
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0258">
         <Name>spark timer</Name>
         <Number>2</Number>
       </Item>
@@ -8639,7 +8639,7 @@
         <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0258">
         <Name>spark timer</Name>
         <Number>1</Number>
       </Item>
@@ -8686,20 +8686,20 @@
         <Name>hot plate</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>bucket of ice</Name>
+      <Item id="0240">
+        <Name>bucket</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>water</Name>
+      <Item id="0247">
+        <Name>ice</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0244">
         <Name>paper towels</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>constant volume gas apparatus filled with helium</Name>
+      <Item id="0245">
+        <Name>constant volume gas apparatus (helium filled)</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8710,8 +8710,8 @@
         <Name>laboratory stand</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>thermometer holder</Name>
+      <Item id="0056">
+        <Name>thermometer clamp</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -8749,8 +8749,8 @@
         <Name>plastic ruler</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>0.1 microcurrie Strontium 90 source</Name>
+      <Item id="0277">
+        <Name>0.1 µCi Sr-90</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -8769,7 +8769,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0047">
-        <Name>Pasco driven harmonic motion analyzer</Name>
+        <Name>Pasco driven harmonic motion apparatus</Name>
         <Number>1</Number>
       </Item>
       <Item id="0206">
@@ -9008,8 +9008,8 @@
         <Name>measuring tape</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>vertical board with pulleys</Name>
+      <Item id="0238">
+        <Name>vector board</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9063,8 +9063,8 @@
         <Name>HP 5315A universal counter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>HP 6516A High Voltage DC Power Supply</Name>
+      <Item id="0250">
+        <Name>HP high voltage power supply</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9075,24 +9075,24 @@
         <Name>Geiger connection box</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>0.1 microCi Sr-90</Name>
+      <Item id="0277">
+        <Name>0.1 µCi Sr-90</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>10 microCi Tl-204</Name>
+      <Item id="0276">
+        <Name>10 µCi Tl-204</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>1 microCi Am-241</Name>
+      <Item id="0275">
+        <Name>1 µCi Am-241</Name>
         <Number>1</Number>
       </Item>
       <Item id="0142">
         <Name>0.1 mCi Po-210 alpha source</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>1 microCi Co-60</Name>
+      <Item id="0271">
+        <Name>1 µCi Co-60</Name>
         <Number>1</Number>
       </Item>
       <Item id="0051">
@@ -9145,32 +9145,32 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Fresnel Biprism</Name>
+      <Item id="0270">
+        <Name>Fresnel biprism</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>large optical bench</Name>
+      <Item id="0023">
+        <Name>2 m optical bench</Name>
         <Number>1</Number>
       </Item>
       <Item id="0067">
         <Name>sodium lamp</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0270">
         <Name>Fresnel biprism</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>translation mount</Name>
+      <Item id="0083">
+        <Name>2-axis translation stage</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>15 cm focal length double convex lens</Name>
+      <Item id="0269">
+        <Name>15 cm focal length convex lens</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>optical mount</Name>
+      <Item id="0031">
+        <Name>large optical bench mount</Name>
         <Number>1</Number>
       </Item>
       <Item id="0210">
@@ -9212,8 +9212,8 @@
         <Name>optical bench pivot</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>small optical bench</Name>
+      <Item id="0022">
+        <Name>1 m optical bench</Name>
         <Number>2</Number>
       </Item>
       <Item id="0000">
@@ -9263,20 +9263,20 @@
         <Name>laser</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>translation stage</Name>
+      <Item id="0083">
+        <Name>2-axis translation stage</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>3.8 cm fl concave lens on slide holder</Name>
+      <Item id="0274">
+        <Name>3.8 cm focal length concave lens</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
         <Name>iris on slide holder</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>small optical bench</Name>
+      <Item id="0022">
+        <Name>1 m optical bench</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9302,8 +9302,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Mettler Balance</Name>
+      <Item id="0249">
+        <Name>Mettler balance</Name>
         <Number>1</Number>
       </Item>
       <Item id="0246">
@@ -9318,15 +9318,11 @@
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>liquid nitrogen in 35 l transfer dewar</Name>
+      <Item id="0248">
+        <Name>liquid nitrogen</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>hot water</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
+      <Item id="0246">
         <Name>styrofoam cup</Name>
         <Number>4</Number>
       </Item>
@@ -9334,8 +9330,8 @@
         <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>ice bath</Name>
+      <Item id="0247">
+        <Name>ice</Name>
         <Number>1</Number>
       </Item>
       <Item id="0051">
@@ -9455,8 +9451,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Kater's Penulum</Name>
+      <Item id="0268">
+        <Name>Kater's pendulum</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9522,7 +9518,7 @@
         <Name>2 resistor set</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0267">
         <Name>set of short connecting leads</Name>
         <Number>1</Number>
       </Item>
@@ -9536,7 +9532,7 @@
     <Software />
   </Lab>
   <Lab labId="0152">
-    <Name>Law of Dulong Petiti</Name>
+    <Name>Law of Dulong-Petit</Name>
     <Disciplines />
     <Topics />
     <Versions />
@@ -9592,10 +9588,6 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>none</Name>
-        <Number>1</Number>
-      </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs />
@@ -9619,8 +9611,8 @@
         <Name>aluminum crossbar</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>Pasco mechanical driver</Name>
+      <Item id="0047">
+        <Name>Pasco driven harmonic motion apparatus</Name>
         <Number>1</Number>
       </Item>
       <Item id="0042">
@@ -9698,7 +9690,7 @@
         <Name>spectrum tube power supply</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0266">
         <Name>Abbe diagram</Name>
         <Number>1</Number>
       </Item>
@@ -9765,8 +9757,8 @@
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>room thermometer</Name>
+      <Item id="0229">
+        <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -9823,11 +9815,11 @@
         <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0258">
         <Name>spark timer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0259">
         <Name>spark tape</Name>
         <Number>1</Number>
       </Item>
@@ -9874,7 +9866,7 @@
         <Name>air blower</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0258">
         <Name>spark timer</Name>
         <Number>1</Number>
       </Item>
@@ -9882,7 +9874,7 @@
         <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0259">
         <Name>spark tape</Name>
         <Number>1</Number>
       </Item>
@@ -9922,8 +9914,8 @@
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>riser blocks</Name>
+      <Item id="0112">
+        <Name>riser block</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -10004,12 +9996,12 @@
         <Name>tunnel diode</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>100 Ohm decade resistance box</Name>
+      <Item id="0263">
+        <Name>100 Ω decade resistance box</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>10 kiloOhm decade resistance box</Name>
+      <Item id="0264">
+        <Name>10 kΩ decade resistance box</Name>
         <Number>1</Number>
       </Item>
       <Item id="0003">
@@ -10055,11 +10047,7 @@
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>running water</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
+      <Item id="0262">
         <Name>Rex rheostat</Name>
         <Number>1</Number>
       </Item>
@@ -10102,8 +10090,8 @@
         <Name>B&amp;K function generator</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Hammond 158M 10 H inductor</Name>
+      <Item id="0261">
+        <Name>Hammond 10 H inductor</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10115,7 +10103,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>5 kiloOhm - 10 kiloOhm pair</Name>
+        <Name>5 kiloΩ - 10 kiloΩ pair</Name>
         <Number>1</Number>
       </Item>
       <Item id="0210">
@@ -10141,16 +10129,20 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Pendulum apparatus</Name>
+      <Item id="0260">
+        <Name>pendulum apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0258">
         <Name>spark timer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>spark paper stopwatch</Name>
+      <Item id="0259">
+        <Name>spark tape</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0051">
+        <Name>stopwatch</Name>
         <Number>1</Number>
       </Item>
       <Item id="0044">
@@ -10176,12 +10168,16 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Elevated water reservoir</Name>
+      <Item id="0272">
+        <Name>water reservoir</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>venturi meter</Name>
+      <Item id="0257">
+        <Name>wooden stand</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0273">
+        <Name>Venturi meter</Name>
         <Number>1</Number>
       </Item>
       <Item id="0051">
@@ -10200,8 +10196,8 @@
         <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>pail</Name>
+      <Item id="0240">
+        <Name>bucket</Name>
         <Number>1</Number>
       </Item>
       <Item id="0245">
@@ -10212,11 +10208,11 @@
         <Name>set of capillary tubes</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0256">
         <Name>pipette bulb</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0233">
         <Name>Cannon-Fenske viscometer</Name>
         <Number>1</Number>
       </Item>
@@ -10240,7 +10236,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>sound tube with transducers for each gass including air</Name>
+        <Name>sound tube with transducers for each gas including air</Name>
         <Number>1</Number>
       </Item>
       <Item id="0010">
@@ -10252,10 +10248,10 @@
         <Number>2</Number>
       </Item>
       <Item id="0000">
-        <Name>selection of gasses</Name>
+        <Name>selection of gases</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0254">
         <Name>two-stage regulator</Name>
         <Number>1</Number>
       </Item>
@@ -10286,7 +10282,7 @@
         <Name>rubber landing mat</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0257">
         <Name>wooden stand</Name>
         <Number>1</Number>
       </Item>
@@ -10353,7 +10349,7 @@
         <Name>right angle clamp</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0255">
         <Name>blue spring scale</Name>
         <Number>1</Number>
       </Item>
@@ -10498,8 +10494,8 @@
         <Name>wire potentiometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>set of short leads</Name>
+      <Item id="0267">
+        <Name>set of short connecting leads</Name>
         <Number>1</Number>
       </Item>
       <Item id="0003">
@@ -10526,39 +10522,39 @@
         <Number>1</Number>
       </Item>
       <Item id="0049">
-        <Name>50 Ohm BNC feedthrough termination</Name>
+        <Name>50 Ω BNC feedthrough termination</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>2 Harshaw 4S4 NaI(Ti) scintillator units</Name>
-        <Number>1</Number>
+      <Item id="0253">
+        <Name>Harshaw NaI(Ti) scintillator unit</Name>
+        <Number>2</Number>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0252">
         <Name>Harshaw manual</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>RCA 6199 photomultiplier manual</Name>
+      <Item id="0251">
+        <Name>RCA photomultiplier manual</Name>
         <Number>1</Number>
       </Item>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>HP 6516A High voltage power supply</Name>
+      <Item id="0250">
+        <Name>HP high voltage power supply</Name>
         <Number>1</Number>
       </Item>
       <Item id="0002">
         <Name>Anatek power supply</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>Am-241</Name>
+      <Item id="0275">
+        <Name>1 µCi Am-241</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10588,7 +10584,7 @@
         <Name>B&amp;K function generator</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0239">
         <Name>air column apparatus with speaker</Name>
         <Number>1</Number>
       </Item>
@@ -10596,7 +10592,7 @@
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0240">
         <Name>bucket</Name>
         <Number>1</Number>
       </Item>
@@ -10611,16 +10607,16 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Vector board</Name>
+      <Item id="0238">
+        <Name>vector board</Name>
         <Number>1</Number>
       </Item>
       <Item id="0054">
         <Name>c-clamp</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>triple-ended string</Name>
+      <Item id="0092">
+        <Name>string</Name>
         <Number>1</Number>
       </Item>
       <Item id="0185">
@@ -10650,16 +10646,12 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
+      <Item id="0237">
         <Name>Stirling engine</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
         <Name>20A high current power supply</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>cold running water</Name>
         <Number>1</Number>
       </Item>
       <Item id="0230">
@@ -10694,7 +10686,7 @@
         <Name>laser</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0235">
         <Name>stand for PV diagram</Name>
         <Number>1</Number>
       </Item>
@@ -10710,8 +10702,8 @@
         <Name>electrical generator</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>1 kiloOhm decade resistance box</Name>
+      <Item id="0265">
+        <Name>1 kΩ decade resistance box</Name>
         <Number>1</Number>
       </Item>
       <Item id="0234">
@@ -10737,8 +10729,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Tangent Galvanometer</Name>
+      <Item id="0236">
+        <Name>tangent galvanometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0001">
@@ -10816,11 +10808,11 @@
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>ice water</Name>
+      <Item id="0247">
+        <Name>ice</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0240">
+      <Item id="0248">
         <Name>liquid nitrogen</Name>
         <Number>1</Number>
       </Item>
@@ -10934,7 +10926,7 @@
         <Name>protractor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0234">
         <Name>set of torsion pendulums</Name>
         <Number>1</Number>
       </Item>

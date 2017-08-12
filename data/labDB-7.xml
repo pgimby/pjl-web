@@ -2040,8 +2040,8 @@
         <Number>1</Number>
       </Item>
       <Item id="0074">
-        <Name>beaker</Name>
-        <Number>1</Number>
+        <Name>1000 mL glass beaker</Name>
+        <Number>2</Number>
       </Item>
       <Item id="0000">
         <Name>cork</Name>
@@ -7458,7 +7458,7 @@
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0249">
         <Name>variac</Name>
         <Number>1</Number>
       </Item>
@@ -7717,7 +7717,7 @@
         <Name>Protek digital thermometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0249">
         <Name>variac</Name>
         <Number>1</Number>
       </Item>
@@ -8060,23 +8060,23 @@
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>5N green scale</Name>
+      <Item id="0078">
+        <Name>green spring scale</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
         <Name>beaker with drain spout</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0243">
         <Name>250 mL plastic beaker</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0244">
         <Name>1000 mL plastic beaker</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0247">
         <Name>250 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
@@ -8162,7 +8162,7 @@
         <Name>stopwatch</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0247">
         <Name>250 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
@@ -8252,8 +8252,8 @@
         <Name>mercury spill tray</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>barometer</Name>
+      <Item id="0165">
+        <Name>digital barometer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -8295,8 +8295,8 @@
         <Name>3 mm thick glass block</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Phillips multimeter</Name>
+      <Item id="0005">
+        <Name>Philips multimeter</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8377,8 +8377,8 @@
         <Name>meter stick</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>c-clamp (s)</Name>
+      <Item id="0054">
+        <Name>c-clamp</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8391,10 +8391,6 @@
       </Item>
       <Item id="0000">
         <Name>1.5 m length of chain</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>"</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -8428,11 +8424,11 @@
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>c-clamp (s)</Name>
+      <Item id="0054">
+        <Name>c-clamp</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0236">
         <Name>bubble level</Name>
         <Number>1</Number>
       </Item>
@@ -8459,7 +8455,7 @@
         <Name>stopwatch</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0236">
         <Name>bubble level</Name>
         <Number>1</Number>
       </Item>
@@ -8494,8 +8490,8 @@
         <Name>air track</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>glider</Name>
+      <Item id="0206">
+        <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
       <Item id="0052">
@@ -8545,8 +8541,8 @@
         <Name>air track</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>glider</Name>
+      <Item id="0206">
+        <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8561,8 +8557,8 @@
         <Name>magnetic bumber</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>blower</Name>
+      <Item id="0011">
+        <Name>air blower</Name>
         <Number>1</Number>
       </Item>
       <Item id="0012">
@@ -8608,7 +8604,7 @@
         <Name>knife edge support</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0236">
         <Name>bubble level</Name>
         <Number>1</Number>
       </Item>
@@ -8639,8 +8635,8 @@
         <Name>air track</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>glider</Name>
+      <Item id="0206">
+        <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8776,8 +8772,8 @@
         <Name>Pasco driven harmonic motion analyzer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>glider</Name>
+      <Item id="0206">
+        <Name>air track cart</Name>
         <Number>4</Number>
       </Item>
       <Item id="0000">
@@ -8847,8 +8843,8 @@
         <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>micrometere</Name>
+      <Item id="0041">
+        <Name>micrometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0044">
@@ -8859,7 +8855,7 @@
         <Name>tape</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0236">
         <Name>bubble level</Name>
         <Number>1</Number>
       </Item>
@@ -8872,7 +8868,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>curren balance apparatus</Name>
+        <Name>current balance apparatus</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -8910,8 +8906,8 @@
         <Name>thermistor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>set of connecting lead</Name>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
         <Number>1</Number>
       </Item>
       <Item id="0051">
@@ -8933,8 +8929,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Plastic Ruler</Name>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
         <Number>1</Number>
       </Item>
       <Item id="0041">
@@ -8953,12 +8949,12 @@
         <Name>micrograme balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>isopropanol</Name>
+      <Item id="0234">
+        <Name>isopropyl alcohol</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>nitrel gloves</Name>
+      <Item id="0235">
+        <Name>nitrile gloves</Name>
         <Number>1</Number>
       </Item>
       <Item id="0034">
@@ -9240,8 +9236,8 @@
         <Name>3 mm thick glass block</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Phillips multimeter</Name>
+      <Item id="0005">
+        <Name>Philips multimeter</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9310,7 +9306,7 @@
         <Name>Mettler Balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0246">
         <Name>100 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
@@ -9823,8 +9819,8 @@
         <Name>air track</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>glider</Name>
+      <Item id="0206">
+        <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9855,8 +9851,8 @@
         <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>blower</Name>
+      <Item id="0011">
+        <Name>air blower</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -9874,16 +9870,16 @@
         <Name>air track</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>blower</Name>
+      <Item id="0011">
+        <Name>air blower</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
         <Name>spark timer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>glider</Name>
+      <Item id="0206">
+        <Name>air track cart</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9945,8 +9941,8 @@
         <Name>laboratory stand</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>250 mL beaker</Name>
+      <Item id="0241">
+        <Name>250 mL glass beaker</Name>
         <Number>1</Number>
       </Item>
       <Item id="0020">
@@ -10043,7 +10039,7 @@
         <Name>high current power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0249">
         <Name>variac</Name>
         <Number>1</Number>
       </Item>
@@ -10208,7 +10204,7 @@
         <Name>pail</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0245">
         <Name>10 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
@@ -10275,7 +10271,7 @@
     <Versions />
     <Equipment>
       <Item id="0000">
-        <Name>"Projectile launcher</Name>
+        <Name>projectile launcher</Name>
         <Number>1</Number>
       </Item>
       <Item id="0054">
@@ -10320,10 +10316,6 @@
       </Item>
       <Item id="0052">
         <Name>tape</Name>
-        <Number>1</Number>
-      </Item>
-      <Item id="0000">
-        <Name>"</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -10426,13 +10418,13 @@
     <Software />
   </Lab>
   <Lab labId="0170">
-    <Name>Ratio of Specfic Heats for Air</Name>
+    <Name>Ratio of Specific Heats for Air</Name>
     <Disciplines />
     <Topics />
     <Versions />
     <Equipment>
       <Item id="0000">
-        <Name>ten leter glass asperator bottle</Name>
+        <Name>ten litre glass asperator bottle</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10463,7 +10455,7 @@
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0248">
         <Name>500 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
@@ -10471,8 +10463,8 @@
         <Name>lens paper</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>barometer</Name>
+      <Item id="0165">
+        <Name>digital barometer</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -10533,8 +10525,8 @@
         <Name>oscilloscope</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>50 Ohm BNC feedthrough ternination</Name>
+      <Item id="0049">
+        <Name>50 Ohm BNC feedthrough termination</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10682,15 +10674,15 @@
         <Name>AC furnace motor with belt and pully</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>optical pyrometer</Name>
+      <Item id="0070">
+        <Name>Leeds and Northrop optical pyrometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
         <Name>k type themocouple meter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0249">
         <Name>variac</Name>
         <Number>1</Number>
       </Item>
@@ -10722,15 +10714,15 @@
         <Name>1 kiloOhm decade resistance box</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>isopropyl</Name>
+      <Item id="0234">
+        <Name>isopropyl alcohol</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0245">
         <Name>10 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0246">
         <Name>100 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
@@ -10761,7 +10753,7 @@
         <Name>calipers</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0236">
         <Name>bubble level</Name>
         <Number>1</Number>
       </Item>
@@ -10796,8 +10788,8 @@
         <Name>thermocouple connecting post</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>400 mL beaker</Name>
+      <Item id="0242">
+        <Name>400 mL glass beaker</Name>
         <Number>2</Number>
       </Item>
       <Item id="0073">
@@ -10812,8 +10804,8 @@
         <Name>calipers</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>stirring rod</Name>
+      <Item id="0057">
+        <Name>stir rod</Name>
         <Number>1</Number>
       </Item>
       <Item id="0005">
@@ -10828,23 +10820,23 @@
         <Name>ice water</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0240">
         <Name>liquid nitrogen</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0239">
         <Name>dry ice</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0234">
         <Name>isopropyl alcohol</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0238">
         <Name>soldering iron</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0237">
         <Name>solder</Name>
         <Number>1</Number>
       </Item>

@@ -1271,7 +1271,7 @@
         <Name>9 V battery</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0230">
         <Name>thermistor</Name>
         <Number>1</Number>
       </Item>
@@ -2160,12 +2160,12 @@
         <Name>Sanwa analog multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>set of 3 resistors</Name>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>set of 2 resistors</Name>
+      <Item id="0232">
+        <Name>2 resistor set</Name>
         <Number>1</Number>
       </Item>
       <Item id="0149">
@@ -8131,7 +8131,7 @@
         <Name>recirculating pump</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0229">
         <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
@@ -8322,8 +8322,8 @@
         <Name>Black cord</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>ruler</Name>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
         <Number>1</Number>
       </Item>
       <Item id="0226">
@@ -8490,8 +8490,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Air track</Name>
+      <Item id="0097">
+        <Name>air track</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8522,8 +8522,8 @@
         <Name>meter stick</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
       <Item id="0012">
@@ -8541,8 +8541,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Air track</Name>
+      <Item id="0097">
+        <Name>air track</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8562,7 +8562,7 @@
         <Number>2</Number>
       </Item>
       <Item id="0000">
-        <Name>air supply</Name>
+        <Name>blower</Name>
         <Number>1</Number>
       </Item>
       <Item id="0012">
@@ -8635,8 +8635,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Air track</Name>
+      <Item id="0097">
+        <Name>air track</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -8667,8 +8667,8 @@
         <Name>riser block</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -8682,8 +8682,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Thermometer</Name>
+      <Item id="0229">
+        <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
       <Item id="0073">
@@ -8768,8 +8768,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Air track</Name>
+      <Item id="0097">
+        <Name>air track</Name>
         <Number>1</Number>
       </Item>
       <Item id="0047">
@@ -8906,7 +8906,7 @@
         <Name>Anatek power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0230">
         <Name>thermistor</Name>
         <Number>1</Number>
       </Item>
@@ -9059,8 +9059,8 @@
         <Name>Tracerlab TGC-1 GM Tube</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Oscilloscope</Name>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9091,8 +9091,8 @@
         <Name>1 microCi Am-241</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>0.1 microCi Po-210</Name>
+      <Item id="0142">
+        <Name>0.1 mCi Po-210 alpha source</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9181,8 +9181,8 @@
         <Name>travelling microscope</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9334,7 +9334,7 @@
         <Name>styrofoam cup</Name>
         <Number>4</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0229">
         <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
@@ -9518,12 +9518,12 @@
         <Name>Anatek power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>set of 3 resistors</Name>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>set of 2 resistors</Name>
+      <Item id="0232">
+        <Name>2 resistor set</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9553,7 +9553,7 @@
         <Name>thermometer clamp</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0229">
         <Name>thermometer</Name>
         <Number>2</Number>
       </Item>
@@ -9647,8 +9647,8 @@
         <Name>c-clamp</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
       <Item id="0185">
@@ -9686,8 +9686,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Advanced spectrometer</Name>
+      <Item id="0018">
+        <Name>advanced student spectroscope</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9698,8 +9698,8 @@
         <Name>Various fluid filled prism</Name>
         <Number>4</Number>
       </Item>
-      <Item id="0000">
-        <Name>Geissler tube power supply</Name>
+      <Item id="0068">
+        <Name>spectrum tube power supply</Name>
         <Number>2</Number>
       </Item>
       <Item id="0000">
@@ -9718,8 +9718,8 @@
         <Name>magnifying glass</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -9819,8 +9819,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Air track</Name>
+      <Item id="0097">
+        <Name>air track</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9851,12 +9851,12 @@
         <Name>riser block</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>air supply</Name>
+        <Name>blower</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -9870,12 +9870,12 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Air track</Name>
+      <Item id="0097">
+        <Name>air track</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>air supply</Name>
+        <Name>blower</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9961,7 +9961,7 @@
         <Name>beaker clamp</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0229">
         <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
@@ -10094,8 +10094,8 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Oscilloscope</Name>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
         <Number>1</Number>
       </Item>
       <Item id="0001">
@@ -10200,8 +10200,8 @@
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10247,11 +10247,11 @@
         <Name>sound tube with transducers for each gass including air</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>oscillosciope</Name>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0229">
         <Name>thermometer</Name>
         <Number>2</Number>
       </Item>
@@ -10369,9 +10369,9 @@
         <Name>set of hanging masses</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>8 hook collars</Name>
-        <Number>1</Number>
+      <Item id="0077">
+        <Name>hook collar</Name>
+        <Number>8</Number>
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
@@ -10388,12 +10388,12 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Advanced spectrometer</Name>
+      <Item id="0018">
+        <Name>advanced student spectroscope</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Geissler tube power supply</Name>
+      <Item id="0068">
+        <Name>spectrum tube power supply</Name>
         <Number>1</Number>
       </Item>
       <Item id="0064">
@@ -10404,20 +10404,20 @@
         <Name>sodium lamp</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>cadmium lamp</Name>
+      <Item id="0066">
+        <Name>Osram cadmium lamp</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>ealing power supply</Name>
+      <Item id="0233">
+        <Name>Ealing power supply</Name>
         <Number>1</Number>
       </Item>
       <Item id="0069">
         <Name>magnifying glass</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
     </Equipment>
@@ -10467,8 +10467,8 @@
         <Name>500 mL graduated cylinder</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>kimwipe</Name>
+      <Item id="0109">
+        <Name>lens paper</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10494,11 +10494,11 @@
         <Name>Anatek power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0231">
         <Name>3 resistor set</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0232">
         <Name>2 resistor set</Name>
         <Number>1</Number>
       </Item>
@@ -10529,8 +10529,8 @@
         <Name>Nuclear Data ND62 PHA</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Oscilloscope</Name>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10670,12 +10670,12 @@
         <Name>cold running water</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0230">
         <Name>thermistor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Fluke mulitimeter</Name>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
         <Number>5</Number>
       </Item>
       <Item id="0000">
@@ -10710,8 +10710,8 @@
         <Name>measuring tape</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -10780,11 +10780,11 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0000">
-        <Name>Thermometer</Name>
+      <Item id="0229">
+        <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0230">
         <Name>thermistor</Name>
         <Number>1</Number>
       </Item>
@@ -10946,7 +10946,7 @@
         <Name>set of torsion pendulums</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0228">
         <Name>assortment of brass springs</Name>
         <Number>1</Number>
       </Item>
