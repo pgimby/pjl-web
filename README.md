@@ -249,7 +249,7 @@ Refraction
 
 
 ### pjlDB.labItem
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Used by `labDB` objects to store lab items. Properties are accessed directly for setting and getting and type checking and validation of its properties is performed by the `labDB` object itself.
+> Used by `labDB` objects to store lab items. Properties are accessed directly for setting and getting and type checking and validation of its properties is performed by the `labDB` object itself.
 
 #### Properties
 
