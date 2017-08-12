@@ -5,19 +5,18 @@
 
 ## **To Do List**
 
-XML validation  
-PHP to handle database edit POSTS  
+XML validation (done)  
+PHP to handle database edit POSTS (investigate Apache mod for Python)  
 Refine site-wide/page-specific scripts and stylesheets and implement page-specific JS namespaces (dashboard done - repo not done)  
 Dashboard to edit XMLs (in progress)  
-Populate equipment tags in lab XML (first pass done - needs refinement)  
+Populate equipment tags in lab XML (final draft done - awaiting Peter's review)  
 Populate topics / disciplines / ID#s (in progress)  
-Add forgotten labs  
+Add legacy labs (done)  
 Student guide  
 Support docs  
-Sample data  
-External references  
+External references (done)  
 Companion guides  
-325 ideas  
+325 final project ideas  
 
 
 
@@ -28,8 +27,8 @@ Repository (alpha finished)
 Equipment page template with URL string queries  
 Database editing dashboard(s) (in progress)  
 Staff profiles  
-Room scheduling interactive map (in progress)  
-Demos repository (not confirmed)  
+Room scheduling interactive map (SVG ready to go)  
+Demos repository (unconfirmed)  
 403, 404, 500, 503 HTTP error pages  
 
 
@@ -140,15 +139,45 @@ Refraction
             ...
         </Software>
     </Lab>
+    ...
 </Labs>
 
 ```
 
 
+## **Equipment XML Template**
 
-
-
-
+```
+<Equipment>
+    <Item id="0001">
+        <InventoryName />
+        <Identification>
+            <Manufacturer />
+            <Model />
+        </Identification>
+        <Location>
+            <Room />
+            <Storage />
+        </Location>
+        <Quantity>
+            <Total />
+            <InService />
+            <UnderRepair />
+        </Quantity>
+        <Documents>
+            <Document>
+                <Name />
+                <location>
+                    <Online />
+                    <Offline />
+                </location>
+            </Document>
+            ...
+        </Documents>
+    </Item>
+    ...
+</Equipment>
+```
 
 
 
