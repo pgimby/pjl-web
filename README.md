@@ -95,6 +95,10 @@ Malus' Law
 Refraction
 <!---end topics-->
 
+
+
+# Database Templates
+
 ## **Lab XML Template**
 
 
@@ -180,7 +184,116 @@ Refraction
 ```
 
 
+#  pjlDB.py Documentation
 
+## Module: pjlDB
+
+
+### pjlDB.labDB
+
+
+#### Properties
+
+##### labDB.tree
+
+
+##### labDB.root
+
+
+##### labDB.labs
+
+
+##### labDB.new_id
+
+
+##### labDB.length
+
+
+
+#### Methods
+
+##### labDB.newLab()
+
+
+##### labDB.getLab()
+
+
+##### labDB.addLab()
+
+
+##### labDB.save()
+
+
+##### labDB.validateFull()
+
+
+##### labDB.noDuplicateIDs()
+
+
+##### labDB.hasUniqueEquipIDs()
+
+
+##### labDB.hasValidPathRoots()
+
+
+##### labDB.hasValidTopics()
+
+
+##### labDB.hasValidDisciplines()
+
+
+##### labDB.hasValidTypes()
+
+
+
+
+
+### pjlDB.labItem
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Used by `labDB` objects to store lab items. Properties are accessed directly for setting and getting and type checking and validation of its properties is performed by the `labDB` object itself.
+
+#### Properties
+
+##### labItem.id_num
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A string holding an integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
+
+
+##### labItem.name
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A string representing the name of a lab.
+
+
+##### labItem.disciplines
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A list of strings representing valid disciplines associated with a lab. Valid disciplines are those listed in the pjl-web README.
+
+
+##### labItem.topics
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A list of strings representing valid topics associated with a lab. Valid topics are those listed in the pjl-web README.
+
+
+##### labItem.versions
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A list of dictionaries representing individual versions. Each version has 4 keys: "path", "semester", "year", and "course". Their corresponding values are
+
+
+##### labItem.equipment
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+##### labItem.lab_type
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+##### labItem.support_docs
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+##### labItem.software
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+#### Methods
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Object has no methods
 
 
 
