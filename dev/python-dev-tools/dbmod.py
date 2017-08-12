@@ -358,14 +358,17 @@ class labDB():
                 item = ET.SubElement(equipment, "Item", {"id": i["id"]})
                 name = ET.SubElement(item, "Name")
                 name.text = i["name"]
-                number = ET.SubElement(item, "Number")
-                number.text = i["amount"]
+                amount = ET.SubElement(item, "Amount")
+                amount.text = i["amount"]
             typ = ET.SubElement(lab, "Type")
             typ.text = labitem.lab_type
             supportdocs = ET.SubElement(lab, "SupportDocs")
             for i in labitem.support_docs:
-                doc = ET.SubElement(supportdocs, "Doc", {"type": i["name"]})
-                doc.text = i["path"]
+                doc = ET.SubElement(supportdocs, "Doc")
+                name = ET.SubElement(doc, "Name")
+                name.text = i["name"]
+                path = ET.SubElement(doc, "Path")
+                path.text = i["path"]
             software = ET.SubElement(lab, "Software")
             for i in labitem.software:
                 name = ET.SubElement(software, "Name")
@@ -398,10 +401,10 @@ class _labItem():
                               "course": i.findtext("Course")} for i in lab.find("Versions").findall("Version")]
             self.equipment = [{"id": i.attrib["id"],
                                "name": i.findtext("Name"),
-                               "amount": i.findtext("Number")} for i in lab.find("Equipment").findall("Item")]
+                               "amount": i.findtext("Amount")} for i in lab.find("Equipment").findall("Item")]
             self.lab_type = lab.findtext("Type")
-            self.support_docs = [{"name": i.attrib["type"],
-                                 "path": i.text} for i in lab.find("SupportDocs").findall("Doc")]
+            self.support_docs = [{"name": i.findtext("Name"),
+                                  "path": i.findtext("Path")} for i in lab.find("SupportDocs").findall("Doc")]
             self.software = [i.text for i in lab.find("Software").findall("Name")]
         elif not lab and isValidID(idnum):
             self.id_num = idnum

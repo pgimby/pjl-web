@@ -1192,7 +1192,7 @@ function getLabEquipmentList(lab) {  //return an array of equipment (strings) fo
 	var list = [];
 	var equipment = lab.getElementsByTagName("Item");
 	for (var i = equipment.length - 1; i >= 0; i--) {
-		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Number")[0].childNodes[0].nodeValue + ")");
+		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue + ")");
 	}
 	return list;
 }
@@ -1215,7 +1215,9 @@ function getExtraLabDocs(lab) {  //return an array of extra doc objects for an X
 	var list = [];
 	var docs = lab.getElementsByTagName("Doc");
 	for (var i = docs.length - 1; i >= 0; i--) {
-		list.push({name: docs[i].getAttribute("type"), url: docs[i].childNodes[0].nodeValue});
+		var docname = docs[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+		var docpath = docs[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue;
+		list.push({name: docname, url: path});
 	}
 	return list;
 }

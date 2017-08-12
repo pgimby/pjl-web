@@ -122,7 +122,7 @@ Refraction
         <Equipment>
             <Item id="0001">
                 <Name />
-                <Number />
+                <Amount />
             </Item>
             ...
         <Equipment />
