@@ -48,6 +48,7 @@ Demos repository (not confirmed)
 ## **Disciplines**  
 ###### Labs are identified with disciplines when the discipline constitutes a significant focus of the lab
 
+<!---start disciplines-->
 Newtonian Mechanics  
 Electricity and Magnetism  
 Optics  
@@ -61,12 +62,13 @@ Nuclear Physics
 Math  
 Laboratory Skills  
 Computer Skills  
-
+<!---end disciplines-->
 
 
 ## **Topics**  
 ###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is an explicitly necessary pre-requisite
 
+<!---start topics-->
 Electrostatics  
 Circuits  
 PDE  
@@ -92,7 +94,7 @@ Newton's Laws
 Wave Mechanics  
 Malus' Law  
 Refraction
-
+<!---end topics-->
 
 ## **Lab XML Template**
 
