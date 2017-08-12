@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Equipment>
+  <Item id="0001">
+    <InventoryName>Fluke multimeter</InventoryName>
+    <Identification>
+      <Manufacturer>Fluke</Manufacturer>
+      <Model>PM2535</Model>
+    </Identification>
+    <Location>
+      <Room>ST037</Room>
+      <Storage>C1</Storage>
+    </Location>
+    <Quantity>
+      <Total>48</Total>
+      <InService>46</InService>
+      <UnderRepair>2</UnderRepair>
+    </Quantity>
+    <Documents>
+      <Document>
+        <Name>user manual</Name>
+        <location>
+          <Online>/equipment/docs/0001/manual.pdf</Online>
+          <Offline>ST050</Offline>
+        </location>
+      </Document>
+    </Documents>
+  </Item>
+</Equipment>

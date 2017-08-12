@@ -217,7 +217,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -364,7 +364,7 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -396,7 +396,7 @@
         <Name>digital balance</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0095">
+      <Item id="0000">
         <Name>metal levelling shims</Name>
         <Number>1</Number>
       </Item>
@@ -758,7 +758,7 @@
         <Name>Vernier position sensor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -782,7 +782,7 @@
         <Name>inclinometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0095">
+      <Item id="0000">
         <Name>masses to put on cart</Name>
         <Number>1</Number>
       </Item>
@@ -890,7 +890,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -919,7 +919,7 @@
     <Software />
   </Lab>
   <Lab labId="0020">
-    <Name>Angular Impule and Anglular Momentum Change</Name>
+    <Name>Angular Impulse and Anglular Momentum Change</Name>
     <Disciplines />
     <Topics />
     <Versions>
@@ -1260,7 +1260,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -1464,7 +1464,7 @@
         <Course>PHYS 369</Course>
       </Version>
       <Version>
-        <Path>/2012/physics369-FA2012/2.pdf</Path>
+        <Path>/2012/physics369-FA2012/stanwav2.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2012</Year>
         <Course>PHYS 369</Course>
@@ -1716,13 +1716,13 @@
     <Topics />
     <Versions>
       <Version>
-        <Path>/2012/physics323-FA2012/oscmult.pdf </Path>
+        <Path>/2012/physics323-FA2012/oscmult.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2012</Year>
         <Course>PHYS 323</Course>
       </Version>
       <Version>
-        <Path>/2011/physics323-FA2011/oscmult.pdf </Path>
+        <Path>/2011/physics323-FA2011/oscmult.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2011</Year>
         <Course>PHYS 323</Course>
@@ -1879,7 +1879,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -2039,7 +2039,7 @@
         <Name>constant volume gas apparatus (air filled)</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0074">
+      <Item id="0000">
         <Name>1000 mL glass beaker</Name>
         <Number>2</Number>
       </Item>
@@ -2055,7 +2055,7 @@
         <Name>Vernier temperature probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -2168,7 +2168,7 @@
         <Name>2 resistor set</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0149">
+      <Item id="0000">
         <Name>Eico decade resistor box</Name>
         <Number>1</Number>
       </Item>
@@ -2258,7 +2258,7 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -2459,7 +2459,64 @@
         <Course>PHYS 397</Course>
       </Version>
     </Versions>
-    <Equipment />
+    <Equipment>
+      <Item id="0000">
+        <Name>Electromagnet</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Number>2</Number>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Number>2</Number>
+      </Item>
+      <Item id="0005">
+        <Name>Philips multimeter</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>InAs Hall probe</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0283">
+        <Name>standard magnet</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0046">
+        <Name>fork clamp</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0282">
+        <Name>female BNC to male banana adapter</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0308">
+        <Name>BNC coaxial cable</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>compass</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Number>1</Number>
+      </Item>
+    </Equipment>
     <Type />
     <SupportDocs />
     <Software />
@@ -2846,7 +2903,112 @@
         <Course>PHYS 397</Course>
       </Version>
     </Versions>
-    <Equipment />
+    <Equipment>
+      <Item id="0000">
+        <Name>schematic diagram of vacuum pump principles</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0157">
+        <Name>roughing pump</Name>
+        <Number>4</Number>
+      </Item>
+      <Item id="0291">
+        <Name>hand operated vacuum pump</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>board-mounted gauges</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0289">
+        <Name>sorption pump</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0306">
+        <Name>liquid nitrogen</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0288">
+        <Name>thermocouple vacuum gauge</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0287">
+        <Name>leaky weld assembly</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0046">
+        <Name>fork clamp</Name>
+        <Number>2</Number>
+      </Item>
+      <Item id="0286">
+        <Name>helium cylinder</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Number>2</Number>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0285">
+        <Name>vacuum manifold cart</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0284">
+        <Name>Topward power supply</Name>
+        <Number>2</Number>
+      </Item>
+      <Item id="0000">
+        <Name>isolation valve</Name>
+        <Number>2</Number>
+      </Item>
+      <Item id="0000">
+        <Name>vacuum hose</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>25 cm tube with NW25 terminations</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>four-way cross with NW25 flanges</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>Varian vacuum gauge and gauge head</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>assortment of NW25 rubber O-rings and metal centering rings</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>foreline trap</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>assortment of NW25 clamps</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0235">
+        <Name>nitrile gloves</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name />
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name />
+        <Number>1</Number>
+      </Item>
+    </Equipment>
     <Type />
     <SupportDocs />
     <Software />
@@ -2873,7 +3035,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -3051,7 +3213,7 @@
         <Name>optical screen</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0028">
+      <Item id="0000">
         <Name>diopter gauge</Name>
         <Number>1</Number>
       </Item>
@@ -3351,7 +3513,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0188">
+      <Item id="0000">
         <Name>Pasco precision interferometer apparatus</Name>
         <Number>1</Number>
       </Item>
@@ -3628,7 +3790,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0099">
+      <Item id="0000">
         <Name>Tel-X-ometer x-ray spectrometer</Name>
         <Number>1</Number>
       </Item>
@@ -3825,7 +3987,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0108">
@@ -4031,7 +4193,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0108">
@@ -4101,7 +4263,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -4514,7 +4676,7 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -5515,15 +5677,15 @@
         <Name>pulse height analyzer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0105">
+      <Item id="0000">
         <Name>1.0 mCi Co-57 gamma source</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0104">
+      <Item id="0000">
         <Name>1.0 mCi Ba-133 gamma source</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0103">
+      <Item id="0000">
         <Name>1.0 mCi Cs-137 gamma source</Name>
         <Number>1</Number>
       </Item>
@@ -5590,7 +5752,7 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -5756,7 +5918,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -5892,7 +6054,7 @@
     </Versions>
     <Equipment>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -6084,7 +6246,7 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -6501,7 +6663,7 @@
         <Name>Vernier magnetic field probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0207">
+      <Item id="0000">
         <Name>Vernier LabPro Data Logger</Name>
         <Number>1</Number>
       </Item>
@@ -6984,7 +7146,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -7509,7 +7671,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0107">
@@ -7764,7 +7926,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0106">
-        <Name>Pat's function generator</Name>
+        <Name>Pat’s function generator</Name>
         <Number>1</Number>
       </Item>
       <Item id="0108">
@@ -8100,7 +8262,7 @@
         <Name>salt water solution of 230 g salt/L</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0241">
+      <Item id="0299">
         <Name>hydrometer</Name>
         <Number>1</Number>
       </Item>
@@ -8455,11 +8617,11 @@
         <Name>bubble level</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0242">
+      <Item id="0300">
         <Name>plastic pan</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0243">
+      <Item id="0301">
         <Name>dish soap</Name>
         <Number>1</Number>
       </Item>
@@ -8690,15 +8852,15 @@
         <Name>bucket</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0247">
+      <Item id="0305">
         <Name>ice</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0244">
+      <Item id="0302">
         <Name>paper towels</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0245">
+      <Item id="0000">
         <Name>constant volume gas apparatus (helium filled)</Name>
         <Number>1</Number>
       </Item>
@@ -8733,8 +8895,8 @@
         <Name>Geiger counter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>BNC cable</Name>
+      <Item id="0308">
+        <Name>BNC coaxial cable</Name>
         <Number>1</Number>
       </Item>
       <Item id="0006">
@@ -9008,7 +9170,7 @@
         <Name>measuring tape</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0238">
+      <Item id="0297">
         <Name>vector board</Name>
         <Number>1</Number>
       </Item>
@@ -9067,8 +9229,8 @@
         <Name>HP high voltage power supply</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>voltage BNC Cable</Name>
+      <Item id="0308">
+        <Name>BNC coaxial cable</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9100,7 +9262,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>BNC cables BNC tee</Name>
+        <Name>BNC tee</Name>
         <Number>1</Number>
       </Item>
       <Item id="0000">
@@ -9302,7 +9464,7 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0249">
+      <Item id="0307">
         <Name>Mettler balance</Name>
         <Number>1</Number>
       </Item>
@@ -9318,11 +9480,11 @@
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0248">
+      <Item id="0306">
         <Name>liquid nitrogen</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0246">
+      <Item id="0304">
         <Name>styrofoam cup</Name>
         <Number>4</Number>
       </Item>
@@ -9330,7 +9492,7 @@
         <Name>thermometer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0247">
+      <Item id="0305">
         <Name>ice</Name>
         <Number>1</Number>
       </Item>
@@ -10212,7 +10374,7 @@
         <Name>pipette bulb</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0233">
+      <Item id="0292">
         <Name>Cannon-Fenske viscometer</Name>
         <Number>1</Number>
       </Item>
@@ -10584,7 +10746,7 @@
         <Name>B&amp;K function generator</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0239">
+      <Item id="0298">
         <Name>air column apparatus with speaker</Name>
         <Number>1</Number>
       </Item>
@@ -10607,7 +10769,7 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0238">
+      <Item id="0297">
         <Name>vector board</Name>
         <Number>1</Number>
       </Item>
@@ -10646,7 +10808,7 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0237">
+      <Item id="0296">
         <Name>Stirling engine</Name>
         <Number>1</Number>
       </Item>
@@ -10686,7 +10848,7 @@
         <Name>laser</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0235">
+      <Item id="0294">
         <Name>stand for PV diagram</Name>
         <Number>1</Number>
       </Item>
@@ -10729,7 +10891,7 @@
     <Topics />
     <Versions />
     <Equipment>
-      <Item id="0236">
+      <Item id="0295">
         <Name>tangent galvanometer</Name>
         <Number>1</Number>
       </Item>
@@ -10808,11 +10970,11 @@
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0247">
+      <Item id="0305">
         <Name>ice</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0248">
+      <Item id="0306">
         <Name>liquid nitrogen</Name>
         <Number>1</Number>
       </Item>
@@ -10926,7 +11088,7 @@
         <Name>protractor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0234">
+      <Item id="0293">
         <Name>set of torsion pendulums</Name>
         <Number>1</Number>
       </Item>

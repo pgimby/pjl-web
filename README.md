@@ -94,5 +94,67 @@ Malus' Law
 Refraction
 
 
+## **Lab XML Template**
+
+
+```
+<Labs>
+    <Lab labId="0001">
+        <Name />
+        <Disciplines>
+            <Discipline />
+            ...
+        </Disciplines>
+        <Topics>
+            <Topic />
+            ...
+        </Topics>
+        <Versions>
+            <Version>
+                <Path />
+                <Semester />
+                <Year />
+                <Course />
+            </Version>
+            ...
+        </Versions>
+        <Equipment>
+            <Item id="0001">
+                <Name />
+                <Number />
+            </Item>
+            ...
+        <Equipment />
+        <Type />
+        <SupportDocs>
+            <Doc>
+                <Name />
+                <Path />
+            </Doc>
+            ...
+        </SupportDocs>
+        <Software>
+            <Name />
+            ...
+        </Software>
+    </Lab>
+</Labs>
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
