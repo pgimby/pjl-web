@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines />
@@ -3331,7 +3331,6 @@
     <Name>Drag Forces</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
-      <Discipline>Friction and Drag</Discipline>
       <Discipline>Fluid Mechanics</Discipline>
       <Discipline>Math</Discipline>
     </Disciplines>
@@ -7948,7 +7947,6 @@
     <Topics>
       <Topic>Measurements</Topic>
       <Topic>Work and Energy</Topic>
-      <Topic>Optics</Topic>
     </Topics>
     <Versions>
       <Version>

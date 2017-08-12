@@ -76,7 +76,7 @@ ODE
 Statistics  
 Linear Algebra  
 Integration  
-Differentation  
+Differentiation  
 Rotational Motion  
 Statics  
 Kinematics  
@@ -90,7 +90,7 @@ Conservation Laws
 Magnetism  
 Interference  
 Polarization  
-Newton's Laws  
+Newton’s Laws  
 Wave Mechanics  
 Malus' Law  
 Refraction
