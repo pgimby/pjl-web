@@ -318,6 +318,10 @@ db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
 > Adds a `_labItem` object to the held database. If an identical lab already exists, it is replaced. If it does not already exist, a new lab entry is appended to the held database.
 
 
+##### labDB.deleteLab(idnum)
+> Deletes a `_labItem` object with the lab ID, `idnum`. Throws an exception if invalid arguments are passed. Returns True if lab is deleted, False if no lab found.
+
+
 ##### labDB.save(filename, ignore_validation=False, error_log=False)
 > Saves the database as an XML file with UTF-8 encoding. If `ignore_validation` is True, `labDB` will attempt to write the XML without any validation of its contents. If False, a full validation will be performed before writing. If `error_log` is True, an error report will be saved to the working directory. If False, the error log will be printed to the console.
 
@@ -430,16 +434,20 @@ with db.log_file_object() as f:
 
 ##### _labItem.versions
 > A list of dictionaries representing individual versions. Each dictionary has 4 keys: "path", "semester", "year", and "course".  
->  
-> Ex.  
-> {"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}
+
+```
+#a single-element list containing one version dictionary
+_labItem().versions = [{"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}]
+```
 
 
 ##### _labItem.equipment
 > A list of dictionaries representing individual equipment items. Each dictionary has 3 keys: "id", "name", and "amount".  
->  
-> Ex.  
-> {"id":"0001", "name":"Fluke multimeter", "amount" : "2"}
+
+```
+_labItem().equipment = [{"id":"0001", "name":"Fluke multimeter", "amount" : "2"},
+                        {"id":"0003", "name":"string", "amount" : "1"}]
+```
 
 
 ##### _labItem.lab_type

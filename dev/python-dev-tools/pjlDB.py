@@ -293,6 +293,7 @@ class labDB():
         else:
             self.labs.append(labitem)
             self.root.append(self._labItemToXMLNode(labitem))
+            self._updateXML()
             self.length = len(self.root)
             self.new_id = self._getNextAvailableID()
 
@@ -323,7 +324,20 @@ class labDB():
         self.root.clear()
         for lab in self.labs:
             self.root.append(self._labItemToXMLNode(lab))
-            
+
+
+    def deleteLab(self, idnum):
+        if isValidID(idnum):
+            for lab in self.labs:
+                if idnum == lab.id_num:
+                    self.labs.remove(lab)
+                    self._updateXML()
+                    self.length = len(self.labs)
+                    self.new_id = self._getNextAvailableID()
+                    return True
+        else:
+            raise Exception("Invalid lab ID number: IDs must be number strings of length 4 and mustn't exist already in the tree")
+        return False
 
 
     def _labItemToXMLNode(self, labitem):
@@ -482,7 +496,7 @@ if __name__ == "__main__":
    
     def addNewEntry():
 
-    #-----------------------------------------
+        #-----------------------------------------
         #CREATING A NEW ENTRY IN THE LAB DATABASE
         #-----------------------------------------
 
