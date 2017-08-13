@@ -202,10 +202,83 @@ Refraction
 
 
 
+# pjlDB Module
 
+## Example Code
+
+### Modifying a Lab in the Database
+
+```
+#get the lab you want by name
+lab = db.getLab(name="Faraday's Law")
+
+#or by id number
+lab = db.getLab(idnum="0037")
+
+#change any of its properties
+lab.topics = ["PDE", "Polarization"]
+
+#add back to the db to replace the previous version
+db.addLab(lab)
+db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
+```
+
+
+### Adding a New Lab to the Database
+
+```
+#Import an XML and make a database object
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+
+#make a new lab object with the next available lab ID
+newlab = db.newLab(db.new_id)
+
+#Add the simple stuff; name and type
+newlab.name = "Fraunhofer Diffraction"
+newlab.lab_type = "Lab"
+
+#Add disciplines and topics
+newlab.disciplines = ["Optics", "Math", "Laboratory Skills"]
+newlab.topics = ["ODE", "PDE", "Polarization"]
+
+#Add versions
+versions = [{"path": "/data/repository/path/to/pdf",
+             "semester": "Fall",
+             "year": "2013",
+             "course": "PHYS 375"},
+            {"path": "/data/repository/path/to/pdf",
+             "semester": "Summer",
+             "year": "2016",
+             "course": "PHYS 369"},
+            {"path": "/data/repository/path/to/pdf",
+             "semester": "Winter",
+             "year": "2015",
+             "course": "PHYS 375"}]
+newlab.versions = versions
+
+#Add equipment
+equipment = [{"id": "0035", "name": "Fluke multimeter", "amount": "2"},
+             {"id": "0003", "name": "Anatek power supply", "amount": "1"},
+             {"id": "0143", "name": "small optical bench mount", "amount": "12"},
+             {"id": "0205", "name": "1 m optical bench", "amount": "1"}]
+newlab.equipment = equipment
+
+#Add support documents and software
+supportdocs = [{"name": "Hugo's notes", "path": "/data/repository/path/to/file"},
+               {"name": "TEX document", "path": "/data/repository/path/to/file"}]
+newlab.support_docs = supportdocs
+software = ["1D motion.cmbl", "Vernier Logger Pro", "VPython"]
+newlab.software = software
+
+#Add this new lab to the database and save the changes
+db.addLab(newlab)
+db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
+```
 
 
 ## pjlDB.labDB
+
 
 
 ### Properties
