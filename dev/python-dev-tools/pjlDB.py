@@ -294,10 +294,12 @@ class labDB():
             self.labs = tmp[:]
             self._updateXML()
             self.length = len(self.root)
+            self.new_id = self._getNextAvailableID()
         else:
             self.labs.append(labitem)
             self.root.append(self._labItemToXMLNode(labitem))
             self.length = len(self.root)
+            self.new_id = self._getNextAvailableID()
 
 
     def save(self, filename, ignore_validation=False, error_log=False):

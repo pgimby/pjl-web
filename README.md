@@ -186,42 +186,50 @@ Refraction
 
 #  pjlDB.py Documentation
 
-## Module: pjlDB
 
 
-### pjlDB.labDB
+## pjlDB.labDB
 
 
-#### Properties
+### Properties
 
 ##### labDB.tree
+> An `xml.etree.ElementTree.ElementTree` object for the held database.
 
 
 ##### labDB.root
+> An `xml.etree.ElementTree.Element` object that is the root element of labDB.tree.
 
 
 ##### labDB.labs
+> a list of `_labItem` objects. All the properties and methods of this class are described below.
 
 
 ##### labDB.new_id
+> This will always return the next available unused lab ID in the appropriate string form.
 
 
 ##### labDB.length
+> This will always return the current number of labs in the held database.
 
 
 
-#### Methods
+### Methods
 
-##### labDB.newLab()
-
-
-##### labDB.getLab()
+##### labDB.newLab(idnum)
+> Returns an empty `_labItem` object with lab ID set to `idnum`. Throws an exception if `idnum` is not a valid form or if `idnum` already exists in the database.
 
 
-##### labDB.addLab()
+##### labDB.getLab(idnum=None, name=None)
+> Returns a `_labItem` object belonging to either `idnum` or `name`. Either lab ID or lab name may be used to access one of the labs in the database. Throws an exception if a matching lab cannot be found or if invalid arguments are passed.
 
 
-##### labDB.save()
+##### labDB.addLab(labitem)
+> Adds a `_labItem` object to the held database. If an identical lab already exists, it is replaced. If it does not already exist, a new lab entry is appended to the held database.
+
+
+##### labDB.save(filename, ignore_validation=False, error_log=False)
+> Saves the database as an XML file with UTF-8 encoding. If `ignore_validation` is True, `labDB` will attempt to write the XML without any validation of its contents. If False, a full validation will be performed before writing. If `error_log` is True, an error report will be saved to the working directory. If False, the error log will be printed to the console.
 
 
 ##### labDB.validateFull()
@@ -248,52 +256,58 @@ Refraction
 
 
 
-### pjlDB.labItem
-> Used by `labDB` objects to store lab items. Properties are accessed directly for setting and getting and type checking and validation of its properties is performed by the `labDB` object itself.
+## pjlDB.labItem
+> Used by `labDB` objects to store lab items. Type checking and validation of its properties is performed by the `labDB` object.
 
-#### Properties
+### Properties
 
 ##### labItem.id_num
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A string holding an integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
+> A string holding an integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
 
 
 ##### labItem.name
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A string representing the name of a lab.
+> A string representing the name of a lab.
 
 
 ##### labItem.disciplines
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A list of strings representing valid disciplines associated with a lab. Valid disciplines are those listed in the pjl-web README.
+> A list of strings representing valid disciplines associated with a lab. Valid disciplines are those listed in the pjl-web README.
 
 
 ##### labItem.topics
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A list of strings representing valid topics associated with a lab. Valid topics are those listed in the pjl-web README.
+> A list of strings representing valid topics associated with a lab. Valid topics are those listed in the pjl-web README.
 
 
 ##### labItem.versions
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A list of dictionaries representing individual versions. Each version has 4 keys: "path", "semester", "year", and "course". Their corresponding values are
+> A list of dictionaries representing individual versions. Each dictionary has 4 keys: "path", "semester", "year", and "course".
+Ex.
+{"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}
 
 
 ##### labItem.equipment
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+> A list of dictionaries representing individual equipment items. Each dictionary has 3 keys: "id", "name", and "amount".
+Ex.
+{"id":"0001", "name":"Fluke multimeter", "amount" : "2"}
 
 
 ##### labItem.lab_type
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+> A string containing either "Lab" or "Labatorial" representing the type of the lab.
 
 
 ##### labItem.support_docs
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+> A list of dictionaries representing individual documents. Each dictionary has 2 keys: "name" and "path".
+Ex.
+{"name":"Hugo's notes", "path":"/data/repository/path/to/file.pdf"}
 
 
 ##### labItem.software
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+> A list of strings representing required software, libraries, or files for a lab.
 
 
 
 
 
-#### Methods
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Object has no methods
+### Methods
+> Object has no methods...yet
 
 
 
