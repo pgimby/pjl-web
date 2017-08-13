@@ -190,19 +190,16 @@ Refraction
 ## Convenience Functions
 
 ##### pjlDB.isValidID(idnum)
-> 
+> Checks if idnum is a valid ID number. Returns True if valid, False if not.
 
 
 ##### pjlDB.getTopics()
-> 
+> Returns a list of valid topics taken from the pjl-web README.
 
 
 ##### pjlDB.getDisciplines()
-> 
+> Returns a list of valid disciplines taken from the pjl-web README.
 
-
-##### pjlDB.validFilename(name)
-> 
 
 
 
@@ -214,7 +211,7 @@ Refraction
 ### Properties
 
 ##### labDB.tree
-> An `xml.etree.ElementTree.ElementTree` object for the held database.
+> An `xml.etree.ElementTree.ElementTree` object for the database being held.
 
 
 ##### labDB.root
@@ -253,25 +250,31 @@ Refraction
 
 
 ##### labDB.validateFull(error_log=False)
-> 
+> Performs a full validation of the database being held. If `error_log` is True, the error log is written to a file in the working directory. If False, the error log is printed to the console.
 
 
-##### labDB.noDuplicateIDs()
+##### labDB.noDuplicateIDs(log=None)
+> Checks if the database contains any duplicate lab IDs. Returns True if no duplicates found, False if duplicates found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 
-##### labDB.hasUniqueEquipIDs()
+##### labDB.hasUniqueEquipIDs(log=None)
+> Checks if the database contains any non-unique equipment IDs. Returns True if none found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 
-##### labDB.hasValidPathRoots()
+##### labDB.hasValidPathRoots(log=None)
+> Checks if the database contains any improper directory roots. Returns True if no improper paths found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 
-##### labDB.hasValidTopics()
+##### labDB.hasValidTopics(log=None)
+> Checks for invalid topics. Returns True if no invalid topics found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 
-##### labDB.hasValidDisciplines()
+##### labDB.hasValidDisciplines(log=None)
+> Checks for invalid disciplines. Returns True if no invalid disciplines found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 
-##### labDB.hasValidTypes()
+##### labDB.hasValidTypes(log=None)
+> Checks for invalid lab types. Returns True if no invalid types found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 
 

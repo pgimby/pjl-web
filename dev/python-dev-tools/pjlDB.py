@@ -45,15 +45,6 @@ def getDisciplines():
 
 
 
-def validFilename(name):
-    try:
-        str(filename)
-        return True
-    except:
-        return False
-
-
-
 
 
 class labDB():
@@ -88,7 +79,7 @@ class labDB():
                    str(date.day) + "-" + str(date.hour) + "-" + \
                    str(date.minute) + "-" + str(date.second)
             filename = "error_log-" + date + ".dat"
-            f = open(filename, "w")
+            f = open(filename, "a")
         else:
             f = None
         tests = [self.noDuplicateIDs(log=f),
