@@ -70,24 +70,28 @@ class labDB():
         for child in self.root:
             self.labs.append(_labItem(lab=child))
 
+
+
+    def log_file_object(self):
+        date = datetime.datetime.today()
+        date = str(date.year) + "-" + str(date.month) + "-" + \
+               str(date.day) + "-" + str(date.hour) + "-" + \
+               str(date.minute) + "-" + str(date.second)
+        filename = "error_log-" + date + ".dat"
+        return open(filename, "w")
             
 
     def validateFull(self, error_log=False):
         if error_log:
-            date = datetime.datetime.today()
-            date = str(date.year) + "-" + str(date.month) + "-" + \
-                   str(date.day) + "-" + str(date.hour) + "-" + \
-                   str(date.minute) + "-" + str(date.second)
-            filename = "error_log-" + date + ".dat"
-            f = open(filename, "a")
+            f = self.log_file_object()
         else:
             f = None
-        tests = [self.noDuplicateIDs(log=f),
-                 self.hasValidPathRoots(log=f),
-                 self.hasValidTypes(log=f),
-                 self.hasValidDisciplines(log=f),
-                 self.hasValidTopics(log=f),
-                 self.hasUniqueEquipIDs(log=f)]
+        tests = [self.noDuplicateIDs(log_file=f),
+                 self.hasValidPathRoots(log_file=f),
+                 self.hasValidTypes(log_file=f),
+                 self.hasValidDisciplines(log_file=f),
+                 self.hasValidTopics(log_file=f),
+                 self.hasUniqueEquipIDs(log_file=f)]
         f.close()
         if all(tests):
             return True
@@ -96,7 +100,7 @@ class labDB():
 
 
         
-    def noDuplicateIDs(self, log=None):
+    def noDuplicateIDs(self, log_file=None):
         error_log = []
         good = True
         seen = set()
@@ -108,15 +112,15 @@ class labDB():
                 error_log.append("Lab \"" + lab.id_num +
                                  "\" is a duplicate of another lab in the database")
         if good == False:
-            if log:
-                [log.write(i + "\n") for i in error_log]
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
             else:
                 [print(i) for i in error_log]
         return good
 
 
 
-    def hasUniqueEquipIDs(self, log=None):
+    def hasUniqueEquipIDs(self, log_file=None):
         error_log = []
         good = True
         equipment_ids = set()
@@ -133,14 +137,14 @@ class labDB():
                 good = False
                 error_log.append("Equipment ID \"" + idn + "\" has multiple names.")
         if good == False:
-            if log:
-                [log.write(i + "\n") for i in error_log]
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
             else:
                 [print(i) for i in error_log]
         return good
     
 
-    def hasValidPathRoots(self, log=None):
+    def hasValidPathRoots(self, log_file=None):
         error_log = []
         good = True
         valid_path_prefix = "/data/repository/"
@@ -160,15 +164,15 @@ class labDB():
                                      lab.id_num + " (" +
                                      lab.name + ")")
         if good == False:
-            if log:
-                [log.write(i + "\n") for i in error_log]
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
             else:
                 [print(i) for i in error_log]
         return good
 
 
 
-    def hasValidTypes(self, log=None):
+    def hasValidTypes(self, log_file=None):
         error_log = []
         good = True
         valid_types = ["Lab", "Labatorial"]
@@ -180,15 +184,15 @@ class labDB():
                                  lab.id_num + " (" +
                                  lab.name + ")")
         if good == False:
-            if log:
-                [log.write(i + "\n") for i in error_log]
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
             else:
                 [print(i) for i in error_log]
         return good
 
     
     
-    def hasValidTopics(self, log=None):
+    def hasValidTopics(self, log_file=None):
         error_log = []
         good = True
         valid_topics = getTopics()
@@ -201,15 +205,15 @@ class labDB():
                                      lab.id_num + " (" +
                                      lab.name + ")")
         if good == False:
-            if log:
-                [log.write(i + "\n") for i in error_log]
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
             else:
                 [print(i) for i in error_log]
         return good
 
 
     
-    def hasValidDisciplines(self, log=None):
+    def hasValidDisciplines(self, log_file=None):
         error_log = []
         good = True
         valid_disciplines = getDisciplines()
@@ -222,8 +226,8 @@ class labDB():
                                      lab.id_num + " (" +
                                      lab.name + ")")
         if good == False:
-            if log:
-                [log.write(i + "\n") for i in error_log]
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
             else:
                 [print(i) for i in error_log]
         return good
@@ -590,13 +594,16 @@ if __name__ == "__main__":
 
         tree = ET.parse("../labDB.xml")
         db = labDB(tree)
-        db.validateFull(error_log=True)  #full validation suite
-        #db.noDuplicateIDs()  #check for duplicate lab IDs
-        #db.hasValidTopics()  #make sure all topics match those in README
-        #db.hasValidDisciplines  #make sure all disciplines match those in README
-        #db.hasUniqueEquipIDs()  #make sure all equipment IDs are assigned to only one name
-        #db.hasValidTypes()  #check for valid lab types (Lab or Labatorial)
-        #db.hasValidPathRoots()  #check all paths for proper directory root
+        #db.validateFull(error_log=True)  #full validation suite
+
+        with db.log_file_object() as f:
+            db.hasValidTypes(log_file=f)  #check for valid lab types (Lab or Labatorial)
+
+        #db.noDuplicateIDs(log_file=f)  #check for duplicate lab IDs
+        #db.hasValidTopics(log_file=f)  #make sure all topics match those in README
+        #db.hasValidDisciplines(log_file=f)  #make sure all disciplines match those in README
+        #db.hasUniqueEquipIDs(log_file=f)  #make sure all equipment IDs are assigned to only one name
+        #db.hasValidPathRoots(log_file=f)  #check all paths for proper directory root
 
 
 

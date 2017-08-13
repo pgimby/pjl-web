@@ -252,29 +252,83 @@ Refraction
 ##### labDB.validateFull(error_log=False)
 > Performs a full validation of the database being held. If `error_log` is True, the error log is written to a file in the working directory. If False, the error log is printed to the console.
 
+```
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+db.validateFull(error_log=True)
+```
+
 
 ##### labDB.noDuplicateIDs(log=None)
 > Checks if the database contains any duplicate lab IDs. Returns True if no duplicates found, False if duplicates found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
+
+```
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+
+with db.log_file_object() as f:
+    db.noDuplicateIDs(log_file=f)
+```
 
 
 ##### labDB.hasUniqueEquipIDs(log=None)
 > Checks if the database contains any non-unique equipment IDs. Returns True if none found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
+```
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+
+with db.log_file_object() as f:
+    db.hasUniqueEquipIDs(log_file=f)
+```
+
 
 ##### labDB.hasValidPathRoots(log=None)
 > Checks if the database contains any improper directory roots. Returns True if no improper paths found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
+
+```
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+
+with db.log_file_object() as f:
+    db.hasValidPathRoots(log_file=f)
+```
 
 
 ##### labDB.hasValidTopics(log=None)
 > Checks for invalid topics. Returns True if no invalid topics found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
+```
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+
+with db.log_file_object() as f:
+    db.hasValidTopics(log_file=f)
+```
+
 
 ##### labDB.hasValidDisciplines(log=None)
 > Checks for invalid disciplines. Returns True if no invalid disciplines found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
+```
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+
+with db.log_file_object() as f:
+    db.hasValidDisciplines(log_file=f)
+```
+
 
 ##### labDB.hasValidTypes(log=None)
 > Checks for invalid lab types. Returns True if no invalid types found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
+
+```
+tree = ET.parse("../labDB.xml")
+db = labDB(tree)
+
+with db.log_file_object() as f:
+    db.hasValidTypes(log_file=f)
+```
 
 
 
