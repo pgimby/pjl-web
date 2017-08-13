@@ -187,23 +187,6 @@ Refraction
 #  pjlDB.py Documentation
 
 
-## Convenience Functions
-
-##### pjlDB.isValidID(idnum)
-> Checks if idnum is a valid ID number. Returns True if valid, False if not.
-
-
-##### pjlDB.getTopics()
-> Returns a list of valid topics taken from the pjl-web README.
-
-
-##### pjlDB.getDisciplines()
-> Returns a list of valid disciplines taken from the pjl-web README.
-
-
-
-# pjlDB Module
-
 ## Example Code
 
 ### Modifying a Lab in the Database
@@ -275,6 +258,23 @@ newlab.software = software
 db.addLab(newlab)
 db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
 ```
+
+
+
+## Convenience Functions
+
+##### pjlDB.isValidID(idnum)
+> Checks if idnum is a valid ID number. Returns True if valid, False if not.
+
+
+##### pjlDB.getTopics()
+> Returns a list of valid topics taken from the pjl-web README.
+
+
+##### pjlDB.getDisciplines()
+> Returns a list of valid disciplines taken from the pjl-web README.
+
+
 
 
 ## pjlDB.labDB
