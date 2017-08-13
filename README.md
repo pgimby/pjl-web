@@ -187,6 +187,26 @@ Refraction
 #  pjlDB.py Documentation
 
 
+## Convenience Functions
+
+##### pjlDB.isValidID(idnum)
+> 
+
+
+##### pjlDB.getTopics()
+> 
+
+
+##### pjlDB.getDisciplines()
+> 
+
+
+##### pjlDB.validFilename(name)
+> 
+
+
+
+
 
 ## pjlDB.labDB
 
@@ -232,7 +252,8 @@ Refraction
 > Saves the database as an XML file with UTF-8 encoding. If `ignore_validation` is True, `labDB` will attempt to write the XML without any validation of its contents. If False, a full validation will be performed before writing. If `error_log` is True, an error report will be saved to the working directory. If False, the error log will be printed to the console.
 
 
-##### labDB.validateFull()
+##### labDB.validateFull(error_log=False)
+> 
 
 
 ##### labDB.noDuplicateIDs()
