@@ -336,7 +336,7 @@ db.validateFull(error_log=True)
 ```
 
 
-##### labDB.noDuplicateIDs(log=None)
+##### labDB.noDuplicateIDs(log_file=None)
 > Checks if the database contains any duplicate lab IDs. Returns True if no duplicates found, False if duplicates found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
@@ -348,7 +348,7 @@ with db.log_file_object() as f:
 ```
 
 
-##### labDB.hasUniqueEquipIDs(log=None)
+##### labDB.hasUniqueEquipIDs(log_file=None)
 > Checks if the database contains any non-unique equipment IDs. Returns True if none found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
@@ -360,7 +360,7 @@ with db.log_file_object() as f:
 ```
 
 
-##### labDB.hasValidPathRoots(log=None)
+##### labDB.hasValidPathRoots(log_file=None)
 > Checks if the database contains any improper directory roots. Returns True if no improper paths found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
@@ -372,7 +372,7 @@ with db.log_file_object() as f:
 ```
 
 
-##### labDB.hasValidTopics(log=None)
+##### labDB.hasValidTopics(log_file=None)
 > Checks for invalid topics. Returns True if no invalid topics found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
@@ -384,7 +384,7 @@ with db.log_file_object() as f:
 ```
 
 
-##### labDB.hasValidDisciplines(log=None)
+##### labDB.hasValidDisciplines(log_file=None)
 > Checks for invalid disciplines. Returns True if no invalid disciplines found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
@@ -396,7 +396,7 @@ with db.log_file_object() as f:
 ```
 
 
-##### labDB.hasValidTypes(log=None)
+##### labDB.hasValidTypes(log_file=None)
 > Checks for invalid lab types. Returns True if no invalid types found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
