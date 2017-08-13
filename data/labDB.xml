@@ -24,7 +24,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -174,7 +174,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -191,7 +191,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -1355,7 +1355,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -1408,7 +1408,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -1589,7 +1589,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -1624,7 +1624,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -1853,7 +1853,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -1960,7 +1960,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -1977,7 +1977,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -2372,7 +2372,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -2413,7 +2413,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -2517,7 +2517,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -2645,7 +2645,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -3034,7 +3034,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software>
       <Name>pumpdown_template.cmbl</Name>
@@ -3123,7 +3123,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -3719,7 +3719,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -3760,7 +3760,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -4135,7 +4135,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -4761,8 +4761,9 @@
         <Course>PHYS 341</Course>
       </Version>
     </Versions>
-    <Equipment />
-    <Type />
+    <Equipment>
+    </Equipment>
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -4913,7 +4914,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -5037,7 +5038,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -5201,7 +5202,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -5308,7 +5309,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -5361,7 +5362,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -5600,7 +5601,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -6521,7 +6522,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -6678,7 +6679,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -6713,7 +6714,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -6840,7 +6841,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -6887,7 +6888,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -6960,7 +6961,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -7081,7 +7082,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Lab</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -7146,7 +7147,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -7531,7 +7532,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>
@@ -7566,7 +7567,7 @@
       </Version>
     </Versions>
     <Equipment />
-    <Type />
+    <Type>Labatorial</Type>
     <SupportDocs />
     <Software />
   </Lab>

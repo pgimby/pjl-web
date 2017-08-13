@@ -2863,8 +2863,13 @@
   </Lab>
   <Lab labId="0100">
     <Name>Vacuum Technology Laboratory</Name>
-    <Disciplines />
-    <Topics />
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Conservation Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/2016/physics397-FA2016/Vacuum-Technology-Laboratory-FA2016.pdf</Path>
@@ -3031,7 +3036,9 @@
     </Equipment>
     <Type />
     <SupportDocs />
-    <Software>pumpdown_template.cmbl</Software>
+    <Software>
+      <Name>pumpdown_template.cmbl</Name>
+    </Software>
   </Lab>
   <Lab labId="0113">
     <Name>OpAmps I/V</Name>
@@ -3896,7 +3903,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0053">
-        <Name>cork board stand</Name>
+        <Name>wooden stand</Name>
         <Number>1</Number>
       </Item>
       <Item id="0022">
@@ -5037,8 +5044,14 @@
   </Lab>
   <Lab labId="0092">
     <Name>Laser Beams</Name>
-    <Disciplines />
-    <Topics />
+    <Disciplines>
+      <Discipline>Optics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Refraction</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/2015/physics375-FA2015/Laser-Beams-FA2015.pdf</Path>
@@ -5071,7 +5084,124 @@
         <Course>PHYS 397</Course>
       </Version>
     </Versions>
-    <Equipment />
+    <Equipment>
+      <Item id="0000">
+        <Name>1 m optical bench</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>small optical bench mount</Name>
+        <Number>12</Number>
+      </Item>
+      <Item id="0000">
+        <Name>lens holder</Name>
+        <Number>8</Number>
+      </Item>
+      <Item id="0000">
+        <Name>double convex 38 mm wide 5.3 cm focal length lens</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>double convex 38 mm 11.8 cm focal length lens</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>double concave 38 mm wide 3.6 cm focal length lens</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>double concave 38 mm wide 28.6 cm focal length lens</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>double convex 100 mm wide 25 cm focal length lens</Name>
+        <Number>3</Number>
+      </Item>
+      <Item id="0000">
+        <Name>He-Ne laser</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>cork board</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>wooden stand</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>light detector</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>optical iris</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>cylindrical laser mount</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>3-axis translation stage</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>triple diffraction grating</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>acrylic block set</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>rectangular block worksheet</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>flat mirror</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>mirror worksheet</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>push pins</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>laboratory jack</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>plastic ruler</Name>
+        <Number>2</Number>
+      </Item>
+      <Item id="0000">
+        <Name>measuring tape</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>optical screen</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>Fluke multimeter</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>100 µm pinhole</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>flat mirror holder</Name>
+        <Number>1</Number>
+      </Item>
+      <Item id="0000">
+        <Name>adjustable laboratory stand</Name>
+        <Number>1</Number>
+      </Item>
+    </Equipment>
     <Type />
     <SupportDocs />
     <Software />
@@ -7892,7 +8022,7 @@
         <Number>1</Number>
       </Item>
       <Item id="0000">
-        <Name>iris</Name>
+        <Name>optical iris</Name>
         <Number>1</Number>
       </Item>
       <Item id="0058">
