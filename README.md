@@ -301,15 +301,15 @@ Refraction
 ##### labItem.versions
 > A list of dictionaries representing individual versions. Each dictionary has 4 keys: "path", "semester", "year", and "course".  
 >  
-Ex.  
-{"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}
+> Ex.  
+> {"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}
 
 
 ##### labItem.equipment
 > A list of dictionaries representing individual equipment items. Each dictionary has 3 keys: "id", "name", and "amount".  
 >  
-Ex.  
-{"id":"0001", "name":"Fluke multimeter", "amount" : "2"}
+> Ex.  
+> {"id":"0001", "name":"Fluke multimeter", "amount" : "2"}
 
 
 ##### labItem.lab_type
@@ -319,8 +319,8 @@ Ex.
 ##### labItem.support_docs
 > A list of dictionaries representing individual documents. Each dictionary has 2 keys: "name" and "path".  
 >  
-Ex.  
-{"name":"Hugo's notes", "path":"/data/repository/path/to/file.pdf"}
+> Ex.  
+> {"name":"Hugo's notes", "path":"/data/repository/path/to/file.pdf"}
 
 
 ##### labItem.software
