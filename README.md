@@ -407,53 +407,55 @@ with db.log_file_object() as f:
 
 
 
-## pjlDB.labItem
+## pjlDB._labItem
 > Used by `labDB` objects to store lab items. Type checking and validation of its properties is performed by the `labDB` object.
 
 ### Properties
 
-##### labItem.id_num
+##### _labItem.id_num
 > A string holding an integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
 
 
-##### labItem.name
+##### _labItem.name
 > A string representing the name of a lab.
 
 
-##### labItem.disciplines
+##### _labItem.disciplines
 > A list of strings representing valid disciplines associated with a lab. Valid disciplines are those listed in the pjl-web README.
 
 
-##### labItem.topics
+##### _labItem.topics
 > A list of strings representing valid topics associated with a lab. Valid topics are those listed in the pjl-web README.
 
 
-##### labItem.versions
+##### _labItem.versions
 > A list of dictionaries representing individual versions. Each dictionary has 4 keys: "path", "semester", "year", and "course".  
 >  
 > Ex.  
 > {"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}
 
 
-##### labItem.equipment
+##### _labItem.equipment
 > A list of dictionaries representing individual equipment items. Each dictionary has 3 keys: "id", "name", and "amount".  
 >  
 > Ex.  
 > {"id":"0001", "name":"Fluke multimeter", "amount" : "2"}
 
 
-##### labItem.lab_type
+##### _labItem.lab_type
 > A string containing either "Lab" or "Labatorial" representing the type of the lab.
 
 
-##### labItem.support_docs
+##### _labItem.support_docs
 > A list of dictionaries representing individual documents. Each dictionary has 2 keys: "name" and "path".  
->  
-> Ex.  
-> {"name":"Hugo's notes", "path":"/data/repository/path/to/file.pdf"}
+
+```
+_labItem().support_docs = [{"name":"Hugo's notes", "path":"/data/repository/path/to/file.pdf"},
+                           {"name":"source", "path":"/data/repository/path/to/file.tex"}]
+```
 
 
-##### labItem.software
+##### _labItem.software
 > A list of strings representing required software, libraries, or files for a lab.
 
 
@@ -461,7 +463,7 @@ with db.log_file_object() as f:
 
 
 ### Methods
-> Object has no methods...yet
+> This object has no methods...yet
 
 
 
