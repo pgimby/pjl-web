@@ -318,8 +318,8 @@ db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
 > Adds a `_labItem` object to the held database. If an identical lab already exists, it is replaced. If it does not already exist, a new lab entry is appended to the held database.
 
 
-##### labDB.deleteLab(idnum)
-> Deletes a `_labItem` object with the lab ID, `idnum`. Throws an exception if invalid arguments are passed. Returns True if lab is deleted, False if no lab found.
+##### labDB.deleteLab(idnum=None, name=None)
+> Deletes a `_labItem` object belonging to either `idnum` or `name`. Either lab ID or lab name may be used to access one of the labs in the database. Throws an exception if a matching lab cannot be found or if invalid arguments are passed.
 
 
 ##### labDB.save(filename, ignore_validation=False, error_log=False)
@@ -411,8 +411,9 @@ with db.log_file_object() as f:
 
 
 
-## pjlDB._labItem
-> Used by `labDB` objects to store lab items. Type checking and validation of its properties is performed by the `labDB` object.
+## pjlDB._labItem(lab=None, idnum=None)
+> Used by `labDB` objects to store lab items. Type checking and validation of its properties is performed by the `labDB` object **not** the `_labItem` object. Optional arguments are an `xml.etree.ElementTree.Element` object representing a lab entry or a lab ID number (see properties for idnum format).
+
 
 ### Properties
 

@@ -6,7 +6,9 @@ import re
 import datetime
 
 
-    
+
+
+
 
 
 def isValidID(idnum):
@@ -47,6 +49,8 @@ def getDisciplines():
 
 
 
+
+
 class labDB():
 
     """
@@ -60,26 +64,21 @@ class labDB():
         self._makelabs()
         self.new_id = self._getNextAvailableID()
         self.length = len(self.labs)
-        self._valid_disciplines = []
-        self._valid_topics = []
-        self._valid_types = []
-        
-
-
-    def _makelabs(self):
-        for child in self.root:
-            self.labs.append(_labItem(lab=child))
+        self._valid_disciplines = getDisciplines()
+        self._valid_topics = getTopics()
+        self._valid_types = ["Lab", "Labatorial"]
 
 
 
     def log_file_object(self):
         date = datetime.datetime.today()
         date = str(date.year) + "-" + str(date.month) + "-" + \
-               str(date.day) + "-" + str(date.hour) + "-" + \
-               str(date.minute) + "-" + str(date.second)
-        filename = "error_log-" + date + ".dat"
+               str(date.day) + "_" + str(date.hour) + "." + \
+               str(date.minute) + "." + str(date.second)
+        filename = "error_" + date + ".log"
         return open(filename, "w")
-            
+
+
 
     def validateFull(self, error_log=False):
         if error_log:
@@ -99,7 +98,7 @@ class labDB():
             return False
 
 
-        
+
     def noDuplicateIDs(self, log_file=None):
         error_log = []
         good = True
@@ -142,7 +141,8 @@ class labDB():
             else:
                 [print(i) for i in error_log]
         return good
-    
+
+
 
     def hasValidPathRoots(self, log_file=None):
         error_log = []
@@ -175,9 +175,8 @@ class labDB():
     def hasValidTypes(self, log_file=None):
         error_log = []
         good = True
-        valid_types = ["Lab", "Labatorial"]
         for lab in self.labs:
-            if lab.lab_type not in valid_types:
+            if lab.lab_type not in self._valid_types:
                 good = False
                 error_log.append("Invalid type \"" +
                                  lab.lab_type + "\" in lab " +
@@ -190,15 +189,14 @@ class labDB():
                 [print(i) for i in error_log]
         return good
 
-    
-    
+
+
     def hasValidTopics(self, log_file=None):
         error_log = []
         good = True
-        valid_topics = getTopics()
         for lab in self.labs:
             for topic in lab.topics:
-                if topic not in valid_topics:
+                if topic not in self._valid_topics:
                     good = False
                     error_log.append("Invalid topic \"" +
                                      topic + "\" in lab " +
@@ -212,14 +210,13 @@ class labDB():
         return good
 
 
-    
+
     def hasValidDisciplines(self, log_file=None):
         error_log = []
         good = True
-        valid_disciplines = getDisciplines()
         for lab in self.labs:
             for discipline in lab.disciplines:
-                if discipline not in valid_disciplines:
+                if discipline not in self._valid_disciplines:
                     good = False
                     error_log.append("Invalid discipline \"" +
                                      discipline + "\" in lab " +
@@ -232,16 +229,6 @@ class labDB():
                 [print(i) for i in error_log]
         return good
 
-    
-
-    def _getNextAvailableID(self):
-        ids = set()
-        for lab in self.labs:
-            ids.add(lab.id_num)
-        for i in range(1,10000):
-            if str(i).zfill(4) not in ids:
-                return str(i).zfill(4)
-        
 
 
     def getLab(self, idnum=None, name=None):
@@ -267,19 +254,45 @@ class labDB():
                 raise e
 
 
+
+    def deleteLab(self, idnum=None, name=None):
+    	if not idnum and not name:
+            return None
+        if idnum and isValidID(idnum):
+            try:
+                for lab in self.labs:
+                    if lab.id_num == idnum:
+                        self.labs.remove(lab)
+                    	self._updateXML()
+                    	self.length = len(self.labs)
+                    	self.new_id = self._getNextAvailableID()
+                    	return True
+                raise Exception("Lab id \"" + idnum + "\" doesn't exist")
+            except Exception as e:
+                raise e
+        else:
+            try:
+                name = str(name)
+                for lab in self.labs:
+                    if name == lab.name:
+                        self.labs.remove(lab)
+	                    self._updateXML()
+	                    self.length = len(self.labs)
+	                    self.new_id = self._getNextAvailableID()
+	                    return True
+                raise Exception("Lab name \"" + name + "\" doesn't exist")
+            except Exception as e:
+                raise e
+
+
+
     def newLab(self, idn):
         if isValidID(idn) and not self._idExistsAlready(idn):
             return _labItem(idnum=idn)
         else:
             raise Exception("Invalid lab ID number: IDs must be number strings of length 4 and mustn't exist already in the tree")
-        
 
 
-    def _idExistsAlready(self, idnum):
-        for lab in self.labs:
-            if lab.id_num == idnum:
-                return True
-        
 
     def addLab(self, labitem):
         if not isinstance(labitem, _labItem):
@@ -298,6 +311,7 @@ class labDB():
             self.new_id = self._getNextAvailableID()
 
 
+
     def save(self, filename, ignore_validation=False, error_log=False):
         if not isinstance(filename, str):
             raise TypeError("Argument of labDB.save must be string")
@@ -314,10 +328,28 @@ class labDB():
             return False
 
 
+
+    def _makelabs(self):
+        for child in self.root:
+            self.labs.append(_labItem(lab=child))
+
+
+
+    def _getNextAvailableID(self):
+        ids = set()
+        for lab in self.labs:
+            ids.add(lab.id_num)
+        for i in range(1,10000):
+            if str(i).zfill(4) not in ids:
+                return str(i).zfill(4)
+
+
+
     def _labExistsByName(self, name):
         for lab in self.labs:
             if name == lab.name:
                 return True
+
 
 
     def _updateXML(self):
@@ -326,18 +358,12 @@ class labDB():
             self.root.append(self._labItemToXMLNode(lab))
 
 
-    def deleteLab(self, idnum):
-        if isValidID(idnum):
-            for lab in self.labs:
-                if idnum == lab.id_num:
-                    self.labs.remove(lab)
-                    self._updateXML()
-                    self.length = len(self.labs)
-                    self.new_id = self._getNextAvailableID()
-                    return True
-        else:
-            raise Exception("Invalid lab ID number: IDs must be number strings of length 4 and mustn't exist already in the tree")
-        return False
+
+    def _idExistsAlready(self, idnum):
+        for lab in self.labs:
+            if lab.id_num == idnum:
+                return True
+
 
 
     def _labItemToXMLNode(self, labitem):
@@ -387,16 +413,12 @@ class labDB():
             return lab
         else:
             raise Exception("Any lab added to the tree must have, at minimum, a lab ID number")
-        
 
 
 
 
 
 
-
-
-        
 
 class _labItem():
 
@@ -444,7 +466,6 @@ class _labItem():
 
 
 
-            
 
 
 
@@ -455,14 +476,12 @@ class _labItem():
 
 
 
-
-
-class equipmentDB():
+class equipDB():
 
     """
     For modifying and appending to the equipment database XML file
     """
-    
+
     def __init__(self, tree):
         self.tree = tree
         self.root = tree.getroot()
@@ -493,7 +512,7 @@ class _equipmentItem():
 
 
 if __name__ == "__main__":
-   
+
     def addNewEntry():
 
         #-----------------------------------------
@@ -597,7 +616,7 @@ if __name__ == "__main__":
 
         db.addLab(lab)
         db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
- 
+
 
 
 
@@ -608,10 +627,10 @@ if __name__ == "__main__":
 
         tree = ET.parse("../labDB.xml")
         db = labDB(tree)
-        #db.validateFull(error_log=True)  #full validation suite
+        db.validateFull(error_log=True)  #full validation suite
 
-        with db.log_file_object() as f:
-            db.hasValidTypes(log_file=f)  #check for valid lab types (Lab or Labatorial)
+        # with db.log_file_object() as f:
+        #     db.hasValidTypes(log_file=f)  #check for valid lab types (Lab or Labatorial)
 
         #db.noDuplicateIDs(log_file=f)  #check for duplicate lab IDs
         #db.hasValidTopics(log_file=f)  #make sure all topics match those in README
