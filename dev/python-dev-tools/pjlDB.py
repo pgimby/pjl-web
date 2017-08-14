@@ -256,17 +256,17 @@ class labDB():
 
 
     def deleteLab(self, idnum=None, name=None):
-    	if not idnum and not name:
+        if not idnum and not name:
             return None
         if idnum and isValidID(idnum):
             try:
                 for lab in self.labs:
                     if lab.id_num == idnum:
                         self.labs.remove(lab)
-                    	self._updateXML()
-                    	self.length = len(self.labs)
-                    	self.new_id = self._getNextAvailableID()
-                    	return True
+                        self._updateXML()
+                        self.length = len(self.labs)
+                        self.new_id = self._getNextAvailableID()
+                        return True
                 raise Exception("Lab id \"" + idnum + "\" doesn't exist")
             except Exception as e:
                 raise e
@@ -276,10 +276,10 @@ class labDB():
                 for lab in self.labs:
                     if name == lab.name:
                         self.labs.remove(lab)
-	                    self._updateXML()
-	                    self.length = len(self.labs)
-	                    self.new_id = self._getNextAvailableID()
-	                    return True
+                        self._updateXML()
+                        self.length = len(self.labs)
+                        self.new_id = self._getNextAvailableID()
+                        return True
                 raise Exception("Lab name \"" + name + "\" doesn't exist")
             except Exception as e:
                 raise e
