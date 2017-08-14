@@ -1,4 +1,4 @@
-﻿<Labs>
+<Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines />
@@ -364,8 +364,8 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0206">
@@ -758,8 +758,8 @@
         <Name>Vernier position sensor</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0097">
@@ -2055,8 +2055,8 @@
         <Name>Vernier temperature probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0006">
@@ -2258,8 +2258,8 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0097">
@@ -3017,7 +3017,7 @@
         <Name>pumpdown and leakout curve apparatus</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0051">
         <Name>stopwatch</Name>
         <Number>1</Number>
       </Item>
@@ -3902,7 +3902,7 @@
         <Name>cork board</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0053">
+      <Item id="0257">
         <Name>wooden stand</Name>
         <Number>1</Number>
       </Item>
@@ -4703,8 +4703,8 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0001">
@@ -5085,15 +5085,15 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0022">
         <Name>1 m optical bench</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0030">
         <Name>small optical bench mount</Name>
         <Number>12</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0063">
         <Name>lens holder</Name>
         <Number>8</Number>
       </Item>
@@ -5117,27 +5117,27 @@
         <Name>double convex 100 mm wide 25 cm focal length lens</Name>
         <Number>3</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0021">
         <Name>He-Ne laser</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0045">
         <Name>cork board</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0257">
         <Name>wooden stand</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0048">
         <Name>light detector</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0309">
         <Name>optical iris</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0310">
         <Name>cylindrical laser mount</Name>
         <Number>1</Number>
       </Item>
@@ -5149,11 +5149,11 @@
         <Name>triple diffraction grating</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0227">
         <Name>acrylic block set</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0169">
         <Name>rectangular block worksheet</Name>
         <Number>1</Number>
       </Item>
@@ -5161,31 +5161,31 @@
         <Name>flat mirror</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0171">
         <Name>mirror worksheet</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0225">
         <Name>push pins</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0008">
         <Name>laboratory jack</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0044">
         <Name>plastic ruler</Name>
         <Number>2</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0040">
         <Name>measuring tape</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0037">
         <Name>optical screen</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0001">
         <Name>Fluke multimeter</Name>
         <Number>1</Number>
       </Item>
@@ -5197,7 +5197,7 @@
         <Name>flat mirror holder</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0311">
         <Name>adjustable laboratory stand</Name>
         <Number>1</Number>
       </Item>
@@ -5902,8 +5902,8 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0050">
@@ -6396,8 +6396,8 @@
         <Name>computer</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0050">
@@ -6813,8 +6813,8 @@
         <Name>Vernier magnetic field probe</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
-        <Name>Vernier LabPro Data Logger</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Number>1</Number>
       </Item>
       <Item id="0024">
@@ -8021,7 +8021,7 @@
         <Name>laboratory stand</Name>
         <Number>1</Number>
       </Item>
-      <Item id="0000">
+      <Item id="0309">
         <Name>optical iris</Name>
         <Number>1</Number>
       </Item>
