@@ -91,7 +91,8 @@ class labDB():
                  self.hasValidDisciplines(log_file=f),
                  self.hasValidTopics(log_file=f),
                  self.hasUniqueEquipIDs(log_file=f)]
-        f.close()
+        if f:
+            f.close()
         if all(tests):
             return True
         else:
