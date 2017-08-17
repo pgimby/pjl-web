@@ -6,8 +6,8 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
-//var siteroot = "";
+//var siteroot = "/pjl-web";
+var siteroot = "";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -1249,10 +1249,11 @@ function getVersionList(lab) {  //return an array of version objects for a given
 	var versionlist = [];
 	var list = lab.getElementsByTagName("Version");
 	for (var i = list.length - 1; i >= 0; i--) {
-		versionlist.push({path: list[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue,
-						  semester: list[i].getElementsByTagName("Semester")[0].childNodes[0].nodeValue,
-						  year: list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue,
-						  course: list[i].getElementsByTagName("Course")[0].childNodes[0].nodeValue});
+		console.log(Boolean(list[i].getElementsByTagName("Year")[0]))
+		versionlist.push({path: (Boolean(list[i].getElementsByTagName("Path")[0]) ? list[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue : ""),
+						  semester: (Boolean(list[i].getElementsByTagName("Semester")[0]) ? list[i].getElementsByTagName("Semester")[0].childNodes[0].nodeValue : ""),
+						  year: (Boolean(list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue) ? list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue : ""),
+						  course: (Boolean(list[i].getElementsByTagName("Course")[0]) ? list[i].getElementsByTagName("Course")[0].childNodes[0].nodeValue : "")});
 	}
 	return versionlist;
 }

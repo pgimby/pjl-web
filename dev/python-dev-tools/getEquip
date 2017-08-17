@@ -22,20 +22,14 @@ i = args.idnum
 tree = ET.parse(xml_file)
 root = tree.getroot()
 
-
-#show names of equipment and count number of hits
 count = 0
-for item in root.findall(".//Item"):
-    if item.attrib["id"] == i:
-        count += 1
+for lab in root:
+    for item in lab.findall(".//Item"):
+        if item.attrib["id"] == i:
+            s = str("Lab: " + lab.findtext("Name") + " (" + lab.attrib["labId"] + ")").ljust(60)
+            s += str("Item: " + item.findtext("Name") + " (" + item.attrib["id"] + ")").ljust(40)
+            count += 1
+            print(s)
 
-        s1 = "Name: " + str(item[0].text)
-        s2 = "Amount: " + item[1].text
-        gap = outputwidth - len(s1) - len(s2)
-        s = s1
-        for j in range(gap):
-            s += " "
-        s += s2
-        print(s)
 
 print("\nFound " + str(count) + " equipment records in " + str(os.path.abspath(xml_file)) + "\n\n")
