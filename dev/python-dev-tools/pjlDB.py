@@ -98,7 +98,12 @@ class labDB():
                  self.hasValidDisciplines(log_file=f),
                  self.hasValidTopics(log_file=f),
                  self.hasUniqueEquipIDs(log_file=f)]
+<<<<<<< HEAD
         
+=======
+        if f:
+            f.close()
+>>>>>>> 8c28a9379a466569be47ad82b658ff72403ca0c9
         if all(tests):
             return True
         else:

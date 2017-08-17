@@ -3031,7 +3031,9 @@
     </Equipment>
     <Type />
     <SupportDocs />
-    <Software>pumpdown_template.cmbl</Software>
+    <Software>
+      <Name>pumpdown_template.cmbl</Name>
+    </Software>
   </Lab>
   <Lab labId="0113">
     <Name>OpAmps I/V</Name>
