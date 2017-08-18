@@ -317,7 +317,7 @@ function filterResults(filter) {  //given a filter object, filter displayed reco
 		var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
 		var topics = lab.find(".lab-data-topics").text().slice(8,).split(", ");
 
-		if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4))       || filter["year-filter"].length == 0) {
+		if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4)) || filter["year-filter"].length) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
@@ -1249,11 +1249,14 @@ function getVersionList(lab) {  //return an array of version objects for a given
 	var versionlist = [];
 	var list = lab.getElementsByTagName("Version");
 	for (var i = list.length - 1; i >= 0; i--) {
-		console.log(Boolean(list[i].getElementsByTagName("Year")[0]))
-		versionlist.push({path: (Boolean(list[i].getElementsByTagName("Path")[0]) ? list[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue : ""),
-						  semester: (Boolean(list[i].getElementsByTagName("Semester")[0]) ? list[i].getElementsByTagName("Semester")[0].childNodes[0].nodeValue : ""),
-						  year: (Boolean(list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue) ? list[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue : ""),
-						  course: (Boolean(list[i].getElementsByTagName("Course")[0]) ? list[i].getElementsByTagName("Course")[0].childNodes[0].nodeValue : "")});
+		var p = list[i].getElementsByTagName("Path")[0]
+		var y = list[i].getElementsByTagName("Year")[0]
+		var s = list[i].getElementsByTagName("Semester")[0]
+		var c = list[i].getElementsByTagName("Course")[0]
+		versionlist.push({path: (Boolean(p.childNodes[0]) ? p.childNodes[0].nodeValue : "&#8212"),
+						  semester: (Boolean(s.childNodes[0]) ? s.childNodes[0].nodeValue : "&#8212"),
+						  year: (Boolean(y.childNodes[0]) ? y.childNodes[0].nodeValue : "&#8212"),
+						  course: (Boolean(c.childNodes[0]) ? c.childNodes[0].nodeValue : "&#8212")});
 	}
 	return versionlist;
 }
@@ -1264,8 +1267,8 @@ function getValidFilterOptions(docXML, type) {  //return the set of values avail
 	var nodelist = docXML.getElementsByTagName(type);
     var valueslist = [];
     for (var i = 0; i < nodelist.length; i ++) {
-	    var value = nodelist[i].childNodes[0].nodeValue;
-	    valueslist.push(value);
+	    var value = nodelist[i].childNodes[0];
+	    valueslist.push((Boolean(value) ? value.nodeValue : "&#8212"));
     }
     return Array.from(new Set(valueslist)).sort();
 }
