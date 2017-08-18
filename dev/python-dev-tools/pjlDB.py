@@ -83,16 +83,27 @@ class labDB():
     def validateFull(self, error_log=False):
         if error_log:
             f = self.log_file_object()
-        else:
-            f = None
-        tests = [self.noDuplicateIDs(log_file=f),
+            tests = [self.noDuplicateIDs(log_file=f),
                  self.hasValidPathRoots(log_file=f),
                  self.hasValidTypes(log_file=f),
                  self.hasValidDisciplines(log_file=f),
                  self.hasValidTopics(log_file=f),
                  self.hasUniqueEquipIDs(log_file=f)]
+            f.close()
+        else:
+            f = None
+            tests = [self.noDuplicateIDs(log_file=f),
+                 self.hasValidPathRoots(log_file=f),
+                 self.hasValidTypes(log_file=f),
+                 self.hasValidDisciplines(log_file=f),
+                 self.hasValidTopics(log_file=f),
+                 self.hasUniqueEquipIDs(log_file=f)]
+<<<<<<< HEAD
+        
+=======
         if f:
             f.close()
+>>>>>>> 8c28a9379a466569be47ad82b658ff72403ca0c9
         if all(tests):
             return True
         else:
