@@ -101,11 +101,7 @@
         <Name>oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0049">
-        <Name>50 Ω BNC feedthrough termination</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0189">
+         <Item id="0189">
         <Name>HP pulse generator</Name>
         <Amount>1</Amount>
       </Item>
@@ -114,47 +110,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0190">
-        <Name>10 m RG58 coaxial cable</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0191">
-        <Name>7 m RG59 coaxial cable</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0192">
-        <Name>7 m twinaxial cable</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0193">
-        <Name>reflectionless signal splitter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0194">
-        <Name>0.5 m RG58 coaxial cable</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0195">
-        <Name>BNC male-male adapter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0196">
-        <Name>BNC female-female adapter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0197">
-        <Name>male BNC to female banana adapter</Name>
+        <Name>Travelling wave kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0198">
-        <Name>variable resistive termination</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0199">
-        <Name>short circuit termination</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -371,15 +331,15 @@
       </Item>
       <Item id="0206">
         <Name>air track cart</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0093">
         <Name>sail</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0050">
         <Name>Vernier position sensor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0097">
         <Name>air track</Name>
@@ -395,10 +355,6 @@
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>metal levelling shims</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
@@ -459,14 +415,11 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0208">
-        <Name>large and small Newton rings apparatus</Name>
+      <Item id="0091">
+        <Name>Fizeau band kit</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0209">
-        <Name>air wedge apparatus</Name>
-        <Amount>1</Amount>
-      </Item>
+
       <Item id="0008">
         <Name>laboratory jack</Name>
         <Amount>1</Amount>
@@ -483,40 +436,8 @@
         <Name>micrometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0109">
-        <Name>lens paper</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0111">
-        <Name>thin cover glass</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0112">
-        <Name>riser block</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0113">
-        <Name>aluminum foil</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0211">
-        <Name>beam splitter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0212">
-        <Name>beam splitter stand</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0110">
         <Name>lens cleaner</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0214">
-        <Name>interference colour chart</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0215">
-        <Name>diffuser</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -783,9 +704,9 @@
         <Name>inclinometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>masses to put on cart</Name>
-        <Amount>1</Amount>
+      <Item id="0095">
+        <Name>50 g cylindrical mass</Name>
+        <Amount>4</Amount>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
@@ -1505,85 +1426,85 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2016</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211SP2016/Phys211-221-Labatorial01-Units-SP2016.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2016/Phys211-221-Labatorial01-Units-SP2016.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2016</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2015/Phys211-221-Labatorial01-Units-FA2015.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2015</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2015/Phys211-221-Labatorial01-Units-SP2015.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2015</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211FA2014/Phys-211-221-Labatorial1-Units-FA2014.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2014/Phys-211-221-Labatorial1-Units-FA2014.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2014</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211SP2014/Phys-211-221-Labatorial1-Units-SP2014.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2014/Phys-211-221-Labatorial1-Units-SP2014.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2014</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211FA2013/Phys-211-221-Labatorial1-Units-FA2013.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2013/Phys-211-221-Labatorial1-Units-FA2013.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2013</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211SP2013/Phys-211-221-Labatorial1-Units-SP2013.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2013/Phys-211-221-Labatorial1-Units-SP2013.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2013</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211FA2012/Phys-211-221-Labatorial1-Units-FA2012.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2012/Phys-211-221-Labatorial1-Units-FA2012.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2012</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211SP2012/Phys-211-221-Labatorial1-Units-SP2012.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2012/Phys-211-221-Labatorial1-Units-SP2012.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2012</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211FA2011/Phys-211-221-Labatorial1-Units-FA2011.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2011/Phys-211-221-Labatorial1-Units-FA2011.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2011</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211SP2011/Phys_211_221_Labatorial1_Units_SP2011.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2011/Phys_211_221_Labatorial1_Units_SP2011.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2011</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211FA2010/PHYS211Lab_01_units_v05.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2010/PHYS211Lab_01_units_v05.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2010</Year>
         <Course>PHYS 211</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0009-Units,-Equipment-Introduction,-and-Motion-Diagrams/0009-PHYS211SP2010/PHYS211Lab_01_units_Fermi.pdf</Path>
+        <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2010/PHYS211Lab_01_units_Fermi.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2010</Year>
         <Course>PHYS 211</Course>
@@ -2037,7 +1958,7 @@
     </Versions>
     <Equipment>
       <Item id="0075">
-        <Name>constant volume gas apparatus (air filled)</Name>
+        <Name>Water constant volume gas apparatus</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0000">
@@ -2283,11 +2204,11 @@
         <Name>sail</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>springs</Name>
+      <Item id="0112">
+        <Name>air track spring</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0111">
         <Name>banana plugs with eye hooks</Name>
         <Amount>1</Amount>
       </Item>
@@ -2299,7 +2220,7 @@
         <Name>right angle clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0109">
         <Name>adjustable end stop</Name>
         <Amount>1</Amount>
       </Item>
@@ -3713,7 +3634,7 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0117-Swept-Frequency-Waveform-Generator,-DFT/0117-PHYS497WI2017/Swept-Frequency-Waveform-Generator-DFT-WI2017.pdf</Path>
+        <Path>/data/repository/0117-Swept-Frequency-Waveform-Generator-DFT/0117-PHYS497WI2017/Swept-Frequency-Waveform-Generator-DFT-WI2017.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2017</Year>
         <Course>PHYS 497</Course>
@@ -3844,7 +3765,7 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0042-Power-Supplies,-Lights,-and-Switches/0042-PHYS255WI2014/Power-Supplies-Lights-and-Switches-WI2014.pdf</Path>
+        <Path>/data/repository/0042-Power-Supplies-Lights-and-Switches/0042-PHYS255WI2014/Power-Supplies-Lights-and-Switches-WI2014.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2014</Year>
         <Course>PHYS 255</Course>
@@ -4064,19 +3985,19 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0026-Measuring-Velocity,-Momentum,-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2015/Measuring-v-P-and-Changes-in-P-in-1D-FA2015.pdf</Path>
+        <Path>/data/repository/0026-Measuring-Velocity-Momentum-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2015/Measuring-v-P-and-Changes-in-P-in-1D-FA2015.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2015</Year>
         <Course>PHYS 227</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0026-Measuring-Velocity,-Momentum,-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2014/Measuring-v-p-and-delta-p-in-1D-FA2014.pdf</Path>
+        <Path>/data/repository/0026-Measuring-Velocity-Momentum-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2014/Measuring-v-p-and-delta-p-in-1D-FA2014.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2014</Year>
         <Course>PHYS 227</Course>
       </Version>
       <Version>
-        <Path>/data/repository/0026-Measuring-Velocity,-Momentum,-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2013/Measuring-v-P-and-Changes-in-P-in-1D.pdf</Path>
+        <Path>/data/repository/0026-Measuring-Velocity-Momentum-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2013/Measuring-v-P-and-Changes-in-P-in-1D.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2013</Year>
         <Course>PHYS 227</Course>
@@ -5451,8 +5372,16 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0091">
-        <Name>rotating mirror apparatus</Name>
+      <Item id="0278">
+        <Name>motor driven turntable</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0300">
+        <Name>circular plastic dish</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0301">
+        <Name>dish soap</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
@@ -5824,7 +5753,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0029">
-        <Name>pulse height analyzer</Name>
+        <Name>Ortec pulse height analyzer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0000">
@@ -6834,7 +6763,7 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0103-AC-Circuits,-Waveforms,-and-Phase/0103-PHYS497WI2017/AC-Circuits-Waveforms-and-Phase-WI2017.pdf</Path>
+        <Path>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2017/AC-Circuits-Waveforms-and-Phase-WI2017.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2017</Year>
         <Course>PHYS 497</Course>
@@ -7407,7 +7336,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0141">
-        <Name>0.15 mCi Pu-239-Am-241-Cm-244 triple alpha reference source</Name>
+        <Name>triple alpha reference source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
@@ -7929,8 +7858,8 @@
         <Name>roughing pump</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0029">
-        <Name>pulse height analyzer</Name>
+      <Item id="0312">
+        <Name>Nucleus alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -8837,7 +8766,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0300">
-        <Name>plastic pan</Name>
+        <Name>circular plastic pan</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0301">
@@ -11701,11 +11630,11 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0001">
         <Name>Fluke multimeter</Name>
         <Amount>3</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0002">
         <Name>Anatek power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -11713,7 +11642,7 @@
         <Name>mounted helmholtz coil-pair</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0282">
         <Name>female BNC to male banana adapter</Name>
         <Amount>1</Amount>
       </Item>
@@ -11721,16 +11650,16 @@
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>lab jack</Name>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0000">
         <Name>fork clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>lab stand</Name>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0000">
@@ -11779,6 +11708,36 @@
       </Item>
       <Item id="0000">
         <Name>metric graph paper</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Type/>
+    <SupportDocs/>
+    <Software/>
+  </Lab>
+  <Lab labId="0181">
+    <Name>Nuclear Pulse Height Analysis</Name>
+    <Disciplines/>
+    <Topics/>
+    <Versions>
+      <Version>
+        <Path>/data/repository/0181-Nuclear-Pulse-Height-Analysis/0181-LEGACY</Path>
+        <Semester/>
+        <Year/>
+        <Course/>
+      </Version>
+    </Versions>
+    <Equipment>
+      <Item id="0010">
+        <Name>Oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0000">
+        <Name>Nucleus Series 2/286 computer analyer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0000">
+        <Name>Berkeley nucleaon cs GL-3 pulse generator</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
