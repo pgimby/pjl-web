@@ -154,8 +154,12 @@ $(document).on("click", "#zip-download-confirm", function(e) {
 	var tex = $("#TEX").prop("checked");
 	var extradocs = $("#EXTRA").prop("checked");
 	if (!pdf && !tex && !extradocs) {
+		$("#zip-download-confirm").css({"borderRadius": "0"});
 		$("#zip-options-warning").stop().slideDown(400, function() {
-			setTimeout(function(){$("#zip-options-warning").stop().slideUp(400)}, 2000);
+			setTimeout(function(){
+				$("#zip-options-warning").stop().slideUp(400);
+				$("#zip-download-confirm").css({"borderRadius": "0 0 4px 4px"});
+			}, 2000);
 		});
 		return false;
 	}
@@ -317,39 +321,39 @@ function filterResults(filter) {  //given a filter object, filter displayed reco
 		var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
 		var topics = lab.find(".lab-data-topics").text().slice(8,).split(", ");
 
-		if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4)) || filter["year-filter"].length) {
+		if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4)) || filter["year-filter"].length == 0) {
+			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+		}
+		else if (lab.find(".version-semester").text().endsWith("—") && filter["year-filter"].includes("—")) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			numrecords--;
 			continue;
 		}
 		if (doArraysOverlap(courses, filter["course-filter"])                                    || filter["course-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			numrecords--;
 			continue;
 		}
 		if (filter["semester-filter"].includes(lab.find(".version-semester").text().slice(0,-5)) || filter["semester-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+		} else if(lab.find(".version-semester").text().startsWith("—") && filter["semester-filter"].includes("—")) {
+			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			numrecords--;
 			continue;
 		}
 		if (doArraysOverlap(disciplines, filter["discipline-filter"])                            || filter["discipline-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			numrecords--;
 			continue;
 		}
 		if (doArraysOverlap(topics, filter["topic-filter"])                            || filter["topic-filter"].length == 0) {
 			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
 		} else {
 			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			numrecords--;
 			continue;
 		}
 	}
@@ -660,9 +664,11 @@ function showMostRecent() {
 				}
 			}
 		}
-		mostrecent.removeClass("record-not-rendered").addClass("record-rendered");
-		for (var j = sameyeardifcourse.length - 1; j >= 0; j--) {
-			sameyeardifcourse[j].removeClass("record-not-rendered").addClass("record-rendered");
+		if (mostrecent) {
+			mostrecent.removeClass("record-not-rendered").addClass("record-rendered");
+			for (var j = sameyeardifcourse.length - 1; j >= 0; j--) {
+				sameyeardifcourse[j].removeClass("record-not-rendered").addClass("record-rendered");
+			}
 		}
 	}
 	displayNumResults(countNumRecords());
@@ -1253,10 +1259,10 @@ function getVersionList(lab) {  //return an array of version objects for a given
 		var y = list[i].getElementsByTagName("Year")[0]
 		var s = list[i].getElementsByTagName("Semester")[0]
 		var c = list[i].getElementsByTagName("Course")[0]
-		versionlist.push({path: (Boolean(p.childNodes[0]) ? p.childNodes[0].nodeValue : "&#8212"),
-						  semester: (Boolean(s.childNodes[0]) ? s.childNodes[0].nodeValue : "&#8212"),
-						  year: (Boolean(y.childNodes[0]) ? y.childNodes[0].nodeValue : "&#8212"),
-						  course: (Boolean(c.childNodes[0]) ? c.childNodes[0].nodeValue : "&#8212")});
+		versionlist.push({path: (Boolean(p.childNodes[0]) ? p.childNodes[0].nodeValue : "—"),
+						  semester: (Boolean(s.childNodes[0]) ? s.childNodes[0].nodeValue : "—"),
+						  year: (Boolean(y.childNodes[0]) ? y.childNodes[0].nodeValue : "—"),
+						  course: (Boolean(c.childNodes[0]) ? c.childNodes[0].nodeValue : "—")});
 	}
 	return versionlist;
 }
@@ -1268,7 +1274,7 @@ function getValidFilterOptions(docXML, type) {  //return the set of values avail
     var valueslist = [];
     for (var i = 0; i < nodelist.length; i ++) {
 	    var value = nodelist[i].childNodes[0];
-	    valueslist.push((Boolean(value) ? value.nodeValue : "&#8212"));
+	    valueslist.push((Boolean(value) ? value.nodeValue : "—"));
     }
     return Array.from(new Set(valueslist)).sort();
 }

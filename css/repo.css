@@ -363,10 +363,10 @@ select {
     flex-direction: row;
 	width: 100%;
 	background-color: #424242;
-	position: absolute;
-	top: -27px;
+	position: relative;
+	top: -14px;
 	z-index: 0;
-	height: 23px;
+	height: inherit;
 	border-radius: 3px 3px 0 0;
 	box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
@@ -427,7 +427,7 @@ select {
     display: flex;
     flex-direction: column;
     margin-bottom: 200px;
-    margin-top: 12px;
+    margin-top: -15px;
     position: relative;
 }
 
@@ -438,7 +438,6 @@ select {
 	border: solid 1px;
     border-radius: 4px;
     margin: 2px;
-    min-width: 285px;
 	box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
 
@@ -763,6 +762,7 @@ select {
 
 	#search-results {
 		margin-left: 0;
+		font-size: .8em;
 	}
 		#search-results span {
 			font-size: 1.2em;
@@ -800,6 +800,10 @@ select {
 	#footer-left {
 		display: none;
 	}
+
+	#zip-options-title {
+		font-size: .9em;
+	}
 }
 
 
@@ -815,7 +819,8 @@ select {
 	#footer-mid {
 		flex-direction: column;
 		align-items: center;
-		margin: 0;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	#footer-left,
@@ -823,8 +828,13 @@ select {
 		display:none;
 	}
 
+	#staff-members {
+		flex-direction: column;
+	}
+
 	.staff-member {
-		width: 330px;
+		flex-direction: column;
+		margin: 10px auto;
 	}
 
 	.staff-details p,
@@ -834,6 +844,10 @@ select {
 
 	.staff-details h4 {
 		font-size: .8em;
+	}
+
+	.staff-small-detail {
+		margin: 6px auto;
 	}
 }
 

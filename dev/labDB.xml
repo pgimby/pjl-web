@@ -8368,9 +8368,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0121-Archimedes-Principle/0121-LEGACY/Archimedes-Principle.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8434,9 +8434,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0122-Behaviour-of-a-Real-Gas/0122-LEGACY/Behavior-of-a-Real-Gas.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8472,9 +8472,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0123-Bernoullis-Principle/0123-LEGACY/Bernoullis-Principle.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8526,9 +8526,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0124-Bifilar-Suspension/0124-LEGAC/YBifilar-Suspension.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8580,9 +8580,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0125-Boyles-Law/0125-LEGACY/Boyles-Law.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8610,9 +8610,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0126-Brewsters-Law/0126-LEGACY/Brewsters-Law.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8668,9 +8668,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0127-Bubble-Chamber-Photographs/0127-LEGACY/Bubble-Chamber-Photographs.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8714,9 +8714,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0128-Cantilever-Beams/0128-LEGACY/Cantilever-Beams.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8768,9 +8768,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0129-Centripetal-Force/0129-LEGACY/Centripetal-Force.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8814,9 +8814,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0130-Centripetal-Acceleration/0130-LEGACY/Centripetal-Acceleration.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8868,9 +8868,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0131-Coefficient-of-Restitution/0131-LEGACY/Coefficient-of-Restitution.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8926,9 +8926,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0132-Collisions-and-Conserved-Quatities/0132-LEGACY/Collisions-and-Concerved-Quantities.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -8984,9 +8984,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0133-Compound-Pendulum/0133-LEGACY/Compound-Pendulum.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9034,9 +9034,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0134-Conservation-of-Energy/0134-LEGACY/Conservation-of-Energy.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9088,9 +9088,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0135-Constant-Volume-Gas-Thermometer/0135-LEGACY/Constant-Volume-Gas-Thermometer.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9142,9 +9142,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0136-Radiation-Counting-Statistics/0136-LEGACY/Radiation-Counting-Statistics.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9188,9 +9188,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0137-Coupled-Harmonic-Oscillator/0137-LEGACY/Coupled-Harmonic-Oscillator.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9254,9 +9254,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0138-Current-Balance/0138-LEGACY/Current-Balance.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9320,9 +9320,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0139-Electrical-Equivalent-of-Heat/0139-LEGACY/Electrical-Equivalent-of-Heat.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9374,9 +9374,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-LEGACY/Advanced-Measurements-and-Uncertainties.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9436,9 +9436,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0141-Force-and-Acceleration/0141-LEGACY/Force-and-Acceleration.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9506,9 +9506,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0142-Geiger-Counters/0142-LEGACY/Geiger-Counters.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9584,9 +9584,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0143-Free-Fall/0143-LEGACY/Free-Fall.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9618,9 +9618,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0144-Fresnel-Biprism/0144-LEGACY/Fresnel-Biprism.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9688,9 +9688,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0145-Fresnels-Equations-and-Brewsters-Law/0145-LEGACY/Fresnels-Equations-and-Brewsters-Law.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9746,9 +9746,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0146-Fresnel-Diffraction/0146-LEGACY/Fresnel-Diffraction.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9796,9 +9796,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0147-Heat-of-Vaporization-of-Liquid-Nitrogen/0147-LEGACY/Heat-of-Vaporization-of-Liquid-Nitrogen.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9850,9 +9850,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0148-Hookes-Law-and-the-Behaviour-of-Springs/0148-LEGACY/Hookes-Law-and-the-Behavior-of-Springs.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9916,9 +9916,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0149-Impact-Craters/0149-LEGACY/Impact-Craters.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -9966,9 +9966,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0150-Katers-Pendulum/0150-LEGACY/Katers-Pendulum.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10024,9 +10024,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0151-Kirchhoffs-Laws/0151-LEGACY/Kirchhoffs-Laws.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10066,9 +10066,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0152-Law-of-Dulong-and-Petit/0152-LEGACY/Law-of-Dulong-and-Petit.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10124,9 +10124,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0153-Linear-Regression/0153-LEGACY/Linear-Regression.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment/>
@@ -10141,9 +10141,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0154-Longitudinal-Standing-Wave-on-a-Spring/0154-LEGACY/Longitudinal-Waves.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10295,9 +10295,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0156-Models-of-PN-Junctions/0156-LEGACY/Models-of-PN-Junctions.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10353,9 +10353,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0157-Moment-of-Inertia/0157-LEGACY/Moment-of-Inertia.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10395,9 +10395,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0158-Newtons-Laws/0158-LEGACY/Newtons-Laws.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10453,9 +10453,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0159-Newtons-Second-Law/0159-LEGACY/Newtons-Second-Law.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10531,9 +10531,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0160-Newtons-Law-of-Cooling/0160-LEGACY/Newtons-Law-of-Cooling.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10585,9 +10585,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0161-Nonlinear-Resistance-Measurement/0161-LEGACY/Nonlinear-Resistance-Measurement.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10635,9 +10635,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/No-Year/0162-Thermoelectricity/0162-LEGACY/Thermoelectricity.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10701,9 +10701,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0163-Physical-Inductor/0163-LEGACY/Physical-Inductor.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10759,9 +10759,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0164-Planar-Pendulum/0164-LEGACY/Planar-Pendulum.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10805,9 +10805,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0165-Poiseuilles-Law/0165-LEGACY/Poiseuilles-Law.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10875,9 +10875,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0166-Principle-of-Equipartition/0166-LEGACY/Principle-of-Equipartition.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10917,9 +10917,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0167-Projectile-Motion/0167-LEGACY/Projectile-Motion.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -10983,9 +10983,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0168-Pulleys-and-Forces/0168-LEGACY/Pulleys-and-Forces.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11041,9 +11041,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0169-Quantum-Defects-in-Helium/0169-LEGACY/Quantum-Defects-in-Helium.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11091,9 +11091,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0170-Ratio-of-Specific-Heats-for-Air/0170-LEGACY/Ratio-of-Specific-Heats-for-Air.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11153,9 +11153,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0171-Resistance-Measurements/0171-LEGACY/Resistance-Measurements.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11199,9 +11199,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0172-Scintillation-Counters/0172-LEGACY/Scintillation-Counters.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11273,9 +11273,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0173-Speed-of-Sound/0173-LEGACY/Speed-of-Sound.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11307,9 +11307,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0174-Static-Equilibrium/0174-LEGACY/Static-Equilibrium.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11353,9 +11353,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0175-Stirling-Engine/0175-LEGACY/Stirling-Engine.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11443,9 +11443,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0176-Tangent-Galvanometer/0176-LEGACY/Tangent-Galvanometer.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11485,9 +11485,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0177-Thermometers-Thermistors-and-Thermocouples/0177-LEGACY/Thermometers-Thermistors-and-Thermocouples.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11583,9 +11583,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0178-Torque-and-the-Beam-Balance/0178-LEGACY/Torque-and-the-Beam-Balance.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
@@ -11621,9 +11621,9 @@
     <Versions>
       <Version>
         <Path>/data/repository/0179-Torsional-Oscillations/0179-LEGACY/Torsional-Oscillations.pdf</Path>
-        <Semester>None</Semester>
-        <Year>None</Year>
-        <Course>None</Course>
+        <Semester></Semester>
+        <Year></Year>
+        <Course></Course>
       </Version>
     </Versions>
     <Equipment>
