@@ -79,15 +79,13 @@ $(document).on("click", "#show-recent-button", function(e) {
 
 
 
-$(document).on("click", "select", function(e) {
-	// alert("click on select")
-	filterResults(getCurrentFilter());
-	displayNumResults(countNumRecords());
-	applyRecordsMask(true)
-});
+// $(document).on("click", "select", function(e) {
+// 	filterResults(getCurrentFilter());
+// 	displayNumResults(countNumRecords());
+// 	applyRecordsMask(true)
+// });
 
 $(document).on("change", "select", function(e) {
-	alert("change on select")
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
