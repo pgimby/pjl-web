@@ -110,7 +110,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0190">
-        <Name>Travelling wave kit</Name>
+        <Name>travelling wave kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
@@ -1517,8 +1517,17 @@
   </Lab>
   <Lab labId="0094">
     <Name>Photometry</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Optics</Discipline>
+      <Discipline>Math</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Integration</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Measurements</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0094-Photometry/0094-PHYS375FA2015/Photometry-FA2015.pdf</Path>
@@ -1545,7 +1554,36 @@
         <Course>PHYS 375</Course>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0022">
+        <Name>1 m optical bench</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0048">
+        <Name>light detector</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0000">
+        <Name>reconfigurable lightbulb array</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>/>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
