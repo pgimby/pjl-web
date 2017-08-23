@@ -86,8 +86,8 @@ $(document).on("click", "select", function(e) {
 	applyRecordsMask(true)
 });
 
-$(document).on("tap", "select", function(e) {
-	alert("tap on select")
+$(document).on("change", "select", function(e) {
+	alert("change on select")
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
