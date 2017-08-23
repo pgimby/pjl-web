@@ -80,7 +80,7 @@ $(document).on("click", "#show-recent-button", function(e) {
 
 
 $(document).on("click", "select", function(e) {
-	alert("click on select")
+	// alert("click on select")
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
