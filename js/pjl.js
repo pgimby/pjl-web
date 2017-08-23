@@ -1229,7 +1229,6 @@ function getExtraLabDocs(lab) {  //return an array of extra doc objects for an X
 	for (var i = docs.length - 1; i >= 0; i--) {
 		var docname = docs[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 		var docpath = docs[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue;
-		console.log({name: docname, url: docpath})
 		list.push({name: docname, url: docpath});
 	}
 	return list;
