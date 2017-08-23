@@ -85,6 +85,12 @@ $(document).on("click", "select", function(e) {
 	applyRecordsMask(true)
 });
 
+$(document).on("change", "select", function(e) {
+	filterResults(getCurrentFilter());
+	displayNumResults(countNumRecords());
+	applyRecordsMask(true)
+});
+
 
 
 $(document).on("mousedown", "option", function(e) {
