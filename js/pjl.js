@@ -6,8 +6,8 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
-//var siteroot = "";
+//var siteroot = "/pjl-web";
+var siteroot = "";
 
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -42,6 +42,10 @@ function initPage() {  //initialize the page
 }
 
 
+
+function initLandingPage() {
+	loadRunningLabs();
+}
 
 
 
@@ -1103,6 +1107,44 @@ function loadXML() {  //load the XML document holding all the lab records (see g
   	};
   	xhttp.open("GET", siteroot + mainxmlpath, true);
   	xhttp.send();
+}
+
+
+
+function loadRunningLabs() {
+	$.getJSON(siteroot + "/data/activeLabs.json", function(data) {
+		var activelabs = data.ActiveLabs
+		startRunningLabTicker(activelabs)
+	});
+}
+
+
+
+function startRunningLabTicker(runninglabs) {
+	var labticker = {labs: runninglabs,
+		current: runninglabs[0],
+		next : function() {
+			var index = labticker.labs.indexOf(labticker.current);
+			if (index == labticker.labs.length - 1) {
+				labticker.current = labticker.labs[0];
+				if (labticker.current.length > 40) {
+					return labticker.current.split("(")[0].slice(0,27) + "... (" + labticker.current.split("(")[1]
+				}
+				return labticker.labs[0];
+			}
+			index++;
+			labticker.current = labticker.labs[index];
+			if (labticker.current.length > 40) {
+					return labticker.current.split("(")[0].slice(0,27) + "... (" + labticker.current.split("(")[1]
+				}
+			return labticker.labs[index];
+		},
+	}
+	setInterval(function() {
+		$("#running-labs #running-lab-text").fadeOut(function() {
+			$(this).text(labticker.next).fadeIn();
+		})
+	}, 2000)
 }
 
 

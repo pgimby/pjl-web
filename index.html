@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
@@ -33,7 +34,7 @@
 
 
 
-  <body onload=initPage()>
+  <body onload=initLandingPage()>
 
 
 
@@ -57,141 +58,75 @@
 
 
 
-    <!-- MAIN PAGE CONTENT -->
-
 
     <main>
-
-      <div class="wrap">
-
-
-        <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
-
-        <div class="hero">
-          <!-- <a href="http://www.ucalgary.ca/science/" target="_blank" id="logo-link"><img id="logo" src="./img/uc-logo.png"/></a> -->
-          <div class="title-flex">
-            <h1 id="title">Department of Physics and Astronomy</h1>
-            <h1 id="subtitle">Physics Junior Laboratory Document Repository</h1>
-          </div>
-        </div>
-
-
-
-
-
-        <!-- SEARCH BAR WITH SEARCH HELP DROPDOWN -->
-
-        <h2>Find labs by search term</h2>
-
-        <div class="search-container">
-        <form class="search-box">
-          <input type="text" id="search-bar" placeholder="Keyword, topic, course..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Keyword, topic, course...'">
-          <a><img class="search-icon" src="./img/search-icon.png"></a> <!-- may I see your silly walk? -->
-          <p id="search-help-button">search tips</p>
-          <div id="search-help">
-            <p id="tips">Tips</p>
-            <p>Searches try to match against all lab record meta data</p>
-            <p>Prefix your search terms with <span class="code">meta:</span> to match against only that identifier</p>
-            <div class="example"><p id="help-ex">Ex.</p><p><span class="code">course:PHYS 325</span> will match the query <span class="code">PHYS 325</span> against only course names</p>
-              <span class="code">course:</span>
-              <span class="code">lab:</span>
-              <span class="code">year:</span>
-              <span class="code">semester:</span>
-              <span class="code">topic:</span>
-              <span class="code">discipline:</span>
-              <span class="code">equipment:</span>
-            </div>
-          </div>
-        </form>
-        </div></br>
-
-
-
-        <span>
-          <h2 id="or">OR</h2>
-          <h2>Find labs by filtering the database</h2>
-        </span>
+    	<div id="landing-hero">
+    		<div class="wrap">
+	    		<h1 id="landing-hero-welcome">Welcome</h1>
+	    		<h1 id="landing-hero-pjl">Physics Junior Laboratory</h1>
+    		</div>
+    		<img src="./img/chalkphysalpha.png">
+    	</div>
+    	<div class="hero-bottom">
+	    	<div class="wrap">
+	    		<p id="running-labs">Running Experiments <span><span id="running-lab-text">Loading...</span></span></p>
+	    	</div>
+    	</div>
 
 
 
 
 
+    	<div class="wrap" id="landing-intro-container">
 
+	    	<div id="landing-intro-text">
+		    	<h2 class="landing-intro"><span>The Department of Physics and Astronomy</span> believes in giving its students a generously wide variety of different introductory laboratory experiences. Physics and astrophysics majors perform more than forty different hands-on experiments in the laboratory in the first two years of their program.<br/><br/>Students work with a wide variety of measurement devices, including:</h2>
+		    	<div class="landing-list">
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Basic instruments such as calipers and thermometers</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Intermediate instruments such as thermocouples, Geiger counters, and oscilloscopes</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Sophisticated instruments such as optical pyrometers, x-ray spectrometers, and pulse height analysers.</p>
+		    	</div>
+		    	<h2 class="landing-intro">These experiments give students practical experience in a variety of fundamental physics topics, such as:</h2>
+		    	<div class="landing-list">
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Classical linear and rotational mechanics</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Complex systems</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Data analysis</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Electricity and magnetism</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Fluid mechanics</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Thermal and atomic physics</p>
+		    		<p class="landing-list-item"><i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>Vibrations and waves</p>
+		    	</div>
+	    	</div>
 
-        <!-- LAB RECORDS FILTER SELECTIONS - FILLED DYNAMICALLY -->
+        <div id="resource-buttons">
+          <p class="resource-button">For Students</p>
 
-        <div class="filter">
-          <div id="course-filter">
-            <h3>Course</h3>
-            <select id="course-select" multiple="multiple">
-            </select>
-          </div>
-          <div id="year-filter">
-            <h3>Year</h3>
-            <select id="year-select" multiple="multiple">
-            </select>
-          </div>
-          <div id="semester-filter">
-            <h3>Semester</h3>
-            <select id="semester-select" multiple="multiple">
-            </select>
-          </div>
-          <div id="discipline-filter">
-            <h3>Discipline</h3>
-            <select id="discipline-select" multiple="multiple">
-            </select>
-          </div>
-          <div id="topic-filter">
-            <h3>Topic</h3>
-            <select id="topic-select" multiple="multiple">
-            </select>
-          </div>
-          <div id="filter-mod-buttons">
-            <p id="clear-filters-button">clear filters</p>
-            <p id="show-recent-button">most recent</p>
-          </div>
-        </div>
+          <p class="resource-button">For Instructors</p>
 
-
-
-
-        <!-- SEARCH RESULTS COUNTER WITH ZIP ICON -->
-
-
-        <p id="search-results">Showing <span id="num-unmasked-results"></span> of <span id="num-results"></span> search results</p>
-        <div id="zip-icon"></div>
-        <p id="expand-all-button" expanded="false">expand all</p>
-
-
-
-
-
-        <!-- LAB RECORDS DISPLAY AND HEADER FOR SORTING FUNCTIONALITY -->
-
-
-        <div id="records-header">
-            <a style="visibility: hidden; margin: 0 11px">Download</a> <!-- just here to match spacing on records display -->
-            <p class="record-header-button" id="sort-course" sorted="false"><span>Course</span></p>
-            <p class="record-header-button" id="sort-version">
-              <span class="sort-span-mobile" id="sort-semester" sorted="false">Sem.</span>
-              <span class="sort-span-desktop" id="sort-semester" sorted="false">Semester</span>
-              /
-              <span id="sort-year" sorted="false">Year</span>
-            </p>
-            <p class="record-header-button" id="sort-name" sorted="false"><span>Lab<span></p>
-            <div style="width:46px"></div>
-          </div>
-
-        <div id="lab-list-box">
+          <p class="resource-button">For Staff</p>
 
         </div>
-        <p id="show-all-button">show all</p></br>
+
+    	</div>
 
 
 
-      </div>  <!-- close main wrap -->
+
+
+
+    	<div id="landing-staff-container">
+	    	<div class="wrap">
+
+	    	</div>
+    	</div>
+
+
 
     </main>
+
+
+
+
 
 
 
@@ -298,49 +233,6 @@
 
 
     </footer>
-
-
-
-
-
-  <!-- MODAL DIALOGS -->
-
-  <div class="modal-screen">
-    <div class="modal-content" id="zip-options">
-      <div id="zip-options-header">
-        <h1 id="zip-options-title">Download Options</h1>
-        <div class="modal-close-button">
-          <!-- <img class="modal-close-icon" src="./img/close-icon-bright.png"> -->
-        </div>
-      </div>
-
-      <div id="zip-options-body">
-        <p>Which files do you want to download?</p>
-        <div id="download-options">
-          <div>
-            <input type="checkbox" name="PDF" id="PDF" checked>
-            <label for="PDF">PDF</label>
-          </div>
-          <div>
-            <input type="checkbox" name="TEX" id="TEX">
-            <label for="TEX">TEX</label>
-          </div>
-          <div>
-            <input type="checkbox" name="EXTRA" id="EXTRA">
-            <label for="EXTRA">Extra</label>
-          </div>
-        </div>
-      </div>
-
-      <div id="zip-options-footer">
-        <h1 id="zip-download-confirm">Download</h1>
-      </div>
-      <div id="zip-options-warning">
-        <i class="fa fa-exclamation" aria-hidden="true"></i>
-        <p>You must select at least one type of file</p>
-      </div>
-    </div>
-  </div>
 
   </body>
 
