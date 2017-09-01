@@ -398,6 +398,8 @@ class labDB():
                 year.text = i["year"]
                 course = ET.SubElement(version, "Course")
                 course.text = i["course"]
+                directory = ET.SubElement(version, "Directory")
+                directory.text = i["directory"]
             equipment = ET.SubElement(lab, "Equipment")
             for i in labitem.equipment:
                 item = ET.SubElement(equipment, "Item", {"id": i["id"]})
@@ -439,7 +441,8 @@ class _labItem():
             self.versions = [{"path": i.findtext("Path"),
                               "semester": i.findtext("Semester"),
                               "year": i.findtext("Year"),
-                              "course": i.findtext("Course")} for i in lab.find("Versions").findall("Version")]
+                              "course": i.findtext("Course"),
+                              "directory": i.findtext("Directory")} for i in lab.find("Versions").findall("Version")]
             self.equipment = [{"id": i.attrib["id"],
                                "name": i.findtext("Name"),
                                "amount": i.findtext("Amount")} for i in lab.find("Equipment").findall("Item")]
@@ -560,15 +563,18 @@ if __name__ == "__main__":
         versions = [{"path": "/data/repository/path/to/pdf",
                      "semester": "Fall",
                      "year": "2013",
-                     "course": "PHYS 375"},
+                     "course": "PHYS 375",
+                     "directory": "/data/repository/path/to/directory/"},
                     {"path": "/data/repository/path/to/pdf",
                      "semester": "Summer",
                      "year": "2016",
-                     "course": "PHYS 369"},
+                     "course": "PHYS 369",
+                     "directory": "/data/repository/path/to/directory/"},
                     {"path": "/data/repository/path/to/pdf",
                      "semester": "Winter",
                      "year": "2015",
-                     "course": "PHYS 375"}]
+                     "course": "PHYS 375",
+                     "directory": "/data/repository/path/to/directory/"}]
         newlab.versions = versions
 
 

@@ -4761,7 +4761,8 @@
         <Course>PHYS 341</Course>
       </Version>
     </Versions>
-    <Equipment />
+    <Equipment>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs />
     <Software />

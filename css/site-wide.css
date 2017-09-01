@@ -250,7 +250,24 @@ svg text {
 	background-color: #939393;
 }
 
+#staff-profiles {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
+.staff-profile {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	margin: 40px;
+}
+
+.staff-profile-photo {
+	width: 200px;
+	clip-path: circle(100px);
+}
 
 
 
