@@ -17,7 +17,7 @@ var docXML;
 //the initial length will be huge and you'll have to scroll forever to get to the footer. - Donesies
 
 //Also would like to have the zip, expand all, maybe search bar pinned to the top while scrolling
-//down through the list alond with a "back to top" button.
+//down through the list along with a "back to top" button.
 
 
 //Somehow need to deal with file errors in the zip call. Think about how to bail gracefully.
