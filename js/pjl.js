@@ -6,9 +6,9 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
-//var siteroot = "";
-
+//var siteroot = "/pjl-web";
+var siteroot = "";
+var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
 
@@ -44,8 +44,11 @@ function initPage() {  //initialize the page
 
 
 function initLandingPage() {
-	loadRunningLabs();
+	getFileListFromDir("/home/wes/pjlweb/dev/", callback)
 }
+
+
+
 
 
 
@@ -130,9 +133,10 @@ $(document).on("click", "#search-help-button", function(e) {
 
 
 $(document).on("click", "#zip-icon", function(e) {
-	$("main").addClass("blurred-page");
-	$(".modal-screen").css("display", "block");
-	$("#zip-options").stop().fadeIn(200);
+	collectFiles2Zip(true, true, true)
+	// $("main").addClass("blurred-page");
+	// $(".modal-screen").css("display", "block");
+	// $("#zip-options").stop().fadeIn(200);
 });
 
 
@@ -245,6 +249,41 @@ $(document).on("click", "#staff-name-gimby", function(e) {
 
 
 
+$(document).on("mouseenter", ".resource-button-text", function(e) {
+	var dropdown = $(e.target).next();
+	dropdown.slideToggle("fast");
+});
+
+
+
+$(document).on("mouseleave", ".resource-button", function(e) {
+	var dropdown = $(e.target).parents(".resource-button").children(".resource-dropdown");
+	dropdown.hide();
+});
+
+$(document).on("click", ".resource-dropdown-content", function(e) {
+	var links = {"pjl-regress": "/",
+				 "pjl-lab-schedule": "/",
+				 "pjl-geiger": "/",
+				 "pjl-repository": "/repository",
+				 "pjl-linearization": "/",
+				 "pjl-compare-two": "/",
+				 "pjl-uncertainty": "/",
+				 "pjl-graphing": "/",
+				 "pjl-scint": "/",
+				 "pjl-latex-template": "/",
+				 "pjl-inventory":"/",
+				 "pjl-github":"https://github.com/pgimby/pjl-web",
+				 "pjl-lab-rules":"/",
+				 "pjl-rad-safety":"/",
+				 "pjl-orientation":"/",
+				 "pjl-hazard-ass":"/"}
+	var buttonid = $(e.target).attr("id");
+	window.open(links[buttonid], '_blank');
+});
+
+
+
 
 
 //*******************************************************************************************
@@ -298,6 +337,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
 		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + getLabEquipmentList(lab).join(", "));
 		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
+		var directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
 
 		var labdoclist = getExtraLabDocs(lab);
 		var labdocs = extendedlabdata.append("div").classed("extra-docs", true);
@@ -1062,23 +1102,29 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 
 
 
-function collectFiles2Zip(doPDF, doTEX, doEXTRA) {  //return an array of file paths to be zipped based on user type selection
+function collectFiles2Zip(doPDF, doTEX, doEXTRA) {
+	var dirlist = [];
 	var filelist = [];
+	var promises = [];
 	var records = getCurrentRecords();
-	for (var i = records.length - 1; i >= 0; i--) {
-		var extradocs = records[i].find(".extra-doc");
-		if (Boolean(doPDF)) {
-			filelist.push(records[i].find(".version-path").attr("href"));
+	function fileCallback(promise) {
+		return function(d) {
+			filelist = filelist.concat(d.split(","));
+			promise.resolve();
 		}
-		extradocs.each(function(i, doc) {
-			if (Boolean(doTEX) && $(doc).attr("href").endsWith(".tex")) {
-				filelist.push($(doc).attr("href"));
-			} else if (Boolean(doEXTRA)) {
-				filelist.push($(doc).attr("href"));
-			}
-		});
 	}
-	return filelist;
+	for (var i = records.length - 1; i >= 0; i--) {
+		dirlist.push(records[i].find(".version-directory").text())
+	}
+	dirlist = ["/home/wes/pjlweb/data/", "/home/wes/pjlweb/dev/"]
+	for (var i = dirlist.length - 1; i >= 0; i--) {
+		var promise = $.Deferred();
+		promises.push(promise)
+		$.post("/php/getFileList.php", "dirpath=" + dirlist[i], fileCallback(promise));
+	}
+	var deferredFileList = $.when.apply($, promises);
+	deferredFileList.done(function() {console.log(filelist)});
+	deferredFileList.fail(function() {console.log("File collection failed: Unable to locate files for selection.")});
 }
 
 
@@ -1111,41 +1157,8 @@ function loadXML() {  //load the XML document holding all the lab records (see g
 
 
 
-function loadRunningLabs() {
-	$.getJSON(siteroot + "/data/activeLabs.json", function(data) {
-		var activelabs = data.ActiveLabs
-		startRunningLabTicker(activelabs)
-	});
-}
 
 
-
-function startRunningLabTicker(runninglabs) {
-	var labticker = {labs: runninglabs,
-		current: runninglabs[0],
-		next : function() {
-			var index = labticker.labs.indexOf(labticker.current);
-			if (index == labticker.labs.length - 1) {
-				labticker.current = labticker.labs[0];
-				if (labticker.current.length > 40) {
-					return labticker.current.split("(")[0].slice(0,27) + "... (" + labticker.current.split("(")[1]
-				}
-				return labticker.labs[0];
-			}
-			index++;
-			labticker.current = labticker.labs[index];
-			if (labticker.current.length > 40) {
-					return labticker.current.split("(")[0].slice(0,27) + "... (" + labticker.current.split("(")[1]
-				}
-			return labticker.labs[index];
-		},
-	}
-	setInterval(function() {
-		$("#running-labs #running-lab-text").fadeOut(function() {
-			$(this).text(labticker.next).fadeIn();
-		})
-	}, 2000)
-}
 
 
 
@@ -1303,14 +1316,16 @@ function getVersionList(lab) {  //return an array of version objects for a given
 	var versionlist = [];
 	var list = lab.getElementsByTagName("Version");
 	for (var i = list.length - 1; i >= 0; i--) {
-		var p = list[i].getElementsByTagName("Path")[0]
-		var y = list[i].getElementsByTagName("Year")[0]
-		var s = list[i].getElementsByTagName("Semester")[0]
-		var c = list[i].getElementsByTagName("Course")[0]
+		var p = list[i].getElementsByTagName("Path")[0];
+		var y = list[i].getElementsByTagName("Year")[0];
+		var s = list[i].getElementsByTagName("Semester")[0];
+		var c = list[i].getElementsByTagName("Course")[0];
+		var d = list[i].getElementsByTagName("Directory")[0];
 		versionlist.push({path: (Boolean(p.childNodes[0]) ? p.childNodes[0].nodeValue : "—"),
 						  semester: (Boolean(s.childNodes[0]) ? s.childNodes[0].nodeValue : "—"),
 						  year: (Boolean(y.childNodes[0]) ? y.childNodes[0].nodeValue : "—"),
-						  course: (Boolean(c.childNodes[0]) ? c.childNodes[0].nodeValue : "—")});
+						  course: (Boolean(c.childNodes[0]) ? c.childNodes[0].nodeValue : "—"),
+						  directory: (Boolean(d.childNodes[0]) ? d.childNodes[0].nodeValue : null)});
 	}
 	return versionlist;
 }

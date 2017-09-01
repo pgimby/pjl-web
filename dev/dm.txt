@@ -1,0 +1,11 @@
+ 
+promise list = []
+filelist = []
+get directory list
+
+for dir in directories:
+    promise list.push(promise)
+    post request: callback -> fulfill promise; filelist.push(files)
+
+    
+when(promise list).then(filter files, begin zip)
