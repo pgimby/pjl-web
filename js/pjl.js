@@ -44,7 +44,7 @@ function initPage() {  //initialize the page
 
 
 function initLandingPage() {
-	getFileListFromDir("/home/wes/pjlweb/dev/", callback)
+
 }
 
 
