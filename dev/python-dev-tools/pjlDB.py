@@ -464,7 +464,23 @@ class _labItem():
             raise Exception("Invalid arguments passed to _labItem: either a valid lab or a valid lab ID must be passed")
 
 
+    def addVersion(self, version):
+        if isinstance(dict, version):
+            self.versions.append(version)
+        else:
+            raise Exception("Invalid argument passed to _labItem.addVersion: argument must be dictionary")
 
+    def addEquipment(self, item):
+        if isinstance(dict, item):
+            self.equipment.append(item)
+        else:
+            raise Exception("Invalid argument passed to _labItem.addEquipment: argument must be dictionary")
+
+    def addSupportDoc(self, doc):
+        if isinstance(dict, doc):
+            self.support_docs.append(doc)
+        else:
+            raise Exception("Invalid argument passed to _labItem.addSupportDoc: argument must be dictionary")
 
 
 

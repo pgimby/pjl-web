@@ -6,8 +6,8 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/pjl-web";
-//var siteroot = "";
+//var siteroot = "/pjl-web";
+var siteroot = "";
 var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -133,10 +133,10 @@ $(document).on("click", "#search-help-button", function(e) {
 
 
 $(document).on("click", "#zip-icon", function(e) {
-	collectFiles2Zip(true, true, true)
-	// $("main").addClass("blurred-page");
-	// $(".modal-screen").css("display", "block");
-	// $("#zip-options").stop().fadeIn(200);
+	$("#zip-options-number").text("(" + String(countNumRecords()) + " records selected)");
+	$("main").addClass("blurred-page");
+	$(".modal-screen").css("display", "block");
+	$("#zip-options").stop().fadeIn(200);
 });
 
 
@@ -164,10 +164,13 @@ $(document).on("click", ".modal-content", function(e) {
 
 
 $(document).on("click", "#zip-download-confirm", function(e) {
+	var all = $("#ALL").prop("checked");
 	var pdf = $("#PDF").prop("checked");
 	var tex = $("#TEX").prop("checked");
+	var dat = $("#DAT").prop("checked");
+	var img = $("#IMG").prop("checked");
 	var extradocs = $("#EXTRA").prop("checked");
-	if (!pdf && !tex && !extradocs) {
+	if (!pdf && !tex && !extradocs && !all && !dat && !img) {
 		$("#zip-download-confirm").css({"borderRadius": "0"});
 		$("#zip-options-warning").stop().slideDown(400, function() {
 			setTimeout(function(){
@@ -181,8 +184,29 @@ $(document).on("click", "#zip-download-confirm", function(e) {
 	$(".modal-screen").css({display: 'none'});
 	$("#zip-options").css({display: 'none'});
 	$("#zip-progress-bar").slideDown(200, function() {
-		makePromisesBeginZip(collectFiles2Zip(pdf, tex, extradocs));
+		collectFiles2Zip(all, pdf, tex, dat, img, extradocs);
 	});
+});
+
+
+$(document).on("change", ".download-checkbox", function(e) {
+	var checkboxes = $(".dc-right");
+	if($(e.target).prop("id") == "ALL") {
+		checkboxes.each(function() {
+			$(this).prop("checked", false)
+		});
+	} else {
+		var somethingchecked = false;
+		checkboxes.each(function() {
+			if ($(this).prop("checked")) {
+				somethingchecked = true;
+			}
+		});
+		if (somethingchecked) {
+			$("#ALL").prop("checked", false);
+		}
+	}
+
 });
 
 
@@ -249,17 +273,29 @@ $(document).on("click", "#staff-name-gimby", function(e) {
 
 
 
-$(document).on("mouseenter", ".resource-button-text", function(e) {
+$(document).on("mouseenter", ".resource-button", function(e) {
 	var dropdown = $(e.target).next();
 	dropdown.slideToggle("fast");
 });
 
 
 
-$(document).on("mouseleave", ".resource-button", function(e) {
-	var dropdown = $(e.target).parents(".resource-button").children(".resource-dropdown");
-	dropdown.hide();
-});
+// $(document).on("mouseleave", ".resource-button", function(e) {
+// 	if ($(e.target).hasClass("resource-button")) {
+// 		console.log($(e.target).children(".resource-dropdown"))
+// 		$(e.target).children(".resource-dropdown").hide();
+// 	} else {
+
+// 		$(e.target).parents(".resource-button").children(".resource-dropdown").hide();
+// 	}
+// });
+
+
+$(".resource-button").mouseleave(function(e) {
+	$(this).children(".resource-dropdown").hide();
+})
+
+
 
 $(document).on("click", ".resource-dropdown-content", function(e) {
 	var links = {"pjl-regress": "/",
@@ -1102,10 +1138,11 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 
 
 
-function collectFiles2Zip(doPDF, doTEX, doEXTRA) {
+function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	var dirlist = [];
 	var filelist = [];
 	var promises = [];
+	var extradocs = [];
 	var records = getCurrentRecords();
 	function fileCallback(promise) {
 		return function(d) {
@@ -1114,21 +1151,60 @@ function collectFiles2Zip(doPDF, doTEX, doEXTRA) {
 		}
 	}
 	for (var i = records.length - 1; i >= 0; i--) {
-		dirlist.push(records[i].find(".version-directory").text())
+		dirlist.push(records[i].find(".version-directory").text());
+		extradocs.concat(getExtraLabDocs(records[i]));
 	}
 	dirlist = ["/home/wes/pjlweb/data/", "/home/wes/pjlweb/dev/"]
 	for (var i = dirlist.length - 1; i >= 0; i--) {
 		var promise = $.Deferred();
 		promises.push(promise)
-		$.post("/php/getFileList.php", "dirpath=" + dirlist[i], fileCallback(promise));
+		$.post("/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
 	}
 	var deferredFileList = $.when.apply($, promises);
-	deferredFileList.done(function() {console.log(filelist)});
+	deferredFileList.done(function() {
+		filteredlist = filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist);
+		if(doEXTRA) {
+			filteredlist.concat(extradocs);
+		}
+		console.log(filteredlist);
+		makePromisesBeginZip(filteredlist);
+	});
 	deferredFileList.fail(function() {console.log("File collection failed: Unable to locate files for selection.")});
 }
 
 
+function filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist) {
+	if (doALL) {
+		return filelist;
+	}
+	var filteredfiles = [];
+	for (var i = filelist.length - 1; i >= 0; i--) {
+		if (filelist[i].endsWith(".pdf") && doPDF) {
+			filteredfiles.push(filelist[i]);
+			continue;
+		}
+		if (filelist[i].endsWith(".tex") && doTEX) {
+			filteredfiles.push(filelist[i]);
+			continue;
+		}
+		if ((filelist[i].endsWith(".txt") || filelist[i].endsWith(".dat") || filelist[i].endsWith(".xml")) && doDAT) {
+			filteredfiles.push(filelist[i]);
+			continue;
+		}
+		if ((filelist[i].endsWith(".png") || filelist[i].endsWith(".jpg") || filelist[i].endsWith(".jpeg") || filelist[i].endsWith(".gif") || filelist[i].endsWith(".tiff")) && doIMG) {
+			filteredfiles.push(filelist[i]);
+			continue;
+		}
+	}
+	return filteredfiles;
+}
 
+
+
+function getExtraDocsFromRecord(record) {
+	var docs = $(record).children(".extra-docs").children(".extra-doc");
+
+}
 
 
 

@@ -138,7 +138,7 @@ svg text {
 	width: 100%;
 	height: 36px;
 	background-color: #222;
-	border-top: 1px solid #939393;
+	border-top: 1px solid #111;
 }
 
 
@@ -203,6 +203,19 @@ svg text {
 
 #resource-buttons {
 	display: flex;
+}
+
+.resource-button:not(:last-child):not(:first-child) {
+	border-right: 1px solid #000;
+	border-left: 1px solid #333;
+}
+
+.resource-button:last-child {
+	border-left: 1px solid #333;
+}
+
+.resource-button:first-child {
+	border-right: 1px solid #000;
 }
 
 .resource-button-text {
@@ -601,19 +614,18 @@ footer {
 	min-width: 240px;
 }
 
+#zip-options-number {
+	font-weight: 600;
+	font-size: .8em;
+}
+
 #download-options {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin: 10px;
-	flex-wrap: wrap;
 }
-
-	#download-options > div {
-		display: -webkit-flex;
-		display: flex;
-	}
 
 	#download-options label {
 		font-size: 1em;
@@ -627,6 +639,35 @@ footer {
 		padding: 10px;
 		margin: 0;
 	}
+
+#download-options-left,
+#download-options-right {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.download-options-row {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+}
+
+.download-options-col {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.download-options-item {
+	margin: 8px;
+}
+
+.vertical-divider {
+	width: 1px;
+	background-color: #ddd;
+}
+
 
 .modal-close-icon {
 	height: 34px;

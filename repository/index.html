@@ -308,7 +308,7 @@
   <div class="modal-screen">
     <div class="modal-content" id="zip-options">
       <div id="zip-options-header">
-        <h1 id="zip-options-title">Download Options</h1>
+        <h1 id="zip-options-title">Download Options <span id="zip-options-number"></span></h1>
         <div class="modal-close-button">
           <!-- <img class="modal-close-icon" src="./img/close-icon-bright.png"> -->
         </div>
@@ -317,18 +317,45 @@
       <div id="zip-options-body">
         <p>Which files do you want to download?</p>
         <div id="download-options">
-          <div>
-            <input type="checkbox" name="PDF" id="PDF" checked>
-            <label for="PDF">PDF</label>
-          </div>
-          <div>
-            <input type="checkbox" name="TEX" id="TEX">
-            <label for="TEX">TEX</label>
-          </div>
-          <div>
-            <input type="checkbox" name="EXTRA" id="EXTRA">
-            <label for="EXTRA">Extra</label>
-          </div>
+        <div id="download-options-left">
+        	<div>
+	            <input class="download-checkbox" type="checkbox" name="ALL" id="ALL" checked>
+	            <label for="ALL">All Files</label>
+        	</div>
+        </div>
+        <div class="vertical-divider"></div>
+        <div id="download-options-right">
+        	<div class="download-options-row">
+	        	<div class="download-options-col">
+	        		<div class="download-options-item">
+			            <input class="download-checkbox dc-right" type="checkbox" name="PDF" id="PDF">
+			            <label for="PDF">PDF</label>
+		          	</div>
+		          	<div class="download-options-item">
+			            <input class="download-checkbox dc-right" type="checkbox" name="DAT" id="DAT">
+			            <label for="DAT">Data</label>
+		         	</div>
+	        	</div>
+	        	<div class="download-options-col">
+	        		<div class="download-options-item">
+			            <input class="download-checkbox dc-right" type="checkbox" name="TEX" id="TEX">
+			            <label for="TEX">TEX</label>
+		          	</div>
+		          	<div class="download-options-item">
+			            <input class="download-checkbox dc-right" type="checkbox" name="IMG" id="IMG">
+			            <label for="IMG">Images</label>
+		          	</div>
+	        	</div>
+        	</div>
+          	<div class="download-options-row">
+	          	<div class="download-options-item">
+		            <input class="download-checkbox dc-right" type="checkbox" name="EXTRA" id="EXTRA">
+		            <label for="EXTRA">Additional Documents</label>
+	          	</div>
+          	</div>
+        </div>
+
+
         </div>
       </div>
 
