@@ -1,0 +1,14 @@
+\contentsline {chapter}{Determination of the density of wood and steel}{1}{chapter*.1}
+\contentsline {section}{Equipment}{3}{section*.3}
+\contentsline {section}{Goals of the experiment}{3}{section*.4}
+\contentsline {section}{Background}{3}{section*.5}
+\contentsline {section}{Discussion Exercises}{4}{section*.6}
+\contentsline {section}{The experiment}{4}{section*.7}
+\contentsline {subsection}{Measurement of the volume}{4}{subsection*.8}
+\contentsline {subsection}{Measurement of the mass}{4}{subsection*.9}
+\contentsline {section}{Data analysis}{5}{section*.10}
+\contentsline {section}{Discussion}{5}{section*.11}
+\contentsline {subsection}{Comparing values within uncertainties}{5}{subsection*.13}
+\contentsline {subsection}{Discussion questions}{5}{subsection*.14}
+\contentsline {section}{The report}{5}{section*.15}
+\contentsfinish 

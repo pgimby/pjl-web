@@ -1,0 +1,9 @@
+Pumpdown Lab Experimental Files Readme
+======================================
+
+This folder contains the default Vernier Loggerpro data files that
+are to be used for the Pumpdown and Leakout Curve laboratory exercise.
+pumpdown_template.cmbl is the default file used for this exercise.
+pumpdown_template_backup.cmbl is an identical backup file that should
+be used if the calibration for the default folder is accidentally changed.
+It is strongly advised that this folder not be altered under any circumstance.

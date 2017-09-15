@@ -1,0 +1,8 @@
+Vacuum lab 2 Data Readme
+========================
+
+This folder contains Vernier Loggerpro data files that were collected
+to test the functionality of the vacuum system and observe the behaviour
+of the system under different circumstances. These data files include
+the pumping down of the system, the leakout rate of various sized orifice,
+and the pumping down against a leak pumpdown curves for different sized orifices.

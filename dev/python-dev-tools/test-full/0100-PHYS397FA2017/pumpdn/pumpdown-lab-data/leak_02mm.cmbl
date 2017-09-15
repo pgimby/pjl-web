@@ -1,0 +1,5837 @@
+<Document>
+  <FileCoherence>1</FileCoherence>
+  <Version>3.5.0 </Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>May  8 2007 00:10:11</ApplicationBuildDateTime>
+  <Copyright>Copyright (c) 2007 Vernier Software & Technology and its licensers</Copyright>
+  <FileName>leak_02mm.cmbl</FileName>
+  <FileIDString>26/05/2009 13:48:12Your name here1798831551</FileIDString>
+  <CreatorOS>2</CreatorOS>
+  <CreatorApp>1</CreatorApp>
+  <AbsoluteVersion>1</AbsoluteVersion>
+  <Radians>1</Radians>
+  <NumDerivativePoints>7</NumDerivativePoints>
+  <NumSmoothingPoints>97</NumSmoothingPoints>
+  <ShowZeroOnToolbar>0</ShowZeroOnToolbar>
+  <ShowGraphMatchOnToolbar>0</ShowGraphMatchOnToolbar>
+  <GraphMatchUseConstant>1</GraphMatchUseConstant>
+  <GraphMatchUseLinear>1</GraphMatchUseLinear>
+  <GraphMatchUseQuadratic>1</GraphMatchUseQuadratic>
+  <GraphMatchNumSections>0</GraphMatchNumSections>
+  <Stationery>0</Stationery>
+  <CreationDateTime>26/05/2009 13:48:12</CreationDateTime>
+  <ModifiedDateTime>16/06/2009 10:41:41</ModifiedDateTime>
+  <PageBounds>0 0 13.2916666667 9.6875</PageBounds>
+  <ScreenResolution>0 0 1279 1023</ScreenResolution>
+  <MathType>0</MathType>
+  <AllowOptionsDialogs>1</AllowOptionsDialogs>
+  <AllowAutoCurveFit>1</AllowAutoCurveFit>
+  <ReplayWindowPosition>0 76 114 340 254 1</ReplayWindowPosition>
+  <ReplayWindowSpeed>1</ReplayWindowSpeed>
+  <ReplayWindowRepeat>0</ReplayWindowRepeat>
+  <SensorConflictEnabled>1</SensorConflictEnabled>
+  <MathConstantValue>3.141592653590</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>0</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>pi</MathConstantName>
+  <MathConstantValue>82.777908160633</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>1</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>A1</MathConstantName>
+  <MathConstantValue>3.176006922743E+023</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>1</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>B1</MathConstantName>
+  <MathConstantValue>1.000000000000</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>1</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>A11</MathConstantName>
+  <MathConstantValue>1.000000000000</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>1</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>C1</MathConstantName>
+  <MathConstantValue>1.000000000000</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>1</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>B11</MathConstantName>
+  <Page>
+    <ID>100 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <PageTitle></PageTitle>
+    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0xffffffff</PageColor>
+    <PageDisplayPageInfo>0 </PageDisplayPageInfo>
+    <PagePageInfo></PagePageInfo>
+    <PageGraphPaper>0 </PageGraphPaper>
+    <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
+    <PageReplayWindowPosition>0 76 114 340 254</PageReplayWindowPosition>
+    <PageMeter>
+      <ID>115 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.00749999999988 8.48406 2.22970999994 9.53458 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 1 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <MeterColumnID>113</MeterColumnID>
+      <MeterUseShortName>0</MeterUseShortName>
+      <MeterDisplayBlackText>0</MeterDisplayBlackText>
+      <MeterAlarmEnabled>0</MeterAlarmEnabled>
+      <MeterAlarmAbove>1</MeterAlarmAbove>
+      <MeterAlarmValue>0</MeterAlarmValue>
+      <MeterAlertSound>0</MeterAlertSound>
+    </PageMeter>
+    <PageMeter>
+      <ID>153 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>2.24999999994 8.48959 4.74999999994 9.48959 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>-0.249997 5.98959</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 1 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <MeterColumnID>150</MeterColumnID>
+      <MeterUseShortName>0</MeterUseShortName>
+      <MeterDisplayBlackText>0</MeterDisplayBlackText>
+      <MeterAlarmEnabled>0</MeterAlarmEnabled>
+      <MeterAlarmAbove>1</MeterAlarmAbove>
+      <MeterAlarmValue>0</MeterAlarmValue>
+      <MeterAlertSound>0</MeterAlertSound>
+    </PageMeter>
+    <PageGraphCartesian>
+      <ID>114 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>4.76221333327 0.03 13.1934 2.91667 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>-0.0833333 5.39583</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle>Voltage output of the thermocouple gauge</GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>112 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>1 112 116 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>0</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMinorTickColor>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>2</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>80</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>0</GraphPlotYMin>
+      <GraphPlotYMax>10</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>60</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>0</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>10</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageTable>
+      <ID>129 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.102083 0.0916667 4.71666333326 8.28958333334 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>-0.197917 -0.208333</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>1</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 10 </Size>
+        <Justification> 2 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <TableColumn> 112 0.799999999988 </TableColumn>
+      <TableColumn> 113 0.799999999988 </TableColumn>
+      <TableColumn> 116 0.799999999988 </TableColumn>
+      <TableColumn> 140 0.893749999988 </TableColumn>
+      <TableColumn> 142 0.872916999988 </TableColumn>
+      <TableColumn> 145 1.05 </TableColumn>
+      <TableColumn> 150 0.799999999988 </TableColumn>
+      <TableColumn> 210 0.799999999988 </TableColumn>
+      <StartIndex> 0 </StartIndex>
+      <DisplayBlackAndWhite> 0 </DisplayBlackAndWhite>
+    </PageTable>
+    <PageGraphCartesian>
+      <ID>152 </ID>
+      <BroadcastTo>1 857 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>4.7333266666 2.88958666666 13.15 9.63958333333 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>2.64583 3.32291333333</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle>Leak out over 0.2 mm orifice</GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x0</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>112 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>2 112 858 112 150 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>0</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMinorTickColor>
+      <GraphPlotXAutoscale>2</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>2</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>10</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>0</GraphPlotYMin>
+      <GraphPlotYMax>2000</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>10</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>0</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>2000</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageHelperDataCurveFit>
+      <ID>857 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>6.2333266666 4.38958666666 8.52368278639 5.68677416666 </Bounds>
+      <SubordinateToID>152</SubordinateToID>
+      <SubordinateOffset>1.5 1.5</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GUIHelperRangeMin>0</GUIHelperRangeMin>
+      <GUIHelperRangeMax>9.05820756836</GUIHelperRangeMax>
+      <GUIHelperTraceColumnID>150</GUIHelperTraceColumnID>
+      <GUIHelperBaseColumnID>112</GUIHelperBaseColumnID>
+      <GUIHelperPrecision>4</GUIHelperPrecision>
+      <GUIHelperPrecisionDecimal>0</GUIHelperPrecisionDecimal>
+      <GUIHelperMinimized>0</GUIHelperMinimized>
+      <GUIHelperUseEntireRange>0</GUIHelperUseEntireRange>
+      <CurveFitFunctionID>858</CurveFitFunctionID>
+      <CurveFitColumnID>0</CurveFitColumnID>
+      <CurveFitError>15.1901278038</CurveFitError>
+      <CurveFitMethod>1</CurveFitMethod>
+      <CurveFitUncertainty>1</CurveFitUncertainty>
+      <ManualCurveFitIncrements>3 0.1 0.1 0.1 </ManualCurveFitIncrements>
+      <ManualCurveFitShowRMSE>1</ManualCurveFitShowRMSE>
+    </PageHelperDataCurveFit>
+  </Page>
+  <CurrentPageIndex>0</CurrentPageIndex>
+  <DataSet>
+    <ID>111 </ID>
+    <BroadcastTo>7 4 117 129 141 143 146 151 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>Latest</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>1</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>1</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <DataColumn>
+      <ID>112 </ID>
+      <BroadcastTo>3 114 129 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Time</DataObjectName>
+      <DataObjectShortName>t</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>s</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1245170330</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>0</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Time</ColumnMatchTag>
+      <ColumnStartCollectTime>1245170330</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnCells>
+0.0625
+0.125
+0.1875
+0.25
+0.3125
+0.375
+0.4375
+0.5
+0.5625
+0.625
+0.6875
+0.75
+0.8125
+0.875
+0.9375
+1
+1.0625
+1.125
+1.1875
+1.25
+1.3125
+1.375
+1.4375
+1.5
+1.5625
+1.625
+1.6875
+1.75
+1.8125
+1.875
+1.9375
+2
+2.0625
+2.125
+2.1875
+2.25
+2.3125
+2.375
+2.4375
+2.5
+2.5625
+2.625
+2.6875
+2.75
+2.8125
+2.875
+2.9375
+3
+3.0625
+3.125
+3.1875
+3.25
+3.3125
+3.375
+3.4375
+3.5
+3.5625
+3.625
+3.6875
+3.75
+3.8125
+3.875
+3.9375
+4
+4.0625
+4.125
+4.1875
+4.25
+4.3125
+4.375
+4.4375
+4.5
+4.5625
+4.625
+4.6875
+4.75
+4.8125
+4.875
+4.9375
+5
+5.0625
+5.125
+5.1875
+5.25
+5.3125
+5.375
+5.4375
+5.5
+5.5625
+5.625
+5.6875
+5.75
+5.8125
+5.875
+5.9375
+6
+6.0625
+6.125
+6.1875
+6.25
+6.3125
+6.375
+6.4375
+6.5
+6.5625
+6.625
+6.6875
+6.75
+6.8125
+6.875
+6.9375
+7
+7.0625
+7.125
+7.1875
+7.25
+7.3125
+7.375
+7.4375
+7.5
+7.5625
+7.625
+7.6875
+7.75
+7.8125
+7.875
+7.9375
+8
+8.0625
+8.125
+8.1875
+8.25
+8.3125
+8.375
+8.4375
+8.5
+8.5625
+8.625
+8.6875
+8.75
+8.8125
+8.875
+8.9375
+9
+9.0625
+9.125
+9.1875
+9.25
+9.3125
+9.375
+9.4375
+9.5
+9.5625
+9.625
+9.6875
+9.75
+9.8125
+9.875
+9.9375
+10
+10.0625
+10.125
+10.1875
+10.25
+10.3125
+10.375
+10.4375
+10.5
+10.5625
+10.625
+10.6875
+10.75
+10.8125
+10.875
+10.9375
+11
+11.0625
+11.125
+11.1875
+11.25
+11.3125
+11.375
+11.4375
+11.5
+11.5625
+11.625
+11.6875
+11.75
+11.8125
+11.875
+11.9375
+12
+12.0625
+12.125
+12.1875
+12.25
+12.3125
+12.375
+12.4375
+12.5
+12.5625
+12.625
+12.6875
+12.75
+12.8125
+12.875
+12.9375
+13
+13.0625
+13.125
+13.1875
+13.25
+13.3125
+13.375
+13.4375
+13.5
+13.5625
+13.625
+13.6875
+13.75
+13.8125
+13.875
+13.9375
+14
+14.0625
+14.125
+14.1875
+14.25
+14.3125
+14.375
+14.4375
+14.5
+14.5625
+14.625
+14.6875
+14.75
+14.8125
+14.875
+14.9375
+15
+15.0625
+15.125
+15.1875
+15.25
+15.3125
+15.375
+15.4375
+15.5
+15.5625
+15.625
+15.6875
+15.75
+15.8125
+15.875
+15.9375
+16
+16.0625
+16.125
+16.1875
+16.25
+16.3125
+16.375
+16.4375
+16.5
+16.5625
+16.625
+16.6875
+16.75
+16.8125
+16.875
+16.9375
+17
+17.0625
+17.125
+17.1875
+17.25
+17.3125
+17.375
+17.4375
+17.5
+17.5625
+17.625
+17.6875
+17.75
+17.8125
+17.875
+17.9375
+18
+18.0625
+18.125
+18.1875
+18.25
+18.3125
+18.375
+18.4375
+18.5
+18.5625
+18.625
+18.6875
+18.75
+18.8125
+18.875
+18.9375
+19
+19.0625
+19.125
+19.1875
+19.25
+19.3125
+19.375
+19.4375
+19.5
+19.5625
+19.625
+19.6875
+19.75
+19.8125
+19.875
+19.9375
+20
+20.0625
+20.125
+20.1875
+20.25
+20.3125
+20.375
+20.4375
+20.5
+20.5625
+20.625
+20.6875
+20.75
+20.8125
+20.875
+20.9375
+21
+21.0625
+21.125
+21.1875
+21.25
+21.3125
+21.375
+21.4375
+21.5
+21.5625
+21.625
+21.6875
+21.75
+21.8125
+21.875
+21.9375
+22
+22.0625
+22.125
+22.1875
+22.25
+22.3125
+22.375
+22.4375
+22.5
+22.5625
+22.625
+22.6875
+22.75
+22.8125
+22.875
+22.9375
+23
+23.0625
+23.125
+23.1875
+23.25
+23.3125
+23.375
+23.4375
+23.5
+23.5625
+23.625
+23.6875
+23.75
+23.8125
+23.875
+23.9375
+24
+24.0625
+24.125
+24.1875
+24.25
+24.3125
+24.375
+24.4375
+24.5
+24.5625
+24.625
+24.6875
+24.75
+24.8125
+24.875
+24.9375
+25
+25.0625
+25.125
+25.1875
+25.25
+25.3125
+25.375
+25.4375
+25.5
+25.5625
+25.625
+25.6875
+25.75
+25.8125
+25.875
+25.9375
+26
+26.0625
+26.125
+26.1875
+26.25
+26.3125
+26.375
+26.4375
+26.5
+26.5625
+26.625
+26.6875
+26.75
+26.8125
+26.875
+26.9375
+27
+27.0625
+27.125
+27.1875
+27.25
+27.3125
+27.375
+27.4375
+27.5
+27.5625
+27.625
+27.6875
+27.75
+27.8125
+27.875
+27.9375
+28
+28.0625
+28.125
+28.1875
+28.25
+28.3125
+28.375
+28.4375
+28.5
+28.5625
+28.625
+28.6875
+28.75
+28.8125
+28.875
+28.9375
+29
+29.0625
+29.125
+29.1875
+29.25
+29.3125
+29.375
+29.4375
+29.5
+29.5625
+29.625
+29.6875
+29.75
+29.8125
+29.875
+29.9375
+30
+30.0625
+30.125
+30.1875
+30.25
+30.3125
+30.375
+30.4375
+30.5
+30.5625
+30.625
+30.6875
+30.75
+30.8125
+30.875
+30.9375
+31
+31.0625
+31.125
+31.1875
+31.25
+31.3125
+31.375
+31.4375
+31.5
+31.5625
+31.625
+31.6875
+31.75
+31.8125
+31.875
+31.9375
+32
+32.0625
+32.125
+32.1875
+32.25
+32.3125
+32.375
+32.4375
+32.5
+32.5625
+32.625
+32.6875
+32.75
+32.8125
+32.875
+32.9375
+33
+33.0625
+33.125
+33.1875
+33.25
+33.3125
+33.375
+33.4375
+33.5
+33.5625
+33.625
+33.6875
+33.75
+33.8125
+33.875
+33.9375
+34
+34.0625
+34.125
+34.1875
+34.25
+34.3125
+34.375
+34.4375
+34.5
+34.5625
+34.625
+34.6875
+34.75
+34.8125
+34.875
+34.9375
+35
+35.0625
+35.125
+35.1875
+35.25
+35.3125
+35.375
+35.4375
+35.5
+35.5625
+35.625
+35.6875
+35.75
+35.8125
+35.875
+35.9375
+36
+36.0625
+36.125
+36.1875
+36.25
+36.3125
+36.375
+36.4375
+36.5
+36.5625
+36.625
+36.6875
+36.75
+36.8125
+36.875
+36.9375
+37
+37.0625
+37.125
+37.1875
+37.25
+37.3125
+37.375
+37.4375
+37.5
+37.5625
+37.625
+37.6875
+37.75
+37.8125
+37.875
+37.9375
+38
+38.0625
+38.125
+38.1875
+38.25
+38.3125
+38.375
+38.4375
+38.5
+38.5625
+38.625
+38.6875
+38.75
+38.8125
+38.875
+38.9375
+39
+39.0625
+39.125
+39.1875
+39.25
+39.3125
+39.375
+39.4375
+39.5
+39.5625
+39.625
+39.6875
+39.75
+39.8125
+39.875
+39.9375
+40
+40.0625
+40.125
+40.1875
+40.25
+40.3125
+40.375
+40.4375
+40.5
+40.5625
+40.625
+40.6875
+40.75
+40.8125
+40.875
+40.9375
+41
+41.0625
+41.125
+41.1875
+41.25
+41.3125
+41.375
+41.4375
+41.5
+41.5625
+41.625
+41.6875
+41.75
+41.8125
+41.875
+41.9375
+42
+42.0625
+42.125
+42.1875
+42.25
+42.3125
+42.375
+42.4375
+42.5
+42.5625
+42.625
+42.6875
+42.75
+42.8125
+42.875
+42.9375
+43
+43.0625
+43.125
+43.1875
+43.25
+43.3125
+43.375
+43.4375
+43.5
+43.5625
+43.625
+43.6875
+43.75
+43.8125
+43.875
+43.9375
+44
+44.0625
+44.125
+44.1875
+44.25
+44.3125
+44.375
+44.4375
+44.5
+44.5625
+44.625
+44.6875
+44.75
+44.8125
+44.875
+44.9375
+45
+45.0625
+45.125
+45.1875
+45.25
+45.3125
+45.375
+45.4375
+45.5
+45.5625
+45.625
+45.6875
+45.75
+45.8125
+45.875
+45.9375
+46
+46.0625
+46.125
+46.1875
+46.25
+46.3125
+46.375
+46.4375
+46.5
+46.5625
+46.625
+46.6875
+46.75
+46.8125
+46.875
+46.9375
+47
+47.0625
+47.125
+47.1875
+47.25
+47.3125
+47.375
+47.4375
+47.5
+47.5625
+47.625
+47.6875
+47.75
+47.8125
+47.875
+47.9375
+48
+48.0625
+48.125
+48.1875
+48.25
+48.3125
+48.375
+48.4375
+48.5
+48.5625
+48.625
+48.6875
+48.75
+48.8125
+48.875
+48.9375
+49
+49.0625
+49.125
+49.1875
+49.25
+49.3125
+49.375
+49.4375
+49.5
+49.5625
+49.625
+49.6875
+49.75
+49.8125
+49.875
+49.9375
+50
+50.0625
+50.125
+50.1875
+50.25
+50.3125
+50.375
+50.4375
+50.5
+50.5625
+50.625
+50.6875
+50.75
+50.8125
+50.875
+50.9375
+51
+51.0625
+51.125
+51.1875
+51.25
+51.3125
+51.375
+51.4375
+51.5
+51.5625
+51.625
+51.6875
+51.75
+51.8125
+51.875
+51.9375
+52
+52.0625
+52.125
+52.1875
+52.25
+52.3125
+52.375
+52.4375
+52.5
+52.5625
+52.625
+52.6875
+52.75
+52.8125
+52.875
+52.9375
+53
+53.0625
+53.125
+53.1875
+53.25
+53.3125
+53.375
+53.4375
+53.5
+53.5625
+53.625
+53.6875
+53.75
+53.8125
+53.875
+53.9375
+54
+54.0625
+54.125
+54.1875
+54.25
+54.3125
+54.375
+54.4375
+54.5
+54.5625
+54.625
+54.6875
+54.75
+54.8125
+54.875
+54.9375
+55
+55.0625
+55.125
+55.1875
+55.25
+55.3125
+55.375
+55.4375
+55.5
+55.5625
+55.625
+55.6875
+55.75
+55.8125
+55.875
+55.9375
+56
+56.0625
+56.125
+56.1875
+56.25
+56.3125
+56.375
+56.4375
+56.5
+56.5625
+56.625
+56.6875
+56.75
+56.8125
+56.875
+56.9375
+57
+57.0625
+57.125
+57.1875
+57.25
+57.3125
+57.375
+57.4375
+57.5
+57.5625
+57.625
+57.6875
+57.75
+57.8125
+57.875
+57.9375
+58
+58.0625
+58.125
+58.1875
+58.25
+58.3125
+58.375
+58.4375
+58.5
+58.5625
+58.625
+58.6875
+58.75
+58.8125
+58.875
+58.9375
+59
+59.0625
+59.125
+59.1875
+59.25
+59.3125
+59.375
+59.4375
+59.5
+59.5625
+59.625
+59.6875
+59.75
+59.8125
+59.875
+59.9375
+60
+60.0625
+60.125
+60.1875
+60.25
+60.3125
+60.375
+60.4375
+60.5
+60.5625
+60.625
+60.6875
+60.75
+60.8125
+60.875
+60.9375
+61
+61.0625
+61.125
+61.1875
+61.25
+61.3125
+61.375
+61.4375
+61.5
+61.5625
+61.625
+61.6875
+61.75
+61.8125
+61.875
+61.9375
+62
+62.0625
+62.125
+62.1875
+62.25
+62.3125
+62.375
+62.4375
+62.5
+62.5625
+62.625
+62.6875
+62.75
+62.8125
+62.875
+62.9375
+63
+63.0625
+63.125
+63.1875
+63.25
+63.3125
+63.375
+63.4375
+63.5
+63.5625
+63.625
+63.6875
+63.75
+63.8125
+63.875
+63.9375
+64
+64.0625
+64.125
+64.1875
+64.25
+64.3125
+64.375
+64.4375
+64.5
+64.5625
+64.625
+64.6875
+64.75
+64.8125
+64.875
+64.9375
+65
+65.0625
+65.125
+65.1875
+65.25
+65.3125
+65.375
+65.4375
+65.5
+65.5625
+65.625
+65.6875
+65.75
+65.8125
+65.875
+65.9375
+66
+66.0625
+66.125
+66.1875
+66.25
+66.3125
+66.375
+66.4375
+66.5
+66.5625
+66.625
+66.6875
+66.75
+66.8125
+66.875
+66.9375
+67
+67.0625
+67.125
+67.1875
+67.25
+67.3125
+67.375
+67.4375
+67.5
+67.5625
+67.625
+67.6875
+67.75
+67.8125
+67.875
+67.9375
+68
+68.0625
+68.125
+68.1875
+68.25
+68.3125
+68.375
+68.4375
+68.5
+68.5625
+68.625
+68.6875
+68.75
+68.8125
+68.875
+68.9375
+69
+69.0625
+69.125
+69.1875
+69.25
+69.3125
+69.375
+69.4375
+69.5
+69.5625
+69.625
+69.6875
+69.75
+69.8125
+69.875
+69.9375
+70
+70.0625
+70.125
+70.1875
+70.25
+70.3125
+70.375
+70.4375
+70.5
+70.5625
+70.625
+70.6875
+70.75
+70.8125
+70.875
+70.9375
+71
+71.0625
+71.125
+71.1875
+71.25
+71.3125
+71.375
+71.4375
+71.5
+71.5625
+71.625
+71.6875
+71.75
+71.8125
+71.875
+71.9375
+72
+72.0625
+72.125
+72.1875
+72.25
+72.3125
+72.375
+72.4375
+72.5
+72.5625
+72.625
+72.6875
+72.75
+72.8125
+72.875
+72.9375
+73
+73.0625
+73.125
+73.1875
+73.25
+73.3125
+73.375
+73.4375
+73.5
+73.5625
+73.625
+73.6875
+73.75
+73.8125
+73.875
+73.9375
+74
+74.0625
+74.125
+74.1875
+74.25
+74.3125
+74.375
+74.4375
+74.5
+74.5625
+74.625
+74.6875
+74.75
+74.8125
+74.875
+74.9375
+75
+75.0625
+75.125
+75.1875
+75.25
+75.3125
+75.375
+75.4375
+75.5
+75.5625
+75.625
+75.6875
+75.75
+75.8125
+75.875
+75.9375
+76
+76.0625
+76.125
+76.1875
+76.25
+76.3125
+76.375
+76.4375
+76.5
+76.5625
+76.625
+76.6875
+76.75
+76.8125
+76.875
+76.9375
+77
+77.0625
+77.125
+77.1875
+77.25
+77.3125
+77.375
+77.4375
+77.5
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>113 </ID>
+      <BroadcastTo>5 4 114 115 117 129 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Measured V</DataObjectName>
+      <DataObjectShortName>V mes</DataObjectShortName>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>846</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>mV</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1243367307</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>1</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>1</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Potential</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>1</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnCells>
+8.16738461538
+8.75887179487
+8.92902564103
+8.36184615385
+8.16738461538
+8.75076923077
+8.92092307692
+8.35374358974
+8.15117948718
+8.75887179487
+8.92092307692
+8.34564102564
+8.15117948718
+8.75076923077
+8.92092307692
+8.34564102564
+8.15117948718
+8.75076923077
+8.92902564103
+8.33753846154
+8.15117948718
+8.74266666667
+8.92092307692
+8.33753846154
+8.13497435897
+8.75076923077
+8.92092307692
+8.32943589744
+8.12687179487
+8.74266666667
+8.92092307692
+8.32943589744
+8.12687179487
+8.74266666667
+8.92092307692
+8.32943589744
+8.11876923077
+8.74266666667
+8.92092307692
+8.32133333333
+8.11876923077
+8.74266666667
+8.92092307692
+8.32133333333
+8.11066666667
+8.74266666667
+8.92902564103
+8.32133333333
+8.11876923077
+8.74266666667
+8.92902564103
+8.31323076923
+8.10256410256
+8.74266666667
+8.92902564103
+8.30512820513
+8.10256410256
+8.74266666667
+8.92902564103
+8.30512820513
+8.09446153846
+8.74266666667
+8.92902564103
+8.30512820513
+8.09446153846
+8.74266666667
+8.92902564103
+8.30512820513
+8.08635897436
+8.74266666667
+8.92902564103
+8.29702564103
+8.08635897436
+8.74266666667
+8.93712820513
+8.30512820513
+8.09446153846
+8.75887179487
+8.94523076923
+8.30512820513
+8.08635897436
+8.75076923077
+8.94523076923
+8.29702564103
+8.08635897436
+8.75076923077
+8.93712820513
+8.30512820513
+8.08635897436
+8.75076923077
+8.93712820513
+8.29702564103
+8.08635897436
+8.75887179487
+8.93712820513
+8.29702564103
+8.08635897436
+8.75076923077
+8.93712820513
+8.29702564103
+8.07825641026
+8.75076923077
+8.92902564103
+8.29702564103
+8.07825641026
+8.75076923077
+8.93712820513
+8.28892307692
+8.08635897436
+8.75076923077
+8.92902564103
+8.28082051282
+8.07825641026
+8.73456410256
+8.90471794872
+8.216
+7.94861538462
+8.5401025641
+8.58871794872
+7.77035897436
+7.39764102564
+7.86758974359
+7.77846153846
+6.83856410256
+6.37671794872
+6.79805128205
+6.6278974359
+5.63128205128
+5.16133333333
+5.61507692308
+5.43682051282
+4.4321025641
+4.01887179487
+4.52933333333
+4.37538461538
+3.40307692308
+3.07087179487
+3.64615384615
+3.52461538462
+2.59282051282
+2.33353846154
+2.97364102564
+2.89261538462
+2.00943589744
+1.81497435897
+2.5198974359
+2.46317948718
+1.62051282051
+1.49087179487
+2.212
+2.17148717949
+1.36123076923
+1.28020512821
+2.01753846154
+1.96892307692
+1.18297435897
+1.14246153846
+1.8878974359
+1.82307692308
+1.07764102564
+1.07764102564
+1.80687179487
+1.72584615385
+1.00471794872
+1.03712820513
+1.75015384615
+1.65292307692
+0.948
+1.02092307692
+1.71774358974
+1.59620512821
+0.91558974359
+1.00471794872
+1.67723076923
+1.55569230769
+0.875076923077
+0.996615384615
+1.66102564103
+1.50707692308
+0.850769230769
+1.00471794872
+1.65292307692
+1.46656410256
+0.834564102564
+1.00471794872
+1.64482051282
+1.44225641026
+0.826461538462
+1.01282051282
+1.63671794872
+1.40984615385
+0.810256410256
+1.03712820513
+1.62861538462
+1.39364102564
+0.802153846154
+1.03712820513
+1.62861538462
+1.36933333333
+0.794051282051
+1.05333333333
+1.62051282051
+1.35312820513
+0.794051282051
+1.06143589744
+1.62051282051
+1.32882051282
+0.777846153846
+1.06143589744
+1.62051282051
+1.31261538462
+0.777846153846
+1.07764102564
+1.61241025641
+1.29641025641
+0.769743589744
+1.09384615385
+1.61241025641
+1.2721025641
+0.761641025641
+1.09384615385
+1.61241025641
+1.2558974359
+0.761641025641
+1.11005128205
+1.62051282051
+1.23969230769
+0.753538461538
+1.11815384615
+1.60430769231
+1.22348717949
+0.737333333333
+1.13435897436
+1.60430769231
+1.20728205128
+0.737333333333
+1.15056410256
+1.60430769231
+1.17487179487
+0.729230769231
+1.16676923077
+1.60430769231
+1.15866666667
+0.721128205128
+1.18297435897
+1.60430769231
+1.13435897436
+0.721128205128
+1.20728205128
+1.60430769231
+1.11815384615
+0.721128205128
+1.23158974359
+1.62051282051
+1.10194871795
+0.721128205128
+1.23969230769
+1.61241025641
+1.07764102564
+0.704923076923
+1.23969230769
+1.60430769231
+1.06953846154
+0.704923076923
+1.24779487179
+1.60430769231
+1.06953846154
+0.696820512821
+1.264
+1.60430769231
+1.04523076923
+0.696820512821
+1.264
+1.60430769231
+1.03712820513
+0.696820512821
+1.2721025641
+1.60430769231
+1.03712820513
+0.696820512821
+1.28020512821
+1.61241025641
+1.02092307692
+0.696820512821
+1.28830769231
+1.61241025641
+1.00471794872
+0.688717948718
+1.29641025641
+1.60430769231
+0.996615384615
+0.680615384615
+1.31261538462
+1.60430769231
+0.98041025641
+0.680615384615
+1.32882051282
+1.61241025641
+0.964205128205
+0.672512820513
+1.33692307692
+1.61241025641
+0.948
+0.672512820513
+1.36123076923
+1.61241025641
+0.923692307692
+0.66441025641
+1.37743589744
+1.62051282051
+0.91558974359
+0.672512820513
+1.39364102564
+1.62861538462
+0.91558974359
+0.66441025641
+1.39364102564
+1.62051282051
+0.891282051282
+0.656307692308
+1.40174358974
+1.62051282051
+0.883179487179
+0.648205128205
+1.40174358974
+1.62051282051
+0.875076923077
+0.648205128205
+1.40984615385
+1.62051282051
+0.883179487179
+0.648205128205
+1.40984615385
+1.62051282051
+0.866974358974
+0.648205128205
+1.40984615385
+1.62051282051
+0.875076923077
+0.656307692308
+1.41794871795
+1.63671794872
+0.875076923077
+0.648205128205
+1.41794871795
+1.62861538462
+0.866974358974
+0.640102564103
+1.41794871795
+1.62051282051
+0.866974358974
+0.640102564103
+1.41794871795
+1.62861538462
+0.858871794872
+0.632
+1.41794871795
+1.62861538462
+0.858871794872
+0.623897435897
+1.42605128205
+1.62861538462
+0.858871794872
+0.623897435897
+1.42605128205
+1.63671794872
+0.858871794872
+0.623897435897
+1.42605128205
+1.64482051282
+0.850769230769
+0.623897435897
+1.43415384615
+1.64482051282
+0.842666666667
+0.615794871795
+1.43415384615
+1.65292307692
+0.842666666667
+0.615794871795
+1.43415384615
+1.64482051282
+0.834564102564
+0.59958974359
+1.43415384615
+1.65292307692
+0.834564102564
+0.591487179487
+1.44225641026
+1.65292307692
+0.834564102564
+0.59958974359
+1.44225641026
+1.66102564103
+0.834564102564
+0.591487179487
+1.44225641026
+1.66912820513
+0.834564102564
+0.59958974359
+1.45035897436
+1.66912820513
+0.826461538462
+0.591487179487
+1.44225641026
+1.66912820513
+0.818358974359
+0.575282051282
+1.44225641026
+1.66912820513
+0.818358974359
+0.567179487179
+1.45035897436
+1.66912820513
+0.810256410256
+0.567179487179
+1.45035897436
+1.66912820513
+0.810256410256
+0.567179487179
+1.45846153846
+1.67723076923
+0.802153846154
+0.559076923077
+1.45846153846
+1.67723076923
+0.802153846154
+0.567179487179
+1.46656410256
+1.68533333333
+0.802153846154
+0.567179487179
+1.46656410256
+1.68533333333
+0.794051282051
+0.550974358974
+1.46656410256
+1.67723076923
+0.794051282051
+0.550974358974
+1.47466666667
+1.67723076923
+0.785948717949
+0.550974358974
+1.47466666667
+1.68533333333
+0.785948717949
+0.550974358974
+1.47466666667
+1.68533333333
+0.777846153846
+0.550974358974
+1.48276923077
+1.67723076923
+0.777846153846
+0.550974358974
+1.48276923077
+1.68533333333
+0.777846153846
+0.559076923077
+1.48276923077
+1.67723076923
+0.777846153846
+0.550974358974
+1.48276923077
+1.66912820513
+0.769743589744
+0.559076923077
+1.48276923077
+1.66912820513
+0.769743589744
+0.559076923077
+1.49087179487
+1.66102564103
+0.761641025641
+0.567179487179
+1.49087179487
+1.65292307692
+0.761641025641
+0.575282051282
+1.49087179487
+1.63671794872
+0.753538461538
+0.583384615385
+1.49897435897
+1.63671794872
+0.753538461538
+0.607692307692
+1.50707692308
+1.61241025641
+0.753538461538
+0.632
+1.50707692308
+1.5718974359
+0.745435897436
+0.66441025641
+1.51517948718
+1.53138461538
+0.737333333333
+0.713025641026
+1.51517948718
+1.47466666667
+0.729230769231
+0.769743589744
+1.51517948718
+1.43415384615
+0.729230769231
+0.810256410256
+1.52328205128
+1.40174358974
+0.721128205128
+0.834564102564
+1.52328205128
+1.37743589744
+0.721128205128
+0.858871794872
+1.53138461538
+1.36123076923
+0.713025641026
+0.875076923077
+1.53138461538
+1.34502564103
+0.713025641026
+0.891282051282
+1.53138461538
+1.33692307692
+0.713025641026
+0.907487179487
+1.53138461538
+1.32071794872
+0.704923076923
+0.907487179487
+1.53138461538
+1.29641025641
+0.696820512821
+0.923692307692
+1.53948717949
+1.29641025641
+0.696820512821
+0.923692307692
+1.53138461538
+1.28020512821
+0.704923076923
+0.956102564103
+1.53948717949
+1.2558974359
+0.696820512821
+0.988512820513
+1.54758974359
+1.23969230769
+0.696820512821
+1.00471794872
+1.53948717949
+1.21538461538
+0.688717948718
+1.02092307692
+1.53948717949
+1.19107692308
+0.680615384615
+1.04523076923
+1.53948717949
+1.17487179487
+0.680615384615
+1.06953846154
+1.53948717949
+1.15866666667
+0.680615384615
+1.07764102564
+1.53948717949
+1.14246153846
+0.672512820513
+1.09384615385
+1.55569230769
+1.13435897436
+0.680615384615
+1.11005128205
+1.56379487179
+1.11815384615
+0.680615384615
+1.11815384615
+1.55569230769
+1.11005128205
+0.66441025641
+1.11815384615
+1.55569230769
+1.10194871795
+0.66441025641
+1.11815384615
+1.55569230769
+1.08574358974
+0.66441025641
+1.13435897436
+1.55569230769
+1.07764102564
+0.656307692308
+1.15056410256
+1.55569230769
+1.06953846154
+0.66441025641
+1.16676923077
+1.55569230769
+1.05333333333
+0.66441025641
+1.19917948718
+1.5718974359
+1.03712820513
+0.66441025641
+1.20728205128
+1.56379487179
+1.02092307692
+0.656307692308
+1.22348717949
+1.56379487179
+0.996615384615
+0.656307692308
+1.23158974359
+1.5718974359
+0.988512820513
+0.648205128205
+1.24779487179
+1.56379487179
+0.964205128205
+0.648205128205
+1.264
+1.5718974359
+0.948
+0.640102564103
+1.28830769231
+1.5718974359
+0.939897435897
+0.648205128205
+1.30451282051
+1.5881025641
+0.931794871795
+0.648205128205
+1.31261538462
+1.5881025641
+0.91558974359
+0.640102564103
+1.31261538462
+1.58
+0.907487179487
+0.632
+1.32882051282
+1.58
+0.891282051282
+0.632
+1.33692307692
+1.58
+0.883179487179
+0.632
+1.34502564103
+1.58
+0.883179487179
+0.632
+1.36123076923
+1.58
+0.875076923077
+0.632
+1.36123076923
+1.5881025641
+0.875076923077
+0.632
+1.36933333333
+1.59620512821
+0.866974358974
+0.632
+1.36933333333
+1.59620512821
+0.858871794872
+0.623897435897
+1.36933333333
+1.59620512821
+0.858871794872
+0.615794871795
+1.38553846154
+1.59620512821
+0.850769230769
+0.615794871795
+1.38553846154
+1.59620512821
+0.842666666667
+0.615794871795
+1.38553846154
+1.59620512821
+0.842666666667
+0.615794871795
+1.40174358974
+1.60430769231
+0.842666666667
+0.615794871795
+1.39364102564
+1.61241025641
+0.842666666667
+0.615794871795
+1.40174358974
+1.61241025641
+0.834564102564
+0.59958974359
+1.39364102564
+1.60430769231
+0.834564102564
+0.59958974359
+1.39364102564
+1.60430769231
+0.818358974359
+0.59958974359
+1.40174358974
+1.61241025641
+0.826461538462
+0.591487179487
+1.40174358974
+1.62051282051
+0.826461538462
+0.591487179487
+1.40174358974
+1.62051282051
+0.826461538462
+0.591487179487
+1.40984615385
+1.62861538462
+0.826461538462
+0.591487179487
+1.40984615385
+1.62861538462
+0.818358974359
+0.583384615385
+1.40984615385
+1.62051282051
+0.818358974359
+0.583384615385
+1.40984615385
+1.62051282051
+0.818358974359
+0.583384615385
+1.40984615385
+1.62861538462
+0.818358974359
+0.583384615385
+1.40984615385
+1.62861538462
+0.810256410256
+0.575282051282
+1.41794871795
+1.62861538462
+0.810256410256
+0.575282051282
+1.40984615385
+1.63671794872
+0.810256410256
+0.583384615385
+1.41794871795
+1.63671794872
+0.810256410256
+0.575282051282
+1.41794871795
+1.63671794872
+0.810256410256
+0.567179487179
+1.42605128205
+1.63671794872
+0.810256410256
+0.559076923077
+1.42605128205
+1.64482051282
+0.810256410256
+0.567179487179
+1.42605128205
+1.64482051282
+0.802153846154
+0.559076923077
+1.42605128205
+1.64482051282
+0.802153846154
+0.559076923077
+1.43415384615
+1.64482051282
+0.802153846154
+0.559076923077
+1.43415384615
+1.66102564103
+0.794051282051
+0.559076923077
+1.43415384615
+1.65292307692
+0.794051282051
+0.550974358974
+1.43415384615
+1.65292307692
+0.785948717949
+0.542871794872
+1.43415384615
+1.65292307692
+0.794051282051
+0.550974358974
+1.44225641026
+1.65292307692
+0.794051282051
+0.550974358974
+1.44225641026
+1.66102564103
+0.785948717949
+0.542871794872
+1.43415384615
+1.65292307692
+0.785948717949
+0.550974358974
+1.43415384615
+1.66912820513
+0.785948717949
+0.550974358974
+1.44225641026
+1.66912820513
+0.785948717949
+0.550974358974
+1.44225641026
+1.66102564103
+0.785948717949
+0.542871794872
+1.44225641026
+1.66102564103
+0.785948717949
+0.542871794872
+1.45035897436
+1.66912820513
+0.777846153846
+0.534769230769
+1.45035897436
+1.66912820513
+0.777846153846
+0.542871794872
+1.45846153846
+1.66912820513
+0.777846153846
+0.534769230769
+1.45846153846
+1.66912820513
+0.777846153846
+0.542871794872
+1.45846153846
+1.67723076923
+0.777846153846
+0.534769230769
+1.45846153846
+1.66912820513
+0.769743589744
+0.526666666667
+1.45846153846
+1.66912820513
+0.761641025641
+0.526666666667
+1.45846153846
+1.66102564103
+0.761641025641
+0.526666666667
+1.45846153846
+1.66912820513
+0.761641025641
+0.534769230769
+1.45846153846
+1.66912820513
+0.761641025641
+0.526666666667
+1.45846153846
+1.66912820513
+0.761641025641
+0.534769230769
+1.46656410256
+1.67723076923
+0.761641025641
+0.534769230769
+1.45846153846
+1.66912820513
+0.761641025641
+0.534769230769
+1.46656410256
+1.66912820513
+0.761641025641
+0.534769230769
+1.45846153846
+1.66102564103
+0.761641025641
+0.534769230769
+1.46656410256
+1.66912820513
+0.761641025641
+0.534769230769
+1.46656410256
+1.66102564103
+0.753538461538
+0.534769230769
+1.46656410256
+1.65292307692
+0.761641025641
+0.534769230769
+1.47466666667
+1.66912820513
+0.761641025641
+0.542871794872
+1.47466666667
+1.66102564103
+0.753538461538
+0.542871794872
+1.47466666667
+1.65292307692
+0.753538461538
+0.542871794872
+1.47466666667
+1.65292307692
+0.753538461538
+0.542871794872
+1.47466666667
+1.65292307692
+0.745435897436
+0.542871794872
+1.47466666667
+1.65292307692
+0.745435897436
+0.550974358974
+1.47466666667
+1.65292307692
+0.745435897436
+0.550974358974
+1.47466666667
+1.64482051282
+0.745435897436
+0.559076923077
+1.48276923077
+1.65292307692
+0.745435897436
+0.559076923077
+1.47466666667
+1.63671794872
+0.745435897436
+0.559076923077
+1.48276923077
+1.63671794872
+0.745435897436
+0.559076923077
+1.47466666667
+1.63671794872
+0.745435897436
+0.559076923077
+1.48276923077
+1.63671794872
+0.745435897436
+0.559076923077
+1.47466666667
+1.62861538462
+0.737333333333
+0.567179487179
+1.48276923077
+1.62861538462
+0.745435897436
+0.575282051282
+1.48276923077
+1.62861538462
+0.745435897436
+0.575282051282
+1.48276923077
+1.62051282051
+0.745435897436
+0.583384615385
+1.48276923077
+1.60430769231
+0.729230769231
+0.583384615385
+1.49087179487
+1.59620512821
+0.737333333333
+0.591487179487
+1.49087179487
+1.59620512821
+0.737333333333
+0.607692307692
+1.48276923077
+1.5881025641
+0.729230769231
+0.615794871795
+1.49087179487
+1.58
+0.729230769231
+0.623897435897
+1.49087179487
+1.5718974359
+0.729230769231
+0.632
+1.49087179487
+1.5718974359
+0.737333333333
+0.623897435897
+1.49087179487
+1.5718974359
+0.729230769231
+0.615794871795
+1.49087179487
+1.5718974359
+0.737333333333
+0.623897435897
+1.49087179487
+1.58
+0.729230769231
+0.615794871795
+1.49087179487
+1.5718974359
+0.729230769231
+0.623897435897
+1.49087179487
+1.5718974359
+0.737333333333
+0.623897435897
+1.49087179487
+1.56379487179
+0.729230769231
+0.632
+1.49087179487
+1.5718974359
+0.737333333333
+0.632
+1.49087179487
+1.5718974359
+0.729230769231
+0.632
+1.49087179487
+1.56379487179
+0.737333333333
+0.640102564103
+1.49897435897
+1.56379487179
+0.737333333333
+0.640102564103
+1.49087179487
+1.55569230769
+0.729230769231
+0.648205128205
+1.49897435897
+1.54758974359
+0.729230769231
+0.656307692308
+1.49897435897
+1.53948717949
+0.729230769231
+0.66441025641
+1.50707692308
+1.54758974359
+0.729230769231
+0.66441025641
+1.49897435897
+1.54758974359
+0.729230769231
+0.656307692308
+1.49897435897
+1.53138461538
+0.729230769231
+0.656307692308
+1.49897435897
+1.53138461538
+0.729230769231
+0.656307692308
+1.49897435897
+1.53948717949
+0.729230769231
+0.656307692308
+1.49897435897
+1.53948717949
+0.729230769231
+0.656307692308
+1.49897435897
+1.54758974359
+0.729230769231
+0.66441025641
+1.50707692308
+1.53948717949
+0.729230769231
+0.672512820513
+1.50707692308
+1.53138461538
+0.729230769231
+0.672512820513
+1.49897435897
+1.52328205128
+0.729230769231
+0.672512820513
+1.49897435897
+1.50707692308
+0.729230769231
+0.680615384615
+1.49897435897
+1.50707692308
+0.721128205128
+0.688717948718
+1.49897435897
+1.49897435897
+0.721128205128
+0.688717948718
+1.49897435897
+1.49897435897
+0.729230769231
+0.688717948718
+1.49897435897
+1.51517948718
+0.721128205128
+0.680615384615
+1.49087179487
+1.51517948718
+0.729230769231
+0.656307692308
+1.49087179487
+1.52328205128
+0.729230769231
+0.656307692308
+1.49087179487
+1.53138461538
+0.729230769231
+0.632
+1.49897435897
+1.53138461538
+0.729230769231
+0.656307692308
+1.49087179487
+1.53138461538
+0.729230769231
+0.66441025641
+1.49897435897
+1.53138461538
+0.729230769231
+0.672512820513
+1.49897435897
+1.50707692308
+0.721128205128
+0.696820512821
+1.50707692308
+1.49897435897
+0.729230769231
+0.713025641026
+1.49897435897
+1.47466666667
+0.721128205128
+0.729230769231
+1.49897435897
+1.45035897436
+0.721128205128
+0.753538461538
+1.50707692308
+1.44225641026
+0.713025641026
+0.769743589744
+1.50707692308
+1.42605128205
+0.713025641026
+0.785948717949
+1.50707692308
+1.40984615385
+0.713025641026
+0.794051282051
+1.51517948718
+1.40984615385
+0.713025641026
+0.794051282051
+1.51517948718
+1.41794871795
+0.713025641026
+0.794051282051
+1.50707692308
+1.40174358974
+0.713025641026
+0.794051282051
+1.50707692308
+1.41794871795
+0.713025641026
+0.785948717949
+1.50707692308
+1.42605128205
+0.713025641026
+0.785948717949
+1.50707692308
+1.42605128205
+0.713025641026
+0.769743589744
+1.50707692308
+1.43415384615
+0.721128205128
+0.777846153846
+1.50707692308
+1.41794871795
+0.713025641026
+0.777846153846
+1.50707692308
+1.41794871795
+0.713025641026
+0.785948717949
+1.51517948718
+1.40984615385
+0.713025641026
+0.794051282051
+1.50707692308
+1.40174358974
+0.713025641026
+0.810256410256
+1.51517948718
+1.39364102564
+0.713025641026
+0.818358974359
+1.50707692308
+1.37743589744
+0.713025641026
+0.826461538462
+1.51517948718
+1.37743589744
+0.713025641026
+0.834564102564
+1.51517948718
+1.36123076923
+0.713025641026
+0.842666666667
+1.51517948718
+1.36123076923
+0.704923076923
+0.850769230769
+1.51517948718
+1.36123076923
+0.713025641026
+0.850769230769
+1.51517948718
+1.36123076923
+0.713025641026
+0.850769230769
+1.51517948718
+1.35312820513
+0.704923076923
+0.850769230769
+1.52328205128
+1.36123076923
+0.704923076923
+0.842666666667
+1.51517948718
+1.36123076923
+0.713025641026
+0.842666666667
+1.52328205128
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>116 </ID>
+      <BroadcastTo>4 114 129 141 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Potential</DataObjectName>
+      <DataObjectShortName>V avg</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>117</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>mV</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1243367811</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>2</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+    </DataColumn>
+    <DataColumn>
+      <ID>140 </ID>
+      <BroadcastTo>2 129 143 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>θ</DataObjectName>
+      <DataObjectShortName>θ</DataObjectShortName>
+      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>141</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>degrees</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1243617451</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>3</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+    </DataColumn>
+    <DataColumn>
+      <ID>142 </ID>
+      <BroadcastTo>2 129 146 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>ln p</DataObjectName>
+      <DataObjectShortName>ln p</DataObjectShortName>
+      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>143</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>mtorr</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1243617723</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>4</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+    </DataColumn>
+    <DataColumn>
+      <ID>145 </ID>
+      <BroadcastTo>3 129 151 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>p</DataObjectName>
+      <DataObjectShortName>p</DataObjectShortName>
+      <DataObjectColor>0xcccc 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>146</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>mtorr</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1243618747</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>5</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+    </DataColumn>
+    <DataColumn>
+      <ID>150 </ID>
+      <BroadcastTo>3 129 152 153 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Pressure</DataObjectName>
+      <DataObjectShortName>P</DataObjectShortName>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>151</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>mtorr</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1243630548</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>6</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+    </DataColumn>
+    <DataColumn>
+      <ID>210 </ID>
+      <BroadcastTo>2 4 129 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Pressure 2</DataObjectName>
+      <DataObjectShortName>Pres</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>846</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>kPa</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1243894194</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>8</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>1</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Pressure</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>1</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnCells>
+88.2281904762
+88.2567619048
+88.3615238095
+88.0186666667
+87.8281904762
+88.1615238095
+88.3424761905
+88.0091428571
+87.8281904762
+88.152
+88.332952381
+87.9900952381
+87.8281904762
+88.1615238095
+88.332952381
+87.9996190476
+87.8186666667
+88.171047619
+88.3424761905
+87.9996190476
+87.8186666667
+88.1615238095
+88.3234285714
+87.9900952381
+87.8186666667
+88.1615238095
+88.332952381
+87.9805714286
+87.7996190476
+88.1424761905
+88.3234285714
+87.9900952381
+87.7996190476
+88.152
+88.3234285714
+87.9900952381
+87.7996190476
+88.152
+88.332952381
+87.9900952381
+87.7900952381
+88.152
+88.3424761905
+87.9805714286
+87.7996190476
+88.152
+88.332952381
+87.971047619
+87.7996190476
+88.1615238095
+88.3424761905
+87.9805714286
+87.7900952381
+88.1615238095
+88.3424761905
+87.9805714286
+87.771047619
+88.152
+88.3424761905
+87.9615238095
+87.7805714286
+88.152
+88.332952381
+87.971047619
+87.771047619
+88.152
+88.332952381
+87.971047619
+87.7805714286
+88.1615238095
+88.3424761905
+87.971047619
+87.771047619
+88.1424761905
+88.3424761905
+87.971047619
+87.7805714286
+88.132952381
+88.3424761905
+87.971047619
+87.771047619
+88.152
+88.3234285714
+87.9805714286
+87.771047619
+88.152
+88.332952381
+87.9615238095
+87.7805714286
+88.152
+88.3424761905
+87.9805714286
+87.7805714286
+88.1424761905
+88.352
+87.9615238095
+87.732952381
+88.1615238095
+88.3234285714
+87.952
+87.771047619
+88.152
+88.3424761905
+87.9615238095
+87.771047619
+88.152
+88.3424761905
+87.9615238095
+87.7615238095
+88.1615238095
+88.332952381
+87.9615238095
+87.752
+88.152
+88.2948571429
+87.9139047619
+87.6758095238
+88.0186666667
+88.0853333333
+87.5900952381
+87.2662857143
+87.5043809524
+87.4948571429
+86.8948571429
+86.5043809524
+86.7139047619
+86.6281904762
+85.9805714286
+85.5615238095
+85.7996190476
+85.7139047619
+85.0662857143
+84.6853333333
+84.9424761905
+84.9043809524
+84.2853333333
+83.971047619
+84.2948571429
+84.2567619048
+83.6758095238
+83.4091428571
+83.7805714286
+83.7805714286
+83.2281904762
+83.0281904762
+83.4567619048
+83.4662857143
+82.9424761905
+82.771047619
+83.1996190476
+83.2472380952
+82.732952381
+82.5900952381
+83.0377142857
+83.1043809524
+82.6091428571
+82.5043809524
+82.9615238095
+82.9900952381
+82.5139047619
+82.4567619048
+82.9043809524
+82.9234285714
+82.4758095238
+82.4281904762
+82.8758095238
+82.8662857143
+82.4281904762
+82.3900952381
+82.8281904762
+82.8377142857
+82.3996190476
+82.3996190476
+82.8281904762
+82.7996190476
+82.371047619
+82.3805714286
+82.8091428571
+82.7615238095
+82.3615238095
+82.3805714286
+82.7996190476
+82.732952381
+82.352
+82.3900952381
+82.7900952381
+82.732952381
+82.3234285714
+82.3996190476
+82.752
+82.7139047619
+82.3234285714
+82.4091428571
+82.7805714286
+82.7139047619
+82.3234285714
+82.4091428571
+82.7900952381
+82.6853333333
+82.2948571429
+82.4091428571
+82.7900952381
+82.6758095238
+82.3043809524
+82.4281904762
+82.7805714286
+82.6567619048
+82.2948571429
+82.4281904762
+82.752
+82.6472380952
+82.2853333333
+82.4091428571
+82.7900952381
+82.6186666667
+82.2853333333
+82.4377142857
+82.771047619
+82.6281904762
+82.2758095238
+82.4377142857
+82.7805714286
+82.5900952381
+82.2758095238
+82.4567619048
+82.7805714286
+82.5996190476
+82.2662857143
+82.4567619048
+82.771047619
+82.5805714286
+82.2662857143
+82.4567619048
+82.7805714286
+82.552
+82.2567619048
+82.4662857143
+82.7615238095
+82.5615238095
+82.2567619048
+82.4853333333
+82.7805714286
+82.5424761905
+82.2472380952
+82.4948571429
+82.7805714286
+82.532952381
+82.2377142857
+82.5043809524
+82.7900952381
+82.5139047619
+82.2377142857
+82.5043809524
+82.8091428571
+82.5043809524
+82.2377142857
+82.5234285714
+82.7996190476
+82.4948571429
+82.2281904762
+82.5139047619
+82.7900952381
+82.4948571429
+82.2377142857
+82.532952381
+82.7900952381
+82.4948571429
+82.2281904762
+82.5424761905
+82.7900952381
+82.4853333333
+82.2186666667
+82.5139047619
+82.8091428571
+82.4758095238
+82.2186666667
+82.532952381
+82.7900952381
+82.4472380952
+82.2281904762
+82.5424761905
+82.7900952381
+82.4662857143
+82.1996190476
+82.552
+82.7996190476
+82.4472380952
+82.2186666667
+82.5615238095
+82.7996190476
+82.4472380952
+82.1996190476
+82.571047619
+82.7996190476
+82.4377142857
+82.1996190476
+82.571047619
+82.8091428571
+82.4281904762
+82.171047619
+82.5805714286
+82.7996190476
+82.4186666667
+82.2091428571
+82.5996190476
+82.7996190476
+82.4091428571
+82.1900952381
+82.5996190476
+82.7900952381
+82.3900952381
+82.1900952381
+82.6186666667
+82.7900952381
+82.3996190476
+82.1900952381
+82.6091428571
+82.7996190476
+82.3900952381
+82.1900952381
+82.6186666667
+82.8186666667
+82.3900952381
+82.1805714286
+82.6186666667
+82.8186666667
+82.3805714286
+82.1805714286
+82.5900952381
+82.8186666667
+82.371047619
+82.1805714286
+82.6091428571
+82.8186666667
+82.371047619
+82.171047619
+82.6186666667
+82.8091428571
+82.3805714286
+82.1805714286
+82.6281904762
+82.8186666667
+82.332952381
+82.1805714286
+82.6281904762
+82.7996190476
+82.371047619
+82.1615238095
+82.6281904762
+82.8186666667
+82.3615238095
+82.171047619
+82.6186666667
+82.8091428571
+82.3805714286
+82.1615238095
+82.6281904762
+82.8091428571
+82.3805714286
+82.1615238095
+82.6281904762
+82.8091428571
+82.3615238095
+82.152
+82.6377142857
+82.8186666667
+82.3615238095
+82.1615238095
+82.6186666667
+82.8472380952
+82.3615238095
+82.1615238095
+82.6377142857
+82.8186666667
+82.3615238095
+82.152
+82.6281904762
+82.8281904762
+82.3615238095
+82.1615238095
+82.6377142857
+82.8186666667
+82.352
+82.152
+82.6377142857
+82.8281904762
+82.3424761905
+82.132952381
+82.6377142857
+82.8281904762
+82.3424761905
+82.1424761905
+82.6281904762
+82.8472380952
+82.3424761905
+82.171047619
+82.6186666667
+82.8472380952
+82.3424761905
+82.152
+82.6377142857
+82.8472380952
+82.352
+82.1424761905
+82.6472380952
+82.8377142857
+82.3615238095
+82.132952381
+82.6377142857
+82.8377142857
+82.332952381
+82.1234285714
+82.6472380952
+82.8472380952
+82.3139047619
+82.1234285714
+82.6472380952
+82.8567619048
+82.332952381
+82.1234285714
+82.6472380952
+82.8377142857
+82.3424761905
+82.1234285714
+82.6377142857
+82.8472380952
+82.3424761905
+82.1043809524
+82.6377142857
+82.8567619048
+82.3424761905
+82.1234285714
+82.6567619048
+82.8662857143
+82.332952381
+82.1139047619
+82.6472380952
+82.8567619048
+82.332952381
+82.1043809524
+82.6567619048
+82.8567619048
+82.3234285714
+82.1043809524
+82.6662857143
+82.8662857143
+82.3139047619
+82.1043809524
+82.6567619048
+82.8472380952
+82.3234285714
+82.1139047619
+82.6567619048
+82.8377142857
+82.3139047619
+82.1139047619
+82.6567619048
+82.8472380952
+82.2948571429
+82.1139047619
+82.6662857143
+82.8472380952
+82.3424761905
+82.1234285714
+82.6662857143
+82.8377142857
+82.3043809524
+82.1139047619
+82.6567619048
+82.8472380952
+82.3043809524
+82.1139047619
+82.6758095238
+82.8472380952
+82.3043809524
+82.1234285714
+82.6567619048
+82.8281904762
+82.3043809524
+82.1234285714
+82.6567619048
+82.8186666667
+82.2948571429
+82.1234285714
+82.6662857143
+82.8186666667
+82.3043809524
+82.1424761905
+82.6662857143
+82.8186666667
+82.3043809524
+82.152
+82.6758095238
+82.7615238095
+82.2948571429
+82.1805714286
+82.6853333333
+82.771047619
+82.2948571429
+82.2091428571
+82.6853333333
+82.732952381
+82.2758095238
+82.2377142857
+82.6948571429
+82.6948571429
+82.2662857143
+82.2662857143
+82.7043809524
+82.6662857143
+82.2758095238
+82.2758095238
+82.6853333333
+82.6758095238
+82.2662857143
+82.2853333333
+82.7139047619
+82.6662857143
+82.2281904762
+82.2948571429
+82.7139047619
+82.6472380952
+82.2567619048
+82.3043809524
+82.7139047619
+82.6472380952
+82.2472380952
+82.2948571429
+82.7139047619
+82.6377142857
+82.2567619048
+82.3234285714
+82.7139047619
+82.6186666667
+82.2567619048
+82.3234285714
+82.7139047619
+82.6281904762
+82.2472380952
+82.3234285714
+82.7139047619
+82.6091428571
+82.2281904762
+82.352
+82.732952381
+82.5900952381
+82.2281904762
+82.371047619
+82.7234285714
+82.5900952381
+82.2281904762
+82.3805714286
+82.732952381
+82.571047619
+82.2281904762
+82.3805714286
+82.732952381
+82.5615238095
+82.2377142857
+82.371047619
+82.732952381
+82.5424761905
+82.1900952381
+82.3900952381
+82.7424761905
+82.532952381
+82.2091428571
+82.4281904762
+82.732952381
+82.5234285714
+82.2091428571
+82.4281904762
+82.7424761905
+82.5234285714
+82.2186666667
+82.4281904762
+82.7424761905
+82.5043809524
+82.2281904762
+82.4377142857
+82.732952381
+82.5043809524
+82.2186666667
+82.4472380952
+82.7043809524
+82.5043809524
+82.1996190476
+82.4472380952
+82.7424761905
+82.4662857143
+82.2091428571
+82.4472380952
+82.7424761905
+82.4853333333
+82.1996190476
+82.4567619048
+82.732952381
+82.4472380952
+82.2091428571
+82.4758095238
+82.7424761905
+82.4758095238
+82.2091428571
+82.4758095238
+82.7424761905
+82.4662857143
+82.1900952381
+82.4948571429
+82.7615238095
+82.4662857143
+82.1900952381
+82.4948571429
+82.7615238095
+82.4281904762
+82.1900952381
+82.5139047619
+82.752
+82.4377142857
+82.1805714286
+82.5234285714
+82.7615238095
+82.4186666667
+82.1805714286
+82.5234285714
+82.7615238095
+82.4091428571
+82.1805714286
+82.571047619
+82.7900952381
+82.4186666667
+82.1805714286
+82.5615238095
+82.7900952381
+82.4091428571
+82.1900952381
+82.5615238095
+82.771047619
+82.371047619
+82.1900952381
+82.571047619
+82.771047619
+82.3900952381
+82.1615238095
+82.5805714286
+82.771047619
+82.371047619
+82.1615238095
+82.571047619
+82.7805714286
+82.3805714286
+82.1615238095
+82.5805714286
+82.7805714286
+82.3805714286
+82.1615238095
+82.5805714286
+82.771047619
+82.352
+82.171047619
+82.5996190476
+82.7900952381
+82.371047619
+82.1615238095
+82.5996190476
+82.771047619
+82.371047619
+82.1615238095
+82.571047619
+82.7805714286
+82.371047619
+82.1615238095
+82.5900952381
+82.7900952381
+82.371047619
+82.152
+82.5996190476
+82.7900952381
+82.352
+82.152
+82.5996190476
+82.7900952381
+82.3424761905
+82.1424761905
+82.6091428571
+82.7996190476
+82.3424761905
+82.152
+82.6281904762
+82.771047619
+82.3615238095
+82.1615238095
+82.6186666667
+82.8091428571
+82.3424761905
+82.171047619
+82.6091428571
+82.7996190476
+82.352
+82.1424761905
+82.5805714286
+82.8091428571
+82.352
+82.1424761905
+82.6091428571
+82.7996190476
+82.3424761905
+82.1424761905
+82.6091428571
+82.7900952381
+82.3424761905
+82.1424761905
+82.6091428571
+82.7996190476
+82.332952381
+82.1424761905
+82.6186666667
+82.7996190476
+82.3424761905
+82.1424761905
+82.6186666667
+82.7996190476
+82.332952381
+82.1424761905
+82.6186666667
+82.8091428571
+82.3234285714
+82.132952381
+82.6091428571
+82.8091428571
+82.3424761905
+82.1234285714
+82.5996190476
+82.8091428571
+82.332952381
+82.132952381
+82.6281904762
+82.8091428571
+82.3424761905
+82.1139047619
+82.6186666667
+82.8091428571
+82.3424761905
+82.132952381
+82.6186666667
+82.8186666667
+82.332952381
+82.132952381
+82.6281904762
+82.8186666667
+82.332952381
+82.132952381
+82.6091428571
+82.7996190476
+82.3043809524
+82.1234285714
+82.6186666667
+82.8091428571
+82.3234285714
+82.1234285714
+82.6281904762
+82.8091428571
+82.332952381
+82.1043809524
+82.6377142857
+82.8377142857
+82.332952381
+82.1234285714
+82.6091428571
+82.8091428571
+82.3424761905
+82.1234285714
+82.6186666667
+82.8186666667
+82.332952381
+82.1043809524
+82.6281904762
+82.8281904762
+82.332952381
+82.1234285714
+82.6281904762
+82.8281904762
+82.332952381
+82.1139047619
+82.6377142857
+82.8281904762
+82.332952381
+82.1139047619
+82.6281904762
+82.8281904762
+82.3139047619
+82.1139047619
+82.6281904762
+82.8377142857
+82.3234285714
+82.1139047619
+82.6281904762
+82.8377142857
+82.332952381
+82.1139047619
+82.6281904762
+82.8377142857
+82.332952381
+82.1043809524
+82.6281904762
+82.8377142857
+82.3234285714
+82.1139047619
+82.6281904762
+82.8377142857
+82.332952381
+82.1139047619
+82.6377142857
+82.8377142857
+82.332952381
+82.1139047619
+82.6281904762
+82.8281904762
+82.3139047619
+82.1139047619
+82.6377142857
+82.8281904762
+82.3139047619
+82.1139047619
+82.6377142857
+82.7900952381
+82.3234285714
+82.1043809524
+82.6377142857
+82.8472380952
+82.3139047619
+82.1043809524
+82.6377142857
+82.8472380952
+82.3234285714
+82.1043809524
+82.6377142857
+82.8472380952
+82.3139047619
+82.1139047619
+82.6377142857
+82.8377142857
+82.3234285714
+82.0948571429
+82.6472380952
+82.8472380952
+82.3043809524
+82.0758095238
+82.6472380952
+82.8281904762
+82.3043809524
+82.0948571429
+82.6377142857
+82.8377142857
+82.3139047619
+82.1043809524
+82.6377142857
+82.8377142857
+82.2853333333
+82.0567619048
+82.6472380952
+82.8472380952
+82.3043809524
+82.1043809524
+82.6377142857
+82.8377142857
+82.3139047619
+82.0948571429
+82.6472380952
+82.8567619048
+82.3043809524
+82.0948571429
+82.6377142857
+82.8567619048
+82.3139047619
+82.1043809524
+82.6472380952
+82.8377142857
+82.3043809524
+82.0948571429
+82.6472380952
+82.8281904762
+82.2948571429
+82.1043809524
+82.6567619048
+82.8377142857
+82.3139047619
+82.1043809524
+82.6567619048
+82.8377142857
+82.3043809524
+82.0948571429
+82.6567619048
+82.8377142857
+82.2662857143
+82.1043809524
+82.6472380952
+82.8377142857
+82.3139047619
+82.1139047619
+82.6281904762
+82.8472380952
+82.2948571429
+82.1139047619
+82.6472380952
+82.7996190476
+82.3139047619
+82.1043809524
+82.6567619048
+82.8377142857
+82.2948571429
+82.1043809524
+82.6186666667
+82.8091428571
+82.3043809524
+82.1043809524
+82.6567619048
+82.8281904762
+82.2853333333
+82.1043809524
+82.6662857143
+82.8281904762
+82.2948571429
+82.1043809524
+82.6472380952
+82.8281904762
+82.2948571429
+82.1043809524
+82.6567619048
+82.8091428571
+82.2948571429
+82.1234285714
+82.6472380952
+82.8091428571
+82.3043809524
+82.1139047619
+82.6567619048
+82.8186666667
+82.3139047619
+82.0853333333
+82.6472380952
+82.8281904762
+82.2948571429
+82.1234285714
+82.6472380952
+82.8186666667
+82.2853333333
+82.1043809524
+82.6567619048
+82.8091428571
+82.2853333333
+82.1139047619
+82.6662857143
+82.8091428571
+82.2948571429
+82.1234285714
+82.6567619048
+82.8186666667
+82.2853333333
+82.1139047619
+82.6662857143
+82.7996190476
+82.2853333333
+82.1043809524
+82.6758095238
+82.7900952381
+82.2853333333
+82.132952381
+82.6662857143
+82.771047619
+82.2948571429
+82.132952381
+82.6567619048
+82.7900952381
+82.2948571429
+82.1424761905
+82.6567619048
+82.7900952381
+82.2853333333
+82.152
+82.6662857143
+82.752
+82.2853333333
+82.152
+82.6662857143
+82.7805714286
+82.2758095238
+82.1424761905
+82.6377142857
+82.7900952381
+82.2472380952
+82.152
+82.6662857143
+82.7615238095
+82.2948571429
+82.1424761905
+82.6567619048
+82.7805714286
+82.2853333333
+82.1424761905
+82.6472380952
+82.7996190476
+82.2853333333
+82.152
+82.6377142857
+82.7900952381
+82.2853333333
+82.1424761905
+82.6662857143
+82.7900952381
+82.2662857143
+82.1615238095
+82.6662857143
+82.7805714286
+82.2853333333
+82.152
+82.6662857143
+82.7805714286
+82.2853333333
+82.1615238095
+82.6472380952
+82.7900952381
+82.2758095238
+82.171047619
+82.6758095238
+82.7805714286
+82.2758095238
+82.152
+82.6662857143
+82.7900952381
+82.2758095238
+82.152
+82.6758095238
+82.7900952381
+82.2853333333
+82.171047619
+82.6662857143
+82.771047619
+82.2662857143
+82.1615238095
+82.6758095238
+82.7615238095
+82.2853333333
+82.171047619
+82.6662857143
+82.771047619
+82.2662857143
+82.1615238095
+82.6758095238
+82.771047619
+82.2758095238
+82.171047619
+82.6758095238
+82.7615238095
+82.2662857143
+82.171047619
+82.6853333333
+82.7615238095
+82.2853333333
+82.132952381
+82.6853333333
+82.7615238095
+82.2758095238
+82.171047619
+82.6567619048
+82.771047619
+82.2758095238
+82.1615238095
+82.6472380952
+82.7805714286
+82.2758095238
+82.171047619
+82.6758095238
+82.771047619
+82.2853333333
+82.1805714286
+82.6758095238
+82.7615238095
+82.2662857143
+82.1805714286
+82.6853333333
+82.752
+82.2758095238
+82.1615238095
+82.6758095238
+82.7424761905
+82.2758095238
+82.171047619
+82.6758095238
+82.752
+82.2662857143
+82.171047619
+82.6662857143
+82.732952381
+82.2662857143
+82.1900952381
+82.6662857143
+82.7424761905
+82.2758095238
+82.1805714286
+82.6758095238
+82.7424761905
+82.2567619048
+82.171047619
+82.6472380952
+82.752
+82.2662857143
+82.171047619
+82.6567619048
+82.7615238095
+82.2758095238
+82.1615238095
+82.6567619048
+82.7615238095
+82.2758095238
+82.1424761905
+82.6567619048
+82.7615238095
+82.2758095238
+82.1615238095
+82.6662857143
+82.752
+82.2758095238
+82.152
+82.6662857143
+82.7615238095
+82.2662857143
+82.171047619
+82.6662857143
+82.7615238095
+82.2758095238
+82.1900952381
+82.6853333333
+82.752
+82.2567619048
+82.1996190476
+82.6758095238
+82.7234285714
+82.2662857143
+82.1996190476
+82.6853333333
+82.7043809524
+82.2662857143
+82.2281904762
+82.6472380952
+82.7234285714
+82.2662857143
+82.2281904762
+82.6853333333
+82.6948571429
+82.2567619048
+82.2377142857
+82.6758095238
+82.6948571429
+82.2567619048
+82.2567619048
+82.6853333333
+82.6758095238
+82.2281904762
+82.2472380952
+82.7139047619
+82.6948571429
+82.2662857143
+82.2472380952
+82.6853333333
+82.6853333333
+82.2567619048
+82.2377142857
+82.6948571429
+82.6662857143
+82.2662857143
+82.2377142857
+82.6853333333
+82.6948571429
+82.2472380952
+82.2377142857
+82.6758095238
+82.6948571429
+82.2662857143
+82.2377142857
+82.6758095238
+82.6948571429
+82.2567619048
+82.2472380952
+82.6853333333
+82.6948571429
+82.2567619048
+82.2377142857
+82.6853333333
+82.6853333333
+82.2377142857
+82.2377142857
+82.6948571429
+82.7043809524
+82.2662857143
+82.2377142857
+82.6853333333
+82.6758095238
+82.2567619048
+82.2662857143
+82.6948571429
+82.6662857143
+82.2567619048
+82.2567619048
+82.6948571429
+82.6662857143
+82.2377142857
+82.2567619048
+82.6948571429
+82.6662857143
+82.2567619048
+82.2662857143
+82.7234285714
+82.6758095238
+82.2567619048
+82.2758095238
+82.6758095238
+82.6472380952
+82.2472380952
+82.2853333333
+82.6948571429
+82.6472380952
+82.2567619048
+82.2853333333
+82.7043809524
+82.6472380952
+82.2472380952
+82.2853333333
+82.7043809524
+82.6567619048
+82.2281904762
+82.2948571429
+82.7043809524
+82.6758095238
+82.2472380952
+82.2567619048
+82.6948571429
+82.6567619048
+82.2567619048
+82.2758095238
+82.6758095238
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+  <DataSet>
+    <ID>168 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>&&^% CurveFitFunctions %^&&</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>0</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <FunctionModel>
+      <ID>169 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*ln(B*x)</DataObjectName>
+      <DataObjectShortName>ln</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*ln(B*x)</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>12</FunctionModelType>
+      <FunctionCoefficientArray>2 82.7779081606 3.17600692274e+023 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>2 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>2 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>3</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>177 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1 1 1 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>196 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 2</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1.332492053e+041 1.5839617541e+037 68.3997119413 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>199 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 3</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 428011.798482 0.0816380519045 89.8026460571 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>202 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 4</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 108363.064892 0.0636644626933 83.4029432712 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>318 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 5</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 8888304.31206 0.0916646457336 57.6421692499 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>324 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 6</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1674094.73212 0.0764212258098 55.0193000082 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>330 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 7</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 81138727.1544 0.109957943001 20.0532533132 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>333 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 8</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1527385.65 0.0755834684606 54.5984090958 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>336 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 9</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1808847.73555 0.07683898821 60.1642425346 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>339 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 10</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1748.77709978 0.0270819834204 47.5934535288 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>342 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 11</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 2434385.37129 0.0798337183848 55.9135889477 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>348 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 12</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 731353.948962 0.0692866211942 57.1978237697 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>351 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 13</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 201007622.471 0.120219607652 40.721427857 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>354 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 14</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 3806415.33162 0.102187383368 65.235116577 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>360 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 15</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 2942164.72842 0.099069156646 65.6473274857 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>363 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 16</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 35505946.1991 0.115741477054 66.389474929 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>366 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 17</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 5747937.24756 0.0962866626232 57.6419075422 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>369 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 18</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 2143120.54702 0.0863383168753 59.2536669571 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>372 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 19</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 36745652.7007 0.115717415138 61.3569567316 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>378 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 20</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 32724849.5012 0.114702765149 61.7120984093 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>381 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 21</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 6917011.87137 0.0980764312353 60.490265521 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>384 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 22</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1222113.54311 0.0805600165932 54.2081043972 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>387 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 23</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 7332713.00066 0.0988210226554 58.1764532471 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>390 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 24</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 10763829.2851 0.104294549126 66.4826828725 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>399 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 25</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 12319890.3232 0.105599470477 60.2550310653 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>402 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 26</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 2687457.28933 0.0892850274981 56.058391979 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>405 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 27</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 702512.43042 0.0755169089051 52.5844985841 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>411 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 28</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 14385074.859 0.10789005127 61.1327653161 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>414 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 29</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 4328814.91686 0.0948265493213 57.76916655 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>417 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 30</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 601056.723319 0.0743508864333 52.6473962269 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>420 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 31</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 192038.966866 0.0711161970403 98.8948146553 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>424 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 32</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 903681.436377 0.0683012404933 106.652856437 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>427 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 33</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 23655472.7797 0.101190652687 126.364948825 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>430 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 34</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1467109.29006 0.0729845861491 109.600885821 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>433 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 35</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 51382.4371513 0.00145995419038 131.549869546 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>436 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 36</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 939702.419856 0.0687797193003 136.689663333 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>439 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 37</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 1108524.44766 0.0676647336738 141.899240637 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>519 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 38</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 623684.275339 0.0623513192109 111.456510989 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>522 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 39</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 699188.98546 0.0643040369684 112.263286015 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>525 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 40</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 67739.1590149 0.0112384257514 132.291874738 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>528 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 41</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 460289.165611 0.0559964150099 101.230667614 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>531 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 42</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 16.5828746894 -0.875150203453 -293.20081909 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1e+030 1e+030 1e+030 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>534 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*x)+B 43</DataObjectName>
+      <DataObjectShortName>exp.</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 0.00193186845488 -2.30789480327 88.1066616078 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0.000250328290305 0.0221369346783 2.1012950857 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>855 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-Ct)+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 6.148826351e-006 -1.84236737516 99.989545377 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1.38756051328e-006 0.0216608657549 2.04207058613 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>858 </ID>
+      <BroadcastTo>1 152 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-Ct)+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 0.000881221602136 -1.61996109937 74.7199219398 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 9.40797990957e-005 0.012165270601 1.48623341181 </FunctionCoefficientUncertaintyArray>
+      <FunctionFixedCoefficientArray>3 1 1 1 </FunctionFixedCoefficientArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+  </DataSet>
+  <DataSourceServer>
+    <ID>13 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <MBLLabProSource>
+      <ID>846 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <MBLPortRef><PortRef PortType="2" Location="20390912 (USB)" DisplayName="20390912 (USB)" /></MBLPortRef>
+      <MBLAnalogOutWaveForm>0</MBLAnalogOutWaveForm>
+      <MBLAnalogOutFrequency>1</MBLAnalogOutFrequency>
+      <MBLAnalogOutAmplitude>2</MBLAnalogOutAmplitude>
+      <MBLAnalogOutCreateConstant>0</MBLAnalogOutCreateConstant>
+      <MBLSerialNumber>0</MBLSerialNumber>
+      <MBLLabPro_EnhancedTiming>1</MBLLabPro_EnhancedTiming>
+    </MBLLabProSource>
+    <CalcColumnSource2>
+      <ID>117 </ID>
+      <BroadcastTo>1 116 </BroadcastTo>
+      <Visible>1</Visible>
+      <CalcEquation>smoothAve("Measured V")</CalcEquation>
+      <CalcOutColumnID>116</CalcOutColumnID>
+      <CalcWantNANs>1</CalcWantNANs>
+    </CalcColumnSource2>
+    <CalcColumnSource2>
+      <ID>141 </ID>
+      <BroadcastTo>1 140 </BroadcastTo>
+      <Visible>1</Visible>
+      <CalcEquation>8.636*"Potential"+40.963</CalcEquation>
+      <CalcOutColumnID>140</CalcOutColumnID>
+      <CalcWantNANs>1</CalcWantNANs>
+    </CalcColumnSource2>
+    <CalcColumnSource2>
+      <ID>143 </ID>
+      <BroadcastTo>1 142 </BroadcastTo>
+      <Visible>1</Visible>
+      <CalcEquation>605.64+"θ"*(-38.56+"θ"*(1.0231+"θ"*(-0.0143+"θ"*(0.00011086+"θ"*(-4.518E-007+"θ"*7.5603E-010)))))</CalcEquation>
+      <CalcOutColumnID>142</CalcOutColumnID>
+      <CalcWantNANs>1</CalcWantNANs>
+    </CalcColumnSource2>
+    <CalcColumnSource2>
+      <ID>146 </ID>
+      <BroadcastTo>1 145 </BroadcastTo>
+      <Visible>1</Visible>
+      <CalcEquation>exp("ln p")</CalcEquation>
+      <CalcOutColumnID>145</CalcOutColumnID>
+      <CalcWantNANs>1</CalcWantNANs>
+    </CalcColumnSource2>
+    <CalcColumnSource2>
+      <ID>151 </ID>
+      <BroadcastTo>1 150 </BroadcastTo>
+      <Visible>1</Visible>
+      <CalcEquation>smoothAve("p")</CalcEquation>
+      <CalcOutColumnID>150</CalcOutColumnID>
+      <CalcWantNANs>1</CalcWantNANs>
+    </CalcColumnSource2>
+  </DataSourceServer>
+  <MBLBrain>
+    <MBLCollectionUserCollectMode>0</MBLCollectionUserCollectMode>
+    <MBLCollectionTimeUnit>1</MBLCollectionTimeUnit>
+    <MBLCollectionSampleAtZero>0</MBLCollectionSampleAtZero>
+    <MBLCollectionRepeat>0</MBLCollectionRepeat>
+    <MBLCollectionEnhancedTiming>1</MBLCollectionEnhancedTiming>
+    <MBLFastStart>0</MBLFastStart>
+    <MBLCollectionDeltaT>0.0625</MBLCollectionDeltaT>
+    <MBLCollectionNumSamples>57600</MBLCollectionNumSamples>
+    <MBLCollectionMaxDuration>3600</MBLCollectionMaxDuration>
+    <MBLCollectionOversampling>0</MBLCollectionOversampling>
+    <MBLCollectionNumEWEColumns>1</MBLCollectionNumEWEColumns>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName>Entry</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Entry</MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLCollectionSelectedEventTime>0</MBLCollectionSelectedEventTime>
+    <MBLCollectionSelectedEventName>Event Number</MBLCollectionSelectedEventName>
+    <MBLCollectionSelectedEventShortName>Event</MBLCollectionSelectedEventShortName>
+    <MBLCollectionSelectedEventUnits></MBLCollectionSelectedEventUnits>
+    <MBLCollectionEndDigitalAfterNum>0</MBLCollectionEndDigitalAfterNum>
+    <MBLCollectionNumDigitalEvents>10</MBLCollectionNumDigitalEvents>
+    <MBLCollectionTriggerEnabled>0</MBLCollectionTriggerEnabled>
+    <MBLTriggerType>0</MBLTriggerType>
+    <MBLTriggerValue>1.9</MBLTriggerValue>
+    <MBLTriggerUseConstant>0</MBLTriggerUseConstant>
+    <MBLTriggerConstant></MBLTriggerConstant>
+    <MBLTriggerPreTriggerData>0</MBLTriggerPreTriggerData>
+    <MBLRadiationInterval>5</MBLRadiationInterval>
+    <MBLRadiationIntervalTimeUnit>1</MBLRadiationIntervalTimeUnit>
+    <MBLStoreLatestMax>0</MBLStoreLatestMax>
+    <MBLEWEAverageData>0</MBLEWEAverageData>
+    <MBLSEAverageData>0</MBLSEAverageData>
+    <MBLContinuous>0</MBLContinuous>
+    <MBLChannel>
+      <MBLChannelIndex>1</MBLChannelIndex>
+      <MBLChannelSensorIDName>INA</MBLChannelSensorIDName>
+      <MBLChannelSensorAutoID>0</MBLChannelSensorAutoID>
+      <MBLChannelCalibrationStorage>2</MBLChannelCalibrationStorage>
+      <MBLChannelReverse>0</MBLChannelReverse>
+      <MBLChannelOffset>0</MBLChannelOffset>
+      <MBLChannelX4Mode>0</MBLChannelX4Mode>
+      <MBLChannelResetOnCollect>1</MBLChannelResetOnCollect>
+      <MBLChannelTrigger>1</MBLChannelTrigger>
+      <MBLCalibration>
+        <MBLCalibrationUnits>mV20</MBLCalibrationUnits>
+        <MBLCalibrationPrettyUnits>mV</MBLCalibrationPrettyUnits>
+        <MBLCalibrationIDName>INA20</MBLCalibrationIDName>
+        <MBLCalibrationUserName>INSTR Amp 0-20mV</MBLCalibrationUserName>
+        <MBLCalibrationEquationType>1</MBLCalibrationEquationType>
+        <MBLCalibrationIDValue>0</MBLCalibrationIDValue>
+        <MBLCalibrationInterfaceOp>14</MBLCalibrationInterfaceOp>
+        <MBLCalibrationCoefficients>2 0 6.636 </MBLCalibrationCoefficients>
+        <MBLCalibrationYMin>0</MBLCalibrationYMin>
+        <MBLCalibrationYMax>20</MBLCalibrationYMax>
+        <MBLCalibrationNumPlaces>3</MBLCalibrationNumPlaces>
+        <MBLCalibrationDDSIndex>0</MBLCalibrationDDSIndex>
+        <MBLCalibrationRangeDesc></MBLCalibrationRangeDesc>
+        <MBLCalibrationColumnName>Potential</MBLCalibrationColumnName>
+        <MBLCalibrationShortColumnName>Pot</MBLCalibrationShortColumnName>
+        <MBLCalibrationExperimentType>1</MBLCalibrationExperimentType>
+        <MBLCalibrationTrace>1</MBLCalibrationTrace>
+      </MBLCalibration>
+      <MBLColumnHeaderName>Potential</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Pot</MBLColumnHeaderShortName>
+      <MBLChannelMatch0>113
+Potential</MBLChannelMatch0>
+      <MBLSensorSourceID>846</MBLSensorSourceID>
+      <MBLSensorPhotogateUnitsMeters>1</MBLSensorPhotogateUnitsMeters>
+      <MBLSensorPhotogateUnits>m</MBLSensorPhotogateUnits>
+      <MBLSensorOceanOpticsWavelength>-1</MBLSensorOceanOpticsWavelength>
+      <MBLSensorOceanOpticsWavelengthEnd>-1</MBLSensorOceanOpticsWavelengthEnd>
+      <MBLChannelZeroDefault>0</MBLChannelZeroDefault>
+    </MBLChannel>
+    <MBLChannel>
+      <MBLChannelIndex>2</MBLChannelIndex>
+      <MBLChannelSensorIDName>BAR</MBLChannelSensorIDName>
+      <MBLChannelSensorAutoID>46</MBLChannelSensorAutoID>
+      <MBLChannelCalibrationStorage>1</MBLChannelCalibrationStorage>
+      <MBLChannelReverse>0</MBLChannelReverse>
+      <MBLChannelOffset>0</MBLChannelOffset>
+      <MBLChannelX4Mode>0</MBLChannelX4Mode>
+      <MBLChannelResetOnCollect>1</MBLChannelResetOnCollect>
+      <MBLChannelTrigger>0</MBLChannelTrigger>
+      <MBLCalibration>
+        <MBLCalibrationUnits>KPA</MBLCalibrationUnits>
+        <MBLCalibrationPrettyUnits>kPa</MBLCalibrationPrettyUnits>
+        <MBLCalibrationIDName>___ExpFile___</MBLCalibrationIDName>
+        <MBLCalibrationUserName>Barometer kPa</MBLCalibrationUserName>
+        <MBLCalibrationEquationType>1</MBLCalibrationEquationType>
+        <MBLCalibrationIDValue>46</MBLCalibrationIDValue>
+        <MBLCalibrationInterfaceOp>14</MBLCalibrationInterfaceOp>
+        <MBLCalibrationCoefficients>2 81.952 7.8 </MBLCalibrationCoefficients>
+        <MBLCalibrationYMin>80</MBLCalibrationYMin>
+        <MBLCalibrationYMax>110</MBLCalibrationYMax>
+        <MBLCalibrationNumPlaces>3</MBLCalibrationNumPlaces>
+        <MBLCalibrationDDSIndex>4294967295</MBLCalibrationDDSIndex>
+        <MBLCalibrationRangeDesc></MBLCalibrationRangeDesc>
+        <MBLCalibrationColumnName>Pressure</MBLCalibrationColumnName>
+        <MBLCalibrationShortColumnName>Pres</MBLCalibrationShortColumnName>
+        <MBLCalibrationExperimentType>1</MBLCalibrationExperimentType>
+        <MBLCalibrationTrace>1</MBLCalibrationTrace>
+      </MBLCalibration>
+      <MBLColumnHeaderName>Pressure</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Pres</MBLColumnHeaderShortName>
+      <MBLChannelMatch0>210
+Pressure</MBLChannelMatch0>
+      <MBLSensorSourceID>846</MBLSensorSourceID>
+      <MBLSensorPhotogateUnitsMeters>1</MBLSensorPhotogateUnitsMeters>
+      <MBLSensorPhotogateUnits>m</MBLSensorPhotogateUnits>
+      <MBLSensorOceanOpticsWavelength>-1</MBLSensorOceanOpticsWavelength>
+      <MBLSensorOceanOpticsWavelengthEnd>-1</MBLSensorOceanOpticsWavelengthEnd>
+      <MBLChannelZeroDefault>0</MBLChannelZeroDefault>
+    </MBLChannel>
+    <MBLGoogleMapsMarkerOptions>0</MBLGoogleMapsMarkerOptions>
+    <MBLGoogleMapsValueColumn></MBLGoogleMapsValueColumn>
+    <MBLGoogleMapsOpenAnnotations>0</MBLGoogleMapsOpenAnnotations>
+  </MBLBrain>
+  <FileCoherence>1</FileCoherence>
+</Document>

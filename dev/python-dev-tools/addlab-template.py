@@ -6,21 +6,22 @@ tree = ET.parse("../labDB.xml")
 db = p.labDB(tree)
 
 #newlab = db.newLab(db.new_id)
+newlab = db.newLab("0182")
+newlab.name = "Modelling Motion"
+newlab.lab_type = "Lab"
 
-newlab = db.newLab(db.new_id)
-newlab.name = "Nuclear Pulse Height Analysis"
-newlab.lab_tyoe = "Lab"
-
-versions = [{"path": "/data/repository/0181-Nuclear-Pulse-Height-Analysis/0181-LEGACY", "semester": "", "year": "", "course": ""}]
-
+versions = [{"path": "/data/repository/0182-Modelling-Motion/0182-PHYS227FA2016/227_2016_Lab03_Modelling_Motion.pdf", "semester": "Fall", "year": "2016", "course": "PHYS 227", "directory": "/data/repository/0182-Modelling-Motion"}]
 newlab.versions = versions
 
-equipment = [{"id": "0010", "name": "Oscilloscope", "amount": "1"},
-             {"id": "0000", "name": "Nucleus Series 2/286 computer analyer", "amount": "1"},
-             {"id": "0000", "name": "Berkeley nucleaon cs GL-3 pulse generator", "amount": "1"}]
+equipment = [{"id": "0024", "name": "computer", "amount": "1"}]
 newlab.equipment = equipment
+
+software = ["browser","VPython"]
+newlab.software = software
+
 db.addLab(newlab)
 db.save("../../dev/updated_lab_database.xml", ignore_validation=True)
+
 #lab.name = "Test Lab"
 #lab.equipment = [{"id": "0055", "name": "thingamajig", "amount": "2"}]
 
