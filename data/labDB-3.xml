@@ -11238,11 +11238,11 @@
     <Topics />
     <Versions>
       <Version>
-        <Path>/data/repository/No-Year/0162-Thermoelectricity/0162-LEGACY/Thermoelectricity.pdf</Path>
+        <Path>/data/repository/0162-Thermoelectricity/0162-LEGACY/Thermoelectricity.pdf</Path>
         <Semester />
         <Year />
         <Course />
-        <Directory>/data/repository/No-Year/0162-Thermoelectricity/0162-LEGACY/</Directory>
+        <Directory>/data/repository/0162-Thermoelectricity/0162-LEGACY/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -12316,11 +12316,11 @@
     <Topics />
     <Versions>
       <Version>
-        <Path>/data/repository/No-Year/0180-Axial-and-non-Axial-Magnetic-Fields-of-a-Helmholtz-Coil/0180-LEGACY/Axial-Magnetic-Flux-Density-of-a-Helmholtz-Coil.pdf</Path>
+        <Path>/data/repository/0180-Axial-and-non-Axial-Magnetic-Fields-of-a-Helmholtz-Coil/0180-LEGACY/Axial-Magnetic-Flux-Density-of-a-Helmholtz-Coil.pdf</Path>
         <Semester />
         <Year />
         <Course />
-        <Directory>/data/repository/No-Year/0180-Axial-and-non-Axial-Magnetic-Fields-of-a-Helmholtz-Coil/0180-LEGACY/</Directory>
+        <Directory>/data/repository/0180-Axial-and-non-Axial-Magnetic-Fields-of-a-Helmholtz-Coil/0180-LEGACY/</Directory>
       </Version>
     </Versions>
     <Equipment>

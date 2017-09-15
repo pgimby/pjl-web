@@ -11,14 +11,30 @@ RSYNC="/usr/bin/rsync"
 
 
 # Source paths
-webCode="/home/pgimby/pjl-web/"
-repository="/usr/local/master/labs/repository"
+webSource="/home/pgimby/pjl-web/"
+repositorySource="/usr/local/master/labs/repository/"
 
 # Destinations
+webDest="watt:/mnt/local/legacy/html-future/"
+repositoryDest="watt:/mnt/local/repository/"
 
-dest="watt:/mnt/local/legacy/html-future/"
+# set permissions
+chmod 644 $webSource/index.html
+chmod 644 $webSource/css/site-wide.css
+chmod 644 $webSource/js/pjl.js
+chmod 644 $webSource/js/jquery-3.2.1.min.js
+chmod 644 $webSource/img/*
+chmod 755 $webSource/repository
+chmod 644 $webSource/repository/index.html
 
-$RSYNC -avnz $webCode pgimby@$dest
+#sed 's/\/\/var siteroot = "\/pjl-web"/;
+
+#chmod 644 $webSource/index.html
+
+
+$RSYNC --delete -avz $webSource pgimby@$webDest
+$RSYNC --delete -avz $repositorySource pgimby@$repositoryDest
+
 
 #ls $webCode
 #ls $repository

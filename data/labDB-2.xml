@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines />
@@ -480,7 +480,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0091-Fizeau-Bands/0091-PHYS375FA2016/Fizeau-Bands-FA2016.tex</Path>
+        <Path>/data/repository/0091-Fizeau-Bands/0091-PHYS375FA2016/Fizeau-Bands-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />
@@ -1650,7 +1650,7 @@
   </Lab>
   <Lab labId="0094"><Name>Photometry</Name><Disciplines><Discipline>Optics</Discipline><Discipline>Math</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Integration</Topic><Topic>Differentiation</Topic><Topic>Measurements</Topic><Topic>Work and Energy</Topic></Topics><Versions><Version><Path>/data/repository/0094-Photometry/0094-PHYS375FA2015/Photometry-FA2015.pdf</Path><Semester>Fall</Semester><Year>2015</Year><Course>PHYS 375</Course><Directory>/data/repository/0094-Photometry/0094-PHYS375FA2015/</Directory></Version><Version><Path>/data/repository/0094-Photometry/0094-PHYS375FA2014/Photometry-FA2014.pdf</Path><Semester>Fall</Semester><Year>2014</Year><Course>PHYS 375</Course><Directory>/data/repository/0094-Photometry/0094-PHYS375FA2014/</Directory></Version><Version><Path>/data/repository/0094-Photometry/0094-PHYS375FA2013/Photometry.pdf</Path><Semester>Fall</Semester><Year>2013</Year><Course>PHYS 375</Course><Directory>/data/repository/0094-Photometry/0094-PHYS375FA2013/</Directory></Version><Version><Path>/data/repository/0094-Photometry/0094-PHYS375FA2012/photo2.pdf</Path><Semester>Fall</Semester><Year>2012</Year><Course>PHYS 375</Course><Directory>/data/repository/0094-Photometry/0094-PHYS375FA2012/</Directory></Version></Versions><Equipment><Item id="0001"><Name>Fluke multimeter</Name><Amount>1</Amount></Item><Item id="0002"><Name>Anatek power supply</Name><Amount>1</Amount></Item><Item id="0022"><Name>1 m optical bench</Name><Amount>1</Amount></Item><Item id="0048"><Name>light detector</Name><Amount>1</Amount></Item><Item id="0003"><Name>set of connecting leads</Name><Amount>1</Amount></Item><Item id="0007"><Name>meter stick</Name><Amount>1</Amount></Item><Item id="0000"><Name>reconfigurable lightbulb array</Name><Amount>1</Amount></Item></Equipment>/&gt;
     <Type>Lab</Type>
-    <SupportDocs><Doc><Name>Latex Source</Name><Path>data/repository/0094-Photometry/0094-PHYS375FA2015/Photometry-FULL-FA2015.tex</Path></Doc></SupportDocs>
+    <SupportDocs><Doc><Name>Latex Source</Name><Path>/data/repository/0094-Photometry/0094-PHYS375FA2015/Photometry-FULL-FA2015.tex</Path></Doc></SupportDocs>
     <Software />
   </Lab>
   <Lab labId="0115">
@@ -3403,7 +3403,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS375FA2016/Thin-Lenses-and-Optical-Instruments-FA2016.tex</Path>
+        <Path>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS375FA2016/Thin-Lenses-and-Optical-Instruments-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />
@@ -3747,7 +3747,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0093-Michelson-Interferometer/0093-PHYS375FA2016/Michelson-Interferometer-FA2016.tex</Path>
+        <Path>/data/repository/0093-Michelson-Interferometer/0093-PHYS375FA2016/Michelson-Interferometer-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />
@@ -4149,7 +4149,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0060-Reflection-and-Refraction/0060-PHYS375FA2016/Reflection-and-Refraction-FA2016.tex</Path>
+        <Path>/data/repository/0060-Reflection-and-Refraction/0060-PHYS375FA2016/Reflection-and-Refraction-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />
@@ -4788,7 +4788,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
+        <Path>/data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />
@@ -5486,7 +5486,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0092-Laser-Beams/0092-PHYS375FA2015/Laser-Beams-FA2015.tex</Path>
+        <Path>/data/repository/0092-Laser-Beams/0092-PHYS375FA2015/Laser-Beams-FA2015.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />
@@ -7051,7 +7051,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
+        <Path>/data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />
@@ -10881,7 +10881,7 @@
     <SupportDocs>
       <Doc>
         <Name>Latex Source</Name>
-        <Path>data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.tex</Path>
+        <Path>/data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.tex</Path>
       </Doc>
     </SupportDocs>
     <Software />

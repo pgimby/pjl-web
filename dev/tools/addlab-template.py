@@ -20,7 +20,7 @@ software = ["browser","VPython"]
 newlab.software = software
 
 db.addLab(newlab)
-db.save("../../dev/updated_lab_database.xml", ignore_validation=True)
+db.save("../../dev/labDB.xml", ignore_validation=True)
 
 #lab.name = "Test Lab"
 #lab.equipment = [{"id": "0055", "name": "thingamajig", "amount": "2"}]

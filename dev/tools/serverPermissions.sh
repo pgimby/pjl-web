@@ -1,2 +1,7 @@
-chmod 644 index.html
-chmod 644 css/*
+#! /bin/bash
+
+repositoryDir="/mnt/local/repository"
+webDir="/var/www/html"
+
+find $repositoryDir -type d -exec chmod 755 {} \;
+
