@@ -33,4 +33,4 @@ for n in new:
     db.addLab(lab)
 
 
-db.save("../test.xml", ignore_validation=True)
+db.save("../labDB.xml", ignore_validation=True)
