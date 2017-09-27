@@ -12916,4 +12916,37 @@
     <SupportDocs/>
     <Software/>
   </Lab>
+  <Lab labId="0182">
+    <Name>Modelling Motion</Name>
+    <Disciplines/>
+    <Topics/>
+    <Versions>
+      <Version>
+        <Path>/data/repository/0182-Modelling-Motion/0182-PHYS227FA2016/227_2016_Lab03_Modelling_Motion.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 227</Course>
+        <Directory>/data/repository/0182-Modelling-Motion</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0182-Modelling-Motion/0182-PHYS227FA2017/227_2017_Lab03_Modelling_Motion.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 227</Course>
+        <Directory>/data/repository/0182-Modelling-Motion</Directory>
+      </Version>
+    </Versions>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Type>Lab</Type>
+    <SupportDocs/>
+    <Software>
+      <Name>browser</Name>
+      <Name>VPython</Name>
+    </Software>
+  </Lab>
 </Labs>

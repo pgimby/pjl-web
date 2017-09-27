@@ -419,7 +419,6 @@
         <Name>Fizeau band kit</Name>
         <Amount>1</Amount>
       </Item>
-
       <Item id="0008">
         <Name>laboratory jack</Name>
         <Amount>1</Amount>
@@ -442,7 +441,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+          <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0091-Fizeau-Bands/0091-PHYS375FA2016/Fizeau-Bands-FA2016.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0064">
@@ -1585,7 +1589,12 @@
       </Item>
     </Equipment>/>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+                <Doc>
+                <Name>Latex Source</Name>
+                <Path>data/repository/0094-Photometry/0094-PHYS375FA2015/Photometry-FULL-FA2015.tex</Path>
+            </Doc>
+        </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0115">
@@ -3226,7 +3235,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+          <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS375FA2016/Thin-Lenses-and-Optical-Instruments-FA2016.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0054">
@@ -3549,7 +3563,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+          <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0093-Michelson-Interferometer/0093-PHYS375FA2016/Michelson-Interferometer-FA2016.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0049">
@@ -3919,7 +3938,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+          <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0060-Reflection-and-Refraction/0060-PHYS375FA2016/Reflection-and-Refraction-FA2016.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0037">
@@ -4518,7 +4542,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+          <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0031">
@@ -5162,7 +5191,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+          <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0092-Laser-Beams/0092-PHYS375FA2015/Laser-Beams-FA2015.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0005">
@@ -6600,7 +6634,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+          <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0070">
@@ -10252,7 +10291,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs>
+      <Doc>
+        <Name>Latex Source</Name>
+        <Path>data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.tex</Path>
+       </Doc>
+    </SupportDocs>
     <Software/>
   </Lab>
   <Lab labId="0156">
