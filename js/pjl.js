@@ -7,8 +7,8 @@
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
 //var siteroot = "/pjl-web";
-var siteroot = "/html-future";
-//var siteroot = "";
+//var siteroot = "/html-future";
+var siteroot = "";
 var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
