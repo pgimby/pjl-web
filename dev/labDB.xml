@@ -8693,7 +8693,40 @@
         <Directory>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+               <Item id="0313">
+        <Name>SRL oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+                     <Item id="0106">
+        <Name>SRL function generator</Name>
+        <Amount>1</Amount>
+      </Item>
+                     <Item id="0107">
+        <Name>breadboard</Name>
+        <Amount>1</Amount>
+      </Item>
+                     <Item id="0356">
+        <Name>SRL digital multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0123">
+        <Name>10 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0132">
+        <Name>30 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0124">
+        <Name>100 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+          <Item id="0124">
+        <Name>0.01 μF capacitor</Name>
+        <Amount>1</Amount>
+      </Item>
+           </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -8746,10 +8779,37 @@
         <Directory>/data/repository/0032-Circuits/0032-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0380">
+        <Name>28 V minibulb</Name>
+        <Amount>3</Amount>
+      </Item>
+            <Item id="0420">
+        <Name>SPST switch</Name>
+        <Amount>1</Amount>
+      </Item>
+            <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+            <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+            <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>2</Amount>
+      </Item>
+            <Item id="0231">
+        <Name>3 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+    <Name>circuit-construction-kit-ac_en.jar</Name>
+    </Software>
   </Lab>
   <Lab labId="0080">
     <Name>Hanging Chain</Name>
@@ -8788,17 +8848,21 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>assortment of chains</Name>
+      <Item id="0085">
+        <Name>hainging chain</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
+      </Item>
+        <Item id="0086">
+        <Name>hainging chain pulley</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
@@ -8806,11 +8870,19 @@
       </Item>
       <Item id="0078">
         <Name>green spring scale</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0077">
-        <Name>hook collar</Name>
-        <Amount>1</Amount>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>6</Amount>
+      </Item>
+            <Item id="0046">
+        <Name>fork clamp</Name>
+        <Amount>6</Amount>
+      </Item>
+            <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>6</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
