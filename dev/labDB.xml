@@ -2926,7 +2926,7 @@
         <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2013/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2017/Simple-Harmonic-Motion-FA2017.pdf</Path>
+        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2017/Simple-Harmonic-Oscillations-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 365</Course>
@@ -2959,7 +2959,11 @@
         <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0095">
+            <Item id="0096">
+        <Name>air hose</Name>
+        <Amount>1</Amount>
+      </Item>
+         <Item id="0095">
         <Name>air track accessory kit</Name>
         <Amount>1</Amount>
       </Item>
@@ -8902,10 +8906,49 @@
         <Directory>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+              <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+         <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+         <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+         <Item id="0087">
+        <Name>alligator clamp</Name>
+        <Amount>2</Amount>
+      </Item>
+         <Item id="0088">
+        <Name>play-doh electrodes</Name>
+        <Amount>2</Amount>
+      </Item>
+         <Item id="0089">
+        <Name>test lead</Name>
+        <Amount>2</Amount>
+      </Item>
+         <Item id="0090">
+        <Name>play-doh</Name>
+        <Amount>1</Amount>
+      </Item>
+         <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+         <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+    <Name>Vernier Logger Pro</Name>
+        </Software>
   </Lab>
   <Lab labId="0098">
     <Name>RLC Resonant Circuits</Name>
@@ -11169,7 +11212,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -12562,7 +12605,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -12649,7 +12692,7 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
