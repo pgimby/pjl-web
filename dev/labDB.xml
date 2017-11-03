@@ -8924,7 +8924,7 @@
         <Amount>2</Amount>
       </Item>
          <Item id="0088">
-        <Name>play-doh electrodes</Name>
+        <Name>play-doh electrode</Name>
         <Amount>2</Amount>
       </Item>
          <Item id="0089">
@@ -9027,7 +9027,7 @@
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0010">
         <Name>oscilloscope</Name>
@@ -9086,7 +9086,48 @@
         <Directory>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+  <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0426">
+        <Name>concentric ring conductor board</Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0177">
+        <Name>parallel plate conductor board</Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0176">
+        <Name>potential mapping graph paper</Name>
+        <Amount>1</Amount>
+      </Item>    
+            <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>   
+                 <Item id="0052">
+        <Name>masking tape</Name>
+        <Amount>1</Amount>
+      </Item>
+                 <Item id="0175">
+        <Name>potential mapping apparatus</Name>
+        <Amount>1</Amount>
+      </Item>
+                 <Item id="0179">
+        <Name>potential mapping probe</Name>
+        <Amount>1</Amount>
+      </Item> 
+        <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -9278,24 +9319,12 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Rectangles with different lengths</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0180">
-        <Name>sextant</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Circles with different diameters</Name>
+      <Item id="0353">
+        <Name>uncertainties kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0040">
         <Name>measuring tape</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Ball bearing</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0071">
@@ -9325,12 +9354,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -9339,39 +9368,42 @@
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
-        <Amount>1</Amount>
+        <Item id="0327">
+        <Name>LF411 OpAmp</Name>
+        <Alt id="0220">
+        <Name>LF351 OpAmp</Name>
+        </Alt>
+        <Amount>3</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0385">
         <Name>CD4016 CMOS switch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0415">
         <Name>LM555 timer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
         <Name>0.01 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Amount>8</Amount>
       </Item>
       <Item id="0129">
         <Name>47 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0130">
         <Name>27 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0125">
         <Name>1 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0123">
         <Name>10 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>5</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
