@@ -115,7 +115,7 @@ svg text {
 
 
 /*******************************************************************/
-/*                    MAIN PAGE STYLES                             */
+/*                    LANDING PAGE STYLES                             */
 /*******************************************************************/
 
 
@@ -218,6 +218,12 @@ svg text {
 	border-right: 1px solid #000;
 }
 
+.resource-button:hover > .resource-button-text {
+	background-color: rgba(256,256,256,.05);
+	cursor: pointer;
+	color: #fff;
+}
+
 .resource-button-text {
 	color: #eee;
 	padding: 7px 12px;
@@ -225,13 +231,14 @@ svg text {
 	font-weight: 500;
 	font-size: 1em;
 	display: inline-block;
+	pointer-events: none;
 }
 
-	.resource-button-text:hover {
-		background-color: rgba(256,256,256,.05);
-		cursor: pointer;
-		color: #fff;
-	}
+/*.resource-button-text:hover {
+	background-color: rgba(256,256,256,.05);
+	cursor: pointer;
+	color: #fff;
+}*/
 
 .resource-dropdown {
 	display: none;
@@ -243,6 +250,7 @@ svg text {
 	display: flex;
 	flex-direction: column;
 	background-color: #222;
+	pointer-events: none;
 }
 
 .resource-dropdown-content > p {
@@ -250,6 +258,7 @@ svg text {
 	border-top: 1px solid #000;
 	margin: 0;
 	padding: 4px 12px;
+	pointer-events: auto;
 }
 
 	.resource-dropdown-content > p:hover {

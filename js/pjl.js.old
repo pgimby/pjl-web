@@ -7,7 +7,6 @@
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
 //var siteroot = "/pjl-web";
-//var siteroot = "/html-future";
 var siteroot = "";
 var docXML;
 
@@ -22,7 +21,7 @@ var docXML;
 
 
 //Somehow need to deal with file errors in the zip call. Think about how to bail gracefully.
-//The top-level promise is waiting for all the files to load, what happens if one doesn't?
+//The top-level promis is waiting for all the files to load, what happens if one doesn't?
 //---set a deferred.fail() callback on the top-level promise. easy peasy.
 
 
@@ -45,7 +44,7 @@ function initPage() {  //initialize the page
 
 
 function initLandingPage() {
-	console.log("landing page initalized")
+
 }
 
 
@@ -275,28 +274,26 @@ $(document).on("click", "#staff-name-gimby", function(e) {
 
 
 $(document).on("mouseenter", ".resource-button", function(e) {
-	console.log("mouse enter .resource-button", e.target)
-	$(e.target).children(".resource-dropdown").slideDown("fast");
+	var dropdown = $(e.target).next();
+	dropdown.slideToggle("fast");
 });
 
 
 
-$(document).on("mouseleave", ".resource-button", function(e) {
-	console.log("mouse leave .resource-button", e.target)
-	$(e.target).children(".resource-dropdown").hide();
-});
+// $(document).on("mouseleave", ".resource-button", function(e) {
+// 	if ($(e.target).hasClass("resource-button")) {
+// 		console.log($(e.target).children(".resource-dropdown"))
+// 		$(e.target).children(".resource-dropdown").hide();
+// 	} else {
 
-$(document).on("mouseleave", ".resource-dropdown", function(e) {
-	if($(e.target).is("p")) {
-		$(e.target).parent().parent().hide();
-	} else if($(e.target).hasClass(".resource-dropdown-content")) {
-		$(e.target).parent().hide();
-	} else {
-		$(e.target).hide();
-	}
-});
+// 		$(e.target).parents(".resource-button").children(".resource-dropdown").hide();
+// 	}
+// });
 
 
+$(".resource-button").mouseleave(function(e) {
+	$(this).children(".resource-dropdown").hide();
+})
 
 
 
@@ -734,7 +731,7 @@ function showMostRecent() {
 		}
 		records[i].removeClass("record-rendered").addClass("record-not-rendered");
 	}
-
+	var mostrecentlist = [];
 	for (var i = uniquelabs.length - 1; i >= 0; i--) {
 		var year = 0;
 		var mostrecent = null;
@@ -789,10 +786,9 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 	var minsimilarity = 0.4;
 	var querybigrams = makeBigramList(query);
 	var lablist = getAllRecords();
-	var skipsim = ("id" == selector ? true : false)
 	for (var i = lablist.length - 1; i >= 0; i--) {
 		lablist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
-		var similarity = (skipsim ? 0.0 : compareQueryWithLabRecord(querybigrams, lablist[i], selector));
+		var similarity = compareQueryWithLabRecord(querybigrams, lablist[i], selector);
 		if (similarity < minsimilarity && !queryLiteralInLabRecord(query, lablist[i], selector)) {
 			lablist[i].removeClass("record-rendered").addClass("record-not-rendered");
 		}
@@ -809,7 +805,6 @@ function queryLiteralInLabRecord(query, lab, selector) {
 	var semester = lab.find(".version-semester").text().split(" ")[0].toLowerCase();
 	var year = lab.find(".version-semester").text().split(" ")[1].toLowerCase();
 	var labtitle = lab.find(".lab-title").text().toLowerCase();
-	var id = lab.find(".lab-data-id").text().slice(-4,).toLowerCase();
 	switch (selector) {
 		case "all":
 			return courses.includes(query) || disciplines.includes(query) || topics.includes(query) || equipment.includes(query) || semester.includes(query) || year.includes(query) || labtitle.includes(query);
@@ -834,9 +829,6 @@ function queryLiteralInLabRecord(query, lab, selector) {
 			break;
 		case "equipment":
 			return equipment.includes(query)
-			break;
-		case "id":
-			return id == query;
 			break;
 	}
 
@@ -866,31 +858,30 @@ function compareQueryWithLabRecord(querybigrams, lab, selector) {
 	var semester = [makeBigramList(lab.find(".version-semester").text().split(" ")[0])];
 	var year = [makeBigramList(lab.find(".version-semester").text().split(" ")[1].slice(2,))];
 	var labtitle = [makeBigramList(lab.find(".lab-title").text())];
-	var totest = [""];
 	switch (selector) {
 		case "all":
-			totest = disciplines.concat(courses, semester, year, labtitle, topics, equipment);
+			var totest = disciplines.concat(courses, semester, year, labtitle, topics, equipment);
 			break;
 		case "course":
-			totest = courses;
+			var totest = courses;
 			break;
 		case "lab":
-			totest = labtitle;
+			var totest = labtitle;
 			break;
 		case "year":
-			totest = year;
+			var totest = year;
 			break;
 		case "semester":
-			totest = semester;
+			var totest = semester;
 			break;
 		case "topic":
-			totest = topics;
+			var totest = topics;
 			break;
 		case "discipline":
-			totest = disciplines;
+			var totest = disciplines;
 			break;
 		case "equipment":
-			totest = equipment;
+			var totest = equipment;
 			break;
 	}
 
@@ -945,9 +936,6 @@ function searchQueryHandler() {  //handle search request by checking for search 
 			break;
 		case "equipment":
 			equipmentSearchHandler(searchphrase);
-			break;
-		case "id":
-			idSearchHandler(searchphrase);
 			break;
 		default:
 			defaultSearchHandler(query);
@@ -1043,15 +1031,6 @@ function equipmentSearchHandler(searchphrase) {  //handle the search request for
 
 
 
-function idSearchHandler(searchphrase) {  //handle the search request for id search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "id");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
-}
-
-
-
 
 
 
@@ -1097,17 +1076,16 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 		return;
 	});
 	var deferredzip = $.when.apply(this, promises);
-
 	deferredzip.progress(function() {
 		progresscount++;
 		$("#zip-progress-bar progress").attr("value", String(progress(progresscount)));
 	});
 	deferredzip.done(function() {
 		zip.generateAsync({type:"blob"}).then(function (blob) {
-			saveAs(blob, zipoutputfilename);
-			$("#zip-progress-bar").stop().slideUp(500);
-		});
-		return false;
+		saveAs(blob, zipoutputfilename);
+		$("#zip-progress-bar").stop().slideUp(500);
+	});
+	return false;
 	});
 	deferredzip.fail(function() {
 		setTimeout(function() {
@@ -1127,9 +1105,7 @@ function fileDownloadPromise() {  //return a jQuery promise
 }
 
 
-function beginDownload(filepath, promise) {
-//start downloading PDF and resolve associated promise upon completion (or failure) - not type safe
-//return XML HTTP request object
+function beginDownload(filepath, promise) {  //start downloading PDF and resolve associated promise upon completion - not type safe
 	var xhttp = new XMLHttpRequest();
 	xhttp.responseType = "blob";
 	xhttp.onreadystatechange = function() {
