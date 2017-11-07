@@ -402,7 +402,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 
 
 function filterResults(filter) {  //given a filter object, filter displayed records and update DOM appropriately
-	var lablist = $(".lab-record-flex");
+	var lablist = getCurrentRecords();//$(".lab-record-flex");
 	var numrecords = lablist.length;
 	for (var i = lablist.length - 1; i >= 0; i--) {
 		var lab = $(lablist[i]);
@@ -751,15 +751,20 @@ function showMostRecent() {
 					sameyeardifcourse.push(records[j])
 					year = date;
 				}
+				if(!mostrecent && recordsemester.split(" ")[1] == "—") {
+					mostrecent = records[j];
+				}
 			}
 		}
-		if (mostrecent) {
+		if(mostrecent) {
 			mostrecent.removeClass("record-not-rendered").addClass("record-rendered");
 			for (var j = sameyeardifcourse.length - 1; j >= 0; j--) {
 				sameyeardifcourse[j].removeClass("record-not-rendered").addClass("record-rendered");
 			}
 		}
 	}
+	sortRecords("year");
+	sortRecords("year");
 	displayNumResults(countNumRecords());
 	setNumberRecordsUnmasked();
 }
@@ -1176,7 +1181,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	}
 	for (var i = records.length - 1; i >= 0; i--) {
 		dirlist.push(records[i].find(".version-directory").text());
-		extradocs.concat(getExtraLabDocs(records[i]));
+		extradocs.concat(getExtraDocsFromRecord(records[i]));
 	}
 	dirlist = ["/home/wes/pjlweb/data/", "/home/wes/pjlweb/dev/"]
 	for (var i = dirlist.length - 1; i >= 0; i--) {
@@ -1227,7 +1232,14 @@ function filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist) {
 
 function getExtraDocsFromRecord(record) {
 	var docs = $(record).children(".extra-docs").children(".extra-doc");
-
+	list = [];
+	for (var i = docs.length - 1; i >= 0; i--) {
+		let docname = docs[i].text();
+		let docpath = docs[i].attr("href");
+		list.push({name: docname, url: docpath});
+	}
+	console.log(list)
+	return list;
 }
 
 

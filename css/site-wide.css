@@ -234,15 +234,10 @@ svg text {
 	pointer-events: none;
 }
 
-/*.resource-button-text:hover {
-	background-color: rgba(256,256,256,.05);
-	cursor: pointer;
-	color: #fff;
-}*/
-
 .resource-dropdown {
 	display: none;
 	position: absolute;
+	z-index: 99;
 }
 
 .resource-dropdown-content {
