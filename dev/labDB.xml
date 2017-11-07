@@ -9470,8 +9470,8 @@
         <Name>radium isolation nuclear chemistry station</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Ortec Ametek dual input alpha spectrometer</Name>
+      <Item id="0427">
+        <Name>Ortec alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0157">
@@ -9483,7 +9483,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
-        <Name>0.1 mCi Po-210 alpha source</Name>
+        <Name>0.1 μCi Po-210 alpha source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0143">
@@ -9498,7 +9498,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
     <Software>
-      <Name>Maestro pulse height analyzer software</Name>
+      <Name>Maestro 7.01</Name>
     </Software>
   </Lab>
   <Lab labId="0007">
@@ -9626,7 +9626,32 @@
         <Directory>/data/repository/0007-Statics-Newtons-First-Law-in-2-Dimensions/0007-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+          <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0000">
+        <Name></Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0000">
+        <Name></Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0000">
+        <Name></Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0000">
+        <Name></Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0000">
+        <Name></Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
