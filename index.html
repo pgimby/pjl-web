@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/repo.css">
     <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
     <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.mobile.custom.min.js"></script>
     <script src="./js/d3.min.js"></script>
     <script src="./js/jszip.min.js"></script>
     <script src="./js/FileSaver.js"></script>
@@ -37,16 +39,64 @@
 
 
 
+    <div class="mobile-landing-nav">
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Students</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id="pjl-lab-schedule">Lab schedule</p>
+        <p id="pjl-regress">Linear regression</p>
+        <p id="pjl-linearization">Linearization of experimental data</p>
+        <p id="pjl-compare-two">Procedure for comparing two values</p>
+        <p id="pjl-uncertainty">Uncertainty analysis</p>
+        <p id="pjl-graphing">Graphing experimental data</p>
+        <p id="pjl-geiger">How Geiger counters work</p>
+        <p id="pjl-scint">How scintillation counters work</p>
+      </div>
 
-    <!-- HEADER FOR STYLE - MAYBE THROW SOME NAVIGATION IN HERE EVENTUALLY -->
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Instructors</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id="pjl-repository">Repository</p>
+        <p id="pjl-latex-template">Lab LaTeX template</p>
+        <p id="pjl-lab-schedule">Lab Schedule</p>
+      </div>
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Staff</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id="pjl-inventory">Inventory</p>
+        <p id="pjl-github">PJLWeb GitHub</p>
+        <p id="pjl-lab-schedule">Lab Schedule</p>
+      </div>
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Safety in the Labs</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id="pjl-lab-rules">Lab Rules</p>
+        <p id="pjl-rad-safety">Radiation Safety</p>
+        <p id="pjl-orientation">Physics Lab Orientation</p>
+        <p id="pjl-hazard-ass">Hazard Assessment Control Form</p>
+      </div>
+    </div>
+
+
+
 
     <header>
       <div id="header-baseline">
       <div class="wrap">
-        <!-- <i class="fa fa-bars" id="header-accordion" aria-hidden="true"></i> -->
+        <i id="mobile-nav-button" class="fa fa-bars fa-lg" aria-hidden="true"></i>
         <a id="pjl-logo" href="/pjl-web/">PJL</a>
+        <div class="need-help">
+          <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
+          <p class="need-help-text">report bug</p>
+        </div>
       </div>
-      <!-- <object type="image/svg+xml" data="img/help-tab.svg" id="help-tab-object"></object> -->
+
       </div>
 
     </header>
@@ -124,6 +174,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     	<div class="wrap" id="landing-intro-container">
 
 	    	<div id="landing-intro-text">
@@ -159,6 +220,24 @@
 
 	    	</div>
     	</div>
+
+
+
+
+      <div class="contact">
+        <form class="comment-form" method="post" action="/php/commentForm.php">
+
+          <!-- <label>Email (optional)</label> -->
+          <input id="comment-email" name="email" type="email" placeholder="Email address (optional)..." multiple>
+
+          <!-- <label>Message</label> -->
+          <textarea name="message" placeholder="Message..."></textarea>
+
+          <input class="submit-button" name="submit" type="submit" value="Submit">
+
+          </form>
+      </div>
+
 
 
 

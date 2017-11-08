@@ -7,8 +7,8 @@
 var mainxmlpath = "/data/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
 //var siteroot = "/pjl-web";
-//var siteroot = "/html-future";
-var siteroot = "";
+var siteroot = "/html-future";
+//var siteroot = "";
 var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -275,14 +275,12 @@ $(document).on("click", "#staff-name-gimby", function(e) {
 
 
 $(document).on("mouseenter", ".resource-button", function(e) {
-	console.log("mouse enter .resource-button", e.target)
 	$(e.target).children(".resource-dropdown").slideDown("fast");
 });
 
 
 
 $(document).on("mouseleave", ".resource-button", function(e) {
-	console.log("mouse leave .resource-button", e.target)
 	$(e.target).children(".resource-dropdown").hide();
 });
 
@@ -298,9 +296,7 @@ $(document).on("mouseleave", ".resource-dropdown", function(e) {
 
 
 
-
-
-$(document).on("click", ".resource-dropdown-content", function(e) {
+$(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-content", function(e) {
 	var links = {"pjl-regress": "/",
 				 "pjl-lab-schedule": "/",
 				 "pjl-geiger": "/",
@@ -322,6 +318,37 @@ $(document).on("click", ".resource-dropdown-content", function(e) {
 });
 
 
+
+$(document).on("click touch", ".need-help", function(e) {
+	showContactForm();
+	e.stopPropagation();
+});
+
+
+
+$(document).on("click touch", ".contact", function(e) {
+	e.stopPropagation();
+});
+
+
+
+$(document).on("click touch", "body", function(e) {
+	hideContactForm();
+	hideMobileNav();
+	e.stopPropagation();
+});
+
+
+
+$(document).on("click touch", "#mobile-nav-button", function(e) {
+	showMobileNav();
+	e.stopPropagation();
+});
+
+
+
+$(window).on("swipeleft", hideMobileNav);
+$(window).on("swiperight", showMobileNav);
 
 
 
@@ -770,6 +797,29 @@ function showMostRecent() {
 }
 
 
+function showMobileNav() {
+	if($(".mobile-landing-nav").css("display") == "none") {
+		$(".mobile-landing-nav").show("slide", {direction: "left"}, 300);
+	}
+}
+
+
+function hideMobileNav() {
+	if($(".mobile-landing-nav").css("display") == "block") {
+		$(".mobile-landing-nav").hide("slide", {direction: "left"}, 300);
+	}
+}
+
+
+function showContactForm() {
+	$(".contact").slideDown("fast");
+}
+
+
+function hideContactForm() {
+	$(".contact").slideUp("fast");
+}
+
 
 
 var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.50}
@@ -1183,11 +1233,11 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		dirlist.push(records[i].find(".version-directory").text());
 		extradocs.concat(getExtraDocsFromRecord(records[i]));
 	}
-	dirlist = ["/home/wes/pjlweb/data/", "/home/wes/pjlweb/dev/"]
+
 	for (var i = dirlist.length - 1; i >= 0; i--) {
 		var promise = $.Deferred();
 		promises.push(promise)
-		$.post("/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
+		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
 	}
 	var deferredFileList = $.when.apply($, promises);
 	deferredFileList.done(function() {
@@ -1238,7 +1288,6 @@ function getExtraDocsFromRecord(record) {
 		let docpath = docs[i].attr("href");
 		list.push({name: docname, url: docpath});
 	}
-	console.log(list)
 	return list;
 }
 
