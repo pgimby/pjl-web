@@ -1510,6 +1510,14 @@
         <Course>PHYS 365</Course>
         <Directory>/data/repository/0074-Plancks-Constant-with-LEDs/0074-PHYS365FA2015/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0074-Plancks-Constant-with-LEDs/0074-PHYS365FA2017/Plancks-Constant-from-LEDs-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0074-Plancks-Constant-with-LEDs/
+</Directory>
+      </Version>
     </Versions>
     <Equipment/>
     <Type>Lab</Type>
@@ -1586,6 +1594,22 @@
         <Year>2011</Year>
         <Course>PHYS 369</Course>
         <Directory>/data/repository/0090-Standing-Waves/0090-PHYS369FA2011/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0090-Standing-Waves/0090-PHYS369FA2017/Standing-Waves-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0090-Standing-Waves/
+</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0090-Standing-Waves/0090-PHYS365FA2017/Standing-Waves-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0090-Standing-Waves/
+</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -2425,7 +2449,7 @@
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -2501,6 +2525,22 @@
         <Year>2013</Year>
         <Course>PHYS 369</Course>
         <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2013/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2017/Simple-Harmonic-Motion-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/
+</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2017/Simple-Harmonic-Oscillations-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/
+</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -2963,6 +3003,14 @@
         <Year>2015</Year>
         <Course>PHYS 365</Course>
         <Directory>/data/repository/0088-Hydrogen-Balmer-Series/0088-PHYS365FA2015/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0088-Hydrogen-Balmer-Series/0088-PHYS365FA2017/Hydrogen-Balmer-Series-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0088-Hydrogen-Balmer-Series/
+</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -3563,6 +3611,14 @@
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 375</Course>
+        <Directory>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/
+</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS369FA2017/Thin-Lenses-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 369</Course>
         <Directory>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/
 </Directory>
       </Version>
@@ -6105,6 +6161,14 @@
         <Directory>/data/repository/0053-Concave-Mirrors/
 </Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0053-Concave-Mirrors/0053-PHYS369FA2017/Concave-Mirrors-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0053-Concave-Mirrors/
+</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0278">
@@ -7561,6 +7625,22 @@
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 397</Course>
+        <Directory>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/
+</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/0087-PHYS369FA2017/Measurements-and-Uncertainties-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/
+</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/0087-PHYS365FA2017/Measurements-and-Uncertainties-FA2017.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 365</Course>
         <Directory>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/
 </Directory>
       </Version>
