@@ -2413,7 +2413,6 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software>
-      <Name/>
       <Name>SHO.cmbl</Name>
     </Software>
   </Lab>
@@ -4571,7 +4570,7 @@
         <Name>Anatek power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -7889,9 +7888,7 @@
       </Item>
       <Item id="0416">
         <Name>LM3900 quad amplifer</Name>
-        <Alt id="0220">
-          <Name>LM3301 quad amplifier</Name>
-        </Alt>
+        <Alt id="0220">LM3301 quad amplifie </Alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0417">
@@ -10456,14 +10453,15 @@
     <Equipment>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0060">
-        <Name>Cenco high voltage DC power supply</Name>
+        <Name>Cenco high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0263">
-        <Name>100 Ω decade resistance box</Name>
+        <Name>100 Ω GR decade resistance box</Name>
+        <alt id="0351">10 kΩ Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0155">
@@ -10506,17 +10504,13 @@
         <Name>fork clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>spinning wheel optical analogue</Name>
+      <Item id="0441">
+        <Name>electron diffraction optical analogue wheel</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>banana connecting sleeve</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0003">
+       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -10607,20 +10601,20 @@
         <Name>Fluke multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0442">
         <Name>precision voltage divider</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>10V DC power supply</Name>
+      <Item id="0443">
+        <Name>Kepco power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0038">
         <Name>flashlight</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>nanoAmpere current source</Name>
+      <Item id="0444">
+        <Name>nA current source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0022">
@@ -12932,7 +12926,8 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0263">
-        <Name>100 Ω decade resistance box</Name>
+        <Name>100 Ω GR decade resistance box</Name>
+            <alt id="0351">10 kΩ Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0264">

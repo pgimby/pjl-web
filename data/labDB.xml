@@ -27,10 +27,45 @@
         <Directory>/data/repository/0050-Magnetic-Force-between-Current-Carrying-Wires/0050-PHYS259WI2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0209">
+        <Name>He-Ne laser with acrylic base</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0211">
+        <Name>high current power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0041">
+        <Name>micrometer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0212">
+        <Name>current balance kit</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0062">
     <Name>Travelling Waves</Name>
@@ -137,7 +172,7 @@
         <Name>Fluke multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0190">
+      <Item id="0214">
         <Name>travelling wave kit</Name>
         <Amount>1</Amount>
       </Item>
@@ -204,12 +239,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -401,7 +436,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -503,10 +538,6 @@
         <Name>micrometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0110">
-        <Name>lens cleaner</Name>
-        <Amount>1</Amount>
-      </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs>
@@ -537,7 +568,12 @@
         <Directory>/data/repository/0064-Linear-Regression/0064-PHYS323FA2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -584,11 +620,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0186">
-        <Name>set of slotted masses</Name>
+        <Name>harmonic motion slotted masses</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>assortment of red springs</Name>
+      <Item id="0314">
+        <Name>harmonic motion springs</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0034">
@@ -624,8 +660,65 @@
         <Directory>/data/repository/0120-Torsional-Oscillations/0120-PHYS369FA2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
-    <Type/>
+    <Equipment>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0054">
+        <Name>c-clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clampe</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0315">
+        <Name>aluminum bar with notch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0012">
+        <Name>digital balance</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0051">
+        <Name>stopwatch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0082">
+        <Name>brown spring scale</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0226">
+        <Name>protractor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0293">
+        <Name>set of torsion pendulums</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0316">
+        <Name>tapered brass springs</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0077">
+        <Name>hook collar</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -642,8 +735,49 @@
         <Directory>/data/repository/0043-The-Electric-Motor-and-Generator/0043-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
-    <Type/>
+    <Equipment>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0211">
+        <Name>high current power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0317">
+        <Name>motor-generator apparatus</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0318">
+        <Name>rubber mat</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0319">
+        <Name>strobe light</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0255">
+        <Name>blue spring scale</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -668,10 +802,18 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>browser</Name>
+      <Name>VPython</Name>
+    </Software>
   </Lab>
   <Lab labId="0003">
     <Name>Motion on the Inclined Plane</Name>
@@ -806,7 +948,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0044">
@@ -938,11 +1080,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>frequency counter</Name>
+      <Item id="0320">
+        <Name>SRL frequency counter</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -979,7 +1121,32 @@
         <Directory>/data/repository/0020-Angular-Impulse-and-Anglular-Momentum-Change/0020-PHYS227FA2013/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Item id="0321">
+      <Name>flywheel</Name>
+      <Amount>1</Amount>
+    </Item>
+    <Item id="0092">
+      <Name>string</Name>
+      <Amount>1</Amount>
+    </Item>
+    <Item id="0185">
+      <Name>set of haning masses</Name>
+      <Amount>1</Amount>
+    </Item>
+    <Item id="0051">
+      <Name>stopwatch</Name>
+      <Amount>1</Amount>
+    </Item>
+    <Item id="0007">
+      <Name>meter stick</Name>
+      <Amount>1</Amount>
+    </Item>
+    <Item id="0034">
+      <Name>calipers</Name>
+      <Amount>1</Amount>
+    </Item>
+    <Equipment>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -1018,7 +1185,28 @@
         <Directory>/data/repository/0030-Capacitor-Measurements/0030-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0322">
+        <Name>charge pump</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0051">
+        <Name>stopwatch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0323">
+        <Name>large unpolarized capacitor 10 µF - 50 µF</Name>
+        <Amount>4</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -1066,9 +1254,9 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Pasco springs of the same color</Name>
-        <Amount>1</Amount>
+      <Item id="0324">
+        <Name>Pasco 30 cm spring</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0185">
         <Name>set of hanging masses</Name>
@@ -1196,7 +1384,7 @@
       </Version>
     </Versions>
     <Equipment/>
-    <Type/>
+    <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -1218,12 +1406,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0051">
-        <Name>stopwatch</Name>
+      <Item id="0325">
+        <Name>SRL stopwatch</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -1234,9 +1422,9 @@
         <Name>9 V battery</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0326">
         <Name>1N914 diodes</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0122">
         <Name>1 MΩ resistor</Name>
@@ -1262,8 +1450,8 @@
         <Name>0.1 µF capacitor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
+      <Item id="0327">
+        <Name>LF411 OpAmp</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -1306,11 +1494,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0186">
-        <Name>set of slotted masses</Name>
+        <Name>harmonic motion slotted masses</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>assortment of red springs</Name>
+      <Item id="0314">
+        <Name>harmonic motion springs</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0034">
@@ -1344,12 +1532,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -1360,15 +1548,15 @@
         <Name>9 V battery</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0230">
-        <Name>thermistor</Name>
+      <Item id="0328">
+        <Name>SRL thermistor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
+      <Item id="0327">
+        <Name>LF411 OpAmp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0329">
         <Name>CDS photocell</Name>
         <Amount>1</Amount>
       </Item>
@@ -1451,7 +1639,17 @@
         <Directory>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259WI2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Software>
+      <Name>browser</Name>
+      <Name>Vernier Logger Pro</Name>
+      <Name>electric-hockey_en.jar</Name>
+    </Software>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -1519,7 +1717,24 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0330">
+        <Name>LED apparatus</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -1745,10 +1960,34 @@
         <Directory>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0050">
+        <Name>Vernier position sensor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+      <Name>labatorial_1_data.cmbl</Name>
+      <Name>1D_graph_matching.cmbl</Name>
+      <Name>labatorial_1_movie2.cmbl</Name>
+      <Name>constant_velocity.avi</Name>
+      <Name>constant_angular_velocity.avi</Name>
+    </Software>
   </Lab>
   <Lab labId="0094">
     <Name>Photometry</Name>
@@ -1818,8 +2057,8 @@
         <Name>meter stick</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>reconfigurable lightbulb array</Name>
+      <Item id="0331">
+        <Name>lightbulb array</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -1850,27 +2089,27 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>frequency counter</Name>
+      <Item id="0320">
+        <Name>SRL frequency counter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>CD4023</Name>
+      <Item id="0332">
+        <Name>CD4023 CMOS counter-divider</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>CD4046</Name>
+      <Item id="0333">
+        <Name>CD4046 CMOS counter-divider</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>CD4017</Name>
+      <Item id="0334">
+        <Name>CD4017 CMOS counter-divider</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0335">
         <Name>300 Hz quartz crystal</Name>
         <Amount>1</Amount>
       </Item>
@@ -1935,7 +2174,28 @@
         <Directory>/data/repository/0058-Oscilloscope-and-Multimeter/0058-PHYS323FA2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0009">
+        <Name>B&amp;K function generator</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -1953,7 +2213,28 @@
         <Directory>/data/repository/0084-Balloon-Physics/0084-PHYS341FA2015/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0336">
+        <Name>spherical rubber balloon</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0337">
+        <Name>milligram digital balance</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0051">
+        <Name>stopwatch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0338">
+        <Name>plastic measuring tape</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -2083,10 +2364,57 @@
         <Directory>/data/repository/0006-Simple-Harmonic-Oscillation-and-Conservation-of-Energy/0006-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0097">
+        <Name>air track</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0011">
+        <Name>Pasco air blower</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0206">
+        <Name>air track cart</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0112">
+        <Name>air track spring</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0111">
+        <Name>banana plugs with eye hook</Name>
+        <Amount>4</Amount>
+      </Item>
+      <Item id="0109">
+        <Name>adjustable end stop</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0012">
+        <Name>digital balance</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0095">
+        <Name>air track accessory kit</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0050">
+        <Name>Vernier position sensor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>SHO.cmbl</Name>
+    </Software>
   </Lab>
   <Lab labId="0118">
     <Name>The NPN Transistor Bias and Switching</Name>
@@ -2106,12 +2434,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -2122,8 +2450,8 @@
         <Name>9 V battery</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>leads</Name>
+      <Item id="0341">
+        <Name>solid wire leads</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0147">
@@ -2132,7 +2460,7 @@
       </Item>
       <Item id="0129">
         <Name>47 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0123">
         <Name>10 kΩ resistor</Name>
@@ -2140,14 +2468,22 @@
       </Item>
       <Item id="0115">
         <Name>1 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>NPN transistor</Name>
-        <Amount>1</Amount>
+      <Item id="0342">
+        <Name>2N3904 NPN bipolar transistor</Name>
+        <Amount>4</Amount>
       </Item>
       <Item id="0150">
         <Name>unknown potentiometer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0343">
+        <Name>green LED</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0172">
+        <Name>push-button switch</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -2196,7 +2532,36 @@
         <Directory>/data/repository/0077-Radioactive-Decay/0077-PHYS325WI2013/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0039">
+        <Name>Geiger-Mueller tube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0345">
+        <Name>Geiger-Mueller tube BNC cable</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0346">
+        <Name>Geiger-Mueller tube power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0347">
+        <Name>radiation sample holder</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0051">
+        <Name>stopwatch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0223">
+        <Name>forceps</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0348">
+        <Name>neutron activated indium disk</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -2292,12 +2657,12 @@
         <Name>Water constant volume gas apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0349">
         <Name>1000 mL glass beaker</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>cork</Name>
+      <Item id="0350">
+        <Name>#5 rubber stopper</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0073">
@@ -2330,7 +2695,7 @@
       </Item>
       <Item id="0020">
         <Name>right angle clamp</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0056">
         <Name>thermometer clamp</Name>
@@ -2435,15 +2800,15 @@
         <Name>2 resistor set</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Eico decade resistor box</Name>
+      <Item id="0351">
+        <Name>10 kΩ Eico decade resistor box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0154">
         <Name>25 Ω potentiometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0352">
         <Name>black box voltage divider</Name>
         <Amount>1</Amount>
       </Item>
@@ -2462,14 +2827,47 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-PHYS323FA2011/errorwsm.pdf</Path>
-        <Semester>Fall</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 323</Course>
-        <Directory>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-PHYS323FA2011/</Directory>
+        <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-LEGACY/meas.pdf</Path>
+        <Semester/>
+        <Year/>
+        <Course/>
+        <Directory>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-LEGACY/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0092">
+        <Name>string</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0043">
+        <Name>scissors</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0012">
+        <Name>digital balance</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0205">
+        <Name>inclinometer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0040">
+        <Name>measuring tape</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0071">
+        <Name>demonstration Vernier scale</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0353">
+        <Name>uncertainties kit</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -2527,7 +2925,7 @@
         <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2013/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2017/Simple-Harmonic-Motion-FA2017.pdf</Path>
+        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2017/Simple-Harmonic-Oscillations-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 365</Course>
@@ -2557,7 +2955,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
@@ -2577,8 +2975,8 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0111">
-        <Name>banana plugs with eye hooks</Name>
-        <Amount>1</Amount>
+        <Name>banana plugs with eye hook</Name>
+        <Amount>4</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
@@ -2669,10 +3067,17 @@
         <Directory>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259WI2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0354">
+        <Name>scotch tape</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>electric fields from point charges applet</Name>
+    </Software>
   </Lab>
   <Lab labId="0048">
     <Name>Electron Current and Energy in a Circuit</Name>
@@ -2777,8 +3182,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Electromagnet</Name>
+      <Item id="0190">
+        <Name>electromagnet</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0002">
@@ -2793,8 +3198,8 @@
         <Name>Philips multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>InAs Hall probe</Name>
+      <Item id="0113">
+        <Name>Hall probe kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0283">
@@ -2813,20 +3218,12 @@
         <Name>right angle clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0282">
-        <Name>female BNC to male banana adapter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0308">
-        <Name>BNC coaxial cable</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>compass</Name>
+      <Item id="0191">
+        <Name>small compass</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0034">
@@ -2888,7 +3285,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0203">
-        <Name>coil with assorted turn counts</Name>
+        <Name>solenoid for aluminum rail</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0007">
@@ -2907,8 +3304,8 @@
         <Name>set of connecting leads</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>wire holder with wire</Name>
+      <Item id="0208">
+        <Name>Biot-Savart single wire apparatus</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -3023,7 +3420,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0068">
-        <Name>spectrum tube power supply</Name>
+        <Name>Geissler tube power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0064">
@@ -3040,6 +3437,10 @@
       </Item>
       <Item id="0066">
         <Name>Osram cadmium lamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0233">
+        <Name>Osram lamp power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0008">
@@ -3073,16 +3474,16 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0355">
         <Name>avometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>digital multimeter and test leads</Name>
+      <Item id="0356">
+        <Name>SRL digital multimeter</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -3113,8 +3514,8 @@
         <Name>9 V battery</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>div 1/div 10</Name>
+      <Item id="0357">
+        <Name>SRL oscilloscope probe</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -3276,8 +3677,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>schematic diagram of vacuum pump principles</Name>
+      <Item id="0358">
+        <Name>vacuum pump principles diagram</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0157">
@@ -3285,11 +3686,11 @@
         <Amount>6</Amount>
       </Item>
       <Item id="0291">
-        <Name>hand operated vacuum pump</Name>
+        <Name>hand operated roughing pump</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>board-mounted gauges</Name>
+      <Item id="0192">
+        <Name>mechanical gauge set</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0289">
@@ -3302,7 +3703,11 @@
       </Item>
       <Item id="0288">
         <Name>thermocouple vacuum gauge</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0361">
+        <Name>thermocouple vacuum gauge head</Name>
+        <Amount>3</Amount>
       </Item>
       <Item id="0287">
         <Name>leaky weld assembly</Name>
@@ -3313,7 +3718,7 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0286">
-        <Name>helium cylinder</Name>
+        <Name>helium compressed gas cylinder</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
@@ -3336,51 +3741,51 @@
         <Name>Topward power supply</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>isolation valve</Name>
+      <Item id="0194">
+        <Name>NW25 isolation valve</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>vacuum hose</Name>
+      <Item id="0193">
+        <Name>NW 25 flexable vacuum hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>25 cm tube with NW25 terminations</Name>
+      <Item id="0360">
+        <Name>NW25 25cm long nipple</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>four-way cross with NW25 flanges</Name>
+      <Item id="0359">
+        <Name>NW 25 four-way cross</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Varian vacuum gauge and gauge head</Name>
-        <Amount>1</Amount>
+      <Item id="0362">
+        <Name>NW25 rubber O-ring</Name>
+        <Amount>16</Amount>
       </Item>
-      <Item id="0000">
-        <Name>assortment of NW25 rubber O-rings and metal centering rings</Name>
-        <Amount>1</Amount>
+      <Item id="0363">
+        <Name>NW25 centering ring</Name>
+        <Amount>16</Amount>
       </Item>
-      <Item id="0000">
-        <Name>foreline trap</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>assortment of NW25 clamps</Name>
-        <Amount>1</Amount>
+      <Item id="0364">
+        <Name>NW25 clamps</Name>
+        <Amount>20</Amount>
       </Item>
       <Item id="0235">
         <Name>nitrile gloves</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Vernier data acquisition system with printer support</Name>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0365">
         <Name>Vernier instrumentation amplifier</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0366">
         <Name>pumpdown and leakout curve apparatus</Name>
         <Amount>1</Amount>
       </Item>
@@ -3388,16 +3793,16 @@
         <Name>stopwatch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Diffstak equipment cart</Name>
+      <Item id="0365">
+        <Name>Oil diffstak high vacuum system</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0368">
         <Name>RG-83 ionization gauge controller</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Turbo V80 pump cart</Name>
+      <Item id="0369">
+        <Name>Turbomolecular high vacuum system</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -3425,12 +3830,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -3457,8 +3862,8 @@
         <Name>0.1 µF capacitor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0051">
-        <Name>stopwatch</Name>
+      <Item id="0325">
+        <Name>SRL stopwatch</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -3493,7 +3898,36 @@
         <Directory>/data/repository/0010-Current-Balance/0010-PHYS223WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0209">
+        <Name>He-Ne laser with acrylic base</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0211">
+        <Name>high current power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0041">
+        <Name>micrometer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0212">
+        <Name>current balance kit</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -3632,44 +4066,16 @@
         <Name>small optical bench mount</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0036">
-        <Name>illuminated test object</Name>
+      <Item id="0370">
+        <Name>thin lens kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0044">
-        <Name>plastic ruler</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0037">
-        <Name>optical screen</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
+      <Item id="0028">
         <Name>diopter gauge</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0063">
-        <Name>lens holder</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>short focal length double convex lens</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>2 different medium focal length double convex lenses</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>long focal length double convex lens</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>double concave lens</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -3702,7 +4108,68 @@
         <Directory>/data/repository/0054-Electromagnetic-Induction/0054-PHYS323FA2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0042">
+        <Name>Pasco digital funtion amplifier</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0097">
+        <Name>air track</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0011">
+        <Name>Pasco air blower</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0047">
+        <Name>Pasco driven harmonic motion apparatus</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0371">
+        <Name>electromagnetic induction kit</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0005">
+        <Name>right angle clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0046">
+        <Name>fork clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0092">
+        <Name>string</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -3781,9 +4248,13 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>60 cm acrylic tube filled with glycerine</Name>
+      <Item id="0372">
+        <Name>60 cm acrylic tube</Name>
         <Amount>1</Amount>
+      </Item>
+      <Item id="0374">
+        <Name>liter of glycerin</Name>
+        <Amount>6</Amount>
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
@@ -3797,7 +4268,7 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0373">
         <Name>5 mL pipet</Name>
         <Amount>1</Amount>
       </Item>
@@ -3810,31 +4281,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0216">
-        <Name>1/8” diameter sphere</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0217">
-        <Name>5/32” diameter sphere</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0218">
-        <Name>3/16” diameter sphere</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0219">
-        <Name>1/4” diameter sphere</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0220">
-        <Name>5/16” diameter sphere</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0221">
-        <Name>3/8” diameter sphere</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0222">
-        <Name>1/2” diameter sphere</Name>
+        <Name>drag force kit</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -3917,8 +4364,8 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0068">
-        <Name>spectrum tube power supply</Name>
-        <Amount>1</Amount>
+        <Name>Geissler tube power supply</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0064">
         <Name>hydrogen Geissler tube</Name>
@@ -3934,6 +4381,10 @@
       </Item>
       <Item id="0066">
         <Name>Osram cadmium lamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0233">
+        <Name>Osram lamp power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0008">
@@ -4007,7 +4458,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0217">
         <Name>Pasco precision interferometer apparatus</Name>
         <Amount>1</Amount>
       </Item>
@@ -4015,24 +4466,8 @@
         <Name>He-Ne laser</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0037">
-        <Name>optical screen</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0166">
-        <Name>Nalgene vacuum pump with air cell</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Glass slide with control apparatus</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0257">
         <Name>wooden stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0183">
-        <Name>18 mm focal length convex lens</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0022">
@@ -4049,10 +4484,6 @@
       </Item>
       <Item id="0034">
         <Name>calipers</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0037">
-        <Name>optical screen</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -4139,15 +4570,15 @@
         <Name>Anatek power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>motor-generator apparatus with brake</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0318">
         <Name>rubber mat</Name>
         <Amount>1</Amount>
       </Item>
@@ -4184,7 +4615,32 @@
         <Directory>/data/repository/0059-Parallel-Plate-Capacitors/0059-PHYS323FA2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0218">
+        <Name>variable parallel plate capacitor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0009">
+        <Name>B&amp;K function generator</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0040">
+        <Name>measuring tape</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0219">
+        <Name>set of dielectrics</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -4202,7 +4658,76 @@
         <Directory>/data/repository/0117-Swept-Frequency-Waveform-Generator-DFT/0117-PHYS497WI2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0220">
+        <Name>LM3301 quad amplifier</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0221">
+        <Name>XR8038 precision waveform generator</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0326">
+        <Name>1N914 diode</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0119">
+        <Name>10 μF capacitor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0114">
+        <Name>0.1 μF capacitor</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0118">
+        <Name>0.001 μF capacitor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0172">
+        <Name>push-button switch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0123">
+        <Name>10 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0139">
+        <Name>20 kΩ resistor</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0124">
+        <Name>100 kΩ resistor</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0222">
+        <Name>36 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0375">
+        <Name>82 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0376">
+        <Name>200 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0122">
+        <Name>1 MΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0107">
+        <Name>breadboard</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0108">
+        <Name>9 V battery</Name>
+        <Amount>2</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -4248,7 +4773,16 @@
         <Directory>/data/repository/0017-Pressure-and-Density/0017-PHYS223WI2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0377">
+        <Name>Pascal's vase</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0378">
+        <Name>Magdeburg hemispheres</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -4319,7 +4853,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0099">
         <Name>Tel-X-ometer x-ray spectrometer</Name>
         <Amount>1</Amount>
       </Item>
@@ -4353,7 +4887,36 @@
         <Directory>/data/repository/0042-Power-Supplies-Lights-and-Switches/0042-PHYS255WI2014/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0042">
+        <Name>DPDT switch</Name>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0379">
+        <Name>cross-bar switch</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0380">
+        <Name>28 V minibulb</Name>
+        <Amount>2</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -4409,8 +4972,8 @@
         <Name>acrylic block set</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>plane-convex-concave universal mirror</Name>
+      <Item id="0381">
+        <Name>three sided mirror</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0045">
@@ -4455,10 +5018,6 @@
       </Item>
       <Item id="0225">
         <Name>push pins</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0038">
-        <Name>flashlight</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0170">
@@ -4510,7 +5069,44 @@
         <Directory>/data/repository/0037-Faradays-Law/0037-PHYS255WI2015/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0014">
+        <Name>Vernier voltage probe</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set up connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0383">
+        <Name>bar magnet</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0382">
+        <Name>induction coil</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0191">
+        <Name>small compass</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -4533,24 +5129,24 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0107">
         <Name>breadboard</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
+      <Item id="0327">
+        <Name>LF411 OpAmp</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0144">
@@ -4575,7 +5171,7 @@
       </Item>
       <Item id="0123">
         <Name>10 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -4609,7 +5205,48 @@
         <Directory>/data/repository/0026-Measuring-Velocity-Momentum-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2013/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0050">
+        <Name>Vernier position sensor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0097">
+        <Name>air track</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0096">
+        <Name>air hose</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0092">
+        <Name>string</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0095">
+        <Name>air track accessory kit</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0012">
+        <Name>digital balance</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -4677,10 +5314,21 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0293">
+        <Name>stirling engine</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>gas-properties_en.jar</Name>
+    </Software>
   </Lab>
   <Lab labId="0028">
     <Name>The Momentum and Energy Principles</Name>
@@ -4727,8 +5375,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>a ball to throw up in the air</Name>
+      <Item id="0339">
+        <Name>tennis ball</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
@@ -4769,28 +5417,24 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0003">
-        <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0107">
         <Name>breadboard</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>div 1/div 10 probe</Name>
+      <Item id="0357">
+        <Name>SRL oscilloscope probe</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0131">
@@ -4799,22 +5443,22 @@
       </Item>
       <Item id="0124">
         <Name>100 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0115">
         <Name>1 µF capacitor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0326">
         <Name>1N914 diode</Name>
+        <Amount>4</Amount>
+      </Item>
+      <Item id="0340">
+        <Name>116F24 transformer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>transformer 166F24 or similar</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>20 F 2N3904 NPN bipoar transistors</Name>
+      <Item id="0342">
+        <Name>2N3904 NPN bipoar transistors</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -4840,12 +5484,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -4854,23 +5498,23 @@
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0384">
+        <Name>SRL meter stick</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0007">
-        <Name>meter stick</Name>
+      <Item id="0385">
+        <Name>LF353 JFET OpAmp</Name>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0385">
+        <Name>CD4016 CMOS switch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF353</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>CD4016</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
+      <Item id="0386">
         <Name>mini-speaker</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0115">
         <Name>1 µF capacitor</Name>
@@ -4878,11 +5522,11 @@
       </Item>
       <Item id="0114">
         <Name>0.1 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0129">
         <Name>47 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0125">
         <Name>1 kΩ resistor</Name>
@@ -4894,11 +5538,11 @@
       </Item>
       <Item id="0124">
         <Name>100 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0123">
         <Name>10 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -4964,7 +5608,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0162">
-        <Name>Korad DC power supply</Name>
+        <Name>Korad power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0004">
@@ -4973,11 +5617,11 @@
       </Item>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -5079,16 +5723,14 @@
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 323</Course>
-        <Directory>/data/repository/0057-Malus-Law-and-Birefringence/
-</Directory>
+        <Directory>/data/repository/0057-Malus-Law-and-Birefringence/</Directory>
       </Version>
       <Version>
         <Path>/data/repository/0057-Malus-Law-and-Birefringence/0057-PHYS375FA2017/Malus-Law-and-Birefringence-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 375</Course>
-        <Directory>/data/repository/0057-Malus-Law-and-Birefringence/
-</Directory>
+        <Directory>/data/repository/0057-Malus-Law-and-Birefringence/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -5098,14 +5740,10 @@
       </Item>
       <Item id="0030">
         <Name>small optical bench mount</Name>
-        <Amount>1</Amount>
+        <Amount>6</Amount>
       </Item>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0002">
-        <Name>Anatek power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0002">
@@ -5118,7 +5756,7 @@
       </Item>
       <Item id="0035">
         <Name>polarizer</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0048">
         <Name>light detector</Name>
@@ -5126,32 +5764,31 @@
       </Item>
       <Item id="0063">
         <Name>lens holder</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0083">
         <Name>2-axis translation stage</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>28V light bulb</Name>
+      <Item id="0380">
+        <Name>28 V minibulb</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0182">
-        <Name>20 cm focal length convex lens</Name>
+      <Item id="0387">
+        <Name>20 cm focal length 38 mm diameter double convex lens</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0388">
+        <Name>icelandic fieldspar</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs>
-      <Doc>
-        <Name>Latex Source</Name>
-        <Path>/data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
-      </Doc>
-    </SupportDocs>
+    <SupportDocs/>
     <Software/>
   </Lab>
   <Lab labId="0031">
@@ -5225,12 +5862,12 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0164">
-        <Name>E/M apparatus</Name>
+        <Name>e/m apparatus</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -5322,7 +5959,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0179">
-        <Name>potential mapping field probe</Name>
+        <Name>potential mapping probe</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0175">
@@ -5342,7 +5979,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0044">
@@ -5369,7 +6006,40 @@
         <Directory>/data/repository/0082-Uniform-Circular-Motion/0082-PHYS341FA2015/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0278">
+        <Name>motor dirven turntable</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0051">
+        <Name>stopwatch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0236">
+        <Name>bubble level</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0300">
+        <Name>circular plastic pan</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0301">
+        <Name>dish soap</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0389">
+        <Name>stand with laser and protractor</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -5434,38 +6104,38 @@
       </Item>
       <Item id="0031">
         <Name>large optical bench mount</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
-      <Item id="0000">
-        <Name>laser mount</Name>
+      <Item id="0083">
+        <Name>2-axis translation stage</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0160">
         <Name>Newport Instruments water cooled electromagnet</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0390">
         <Name>VR3 power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>sample holder</Name>
+      <Item id="0391">
+        <Name>faraday effect media sample holder</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0035">
         <Name>polarizer</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0163">
         <Name>Pasco fibre-optics photometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0392">
         <Name>fiber optics mounting rod</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>samples of different optical media</Name>
+      <Item id="0393">
+        <Name>faraday effect kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0034">
@@ -5543,7 +6213,9 @@
     <Equipment/>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>electric fields from point charges applet</Name>
+    </Software>
   </Lab>
   <Lab labId="0038">
     <Name>Kirchoff's Laws</Name>
@@ -5572,7 +6244,32 @@
         <Directory>/data/repository/0038-Kirchoffs-Laws/0038-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0232">
+        <Name>2 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0267">
+        <Name>set of short connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software/>
@@ -5684,7 +6381,9 @@
     <Equipment/>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>electric fields from point charges applet</Name>
+    </Software>
   </Lab>
   <Lab labId="0092">
     <Name>Laser Beams</Name>
@@ -5746,55 +6445,55 @@
         <Name>lens holder</Name>
         <Amount>8</Amount>
       </Item>
-      <Item id="0000">
-        <Name>double convex 38 mm wide 5.3 cm focal length lens</Name>
+      <Item id="0394">
+        <Name>5.3 cm focal length 38 m diameter double convex lens</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>double convex 38 mm 11.8 cm focal length lens</Name>
+      <Item id="0395">
+        <Name>11.8 cm focal length 38 mm diameter double convex lens</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>double concave 38 mm wide 3.6 cm focal length lens</Name>
+      <Item id="0396">
+        <Name>-3.6 cm focal length 38 mm diameter double convex lens</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0398">
+        <Name>25 cm focal length 100 mm diameter double convex lens</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>double concave 38 mm wide 28.6 cm focal length lens</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>double convex 100 mm wide 25 cm focal length lens</Name>
-        <Amount>3</Amount>
-      </Item>
-      <Item id="0021">
-        <Name>He-Ne laser</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0045">
-        <Name>cork board</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0257">
-        <Name>wooden stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0048">
-        <Name>light detector</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0309">
-        <Name>optical iris</Name>
+      <Item id="0397">
+        <Name>cylindrical He-Ne laser</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0310">
         <Name>cylindrical laser mount</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0399">
+        <Name>100 µm pinhole</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0400">
         <Name>3-axis translation stage</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0401">
+        <Name>20 cm front surface flat mirror holder</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0402">
+        <Name>aluminum rod with wide slit</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0311">
+        <Name>adjustable laboratory stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>4</Amount>
+      </Item>
+      <Item id="0403">
         <Name>triple diffraction grating</Name>
         <Amount>1</Amount>
       </Item>
@@ -5806,12 +6505,20 @@
         <Name>rectangular block worksheet</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>flat mirror</Name>
-        <Amount>1</Amount>
+      <Item id="0381">
+        <Name>three sided mirror</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0171">
         <Name>mirror worksheet</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0045">
+        <Name>cork board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0257">
+        <Name>wooden stand</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0225">
@@ -5826,6 +6533,14 @@
         <Name>plastic ruler</Name>
         <Amount>2</Amount>
       </Item>
+      <Item id="0048">
+        <Name>light detector</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0309">
+        <Name>optical iris</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0040">
         <Name>measuring tape</Name>
         <Amount>1</Amount>
@@ -5836,18 +6551,6 @@
       </Item>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>100 µm pinhole</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>flat mirror holder</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0311">
-        <Name>adjustable laboratory stand</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -5978,14 +6681,43 @@
         <Directory>/data/repository/0005-Newtons-Third-Law/0005-PHYS227FA2011/</Directory>
       </Version>
       <Version>
-        <Path>Phys211-221-Labatorial07-Newtons-3rd-Law-SP2017.pdf</Path>
+        <Path>/data/repository/0005-Newtons-Third-Law/0005-PHYS211SP2017/Phys211-221-Labatorial07-Newtons-3rd-Law-SP2017.pdf</Path>
         <Semester>Spring</Semester>
         <Year>2017</Year>
         <Course>PHYS 211</Course>
         <Directory>/data/repository/0005-Newtons-Third-Law/0005-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro  data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0404">
+        <Name>rolling chair</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0078">
+        <Name>green spring scale</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0079">
+        <Name>red spring scale</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0405">
+        <Name>Vernier force sensor</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0406">
+        <Name>Vernier force sensor handle</Name>
+        <Amount>4</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -6056,7 +6788,9 @@
     <Equipment/>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>gas-properties_en.jar</Name>
+    </Software>
   </Lab>
   <Lab labId="0053">
     <Name>Concave Mirrors</Name>
@@ -6176,7 +6910,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0300">
-        <Name>circular plastic dish</Name>
+        <Name>circular plastic pan</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0301">
@@ -6207,7 +6941,7 @@
         <Name>illuminated test object</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0407">
         <Name>isolation transformer</Name>
         <Amount>1</Amount>
       </Item>
@@ -6352,10 +7086,85 @@
         <Directory>/data/repository/0004-Newtons-Second-Law/0004-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0050">
+        <Name>Vernier posistion sensor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0078">
+        <Name>green spring scale</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0097">
+        <Name>air track</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0096">
+        <Name>air hose</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0206">
+        <Name>air track cart</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0093">
+        <Name>sail</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0092">
+        <Name>string</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0043">
+        <Name>scissors</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0095">
+        <Name>air track accessory kit</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0012">
+        <Name>digital balance</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0297">
+        <Name>vector board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0405">
+        <Name>Vernier force sensor</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>1D-Motion.cmbl</Name>
+    </Software>
   </Lab>
   <Lab labId="0040">
     <Name>Magnetic Fields and Forces</Name>
@@ -6438,9 +7247,9 @@
         <Name>set of connecting leads</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>1 gram ball bearings</Name>
-        <Amount>1</Amount>
+      <Item id="0290">
+        <Name>magnetic force 1 g ball bearing</Name>
+        <Amount>5</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -6530,7 +7339,7 @@
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -6602,37 +7411,75 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0029">
-        <Name>Ortec pulse height analyzer</Name>
+        <Name>Ortec 8k multichannel analyzer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>1.0 mCi Co-57 gamma source</Name>
+      <Item id="0105">
+        <Name>1.0 μCi Co-57 gamma source</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>1.0 mCi Ba-133 gamma source</Name>
+      <Item id="0104">
+        <Name>1.0 μCi Ba-133 gamma source</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>1.0 mCi Cs-137 gamma source</Name>
+      <Item id="0103">
+        <Name>1.0 μCi Cs-137 gamma source</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0408">
+        <Name>35 mCi Cs-137 gamma source</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0408">
+        <Name>35 mCi Cs-137 gamma source</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0250">
+        <Name>HP 6516A high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0102">
         <Name>assortment of scattering rods</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>detector stand with source shelves and lead and aluminum shields</Name>
+      <Item id="0409">
+        <Name>custom 12 V and 24 V power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0410">
+        <Name>sodium iodide scintillation detector</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0411">
+        <Name>cylindrical aluminum shield</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0412">
+        <Name>cylindrical lead shield</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0053">
+        <Name>radiation sample holder</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0010">
         <Name>oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0308">
+        <Name>BNC coaxial cable</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0413">
+        <Name>BNC tee</Name>
+        <Amount>1</Amount>
+      </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>Maestro 7.01</Name>
+    </Software>
   </Lab>
   <Lab labId="0081">
     <Name>Inclined Atwood Machine</Name>
@@ -6675,7 +7522,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0096">
+        <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -6807,7 +7658,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0179">
-        <Name>potential mapping field probe</Name>
+        <Name>potential mapping probe</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0175">
@@ -6831,7 +7682,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0044">
@@ -6846,7 +7697,7 @@
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software>
-      <Name>Electric Fields from Point Charges applet</Name>
+      <Name>electric fields from point charges applet</Name>
     </Software>
   </Lab>
   <Lab labId="0111">
@@ -6867,16 +7718,16 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>frequency counter</Name>
+      <Item id="0320">
+        <Name>SRL frequency counter</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -6905,7 +7756,7 @@
       </Item>
       <Item id="0114">
         <Name>0.1 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
@@ -6984,20 +7835,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Rods made of acrylic and PVC</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>string and support to hang these rods from</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>rayon cloth</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0094">
-        <Name>leaf electroscope</Name>
+      <Item id="0414">
+        <Name>eletrostatics kit</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -7024,18 +7863,18 @@
     </Versions>
     <Equipment>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
         <Name>breadboard</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>power supply or battery</Name>
+      <Item id="0108">
+        <Name>9 V battery</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0326">
         <Name>1N914 diode</Name>
         <Amount>1</Amount>
       </Item>
@@ -7043,16 +7882,17 @@
         <Name>unknown potentiometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM555</Name>
+      <Item id="0415">
+        <Name>LM555 timer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM3900/LM3301</Name>
+      <Item id="0416">
+        <Name>LM3900 quad amplifer</Name>
+        <Alt id="0220">LM3301 quad amplifie </Alt>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>CM3130</Name>
+      <Item id="0417">
+        <Name>CM3130 OpAmp</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0127">
@@ -7065,11 +7905,11 @@
       </Item>
       <Item id="0126">
         <Name>3.3 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>7</Amount>
       </Item>
       <Item id="0124">
         <Name>100 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>7</Amount>
       </Item>
       <Item id="0119">
         <Name>10 µF capacitor</Name>
@@ -7081,7 +7921,7 @@
       </Item>
       <Item id="0115">
         <Name>1 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -7123,10 +7963,17 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type/>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>VPython</Name>
+    </Software>
   </Lab>
   <Lab labId="0002">
     <Name>Measuring Motion</Name>
@@ -7311,9 +8158,9 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>3 flat-bottomed coffee filters</Name>
-        <Amount>1</Amount>
+      <Item id="0418">
+        <Name>flat-bottomed coffee filter</Name>
+        <Amount>3</Amount>
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
@@ -7327,7 +8174,7 @@
         <Name>meter stick</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0419">
         <Name>bathroom scale</Name>
         <Amount>1</Amount>
       </Item>
@@ -7399,7 +8246,28 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0420">
+        <Name>SPST switch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0380">
+        <Name>28 V minibulb</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -7484,32 +8352,16 @@
         <Name>1 m optical bench</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0084">
-        <Name>slide holder</Name>
+      <Item id="0022">
+        <Name>small optical bench mount</Name>
+        <Amount>4</Amount>
+      </Item>
+      <Item id="0063">
+        <Name>lens holder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0085">
-        <Name>slide with 4 single slits</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0086">
-        <Name>slide with 3 diffraction gratings</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0087">
-        <Name>slide with 4 double slits</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0088">
-        <Name>slide with multiple slits</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0089">
-        <Name>set of 7 nylon mesh slides with different grid spacings</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0090">
-        <Name>slide with square and hexagonal gratings and 2 pinholes</Name>
+      <Item id="0421">
+        <Name>Fraunhofer kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0037">
@@ -7582,7 +8434,44 @@
         <Directory>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0422">
+        <Name>critical potential tube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0423">
+        <Name>critical potential tube shield</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0424">
+        <Name>critical potential tube controller</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0425">
+        <Name>universal tube stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>2</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -7645,7 +8534,24 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0087">
+        <Name>wodden cube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0353">
+        <Name>ball bearing</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -7788,7 +8694,40 @@
         <Directory>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0106">
+        <Name>SRL function generator</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0107">
+        <Name>breadboard</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0356">
+        <Name>SRL digital multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0123">
+        <Name>10 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0132">
+        <Name>30 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0124">
+        <Name>100 kΩ resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0124">
+        <Name>0.01 μF capacitor</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -7841,10 +8780,37 @@
         <Directory>/data/repository/0032-Circuits/0032-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0380">
+        <Name>28 V minibulb</Name>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0420">
+        <Name>SPST switch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>circuit-construction-kit-ac_en.jar</Name>
+    </Software>
   </Lab>
   <Lab labId="0080">
     <Name>Hanging Chain</Name>
@@ -7883,17 +8849,21 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>assortment of chains</Name>
+      <Item id="0085">
+        <Name>hainging chain</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0086">
+        <Name>hainging chain pulley</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
@@ -7901,11 +8871,19 @@
       </Item>
       <Item id="0078">
         <Name>green spring scale</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0077">
-        <Name>hook collar</Name>
-        <Amount>1</Amount>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>6</Amount>
+      </Item>
+      <Item id="0046">
+        <Name>fork clamp</Name>
+        <Amount>6</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>6</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -7925,10 +8903,49 @@
         <Directory>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0087">
+        <Name>alligator clamp</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0088">
+        <Name>play-doh electrode</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0089">
+        <Name>test lead</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0090">
+        <Name>play-doh</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0098">
     <Name>RLC Resonant Circuits</Name>
@@ -8007,7 +9024,7 @@
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0010">
         <Name>oscilloscope</Name>
@@ -8066,7 +9083,48 @@
         <Directory>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0426">
+        <Name>concentric ring conductor board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0177">
+        <Name>parallel plate conductor board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0176">
+        <Name>potential mapping graph paper</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0052">
+        <Name>masking tape</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0175">
+        <Name>potential mapping apparatus</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0179">
+        <Name>potential mapping probe</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -8258,24 +9316,12 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Rectangles with different lengths</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0180">
-        <Name>sextant</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Circles with different diameters</Name>
+      <Item id="0353">
+        <Name>uncertainties kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0040">
         <Name>measuring tape</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Ball bearing</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0071">
@@ -8305,12 +9351,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -8319,39 +9365,42 @@
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
-        <Amount>1</Amount>
+      <Item id="0327">
+        <Name>LF411 OpAmp</Name>
+        <Alt id="0220">
+          <Name>LF351 OpAmp</Name>
+        </Alt>
+        <Amount>3</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0385">
         <Name>CD4016 CMOS switch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0415">
         <Name>LM555 timer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
         <Name>0.01 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Amount>8</Amount>
       </Item>
       <Item id="0129">
         <Name>47 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0130">
         <Name>27 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0125">
         <Name>1 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0123">
         <Name>10 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>5</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -8418,8 +9467,8 @@
         <Name>radium isolation nuclear chemistry station</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Ortec Ametek dual input alpha spectrometer</Name>
+      <Item id="0427">
+        <Name>Ortec alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0157">
@@ -8431,7 +9480,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
-        <Name>0.1 mCi Po-210 alpha source</Name>
+        <Name>0.1 μCi Po-210 alpha source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0143">
@@ -8446,7 +9495,7 @@
     <Type>Lab</Type>
     <SupportDocs/>
     <Software>
-      <Name>Maestro pulse height analyzer software</Name>
+      <Name>Maestro 7.01</Name>
     </Software>
   </Lab>
   <Lab labId="0007">
@@ -8574,7 +9623,36 @@
         <Directory>/data/repository/0007-Statics-Newtons-First-Law-in-2-Dimensions/0007-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0297">
+        <Name>vector board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0054">
+        <Name>c-clamp</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0092">
+        <Name>string</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0226">
+        <Name>protractor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -8613,7 +9691,60 @@
         <Directory>/data/repository/0036-Electromagnetic-Induction/0036-PHYS259WI2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0032">
+        <Name>slinky</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0428">
+        <Name>pickup coil</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0054">
+        <Name>c-clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0087">
+        <Name>alligator clamp</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0351">
+        <Name>10 kΩ Eico decade resistor box</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0015">
+        <Name>Vernier current probe</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0042">
+        <Name>Pasco digital function amplifier</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -8729,10 +9860,23 @@
         <Directory>/data/repository/0008-Two-Dimensional-Motion/0008-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+    <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+            </Equipment>
     <Type/>
     <SupportDocs/>
-    <Software/>
+    <Software>
+    <Name>Bouncing-Ball.cmbl</Name>
+    <Name>Simultaneous-Fall.cmbl</Name>
+    <Name>Uniform-Circular-Motion.cmbl</Name>
+</Software>
   </Lab>
   <Lab labId="0024">
     <Name>Jumping Up</Name>
@@ -8776,7 +9920,12 @@
         <Directory>/data/repository/0024-Jumping-Up/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+            <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
@@ -8858,7 +10007,7 @@
         <Name>variac</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0429">
         <Name>AC line separator</Name>
         <Amount>1</Amount>
       </Item>
@@ -8866,12 +10015,12 @@
         <Name>quartz halogen lamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0430">
         <Name>GE 150W T3 quartz halogen bulb</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>AC current probe</Name>
+      <Item id="0431">
+        <Name>Fluke AC current probe</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0076">
@@ -8901,12 +10050,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRSL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -8945,8 +10094,9 @@
         <Name>0.1 µF capacitor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
+      <Item id="0327">
+        <Name>LF411 OpAmp</Name>
+        <alt id="0180">LF351 OpAmp</alt>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -9024,6 +10174,10 @@
         <Name>Nucleus alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0432">
+        <Name>486 computer</Name>
+        <Amount>1</Amount>
+      </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
@@ -9091,26 +10245,26 @@
       </Item>
       <Item id="0031">
         <Name>large optical bench mount</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0027">
         <Name>Moll’s thermopile</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0433">
         <Name>sample thermopile housing</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>oven</Name>
+      <Item id="0434">
+        <Name>black body oven</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0435">
         <Name>oven insert</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>cooling jacket</Name>
+      <Item id="0436">
+        <Name>water cooling iris</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
@@ -9168,12 +10322,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0108">
@@ -9188,24 +10342,24 @@
         <Name>push-button switch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LED</Name>
+      <Item id="0437">
+        <Name>red LED</Name>
+        <Amount>8</Amount>
+      </Item>
+      <Item id="0415">
+        <Name>LM555 timer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM555</Name>
+      <Item id="0438">
+        <Name>LM311 digital comparator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM311</Name>
+      <Item id="0439">
+        <Name>CD4024 CMOS binary counter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>CD4024</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>CD4023</Name>
+      <Item id="0440">
+        <Name>CD4023 logic gates</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0119">
@@ -9218,19 +10372,19 @@
       </Item>
       <Item id="0146">
         <Name>6.8 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>8</Amount>
       </Item>
       <Item id="0132">
         <Name>30 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>8</Amount>
       </Item>
       <Item id="0131">
         <Name>15 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>6</Amount>
       </Item>
       <Item id="0124">
         <Name>100 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -9299,14 +10453,15 @@
     <Equipment>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0060">
-        <Name>Cenco high voltage DC power supply</Name>
+        <Name>Cenco high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0263">
-        <Name>100 Ω decade resistance box</Name>
+        <Name>100 Ω GR decade resistance box</Name>
+        <alt id="0351">10 kΩ Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0155">
@@ -9349,17 +10504,13 @@
         <Name>fork clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>spinning wheel optical analogue</Name>
+      <Item id="0441">
+        <Name>electron diffraction optical analogue wheel</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>banana connecting sleeve</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0003">
+       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -9435,7 +10586,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0033">
-        <Name>tungsten-halogen lamp</Name>
+        <Name>halogen lamp heat sink</Name>
+        <Amount>1</Amount>
+      </Item>
+       <Item id="0173">
+        <Name>quartz halogen lamp</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0021">
@@ -9446,20 +10601,20 @@
         <Name>Fluke multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0442">
         <Name>precision voltage divider</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>10V DC power supply</Name>
+      <Item id="0443">
+        <Name>Kepco power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0038">
         <Name>flashlight</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>nanoAmpere current source</Name>
+      <Item id="0444">
+        <Name>nA current source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0022">
@@ -10192,7 +11347,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -10502,11 +11657,11 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-LEGACY/Advanced-Measurements-and-Uncertainties.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
-        <Directory>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-LEGACY/</Directory>
+        <Path>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-PHYS323FA2011/Advanced-Measurements-and-Uncertainties.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 323</Course>
+        <Directory>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-PHYS323FA2011/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -11408,7 +12563,7 @@
         <Amount>4</Amount>
       </Item>
       <Item id="0068">
-        <Name>spectrum tube power supply</Name>
+        <Name>Geissler tube power supply</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0266">
@@ -11585,7 +12740,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -11672,7 +12827,7 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -11771,7 +12926,8 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0263">
-        <Name>100 Ω decade resistance box</Name>
+        <Name>100 Ω GR decade resistance box</Name>
+            <alt id="0351">10 kΩ Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0264">
@@ -12219,7 +13375,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0068">
-        <Name>spectrum tube power supply</Name>
+        <Name>Geissler tube power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0064">
@@ -12235,7 +13391,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0233">
-        <Name>Ealing power supply</Name>
+        <Name>Osram lamp power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0069">
