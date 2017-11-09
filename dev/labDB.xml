@@ -216,7 +216,36 @@
         <Directory>/data/repository/0076-Radiation-Counting-Statistics/0076-PHYS325WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0039">
+        <Name>Geiger-Mueller tube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0345">
+        <Name>Geiger-Mueller tube BNC cable</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="03465">
+        <Name>Geiger-Mueller tube power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0347">
+        <Name>radiation sample holder</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0074">
+        <Name>0.1 μCi Sr-90 beta source</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -2579,7 +2608,48 @@
         <Directory>/data/repository/0075-Quantum-Defects-in-Sodium/0075-PHYS325WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0018">
+        <Name>advanced student spectroscope</Name>
+        <Amount/>
+      </Item>
+      <Item id="0184">
+        <Name>600 lines/mm diffraction grating</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0068">
+        <Name>Geissler tube power supply</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0064">
+        <Name>hydrogen Geissler tube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0065">
+        <Name>helium Geissler tube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0067">
+        <Name>sodium lamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0066">
+        <Name>Osram cadmium lamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0233">
+        <Name>Osram lamp power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0069">
+        <Name>magnifying glass</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
@@ -6454,7 +6524,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0396">
-        <Name>-3.6 cm focal length 38 mm diameter double convex lens</Name>
+        <Name>-3.6 cm focal length 38 mm diameter double concave lens</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0398">
@@ -9198,10 +9268,59 @@
         <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
-    <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <Equipment>
+      <Item id="0032">
+        <Name>slinky</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0054">
+        <Name>c-clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0046">
+        <Name>fork clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0013">
+        <Name>Vernier magnetic field probe</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Type>Labatorial</Type>
+      <SupportDocs/>
+      <Software/>
+    </Equipment>
   </Lab>
   <Lab labId="0041">
     <Name>Introduction to Measurements and Uncertainties</Name>
@@ -9861,22 +9980,22 @@
       </Version>
     </Versions>
     <Equipment>
-    <Item id="0024">
+      <Item id="0024">
         <Name>computer</Name>
         <Amount>1</Amount>
       </Item>
-        <Item id="0044">
+      <Item id="0044">
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-            </Equipment>
+    </Equipment>
     <Type/>
     <SupportDocs/>
     <Software>
-    <Name>Bouncing-Ball.cmbl</Name>
-    <Name>Simultaneous-Fall.cmbl</Name>
-    <Name>Uniform-Circular-Motion.cmbl</Name>
-</Software>
+      <Name>Bouncing-Ball.cmbl</Name>
+      <Name>Simultaneous-Fall.cmbl</Name>
+      <Name>Uniform-Circular-Motion.cmbl</Name>
+    </Software>
   </Lab>
   <Lab labId="0024">
     <Name>Jumping Up</Name>
@@ -9921,7 +10040,7 @@
       </Version>
     </Versions>
     <Equipment>
-            <Item id="0007">
+      <Item id="0007">
         <Name>meter stick</Name>
         <Amount>1</Amount>
       </Item>
@@ -10508,7 +10627,7 @@
         <Name>electron diffraction optical analogue wheel</Name>
         <Amount>1</Amount>
       </Item>
-       <Item id="0003">
+      <Item id="0003">
         <Name>set of connecting leads</Name>
         <Amount>3</Amount>
       </Item>
@@ -10589,7 +10708,7 @@
         <Name>halogen lamp heat sink</Name>
         <Amount>1</Amount>
       </Item>
-       <Item id="0173">
+      <Item id="0173">
         <Name>quartz halogen lamp</Name>
         <Amount>1</Amount>
       </Item>
@@ -10648,7 +10767,7 @@
         <Name>green spring scale</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0445">
         <Name>beaker with drain spout</Name>
         <Amount>1</Amount>
       </Item>
@@ -10664,11 +10783,11 @@
         <Name>250 mL graduated cylinder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>wooden block</Name>
+      <Item id="0195">
+        <Name>large wooden block</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0196">
         <Name>solid metal cylinder</Name>
         <Amount>1</Amount>
       </Item>
@@ -10680,8 +10799,8 @@
         <Name>calipers</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>salt water solution of 230 g salt/L</Name>
+      <Item id="0197">
+        <Name>salt</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0299">
@@ -10711,20 +10830,8 @@
         <Name>Phywe gas apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>thermal reservoir</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>recirculating pump</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0229">
-        <Name>thermometer</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>C2H6 (ethane) gas</Name>
+      <Item id="0080">
+        <Name>C2H6 ethane gas</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -10793,16 +10900,16 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0124-Bifilar-Suspension/0124-LEGAC/YBifilar-Suspension.pdf</Path>
+        <Path>/data/repository/0124-Bifilar-Suspension/0124-LEGACY/Bifilar-Suspension.pdf</Path>
         <Semester/>
         <Year/>
         <Course/>
-        <Directory>/data/repository/0124-Bifilar-Suspension/0124-LEGAC/</Directory>
+        <Directory>/data/repository/0124-Bifilar-Suspension/0124-LEGACY/</Directory>
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>50 cm aluminum rod</Name>
+      <Item id="0081">
+        <Name>aluminum rod</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0007">
@@ -10821,7 +10928,7 @@
         <Name>right angle clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0094">
         <Name>1 m length of light plastic chain</Name>
         <Amount>2</Amount>
       </Item>
@@ -10856,12 +10963,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0149">
         <Name>Boyle's law apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>mercury spill tray</Name>
+      <Item id="0110">
+        <Name>spill tray</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0165">
@@ -10887,7 +10994,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0166">
         <Name>optical bench pivot</Name>
         <Amount>1</Amount>
       </Item>
@@ -10896,22 +11003,22 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0000">
-        <Name>5 mW solid state diode laser pointer</Name>
+        <Name>laser pointer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0035">
         <Name>polarizer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0128">
         <Name>photodetector</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0183">
         <Name>3 mm thick acrylic block</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0188">
         <Name>3 mm thick glass block</Name>
         <Amount>1</Amount>
       </Item>
@@ -10919,11 +11026,11 @@
         <Name>Philips multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0199">
         <Name>laser pointer mount</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0215">
         <Name>sunglasses</Name>
         <Amount>1</Amount>
       </Item>
@@ -10946,8 +11053,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Black cord</Name>
+      <Item id="0092">
+        <Name>string</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0044">
@@ -10958,20 +11065,8 @@
         <Name>protractor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>template of radii of curvature</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>bubble chamber stereographs</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>3D view-master</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>physics review D - review of partical properties</Name>
+      <Item id="0446">
+        <Name>bubble chamber photograph kit</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -10993,8 +11088,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>"Aluminum alloy 6061 beam 2 m x 1"" x 1/8""</Name>
+      <Item id="0447">
+        <Name>Aluminum alloy 6061 beam</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0041">
@@ -11015,17 +11110,17 @@
       </Item>
       <Item id="0054">
         <Name>c-clamp</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>set of masses</Name>
-        <Amount>1</Amount>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0280">
         <Name>slider</Name>
         <Amount>3</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0277">
         <Name>1.5 m length of chain</Name>
         <Amount>1</Amount>
       </Item>
@@ -11056,8 +11151,8 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>set of masses</Name>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
@@ -11096,7 +11191,7 @@
     </Versions>
     <Equipment>
       <Item id="0278">
-        <Name>motor driven turntable</Name>
+        <Name>motor dirven turntable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0002">
@@ -11105,6 +11200,10 @@
       </Item>
       <Item id="0051">
         <Name>stopwatch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0236">
@@ -11119,16 +11218,8 @@
         <Name>dish soap</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>stand with mounted laser</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0044">
-        <Name>plastic ruler</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0226">
-        <Name>protractor</Name>
+      <Item id="0389">
+        <Name>stand with laser and protractor</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -11158,23 +11249,27 @@
         <Name>air track cart</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0052">
-        <Name>tape</Name>
+          <Item id="0096">
+        <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0052">
+        <Name>masking tape</Name>
+        <Amount>1</Amount>
+      </Item>
+            <Item id="0095">
         <Name>elastic band bumper</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0449">
         <Name>spring steel bumper</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0448">
         <Name>rubber ball bumber</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0095">
         <Name>plasticine target</Name>
         <Amount>1</Amount>
       </Item>
@@ -11213,11 +11308,15 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
+            <Item id="0096">
+        <Name>air hose</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0206">
         <Name>air track cart</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0450">
         <Name>oranged striped glider</Name>
         <Amount>1</Amount>
       </Item>
@@ -11225,12 +11324,12 @@
         <Name>air track accessory kit</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0451">
         <Name>magnetic bumber</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0012">
@@ -11241,8 +11340,12 @@
         <Name>spark timer</Name>
         <Amount>2</Amount>
       </Item>
+            <Item id="0259">
+        <Name>spark tape</Name>
+        <Amount>2</Amount>
+      </Item>      
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0044">
@@ -11268,19 +11371,19 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Steel rod</Name>
+      <Item id="0452">
+        <Name>steel rod</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>movable knife edge</Name>
+      <Item id="0453">
+        <Name>knife edge</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0454">
         <Name>knife edge support</Name>
         <Amount>1</Amount>
       </Item>
@@ -11323,6 +11426,12 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
+            <Item id="0096">
+        <Name>air hose</Name>
+        <Amount>1</Amount>
+      </Item>
+      
+      
       <Item id="0206">
         <Name>air track cart</Name>
         <Amount>1</Amount>
@@ -11331,8 +11440,12 @@
         <Name>spark timer</Name>
         <Amount>1</Amount>
       </Item>
+          <Item id="0259">
+        <Name>spark tape</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0205">
@@ -11347,7 +11460,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0095">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -11394,11 +11507,11 @@
         <Name>paper towels</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>constant volume gas apparatus (helium filled)</Name>
+      <Item id="0228">
+        <Name>helium constant volume gas apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0455">
         <Name>mercury manometer</Name>
         <Amount>1</Amount>
       </Item>
@@ -11408,53 +11521,6 @@
       </Item>
       <Item id="0056">
         <Name>thermometer clamp</Name>
-        <Amount>1</Amount>
-      </Item>
-    </Equipment>
-    <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
-  </Lab>
-  <Lab labId="0136">
-    <Name>Radiation Counting Statistics</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>/data/repository/0136-Radiation-Counting-Statistics/0136-LEGACY/Radiation-Counting-Statistics.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
-        <Directory>/data/repository/0136-Radiation-Counting-Statistics/0136-LEGACY/</Directory>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item id="0000">
-        <Name>Geiger tube</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Geiger counter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0308">
-        <Name>BNC coaxial cable</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0006">
-        <Name>laboratory stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0020">
-        <Name>right angle clamp</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0044">
-        <Name>plastic ruler</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0277">
-        <Name>0.1 µCi Sr-90</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -11480,6 +11546,14 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
+            <Item id="0011">
+        <Name>Pasco air blower</Name>
+        <Amount>1</Amount>
+      </Item>
+            <Item id="0096">
+        <Name>air hose</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0047">
         <Name>Pasco driven harmonic motion apparatus</Name>
         <Amount>1</Amount>
@@ -11488,29 +11562,29 @@
         <Name>air track cart</Name>
         <Amount>4</Amount>
       </Item>
-      <Item id="0000">
-        <Name>spring</Name>
+      <Item id="0112">
+        <Name>air track spring</Name>
         <Amount>5</Amount>
       </Item>
-      <Item id="0000">
-        <Name>set of masses</Name>
+            <Item id="0111">
+        <Name>banana plugs with eye hook</Name>
+        <Amount>10</Amount>
+      </Item>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0109">
         <Name>adjustable end stop</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>pulley wheel end stop</Name>
+      <Item id="0095">
+        <Name>pulley</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>glider spring connectors</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>glider weight set</Name>
-        <Amount>1</Amount>
+      <Item id="0095">
+        <Name>50 g cylindrical mass</Name>
+        <Amount>4</Amount>
       </Item>
       <Item id="0051">
         <Name>stopwatch</Name>
@@ -11544,14 +11618,14 @@
     </Versions>
     <Equipment>
       <Item id="0000">
-        <Name>Laser</Name>
+        <Name>He-Ne laser with acrylic base</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>milligram weights</Name>
+      <Item id="0212">
+        <Name>current balance kit</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -11565,30 +11639,6 @@
       </Item>
       <Item id="0041">
         <Name>micrometer</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0044">
-        <Name>plastic ruler</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0052">
-        <Name>tape</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0236">
-        <Name>bubble level</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0008">
-        <Name>laboratory jack</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>spacer bar</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>current balance apparatus</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -11610,15 +11660,11 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Nalgene jar with light bulb</Name>
+      <Item id="0456">
+        <Name>Nalgene calorimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>styrofoam calorimeter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
+      <Item id="0457">
         <Name>india ink</Name>
         <Amount>1</Amount>
       </Item>
@@ -11673,16 +11719,16 @@
         <Name>micrometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0458">
         <Name>guage block set</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0353">
         <Name>uncertainties kit</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>micrograme balance</Name>
+      <Item id="0307">
+        <Name>Mettler microgram balance</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0234">
@@ -11697,15 +11743,15 @@
         <Name>calipers</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>mass set</Name>
+      <Item id="0185">
+        <Name>set of hinging masses</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0212">
         <Name>milligram mass set</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0109">
+      <Item id="0459">
         <Name>lens paper</Name>
         <Amount>1</Amount>
       </Item>
@@ -11728,27 +11774,19 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Spring Balances</Name>
+      <Item id="0460">
+        <Name>yellow spring scale</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>set of masses</Name>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>swivel chair</Name>
+      <Item id="0404">
+        <Name>rolling chair</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>wheeled chair</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>elevator</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0040">
+            <Item id="0040">
         <Name>measuring tape</Name>
         <Amount>1</Amount>
       </Item>
@@ -11756,8 +11794,8 @@
         <Name>vector board</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>springs</Name>
+      <Item id="0316">
+        <Name>tapered brass springs</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
@@ -11777,7 +11815,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -11799,44 +11837,44 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Shielded Geiger apparatus</Name>
+      <Item id="0303">
+        <Name>shielded Geiger apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Tracerlab TGC-1 GM Tube</Name>
+      <Item id="0304">
+        <Name>Tracerlab TGC-1 GM tube</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0010">
         <Name>oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0416">
         <Name>HP 5315A universal counter</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0250">
-        <Name>HP high voltage power supply</Name>
+        <Name>HP 6516A high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0308">
         <Name>BNC coaxial cable</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0462">
         <Name>Geiger connection box</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0277">
-        <Name>0.1 µCi Sr-90</Name>
+      <Item id="0074">
+        <Name>0.1 µCi Sr-90 beta source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0276">
-        <Name>10 µCi Tl-204</Name>
+        <Name>10 µCi Tl-204 beta source</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0275">
-        <Name>1 µCi Am-241</Name>
+        <Name>1 µCi Am-241 alpha source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
@@ -11844,18 +11882,18 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0271">
-        <Name>1 µCi Co-60</Name>
+        <Name>1 µCi Co-60 gamma source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
         <Name>stopwatch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0413">
         <Name>BNC tee</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0463">
         <Name>cutaway Geiger tube</Name>
         <Amount>1</Amount>
       </Item>
@@ -11878,12 +11916,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0464">
         <Name>Free Fall apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>steel ball</Name>
+      <Item id="0465">
+        <Name>free fall steel ball</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0002">
@@ -11913,11 +11951,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0270">
-        <Name>Fresnel biprism</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0023">
+       <Item id="0023">
         <Name>2 m optical bench</Name>
         <Amount>1</Amount>
       </Item>
@@ -11949,7 +11983,7 @@
         <Name>laboratory jack</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0466">
         <Name>adjustable slit</Name>
         <Amount>1</Amount>
       </Item>
@@ -11957,7 +11991,7 @@
         <Name>optical screen</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0467">
         <Name>opticians ruler</Name>
         <Amount>1</Amount>
       </Item>
@@ -11984,7 +12018,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0166">
         <Name>optical bench pivot</Name>
         <Amount>1</Amount>
       </Item>
@@ -11992,23 +12026,28 @@
         <Name>1 m optical bench</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>laser</Name>
+      <Item id="0397">
+        <Name>cylindrical He-Ne laser</Name>
+        <alt id="0021">He-Ne laser</alt>
         <Amount>1</Amount>
       </Item>
-      <Item id="0035">
+            <Item id="0310">
+        <Name>cylindrical laser mount</Name>
+        <Amount>1</Amount>
+      </Item>
+       <Item id="0035">
         <Name>polarizer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>light meter</Name>
+      <Item id="0048">
+        <Name>light detector</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>3mm thick acrylic block</Name>
+      <Item id="0183">
+        <Name>3 mm thick acrylic block</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0188">
         <Name>3 mm thick glass block</Name>
         <Amount>1</Amount>
       </Item>
@@ -12016,11 +12055,7 @@
         <Name>Philips multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>laser mount</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
+      <Item id="0215">
         <Name>sunglasses</Name>
         <Amount>1</Amount>
       </Item>
@@ -12043,19 +12078,19 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>laser</Name>
+      <Item id="0021">
+        <Name>He-Ne laser</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0083">
         <Name>2-axis translation stage</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0274">
-        <Name>3.8 cm focal length concave lens</Name>
+      <Item id="0396">
+        <Name>-3.6 cm focal length 38mm diameter double concave lens</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0469">
         <Name>iris on slide holder</Name>
         <Amount>1</Amount>
       </Item>
@@ -12063,8 +12098,8 @@
         <Name>1 m optical bench</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>micoscope slide with several small shapes</Name>
+      <Item id="0468">
+        <Name>micoscope slide with small shapes</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0034">
@@ -12095,14 +12130,14 @@
     </Versions>
     <Equipment>
       <Item id="0307">
-        <Name>Mettler balance</Name>
+        <Name>Mettler microgram balance</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0246">
         <Name>100 mL graduated cylinder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0274">
         <Name>K type thermocouple with amplifier</Name>
         <Amount>1</Amount>
       </Item>
@@ -12114,7 +12149,7 @@
         <Name>liquid nitrogen</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0304">
+      <Item id="0470">
         <Name>styrofoam cup</Name>
         <Amount>4</Amount>
       </Item>
@@ -12149,28 +12184,28 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0471">
         <Name>15 mm light spring</Name>
         <Amount>4</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0472">
         <Name>15 mm tight spring</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0316">
         <Name>tapered brass spring</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>long spring support</Name>
+      <Item id="0081">
+        <Name>aluminum bar</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>short spring support</Name>
+      <Item id="0315">
+        <Name>aluminum bar with notch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>set of masses</Name>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0012">
@@ -12191,7 +12226,7 @@
       </Item>
       <Item id="0020">
         <Name>right angle clamp</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0051">
         <Name>stopwatch</Name>
@@ -12216,12 +12251,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Container of #4 gauge glass bead sand</Name>
+      <Item id="0474">
+        <Name>container of #4 gauge glass bead sand</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>assortment of ball bearings</Name>
+      <Item id="0473">
+        <Name>impact crater kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0012">
@@ -12236,8 +12271,8 @@
         <Name>right angle clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>alignment bar</Name>
+      <Item id="0081">
+        <Name>aluminum bar bar</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0007">
@@ -12304,7 +12339,7 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -12507,7 +12542,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -12729,7 +12764,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0205">
@@ -12749,7 +12784,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -12776,7 +12811,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0258">
@@ -12796,7 +12831,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0092">
@@ -12927,7 +12962,7 @@
       </Item>
       <Item id="0263">
         <Name>100 Ω GR decade resistance box</Name>
-            <alt id="0351">10 kΩ Eico decade resistor box</alt>
+        <alt id="0351">10 kΩ Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0264">
@@ -13108,7 +13143,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -13289,7 +13324,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -13457,7 +13492,7 @@
         <Name>500 mL graduated cylinder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0109">
+      <Item id="0459">
         <Name>lens paper</Name>
         <Amount>1</Amount>
       </Item>
@@ -13939,81 +13974,6 @@
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
-        <Amount>1</Amount>
-      </Item>
-    </Equipment>
-    <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
-  </Lab>
-  <Lab labId="0179">
-    <Name>Torsional Oscillations</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>/data/repository/0179-Torsional-Oscillations/0179-LEGACY/Torsional-Oscillations.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
-        <Directory>/data/repository/0179-Torsional-Oscillations/0179-LEGACY/</Directory>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item id="0006">
-        <Name>laboratory stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0054">
-        <Name>c-clamp</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0020">
-        <Name>right angle clamp</Name>
-        <Amount>2</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>spring support bar with notch</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0185">
-        <Name>set of hanging masses</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0012">
-        <Name>digital balance</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0007">
-        <Name>meter stick</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0051">
-        <Name>stopwatch</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0082">
-        <Name>brown spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0226">
-        <Name>protractor</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0293">
-        <Name>set of torsion pendulums</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0228">
-        <Name>assortment of brass springs</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0077">
-        <Name>hook collar</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0034">
-        <Name>calipers</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
