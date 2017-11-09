@@ -2611,8 +2611,8 @@
     <Equipment>
       <Item id="0018">
         <Name>advanced student spectroscope</Name>
-        <Amount/>
-      </Item>
+        <Amount>1</Amount>
+              </Item>
       <Item id="0184">
         <Name>600 lines/mm diffraction grating</Name>
         <Amount>1</Amount>
@@ -11002,7 +11002,7 @@
         <Name>1 m optical bench</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0182">
         <Name>laser pointer</Name>
         <Amount>1</Amount>
       </Item>
@@ -11617,7 +11617,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0209">
         <Name>He-Ne laser with acrylic base</Name>
         <Amount>1</Amount>
       </Item>
@@ -11874,7 +11874,7 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0275">
-        <Name>1 µCi Am-241 alpha source</Name>
+        <Name>1.0 µCi Am-241 alpha source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
@@ -12306,20 +12306,20 @@
         <Name>Kater's pendulum</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0453">
         <Name>movable knife edge</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>movable clyindrical mass</Name>
+      <Item id="0475">
+        <Name>movable cylindrical mass</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>oiled knife edge support</Name>
+      <Item id="0453">
+        <Name>knife edge support</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
@@ -12416,11 +12416,11 @@
         <Name>thermometer</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0476">
         <Name>vacuum flask calorimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0477">
         <Name>styrofoam stopper with thermometer opening</Name>
         <Amount>1</Amount>
       </Item>
@@ -12432,15 +12432,11 @@
         <Name>hot plate</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>different types of metal pellets</Name>
+      <Item id="0478">
+        <Name>set of metal pellets</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>lead pellets</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
+       <Item id="0479">
         <Name>non-elemental welding rod pellets</Name>
         <Amount>1</Amount>
       </Item>
@@ -12462,10 +12458,17 @@
         <Directory>/data/repository/0153-Linear-Regression/0153-LEGACY/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+        <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+    <Name>linefit</Name>
+    </Software>
   </Lab>
   <Lab labId="0154">
     <Name>Longitudinal Standing Waves on a Spring</Name>
@@ -12481,20 +12484,20 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Wave Spring</Name>
+      <Item id="0480">
+        <Name>wave spring</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>aluminum crossbar</Name>
+      <Item id="0081">
+        <Name>aluminum bar</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0047">
-        <Name>Pasco driven harmonic motion apparatus</Name>
+      <Item id="0481">
+        <Name>Pasco mechanical vibrator apparatus</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0042">
@@ -12589,13 +12592,13 @@
         <Name>advanced student spectroscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0482">
         <Name>50 mm equilaterral triangular glass prism</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Various fluid filled prism</Name>
-        <Amount>4</Amount>
+      <Item id="0483">
+        <Name>set of fluid filled prisms</Name>
+                        <Amount>4</Amount>
       </Item>
       <Item id="0068">
         <Name>Geissler tube power supply</Name>
@@ -12657,23 +12660,23 @@
         <Name>Philips multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>1N4007 diode</Name>
+      <Item id="0484">
+        <Name>1N4007 rectifier diode</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0485">
         <Name>1N617 diode</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0486">
         <Name>1N7XX zener diode</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0487">
         <Name>BAT85 Schottky diode</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0488">
         <Name>motorola rectifiers and zener diodes data book</Name>
         <Amount>1</Amount>
       </Item>
@@ -12704,7 +12707,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0321">
         <Name>flywheel</Name>
         <Amount>1</Amount>
       </Item>
@@ -12747,7 +12750,11 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0097">
+      <Item id="0096">
+        <Name>air track</Name>
+        <Amount>1</Amount>
+      </Item>
+            <Item id="0097">
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
@@ -12775,7 +12782,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0095">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -12793,7 +12800,7 @@
     <Software/>
   </Lab>
   <Lab labId="0159">
-    <Name>Newton's Second Laws</Name>
+    <Name>Newton's Second Law</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
@@ -12807,6 +12814,10 @@
     </Versions>
     <Equipment>
       <Item id="0097">
+        <Name>air track</Name>
+        <Amount>1</Amount>
+      </Item>
+       <Item id="0096">
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
@@ -12842,27 +12853,27 @@
         <Name>scissors</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>weitghts with holders</Name>
+      <Item id="0095">
+        <Name>50 g cylindrical mass</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>pully</Name>
+      <Item id="0095">
+        <Name>pulley</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0095">
         <Name>hook</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0095">
         <Name>rubber band bumper</Name>
-        <Amount>3</Amount>
+        <Amount>1</Amount>
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0095">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -12948,16 +12959,16 @@
         <Name>Fluke multimeter</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0380">
         <Name>28V minibulb</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>rectifier diode</Name>
+      <Item id="0484">
+        <Name>1N4007 rectifier diode</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>tunnel diode</Name>
+      <Item id="0489">
+        <Name>1N3712 tunnel diode</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0263">
@@ -12965,8 +12976,8 @@
         <alt id="0351">10 kΩ Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
-      <Item id="0264">
-        <Name>10 kΩ decade resistance box</Name>
+      <Item id="0351">
+        <Name>10 kΩ Eico decade resistor box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
@@ -12992,7 +13003,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0490">
         <Name>Thermoelectric apparatus</Name>
         <Amount>1</Amount>
       </Item>
@@ -13000,7 +13011,7 @@
         <Name>Fluke multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -13008,7 +13019,7 @@
         <Name>variac</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0407">
         <Name>isolation transformer</Name>
         <Amount>1</Amount>
       </Item>
@@ -13028,15 +13039,15 @@
         <Name>stopwatch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0491">
         <Name>sample TED</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0492">
         <Name>demonstration thermoelectric apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0493">
         <Name>heater power cord</Name>
         <Amount>1</Amount>
       </Item>
@@ -13075,15 +13086,15 @@
         <Name>Hammond 10 H inductor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0494">
         <Name>dissasembled inductor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0495">
         <Name>cutaway inductor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0496">
         <Name>5 kiloΩ - 10 kiloΩ pair</Name>
         <Amount>1</Amount>
       </Item>
@@ -13201,7 +13212,7 @@
         <Name>10 mL graduated cylinder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0497">
         <Name>set of capillary tubes</Name>
         <Amount>1</Amount>
       </Item>
@@ -13214,7 +13225,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>air pipe</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -13240,7 +13251,7 @@
         <Name>B&amp;K function generator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0499">
         <Name>sound tube with transducers for each gas including air</Name>
         <Amount>1</Amount>
       </Item>
@@ -13252,7 +13263,7 @@
         <Name>thermometer</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0500">
         <Name>selection of gases</Name>
         <Amount>1</Amount>
       </Item>
@@ -13279,7 +13290,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0501">
         <Name>projectile launcher</Name>
         <Amount>1</Amount>
       </Item>
@@ -13287,12 +13298,12 @@
         <Name>c-clamp</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>3/4"" round steel projectile</Name>
+      <Item id="0502">
+        <Name>3/4" round steel projectile</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>rubber landing mat</Name>
+      <Item id="0318">
+        <Name>rubbermat</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0257">
@@ -13315,8 +13326,8 @@
         <Name>right angle clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>viewing screen</Name>
+      <Item id="0037">
+        <Name>optical screen</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
@@ -13346,7 +13357,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0503">
         <Name>two axle block</Name>
         <Amount>4</Amount>
       </Item>
@@ -13358,12 +13369,12 @@
         <Name>laboratory stand</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>aluminum crossbar</Name>
+      <Item id="0081">
+        <Name>aluminum bar</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>short aluminum crossbar</Name>
+      <Item id="0315">
+        <Name>aluminum bar with notch</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0020">
@@ -13456,24 +13467,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0504">
         <Name>ten litre glass asperator bottle</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>large stopper</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>glass tube</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>stopper with catcher</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>matched steel ball</Name>
+      <Item id="0505">
+        <Name>specific heat kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
@@ -13535,7 +13534,7 @@
         <Name>2 resistor set</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0505">
         <Name>wire potentiometer</Name>
         <Amount>1</Amount>
       </Item>
@@ -13566,7 +13565,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
+      <Item id="0506">
         <Name>Nuclear Data ND62 PHA</Name>
         <Amount>1</Amount>
       </Item>
@@ -13578,8 +13577,8 @@
         <Name>50 Ω BNC feedthrough termination</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0253">
-        <Name>Harshaw NaI(Ti) scintillator unit</Name>
+      <Item id="0410">
+        <Name>sodium iodide scintillator detector</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0006">
@@ -13599,7 +13598,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0250">
-        <Name>HP high voltage power supply</Name>
+        <Name>HP 6516A high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0002">
@@ -13607,19 +13606,19 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0275">
-        <Name>1 µCi Am-241</Name>
+        <Name>1.0 µCi Am-241 alpha source</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Cs-137</Name>
+      <Item id="0103">
+        <Name>1.0 µCi Cs-137 gamma source</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Cd-109</Name>
+      <Item id="0507">
+        <Name>1.0 µCi Cd-109 gamma source</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Na-22</Name>
+      <Item id="0508">
+        <Name>1.0 µCi Na-22 gamma source</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>

@@ -4,13 +4,13 @@
 //   GLOBALS
 //*******************************************************************************************
 
-var mainxmlpath = "/data/labDB.xml";
-//var mainxmlpath = "/dev/labDB.xml";
+//var mainxmlpath = "/data/labDB.xml";
+var mainxmlpath = "/dev/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/html-future";
+//var siteroot = "/html-future";
 //var siteroot = "/pjl-web";
 //var siteroot = "/html-future";
-//var siteroot = "";
+var siteroot = "";
 var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -363,6 +363,7 @@ $(window).on("swiperight", showMobileNav);
 function populateRecordList(docXML) {  //read XML and append all lab records to DOM; update displayed records counter - not type safe
 	var labs = docXML.getElementsByTagName("Lab");
 	for (var i = labs.length - 1; i >= 0; i--) {
+		console.log(labs[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 		createRecordSnapshots(labs[i]);
 	}
 	displayNumResults(countNumRecords());
@@ -403,6 +404,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
 		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
 		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
+
 		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + getLabEquipmentList(lab).join(", "));
 		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
 		var directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
