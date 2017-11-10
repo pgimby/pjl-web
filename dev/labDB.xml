@@ -3014,7 +3014,7 @@
     </Topics>
     <Versions>
       <Version>
-        <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-/meas.pdf</Path>
+        <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-LEGACY/meas.pdf</Path>
         <Semester/>
         <Year/>
         <Course/>
@@ -8941,6 +8941,69 @@
         <Directory>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS223SU2017/
 </Directory>
       </Version>
+            <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2017/Phys259-Labatorial08-Magnetic-Fields-WI2017.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2017/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2016/Phys259-Labatorial08-Magnetic-Fields-WI2016.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2016</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2016/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2015/Phys259-Labatorial10-Magnetic-Fields-WI2015.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2015</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2015/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2014/Phys259-Labatorial10-Magnetic-Fields-WI2014.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2014</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2014/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2013/Phys259-Labatorial10-Magnetic-Fields-WI2013.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2013</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2013/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2012/Phys259-Labatorial09-MagneticFields-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2012/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259SU2011/Phys259-Labatorial09-Magnetism-SU2011.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259SU2011/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2011/Phys259_Labitorial9_Magnetism_W2011.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2011</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS259WI2011/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS255WI2012/Phys255-Labatorial04-MagneticFields-WI2012.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2012</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0016-Magnetic-Fields-and-Magnetic-Force/0016-PHYS255WI2012/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0032">
@@ -9465,134 +9528,6 @@
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
-  </Lab>
-  <Lab labId="0039">
-    <Name>Magnetic Fields and Magnetic Force</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Circuits</Topic>
-      <Topic>Magnetism</Topic>
-    </Topics>
-    <Versions>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2017/Phys259-Labatorial08-Magnetic-Fields-WI2017.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2017</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2017/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2016/Phys259-Labatorial08-Magnetic-Fields-WI2016.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2016</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2016/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2015/Phys259-Labatorial10-Magnetic-Fields-WI2015.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2015</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2015/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2014/Phys259-Labatorial10-Magnetic-Fields-WI2014.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2014</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2014/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2013/Phys259-Labatorial10-Magnetic-Fields-WI2013.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2013</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2013/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2012/Phys259-Labatorial09-MagneticFields-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2012/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259SU2011/Phys259-Labatorial09-Magnetism-SU2011.pdf</Path>
-        <Semester>Summer</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259SU2011/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2011/Phys259_Labitorial9_Magnetism_W2011.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2011</Year>
-        <Course>PHYS 259</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2011/</Directory>
-      </Version>
-      <Version>
-        <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS255WI2012/Phys255-Labatorial04-MagneticFields-WI2012.pdf</Path>
-        <Semester>Winter</Semester>
-        <Year>2012</Year>
-        <Course>PHYS 255</Course>
-        <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS255WI2012/</Directory>
-      </Version>
-    </Versions>
-    <Equipment>
-      <Item id="0032">
-        <Name>slinky</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0054">
-        <Name>c-clamp</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0007">
-        <Name>meter stick</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0006">
-        <Name>laboratory stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0020">
-        <Name>right angle clamp</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0046">
-        <Name>fork clamp</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0003">
-        <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0001">
-        <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0002">
-        <Name>Anatek power supply</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0013">
-        <Name>Vernier magnetic field probe</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0207">
-        <Name>Vernier LabPro data logger</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0024">
-        <Name>computer</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Type>Labatorial</Type>
-      <SupportDocs/>
-      <Software/>
-    </Equipment>
   </Lab>
   <Lab labId="0041">
     <Name>Introduction to Measurements and Uncertainties</Name>
@@ -14732,7 +14667,7 @@
     </Topics>
     <Versions>
       <Version>
-        <Path>/data/repository/0181-Nuclear-Pulse-Height-Analysis/0181-LEGACY</Path>
+        <Path>/data/repository/0181-Nuclear-Pulse-Height-Analysis/0181-LEGACY/Nuclear-Pulse-Height-Analysis.pdf</Path>
         <Semester/>
         <Year/>
         <Course/>
