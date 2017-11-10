@@ -82,4 +82,4 @@ for datum in data:
                 subel = ET.SubElement(topsnode, "Topic")
                 subel.text = t
 
-tree.write("../labDBtest.xml")
+tree.write("../labDB.xml")
