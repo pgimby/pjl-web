@@ -100,3 +100,19 @@ labid	disciplines	topics
 0050	Electricity and Magnetism	Circuits, Magnetism
 0097	Particle Physics, Electricity and Magnetism, Laboratory Skills	Measurements, Statistics
 0055	Laboratory Skills	Measurements
+0182	Newtonian Mechanics, Computer Skills	Kinematics, Programming
+0045	Electricity and Magnetism	Electrostatics
+0096	Electricity and Magnetism, Laboratory Skills	Magnetism, Circuits
+0005	Newtonian Mechanics	Newton’s Laws, Statics
+0004	Newtonian Mechanics	Newton’s Laws, Statics
+0023	Computer Skills	Programming
+0015	Electricity and Magnetism	Circuits
+0070	Quantum Mechanics, Particle Physics, Laboratory Skills	Collisions, Work and Energy, Circuits, Measurements
+0087	Laboratory Skills	Measurements
+0047	Electricity and Magnetism	Circuits
+0034	Electricity and Magnetism	Circuits, Work and Energy, Electrostatics, Integration
+0039	Electricity and Magnetism	Circuits, Magnetism
+0007	Newtonian Mechanics	Newton’s Laws, Statics
+0008	Newtonian Mechanics	Kinematics
+0124	Newtonian Mechanics	Dynamics, Rotational Motion, Newton’s Laws, ODE
+0140	Laboratory Skills, Math	Statistics, Measurements

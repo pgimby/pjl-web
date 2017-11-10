@@ -2,8 +2,13 @@
 <Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Magnetism</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0050-Magnetic-Force-between-Current-Carrying-Wires/0050-PHYS259WI2012/Phys259-Labatorial11-CurrentBalance-WI2012.pdf</Path>
@@ -187,8 +192,15 @@
   </Lab>
   <Lab labId="0097">
     <Name>Radiation Absorption and Exposure</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Statistics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0097-Radiation-Absorption-and-Exposure/0097-PHYS397FA2011/radabexp.pdf</Path>
@@ -205,8 +217,15 @@
   </Lab>
   <Lab labId="0076">
     <Name>Radiation Counting Statistics</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Nuclear Physics</Discipline>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Statistics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0076-Radiation-Counting-Statistics/0076-PHYS325WI2012/cntstat.pdf</Path>
@@ -579,8 +598,15 @@
   </Lab>
   <Lab labId="0064">
     <Name>Linear Regression</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+      <Discipline>Computer Skills</Discipline>
+      <Discipline>Math</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statistics</Topic>
+      <Topic>Differentiation</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0064-Linear-Regression/0064-PHYS323FA2012/linregr.pdf</Path>
@@ -671,8 +697,15 @@
   </Lab>
   <Lab labId="0120">
     <Name>Torsional Oscillations</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Integration</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Dynamics</Topic>
+      <Topic>ODE</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0120-Torsional-Oscillations/0120-PHYS369FA2012/torsion.pdf</Path>
@@ -753,8 +786,14 @@
   </Lab>
   <Lab labId="0043">
     <Name>The Electric Motor and Generator</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0043-The-Electric-Motor-and-Generator/0043-PHYS255WI2012/motrgen.pdf</Path>
@@ -812,8 +851,15 @@
   </Lab>
   <Lab labId="0021">
     <Name>Calculating and Displaying Gravitational Force</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>ODE</Topic>
+      <Topic>Momentum</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0021-Calculating-and-Displaying-Gravitational-Force/0021-PHYS227FA2016/227_2016_Lab05_Grav_Force.pdf</Path>
@@ -1139,8 +1185,13 @@
   </Lab>
   <Lab labId="0020">
     <Name>Angular Impulse and Anglular Momentum Change</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Rotational Motion</Topic>
+      <Topic>Momentum</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0020-Angular-Impulse-and-Anglular-Momentum-Change/0020-PHYS227FA2013/Angular-Impule-and-Anglular-Momentum-Change.pdf</Path>
@@ -1182,8 +1233,12 @@
   </Lab>
   <Lab labId="0030">
     <Name>Capacitor Measurements</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0030-Capacitor-Measurements/0030-PHYS255WI2015/Capacitor-Measurements-WI2015.pdf</Path>
@@ -1310,8 +1365,13 @@
   </Lab>
   <Lab labId="0033">
     <Name>Gauss' Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Electrostatics</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0033-Gauss-Law/0033-PHYS259WI2017/Phys259-Labatorial03-Gauss-Law-WI2017.pdf</Path>
@@ -1608,8 +1668,15 @@
   </Lab>
   <Lab labId="0052">
     <Name>Motion of Electric Charges in Electric Fields</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Electrostatics</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259WI2017/Phys259-Labatorial04-Moving-Charges-WI2017.pdf</Path>
@@ -1685,8 +1752,15 @@
   </Lab>
   <Lab labId="0074">
     <Name>Planck's Constant with LEDs</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Quantum Mechanics</Discipline>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0074-Plancks-Constant-with-LEDs/0074-PHYS325WI2017/Plancks-Constant-from-LEDs-WI2017.pdf</Path>
@@ -1880,8 +1954,12 @@
   </Lab>
   <Lab labId="0009">
     <Name>Units, Equipment Introduction, and Motion Diagrams</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</Path>
@@ -2185,8 +2263,14 @@
   </Lab>
   <Lab labId="0058">
     <Name>Oscilloscope and Multimeter</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0058-Oscilloscope-and-Multimeter/0058-PHYS323FA2012/oscmult.pdf</Path>
@@ -2231,8 +2315,15 @@
   </Lab>
   <Lab labId="0084">
     <Name>Balloon Physics</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Fluid Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Hydrostatics</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Friction and Drag</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0084-Balloon-Physics/0084-PHYS341FA2015/Balloon-Physics-FA2015.pdf</Path>
@@ -2270,8 +2361,15 @@
   </Lab>
   <Lab labId="0006">
     <Name>Simple Harmonic Oscillation and Conservation of Energy</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>ODE</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Dynamics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0006-Simple-Harmonic-Oscillation-and-Conservation-of-Energy/0006-PHYS211FA2016/Phys211-221-Labatorial09-SHO-FA2016.pdf</Path>
@@ -2522,8 +2620,15 @@
   </Lab>
   <Lab labId="0077">
     <Name>Radioactive Decay</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Nuclear Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>ODE</Topic>
+      <Topic>Statistics</Topic>
+      <Topic>Differentiation</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0077-Radioactive-Decay/0077-PHYS325WI2017/Radioactive-Decay-WI2017.pdf</Path>
@@ -2597,8 +2702,16 @@
   </Lab>
   <Lab labId="0075">
     <Name>Quantum Defects in Sodium</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Quantum Mechanics</Discipline>
+      <Discipline>Optics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Interference</Topic>
+      <Topic>Refraction</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0075-Quantum-Defects-in-Sodium/0075-PHYS325WI2012/qdefsod.pdf</Path>
@@ -2612,7 +2725,7 @@
       <Item id="0018">
         <Name>advanced student spectroscope</Name>
         <Amount>1</Amount>
-              </Item>
+      </Item>
       <Item id="0184">
         <Name>600 lines/mm diffraction grating</Name>
         <Amount>1</Amount>
@@ -2893,8 +3006,12 @@
   </Lab>
   <Lab labId="0055">
     <Name>Intermediate Measurements and Uncertainties</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-/meas.pdf</Path>
@@ -3077,8 +3194,12 @@
   </Lab>
   <Lab labId="0045">
     <Name>Electric Charges and the Forces between them</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Electrostatics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259WI2017/Phys259-Labatorial01-Charges-and-Forces-WI2017.pdf</Path>
@@ -3151,8 +3272,13 @@
   </Lab>
   <Lab labId="0048">
     <Name>Electron Current and Energy in a Circuit</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0048-Electron-Current-and-Energy-in-a-Circuit/0048-PHYS259WI2016/Phys259-Labatorial07-Electron-Current-WI2016.pdf</Path>
@@ -3197,8 +3323,14 @@
   </Lab>
   <Lab labId="0096">
     <Name>Hall Effect and Magnetic Hysteresis</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Magnetism</Topic>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0096-Hall-Effect-and-Magnetic-Hysteresis/0096-PHYS397FA2016/Hall-Effect-and-Magnetic-Hysteresis-FA2016.pdf</Path>
@@ -3308,15 +3440,15 @@
   <Lab labId="0029">
     <Name>Biot-Savart Law</Name>
     <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-      <Discipline>Newtonian Mechanics</Discipline>
       <Discipline>Math</Discipline>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Electricity and Magnetism</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
-      <Topic>Magnetism</Topic>
-      <Topic>Integration</Topic>
       <Topic>Linear Algebra</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Magnetism</Topic>
+      <Topic>Newton’s Laws</Topic>
     </Topics>
     <Versions>
       <Version>
@@ -3385,8 +3517,13 @@
   </Lab>
   <Lab labId="0051">
     <Name>Mechanics Review</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Kinematics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0051-Mechanics-Review/0051-PHYS259WI2016/Phys259-Labatorial00-Mechanics-Review-WI2016.pdf</Path>
@@ -3943,8 +4080,16 @@
   </Lab>
   <Lab labId="0010">
     <Name>Current Balance</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Optics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Magnetism</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0010-Current-Balance/0010-PHYS223WI2014/Phys223-Labatorial10-Current-Balance-WI2014.pdf</Path>
@@ -4160,8 +4305,15 @@
   </Lab>
   <Lab labId="0054">
     <Name>Electromagnetic Induction</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Magnetism</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0054-Electromagnetic-Induction/0054-PHYS323FA2012/eminduc.pdf</Path>
@@ -4667,8 +4819,13 @@
   </Lab>
   <Lab labId="0059">
     <Name>Parallel Plate Capacitors</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>ODE</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0059-Parallel-Plate-Capacitors/0059-PHYS323FA2012/parcap.pdf</Path>
@@ -4717,8 +4874,13 @@
   </Lab>
   <Lab labId="0117">
     <Name>Swept Frequency Waveform Generator, DFT</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0117-Swept-Frequency-Waveform-Generator-DFT/0117-PHYS497WI2017/Swept-Frequency-Waveform-Generator-DFT-WI2017.pdf</Path>
@@ -4804,8 +4966,12 @@
   </Lab>
   <Lab labId="0017">
     <Name>Pressure and Density</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Fluid Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Hydrostatics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0017-Pressure-and-Density/0017-PHYS223WI2015/Phys223-Labatorial01-Pressure-and-Density-WI2015.pdf</Path>
@@ -4946,8 +5112,13 @@
   </Lab>
   <Lab labId="0042">
     <Name>Power Supplies, Lights, and Switches</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0042-Power-Supplies-Lights-and-Switches/0042-PHYS255WI2014/Power-Supplies-Lights-and-Switches-WI2014.pdf</Path>
@@ -5114,8 +5285,13 @@
   </Lab>
   <Lab labId="0037">
     <Name>Faraday's Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Magnetism</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0037-Faradays-Law/0037-PHYS255WI2017/Faradays-Law-WI2017.pdf</Path>
@@ -5250,8 +5426,15 @@
   </Lab>
   <Lab labId="0026">
     <Name>Measuring Velocity, Momentum, and Changes in Momentum in 1D</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Kinematics</Topic>
+      <Topic>Measurements</Topic>
+      <Topic>Momentum</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0026-Measuring-Velocity-Momentum-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2015/Measuring-v-P-and-Changes-in-P-in-1D-FA2015.pdf</Path>
@@ -5323,8 +5506,14 @@
   </Lab>
   <Lab labId="0019">
     <Name>The First Law of Thermodynamics</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Work and Energy</Topic>
+      <Topic>Gas Laws</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223WI2017/Phys223-Labatorial07-First-Law-of-Thermodynamics-WI2017.pdf</Path>
@@ -6065,8 +6254,15 @@
   </Lab>
   <Lab labId="0082">
     <Name>Uniform Circular Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Optics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Rotational Motion</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Dynamics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0082-Uniform-Circular-Motion/0082-PHYS341FA2015/Uniform-Circular-Motion-FA2015.pdf</Path>
@@ -6219,8 +6415,12 @@
   </Lab>
   <Lab labId="0012">
     <Name>Electric Fields and Motion of Charged Particles</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Electrostatics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223WI2017/Phys223-Labatorial02-Electric-Fields-WI2017.pdf</Path>
@@ -6289,8 +6489,13 @@
   </Lab>
   <Lab labId="0038">
     <Name>Kirchoff's Laws</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Conservation Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0038-Kirchoffs-Laws/0038-PHYS255WI2014/Kirchhoffs-Laws-WI2014.pdf</Path>
@@ -6346,8 +6551,13 @@
   </Lab>
   <Lab labId="0035">
     <Name>Electric Fields of Charge Configurations</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Electrostatics</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS259WI2017/Phys259-Labatorial02-Electric-Fields-WI2017.pdf</Path>
@@ -6635,8 +6845,13 @@
   </Lab>
   <Lab labId="0005">
     <Name>Newton's Third Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0005-Newtons-Third-Law/0005-PHYS211FA2016/Phys211-221-Labatorial07-Newtons-3rd-Law-FA2016.pdf</Path>
@@ -6794,8 +7009,14 @@
   </Lab>
   <Lab labId="0018">
     <Name>Temperature at the Microscopic Level</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statistics</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Gas Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0018-Temperature-at-the-Microscopic-Level/0018-PHYS223WI2017/Phys223-Labatorial08-Temperature-at-Microscopic-Level-WI2017.pdf</Path>
@@ -7026,8 +7247,13 @@
   </Lab>
   <Lab labId="0004">
     <Name>Newton's Second Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0004-Newtons-Second-Law/0004-PHYS211FA2016/Phys211-221-Labatorial06-Newtons-2nd-Law-FA2016.pdf</Path>
@@ -8000,8 +8226,12 @@
   </Lab>
   <Lab labId="0023">
     <Name>Introduction to 3D Computational Modelling</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Programming</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0023-Introduction-to-3D-Computational-Modelling/0023-PHYS227FA2016/227_2016_Lab01_Introduction_to_computation.pdf</Path>
@@ -8255,8 +8485,12 @@
   </Lab>
   <Lab labId="0015">
     <Name>Introduction to Electric Circuits</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223WI2017/Phys223-Labatorial04-Electric-Circuits-WI2017.pdf</Path>
@@ -8458,8 +8692,17 @@
   </Lab>
   <Lab labId="0070">
     <Name>Evidence for Quantized Atomic Energy Levels</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Quantum Mechanics</Discipline>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Collisions</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2017/Evidence-for-Quantized-Atomic-Energy-Levels-WI2017.pdf</Path>
@@ -8548,8 +8791,12 @@
   </Lab>
   <Lab labId="0087">
     <Name>Measurements and Uncertainties for Engineers</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/0087-PHYS365FA2016/Measurements-and-Uncertainties-FA2016.pdf</Path>
@@ -8753,8 +9000,13 @@
   </Lab>
   <Lab labId="0103">
     <Name>AC Circuits, Waveforms, and Phase</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2017/AC-Circuits-Waveforms-and-Phase-WI2017.pdf</Path>
@@ -8804,8 +9056,12 @@
   </Lab>
   <Lab labId="0032">
     <Name>Circuits</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0032-Circuits/0032-PHYS259WI2014/Phys259-Labatorial09-Circuits-WI2014.pdf</Path>
@@ -8962,8 +9218,12 @@
   </Lab>
   <Lab labId="0047">
     <Name>Electric Resistivity of Play-Doh</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2017/Phys259-Labatorial07-Play-Doh-Resistors-WI2017.pdf</Path>
@@ -9107,8 +9367,15 @@
   </Lab>
   <Lab labId="0034">
     <Name>Electric Field Mapping</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Electrostatics</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2017/Electric-Potential-Mapping-WI2017.pdf</Path>
@@ -9201,8 +9468,13 @@
   </Lab>
   <Lab labId="0039">
     <Name>Magnetic Fields and Magnetic Force</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Magnetism</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2017/Phys259-Labatorial08-Magnetic-Fields-WI2017.pdf</Path>
@@ -9619,8 +9891,13 @@
   </Lab>
   <Lab labId="0007">
     <Name>Statics (Newton's First Law in 2 Dimensions)</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0007-Statics-Newtons-First-Law-in-2-Dimensions/0007-PHYS211FA2016/Phys211-221-Labatorial05-Statics-FA2016.pdf</Path>
@@ -9778,8 +10055,13 @@
   </Lab>
   <Lab labId="0036">
     <Name>Electromagnetic Induction</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Magnetism</Topic>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0036-Electromagnetic-Induction/0036-PHYS259WI2012/Phys259-Labatorial13-Induction-WI2012.pdf</Path>
@@ -9870,8 +10152,12 @@
   </Lab>
   <Lab labId="0008">
     <Name>Two Dimensional Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Kinematics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0008-Two-Dimensional-Motion/0008-PHYS211FA2016/Phys211-221-Labatorial04-2D-Motion-FA2016.pdf</Path>
@@ -10747,8 +11033,13 @@
   </Lab>
   <Lab labId="0121">
     <Name>Archimede's Principle</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Fluid Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Hydrostatics</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0121-Archimedes-Principle/0121-LEGACY/Archimedes-Principle.pdf</Path>
@@ -10814,8 +11105,17 @@
   </Lab>
   <Lab labId="0122">
     <Name>Behaviour of a Real Gas</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+      <Discipline>Statistical Mechanics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statistics</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Measurements</Topic>
+      <Topic>Dynamics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0122-Behaviour-of-a-Real-Gas/0122-LEGACY/Behavior-of-a-Real-Gas.pdf</Path>
@@ -10841,8 +11141,16 @@
   </Lab>
   <Lab labId="0123">
     <Name>Bernoulli's Principle</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Fluid Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Work and Energy</Topic>
+      <Topic>Friction and Drag</Topic>
+      <Topic>ODE</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Hydrostatics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0123-Bernoullis-Principle/0123-LEGACY/Bernoullis-Principle.pdf</Path>
@@ -10896,8 +11204,15 @@
   </Lab>
   <Lab labId="0124">
     <Name>Bifilar Suspension</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Rotational Motion</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>ODE</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0124-Bifilar-Suspension/0124-LEGACY/Bifilar-Suspension.pdf</Path>
@@ -10951,8 +11266,13 @@
   </Lab>
   <Lab labId="0125">
     <Name>Boyle's Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Fluid Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Gas Laws</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0125-Boyles-Law/0125-LEGACY/Boyles-Law.pdf</Path>
@@ -10982,8 +11302,15 @@
   </Lab>
   <Lab labId="0126">
     <Name>Brewster's Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Optics</Discipline>
+      <Discipline>Math</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Polarization</Topic>
+      <Topic>Wave Mechanics</Topic>
+      <Topic>Refraction</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0126-Brewsters-Law/0126-LEGACY/Brewsters-Law.pdf</Path>
@@ -11041,8 +11368,20 @@
   </Lab>
   <Lab labId="0127">
     <Name>Bubble Chamber Photographs</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Relativity</Discipline>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Collisions</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Measurements</Topic>
+      <Topic>Momentum</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0127-Bubble-Chamber-Photographs/0127-LEGACY/Bubble-Chamber-Photographs.pdf</Path>
@@ -11076,8 +11415,13 @@
   </Lab>
   <Lab labId="0128">
     <Name>Cantilever Beams</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0128-Cantilever-Beams/0128-LEGACY/Cantilever-Beams.pdf</Path>
@@ -11131,8 +11475,15 @@
   </Lab>
   <Lab labId="0129">
     <Name>Centripetal Force</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Kinematics</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Rotational Motion</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0129-Centripetal-Force/0129-LEGACY/Centripetal-Force.pdf</Path>
@@ -11178,8 +11529,16 @@
   </Lab>
   <Lab labId="0130">
     <Name>Centripetal Acceleration</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Optics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Kinematics</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Rotational Motion</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0130-Centripetal-Acceleration/0130-LEGACY/Centripetal-Acceleration.pdf</Path>
@@ -11229,8 +11588,16 @@
   </Lab>
   <Lab labId="0131">
     <Name>Coefficient of Restitution</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Collisions</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Momentum</Topic>
+      <Topic>Conservation Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0131-Coefficient-of-Restitution/0131-LEGACY/Coefficient-of-Restitution.pdf</Path>
@@ -11249,7 +11616,7 @@
         <Name>air track cart</Name>
         <Amount>1</Amount>
       </Item>
-          <Item id="0096">
+      <Item id="0096">
         <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
@@ -11257,7 +11624,7 @@
         <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0095">
+      <Item id="0095">
         <Name>elastic band bumper</Name>
         <Amount>1</Amount>
       </Item>
@@ -11292,8 +11659,17 @@
   </Lab>
   <Lab labId="0132">
     <Name>Collisions and Conserved Quantities</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Collisions</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Momentum</Topic>
+      <Topic>Kinematics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0132-Collisions-and-Conserved-Quatities/0132-LEGACY/Collisions-and-Concerved-Quantities.pdf</Path>
@@ -11308,7 +11684,7 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0096">
+      <Item id="0096">
         <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
@@ -11340,10 +11716,10 @@
         <Name>spark timer</Name>
         <Amount>2</Amount>
       </Item>
-            <Item id="0259">
+      <Item id="0259">
         <Name>spark tape</Name>
         <Amount>2</Amount>
-      </Item>      
+      </Item>
       <Item id="0052">
         <Name>masking tape</Name>
         <Amount>1</Amount>
@@ -11359,8 +11735,14 @@
   </Lab>
   <Lab labId="0133">
     <Name>Compound Pendulum</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Dynamics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0133-Compound-Pendulum/0133-LEGACY/Compound-Pendulum.pdf</Path>
@@ -11410,8 +11792,14 @@
   </Lab>
   <Lab labId="0134">
     <Name>Conservation of Energy</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Conservation Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0134-Conservation-of-Energy/0134-LEGACY/Conservation-of-Energy.pdf</Path>
@@ -11426,12 +11814,10 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0096">
+      <Item id="0096">
         <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
-      
-      
       <Item id="0206">
         <Name>air track cart</Name>
         <Amount>1</Amount>
@@ -11440,7 +11826,7 @@
         <Name>spark timer</Name>
         <Amount>1</Amount>
       </Item>
-          <Item id="0259">
+      <Item id="0259">
         <Name>spark tape</Name>
         <Amount>1</Amount>
       </Item>
@@ -11475,8 +11861,14 @@
   </Lab>
   <Lab labId="0135">
     <Name>Constant Volume Gas Thermometer</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Gas Laws</Topic>
+      <Topic>Hydrostatics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0135-Constant-Volume-Gas-Thermometer/0135-LEGACY/Constant-Volume-Gas-Thermometer.pdf</Path>
@@ -11530,8 +11922,14 @@
   </Lab>
   <Lab labId="0137">
     <Name>Coupled Harmonic Oscillator</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>ODE</Topic>
+      <Topic>Linear Algebra</Topic>
+      <Topic>Dynamics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0137-Coupled-Harmonic-Oscillator/0137-LEGACY/Coupled-Harmonic-Oscillator.pdf</Path>
@@ -11546,11 +11944,11 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0011">
+      <Item id="0011">
         <Name>Pasco air blower</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0096">
+      <Item id="0096">
         <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
@@ -11566,7 +11964,7 @@
         <Name>air track spring</Name>
         <Amount>5</Amount>
       </Item>
-            <Item id="0111">
+      <Item id="0111">
         <Name>banana plugs with eye hook</Name>
         <Amount>10</Amount>
       </Item>
@@ -11605,8 +12003,16 @@
   </Lab>
   <Lab labId="0138">
     <Name>Current-Balance</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Optics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Measurements</Topic>
+      <Topic>Magnetism</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0138-Current-Balance/0138-LEGACY/Current-Balance.pdf</Path>
@@ -11648,8 +12054,14 @@
   </Lab>
   <Lab labId="0139">
     <Name>Electrical Equivalent of Heat</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Thermodynamics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0139-Electrical-Equivalent-of-Heat/0139-LEGACY/Electrical-Equivalent-of-Heat.pdf</Path>
@@ -11699,8 +12111,14 @@
   </Lab>
   <Lab labId="0140">
     <Name>Advanced Measurements and Uncertainties</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+      <Discipline>Math</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statistics</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-PHYS323FA2011/Advanced-Measurements-and-Uncertainties.pdf</Path>
@@ -11762,8 +12180,13 @@
   </Lab>
   <Lab labId="0141">
     <Name>Force and Acceleration</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Friction and Drag</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0141-Force-and-Acceleration/0141-LEGACY/Force-and-Acceleration.pdf</Path>
@@ -11786,7 +12209,7 @@
         <Name>rolling chair</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0040">
+      <Item id="0040">
         <Name>measuring tape</Name>
         <Amount>1</Amount>
       </Item>
@@ -11825,8 +12248,15 @@
   </Lab>
   <Lab labId="0142">
     <Name>Geiger Counters</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Nuclear Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statistics</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0142-Geiger-Counters/0142-LEGACY/Geiger-Counters.pdf</Path>
@@ -11904,8 +12334,12 @@
   </Lab>
   <Lab labId="0143">
     <Name>Free Fall</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Kinematics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0143-Free-Fall/0143-LEGACY/Free-Fall.pdf</Path>
@@ -11939,8 +12373,15 @@
   </Lab>
   <Lab labId="0144">
     <Name>Fresnel Biprism</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Optics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Interference</Topic>
+      <Topic>Wave Mechanics</Topic>
+      <Topic>Refraction</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0144-Fresnel-Biprism/0144-LEGACY/Fresnel-Biprism.pdf</Path>
@@ -11951,7 +12392,7 @@
       </Version>
     </Versions>
     <Equipment>
-       <Item id="0023">
+      <Item id="0023">
         <Name>2 m optical bench</Name>
         <Amount>1</Amount>
       </Item>
@@ -12006,8 +12447,16 @@
   </Lab>
   <Lab labId="0145">
     <Name>Fresnel's Equations and Brewster's Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Optics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Interference</Topic>
+      <Topic>Wave Mechanics</Topic>
+      <Topic>Refraction</Topic>
+      <Topic>Polarization</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0145-Fresnels-Equations-and-Brewsters-Law/0145-LEGACY/Fresnels-Equations-and-Brewsters-Law.pdf</Path>
@@ -12031,11 +12480,11 @@
         <alt id="0021">He-Ne laser</alt>
         <Amount>1</Amount>
       </Item>
-            <Item id="0310">
+      <Item id="0310">
         <Name>cylindrical laser mount</Name>
         <Amount>1</Amount>
       </Item>
-       <Item id="0035">
+      <Item id="0035">
         <Name>polarizer</Name>
         <Amount>1</Amount>
       </Item>
@@ -12066,8 +12515,16 @@
   </Lab>
   <Lab labId="0146">
     <Name>Fresnel Diffraction</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Optics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Interference</Topic>
+      <Topic>Wave Mechanics</Topic>
+      <Topic>Refraction</Topic>
+      <Topic>Polarization</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0146-Fresnel-Diffraction/0146-LEGACY/Fresnel-Diffraction.pdf</Path>
@@ -12117,8 +12574,13 @@
   </Lab>
   <Lab labId="0147">
     <Name>Heat of Vaporization of Liquid Nitrogen</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Gas Laws</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0147-Heat-of-Vaporization-of-Liquid-Nitrogen/0147-LEGACY/Heat-of-Vaporization-of-Liquid-Nitrogen.pdf</Path>
@@ -12172,8 +12634,14 @@
   </Lab>
   <Lab labId="0148">
     <Name>Hooke's Law and the Behavior of Springs</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statics</Topic>
+      <Topic>Dynamics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0148-Hookes-Law-and-the-Behaviour-of-Springs/0148-LEGACY/Hookes-Law-and-the-Behavior-of-Springs.pdf</Path>
@@ -12239,8 +12707,16 @@
   </Lab>
   <Lab labId="0149">
     <Name>Impact Craters</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Momentum</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Kinematics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0149-Impact-Craters/0149-LEGACY/Impact-Craters.pdf</Path>
@@ -12290,8 +12766,14 @@
   </Lab>
   <Lab labId="0150">
     <Name>Kater's Pendulum</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>ODE</Topic>
+      <Topic>Dynamics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0150-Katers-Pendulum/0150-LEGACY/Katers-Pendulum.pdf</Path>
@@ -12349,8 +12831,14 @@
   </Lab>
   <Lab labId="0151">
     <Name>Kirchhoff's Laws</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Conservation Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0151-Kirchhoffs-Laws/0151-LEGACY/Kirchhoffs-Laws.pdf</Path>
@@ -12392,8 +12880,15 @@
   </Lab>
   <Lab labId="0152">
     <Name>Law of Dulong-Petit</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+      <Discipline>Statistical Mechanics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Work and Energy</Topic>
+      <Topic>Conservation Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0152-Law-of-Dulong-and-Petit/0152-LEGACY/Law-of-Dulong-and-Petit.pdf</Path>
@@ -12436,7 +12931,7 @@
         <Name>set of metal pellets</Name>
         <Amount>1</Amount>
       </Item>
-       <Item id="0479">
+      <Item id="0479">
         <Name>non-elemental welding rod pellets</Name>
         <Amount>1</Amount>
       </Item>
@@ -12447,8 +12942,17 @@
   </Lab>
   <Lab labId="0154">
     <Name>Longitudinal Standing Waves on a Spring</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Math</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Integration</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>ODE</Topic>
+      <Topic>Dynamics</Topic>
+      <Topic>PDE</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0154-Longitudinal-Standing-Wave-on-a-Spring/0154-LEGACY/Longitudinal-Waves.pdf</Path>
@@ -12530,8 +13034,14 @@
   </Lab>
   <Lab labId="0155">
     <Name>Minimum Deviation and Dispersion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Optics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+      <Topic>Refraction</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.pdf </Path>
@@ -12573,7 +13083,7 @@
       </Item>
       <Item id="0483">
         <Name>set of fluid filled prisms</Name>
-                        <Amount>4</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0068">
         <Name>Geissler tube power supply</Name>
@@ -12611,8 +13121,13 @@
   </Lab>
   <Lab labId="0156">
     <Name>Models of PN Junctions</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Quantum Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0156-Models-of-PN-Junctions/0156-LEGACY/Models-of-PN-Junctions.pdf</Path>
@@ -12670,8 +13185,16 @@
   </Lab>
   <Lab labId="0157">
     <Name>Moment of Inertia</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Rotational Motion</Topic>
+      <Topic>Dynamics</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0157-Moment-of-Inertia/0157-LEGACY/Moment-of-Inertia.pdf</Path>
@@ -12713,8 +13236,13 @@
   </Lab>
   <Lab labId="0158">
     <Name>Newton's Laws</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0158-Newtons-Laws/0158-LEGACY/Newtons-Laws.pdf</Path>
@@ -12729,7 +13257,7 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0097">
+      <Item id="0097">
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
@@ -12776,8 +13304,13 @@
   </Lab>
   <Lab labId="0159">
     <Name>Newton's Second Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0159-Newtons-Second-Law/0159-LEGACY/Newtons-Second-Law.pdf</Path>
@@ -12792,7 +13325,7 @@
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
-       <Item id="0096">
+      <Item id="0096">
         <Name>air track</Name>
         <Amount>1</Amount>
       </Item>
@@ -12859,8 +13392,15 @@
   </Lab>
   <Lab labId="0160">
     <Name>Newton's Law of Cooling</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>ODE</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0160-Newtons-Law-of-Cooling/0160-LEGACY/Newtons-Law-of-Cooling.pdf</Path>
@@ -12914,8 +13454,14 @@
   </Lab>
   <Lab labId="0161">
     <Name>Nonlinear Resistance Measurement</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0161-Nonlinear-Resistance-Measurement/0161-LEGACY/Nonlinear-Resistance-Measurement.pdf</Path>
@@ -12966,8 +13512,16 @@
   </Lab>
   <Lab labId="0162">
     <Name>Thermoelectricity</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+      <Discipline>Quantum Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Differentiation</Topic>
+      <Topic>Circuits</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0162-Thermoelectricity/0162-LEGACY/Thermoelectricity.pdf</Path>
@@ -13033,8 +13587,16 @@
   </Lab>
   <Lab labId="0163">
     <Name>Physical Inductor</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0163-Physical-Inductor/0163-LEGACY/Physical-Inductor.pdf</Path>
@@ -13092,8 +13654,14 @@
   </Lab>
   <Lab labId="0164">
     <Name>Planar Pendulum</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>ODE</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Dynamics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0164-Planar-Pendulum/0164-LEGACY/Planar-Pendulum.pdf</Path>
@@ -13139,8 +13707,15 @@
   </Lab>
   <Lab labId="0165">
     <Name>Poiseuille's Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Fluid Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Hydrostatics</Topic>
+      <Topic>Friction and Drag</Topic>
+      <Topic>Dynamics</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0165-Poiseuilles-Law/0165-LEGACY/Poiseuilles-Law.pdf</Path>
@@ -13210,8 +13785,17 @@
   </Lab>
   <Lab labId="0166">
     <Name>Principle of Equipartition</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+      <Discipline>Statistical Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statistics</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>ODE</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>PDE</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0166-Principle-of-Equipartition/0166-LEGACY/Principle-of-Equipartition.pdf</Path>
@@ -13253,8 +13837,12 @@
   </Lab>
   <Lab labId="0167">
     <Name>Projectile Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Kinematics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0167-Projectile-Motion/0167-LEGACY/Projectile-Motion.pdf</Path>
@@ -13320,8 +13908,15 @@
   </Lab>
   <Lab labId="0168">
     <Name>Pulleys and Forces</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Friction and Drag</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0168-Pulleys-and-Forces/0168-LEGACY/Pulleys-and-Forces.pdf</Path>
@@ -13379,8 +13974,16 @@
   </Lab>
   <Lab labId="0169">
     <Name>Quantum Defects in Helium</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Quantum Mechanics</Discipline>
+      <Discipline>Nuclear Physics</Discipline>
+      <Discipline>Optics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Refraction</Topic>
+      <Topic>Interference</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0169-Quantum-Defects-in-Helium/0169-LEGACY/Quantum-Defects-in-Helium.pdf</Path>
@@ -13430,8 +14033,15 @@
   </Lab>
   <Lab labId="0170">
     <Name>Ratio of Specific Heats for Air</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Differentiation</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Gas Laws</Topic>
+      <Topic>Hydrostatics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0170-Ratio-of-Specific-Heats-for-Air/0170-LEGACY/Ratio-of-Specific-Heats-for-Air.pdf</Path>
@@ -13481,8 +14091,14 @@
   </Lab>
   <Lab labId="0171">
     <Name>Resistance Measurements</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0171-Resistance-Measurements/0171-LEGACY/Resistance-Measurements.pdf</Path>
@@ -13528,8 +14144,20 @@
   </Lab>
   <Lab labId="0172">
     <Name>Scintillation Counters</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Quantum Mechanics</Discipline>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>ODE</Topic>
+      <Topic>Refraction</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0172-Scintillation-Counters/0172-LEGACY/Scintillation-Counters.pdf</Path>
@@ -13603,8 +14231,12 @@
   </Lab>
   <Lab labId="0173">
     <Name>Speed of Sound</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Wave Mechanics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0173-Speed-of-Sound/0173-LEGACY/Speed-of-Sound.pdf</Path>
@@ -13638,8 +14270,13 @@
   </Lab>
   <Lab labId="0174">
     <Name>Static Equilibrium</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statics</Topic>
+      <Topic>Newton’s Laws</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0174-Static-Equilibrium/0174-LEGACY/Static-Equilibrium.pdf</Path>
@@ -13685,8 +14322,12 @@
   </Lab>
   <Lab labId="0175">
     <Name>Stirling Engine and Refrigerator</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0175-Stirling-Engine/0175-LEGACY/Stirling-Engine.pdf</Path>
@@ -13717,12 +14358,10 @@
         <Name>furnace motor</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0510">
+      <Item id="0510">
         <Name>furnace motor belt</Name>
         <Amount>1</Amount>
       </Item>
-      
-      
       <Item id="0070">
         <Name>Leeds and Northrop optical pyrometer</Name>
         <Amount>1</Amount>
@@ -13782,8 +14421,14 @@
   </Lab>
   <Lab labId="0176">
     <Name>Tangent Galvanometer</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Magnetism</Topic>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0176-Tangent-Galvanometer/0176-LEGACY/Tangent-Galvanometer.pdf</Path>
@@ -13825,8 +14470,15 @@
   </Lab>
   <Lab labId="0177">
     <Name>Thermometers, Thermistors, and Thermocouples</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Thermodynamics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+      <Topic>Work and Energy</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0177-Thermometers-Thermistors-and-Thermocouples/0177-LEGACY/Thermometers-Thermistors-and-Thermocouples.pdf</Path>
@@ -13924,8 +14576,13 @@
   </Lab>
   <Lab labId="0178">
     <Name>Torque and the Beam Balance</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0178-Torque-and-the-Beam-Balance/0178-LEGACY/Torque-and-the-Beam-Balance.pdf</Path>
@@ -13959,8 +14616,14 @@
   </Lab>
   <Lab labId="0180">
     <Name>Axial and non Axial Magnetic Fields of a Helmholtz Coil</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Magnetism</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0180-Axial-and-non-Axial-Magnetic-Fields-of-a-Helmholtz-Coil/0180-LEGACY/Axial-Magnetic-Flux-Density-of-a-Helmholtz-Coil.pdf</Path>
@@ -14058,8 +14721,15 @@
   </Lab>
   <Lab labId="0181">
     <Name>Nuclear Pulse Height Analysis</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Nuclear Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Work and Energy</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0181-Nuclear-Pulse-Height-Analysis/0181-LEGACY</Path>
@@ -14089,8 +14759,14 @@
   </Lab>
   <Lab labId="0182">
     <Name>Modelling Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Kinematics</Topic>
+      <Topic>Programming</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0182-Modelling-Motion/0182-PHYS227FA2016/227_2016_Lab03_Modelling_Motion.pdf</Path>

@@ -31,7 +31,8 @@ validtopics = ["Electrostatics",
                "Wave Mechanics",
                "Refraction",
                "Hydrostatics",
-               "Gas Laws"]
+               "Gas Laws",
+               "Programming"]
 validdisc = ["Newtonian Mechanics",
              "Electricity and Magnetism",
              "Optics",
