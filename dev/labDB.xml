@@ -2897,7 +2897,7 @@
     <Topics/>
     <Versions>
       <Version>
-        <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-LEGACY/meas.pdf</Path>
+        <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-/meas.pdf</Path>
         <Semester/>
         <Year/>
         <Course/>
@@ -11968,7 +11968,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0269">
-        <Name>15 cm focal length convex lens</Name>
+        <Name>15 cm focal length 38 mm diameter double convex lens</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0031">
@@ -12444,31 +12444,6 @@
     <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
-  </Lab>
-  <Lab labId="0153">
-    <Name>Linear Regression</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
-      <Version>
-        <Path>/data/repository/0153-Linear-Regression/0153-LEGACY/Linear-Regression.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
-        <Directory>/data/repository/0153-Linear-Regression/0153-LEGACY/</Directory>
-      </Version>
-    </Versions>
-    <Equipment>
-        <Item id="0024">
-        <Name>computer</Name>
-        <Amount>1</Amount>
-      </Item>
-      </Equipment>
-    <Type>Lab</Type>
-    <SupportDocs/>
-    <Software>
-    <Name>linefit</Name>
-    </Software>
   </Lab>
   <Lab labId="0154">
     <Name>Longitudinal Standing Waves on a Spring</Name>
@@ -13726,8 +13701,8 @@
         <Name>Stirling engine</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>20A high current power supply</Name>
+      <Item id="0211">
+        <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0230">
@@ -13738,16 +13713,22 @@
         <Name>Fluke multimeter</Name>
         <Amount>5</Amount>
       </Item>
-      <Item id="0000">
-        <Name>AC furnace motor with belt and pully</Name>
+      <Item id="0509">
+        <Name>furnace motor</Name>
         <Amount>1</Amount>
       </Item>
+         <Item id="0510">
+        <Name>furnace motor belt</Name>
+        <Amount>1</Amount>
+      </Item>
+      
+      
       <Item id="0070">
         <Name>Leeds and Northrop optical pyrometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>k type themocouple meter</Name>
+      <Item id="0058">
+        <Name>Protek digital thermometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0249">
@@ -13758,8 +13739,8 @@
         <Name>stopwatch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>laser</Name>
+      <Item id="0021">
+        <Name>He-Ne laser</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0294">
@@ -13774,12 +13755,12 @@
         <Name>laboratory jack</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0253">
         <Name>electrical generator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0265">
-        <Name>1 kΩ decade resistance box</Name>
+      <Item id="0263">
+        <Name>100 Ω GR decade resistance box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0234">
@@ -13843,7 +13824,7 @@
     <Software/>
   </Lab>
   <Lab labId="0177">
-    <Name>Thermometers Thermistors and Thermocouples</Name>
+    <Name>Thermometers, Thermistors, and Thermocouples</Name>
     <Disciplines/>
     <Topics/>
     <Versions>
@@ -13864,11 +13845,11 @@
         <Name>thermistor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>red constantan T type thermocouple wire</Name>
+      <Item id="0264">
+        <Name>T type thermocouple wire</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0265">
         <Name>thermocouple connecting post</Name>
         <Amount>1</Amount>
       </Item>
@@ -13924,8 +13905,8 @@
         <Name>solder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>safety signs</Name>
+      <Item id="0511">
+        <Name>cryogenics safety signs</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0056">
@@ -13955,17 +13936,13 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Meter stick balance beam</Name>
+      <Item id="0512">
+        <Name>meter stick balance beam</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0513">
         <Name>balance beam stand</Name>
         <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>weight hangers</Name>
-        <Amount>2</Amount>
       </Item>
       <Item id="0185">
         <Name>set of hanging masses</Name>
@@ -14002,15 +13979,15 @@
         <Name>Anatek power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>mounted helmholtz coil-pair</Name>
+      <Item id="0514">
+        <Name>helmholtz coils</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0282">
         <Name>female BNC to male banana adapter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -14018,7 +13995,7 @@
         <Name>laboratory jack</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0046">
         <Name>fork clamp</Name>
         <Amount>1</Amount>
       </Item>
@@ -14026,51 +14003,51 @@
         <Name>laboratory stand</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0020">
         <Name>right angle clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0379">
         <Name>cross-bar switch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0044">
         <Name>plastic ruler</Name>
         <Amount>6</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0003">
         <Name>set of connecting leads</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>3 ft coax cable</Name>
+      <Item id="0308">
+        <Name>BNC coax cable</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0283">
         <Name>standard magnet</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0034">
         <Name>calipers</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0041">
         <Name>micrometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0516">
         <Name>wire gauge chart</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0052">
         <Name>tape measure</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0052">
         <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0517">
         <Name>metric graph paper</Name>
         <Amount>1</Amount>
       </Item>
@@ -14097,11 +14074,11 @@
         <Name>Oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0518">
         <Name>Nucleus Series 2/286 computer analyer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0519">
         <Name>Berkeley nucleaon cs GL-3 pulse generator</Name>
         <Amount>1</Amount>
       </Item>
