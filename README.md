@@ -91,8 +91,10 @@ Interference
 Polarization  
 Newton’s Laws  
 Wave Mechanics  
-Malus' Law  
-Refraction
+Refraction  
+Hydrostatics  
+Gas Laws  
+
 <!---end topics-->
 
 

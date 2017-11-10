@@ -501,7 +501,7 @@ select {
 	border-left: 6px solid #555;
 }
 
-	.lab-record-detailed-flex span {
+	.lab-record-detailed-flex span:not(.equip-item) {
 		font-weight: 600;
 		color: #777777;
 	}
@@ -518,6 +518,14 @@ select {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+.equip-item:hover {
+	color: #fff;
+	background-color: #555;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
 
 #show-all-button {
 	padding: 3px;

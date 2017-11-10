@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Magnetism</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0050-Magnetic-Force-between-Current-Carrying-Wires/0050-PHYS259WI2012/Phys259-Labatorial11-CurrentBalance-WI2012.pdf</Path>
         <Semester>Winter</Semester>
@@ -62,7 +59,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Vernier Logger Pro</Name>
     </Software>
@@ -182,14 +179,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0097">
     <Name>Radiation Absorption and Exposure</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Particle Physics</Discipline><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Statistics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0097-Radiation-Absorption-and-Exposure/0097-PHYS397FA2011/radabexp.pdf</Path>
         <Semester>Fall</Semester>
@@ -198,16 +193,14 @@
         <Directory>/data/repository/0097-Radiation-Absorption-and-Exposure/0097-PHYS397FA2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0076">
     <Name>Radiation Counting Statistics</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Nuclear Physics</Discipline><Discipline>Particle Physics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Statistics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0076-Radiation-Counting-Statistics/0076-PHYS325WI2012/cntstat.pdf</Path>
         <Semester>Winter</Semester>
@@ -216,10 +209,10 @@
         <Directory>/data/repository/0076-Radiation-Counting-Statistics/0076-PHYS325WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0102">
     <Name>AC Circuits and Voltage Dividers</Name>
@@ -252,25 +245,25 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0131">
-        <Name>15 kΩ resistor</Name>
+        <Name>15 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0130">
-        <Name>27 kΩ resistor</Name>
+        <Name>27 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0120">
-        <Name>0.0056 µF capacitor</Name>
+        <Name>0.0056 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
-        <Name>0.01 µF capacitor</Name>
+        <Name>0.01 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0001">
     <Name>Collisions in One Dimension</Name>
@@ -457,7 +450,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>collisions.cmbl</Name>
       <Name>Vernier Logger Pro</Name>
@@ -546,13 +539,11 @@
         <Path>/data/repository/0091-Fizeau-Bands/0091-PHYS375FA2016/Fizeau-Bands-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0064">
     <Name>Linear Regression</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Laboratory Skills</Discipline><Discipline>Computer Skills</Discipline><Discipline>Math</Discipline></Disciplines><Topics><Topic>Statistics</Topic><Topic>Differentiation</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0064-Linear-Regression/0064-PHYS323FA2012/linregr.pdf</Path>
         <Semester>Fall</Semester>
@@ -574,9 +565,9 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0086">
     <Name>Damped Mechanical Oscillations</Name>
@@ -585,7 +576,7 @@
       <Discipline>Math</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
       <Topic>Dynamics</Topic>
       <Topic>ODE</Topic>
       <Topic>Wave Mechanics</Topic>
@@ -637,14 +628,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0120">
     <Name>Torsional Oscillations</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Integration</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Dynamics</Topic><Topic>ODE</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0120-Torsional-Oscillations/0120-PHYS369FA2012/torsion.pdf</Path>
         <Semester>Fall</Semester>
@@ -719,14 +708,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0043">
     <Name>The Electric Motor and Generator</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0043-The-Electric-Motor-and-Generator/0043-PHYS255WI2012/motrgen.pdf</Path>
         <Semester>Winter</Semester>
@@ -778,14 +765,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0021">
     <Name>Calculating and Displaying Gravitational Force</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Computer Skills</Discipline></Disciplines><Topics><Topic>ODE</Topic><Topic>Momentum</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0021-Calculating-and-Displaying-Gravitational-Force/0021-PHYS227FA2016/227_2016_Lab05_Grav_Force.pdf</Path>
         <Semester>Fall</Semester>
@@ -808,8 +793,8 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
+    <Type />
+    <SupportDocs />
     <Software>
       <Name>browser</Name>
       <Name>VPython</Name>
@@ -969,7 +954,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Vernier Logger Pro</Name>
       <Name>1D Motion.cmbl</Name>
@@ -1051,7 +1036,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Circuit Construction Kit (AC/DC) simulation</Name>
       <Name>browser</Name>
@@ -1092,27 +1077,25 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 µF capacitor</Name>
+        <Name>0.1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0151">
-        <Name>10 kΩ potentiometer</Name>
+        <Name>10 k&#8486; potentiometer</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0020">
     <Name>Angular Impulse and Anglular Momentum Change</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Rotational Motion</Topic><Topic>Momentum</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0020-Angular-Impulse-and-Anglular-Momentum-Change/0020-PHYS227FA2013/Angular-Impule-and-Anglular-Momentum-Change.pdf</Path>
         <Semester>Fall</Semester>
@@ -1147,15 +1130,13 @@
     </Item>
     <Equipment>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0030">
     <Name>Capacitor Measurements</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0030-Capacitor-Measurements/0030-PHYS255WI2015/Capacitor-Measurements-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -1199,7 +1180,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0323">
-        <Name>large unpolarized capacitor 10 µF - 50 µF</Name>
+        <Name>large unpolarized capacitor 10 &#181;F - 50 &#181;F</Name>
         <Amount>4</Amount>
       </Item>
       <Item id="0003">
@@ -1207,9 +1188,9 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0025">
     <Name>Macroscopic Springs</Name>
@@ -1218,7 +1199,7 @@
       <Discipline>Newtonian Mechanics</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
       <Topic>Momentum</Topic>
       <Topic>Dynamics</Topic>
     </Topics>
@@ -1276,14 +1257,12 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0033">
     <Name>Gauss' Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Electrostatics</Topic><Topic>Integration</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0033-Gauss-Law/0033-PHYS259WI2017/Phys259-Labatorial03-Gauss-Law-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -1383,10 +1362,10 @@
         <Directory>/data/repository/0033-Gauss-Law/0033-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0114">
     <Name>Operational Amplifier Comparator</Name>
@@ -1427,27 +1406,27 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0152">
-        <Name>100 kΩ potentiometer</Name>
+        <Name>100 k&#8486; potentiometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0121">
-        <Name>100 µF capacitor</Name>
+        <Name>100 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 µF capacitor</Name>
+        <Name>0.1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0327">
@@ -1456,8 +1435,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0085">
     <Name>Forced Damped Mechanical Oscillations</Name>
@@ -1466,7 +1445,7 @@
       <Discipline>Math</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
       <Topic>Dynamics</Topic>
       <Topic>ODE</Topic>
       <Topic>Wave Mechanics</Topic>
@@ -1511,8 +1490,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0107">
     <Name>Basic OpAmp Difference Amplifier</Name>
@@ -1561,27 +1540,25 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0133">
-        <Name>2.2 kΩ resistor</Name>
+        <Name>2.2 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0052">
     <Name>Motion of Electric Charges in Electric Fields</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Electrostatics</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259WI2017/Phys259-Labatorial04-Moving-Charges-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -1651,14 +1628,12 @@
       <Name>electric-hockey_en.jar</Name>
     </Software>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0074">
     <Name>Planck's Constant with LEDs</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Quantum Mechanics</Discipline><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Work and Energy</Topic><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0074-Plancks-Constant-with-LEDs/0074-PHYS325WI2017/Plancks-Constant-from-LEDs-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -1736,8 +1711,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0090">
     <Name>Standing Waves</Name>
@@ -1846,14 +1821,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0009">
     <Name>Units, Equipment Introduction, and Motion Diagrams</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0009-Units-Equipment-Introduction-and-Motion-Diagrams/0009-PHYS211FA2016/Phys211-221-Labatorial01-Units-FA2016.pdf</Path>
         <Semester>Fall</Semester>
@@ -1979,7 +1952,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Vernier Logger Pro</Name>
       <Name>labatorial_1_data.cmbl</Name>
@@ -2069,7 +2042,7 @@
         <Path>/data/repository/0094-Photometry/0094-PHYS375FA2015/Photometry-FULL-FA2015.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0115">
     <Name>Phase Locked Loop Frequency Synthesizer</Name>
@@ -2122,19 +2095,19 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0148">
-        <Name>5.1 kΩ resistor</Name>
+        <Name>5.1 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0140">
-        <Name>100 Ω resistor</Name>
+        <Name>100 &#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0139">
-        <Name>20 kΩ resistor</Name>
+        <Name>20 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0117">
@@ -2142,23 +2115,21 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
-        <Name>0.01 µF capacitor</Name>
+        <Name>0.01 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0115">
-        <Name>1 µF capacitor</Name>
+        <Name>1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0058">
     <Name>Oscilloscope and Multimeter</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0058-Oscilloscope-and-Multimeter/0058-PHYS323FA2012/oscmult.pdf</Path>
         <Semester>Fall</Semester>
@@ -2196,15 +2167,13 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0084">
     <Name>Balloon Physics</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Fluid Mechanics</Discipline></Disciplines><Topics><Topic>Hydrostatics</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Friction and Drag</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0084-Balloon-Physics/0084-PHYS341FA2015/Balloon-Physics-FA2015.pdf</Path>
         <Semester>Fall</Semester>
@@ -2235,15 +2204,13 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0006">
     <Name>Simple Harmonic Oscillation and Conservation of Energy</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>ODE</Topic><Topic>Conservation Laws</Topic><Topic>Work and Energy</Topic><Topic>Dynamics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0006-Simple-Harmonic-Oscillation-and-Conservation-of-Energy/0006-PHYS211FA2016/Phys211-221-Labatorial09-SHO-FA2016.pdf</Path>
         <Semester>Fall</Semester>
@@ -2411,9 +2378,8 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
-      <Name/>
       <Name>SHO.cmbl</Name>
     </Software>
   </Lab>
@@ -2456,19 +2422,19 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0147">
-        <Name>4.7 kΩ resistor</Name>
+        <Name>4.7 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0129">
-        <Name>47 kΩ resistor</Name>
+        <Name>47 k&#8486; resistor</Name>
         <Amount>4</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0115">
-        <Name>1 µF capacitor</Name>
+        <Name>1 &#181;F capacitor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0342">
@@ -2489,14 +2455,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0077">
     <Name>Radioactive Decay</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Nuclear Physics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>ODE</Topic><Topic>Statistics</Topic><Topic>Differentiation</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0077-Radioactive-Decay/0077-PHYS325WI2017/Radioactive-Decay-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -2564,14 +2528,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0075">
     <Name>Quantum Defects in Sodium</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Quantum Mechanics</Discipline><Discipline>Optics</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Work and Energy</Topic><Topic>Interference</Topic><Topic>Refraction</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0075-Quantum-Defects-in-Sodium/0075-PHYS325WI2012/qdefsod.pdf</Path>
         <Semester>Winter</Semester>
@@ -2580,10 +2542,10 @@
         <Directory>/data/repository/0075-Quantum-Defects-in-Sodium/0075-PHYS325WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0014">
     <Name>Ideal Gas Law</Name>
@@ -2712,7 +2674,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Ideal Gas Law.cmbl</Name>
       <Name>Vernier Logger Pro</Name>
@@ -2802,11 +2764,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0351">
-        <Name>100 kΩ Eico decade resistor box</Name>
+        <Name>10 k&#8486; Eico decade resistor box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0154">
-        <Name>25 Ω potentiometer</Name>
+        <Name>25 &#8486; potentiometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0352">
@@ -2819,19 +2781,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0055">
     <Name>Intermediate Measurements and Uncertainties</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-LEGACY/meas.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0055-Intermediate-Measurements-and-Uncertainties/0055-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -2869,9 +2829,9 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0089">
     <Name>Simple Harmonic Oscillations</Name>
@@ -2926,7 +2886,7 @@
         <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2013/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2017/Simple-Harmonic-Motion-FA2017.pdf</Path>
+        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2017/Simple-Harmonic-Oscillations-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 365</Course>
@@ -2957,6 +2917,10 @@
       </Item>
       <Item id="0011">
         <Name>Pasco air blower</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0096">
+        <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -2997,15 +2961,15 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Vernier Logger Pro</Name>
     </Software>
   </Lab>
   <Lab labId="0045">
     <Name>Electric Charges and the Forces between them</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259WI2017/Phys259-Labatorial01-Charges-and-Forces-WI2017.pdf</Path>
@@ -3071,16 +3035,14 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>electric fields from point charges applet</Name>
     </Software>
   </Lab>
   <Lab labId="0048">
     <Name>Electron Current and Energy in a Circuit</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0048-Electron-Current-and-Energy-in-a-Circuit/0048-PHYS259WI2016/Phys259-Labatorial07-Electron-Current-WI2016.pdf</Path>
         <Semester>Winter</Semester>
@@ -3117,15 +3079,15 @@
         <Directory>/data/repository/0048-Electron-Current-and-Energy-in-a-Circuit/0048-PHYS259WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0096">
     <Name>Hall Effect and Magnetic Hysteresis</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0096-Hall-Effect-and-Magnetic-Hysteresis/0096-PHYS397FA2016/Hall-Effect-and-Magnetic-Hysteresis-FA2016.pdf</Path>
@@ -3229,23 +3191,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0029">
     <Name>Biot-Savart Law</Name>
-    <Disciplines>
-      <Discipline>Electricity and Magnetism</Discipline>
-      <Discipline>Newtonian Mechanics</Discipline>
-      <Discipline>Math</Discipline>
-    </Disciplines>
-    <Topics>
-      <Topic>Newton’s Laws</Topic>
-      <Topic>Magnetism</Topic>
-      <Topic>Integration</Topic>
-      <Topic>Linear Algebra</Topic>
-    </Topics>
-    <Versions>
+    <Disciplines><Discipline>Math</Discipline><Discipline>Newtonian Mechanics</Discipline><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Linear Algebra</Topic><Topic>Integration</Topic><Topic>Magnetism</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0029-Biot-Savart-Law/0029-PHYS255WI2017/Biot-Savart-Law-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -3307,14 +3258,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0051">
     <Name>Mechanics Review</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Kinematics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0051-Mechanics-Review/0051-PHYS259WI2016/Phys259-Labatorial00-Mechanics-Review-WI2016.pdf</Path>
         <Semester>Winter</Semester>
@@ -3365,10 +3314,10 @@
         <Directory>/data/repository/0051-Mechanics-Review/0051-PHYS259WI2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0088">
     <Name>Hydrogen Balmer Series</Name>
@@ -3450,8 +3399,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0108">
     <Name>DC Circuits</Name>
@@ -3488,23 +3437,23 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0134">
-        <Name>11 kΩ resistor</Name>
+        <Name>11 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0135">
-        <Name>22 kΩ resistor</Name>
+        <Name>22 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0136">
-        <Name>33 kΩ resistor</Name>
+        <Name>33 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0137">
-        <Name>2.2 MΩ resistor</Name>
+        <Name>2.2 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0153">
-        <Name>70 kΩ potentiometer</Name>
+        <Name>70 k&#8486; potentiometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0108">
@@ -3517,8 +3466,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0063">
     <Name>Fourier Series</Name>
@@ -3609,8 +3558,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0100">
     <Name>Vacuum Technology Laboratory</Name>
@@ -3804,7 +3753,7 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>pumpdown_template.cmbl</Name>
     </Software>
@@ -3844,19 +3793,19 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0121">
-        <Name>100 µF capacitor</Name>
+        <Name>100 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 µF capacitor</Name>
+        <Name>0.1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0325">
@@ -3865,14 +3814,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0010">
     <Name>Current Balance</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Optics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Magnetism</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0010-Current-Balance/0010-PHYS223WI2014/Phys223-Labatorial10-Current-Balance-WI2014.pdf</Path>
         <Semester>Winter</Semester>
@@ -3926,8 +3873,8 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0061">
     <Name>Thin Lenses and Optical Instruments</Name>
@@ -4083,13 +4030,11 @@
         <Path>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS375FA2016/Thin-Lenses-and-Optical-Instruments-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0054">
     <Name>Electromagnetic Induction</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Magnetism</Topic><Topic>Differentiation</Topic><Topic>Integration</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0054-Electromagnetic-Induction/0054-PHYS323FA2012/eminduc.pdf</Path>
         <Semester>Fall</Semester>
@@ -4167,9 +4112,9 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0022">
     <Name>Computing Motion</Name>
@@ -4210,7 +4155,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>browser</Name>
       <Name>VPython</Name>
@@ -4283,8 +4228,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0099">
     <Name>Spectroscopy</Name>
@@ -4390,8 +4335,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0093">
     <Name>Michelson Interferometer</Name>
@@ -4491,7 +4436,7 @@
         <Path>/data/repository/0093-Michelson-Interferometer/0093-PHYS375FA2016/Michelson-Interferometer-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0049">
     <Name>Magnetic Force and Torque on a Loop</Name>
@@ -4502,7 +4447,7 @@
       <Topic>Magnetism</Topic>
       <Topic>Linear Algebra</Topic>
       <Topic>Circuits</Topic>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
     </Topics>
     <Versions>
       <Version>
@@ -4567,7 +4512,7 @@
         <Name>Anatek power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0211">
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -4589,14 +4534,12 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0059">
     <Name>Parallel Plate Capacitors</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>ODE</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0059-Parallel-Plate-Capacitors/0059-PHYS323FA2012/parcap.pdf</Path>
         <Semester>Fall</Semester>
@@ -4638,15 +4581,13 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0117">
     <Name>Swept Frequency Waveform Generator, DFT</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0117-Swept-Frequency-Waveform-Generator-DFT/0117-PHYS497WI2017/Swept-Frequency-Waveform-Generator-DFT-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -4673,15 +4614,15 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0119">
-        <Name>10 μF capacitor</Name>
+        <Name>10 &#956;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 μF capacitor</Name>
+        <Name>0.1 &#956;F capacitor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0118">
-        <Name>0.001 μF capacitor</Name>
+        <Name>0.001 &#956;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0172">
@@ -4689,31 +4630,31 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 k&#937; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0139">
-        <Name>20 kΩ resistor</Name>
+        <Name>20 k&#937; resistor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#937; resistor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0222">
-        <Name>36 kΩ resistor</Name>
+        <Name>36 k&#937; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0375">
-        <Name>82 kΩ resistor</Name>
+        <Name>82 k&#937; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0376">
-        <Name>200 kΩ resistor</Name>
+        <Name>200 k&#937; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 M&#937; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -4726,14 +4667,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0017">
     <Name>Pressure and Density</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Fluid Mechanics</Discipline></Disciplines><Topics><Topic>Hydrostatics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0017-Pressure-and-Density/0017-PHYS223WI2015/Phys223-Labatorial01-Pressure-and-Density-WI2015.pdf</Path>
         <Semester>Winter</Semester>
@@ -4781,8 +4720,8 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0079">
     <Name>X-Ray Diffraction</Name>
@@ -4868,14 +4807,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0042">
     <Name>Power Supplies, Lights, and Switches</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0042-Power-Supplies-Lights-and-Switches/0042-PHYS255WI2014/Power-Supplies-Lights-and-Switches-WI2014.pdf</Path>
         <Semester>Winter</Semester>
@@ -4914,9 +4851,9 @@
         <Amount>2</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0060">
     <Name>Reflection and Refraction</Name>
@@ -5037,13 +4974,11 @@
         <Path>/data/repository/0060-Reflection-and-Refraction/0060-PHYS375FA2016/Reflection-and-Refraction-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0037">
     <Name>Faraday's Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Magnetism</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0037-Faradays-Law/0037-PHYS255WI2017/Faradays-Law-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -5104,9 +5039,9 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0110">
     <Name>Introduction to OpAmps</Name>
@@ -5147,39 +5082,37 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0144">
-        <Name>10 Ω resistor</Name>
+        <Name>10 &#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0140">
-        <Name>100 Ω resistor</Name>
+        <Name>100 &#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0138">
-        <Name>10 MΩ resistor</Name>
+        <Name>10 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0125">
-        <Name>1 kΩ resistor</Name>
+        <Name>1 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 k&#8486; resistor</Name>
         <Amount>2</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0026">
     <Name>Measuring Velocity, Momentum, and Changes in Momentum in 1D</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Computer Skills</Discipline></Disciplines><Topics><Topic>Kinematics</Topic><Topic>Measurements</Topic><Topic>Momentum</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0026-Measuring-Velocity-Momentum-and-Changes-in-Momentum-in-1D/0026-PHYS227FA2015/Measuring-v-P-and-Changes-in-P-in-1D-FA2015.pdf</Path>
         <Semester>Fall</Semester>
@@ -5244,15 +5177,13 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0019">
     <Name>The First Law of Thermodynamics</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline></Disciplines><Topics><Topic>Work and Energy</Topic><Topic>Gas Laws</Topic><Topic>Integration</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223WI2017/Phys223-Labatorial07-First-Law-of-Thermodynamics-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -5322,7 +5253,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>gas-properties_en.jar</Name>
     </Software>
@@ -5334,7 +5265,7 @@
       <Discipline>Newtonian Mechanics</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
       <Topic>Dynamics</Topic>
       <Topic>Momentum</Topic>
       <Topic>Work and Energy</Topic>
@@ -5390,7 +5321,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>VPython</Name>
       <Name>GlowScript</Name>
@@ -5435,15 +5366,15 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0131">
-        <Name>15 kΩ resistor</Name>
+        <Name>15 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#8486; resistor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0115">
-        <Name>1 µF capacitor</Name>
+        <Name>1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0326">
@@ -5460,8 +5391,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0112">
     <Name>Lock-In Detector</Name>
@@ -5514,37 +5445,37 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0115">
-        <Name>1 µF capacitor</Name>
+        <Name>1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 µF capacitor</Name>
+        <Name>0.1 &#181;F capacitor</Name>
         <Amount>4</Amount>
       </Item>
       <Item id="0129">
-        <Name>47 kΩ resistor</Name>
+        <Name>47 k&#8486; resistor</Name>
         <Amount>3</Amount>
       </Item>
       <Item id="0125">
-        <Name>1 kΩ resistor</Name>
+        <Name>1 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#8486; resistor</Name>
         <Amount>3</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 k&#8486; resistor</Name>
         <Amount>3</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0069">
     <Name>Electron Gas in Metals</Name>
@@ -5622,8 +5553,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0057">
     <Name>Malus' Law and Birefringence</Name>
@@ -5785,8 +5716,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-      <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0031">
     <Name>Charge to Mass Ratio of the Electron</Name>
@@ -5868,8 +5799,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0046">
     <Name>Electric Potential</Name>
@@ -5985,16 +5916,14 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Vernier Logger Pro</Name>
     </Software>
   </Lab>
   <Lab labId="0082">
     <Name>Uniform Circular Motion</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Optics</Discipline></Disciplines><Topics><Topic>Rotational Motion</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Dynamics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0082-Uniform-Circular-Motion/0082-PHYS341FA2015/Uniform-Circular-Motion-FA2015.pdf</Path>
         <Semester>Fall</Semester>
@@ -6004,7 +5933,7 @@
       </Version>
     </Versions>
     <Equipment>
-         <Item id="0278">
+      <Item id="0278">
         <Name>motor dirven turntable</Name>
         <Amount>1</Amount>
       </Item>
@@ -6036,10 +5965,10 @@
         <Name>stand with laser and protractor</Name>
         <Amount>1</Amount>
       </Item>
-      </Equipment>
+    </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0071">
     <Name>Faraday Effect</Name>
@@ -6132,7 +6061,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0393">
-        <Name>faraday effect media kit</Name>
+        <Name>faraday effect kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0034">
@@ -6141,14 +6070,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0012">
     <Name>Electric Fields and Motion of Charged Particles</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Electrostatics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223WI2017/Phys223-Labatorial02-Electric-Fields-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -6207,18 +6134,16 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
-     <Name>electric fields from point charges applet</Name>
-     </Software>
+      <Name>electric fields from point charges applet</Name>
+    </Software>
   </Lab>
   <Lab labId="0038">
     <Name>Kirchoff's Laws</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Conservation Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0038-Kirchoffs-Laws/0038-PHYS255WI2014/Kirchhoffs-Laws-WI2014.pdf</Path>
         <Semester>Winter</Semester>
@@ -6242,40 +6167,38 @@
       </Version>
     </Versions>
     <Equipment>
-       <Item id="0001">
+      <Item id="0001">
         <Name>Fluke multimeter</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0002">
+      <Item id="0002">
         <Name>Anatek power supply</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0231">
+      <Item id="0231">
         <Name>3 resistor set</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0232">
+      <Item id="0232">
         <Name>2 resistor set</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0003">
+      <Item id="0003">
         <Name>set of connecting leads</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0267">
+      <Item id="0267">
         <Name>set of short connecting leads</Name>
         <Amount>1</Amount>
       </Item>
-      </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    </Equipment>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0035">
     <Name>Electric Fields of Charge Configurations</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Electrostatics</Topic><Topic>Integration</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS259WI2017/Phys259-Labatorial02-Electric-Fields-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -6375,13 +6298,13 @@
         <Directory>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
-     <Name>electric fields from point charges applet</Name>
-</Software>
- </Lab>
+      <Name>electric fields from point charges applet</Name>
+    </Software>
+  </Lab>
   <Lab labId="0092">
     <Name>Laser Beams</Name>
     <Disciplines>
@@ -6458,7 +6381,7 @@
         <Name>25 cm focal length 100 mm diameter double convex lens</Name>
         <Amount>1</Amount>
       </Item>
-       <Item id="0397">
+      <Item id="0397">
         <Name>cylindrical He-Ne laser</Name>
         <Amount>1</Amount>
       </Item>
@@ -6466,31 +6389,31 @@
         <Name>cylindrical laser mount</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0399">
-        <Name>100 µm pinhole</Name>
+      <Item id="0399">
+        <Name>100 &#181;m pinhole</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0400">
+      <Item id="0400">
         <Name>3-axis translation stage</Name>
         <Amount>1</Amount>
       </Item>
-           <Item id="0401">
+      <Item id="0401">
         <Name>20 cm front surface flat mirror holder</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0402">
+      <Item id="0402">
         <Name>aluminum rod with wide slit</Name>
         <Amount>2</Amount>
       </Item>
-    <Item id="0311">
+      <Item id="0311">
         <Name>adjustable laboratory stand</Name>
         <Amount>1</Amount>
-      </Item>      
-       <Item id="0020">
+      </Item>
+      <Item id="0020">
         <Name>right angle clamp</Name>
         <Amount>4</Amount>
       </Item>
-          <Item id="0403">
+      <Item id="0403">
         <Name>triple diffraction grating</Name>
         <Amount>1</Amount>
       </Item>
@@ -6498,15 +6421,15 @@
         <Name>acrylic block set</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0169">
+      <Item id="0169">
         <Name>rectangular block worksheet</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0381">
+      <Item id="0381">
         <Name>three sided mirror</Name>
         <Amount>2</Amount>
       </Item>
-           <Item id="0171">
+      <Item id="0171">
         <Name>mirror worksheet</Name>
         <Amount>1</Amount>
       </Item>
@@ -6518,11 +6441,11 @@
         <Name>wooden stand</Name>
         <Amount>1</Amount>
       </Item>
-           <Item id="0225">
+      <Item id="0225">
         <Name>push pins</Name>
         <Amount>1</Amount>
       </Item>
-          <Item id="0008">
+      <Item id="0008">
         <Name>laboratory jack</Name>
         <Amount>1</Amount>
       </Item>
@@ -6530,7 +6453,7 @@
         <Name>plastic ruler</Name>
         <Amount>2</Amount>
       </Item>
-            <Item id="0048">
+      <Item id="0048">
         <Name>light detector</Name>
         <Amount>1</Amount>
       </Item>
@@ -6550,7 +6473,7 @@
         <Name>Fluke multimeter</Name>
         <Amount>1</Amount>
       </Item>
-       </Equipment>
+    </Equipment>
     <Type>Lab</Type>
     <SupportDocs>
       <Doc>
@@ -6558,12 +6481,12 @@
         <Path>/data/repository/0092-Laser-Beams/0092-PHYS375FA2015/Laser-Beams-FA2015.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0005">
     <Name>Newton's Third Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0005-Newtons-Third-Law/0005-PHYS211FA2016/Phys211-221-Labatorial07-Newtons-3rd-Law-FA2016.pdf</Path>
@@ -6686,44 +6609,42 @@
       </Version>
     </Versions>
     <Equipment>
-         <Item id="0024">
+      <Item id="0024">
         <Name>computer</Name>
         <Amount>1</Amount>
       </Item>
-       <Item id="0207">
+      <Item id="0207">
         <Name>Vernier LabPro  data logger</Name>
         <Amount>1</Amount>
       </Item>
-             <Item id="0404">
+      <Item id="0404">
         <Name>rolling chair</Name>
         <Amount>1</Amount>
       </Item>
-             <Item id="0078">
+      <Item id="0078">
         <Name>green spring scale</Name>
         <Amount>1</Amount>
       </Item>
-             <Item id="0079">
+      <Item id="0079">
         <Name>red spring scale</Name>
         <Amount>1</Amount>
       </Item>
-             <Item id="0405">
+      <Item id="0405">
         <Name>Vernier force sensor</Name>
         <Amount>2</Amount>
       </Item>
-             <Item id="0406">
+      <Item id="0406">
         <Name>Vernier force sensor handle</Name>
         <Amount>4</Amount>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0018">
     <Name>Temperature at the Microscopic Level</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline></Disciplines><Topics><Topic>Statistics</Topic><Topic>Work and Energy</Topic><Topic>Gas Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0018-Temperature-at-the-Microscopic-Level/0018-PHYS223WI2017/Phys223-Labatorial08-Temperature-at-Microscopic-Level-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -6782,11 +6703,11 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
-<Name>gas-properties_en.jar</Name>
+      <Name>gas-properties_en.jar</Name>
     </Software>
   </Lab>
   <Lab labId="0053">
@@ -6948,13 +6869,13 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0004">
     <Name>Newton's Second Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0004-Newtons-Second-Law/0004-PHYS211FA2016/Phys211-221-Labatorial06-Newtons-2nd-Law-FA2016.pdf</Path>
@@ -7088,7 +7009,7 @@
         <Name>computer</Name>
         <Amount>1</Amount>
       </Item>
-<Item id="0207">
+      <Item id="0207">
         <Name>Vernier LabPro data logger</Name>
         <Amount>1</Amount>
       </Item>
@@ -7116,7 +7037,7 @@
         <Name>sail</Name>
         <Amount>1</Amount>
       </Item>
-            <Item id="0008">
+      <Item id="0008">
         <Name>laboratory jack</Name>
         <Amount>1</Amount>
       </Item>
@@ -7158,9 +7079,9 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
-<Name>1D-Motion.cmbl</Name>
+      <Name>1D-Motion.cmbl</Name>
     </Software>
   </Lab>
   <Lab labId="0040">
@@ -7173,7 +7094,7 @@
       <Topic>Magnetism</Topic>
       <Topic>Integration</Topic>
       <Topic>Differentiation</Topic>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
     </Topics>
     <Versions>
       <Version>
@@ -7250,8 +7171,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0095">
     <Name>AC Measurements and Sources</Name>
@@ -7340,8 +7261,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0067">
     <Name>Compton Scattering</Name>
@@ -7412,26 +7333,26 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0105">
-        <Name>1.0 μCi Co-57 gamma source</Name>
+        <Name>1.0 &#956;Ci Co-57 gamma source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0104">
-        <Name>1.0 μCi Ba-133 gamma source</Name>
+        <Name>1.0 &#956;Ci Ba-133 gamma source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0103">
-        <Name>1.0 μCi Cs-137 gamma source</Name>
+        <Name>1.0 &#956;Ci Cs-137 gamma source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0408">
         <Name>35 mCi Cs-137 gamma source</Name>
         <Amount>1</Amount>
       </Item>
-          <Item id="0408">
+      <Item id="0408">
         <Name>35 mCi Cs-137 gamma source</Name>
         <Amount>1</Amount>
       </Item>
-         <Item id="0250">
+      <Item id="0250">
         <Name>HP 6516A high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -7439,20 +7360,44 @@
         <Name>assortment of scattering rods</Name>
         <Amount>1</Amount>
       </Item>
- 
-      
-      <Item id="0000">
-        <Name>detector stand with source shelves and lead and aluminum shields</Name>
+      <Item id="0409">
+        <Name>custom 12 V and 24 V power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0410">
+        <Name>sodium iodide scintillation detector</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0411">
+        <Name>cylindrical aluminum shield</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0412">
+        <Name>cylindrical lead shield</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0053">
+        <Name>radiation sample holder</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0010">
         <Name>oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0308">
+        <Name>BNC coaxial cable</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0413">
+        <Name>BNC tee</Name>
+        <Amount>1</Amount>
+      </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software>
+      <Name>Maestro 7.01</Name>
+    </Software>
   </Lab>
   <Lab labId="0081">
     <Name>Inclined Atwood Machine</Name>
@@ -7495,7 +7440,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>air blower</Name>
+        <Name>Pasco air blower</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0096">
+        <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -7544,7 +7493,7 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Vernier Logger Pro</Name>
     </Software>
@@ -7627,7 +7576,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0179">
-        <Name>potential mapping field probe</Name>
+        <Name>potential mapping probe</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0175">
@@ -7651,7 +7600,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
-        <Name>tape</Name>
+        <Name>masking tape</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0044">
@@ -7664,9 +7613,9 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
-      <Name>Electric Fields from Point Charges applet</Name>
+      <Name>electric fields from point charges applet</Name>
     </Software>
   </Lab>
   <Lab labId="0111">
@@ -7687,16 +7636,16 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>frequency counter</Name>
+      <Item id="0320">
+        <Name>SRL frequency counter</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -7704,28 +7653,28 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0139">
-        <Name>20 kΩ resistor</Name>
+        <Name>20 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0138">
-        <Name>10 MΩ resistor</Name>
+        <Name>10 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0118">
-        <Name>0.001 µF capacitor</Name>
+        <Name>0.001 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0115">
-        <Name>1 µF capacitor</Name>
+        <Name>1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Name>0.1 &#181;F capacitor</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
@@ -7733,8 +7682,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0011">
     <Name>Electric Charges and Forces</Name>
@@ -7804,26 +7753,14 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>Rods made of acrylic and PVC</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>string and support to hang these rods from</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>rayon cloth</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0094">
-        <Name>leaf electroscope</Name>
+      <Item id="0414">
+        <Name>eletrostatics kit</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0106">
     <Name>Basic Digital Instruments</Name>
@@ -7844,18 +7781,18 @@
     </Versions>
     <Equipment>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
         <Name>breadboard</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>power supply or battery</Name>
+      <Item id="0108">
+        <Name>9 V battery</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0326">
         <Name>1N914 diode</Name>
         <Amount>1</Amount>
       </Item>
@@ -7863,55 +7800,56 @@
         <Name>unknown potentiometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM555</Name>
+      <Item id="0415">
+        <Name>LM555 timer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM3900/LM3301</Name>
+      <Item id="0416">
+        <Name>LM3900 quad amplifer</Name>
+        <Alt id="0220">LM3301 quad amplifie </Alt>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>CM3130</Name>
+      <Item id="0417">
+        <Name>CM3130 OpAmp</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0127">
-        <Name>910 kΩ resistor</Name>
+        <Name>910 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0128">
-        <Name>620 kΩ resistor</Name>
+        <Name>620 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0126">
-        <Name>3.3 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>3.3 k&#8486; resistor</Name>
+        <Amount>7</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>100 k&#8486; resistor</Name>
+        <Amount>7</Amount>
       </Item>
       <Item id="0119">
-        <Name>10 µF capacitor</Name>
+        <Name>10 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
-        <Name>0.01 µF capacitor</Name>
+        <Name>0.01 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0115">
-        <Name>1 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Name>1 &#181;F capacitor</Name>
+        <Amount>2</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0023">
     <Name>Introduction to 3D Computational Modelling</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0023-Introduction-to-3D-Computational-Modelling/0023-PHYS227FA2016/227_2016_Lab01_Introduction_to_computation.pdf</Path>
@@ -7943,10 +7881,17 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Type />
+    <SupportDocs />
+    <Software>
+      <Name>VPython</Name>
+    </Software>
   </Lab>
   <Lab labId="0002">
     <Name>Measuring Motion</Name>
@@ -8082,7 +8027,7 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>1D Motion.cmbl</Name>
       <Name>Vernier Logger Pro</Name>
@@ -8095,7 +8040,7 @@
       <Discipline>Newtonian Mechanics</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
       <Topic>Work and Energy</Topic>
       <Topic>Conservation Laws</Topic>
     </Topics>
@@ -8131,9 +8076,9 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>3 flat-bottomed coffee filters</Name>
-        <Amount>1</Amount>
+      <Item id="0418">
+        <Name>flat-bottomed coffee filter</Name>
+        <Amount>3</Amount>
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
@@ -8147,19 +8092,19 @@
         <Name>meter stick</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0419">
         <Name>bathroom scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0015">
     <Name>Introduction to Electric Circuits</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223WI2017/Phys223-Labatorial04-Electric-Circuits-WI2017.pdf</Path>
@@ -8219,10 +8164,31 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0420">
+        <Name>SPST switch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0380">
+        <Name>28 V minibulb</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0056">
     <Name>Fraunhofer Diffraction</Name>
@@ -8304,32 +8270,16 @@
         <Name>1 m optical bench</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0084">
-        <Name>slide holder</Name>
+      <Item id="0022">
+        <Name>small optical bench mount</Name>
+        <Amount>4</Amount>
+      </Item>
+      <Item id="0063">
+        <Name>lens holder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0085">
-        <Name>slide with 4 single slits</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0086">
-        <Name>slide with 3 diffraction gratings</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0087">
-        <Name>slide with 4 double slits</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0088">
-        <Name>slide with multiple slits</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0089">
-        <Name>set of 7 nylon mesh slides with different grid spacings</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0090">
-        <Name>slide with square and hexagonal gratings and 2 pinholes</Name>
+      <Item id="0421">
+        <Name>Fraunhofer kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0037">
@@ -8352,12 +8302,12 @@
         <Path>/data/repository/0056-Fraunhofer-Diffraction/0056-PHYS375FA2016/Fraunhofer-Diffraction-FA2016.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0070">
     <Name>Evidence for Quantized Atomic Energy Levels</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2017/Evidence-for-Quantized-Atomic-Energy-Levels-WI2017.pdf</Path>
@@ -8402,15 +8352,52 @@
         <Directory>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0422">
+        <Name>critical potential tube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0423">
+        <Name>critical potential tube shield</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0424">
+        <Name>critical potential tube controller</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0425">
+        <Name>universal tube stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>2</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0087">
     <Name>Measurements and Uncertainties for Engineers</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/0087-PHYS365FA2016/Measurements-and-Uncertainties-FA2016.pdf</Path>
@@ -8465,10 +8452,27 @@
 </Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0087">
+        <Name>wodden cube</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0353">
+        <Name>ball bearing</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0016">
     <Name>Magnetic Field in a Slinky</Name>
@@ -8590,16 +8594,14 @@
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>Vernier Logger Pro</Name>
     </Software>
   </Lab>
   <Lab labId="0103">
     <Name>AC Circuits, Waveforms, and Phase</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2017/AC-Circuits-Waveforms-and-Phase-WI2017.pdf</Path>
         <Semester>Winter</Semester>
@@ -8608,16 +8610,47 @@
         <Directory>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0106">
+        <Name>SRL function generator</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0107">
+        <Name>breadboard</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0356">
+        <Name>SRL digital multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0123">
+        <Name>10 k&#937; resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0132">
+        <Name>30 k&#937; resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0124">
+        <Name>100 k&#937; resistor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0124">
+        <Name>0.01 &#956;F capacitor</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0032">
     <Name>Circuits</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0032-Circuits/0032-PHYS259WI2014/Phys259-Labatorial09-Circuits-WI2014.pdf</Path>
         <Semester>Winter</Semester>
@@ -8661,10 +8694,37 @@
         <Directory>/data/repository/0032-Circuits/0032-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0380">
+        <Name>28 V minibulb</Name>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0420">
+        <Name>SPST switch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software>
+      <Name>circuit-construction-kit-ac_en.jar</Name>
+    </Software>
   </Lab>
   <Lab labId="0080">
     <Name>Hanging Chain</Name>
@@ -8673,7 +8733,7 @@
       <Discipline>Math</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
       <Topic>Statics</Topic>
       <Topic>Differentiation</Topic>
       <Topic>PDE</Topic>
@@ -8703,17 +8763,21 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0000">
-        <Name>assortment of chains</Name>
+      <Item id="0085">
+        <Name>hainging chain</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
-        <Amount>1</Amount>
+        <Amount>4</Amount>
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0086">
+        <Name>hainging chain pulley</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0012">
         <Name>digital balance</Name>
@@ -8721,21 +8785,29 @@
       </Item>
       <Item id="0078">
         <Name>green spring scale</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0077">
-        <Name>hook collar</Name>
-        <Amount>1</Amount>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>6</Amount>
+      </Item>
+      <Item id="0046">
+        <Name>fork clamp</Name>
+        <Amount>6</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>6</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0047">
     <Name>Electric Resistivity of Play-Doh</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2017/Phys259-Labatorial07-Play-Doh-Resistors-WI2017.pdf</Path>
@@ -8745,10 +8817,49 @@
         <Directory>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0087">
+        <Name>alligator clamp</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0088">
+        <Name>play-doh electrode</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0089">
+        <Name>test lead</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0090">
+        <Name>play-doh</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software>
+      <Name>Vernier Logger Pro</Name>
+    </Software>
   </Lab>
   <Lab labId="0098">
     <Name>RLC Resonant Circuits</Name>
@@ -8827,7 +8938,7 @@
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0010">
         <Name>oscilloscope</Name>
@@ -8835,13 +8946,13 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0034">
     <Name>Electric Field Mapping</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2017/Electric-Potential-Mapping-WI2017.pdf</Path>
@@ -8886,15 +8997,56 @@
         <Directory>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0001">
+        <Name>Fluke multimeter</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0002">
+        <Name>Anatek power supply</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0426">
+        <Name>concentric ring conductor board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0177">
+        <Name>parallel plate conductor board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0176">
+        <Name>potential mapping graph paper</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0034">
+        <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0052">
+        <Name>masking tape</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0175">
+        <Name>potential mapping apparatus</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0179">
+        <Name>potential mapping probe</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0039">
     <Name>Magnetic Fields and Magnetic Force</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2017/Phys259-Labatorial08-Magnetic-Fields-WI2017.pdf</Path>
@@ -8960,10 +9112,10 @@
         <Directory>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS255WI2012/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0041">
     <Name>Introduction to Measurements and Uncertainties</Name>
@@ -9078,24 +9230,12 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Rectangles with different lengths</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0180">
-        <Name>sextant</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Circles with different diameters</Name>
+      <Item id="0353">
+        <Name>uncertainties kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0040">
         <Name>measuring tape</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>Ball bearing</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0071">
@@ -9104,8 +9244,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0104">
     <Name>Active Filters and Anti-Aliasing Filters</Name>
@@ -9125,12 +9265,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -9139,44 +9279,47 @@
       </Item>
       <Item id="0108">
         <Name>9 V battery</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
-        <Amount>1</Amount>
+      <Item id="0327">
+        <Name>LF411 OpAmp</Name>
+        <Alt id="0220">
+          <Name>LF351 OpAmp</Name>
+        </Alt>
+        <Amount>3</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0385">
         <Name>CD4016 CMOS switch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0415">
         <Name>LM555 timer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
-        <Name>0.01 µF capacitor</Name>
-        <Amount>1</Amount>
+        <Name>0.01 &#181;F capacitor</Name>
+        <Amount>8</Amount>
       </Item>
       <Item id="0129">
-        <Name>47 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>47 k&#8486; resistor</Name>
+        <Amount>4</Amount>
       </Item>
       <Item id="0130">
-        <Name>27 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>27 k&#8486; resistor</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0125">
-        <Name>1 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>1 k&#8486; resistor</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>10 k&#8486; resistor</Name>
+        <Amount>5</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0072">
     <Name>Nuclear Decay</Name>
@@ -9238,8 +9381,8 @@
         <Name>radium isolation nuclear chemistry station</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>Ortec Ametek dual input alpha spectrometer</Name>
+      <Item id="0427">
+        <Name>Ortec alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0157">
@@ -9251,7 +9394,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
-        <Name>0.1 mCi Po-210 alpha source</Name>
+        <Name>0.1 &#956;Ci Po-210 alpha source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0143">
@@ -9264,15 +9407,15 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
-      <Name>Maestro pulse height analyzer software</Name>
+      <Name>Maestro 7.01</Name>
     </Software>
   </Lab>
   <Lab labId="0007">
     <Name>Statics (Newton's First Law in 2 Dimensions)</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0007-Statics-Newtons-First-Law-in-2-Dimensions/0007-PHYS211FA2016/Phys211-221-Labatorial05-Statics-FA2016.pdf</Path>
@@ -9394,16 +9537,43 @@
         <Directory>/data/repository/0007-Statics-Newtons-First-Law-in-2-Dimensions/0007-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0297">
+        <Name>vector board</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0054">
+        <Name>c-clamp</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0092">
+        <Name>string</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0226">
+        <Name>protractor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0036">
     <Name>Electromagnetic Induction</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Magnetism</Topic><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0036-Electromagnetic-Induction/0036-PHYS259WI2012/Phys259-Labatorial13-Induction-WI2012.pdf</Path>
         <Semester>Winter</Semester>
@@ -9433,15 +9603,68 @@
         <Directory>/data/repository/0036-Electromagnetic-Induction/0036-PHYS259WI2011/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+      <Item id="0032">
+        <Name>slinky</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0428">
+        <Name>pickup coil</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0054">
+        <Name>c-clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0003">
+        <Name>set of connecting leads</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0087">
+        <Name>alligator clamp</Name>
+        <Amount>2</Amount>
+      </Item>
+      <Item id="0231">
+        <Name>3 resistor set</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0351">
+        <Name>10 k&#937; Eico decade resistor box</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0015">
+        <Name>Vernier current probe</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0207">
+        <Name>Vernier LabPro data logger</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0010">
+        <Name>oscilloscope</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0042">
+        <Name>Pasco digital function amplifier</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0008">
     <Name>Two Dimensional Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0008-Two-Dimensional-Motion/0008-PHYS211FA2016/Phys211-221-Labatorial04-2D-Motion-FA2016.pdf</Path>
@@ -9549,10 +9772,23 @@
         <Directory>/data/repository/0008-Two-Dimensional-Motion/0008-PHYS211SP2017/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Equipment>
+    <Item id="0024">
+        <Name>computer</Name>
+        <Amount>1</Amount>
+      </Item>
+        <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+            </Equipment>
+    <Type />
+    <SupportDocs />
+    <Software>
+    <Name>Bouncing-Ball.cmbl</Name>
+    <Name>Simultaneous-Fall.cmbl</Name>
+    <Name>Uniform-Circular-Motion.cmbl</Name>
+</Software>
   </Lab>
   <Lab labId="0024">
     <Name>Jumping Up</Name>
@@ -9561,7 +9797,7 @@
       <Discipline>Newtonian Mechanics</Discipline>
     </Disciplines>
     <Topics>
-      <Topic>Newton’s Laws</Topic>
+      <Topic>Newton&#8217;s Laws</Topic>
       <Topic>Work and Energy</Topic>
       <Topic>Momentum</Topic>
       <Topic>Conservation Laws</Topic>
@@ -9596,10 +9832,15 @@
         <Directory>/data/repository/0024-Jumping-Up/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment>
+            <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
     <Type>Labatorial</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0066">
     <Name>Colour Temperature</Name>
@@ -9678,7 +9919,7 @@
         <Name>variac</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0429">
         <Name>AC line separator</Name>
         <Amount>1</Amount>
       </Item>
@@ -9686,12 +9927,12 @@
         <Name>quartz halogen lamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0430">
         <Name>GE 150W T3 quartz halogen bulb</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>AC current probe</Name>
+      <Item id="0431">
+        <Name>Fluke AC current probe</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0076">
@@ -9700,8 +9941,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0105">
     <Name>Bandwidth and Stabillity</Name>
@@ -9721,12 +9962,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRSL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -9738,19 +9979,19 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0145">
-        <Name>9.1 kΩ resistor</Name>
+        <Name>9.1 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 M&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0125">
-        <Name>1 kΩ resistor</Name>
+        <Name>1 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 k&#8486; resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0117">
@@ -9758,21 +9999,22 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
-        <Name>0.01 µF capacitor</Name>
+        <Name>0.01 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 µF capacitor</Name>
+        <Name>0.1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LF411 or LF351 OpAmp</Name>
+      <Item id="0327">
+        <Name>LF411 OpAmp</Name>
+        <alt id="0180">LF351 OpAmp</alt>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0078">
     <Name>Rutherford Scattering</Name>
@@ -9844,10 +10086,14 @@
         <Name>Nucleus alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0432">
+        <Name>486 computer</Name>
+        <Amount>1</Amount>
+      </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0065">
     <Name>Black Body Radiation</Name>
@@ -9911,26 +10157,26 @@
       </Item>
       <Item id="0031">
         <Name>large optical bench mount</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0027">
-        <Name>Moll’s thermopile</Name>
+        <Name>Moll&#8217;s thermopile</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0433">
         <Name>sample thermopile housing</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>oven</Name>
+      <Item id="0434">
+        <Name>black body oven</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0435">
         <Name>oven insert</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>cooling jacket</Name>
+      <Item id="0436">
+        <Name>water cooling iris</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
@@ -9967,8 +10213,8 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0109">
     <Name>Introduction to Digital Logic</Name>
@@ -9988,12 +10234,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0010">
-        <Name>oscilloscope</Name>
+      <Item id="0313">
+        <Name>SRL oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0106">
-        <Name>Pat’s function generator</Name>
+        <Name>SRL function generator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0108">
@@ -10008,54 +10254,54 @@
         <Name>push-button switch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LED</Name>
+      <Item id="0437">
+        <Name>red LED</Name>
+        <Amount>8</Amount>
+      </Item>
+      <Item id="0415">
+        <Name>LM555 timer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM555</Name>
+      <Item id="0438">
+        <Name>LM311 digital comparator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>LM311</Name>
+      <Item id="0439">
+        <Name>CD4024 CMOS binary counter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>CD4024</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0000">
-        <Name>CD4023</Name>
+      <Item id="0440">
+        <Name>CD4023 logic gates</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0119">
-        <Name>10 µF capacitor</Name>
+        <Name>10 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 µF capacitor</Name>
+        <Name>0.1 &#181;F capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0146">
-        <Name>6.8 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>6.8 k&#8486; resistor</Name>
+        <Amount>8</Amount>
       </Item>
       <Item id="0132">
-        <Name>30 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>30 k&#8486; resistor</Name>
+        <Amount>8</Amount>
       </Item>
       <Item id="0131">
-        <Name>15 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>15 k&#8486; resistor</Name>
+        <Amount>6</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
-        <Amount>1</Amount>
+        <Name>100 k&#8486; resistor</Name>
+        <Amount>4</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0068">
     <Name>Electron Diffraction</Name>
@@ -10119,14 +10365,15 @@
     <Equipment>
       <Item id="0001">
         <Name>Fluke multimeter</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0060">
-        <Name>Cenco high voltage DC power supply</Name>
+        <Name>Cenco high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0263">
-        <Name>100 Ω decade resistance box</Name>
+        <Name>100 &#8486; GR decade resistance box</Name>
+        <alt id="0351">10 k&#937; Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0155">
@@ -10169,22 +10416,18 @@
         <Name>fork clamp</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>spinning wheel optical analogue</Name>
+      <Item id="0441">
+        <Name>electron diffraction optical analogue wheel</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>banana connecting sleeve</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0003">
+       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0073">
     <Name>Photoelectric Effect</Name>
@@ -10255,7 +10498,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0033">
-        <Name>tungsten-halogen lamp</Name>
+        <Name>halogen lamp heat sink</Name>
+        <Amount>1</Amount>
+      </Item>
+       <Item id="0173">
+        <Name>quartz halogen lamp</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0021">
@@ -10266,20 +10513,20 @@
         <Name>Fluke multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
+      <Item id="0442">
         <Name>precision voltage divider</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>10V DC power supply</Name>
+      <Item id="0443">
+        <Name>Kepco power supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0038">
         <Name>flashlight</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0000">
-        <Name>nanoAmpere current source</Name>
+      <Item id="0444">
+        <Name>nA current source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0022">
@@ -10288,19 +10535,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0121">
     <Name>Archimede's Principle</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Fluid Mechanics</Discipline></Disciplines><Topics><Topic>Hydrostatics</Topic><Topic>Statics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0121-Archimedes-Principle/0121-LEGACY/Archimedes-Principle.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0121-Archimedes-Principle/0121-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10355,19 +10600,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0122">
     <Name>Behaviour of a Real Gas</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline><Discipline>Statistical Mechanics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Statistics</Topic><Topic>Work and Energy</Topic><Topic>Measurements</Topic><Topic>Dynamics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0122-Behaviour-of-a-Real-Gas/0122-LEGACY/Behavior-of-a-Real-Gas.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0122-Behaviour-of-a-Real-Gas/0122-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10394,19 +10637,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0123">
     <Name>Bernoulli's Principle</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Fluid Mechanics</Discipline></Disciplines><Topics><Topic>Work and Energy</Topic><Topic>Friction and Drag</Topic><Topic>ODE</Topic><Topic>Conservation Laws</Topic><Topic>Hydrostatics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0123-Bernoullis-Principle/0123-LEGACY/Bernoullis-Principle.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0123-Bernoullis-Principle/0123-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10449,19 +10690,19 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0124">
     <Name>Bifilar Suspension</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0124-Bifilar-Suspension/0124-LEGAC/YBifilar-Suspension.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0124-Bifilar-Suspension/0124-LEGAC/</Directory>
       </Version>
     </Versions>
@@ -10504,19 +10745,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0125">
     <Name>Boyle's Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Fluid Mechanics</Discipline></Disciplines><Topics><Topic>Gas Laws</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0125-Boyles-Law/0125-LEGACY/Boyles-Law.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0125-Boyles-Law/0125-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10535,19 +10774,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0126">
     <Name>Brewster's Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Optics</Discipline><Discipline>Math</Discipline></Disciplines><Topics><Topic>Polarization</Topic><Topic>Wave Mechanics</Topic><Topic>Refraction</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0126-Brewsters-Law/0126-LEGACY/Brewsters-Law.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0126-Brewsters-Law/0126-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10594,19 +10831,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0127">
     <Name>Bubble Chamber Photographs</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Relativity</Discipline><Discipline>Particle Physics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Collisions</Topic><Topic>Work and Energy</Topic><Topic>Conservation Laws</Topic><Topic>Integration</Topic><Topic>Differentiation</Topic><Topic>Measurements</Topic><Topic>Momentum</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0127-Bubble-Chamber-Photographs/0127-LEGACY/Bubble-Chamber-Photographs.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0127-Bubble-Chamber-Photographs/0127-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10641,19 +10876,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0128">
     <Name>Cantilever Beams</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Statics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0128-Cantilever-Beams/0128-LEGACY/Cantilever-Beams.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0128-Cantilever-Beams/0128-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10696,19 +10929,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0129">
     <Name>Centripetal Force</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Kinematics</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Rotational Motion</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0129-Centripetal-Force/0129-LEGACY/Centripetal-Force.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0129-Centripetal-Force/0129-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10743,19 +10974,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0130">
     <Name>Centripetal Acceleration</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Optics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Kinematics</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Rotational Motion</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0130-Centripetal-Acceleration/0130-LEGACY/Centripetal-Acceleration.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0130-Centripetal-Acceleration/0130-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10798,19 +11027,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0131">
     <Name>Coefficient of Restitution</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Collisions</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Momentum</Topic><Topic>Conservation Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0131-Coefficient-of-Restitution/0131-LEGACY/Coefficient-of-Restitution.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0131-Coefficient-of-Restitution/0131-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10857,19 +11084,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0132">
     <Name>Collisions and Conserved Quantities</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Collisions</Topic><Topic>Conservation Laws</Topic><Topic>Momentum</Topic><Topic>Kinematics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0132-Collisions-and-Conserved-Quatities/0132-LEGACY/Collisions-and-Concerved-Quantities.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0132-Collisions-and-Conserved-Quatities/0132-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10916,19 +11141,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0133">
     <Name>Compound Pendulum</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Work and Energy</Topic><Topic>Dynamics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0133-Compound-Pendulum/0133-LEGACY/Compound-Pendulum.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0133-Compound-Pendulum/0133-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -10967,19 +11190,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0134">
     <Name>Conservation of Energy</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Work and Energy</Topic><Topic>Conservation Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0134-Conservation-of-Energy/0134-LEGACY/Conservation-of-Energy.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0134-Conservation-of-Energy/0134-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11012,7 +11233,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -11022,19 +11243,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0135">
     <Name>Constant Volume Gas Thermometer</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Gas Laws</Topic><Topic>Hydrostatics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0135-Constant-Volume-Gas-Thermometer/0135-LEGACY/Constant-Volume-Gas-Thermometer.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0135-Constant-Volume-Gas-Thermometer/0135-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11077,19 +11296,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0136">
     <Name>Radiation Counting Statistics</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Nuclear Physics</Discipline><Discipline>Particle Physics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Statistics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0136-Radiation-Counting-Statistics/0136-LEGACY/Radiation-Counting-Statistics.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0136-Radiation-Counting-Statistics/0136-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11119,24 +11336,22 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0277">
-        <Name>0.1 µCi Sr-90</Name>
+        <Name>0.1 &#181;Ci Sr-90</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0137">
     <Name>Coupled Harmonic Oscillator</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>ODE</Topic><Topic>Linear Algebra</Topic><Topic>Dynamics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0137-Coupled-Harmonic-Oscillator/0137-LEGACY/Coupled-Harmonic-Oscillator.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0137-Coupled-Harmonic-Oscillator/0137-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11191,19 +11406,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0138">
     <Name>Current-Balance</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Optics</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Integration</Topic><Topic>Measurements</Topic><Topic>Magnetism</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0138-Current-Balance/0138-LEGACY/Current-Balance.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0138-Current-Balance/0138-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11258,19 +11471,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0139">
     <Name>Electrical Equivalent of Heat</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Thermodynamics</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0139-Electrical-Equivalent-of-Heat/0139-LEGACY/Electrical-Equivalent-of-Heat.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0139-Electrical-Equivalent-of-Heat/0139-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11313,13 +11524,13 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0140">
     <Name>Advanced Measurements and Uncertainties</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-PHYS323FA2011/Advanced-Measurements-and-Uncertainties.pdf</Path>
@@ -11376,19 +11587,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0141">
     <Name>Force and Acceleration</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Friction and Drag</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0141-Force-and-Acceleration/0141-LEGACY/Force-and-Acceleration.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0141-Force-and-Acceleration/0141-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11447,19 +11656,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0142">
     <Name>Geiger Counters</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Nuclear Physics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Statistics</Topic><Topic>Integration</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0142-Geiger-Counters/0142-LEGACY/Geiger-Counters.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0142-Geiger-Counters/0142-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11493,15 +11700,15 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0277">
-        <Name>0.1 µCi Sr-90</Name>
+        <Name>0.1 &#181;Ci Sr-90</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0276">
-        <Name>10 µCi Tl-204</Name>
+        <Name>10 &#181;Ci Tl-204</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0275">
-        <Name>1 µCi Am-241</Name>
+        <Name>1 &#181;Ci Am-241</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
@@ -11509,7 +11716,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0271">
-        <Name>1 µCi Co-60</Name>
+        <Name>1 &#181;Ci Co-60</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
@@ -11526,19 +11733,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0143">
     <Name>Free Fall</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Kinematics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0143-Free-Fall/0143-LEGACY/Free-Fall.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0143-Free-Fall/0143-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11561,19 +11766,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0144">
     <Name>Fresnel Biprism</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Optics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Interference</Topic><Topic>Wave Mechanics</Topic><Topic>Refraction</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0144-Fresnel-Biprism/0144-LEGACY/Fresnel-Biprism.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0144-Fresnel-Biprism/0144-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11632,19 +11835,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0145">
     <Name>Fresnel's Equations and Brewster's Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Optics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Interference</Topic><Topic>Wave Mechanics</Topic><Topic>Refraction</Topic><Topic>Polarization</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0145-Fresnels-Equations-and-Brewsters-Law/0145-LEGACY/Fresnels-Equations-and-Brewsters-Law.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0145-Fresnels-Equations-and-Brewsters-Law/0145-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11691,19 +11892,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0146">
     <Name>Fresnel Diffraction</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Optics</Discipline></Disciplines><Topics><Topic>Interference</Topic><Topic>Wave Mechanics</Topic><Topic>Refraction</Topic><Topic>Polarization</Topic><Topic>Integration</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0146-Fresnel-Diffraction/0146-LEGACY/Fresnel-Diffraction.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0146-Fresnel-Diffraction/0146-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11742,19 +11941,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0147">
     <Name>Heat of Vaporization of Liquid Nitrogen</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline></Disciplines><Topics><Topic>Gas Laws</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0147-Heat-of-Vaporization-of-Liquid-Nitrogen/0147-LEGACY/Heat-of-Vaporization-of-Liquid-Nitrogen.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0147-Heat-of-Vaporization-of-Liquid-Nitrogen/0147-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11797,19 +11994,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0148">
     <Name>Hooke's Law and the Behavior of Springs</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Statics</Topic><Topic>Dynamics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0148-Hookes-Law-and-the-Behaviour-of-Springs/0148-LEGACY/Hookes-Law-and-the-Behavior-of-Springs.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0148-Hookes-Law-and-the-Behaviour-of-Springs/0148-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11864,19 +12059,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0149">
     <Name>Impact Craters</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Momentum</Topic><Topic>Conservation Laws</Topic><Topic>Work and Energy</Topic><Topic>Kinematics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0149-Impact-Craters/0149-LEGACY/Impact-Craters.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0149-Impact-Craters/0149-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11915,19 +12108,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0150">
     <Name>Kater's Pendulum</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>ODE</Topic><Topic>Dynamics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0150-Katers-Pendulum/0150-LEGACY/Katers-Pendulum.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0150-Katers-Pendulum/0150-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -11974,19 +12165,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0151">
     <Name>Kirchhoff's Laws</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Conservation Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0151-Kirchhoffs-Laws/0151-LEGACY/Kirchhoffs-Laws.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0151-Kirchhoffs-Laws/0151-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12017,19 +12206,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0152">
     <Name>Law of Dulong-Petit</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline><Discipline>Statistical Mechanics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Work and Energy</Topic><Topic>Conservation Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0152-Law-of-Dulong-and-Petit/0152-LEGACY/Law-of-Dulong-and-Petit.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0152-Law-of-Dulong-and-Petit/0152-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12076,37 +12263,33 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0153">
     <Name>Linear Regression</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Laboratory Skills</Discipline><Discipline>Computer Skills</Discipline><Discipline>Math</Discipline></Disciplines><Topics><Topic>Statistics</Topic><Topic>Differentiation</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0153-Linear-Regression/0153-LEGACY/Linear-Regression.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0153-Linear-Regression/0153-LEGACY/</Directory>
       </Version>
     </Versions>
-    <Equipment/>
+    <Equipment />
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0154">
     <Name>Longitudinal Standing Waves on a Spring</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline><Discipline>Math</Discipline></Disciplines><Topics><Topic>Integration</Topic><Topic>Differentiation</Topic><Topic>ODE</Topic><Topic>Dynamics</Topic><Topic>PDE</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0154-Longitudinal-Standing-Wave-on-a-Spring/0154-LEGACY/Longitudinal-Waves.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0154-Longitudinal-Standing-Wave-on-a-Spring/0154-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12177,14 +12360,12 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0155">
     <Name>Minimum Deviation and Dispersion</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Optics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Measurements</Topic><Topic>Refraction</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.pdf </Path>
         <Semester>Fall</Semester>
@@ -12259,18 +12440,16 @@
         <Path>/data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.tex</Path>
       </Doc>
     </SupportDocs>
-    <Software/>
+    <Software />
   </Lab>
   <Lab labId="0156">
     <Name>Models of PN Junctions</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Quantum Mechanics</Discipline></Disciplines><Topics><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0156-Models-of-PN-Junctions/0156-LEGACY/Models-of-PN-Junctions.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0156-Models-of-PN-Junctions/0156-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12317,19 +12496,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0157">
     <Name>Moment of Inertia</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Rotational Motion</Topic><Topic>Dynamics</Topic><Topic>Conservation Laws</Topic><Topic>Work and Energy</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0157-Moment-of-Inertia/0157-LEGACY/Moment-of-Inertia.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0157-Moment-of-Inertia/0157-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12360,19 +12537,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0158">
     <Name>Newton's Laws</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0158-Newtons-Laws/0158-LEGACY/Newtons-Laws.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0158-Newtons-Laws/0158-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12405,7 +12580,7 @@
         <Name>plastic ruler</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
@@ -12419,19 +12594,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0159">
     <Name>Newton's Second Laws</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0159-Newtons-Second-Law/0159-LEGACY/Newtons-Second-Law.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0159-Newtons-Second-Law/0159-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12492,25 +12665,23 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0112">
+      <Item id="0000">
         <Name>riser block</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0160">
     <Name>Newton's Law of Cooling</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>ODE</Topic><Topic>Differentiation</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0160-Newtons-Law-of-Cooling/0160-LEGACY/Newtons-Law-of-Cooling.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0160-Newtons-Law-of-Cooling/0160-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12553,19 +12724,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0161">
     <Name>Nonlinear Resistance Measurement</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0161-Nonlinear-Resistance-Measurement/0161-LEGACY/Nonlinear-Resistance-Measurement.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0161-Nonlinear-Resistance-Measurement/0161-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12591,11 +12760,12 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0263">
-        <Name>100 Ω decade resistance box</Name>
+        <Name>100 &#8486; GR decade resistance box</Name>
+            <alt id="0351">10 k&#937; Eico decade resistor box</alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0264">
-        <Name>10 kΩ decade resistance box</Name>
+        <Name>10 k&#8486; decade resistance box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
@@ -12604,19 +12774,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0162">
     <Name>Thermoelectricity</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline><Discipline>Laboratory Skills</Discipline><Discipline>Quantum Mechanics</Discipline></Disciplines><Topics><Topic>Differentiation</Topic><Topic>Circuits</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0162-Thermoelectricity/0162-LEGACY/Thermoelectricity.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0162-Thermoelectricity/0162-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12671,19 +12839,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0163">
     <Name>Physical Inductor</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Differentiation</Topic><Topic>Integration</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0163-Physical-Inductor/0163-LEGACY/Physical-Inductor.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0163-Physical-Inductor/0163-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12713,7 +12879,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0000">
-        <Name>5 kiloΩ - 10 kiloΩ pair</Name>
+        <Name>5 kilo&#8486; - 10 kilo&#8486; pair</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0210">
@@ -12730,19 +12896,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0164">
     <Name>Planar Pendulum</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>ODE</Topic><Topic>Newton&#8217;s Laws</Topic><Topic>Dynamics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0164-Planar-Pendulum/0164-LEGACY/Planar-Pendulum.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0164-Planar-Pendulum/0164-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12777,19 +12941,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0165">
     <Name>Poiseuille's Law</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Fluid Mechanics</Discipline></Disciplines><Topics><Topic>Hydrostatics</Topic><Topic>Friction and Drag</Topic><Topic>Dynamics</Topic><Topic>Integration</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0165-Poiseuilles-Law/0165-LEGACY/Poiseuilles-Law.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0165-Poiseuilles-Law/0165-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12848,19 +13010,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0166">
     <Name>Principle of Equipartition</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline><Discipline>Statistical Mechanics</Discipline></Disciplines><Topics><Topic>Statistics</Topic><Topic>Work and Energy</Topic><Topic>ODE</Topic><Topic>Differentiation</Topic><Topic>PDE</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0166-Principle-of-Equipartition/0166-LEGACY/Principle-of-Equipartition.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0166-Principle-of-Equipartition/0166-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12891,19 +13051,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0167">
     <Name>Projectile Motion</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Kinematics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0167-Projectile-Motion/0167-LEGACY/Projectile-Motion.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0167-Projectile-Motion/0167-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -12958,19 +13116,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0168">
     <Name>Pulleys and Forces</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Dynamics</Topic><Topic>Work and Energy</Topic><Topic>Conservation Laws</Topic><Topic>Friction and Drag</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0168-Pulleys-and-Forces/0168-LEGACY/Pulleys-and-Forces.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0168-Pulleys-and-Forces/0168-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13017,19 +13173,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0169">
     <Name>Quantum Defects in Helium</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Quantum Mechanics</Discipline><Discipline>Nuclear Physics</Discipline><Discipline>Optics</Discipline></Disciplines><Topics><Topic>Refraction</Topic><Topic>Interference</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0169-Quantum-Defects-in-Helium/0169-LEGACY/Quantum-Defects-in-Helium.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0169-Quantum-Defects-in-Helium/0169-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13068,19 +13222,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0170">
     <Name>Ratio of Specific Heats for Air</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline></Disciplines><Topics><Topic>Differentiation</Topic><Topic>Work and Energy</Topic><Topic>Gas Laws</Topic><Topic>Hydrostatics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0170-Ratio-of-Specific-Heats-for-Air/0170-LEGACY/Ratio-of-Specific-Heats-for-Air.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0170-Ratio-of-Specific-Heats-for-Air/0170-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13131,19 +13283,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0171">
     <Name>Resistance Measurements</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0171-Resistance-Measurements/0171-LEGACY/Resistance-Measurements.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0171-Resistance-Measurements/0171-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13178,19 +13328,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0172">
     <Name>Scintillation Counters</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Quantum Mechanics</Discipline><Discipline>Particle Physics</Discipline><Discipline>Laboratory Skills</Discipline><Discipline>Computer Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Differentiation</Topic><Topic>Work and Energy</Topic><Topic>Conservation Laws</Topic><Topic>ODE</Topic><Topic>Refraction</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0172-Scintillation-Counters/0172-LEGACY/Scintillation-Counters.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0172-Scintillation-Counters/0172-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13204,7 +13352,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0049">
-        <Name>50 Ω BNC feedthrough termination</Name>
+        <Name>50 &#8486; BNC feedthrough termination</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0253">
@@ -13236,7 +13384,7 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0275">
-        <Name>1 µCi Am-241</Name>
+        <Name>1 &#181;Ci Am-241</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0000">
@@ -13253,19 +13401,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0173">
     <Name>Speed of Sound</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Wave Mechanics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0173-Speed-of-Sound/0173-LEGACY/Speed-of-Sound.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0173-Speed-of-Sound/0173-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13288,19 +13434,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0174">
     <Name>Static Equilibrium</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Statics</Topic><Topic>Newton&#8217;s Laws</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0174-Static-Equilibrium/0174-LEGACY/Static-Equilibrium.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0174-Static-Equilibrium/0174-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13335,19 +13479,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0175">
     <Name>Stirling Engine and Refrigerator</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline></Disciplines><Topics><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0175-Stirling-Engine/0175-LEGACY/Stirling-Engine.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0175-Stirling-Engine/0175-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13409,7 +13551,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0265">
-        <Name>1 kΩ decade resistance box</Name>
+        <Name>1 k&#8486; decade resistance box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0234">
@@ -13426,19 +13568,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0176">
     <Name>Tangent Galvanometer</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Magnetism</Topic><Topic>Circuits</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0176-Tangent-Galvanometer/0176-LEGACY/Tangent-Galvanometer.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0176-Tangent-Galvanometer/0176-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13469,19 +13609,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0177">
     <Name>Thermometers Thermistors and Thermocouples</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Thermodynamics</Discipline><Discipline>Laboratory Skills</Discipline></Disciplines><Topics><Topic>Circuits</Topic><Topic>Measurements</Topic><Topic>Work and Energy</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0177-Thermometers-Thermistors-and-Thermocouples/0177-LEGACY/Thermometers-Thermistors-and-Thermocouples.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0177-Thermometers-Thermistors-and-Thermocouples/0177-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13568,19 +13706,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0178">
     <Name>Torque and the Beam Balance</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Statics</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0178-Torque-and-the-Beam-Balance/0178-LEGACY/Torque-and-the-Beam-Balance.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0178-Torque-and-the-Beam-Balance/0178-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13607,19 +13743,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0179">
     <Name>Torsional Oscillations</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Newtonian Mechanics</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Statics</Topic><Topic>Dynamics</Topic><Topic>Integration</Topic><Topic>Differentiation</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0179-Torsional-Oscillations/0179-LEGACY/Torsional-Oscillations.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0179-Torsional-Oscillations/0179-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13682,19 +13816,17 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
-    <Software/>
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0180">
     <Name>Axial and non Axial Magnetic Fields of a Helmholtz Coil</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Electricity and Magnetism</Discipline></Disciplines><Topics><Topic>Newton&#8217;s Laws</Topic><Topic>Integration</Topic><Topic>Magnetism</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0180-Axial-and-non-Axial-Magnetic-Fields-of-a-Helmholtz-Coil/0180-LEGACY/Axial-Magnetic-Flux-Density-of-a-Helmholtz-Coil.pdf</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0180-Axial-and-non-Axial-Magnetic-Fields-of-a-Helmholtz-Coil/0180-LEGACY/</Directory>
       </Version>
     </Versions>
@@ -13780,20 +13912,18 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0181">
     <Name>Nuclear Pulse Height Analysis</Name>
-    <Disciplines/>
-    <Topics/>
-    <Versions>
+    <Disciplines><Discipline>Nuclear Physics</Discipline><Discipline>Laboratory Skills</Discipline><Discipline>Computer Skills</Discipline></Disciplines><Topics><Topic>Work and Energy</Topic><Topic>Measurements</Topic></Topics><Versions>
       <Version>
         <Path>/data/repository/0181-Nuclear-Pulse-Height-Analysis/0181-LEGACY</Path>
-        <Semester/>
-        <Year/>
-        <Course/>
+        <Semester />
+        <Year />
+        <Course />
         <Directory>/data/repository/0181-Nuclear-Pulse-Height-Analysis/</Directory>
       </Version>
     </Versions>
@@ -13811,14 +13941,14 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
-    <SupportDocs/>
-    <Software/>
+    <Type />
+    <SupportDocs />
+    <Software />
   </Lab>
   <Lab labId="0182">
     <Name>Modelling Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines />
+    <Topics />
     <Versions>
       <Version>
         <Path>/data/repository/0182-Modelling-Motion/0182-PHYS227FA2016/227_2016_Lab03_Modelling_Motion.pdf</Path>
@@ -13842,7 +13972,7 @@
       </Item>
     </Equipment>
     <Type>Lab</Type>
-    <SupportDocs/>
+    <SupportDocs />
     <Software>
       <Name>browser</Name>
       <Name>VPython</Name>

@@ -7,10 +7,9 @@
 var mainxmlpath = "/data/labDB.xml";
 //var mainxmlpath = "/dev/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-var siteroot = "/html-future";
-//var siteroot = "/pjl-web";
 //var siteroot = "/html-future";
-//var siteroot = "";
+//var siteroot = "/pjl-web";
+var siteroot = "";
 var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -25,7 +24,7 @@ var docXML;
 
 //Somehow need to deal with file errors in the zip call. Think about how to bail gracefully.
 //The top-level promise is waiting for all the files to load, what happens if one doesn't?
-//---set a deferred.fail() callback on the top-level promise. easy peasy.
+//---set a deferred.fail() callback on the top-level promise. easy peasy. - Donesies
 
 
 
@@ -76,7 +75,7 @@ $(document).on("click", "#clear-filters-button", function(e) {
 	for (var i = selects.length - 1; i >= 0; i--) {
 		$(selects[i]).val([]);
 	}
-	filterResults(getCurrentFilter());
+	filterResults(getCurrentFilter(), fullset=true);
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
 });
@@ -403,7 +402,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
 		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
 		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
-		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + getLabEquipmentList(lab).join(", "));
+		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + spanTheList(getLabEquipmentList(lab), "equip-item").join(", "));
 		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
 		var directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
 
@@ -430,8 +429,12 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 
 
 
-function filterResults(filter) {  //given a filter object, filter displayed records and update DOM appropriately
-	var lablist = getCurrentRecords();//$(".lab-record-flex");
+function filterResults(filter, fullset=true) {  //given a filter object, filter displayed records and update DOM appropriately
+	if(fullset) {
+		var lablist = $(".lab-record-flex");
+	} else {
+		var lablist = getCurrentRecords();
+	}
 	var numrecords = lablist.length;
 	for (var i = lablist.length - 1; i >= 0; i--) {
 		var lab = $(lablist[i]);
@@ -489,7 +492,7 @@ function displayNumResults(numresults) {  //update number of displayed records a
 
 
 function updateZipStatus() {  //confirm that zipping is available and update the zip icon accordingly
-	var canzip = canZip()
+	let canzip = canZip()
 	if (canzip) {
 		$("#zip-icon").css("display", "inline-block");
 	} else {
@@ -1628,3 +1631,9 @@ function mostRecentDecimalSemester() {
 }
 
 
+function spanTheList(list, id) {
+	for (var i = list.length - 1; i >= 0; i--) {
+		list[i] = "<span class='" + id + "'>" + String(list[i]).split("(")[0].trim() + "</span>" + " (" + String(list[i]).split("(")[1];
+	}
+	return list;
+}
