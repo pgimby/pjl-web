@@ -13,6 +13,7 @@ foreach($objects as $file => $object){
 }
 
 $files = trim($files, ",");
+echo "<script>console.log({$files})</script>";
 echo $files;
 
 
