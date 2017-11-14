@@ -6,7 +6,8 @@ $dir = "/var/www/html" . $dir;
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
 foreach($objects as $file => $object){
-	$filename = end(explode("/", $file));
+	$tmp = explode("/", $file);
+	$filename = end($tmp);
 	if ($filename != ".." and $filename != "." and strpos($filename, ".") != 0) {
 		$files .= "," . str_replace("/var/www/html", "", $file);
 	}
