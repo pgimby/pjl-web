@@ -1245,6 +1245,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
+			console.log("embedded filelist",filelist)
 			promise.resolve();
 		}
 	}
@@ -1257,7 +1258,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		var promise = $.Deferred();
 		promises.push(promise)
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
-		console.log(filelist)
+		console.log("filelist",filelist)
 	}
 	var deferredFileList = $.when.apply(this, promises);
 	deferredFileList.done(function() {
