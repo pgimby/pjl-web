@@ -1170,7 +1170,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 		$("#zip-progress-bar").stop().slideUp(500);
 		return;
 	});
-	var deferredzip = $.when.apply(this, promises);
+	var deferredzip = $.when.apply($, promises);
 
 	deferredzip.progress(function() {
 		progresscount++;
@@ -1261,7 +1261,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
 		console.log("dir",dirlist[i])
 	}
-	var deferredFileList = $.when.apply(this, promises);
+	var deferredFileList = $.when.apply($, promises);
 	deferredFileList.done(function() {
 		filteredlist = filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist);
 		if(doEXTRA) {
