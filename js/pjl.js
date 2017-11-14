@@ -1245,6 +1245,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
+			console.log(promise)
 			promise.resolve();
 		}
 	}
@@ -1294,7 +1295,6 @@ function filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist) {
 			continue;
 		}
 	}
-	console.log(filteredfiles)
 	return filteredfiles;
 }
 
