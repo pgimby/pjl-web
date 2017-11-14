@@ -1245,7 +1245,6 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
-			console.log(promise)
 			promise.resolve();
 		}
 	}
@@ -1258,14 +1257,15 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		var promise = $.Deferred();
 		promises.push(promise)
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
+		console.log(filelist)
 	}
-	var deferredFileList = $.when.apply($, promises);
+	var deferredFileList = $.when.apply(this, promises);
 	deferredFileList.done(function() {
 		filteredlist = filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist);
 		if(doEXTRA) {
 			filteredlist.concat(extradocs);
 		}
-		console.log(filteredlist);
+		console.log("filtered",filteredlist);
 		makePromisesBeginZip(filteredlist);
 	});
 	deferredFileList.fail(function() {console.log("File collection failed: Unable to locate files for selection.")});
