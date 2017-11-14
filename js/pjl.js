@@ -357,7 +357,6 @@ $(document).on("click touch", ".db-mod-menu-row", function(e) {
 	let formrow = $(e.target);
 	$(".db-mod-menu-row").each(function(index, el) {
 		if ($(el) !== formrow) {
-			console.log(el, formrow)
 			$(el).next().slideUp("fast");
 		}
 	});
@@ -376,7 +375,6 @@ $(document).on("click touch", ".db-mod-menu-row", function(e) {
 function populateRecordList(docXML) {  //read XML and append all lab records to DOM; update displayed records counter - not type safe
 	var labs = docXML.getElementsByTagName("Lab");
 	for (var i = labs.length - 1; i >= 0; i--) {
-		console.log(labs[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 		createRecordSnapshots(labs[i]);
 	}
 	displayNumResults(countNumRecords());
