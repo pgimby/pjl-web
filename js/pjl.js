@@ -1235,18 +1235,18 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 }
 
 
-
+var promises = []
 function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	var dirlist = [];
 	var filelist = [];
-	var promises = [];
+	// var promises = [];
 	var extradocs = [];
 	var records = getCurrentRecords();
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
 			console.log("embedded filelist",filelist)
-			promise.done(function(){promise.resolve()})
+			promise.resolve();
 		}
 	}
 	for (var i = records.length - 1; i >= 0; i--) {
