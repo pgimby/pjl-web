@@ -1245,7 +1245,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
-			console.log("embedded filelist",d)
+			console.log("embedded filelist",filelist)
 			promise.resolve();
 			promises.forEach(function(d,i){console.log(i,d.status())})
 		}
