@@ -1,5 +1,5 @@
 <?php
-// ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 
 $dir = $_POST['dirpath'];
 $dir = "/var/www/html" . $dir;
@@ -13,7 +13,6 @@ foreach($objects as $file => $object){
 }
 
 $files = trim($files, ",");
-echo "<script>console.log({$files})</script>";
 echo $files;
 
 
