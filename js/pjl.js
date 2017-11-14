@@ -1235,11 +1235,11 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 }
 
 
-var promises = []
+// var promises = []
 function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	var dirlist = [];
 	var filelist = [];
-	// var promises = [];
+	var promises = [];
 	var extradocs = [];
 	var records = getCurrentRecords();
 	function fileCallback(promise) {
