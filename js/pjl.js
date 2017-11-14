@@ -1157,6 +1157,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 	for (var i = files.length - 1; i >= 0; i--) {
 		var downloadingfile = fileDownloadPromise();
 		downloadingfile.done(function(filename, blob) {
+			console.log(filename)
 			zip.file(filename, blob);
 		});
 		promises.push(downloadingfile);
