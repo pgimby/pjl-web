@@ -1,8 +1,9 @@
 <?php
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 $dir = $_POST['dirpath'];
 $dir = "/var/www/html" . $dir;
+$files = "";
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
 foreach($objects as $file => $object){
