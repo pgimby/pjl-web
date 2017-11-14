@@ -7,14 +7,8 @@
 //var mainxmlpath = "/data/labDB.xml";
 var mainxmlpath = "/dev/labDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
-<<<<<<< HEAD
 //var siteroot = "/html-future";
 //var siteroot = "/pjl-web";
-=======
-//var siteroot = "/html-future";
-//var siteroot = "/pjl-web";
-//var siteroot = "/html-future";
->>>>>>> fe420ee618d83e72bc8eb8ecddac8f8e2b1f2b6a
 var siteroot = "";
 var docXML;
 
@@ -356,6 +350,20 @@ $(document).on("click touch", "#mobile-nav-button", function(e) {
 
 $(window).on("swipeleft", hideMobileNav);
 $(window).on("swiperight", showMobileNav);
+
+
+
+$(document).on("click touch", ".db-mod-menu-row", function(e) {
+	let formrow = $(e.target);
+	$(".db-mod-menu-row").each(function(index, el) {
+		if ($(el) !== formrow) {
+			console.log(el, formrow)
+			$(el).next().slideUp("fast");
+		}
+	});
+	let formsection = formrow.next();
+	formsection.slideToggle("fast");
+});
 
 
 
@@ -1331,6 +1339,17 @@ function loadXML() {  //load the XML document holding all the lab records (see g
 
 
 
+function sendEquipXMLModification(data) { //data is a dictionary
+	//data = {itemid:"0001", make: "Pasco", model: "8010A", amount: "10", service: "10", repair: "0"}
+	$.ajax({
+	  method: "POST",
+	  url: "/php/modifyEquipDB.php",
+	  data: data
+	})
+	  .done(function( msg ) {
+	    alert( "Data saved: " + msg );
+	  });
+}
 
 
 

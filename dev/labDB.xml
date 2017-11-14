@@ -252,7 +252,7 @@
         <Name>Geiger-Mueller tube power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0347">
+      <Item id="0053">
         <Name>radiation sample holder</Name>
         <Amount>1</Amount>
       </Item>
@@ -629,7 +629,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -763,7 +763,7 @@
         <Name>protractor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0293">
+      <Item id="0521">
         <Name>set of torsion pendulums</Name>
         <Amount>1</Amount>
       </Item>
@@ -883,7 +883,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software>
       <Name>browser</Name>
@@ -1210,7 +1210,7 @@
       <Amount>1</Amount>
     </Item>
     <Item id="0185">
-      <Name>set of haning masses</Name>
+      <Name>set of hanging masses</Name>
       <Amount>1</Amount>
     </Item>
     <Item id="0051">
@@ -1227,7 +1227,7 @@
     </Item>
     <Equipment>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -1291,7 +1291,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -1512,7 +1512,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0326">
-        <Name>1N914 diodes</Name>
+        <Name>1N914 diode</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0122">
@@ -2309,7 +2309,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -2355,7 +2355,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -2679,7 +2679,7 @@
         <Name>Geiger-Mueller tube power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0347">
+      <Item id="0053">
         <Name>radiation sample holder</Name>
         <Amount>1</Amount>
       </Item>
@@ -2837,7 +2837,7 @@
     </Versions>
     <Equipment>
       <Item id="0075">
-        <Name>Water constant volume gas apparatus</Name>
+        <Name>water constant volume gas apparatus</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0349">
@@ -2984,7 +2984,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0351">
-        <Name>10 kΩ Eico decade resistor box</Name>
+        <Name>10 kΩ Eico decade resistor box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0154">
@@ -3055,7 +3055,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -4000,7 +4000,7 @@
         <Name>stopwatch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0365">
+      <Item id="0367">
         <Name>Oil diffstak high vacuum system</Name>
         <Amount>1</Amount>
       </Item>
@@ -4384,7 +4384,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
-        <Name>connecting leads</Name>
+        <Name>set of connecting leads</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0092">
@@ -4392,7 +4392,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -4796,8 +4796,8 @@
         <Name>high current power supply</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0211">
-        <Name>motor-generator apparatus with brake</Name>
+      <Item id="0317">
+        <Name>motor-generator apparatus</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0318">
@@ -4868,7 +4868,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -4912,7 +4912,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
-        <Name>0.1 μF capacitor</Name>
+        <Name>0.1 µF capacitor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0118">
@@ -4924,15 +4924,15 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0139">
-        <Name>20 kΩ resistor</Name>
+        <Name>20 kΩ resistor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0222">
@@ -4948,7 +4948,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0122">
-        <Name>1 MΩ resistor</Name>
+        <Name>1 MΩ resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0107">
@@ -5158,7 +5158,7 @@
         <Amount>2</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -5353,7 +5353,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -5500,7 +5500,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -5717,7 +5717,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0342">
-        <Name>2N3904 NPN bipoar transistors</Name>
+        <Name>2N3904 NPN bipolar transistor</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -5763,7 +5763,7 @@
         <Name>SRL meter stick</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0385">
+      <Item id="0520">
         <Name>LF353 JFET OpAmp</Name>
         <Amount>3</Amount>
       </Item>
@@ -6273,7 +6273,7 @@
     </Versions>
     <Equipment>
       <Item id="0278">
-        <Name>motor dirven turntable</Name>
+        <Name>motor driven turntable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0002">
@@ -6544,7 +6544,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -6978,7 +6978,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0207">
-        <Name>Vernier LabPro  data logger</Name>
+        <Name>Vernier LabPro data logger</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0404">
@@ -7718,7 +7718,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0103">
-        <Name>1.0 μCi Cs-137 gamma source</Name>
+        <Name>1.0 µCi Cs-137 gamma source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0408">
@@ -8042,7 +8042,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0118">
-        <Name>0.001 µF capacitor</Name>
+        <Name>0.001 μF capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0115">
@@ -8207,7 +8207,7 @@
         <Amount>7</Amount>
       </Item>
       <Item id="0119">
-        <Name>10 µF capacitor</Name>
+        <Name>10 μF capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0116">
@@ -8268,7 +8268,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software>
       <Name>VPython</Name>
@@ -9096,19 +9096,19 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0123">
-        <Name>10 kΩ resistor</Name>
+        <Name>10 kΩ resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0132">
-        <Name>30 kΩ resistor</Name>
+        <Name>30 kΩ resistor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0124">
-        <Name>100 kΩ resistor</Name>
+        <Name>100 kΩ resistor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0124">
-        <Name>0.01 μF capacitor</Name>
+      <Item id="0116">
+        <Name>0.01 µF capacitor</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -10209,7 +10209,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Labatorial</Type>
     <SupportDocs/>
     <Software>
       <Name>Bouncing-Ball.cmbl</Name>
@@ -10435,7 +10435,7 @@
       </Item>
       <Item id="0327">
         <Name>LF411 OpAmp</Name>
-        <alt id="0180">LF351 OpAmp</alt>
+        <Alt id="0180">LF351 OpAmp</Alt>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -10702,7 +10702,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0119">
-        <Name>10 µF capacitor</Name>
+        <Name>10 μF capacitor</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0114">
@@ -10800,7 +10800,7 @@
       </Item>
       <Item id="0263">
         <Name>100 Ω GR decade resistance box</Name>
-        <alt id="0351">10 kΩ Eico decade resistor box</alt>
+          <Alt id="0351">10 kΩ Eico decade resistor box</Alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0155">
@@ -11060,7 +11060,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0280">
+      <Item id="0524">
         <Name>Phywe gas apparatus</Name>
         <Amount>1</Amount>
       </Item>
@@ -11271,7 +11271,7 @@
         <Name>polarizer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0128">
+      <Item id="0522">
         <Name>photodetector</Name>
         <Amount>1</Amount>
       </Item>
@@ -11367,7 +11367,7 @@
     </Versions>
     <Equipment>
       <Item id="0447">
-        <Name>Aluminum alloy 6061 beam</Name>
+        <Name>aluminum alloy 6061 beam</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0041">
@@ -11484,7 +11484,7 @@
     </Versions>
     <Equipment>
       <Item id="0278">
-        <Name>motor dirven turntable</Name>
+        <Name>motor driven turntable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0002">
@@ -12096,7 +12096,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0185">
-        <Name>set of hinging masses</Name>
+        <Name>set of hanging masses</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0212">
@@ -12213,7 +12213,7 @@
         <Name>oscilloscope</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0416">
+      <Item id="0523">
         <Name>HP 5315A universal counter</Name>
         <Amount>1</Amount>
       </Item>
@@ -12242,7 +12242,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0142">
-        <Name>0.1 mCi Po-210 alpha source</Name>
+        <Name>0.1 μCi Po-210 alpha source</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0271">
@@ -12411,7 +12411,7 @@
       </Item>
       <Item id="0397">
         <Name>cylindrical He-Ne laser</Name>
-        <alt id="0021">He-Ne laser</alt>
+        <Alt id="0021">He-Ne laser</Alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0310">
@@ -12478,7 +12478,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0396">
-        <Name>-3.6 cm focal length 38mm diameter double concave lens</Name>
+        <Name>-3.6 cm focal length 38 mm diameter double concave lens</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0469">
@@ -12595,7 +12595,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0316">
-        <Name>tapered brass spring</Name>
+        <Name>tapered brass springs</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0081">
@@ -12723,7 +12723,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0453">
-        <Name>movable knife edge</Name>
+        <Name>knife edge</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0475">
@@ -12734,7 +12734,7 @@
         <Name>laboratory stand</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0453">
+      <Item id="0454">
         <Name>knife edge support</Name>
         <Amount>1</Amount>
       </Item>
@@ -13415,7 +13415,7 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0380">
-        <Name>28V minibulb</Name>
+        <Name>28 V minibulb</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0484">
@@ -13428,11 +13428,11 @@
       </Item>
       <Item id="0263">
         <Name>100 Ω GR decade resistance box</Name>
-        <alt id="0351">10 kΩ Eico decade resistor box</alt>
+          <Alt id="0351">10 kΩ Eico decade resistor box</Alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0351">
-        <Name>10 kΩ Eico decade resistor box</Name>
+        <Name>10 kΩ Eico decade resistor box</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0003">
@@ -13800,7 +13800,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0318">
-        <Name>rubbermat</Name>
+        <Name>rubber mat</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0257">
@@ -13990,7 +13990,7 @@
         <Name>ten litre glass asperator bottle</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0505">
+      <Item id="0506">
         <Name>specific heat kit</Name>
         <Amount>1</Amount>
       </Item>
@@ -14102,7 +14102,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0506">
+      <Item id="0525">
         <Name>Nuclear Data ND62 PHA</Name>
         <Amount>1</Amount>
       </Item>
@@ -14115,7 +14115,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0410">
-        <Name>sodium iodide scintillator detector</Name>
+        <Name>sodium iodide scintillation detector</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0006">
@@ -14577,7 +14577,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0514">
-        <Name>helmholtz coils</Name>
+        <Name>Helmholtz coils</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0282">
@@ -14617,7 +14617,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0308">
-        <Name>BNC coax cable</Name>
+        <Name>BNC coaxial cable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0283">
@@ -14649,7 +14649,7 @@
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Labatorial</Type>
     <SupportDocs/>
     <Software/>
   </Lab>
@@ -14683,11 +14683,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0519">
-        <Name>Berkeley nucleaon cs GL-3 pulse generator</Name>
+        <Name>Berkeley Nucleonics GL-3 pulse generator</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
-    <Type/>
+    <Type>Lab</Type>
     <SupportDocs/>
     <Software/>
   </Lab>

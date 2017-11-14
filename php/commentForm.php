@@ -10,9 +10,10 @@
 
     if ($_POST['submit']) {
          if (mail($to,$subject,$body)) {
+            header('location:/');
             echo "message sending success";
          } else {
             echo "message sending failed";
          }
     }
-?> 
+?>

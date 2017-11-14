@@ -1,118 +1,21 @@
-labid	disciplines	topics
-0103	Laboratory Skills	Measurements, Circuits
-0020	Newtonian Mechanics	Rotational Motion, Friction and Drag, Momentum
-0121	Fluid Mechanics	Hydrostatics, Statics
-0180	Electricity and Magnetism, Math	Integration, Circuits, Magnetism
-0084	Fluid Mechanics, Newtonian Mechanics	Statics, Work and Energy, Friction and Drag, Newton’s Laws, Hydrostatics
-0122	Thermodynamics, Statistical Mechanics, Laboratory Skills	Statistics, Work and Energy, Measurements, Dynamics
-0123	Fluid Mechanics	Work and Energy, Friction and Drag, ODE, Conservation Laws, Hydrostatics
-0029	Math, Newtonian Mechanics, Electricity and Magnetism	Linear Algebra, Integration, Magnetism, Newton’s Laws
-0125	Fluid Mechanics	Gas Laws, Work and Energy
-0126	Optics, Math	Polarization, Wave Mechanics, Refraction
-0127	Relativity, Particle Physics, Laboratory Skills	Collisions, Work and Energy, Conservation Laws, Integration, Differentiation, Measurements, Momentum
-0128	Newtonian Mechanics	Statics, Newton’s Laws
-0129	Newtonian Mechanics	Dynamics, Kinematics, Newton’s Laws, Rotational Motion
-0130	Newtonian Mechanics, Optics	Dynamics, Kinematics, Newton’s Laws, Rotational Motion
-0131	Newtonian Mechanics	Dynamics, Collisions, Newton’s Laws, Momentum, Conservation Laws
-0132	Newtonian Mechanics	Dynamics, Collisions, Conservation Laws, Momentum, Kinematics, Newton’s Laws
-0133	Newtonian Mechanics	Newton’s Laws, Work and Energy, Dynamics
-0134	Newtonian Mechanics	Newton’s Laws, Work and Energy, Conservation Laws
-0135	Thermodynamics, Laboratory Skills	Gas Laws, Hydrostatics
-0136	Nuclear Physics, Particle Physics, Laboratory Skills	Measurements, Statistics
-0137	Newtonian Mechanics	ODE, Linear Algebra, Dynamics
-0138	Electricity and Magnetism, Optics	Circuits, Integration, Measurements, Magnetism
-0139	Electricity and Magnetism, Thermodynamics	Circuits, Work and Energy
-0141	Newtonian Mechanics	Dynamics, Friction and Drag
-0142	Nuclear Physics, Laboratory Skills	Statistics, Integration, Measurements
-0143	Newtonian Mechanics	Kinematics
-0144	Optics, Laboratory Skills	Interference, Wave Mechanics, Refraction
-0145	Optics, Laboratory Skills	Interference, Wave Mechanics, Refraction, Polarization
-0146	Optics	Interference, Wave Mechanics, Refraction, Polarization, Integration
-0147	Thermodynamics	Gas Laws, Work and Energy
-0148	Newtonian Mechanics	Statics, Dynamics, Newton’s Laws
-0149	Newtonian Mechanics	Momentum, Conservation Laws, Work and Energy, Kinematics, Newton’s Laws
-0150	Newtonian Mechanics	ODE, Dynamics, Newton’s Laws
-0151	Electricity and Magnetism, Laboratory Skills	Circuits, Conservation Laws
-0152	Thermodynamics, Statistical Mechanics, Laboratory Skills	Work and Energy, Conservation Laws
-0153	Laboratory Skills, Computer Skills, Math	Statistics, Differentiation
-0154	Newtonian Mechanics, Math	Integration, Differentiation, ODE, Dynamics, PDE
-0156	Electricity and Magnetism, Quantum Mechanics	Circuits
-0157	Newtonian Mechanics	Rotational Motion, Dynamics, Conservation Laws, Work and Energy, Newton’s Laws
-0158	Newtonian Mechanics	Dynamics, Newton’s Laws
-0159	Newtonian Mechanics	Dynamics, Newton’s Laws
-0160	Thermodynamics	Newton’s Laws, ODE, Differentiation, Work and Energy
-0161	Electricity and Magnetism, Laboratory Skills	Circuits, Measurements
-0162	Thermodynamics, Laboratory Skills, Quantum Mechanics	Differentiation, Circuits, Work and Energy
-0163	Electricity and Magnetism, Laboratory Skills	Circuits, Differentiation, Integration, Work and Energy
-0164	Newtonian Mechanics	ODE, Newton’s Laws, Dynamics
-0165	Fluid Mechanics	Hydrostatics, Friction and Drag, Dynamics, Integration
-0166	Thermodynamics, Statistical Mechanics	Statistics, Work and Energy, ODE, Differentiation, PDE
-0167	Newtonian Mechanics	Kinematics
-0168	Newtonian Mechanics	Dynamics, Work and Energy, Conservation Laws, Friction and Drag
-0169	Quantum Mechanics, Nuclear Physics, Optics	Refraction, Interference, Work and Energy
-0170	Thermodynamics	Differentiation, Work and Energy, Gas Laws, Hydrostatics
-0171	Electricity and Magnetism, Laboratory Skills	Circuits, Measurements
-0172	Quantum Mechanics, Particle Physics, Laboratory Skills, Computer Skills	Circuits, Differentiation, Work and Energy, Conservation Laws, ODE, Refraction
-0173	Laboratory Skills	Wave Mechanics
-0174	Newtonian Mechanics	Statics, Newton’s Laws
-0175	Thermodynamics	Work and Energy
-0176	Electricity and Magnetism, Laboratory Skills	Magnetism, Circuits
-0177	Thermodynamics, Laboratory Skills	Circuits, Measurements, Work and Energy
-0178	Newtonian Mechanics	Newton’s Laws, Statics
-0179	Newtonian Mechanics	Newton’s Laws, Statics, Dynamics, Integration, Differentiation
-0180	Electricity and Magnetism	Newton’s Laws, Integration, Magnetism
-0181	Nuclear Physics, Laboratory Skills, Computer Skills	Work and Energy, Measurements
-0012	Electricity and Magnetism	Electrostatics
-0035	Electricity and Magnetism	Electrostatics, Integration
-0018	Thermodynamics	Statistics, Work and Energy, Gas Laws
-0019	Thermodynamics	Work and Energy, Gas Laws, Integration
-0037	Electricity and Magnetism	Circuits, Magnetism
-0117	Laboratory Skills	Circuits, Measurements
-0077	Nuclear Physics, Laboratory Skills	ODE, Statistics, Differentiation
-0006	Newtonian Mechanics	ODE, Conservation Laws, Work and Energy, Dynamics
-0009	Newtonian Mechanics	Measurements
-0074	Quantum Mechanics, Electricity and Magnetism	Measurements, Work and Energy, Circuits
-0052	Newtonian Mechanics, Electricity and Magnetism	Electrostatics, Newton’s Laws, Work and Energy
-0033	Electricity and Magnetism	Electrostatics, Integration
-0021	Newtonian Mechanics, Computer Skills	ODE, Momentum, Newton’s Laws
-0051	Newtonian Mechanics	Newton’s Laws, Kinematics
-0048	Electricity and Magnetism	Circuits, Work and Energy
-0155	Optics, Laboratory Skills	Measurements, Refraction
-0082	Newtonian Mechanics, Optics	Rotational Motion, Newton’s Laws, Dynamics
-0026	Newtonian Mechanics, Computer Skills	Kinematics, Measurements, Momentum
-0017	Fluid Mechanics	Hydrostatics
-0084	Newtonian Mechanics, Fluid Mechanics	Hydrostatics, Newton’s Laws, Friction and Drag
-0030	Electricity and Magnetism	Circuits
-0032	Electricity and Magnetism	Circuits
-0038	Electricity and Magnetism	Circuits, Conservation Laws
-0042	Electricity and Magnetism, Laboratory Skills	Circuits
-0010	Electricity and Magnetism, Optics, Laboratory Skills	Circuits, Magnetism, Measurements
-0020	Newtonian Mechanics	Rotational Motion, Momentum
-0036	Electricity and Magnetism	Magnetism, Circuits
-0059	Electricity and Magnetism	Circuits, ODE
-0054	Electricity and Magnetism	Circuits, Magnetism, Differentiation, Integration
-0075	Quantum Mechanics, Optics	Measurements, Work and Energy, Interference, Refraction
-0058	Electricity and Magnetism, Laboratory Skills	Circuits, Measurements
-0043	Electricity and Magnetism, Laboratory Skills	Circuits, Measurements
-0120	Newtonian Mechanics	Integration, Newton’s Laws, Dynamics, ODE
-0064	Laboratory Skills, Computer Skills, Math	Statistics, Differentiation
-0076	Nuclear Physics, Particle Physics, Laboratory Skills	Measurements, Statistics
-0050	Electricity and Magnetism	Circuits, Magnetism
-0097	Particle Physics, Electricity and Magnetism, Laboratory Skills	Measurements, Statistics
-0055	Laboratory Skills	Measurements
-0182	Newtonian Mechanics, Computer Skills	Kinematics, Programming
-0045	Electricity and Magnetism	Electrostatics
-0096	Electricity and Magnetism, Laboratory Skills	Magnetism, Circuits
-0005	Newtonian Mechanics	Newton’s Laws, Statics
-0004	Newtonian Mechanics	Newton’s Laws, Statics
-0023	Computer Skills	Programming
-0015	Electricity and Magnetism	Circuits
-0070	Quantum Mechanics, Particle Physics, Laboratory Skills	Collisions, Work and Energy, Circuits, Measurements
-0087	Laboratory Skills	Measurements
-0047	Electricity and Magnetism	Circuits
-0034	Electricity and Magnetism	Circuits, Work and Energy, Electrostatics, Integration
-0039	Electricity and Magnetism	Circuits, Magnetism
-0007	Newtonian Mechanics	Newton’s Laws, Statics
-0008	Newtonian Mechanics	Kinematics
-0124	Newtonian Mechanics	Dynamics, Rotational Motion, Newton’s Laws, ODE
-0140	Laboratory Skills, Math	Statistics, Measurements
+0095	air track accessory kit	riser block (8), 50 g cylindrical mass (4), 20 g slotted mass (2), hook, pulley, rubber band bumper, wax receptacle
+0113	Hall probe kit	InAs hall probe, female BNC to male banana adaptor, BNC coaxial cable
+0214	travelling wave kit	50 Ω BNC feedthrough termination, 7 m RG59 coaxial cable, 7 m twinaxial cable, reflectionless signal splitter, 0.5 m RG58 coaxial cable, BNC male-male adapter (2), BNC female-female adapter, male BNC to female banana,  variable resistive termination adapter, short circuit termination
+0091	Fizeau band kit	small Newton rings, large Newton rings, air wedge apparatus, lens paper, thin cover glass, riser block, aluminum foil, beam splitter, beam splitter stand, lens cleaner, interference colour  chart, diffuser, lens cleaner
+0212	current balance kit	masking tape, plastic ruler, current balance apparatus, bubble level, spacer bar, milligram mass set
+0521	set of torsion pendulums	
+0353	uncertainties kit	plastic beaker, brass rectangle (2), brass disk (2), ball bearing, aluminum tube
+0370	thin lens kit	optical screen, lens holder (2), illuminated test object, plastic ruler, 5 cm focal length 38 mm diameter double convex lens, 10 cm focal length 28 mm diameter double convex lens, 20 cm focal length 38 mm diameter double convex lens, 100 cm focal length 38 mm diameter plano-convex lens, -10 cm focal length 38 mm diameter double concave lens. 
+0371	electromagnetic induction kit	air track cart, pickup coil, grey solenoid, steel rod, adjustable end stop, banana plugs with eye hook, flexable connecting leads
+0216	drag force kit	1/8” diameter teflon sphere (12), 5/23” diameter teflon sphere (12), 3/16” diameter teflon sphere (12), 1/4” diameter teflon sphere (12), 5/16” diameter teflon sphere (12), 3/8” diameter teflon sphere (12), 1/2” diameter teflon sphere (12)
+0217	Pasco precision interferometer apparatus	base, viewing screen, hand pump, air cell, 18 mm focal length lens (2), beam splitter, adjustable mirror, movable mirror, slide holder (2)
+0219	set of dielectrics	acrylic sheet, paper sheet, teflon sheet, pvc sheet, mylar sheet, acetate sheet, water tank
+0227	acrylic block set	
+0393	faraday effect kit	
+0414	electrostatics kit	acrylic rod (2), PVC rod (2), rod hanger, hanger string, rayon cloth, leaf electrometer
+0421	Fraunhofer kit	slide with four single slits, slide with 4 double slits, slide with multiple slits, slide with aperatures, triple diffraction grating, 208 μm mesh grating, 176 μm mesh grating, 152 μm mesh grating, 127 μm mesh grating, 90 μm mesh grating, 76 μm mesh grating, 65 μm mesh grating
+0161	radium isolation nuclear chemistry station	
+0446	bubble chamber photograph kit	template of radii of curvature, bubble chamber stereograph, 3D view master, physics review D - review of partical properties
+0473	impact crater kit	plastic beaker, assorted ball bearings
+0478	set of metal pellets	
+0506	specific heat kit	glass tube, stopper with catcher, large stopper, matched steel balls
