@@ -1259,7 +1259,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		var promise = $.Deferred();
 		promises.push(promise)
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
-		console.log("filelist",filelist)
+		console.log("dir",dirlist[i])
 	}
 	var deferredFileList = $.when.apply(this, promises);
 	deferredFileList.done(function() {
