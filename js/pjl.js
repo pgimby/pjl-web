@@ -1195,6 +1195,7 @@ function makePromisesBeginZip(filelist) {
 	deferredzip.done(function() {
 		zip.generateAsync({type:"blob"}).then(function (blob) {
 			saveAs(blob, zipoutputfilename);
+			$("#zip-progress-bar progress").attr("value", "0");
 			$("#zip-progress-bar").stop().slideUp(500);
 		});
 		return false;
@@ -1204,6 +1205,7 @@ function makePromisesBeginZip(filelist) {
 		setTimeout(function() {
 			$("#file-prep").text("Download failed.");
 			setTimeout(function() {
+				$("#zip-progress-bar progress").attr("value", "0");
 				$("#zip-progress-bar").stop().slideUp(500, function() {
 				$("#file-prep").text("Preparing files...");
 				});
@@ -1217,6 +1219,7 @@ function makePromisesBeginZip(filelist) {
 			xhrs[i].abort();
 			promises[i].reject();
 		}
+		$("#zip-progress-bar progress").attr("value", "0");
 		$("#zip-progress-bar").stop().slideUp(500);
 		return;
 	});
