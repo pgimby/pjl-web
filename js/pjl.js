@@ -1153,11 +1153,11 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 	var promises = [];
 	var xhrs = [];
 	var progresscount = 0;
-	var progress = function(i) {console.log(i);return i/files.length};
+	var progress = function(i) {return i/files.length};
 	for (var i = files.length - 1; i >= 0; i--) {
 		var downloadingfile = fileDownloadPromise();
 		downloadingfile.done(function(filename, blob) {
-			console.log(filename)
+			// console.log(filename)
 			zip.file(filename, blob);
 		});
 		promises.push(downloadingfile);
@@ -1176,7 +1176,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 
 	deferredzip.progress(function() {
 		progresscount++;
-
+		console.log(progresscount)
 		$("#zip-progress-bar progress").attr("value", String(progress(progresscount)));
 	});
 	deferredzip.done(function() {
@@ -1248,7 +1248,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
-			console.log("embedded filelist",filelist)
+			// console.log("embedded filelist",filelist)
 			promise.resolve();
 		}
 	}
@@ -1261,7 +1261,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		let promise = $.Deferred();
 		promises.push(promise)
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
-		console.log("dir",dirlist[i])
+		// console.log("dir",dirlist[i])
 	}
 	var deferredFileList = $.when.apply($, promises);
 	deferredFileList.done(function() {
@@ -1269,7 +1269,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		if(doEXTRA) {
 			filteredlist.concat(extradocs);
 		}
-		console.log("filtered",filteredlist);
+		// console.log("filtered",filteredlist);
 		makePromisesBeginZip(filteredlist);
 	});
 	deferredFileList.fail(function() {console.log("File collection failed: Unable to locate files for selection.")});
