@@ -1155,7 +1155,7 @@ function makePromisesBeginZip(filelist) {
 
 	for (let i = 0; i < files.length; i++) {
 		let downloadingfile = new $.Deferred();
-		dowloadingfile.done(increaseProgress(i));
+		downloadingfile.done(increaseProgress(i));
 		let xhr = beginDownload(files[i], downloadingfile);
 		promises.push(downloadingfile);
 		xhrs.push(xhr);
