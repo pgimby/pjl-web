@@ -1149,13 +1149,17 @@ function makePromisesBeginZip(filelist) {
 
 	function increaseProgress(j) {
 		return function() {
+			console.log(j, files.length);
 			$("#zip-progress-bar progress").attr("value", String(j/files.length));
 		}
 	}
 
 	for (let i = 0; i < files.length; i++) {
 		let downloadingfile = new $.Deferred();
-		downloadingfile.done(increaseProgress(i));
+		downloadingfile.done(function(filename, blob) {
+			zip.file(filename, blob);
+			increaseProgress(i);
+		});
 		let xhr = beginDownload(files[i], downloadingfile);
 		promises.push(downloadingfile);
 		xhrs.push(xhr);
