@@ -1147,10 +1147,11 @@ function makePromisesBeginZip(filelist) {
 	var promises = [];
 	var xhrs = [];
 	function progress(i) {
+		console.log(i);
 		 $("#zip-progress-bar progress").attr("value", String(i/files.length));
 	}
 
-	for (var i = files.length - 1; i >= 0; i--) {
+	for (let i = files.length - 1; i >= 0; i--) {
 		let downloadingfile = fileDownloadPromise();
 		downloadingfile.done(function(filename, blob) {
 			// console.log(filename)
