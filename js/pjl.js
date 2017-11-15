@@ -1155,13 +1155,16 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 	var progresscount = 0;
 	var progress = function(i) {return i/files.length};
 	for (var i = files.length - 1; i >= 0; i--) {
-		var downloadingfile = fileDownloadPromise();
-		downloadingfile.done(function(filename, blob) {
-			console.log(filename)
-			zip.file(filename, blob);
-		});
-		promises.push(downloadingfile);
-		xhrs.push(beginDownload(files[i], downloadingfile));
+		if(files[i].startsWith("/data")) {
+			var downloadingfile = fileDownloadPromise();
+			downloadingfile.done(function(filename, blob) {
+				console.log(filename)
+				zip.file(filename, blob);
+			});
+			promises.push(downloadingfile);
+			xhrs.push(beginDownload(files[i], downloadingfile));
+		}
+
 	}
 	$(document).on("click", "#cancel-download", function(e) {
 		for (var i = xhrs.length - 1; i >= 0; i--) {
