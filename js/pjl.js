@@ -1154,24 +1154,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 	var xhrs = [];
 	var progresscount = 0;
 	var progress = function(i) {return i/files.length};
-	for (var i = files.length - 1; i >= 0; i--) {
-		var downloadingfile = fileDownloadPromise();
-		downloadingfile.done(function(filename, blob) {
-			// console.log(filename)
-			zip.file(filename, blob);
-		});
-		promises.push(downloadingfile);
-		xhrs.push(beginDownload(files[i], downloadingfile));
 
-	}
-	$(document).on("click", "#cancel-download", function(e) {
-		for (var i = xhrs.length - 1; i >= 0; i--) {
-			xhrs[i].abort();
-			promises[i].reject();
-		}
-		$("#zip-progress-bar").stop().slideUp(500);
-		return;
-	});
 	var deferredzip = $.when.apply($, promises);
 
 	deferredzip.progress(function() {
@@ -1196,6 +1179,27 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 			}, 2000);
 		}, 700);
 	});
+
+	for (var i = files.length - 1; i >= 0; i--) {
+		var downloadingfile = fileDownloadPromise();
+		downloadingfile.done(function(filename, blob) {
+			// console.log(filename)
+			deferredzip.notify();
+			zip.file(filename, blob);
+		});
+		promises.push(downloadingfile);
+		xhrs.push(beginDownload(files[i], downloadingfile));
+
+	}
+	$(document).on("click", "#cancel-download", function(e) {
+		for (var i = xhrs.length - 1; i >= 0; i--) {
+			xhrs[i].abort();
+			promises[i].reject();
+		}
+		$("#zip-progress-bar").stop().slideUp(500);
+		return;
+	});
+
 }
 
 
