@@ -660,7 +660,7 @@
         <Directory>/data/repository/0021-Calculating-and-Displaying-Gravitational-Force/0021-PHYS227FA2016/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0021-Calculating-and-Displaying-Gravitational-Force/0021-PHYS227FA2017/227_2017_Lab05_Grav_Force.pdf</Path>
+        <Path>/data/repository/0021-Calculating-and-Displaying-Gravitational-Force/0021-PHYS227FA2017/Calculating-and-Displaying-Gravitational-Force-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
@@ -1057,7 +1057,7 @@
         <Directory>/data/repository/0025-Macroscopic-Springs/0025-PHYS227FA2014/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0025-Macroscopic-Springs/0025-PHYS227FA2017/227_2017_Lab04_Macroscopic_Springs.pdf</Path>
+        <Path>/data/repository/0025-Macroscopic-Springs/0025-PHYS227FA2017/Macroscopic-Springs-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
@@ -2449,7 +2449,7 @@
       </Item>
       <Item id="0003">
         <Name>set of connecting leads</Name>
-        <Amount>3</Amount>
+        <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -3731,7 +3731,7 @@
         <Directory>/data/repository/0022-Computing-Motion/0022-PHYS227FA2015/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0022-Computing-Motion/0022-PHYS227FA2017/227_2017_Lab02_Computing_Motion.pdf</Path>
+        <Path>/data/repository/0022-Computing-Motion/0022-PHYS227FA2017/Computing-Motion-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
@@ -4718,7 +4718,7 @@
         <Directory>/data/repository/0028-The-Momentum-and-Energy-Principles/0028-PHYS227FA2013/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0028-The-Momentum-and-Energy-Principles/0028-PHYS227FA2017/227_2017_Lab07_E_and_p_principles.pdf</Path>
+        <Path>/data/repository/0028-The-Momentum-and-Energy-Principles/0028-PHYS227FA2017/Momentum-and-Energy-Principles-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
@@ -7115,7 +7115,7 @@
         <Directory>/data/repository/0023-Introduction-to-3D-Computational-Modelling/0023-PHYS227FA2013/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0023-Introduction-to-3D-Computational-Modelling/0023-PHYS227FA2017/227_2017_Lab01_Introduction_to_computation.pdf</Path>
+        <Path>/data/repository/0023-Introduction-to-3D-Computational-Modelling/0023-PHYS227FA2017/Introduction-to-3D-Computational-Modelling-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
@@ -7302,7 +7302,7 @@
         <Directory>/data/repository/0027-Power-and-Energy/0027-PHYS227FA2013/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0027-Power-and-Energy/0027-PHYS227FA2017/227_2017_Lab08_Drag_and_stairs.pdf</Path>
+        <Path>/data/repository/0027-Power-and-Energy/0027-PHYS227FA2017/Power-and-Energy-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
@@ -8769,12 +8769,11 @@
         <Directory>/data/repository/0024-Jumping-Up/0024-PHYS227FA2013/</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0024-Jumping-Up/0024-PHYS227FA2017/227_2017_Lab09_jumping_up.pdf</Path>
+        <Path>/data/repository/0024-Jumping-Up/0024-PHYS227FA2017/Jumping-Up-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
-        <Directory>/data/repository/0024-Jumping-Up/
-</Directory>
+        <Directory>/data/repository/0024-Jumping-Up/</Directory>
       </Version>
     </Versions>
     <Equipment/>
@@ -13009,7 +13008,7 @@
         <Directory>/data/repository/0182-Modelling-Motion</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0182-Modelling-Motion/0182-PHYS227FA2017/227_2017_Lab03_Modelling_Motion.pdf</Path>
+        <Path>/data/repository/0182-Modelling-Motion/0182-PHYS227FA2017/Modelling-Motion-FA2017.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2017</Year>
         <Course>PHYS 227</Course>
