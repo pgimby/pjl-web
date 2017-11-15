@@ -1146,7 +1146,7 @@ function makePromisesBeginZip(filelist) {
 	var files = filelist;
 	var promises = [];
 	var xhrs = [];
-	function progress = function(i) {
+	function progress(i) {
 		 $("#zip-progress-bar progress").attr("value", String(i/files.length));
 	}
 
