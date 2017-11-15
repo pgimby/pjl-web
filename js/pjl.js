@@ -1141,27 +1141,35 @@ function idSearchHandler(searchphrase) {  //handle the search request for id sea
 
 
 
-function makePromisesBeginZip(filelist) {  //take URLs for currently displayed records, create promises, and zip for download upon resolution of all promises
+function makePromisesBeginZip(filelist) {
 	var zip = new JSZip();
-	//var files = ["/data/testfiles/3.pdf","/data/testfiles/1.txt","/data/testfiles/4.pdf",
-	//"/data/testfiles/3.txt","/data/testfiles/5.pdf","/data/testfiles/3.txt","/data/testfiles/6.pdf",
-	//"/data/testfiles/2.txt","/data/testfiles/4.pdf","/data/testfiles/4.txt","/data/testfiles/4.pdf",
-	//"/data/testfiles/8.txt","/data/testfiles/9.txt","/data/testfiles/10.txt","/data/testfiles/11.txt",
-	//"/data/testfiles/12.txt","/data/testfiles/13.txt","/data/testfiles/14.txt","/data/testfiles/15.txt",
-	//"/data/testfiles/1.pdf","/data/testfiles/2.pdf","/data/testfiles/3.pdf","/data/testfiles/4.pdf"];
 	var files = filelist;
 	var promises = [];
 	var xhrs = [];
-	var progresscount = 0;
-	var progress = function(i) {return i/files.length};
+	function progress = function(i) {
+		 $("#zip-progress-bar progress").attr("value", String(i/files.length));
+	};
 
-	var deferredzip = $.when.apply($, promises);
+	for (var i = files.length - 1; i >= 0; i--) {
+		let downloadingfile = fileDownloadPromise();
+		downloadingfile.done(function(filename, blob) {
+			// console.log(filename)
+			progress(i);
+			zip.file(filename, blob);
+		});
 
-	deferredzip.progress(function() {
-		progresscount++;
-		console.log(progresscount)
+		promises.push(downloadingfile);
+		xhrs.push(beginDownload(files[i], downloadingfile));
+	}
+
+
+	deferredzip = $.when.apply($, promises);
+
+	deferredzip.progress(function(i) {
+		console.log(i)
 		$("#zip-progress-bar progress").attr("value", String(progress(progresscount)));
 	});
+
 	deferredzip.done(function() {
 		zip.generateAsync({type:"blob"}).then(function (blob) {
 			saveAs(blob, zipoutputfilename);
@@ -1169,6 +1177,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 		});
 		return false;
 	});
+
 	deferredzip.fail(function() {
 		setTimeout(function() {
 			$("#file-prep").text("Download failed.");
@@ -1180,17 +1189,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 		}, 700);
 	});
 
-	for (var i = files.length - 1; i >= 0; i--) {
-		var downloadingfile = fileDownloadPromise();
-		downloadingfile.done(function(filename, blob) {
-			// console.log(filename)
-			deferredzip.notify();
-			zip.file(filename, blob);
-		});
-		promises.push(downloadingfile);
-		xhrs.push(beginDownload(files[i], downloadingfile));
 
-	}
 	$(document).on("click", "#cancel-download", function(e) {
 		for (var i = xhrs.length - 1; i >= 0; i--) {
 			xhrs[i].abort();
