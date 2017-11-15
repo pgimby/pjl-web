@@ -1153,7 +1153,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 	var promises = [];
 	var xhrs = [];
 	var progresscount = 0;
-	var progress = function(i) {return i/files.length};
+	var progress = function(i) {console.log(i);return i/files.length};
 	for (var i = files.length - 1; i >= 0; i--) {
 		var downloadingfile = fileDownloadPromise();
 		downloadingfile.done(function(filename, blob) {
@@ -1176,7 +1176,7 @@ function makePromisesBeginZip(filelist) {  //take URLs for currently displayed r
 
 	deferredzip.progress(function() {
 		progresscount++;
-		console.log(progresscount)
+
 		$("#zip-progress-bar progress").attr("value", String(progress(progresscount)));
 	});
 	deferredzip.done(function() {
