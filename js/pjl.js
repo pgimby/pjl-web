@@ -1146,30 +1146,48 @@ function makePromisesBeginZip(filelist) {
 	var files = filelist;
 	var promises = [];
 	var xhrs = [];
-	function progress(i) {
-		console.log(i);
-		 $("#zip-progress-bar progress").attr("value", String(i/files.length));
+
+	function increaseProgress(j) {
+		return function() {
+			$("#zip-progress-bar progress").attr("value", String(j/files.length));
+		}
 	}
 
-	for (let i = files.length - 1; i >= 0; i--) {
-		let downloadingfile = fileDownloadPromise();
-		downloadingfile.done(function(filename, blob) {
-			// console.log(filename)
-			progress(i);
-			zip.file(filename, blob);
-		});
-
+	for (let i = 0; i < files.length; i++) {
+		let downloadingfile = new $.Deferred();
+		dowloadingfile.done(increaseProgress(i));
+		let xhr = beginDownload(files[i], downloadingfile);
 		promises.push(downloadingfile);
-		xhrs.push(beginDownload(files[i], downloadingfile));
+		xhrs.push(xhr);
 	}
+
+
+
+
+	// function progress(i) {
+	// 	console.log(i);
+	// 	 $("#zip-progress-bar progress").attr("value", String(i/files.length));
+	// }
+
+	// for (let i = files.length - 1; i >= 0; i--) {
+	// 	let downloadingfile = fileDownloadPromise();
+	// 	downloadingfile.done(function(filename, blob) {
+	// 		// console.log(filename)
+	// 		progress(i);
+	// 		zip.file(filename, blob);
+	// 	});
+
+	// 	promises.push(downloadingfile);
+	// 	xhrs.push(beginDownload(files[i], downloadingfile));
+	// }
 
 
 	deferredzip = $.when.apply($, promises);
 
-	deferredzip.progress(function(i) {
-		console.log(i)
-		$("#zip-progress-bar progress").attr("value", String(progress(progresscount)));
-	});
+	// deferredzip.progress(function(i) {
+	// 	console.log(i)
+	// 	$("#zip-progress-bar progress").attr("value", String(progress(progresscount)));
+	// });
 
 	deferredzip.done(function() {
 		zip.generateAsync({type:"blob"}).then(function (blob) {
