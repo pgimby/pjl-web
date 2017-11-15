@@ -6,7 +6,9 @@ $dir = $_POST['dirpath'];
 $dir = "/var/www/html" . $dir;
 $files = "";
 
-$objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
+$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
+$objects = iterator_to_array($iterator);
+
 foreach($objects as $file => $object){
 	$tmp = explode("/", $file);
 	$filename = end($tmp);
