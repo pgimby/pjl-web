@@ -192,10 +192,10 @@ $(document).on("submit", ".equip-form", function(e) {
 
 $(document).on("click", "#add-location", function(e) {
 	let form = d3.select(".location-subform");
-	form.append("label").html("Room");
-	form.append("input").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
-	form.append("label").html("Storage");
-	form.append("input").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
+	form.insert("label", "#add-location").html("Room");
+	form.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
+	form.insert("label", "#add-location").html("Storage");
+	form.insert("input", "#add-location").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
 });
 
 

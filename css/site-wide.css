@@ -942,8 +942,20 @@ footer {
 	background-color: #444;
 }
 
+#add-location {
+	padding: 5px;
+	background-color: #333;
+	border: 1px solid #000;
+	border-radius: 4px;
+	color: #999;
+	left: 18%;
+	position: relative;
+	margin: 4px auto;
+}
 
-
+#add-location:hover {
+	background-color: #555
+}
 
 
 @media only screen and (max-width : 800px) {
