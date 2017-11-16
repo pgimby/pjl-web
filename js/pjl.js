@@ -125,6 +125,11 @@ function loadEquipInfo(id) {
     	if (xhttp.readyState == 4 && xhttp.status == 200) {
             let docXML = xhttp.responseXML;
             populateEquipInfo(docXML, id);
+            let form = d3.select(".location-subform");
+			form.insert("label", "#add-location").html("Room");
+			form.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
+			form.insert("label", "#add-location").html("Storage");
+			form.insert("input", "#add-location").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
     	}
   	};
   	xhttp.open("GET", siteroot + "/dev/equipmentDB.xml", true);
