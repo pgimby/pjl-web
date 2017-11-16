@@ -1,5 +1,5 @@
 <?php
-
+ini_set('display_errors', 1);
 $name = $_POST['eq-name'];
 $make = $_POST['eq-make'];
 $model = $_POST['eq-model'];
