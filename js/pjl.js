@@ -133,7 +133,6 @@ function loadEquipInfo(id) {
 
 function populateEquipInfo(xml, id) {
 	let items = xml.getElementsByTagName("Item");
-	console.log(items[23].getElementsByTagName("Manufacturer")[0].hasChildNodes())
 	for (let i = 0; i < items.length; i++) {
 		if (items[i].getAttribute("id") == id) {
 			let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
