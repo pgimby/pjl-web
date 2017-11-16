@@ -179,8 +179,9 @@ $(document).on("click", ".eq-item-text", function(e) {
 	e.stopPropagation();
 })
 
-
-
+$(document).on("click", ".equip-form", function(e) {
+	e.stopPropagation();
+});
 
 
 
