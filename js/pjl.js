@@ -186,7 +186,9 @@ $(document).on("click", ".equip-form", function(e) {
 $(document).on("submit", ".equip-form", function(e) {
 	e.preventDefault();
 	console.log($(e.target).serialize())
-	$.post(siteroot + "/php/modifyEquipDB.php", $(e.target).serialize());
+	$.post(siteroot + "/php/modifyEquipDB.php", $(e.target).serialize(), function(data) {
+		console.log(data)
+	});
 
 });
 
