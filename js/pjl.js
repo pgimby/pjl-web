@@ -38,7 +38,7 @@ var docXML;
 
 
 
-function initPage() {  //initialize the page
+function initRepoPage() {  //initialize the repository page
 	loadXML();
 	$("#search-bar").val("");
 }
@@ -48,6 +48,129 @@ function initPage() {  //initialize the page
 function initLandingPage() {
 	console.log("landing page initalized")
 }
+
+
+function initEquipmentPage() {
+	loadEquipmentXML();
+}
+
+
+function loadEquipmentXML() {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+    	if (xhttp.readyState == 4 && xhttp.status == 200) {
+            let docXML = xhttp.responseXML;
+            populateEquipDisplay(docXML);
+    	}
+  	};
+  	xhttp.open("GET", siteroot + "/dev/equipmentDB.xml", true);
+  	xhttp.send();
+}
+
+function populateEquipDisplay(xml) {
+	container = d3.select("main");
+	items = xml.getElementsByTagName("Item");
+	for (let i = 0; i < items.length; i++) {
+		item = container.append("div").classed("eq-item-display", true);
+		item.append("h2").classed("eq-item-text", true).html(items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue);
+		item.append("a").classed("eq-item-pdf", true).html("PDF").attr("data", items[i].getAttribute("id"));
+	}
+	sortEquipList();
+	linkPDFs();
+}
+
+
+function sortEquipList() {
+	items = $(".eq-item-display");
+	items.sort(compareEquipNames);
+	items.each(function() {
+		$("main").append(this);
+	});
+}
+
+function compareEquipNames(a,b) {
+	return ($(a).find(".eq-item-text").text() < $(b).find(".eq-item-text").text()) ? 1 : ($(a).find(".eq-item-text").text() > $(b).find(".eq-item-text").text()) ? -1 : 0;
+}
+
+function linkPDFs() {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+    	if (xhttp.readyState == 4 && xhttp.status == 200) {
+            var docXML = xhttp.responseXML;
+            let labs = docXML.getElementsByTagName("Lab");
+            let items = $(".eq-item-pdf");
+            eqloop: for (let i = 0; i < items.length; i++) {
+            	let id = $(items[i]).attr("data");
+            	labloop: for (let j = 0; j < labs.length; j++) {
+            		let equipment = labs[j].getElementsByTagName("Item");
+            		eqtwoloop: for (let k = 0; k < equipment.length; k++) {
+            			if (equipment[k].getAttribute("id") == id) {
+            				$(items[i]).attr("target", "_blank").attr("href", "http://www.pjl.ucalgary.ca"+labs[j].getElementsByTagName("Path")[0].childNodes[0].nodeValue);
+            				break labloop;
+	            		}
+            		}
+            	}
+            }
+    	}
+  	};
+  	xhttp.open("GET", siteroot + "/dev/labDB.xml", true);
+  	xhttp.send();
+}
+
+
+
+function loadEquipInfo(id) {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+    	if (xhttp.readyState == 4 && xhttp.status == 200) {
+            let docXML = xhttp.responseXML;
+            populateEquipInfo(docXML, id);
+    	}
+  	};
+  	xhttp.open("GET", siteroot + "/dev/equipmentDB.xml", true);
+  	xhttp.send();
+}
+
+function populateEquipInfo(xml, id) {
+	let items = xml.getElementsByTagName("Item");
+	console.log(items[23].getElementsByTagName("Manufacturer")[0].hasChildNodes())
+	for (let i = 0; i < items.length; i++) {
+		if (items[i].getAttribute("id") == id) {
+			let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
+			let make = (items[i].getElementsByTagName("Manufacturer")[0].hasChildNodes() ? items[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
+			let model = (items[i].getElementsByTagName("Model")[0].hasChildNodes() ? items[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
+			let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
+			let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
+			let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
+			let locations = items[i].getElementsByTagName("Location");
+			for (let j = 0; j < locations.length; j++) {
+
+			}
+
+
+			$("#eq-name").attr("value", name)
+			$("#eq-make").attr("value", make)
+			$("#eq-model").attr("value", model)
+			$("#eq-total").attr("value", amount)
+			$("#eq-service").attr("value", service)
+			$("#eq-repair").attr("value", repair)
+			$("#eq-room").attr("value", "")
+			$("#eq-storage").attr("value", "")
+			break;
+		}
+	}
+}
+
+
+$(document).on("click", ".eq-item-text", function(e) {
+	let id = $(e.target).next().attr("data");
+	$(".equip-form").slideDown("fast")
+	loadEquipInfo(id);
+
+	$(window).on("swipeleft", function(e) {
+		$(".equip-form").slideUp("fast");
+	});
+})
 
 
 
@@ -313,7 +436,8 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 				 "pjl-lab-rules":"/",
 				 "pjl-rad-safety":"/",
 				 "pjl-orientation":"/",
-				 "pjl-hazard-ass":"/"}
+				 "pjl-hazard-ass":"/",
+				 "pjl-equipment-page":"/staffresources/equipdb"}
 	var buttonid = $(e.target).attr("id");
 	window.open(links[buttonid], '_blank');
 });

@@ -1,0 +1,207 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Physics Junior Laboratory</title>
+    <link rel="stylesheet" href="../../css/site-wide.css">
+    <link rel="stylesheet" href="../../css/equipment.css">
+    <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/jquery.mobile.custom.min.js"></script>
+    <script src="../../js/d3.min.js"></script>
+    <script src="../../js/FileSaver.js"></script>
+    <script src="../../js/pjl.js"></script>
+
+
+
+    <meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<!-- PJL document dump -->
+<!-- Created by P. Gimby and W. Kyle -->
+<!-- June 2017, University of Calgary -->
+<!-- Despite the lack of rubber duckies -->
+<!-- Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code -->
+
+
+
+
+
+
+
+
+  <body onload=initEquipmentPage()>
+
+
+
+
+    <header>
+      <div id="header-baseline">
+        <div class="wrap">
+          <i id="mobile-nav-button" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+          <a id="pjl-logo" href="/pjl-web/">PJL</a>
+          <div class="need-help">
+            <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
+            <p class="need-help-text">report bug</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <main>
+
+    </main>
+
+
+
+
+    <form class="equip-form" method="post" accept="/php/modifyEquipDB.php">
+
+        <div class="item-options">
+          <div class="db-mod-menu-row">
+            <i class="fa fa-info-circle fa-lg mobile-icon" aria-hidden="true"></i>
+            <h3 class="db-mod-select" id="change-info">Change ID Info</h3>
+            <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+          </div>
+          <div class="subform">
+            <label>Equipment Name</label>
+            <input id="eq-name" name="eq-name" type="text">
+            <label>Manufacturer</label>
+            <input id="eq-make" name="eq-make" type="text">
+            <label>Model</label>
+            <input id="eq-model" name="eq-model" type="text">
+          </div>
+          <div class="db-mod-menu-row">
+            <i class="fa fa-map-marker fa-lg mobile-icon" aria-hidden="true"></i>
+            <h3 class="db-mod-select" id="change-location">Change Locations</h3>
+            <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+          </div>
+          <div class="subform hidden">
+            <label>Room</label>
+            <input id="eq-room" name="eq-room" type="text">
+            <label>Storage</label>
+            <input id="eq-storage" name="eq-storage" type="text">
+          </div>
+          <div class="db-mod-menu-row">
+            <i class="fa fa-wrench fa-lg mobile-icon" aria-hidden="true"></i>
+            <h3 class="db-mod-select" id="change-amounts">Change Service Amounts</h3>
+            <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+          </div>
+          <div class="subform hidden">
+            <label>Total</label>
+            <input id="eq-total" name="eq-total" type="text">
+            <label>In Service</label>
+            <input id="eq-service" name="eq-service" type="text">
+            <label>Under Repair</label>
+            <input id="eq-repair" name="eq-repair" type="text">
+          </div>
+        </div>
+        <input class="submit-button" name="submit" type="submit" value="Submit">
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER CONTENT -->
+
+
+    <footer>
+
+
+      <div class="wrap">
+
+        <div id="footer-left">
+          <h1 class="footer-title" id="footer-pjl-title">The PJL</h1>
+          <p>University of Calgary</p>
+          <p>2500 University Dr. NW</p>
+          <p>Calgary, Alberta, Canada</p>
+          <p>T2N 1N4</p>
+          <p style="visibility: hidden">UofC's copyright</p>
+          <a href="http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf"> privacy policy</a>
+        </div> <!-- end footer left -->
+
+
+        <div id="footer-mid">
+          <h1 class="footer-title" id="footer-staff-title">Staff</h1>
+
+          <div id="staff-members">
+            <!-- Staff member - Peter -->
+            <div class="staff-member">
+              <!-- <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740" target="_blank"><img class="staff-mugshot" src="./img/pgimby-crop.png"/></a> -->
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-gimby">Peter Gimby</h3>
+                <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-5403</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A" target="_blank">Science Theatres 068A</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Staff member - Wes -->
+            <div class="staff-member">
+              <!-- <a href="http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst" target="_blank"><img class="staff-mugshot" src="./img/wernst-crop.png"/></a> -->
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-ernst">Wesley Ernst</h3>
+                <h4 class="staff-title">Laboratory Technician</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-7401</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68" target="_blank">Science Theatres 068</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>  <!-- end footer mid -->
+
+
+
+        <div id="footer-right">
+          <h1 class="footer-title" id="footer-resources-title">Resources</h1>
+          <a href="http://pjl.ucalgary.ca/courses/lab-schedules/schedule-WI2017.pdf" target="_blank">Laboratory Schedule</a>
+          <a href="http://pjl.ucalgary.ca/courses/lab-schedules/rooms-WI2017.pdf" target="_blank">Room Assignments</a>
+          <a href="http://pjl.ucalgary.ca/reference.html" target="_blank">References</a>
+          <a href="http://www.phas.ucalgary.ca/teaching_learning/demonstrations" target="_blank">Demonstrations</a>
+          <a href="http://pjl.ucalgary.ca/staff-resources/staff.html" target="_blank">Staff Resources</a>
+        </div>  <!-- end footer right -->
+
+      </div>  <!-- end footer wrap -->
+
+      <div id="footer-baseline"></div>
+
+    </footer>
+
+  </body>
+
+</html>

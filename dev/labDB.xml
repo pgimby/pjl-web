@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines>
@@ -9191,7 +9191,7 @@
     </Versions>
     <Equipment>
       <Item id="0085">
-        <Name>hainging chain</Name>
+        <Name>hanging chain</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
@@ -9203,7 +9203,7 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0086">
-        <Name>hainging chain pulley</Name>
+        <Name>hanging chain pulley</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0012">

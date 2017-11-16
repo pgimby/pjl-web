@@ -383,102 +383,7 @@ svg text {
 
 
 
-/*EQUIPMENT DATABASE MODIFICATION FORM*/
 
-.eq-mod-form {
-	display: none;
-}
-
-.equip-form {
-	width: 90%;
-	max-width: 400px;
-	/*height: 100%;
-	max-height: 550px;*/
-	margin: auto;
-	position: fixed;
-	z-index: 99;
-	top: 50%;
-	transform: translateY(-50%);
-	/*bottom: 0;*/
-	left: 0;
-	right: 0;
-	background-color: #252525;
-}
-
-.subform {
-	padding: 8px 0;
-}
-
-.subform input {
-	display: block;
-	width: 50%;
-	margin: 4px auto;
-	line-height: 2.2em
-}
-
-.subform label {
-	color: #db751c;
-	color: #42ba32;
-	padding: 8px;
-	display: block;
-	text-align: center;
-	font-weight: 600;
-	border-bottom: solid 1px #666;
-	width: 50%;
-	margin: 12px auto;
-	letter-spacing: 6px;
-}
-
-.subform.hidden {
-	display: none;
-}
-
-.item-options {
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-}
-
-.db-mod-menu-row {
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	color: #ddd;
-	background: linear-gradient(to bottom, #333 0%, #333 50%, #252525 100%);
-	padding: 8px;
-	text-transform: uppercase;
-}
-
-.db-mod-menu-row * {
-	pointer-events: none;
-}
-
-.db-mod-menu-row:not(:nth-last-child(2)) {
-	border-bottom: solid 1px #444;
-}
-
-.db-mod-menu-row:hover {
-	cursor: pointer;
-	background: linear-gradient(to bottom, #444 0%, #444 50%, #353535 100%);
-}
-
-/*.db-mod-menu-row:hover .fa-chevron-right {
-	-ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    transform-origin: 25% 25%;
-}*/
-
-.db-mod-menu-row:hover .mobile-icon {
-	color: #fff;
-	transition: all .3s ease;
-}
-
-.db-mod-menu-row .fa {
-	transition: all .3s ease;
-	line-height: 1.3em;
-}
 
 
 
@@ -1034,6 +939,7 @@ footer {
 
 .submit-button:hover {
 	color: #eee;
+	background-color: #444;
 }
 
 
