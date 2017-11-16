@@ -176,6 +176,7 @@ $(document).on("click", ".eq-item-text", function(e) {
 	$(window).on("swipeleft", function(e) {
 		$(".equip-form").slideUp("fast");
 	});
+	e.stopPropagation();
 })
 
 
