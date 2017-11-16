@@ -1,5 +1,14 @@
 <?php
-echo "<h1>".$_POST['eq-name']."</h1>";
 
+$name = $_POST['eq-name'];
+$make = $_POST['eq-make'];
+$model = $_POST['eq-model'];
+$total = $_POST['eq-total'];
+$service = $_POST['eq-service'];
+$repair = $_POST['eq-repair'];
+$rooms = $_POST['eq-room'];
+$stores = $_POST['eq-storage'];
+
+echo $rooms;
 
 ?>
