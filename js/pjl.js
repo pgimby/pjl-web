@@ -162,7 +162,7 @@ function populateEquipInfo(xml, id) {
 }
 
 function hideEquipModForm() {
-	if ($(".equip-form").style("display") != "none") {
+	if ($(".equip-form").css("display") != "none") {
 		$(".equip-form").slideUp("fast");
 	}
 }
