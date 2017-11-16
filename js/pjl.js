@@ -183,7 +183,12 @@ $(document).on("click", ".equip-form", function(e) {
 	e.stopPropagation();
 });
 
+$(document).on("submit", ".equip-form", function(e) {
+	e.preventDefault();
+	console.log($(e.target).serialize())
+	$.post(siteroot + "/php/modifyEquipDB.php", $(e.target).serialize());
 
+});
 
 
 
