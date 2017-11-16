@@ -44,7 +44,7 @@ h2.eq-item-text:hover {
 
 
 .equip-form {
-	overflow: scroll;
+	overflow-y: scroll;
 	display: none;
 	width: 90%;
 	max-width: 400px;
@@ -59,6 +59,10 @@ h2.eq-item-text:hover {
 	left: 0;
 	right: 0;
 	background-color: #252525;
+}
+
+.equip-form::-webkit-scrollbar {
+	display: none;
 }
 
 .subform {
