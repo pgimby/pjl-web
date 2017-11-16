@@ -9,6 +9,6 @@ $repair = $_POST['eq-repair'];
 $rooms = $_POST['eq-room'];
 $stores = $_POST['eq-storage'];
 
-echo $rooms;
+echo print_r($rooms);
 
 ?>
