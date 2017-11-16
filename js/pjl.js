@@ -161,6 +161,12 @@ function populateEquipInfo(xml, id) {
 	}
 }
 
+function hideEquipModForm() {
+	if ($(".equip-form").style("display") != "none") {
+		$(".equip-form").slideUp("fast");
+	}
+}
+
 
 $(document).on("click", ".eq-item-text", function(e) {
 	let id = $(e.target).next().attr("data");
@@ -460,6 +466,7 @@ $(document).on("click touch", ".contact", function(e) {
 $(document).on("click touch", "body", function(e) {
 	hideContactForm();
 	hideMobileNav();
+	hideEquipModForm();
 	e.stopPropagation();
 });
 
