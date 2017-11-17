@@ -13,17 +13,24 @@ $stores = $_POST['eq-storage'];
 $xml=simplexml_load_file("/var/www/html/data/equipmentDB.xml") or die("Error: Cannot create object");
 
 
-foreach($xml->children() as $items) {
-	if ($items['id'] == $id) {
-		$items->InventoryName = $name;
-		$items->Identification->Manufacturer = $make;
+foreach($xml->children() as $item) {
+	if ($item['id'] == $id) {
+		$item->InventoryName = $name;
+		$item->Identification->Manufacturer = $make;
 		$items->Identification->Model = $model;
+
+		list($loc) = $item->Locations->xpath('.//Location');
+		unset($loc[0]);
+		foreach($rooms as $index=>$room) {
+			$loc = $item->Locations->addChild("Location");
+			$loc->addChild("Room", $room);
+			$loc->addChild("Storage", $stores[$index]);
+		}
 		break;
 	}
 }
 
-echo $id;
 
 file_put_contents("/var/www/html/data/equipmentDB.xml", $xml->asXML());
-
+echo "success";
 ?>
