@@ -11,6 +11,9 @@ $stores = $_POST['eq-storage'];
 $xml=simplexml_load_file("/var/www/html/data/equipmentDB.xml") or die("Error: Cannot create object");
 
 foreach($xml->children() as $items) {
+	if ($items['id'] == "3") {
+
+	}
     echo $items->InventoryName . ", ";
     echo $items->Identification->Manufacturer . ", ";
     echo $items->Identification->Model . "<br>";
