@@ -63,7 +63,7 @@ function loadEquipmentXML() {
             populateEquipDisplay(docXML);
     	}
   	};
-  	xhttp.open("GET", siteroot + "/dev/equipmentDB.xml", true);
+  	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
   	xhttp.send();
 }
 
