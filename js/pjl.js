@@ -145,7 +145,7 @@ function populateEquipInfo(xml, id) {
 			let form = d3.select(".location-subform");
 
 			for (let j = 0; j < locations.length; j++) {
-				console.log(locations.length)
+				console.log(locations)
 				form.insert("label", "#add-location").html("Room");
 				form.insert("input", "#add-location")
 						.attr("id","eq-room")
