@@ -13,9 +13,9 @@ $xml=simplexml_load_file("/var/www/html/data/equipmentDB.xml") or die("Error: Ca
 
 foreach($xml->children() as $items) {
 	if ($items['id'] == $id) {
-		$items->InventoryName[0] = $name;
-		$items->Identification->Manufacturer[0] = $make;
-		$items->Identification->Model[0] = $model;
+		$items->InventoryName = $name;
+		$items->Identification->Manufacturer = $make;
+		$items->Identification->Model = $model;
 	}
 }
 
