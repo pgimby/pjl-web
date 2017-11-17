@@ -173,7 +173,7 @@ function populateEquipInfo(xml, id) {
 function hideEquipModForm() {
 	if ($(".equip-form").css("display") != "none") {
 		$(".equip-form").slideUp("fast");
-		d3.selectAll(".equip-form label, .equip-form input").remove();
+		d3.selectAll(".location-subform label, .location-subform input").remove();
 	}
 }
 
