@@ -10,6 +10,11 @@ $rooms = $_POST['eq-room'];
 $stores = $_POST['eq-storage'];
 $xml=simplexml_load_file("/var/www/html/data/equipmentDB.xml") or die("Error: Cannot create object");
 
-echo print_r($rooms);
+foreach($xml->children() as $items) {
+    echo $items->InventoryName . ", ";
+    echo $items->Identification->Manufacturer . ", ";
+    echo $items->Identification->Model . "<br>";
+}
+
 
 ?>
