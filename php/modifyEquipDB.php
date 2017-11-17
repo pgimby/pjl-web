@@ -12,11 +12,14 @@ $rooms = $_POST['eq-room'];
 $stores = $_POST['eq-storage'];
 $xml=simplexml_load_file("/var/www/html/data/equipmentDB.xml") or die("Error: Cannot create object");
 
+echo $id;
+
 foreach($xml->children() as $items) {
 	if ($items['id'] == $id) {
 		$items->InventoryName = $name;
 		$items->Identification->Manufacturer = $make;
 		$items->Identification->Model = $model;
+		break;
 	}
 }
 
