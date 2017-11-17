@@ -1,5 +1,5 @@
 <?php
-// ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 $id = $_POST['eq-id']
 $name = $_POST['eq-name'];
 $make = $_POST['eq-make'];
