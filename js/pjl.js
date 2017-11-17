@@ -145,6 +145,7 @@ function populateEquipInfo(xml, id) {
 			let form = d3.select(".location-subform");
 
 			for (let j = 0; j < locations.length; j++) {
+				console.log(locations.length)
 				form.insert("label", "#add-location").html("Room");
 				form.insert("input", "#add-location")
 						.attr("id","eq-room")
@@ -172,6 +173,7 @@ function populateEquipInfo(xml, id) {
 function hideEquipModForm() {
 	if ($(".equip-form").css("display") != "none") {
 		$(".equip-form").slideUp("fast");
+		d3.selectAll(".equip-form label, .equip-form input").remove();
 	}
 }
 
