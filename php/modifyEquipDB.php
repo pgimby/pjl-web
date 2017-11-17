@@ -1,5 +1,6 @@
 <?php
 // ini_set('display_errors', 1);
+$id = $_POST['eq-id']
 $name = $_POST['eq-name'];
 $make = $_POST['eq-make'];
 $model = $_POST['eq-model'];
@@ -11,13 +12,14 @@ $stores = $_POST['eq-storage'];
 $xml=simplexml_load_file("/var/www/html/data/equipmentDB.xml") or die("Error: Cannot create object");
 
 foreach($xml->children() as $items) {
-	if ($items['id'] == "3") {
-
+	if ($items['id'] == $id) {
+		$items->InventoryName[0] = $name;
+		$items->Identification->Manufacturer[0] = $make;
+		$items->Identification->Model[0] = $model;
 	}
-    echo $items->InventoryName . ", ";
-    echo $items->Identification->Manufacturer . ", ";
-    echo $items->Identification->Model . "<br>";
 }
 
+
+$xml->asXML("/var/www/html/data/equipmentDB.xml");
 
 ?>

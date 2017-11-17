@@ -167,6 +167,15 @@ function populateEquipInfo(xml, id) {
 			break;
 		}
 	}
+
+	$(document).on("submit", ".equip-form", function(e) {
+		e.preventDefault();
+		let dat = $(e.target).serialize();
+		$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + id, function(data) {
+			console.log(data)
+		});
+
+	});
 }
 
 function hideEquipModForm() {
@@ -192,15 +201,7 @@ $(document).on("click", ".equip-form", function(e) {
 	e.stopPropagation();
 });
 
-$(document).on("submit", ".equip-form", function(e) {
-	e.preventDefault();
-	let dat = $(e.target).serialize();
-	console.log(dat)
-	$.post(siteroot + "/php/modifyEquipDB.php", $(e.target).serialize(), function(data) {
-		console.log(data)
-	});
 
-});
 
 $(document).on("click", "#add-location", function(e) {
 	let form = d3.select(".location-subform");
