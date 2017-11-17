@@ -24,6 +24,6 @@ foreach($xml->children() as $items) {
 
 echo $id;
 
-file_put_contents("/var/www/html/data/equipmentDB-new.xml", $xml->asXML());
+file_put_contents("/var/www/html/data/equipmentDB.xml", $xml->asXML());
 
 ?>
