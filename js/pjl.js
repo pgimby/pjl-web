@@ -172,7 +172,7 @@ function populateEquipInfo(xml, id) {
 		e.preventDefault();
 		let dat = $(e.target).serialize();
 		$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + id, function(data) {
-			console.log(data)
+			hideEquipModForm();
 		});
 
 	});
