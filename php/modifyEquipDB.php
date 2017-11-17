@@ -19,7 +19,7 @@ foreach($xml->children() as $item) {
 		$item->Identification->Manufacturer = $make;
 		$items->Identification->Model = $model;
 
-		list($loc) = $item->Locations->xpath('.//Location');
+		list($loc) = $item->Locations->xpath("Location");
 		unset($loc[0]);
 		foreach($rooms as $index=>$room) {
 			$loc = $item->Locations->addChild("Location");
@@ -30,7 +30,7 @@ foreach($xml->children() as $item) {
 	}
 }
 
-
-file_put_contents("/var/www/html/data/equipmentDB.xml", $xml->asXML());
 echo "success";
+file_put_contents("/var/www/html/data/equipmentDB.xml", $xml->asXML());
+
 ?>
