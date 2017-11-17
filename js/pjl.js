@@ -150,13 +150,13 @@ function populateEquipInfo(xml, id) {
 						.attr("id","eq-room")
 						.attr("name","eq-room[]")
 						.attr("type","text")
-						.attr("value", locationnode[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue);
+						.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue);
 				form.insert("label", "#add-location").html("Storage");
 				form.insert("input", "#add-location")
 						.attr("id","eq-storage")
 						.attr("name","eq-storage[]")
 						.attr("type","text")
-						.attr("value", locationnode[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue);
+						.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue);
 			}
 			$("#eq-name").attr("value", name)
 			$("#eq-make").attr("value", make)
