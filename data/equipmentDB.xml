@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
   <Item id="0001">
     <InventoryName>Fluke multimeter</InventoryName>
@@ -4590,7 +4590,7 @@
     <Documents/>
   </Item>
   <Item id="0422">
-    <InventoryName>critical potential tube</InventoryName>
+    <InventoryName>Fluke multimeter</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6306,8 +6306,8 @@
   <Item id="0460">
     <InventoryName>yellow spring scale</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Pasco</Manufacturer>
+      <Model></Model>
     </Identification>
     <Kit isKit="false"/>
     <Locations/>
