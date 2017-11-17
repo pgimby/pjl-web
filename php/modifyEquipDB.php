@@ -1,5 +1,6 @@
 <?php
 ini_set('display_errors', 1);
+error_reporting(E_ALL);
 $id = $_POST['eq-id']
 $name = $_POST['eq-name'];
 $make = $_POST['eq-make'];
@@ -19,9 +20,8 @@ foreach($xml->children() as $items) {
 	}
 }
 
-echo $id;
 
 
-// $xml->asXML("/var/www/html/data/equipmentDB.xml");
+$xml->asXML("/var/www/html/data/equipmentDB.xml");
 
 ?>
