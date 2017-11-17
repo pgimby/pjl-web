@@ -141,7 +141,7 @@ function populateEquipInfo(xml, id) {
 			let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
 			let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
 			let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
-			let locations = items[i].getElementsByTagName("Location");
+			let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
 			let form = d3.select(".location-subform");
 
 			for (let j = 0; j < locations.length; j++) {
