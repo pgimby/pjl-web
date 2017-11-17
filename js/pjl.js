@@ -125,11 +125,6 @@ function loadEquipInfo(id) {
     	if (xhttp.readyState == 4 && xhttp.status == 200) {
             let docXML = xhttp.responseXML;
             populateEquipInfo(docXML, id);
-            let form = d3.select(".location-subform");
-			form.insert("label", "#add-location").html("Room");
-			form.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
-			form.insert("label", "#add-location").html("Storage");
-			form.insert("input", "#add-location").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
     	}
   	};
   	xhttp.open("GET", siteroot + "/dev/equipmentDB.xml", true);
@@ -147,19 +142,28 @@ function populateEquipInfo(xml, id) {
 			let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
 			let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
 			let locations = items[i].getElementsByTagName("Location");
+			let form = d3.select(".location-subform");
+
 			for (let j = 0; j < locations.length; j++) {
-
+				form.insert("label", "#add-location").html("Room");
+				form.insert("input", "#add-location")
+						.attr("id","eq-room")
+						.attr("name","eq-room[]")
+						.attr("type","text")
+						.attr("value", locationnode[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue);
+				form.insert("label", "#add-location").html("Storage");
+				form.insert("input", "#add-location")
+						.attr("id","eq-storage")
+						.attr("name","eq-storage[]")
+						.attr("type","text")
+						.attr("value", locationnode[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue);
 			}
-
-
 			$("#eq-name").attr("value", name)
 			$("#eq-make").attr("value", make)
 			$("#eq-model").attr("value", model)
 			$("#eq-total").attr("value", amount)
 			$("#eq-service").attr("value", service)
 			$("#eq-repair").attr("value", repair)
-			$("#eq-room").attr("value", "")
-			$("#eq-storage").attr("value", "")
 			break;
 		}
 	}
@@ -189,7 +193,7 @@ $(document).on("click", ".equip-form", function(e) {
 
 $(document).on("submit", ".equip-form", function(e) {
 	e.preventDefault();
-	console.log("submitted")
+	let dat = $(e.target).serialize
 	$.post(siteroot + "/php/modifyEquipDB.php", $(e.target).serialize(), function(data) {
 		console.log(data)
 	});
