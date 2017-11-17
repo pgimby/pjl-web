@@ -127,7 +127,7 @@ function loadEquipInfo(id) {
             populateEquipInfo(docXML, id);
     	}
   	};
-  	xhttp.open("GET", siteroot + "/dev/equipmentDB.xml", true);
+  	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
   	xhttp.send();
 }
 
