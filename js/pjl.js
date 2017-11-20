@@ -335,7 +335,6 @@ class EquipmentModForm {
 			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + that.id, function(data) {
 				that.removeForm();
 			});
-
 		});
 
 		$(document).on("click", ".equip-mod-form", function(e) {
@@ -366,6 +365,7 @@ class EquipmentModForm {
 	}
 
 	removeForm() {
+		_unsetEventListeners();
 		$(".equip-mod-form").slideUp("fast", function() {
 			d3.select(".equip-mod-form").remove();
 		});
