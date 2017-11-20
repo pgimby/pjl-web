@@ -1,6 +1,6 @@
 <?php
-// ini_set('display_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 $id = $_POST['eq-id'];
 $name = $_POST['eq-name'];
 $make = $_POST['eq-make'];
@@ -30,7 +30,6 @@ foreach($xml->children() as $item) {
 	}
 }
 
-echo "success";
 file_put_contents("/var/www/html/data/equipmentDB.xml", $xml->asXML());
 
 ?>
