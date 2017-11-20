@@ -6,6 +6,7 @@
 
 //var mainxmlpath = "/data/labDB.xml";
 var mainxmlpath = "/dev/labDB.xml";
+var equipmentdatabasepath = "/data/equipmentDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
 //var siteroot = "/html-future";
 //var siteroot = "/pjl-web";
@@ -150,13 +151,15 @@ function populateEquipInfo(xml, id) {
 						.attr("id","eq-room")
 						.attr("name","eq-room[]")
 						.attr("type","text")
-						.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue);
+						.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue)
+						.attr("autocomplete", "off");
 				form.insert("label", "#add-location").html("Storage");
 				form.insert("input", "#add-location")
 						.attr("id","eq-storage")
 						.attr("name","eq-storage[]")
 						.attr("type","text")
-						.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue);
+						.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue)
+						.attr("autocomplete", "off");
 			}
 			$("#eq-name").attr("value", name)
 			$("#eq-make").attr("value", make)
@@ -210,6 +213,63 @@ $(document).on("click", "#add-location", function(e) {
 	form.insert("label", "#add-location").html("Storage");
 	form.insert("input", "#add-location").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
 });
+
+
+
+
+
+
+class EquipmentModForm {
+
+	constructor(id) {
+		this.id = id;
+	}
+
+
+	_buildForm() {
+		let form = d3.select("main").append("form").classed("equip-mod-form", true);
+		let formheader = form.append("div").classed("header", true);
+		let headerid = formheader.append("h3").classed("id", true).html("# " + String(this.id));
+
+		let formbody = form.append("div").classed("buttons", true);
+		let idbutton = formbody.append("div").classed("", true);
+		let locbutton = formbody.append("div").classed("", true);
+		let amountbutton = formbody.append("div").classed("", true);
+
+
+		let formfooter = form.append("div").classed("footer", true);
+
+	}
+
+
+	_populateForm() {
+
+	}
+
+	_loadEquipDB() {
+		let that = this;
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+	    	if (xhttp.readyState == 4 && xhttp.status == 200) {
+	            let docXML = xhttp.responseXML;
+	            that._populateForm();
+	    	}
+	  	};
+	  	xhttp.open("GET", siteroot + equipmentdatabasepath, true);
+	  	xhttp.send();
+	}
+
+	refresh() {
+
+	}
+
+
+
+}
+
+
+
+
 
 
 

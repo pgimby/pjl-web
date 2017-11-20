@@ -141,6 +141,12 @@ h2.eq-item-text:hover {
 }
 
 
+#add-location {
+	width: 16px;
+	height: 16px;
+}
+
+
 
 
 @media only screen and (max-width : 800px) {
