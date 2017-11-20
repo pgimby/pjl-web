@@ -35,7 +35,7 @@ os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group +
 
 
 # unmount source files
-os.system("echo umount " + sourceFolder)
+os.system("umount " + sourceFolder)
 
 
 # confirm end of script

@@ -39,7 +39,7 @@ repositoryDest="watt:~/repository/"
 # sync files to web server
 
 
-rsync --delete -anvz $repositorySource pgimby@$repositoryDest
+rsync --delete -avz $repositorySource pgimby@$repositoryDest
 
 
 find /usr/local/master/labs/repository/ -type d -exec chmod 755 {} \;
