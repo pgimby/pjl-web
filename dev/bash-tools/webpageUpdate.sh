@@ -32,11 +32,13 @@ repositoryDest="watt:~/repository/"
 rsync --delete -anvz $repositorySource pgimby@$repositoryDest
 
 
-#find /usr/local/master/labs/repository/ -type d -exec chmod 755 {} \;
-#find -type f -exec chmod 644 {} $repositorySource \;
-#find -type d -exec chown pgimby.pjl_admins {} $repositorySource \;
-#find -type f -exec chown pgimby.pjl_admins {} $repositorySource \;
+find /usr/local/master/labs/repository/ -type d -exec chmod 755 {} \;
+find -type f -exec chmod 644 {} $repositorySource \;
+find -type d -exec chown pgimby.pjl_admins {} $repositorySource \;
+find -type f -exec chown pgimby.pjl_admins {} $repositorySource \;
 
+chown root.www-data /var/www/html/data/labDB.xml
+chown root.www-data /var/www/html/data/equipmentDB.xml
 
 exit 0
 
