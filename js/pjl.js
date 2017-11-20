@@ -354,10 +354,14 @@ class EquipmentModForm {
 			form.insert("div", "#add-location").classed("sep", true);
 		});
 
-		$(window).on("swipeleft", function(e) {
-			that.removeForm()
-		});
+		$(window).on("swipeleft", that.removeForm);
+	}
 
+	_unsetEventListeners() {
+		$(document).off("submit", ".equip-mod-form");
+		$(document).off("click", ".equip-mod-form");
+		$(document).off("click", "#add-location");
+		$(window).off("swipeleft", that.removeForm);
 	}
 
 	removeForm() {
