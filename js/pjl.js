@@ -189,16 +189,7 @@ function hideEquipModForm() {
 }
 
 
-$(document).on("click", ".eq-item-text", function(e) {
-	let id = $(e.target).next().attr("data");
-	$(".equip-form").slideDown("fast")
-	loadEquipInfo(id);
 
-	$(window).on("swipeleft", function(e) {
-		$(".equip-form").slideUp("fast");
-	});
-	e.stopPropagation();
-})
 
 $(document).on("click", ".equip-form", function(e) {
 	e.stopPropagation();
@@ -223,6 +214,7 @@ class EquipmentModForm {
 
 	constructor(id) {
 		this.id = id;
+		this._buildForm();
 	}
 
 
@@ -232,13 +224,58 @@ class EquipmentModForm {
 		let headerid = formheader.append("h3").classed("id", true).html("# " + String(this.id));
 
 		let formbody = form.append("div").classed("buttons", true);
-		let idbutton = formbody.append("div").classed("", true);
-		let locbutton = formbody.append("div").classed("", true);
-		let amountbutton = formbody.append("div").classed("", true);
+		let idbutton = formbody.append("div").classed("id-button", true);
+		let idcontent = formbody.append("div").classed("id-content", true);
+		idcontent.append("label").html("Name");
+		idcontent.append("input").classed("eq-name")
+					.attr("name", "eq-name")
+					.attr("type", "text")
+					.attr("autocomplete", "off");
+		idcontent.append("label").html("Manufacturer");
+		idcontent.append("input").classed("eq-make")
+					.attr("name", "eq-make")
+					.attr("type", "text")
+					.attr("autocomplete", "off");
+		idcontent.append("label").html("Model");
+		idcontent.append("input").classed("eq-model")
+					.attr("name", "eq-model")
+					.attr("type", "text")
+					.attr("autocomplete", "off");
+
+
+		let locbutton = formbody.append("div").classed("loc-button", true);
+		let loccontent = formbody.append("div").classed("loc-content", true);
+		let addloc = loccontent.append("i").classed("fa fa-plus fa-lg", true)
+									.attr("id", "add-location")
+									.attr("aria-hidden", "true");
+
+
+
+		let amountbutton = formbody.append("div").classed("amount-button", true);
+		let amountcontent = formbody.append("div").classed("amount-content", true);
+		amountcontent.append("label").html("Total");
+		amountcontent.append("input").classed("eq-total")
+					.attr("name", "eq-total")
+					.attr("type", "text")
+					.attr("autocomplete", "off");
+		amountcontent.append("label").html("In Service");
+		amountcontent.append("input").classed("eq-service")
+					.attr("name", "eq-service")
+					.attr("type", "text")
+					.attr("autocomplete", "off");
+		amountcontent.append("label").html("Under Repair");
+		amountcontent.append("input").classed("eq-repair")
+					.attr("name", "eq-repair")
+					.attr("type", "text")
+					.attr("autocomplete", "off");
 
 
 		let formfooter = form.append("div").classed("footer", true);
-
+		let submit = formfooter.append("input")
+						.classed("submit-button")
+						.attr("name", "submit")
+						.attr("type", "submit")
+						.attr("value", "Submit");
 	}
 
 
@@ -267,7 +304,17 @@ class EquipmentModForm {
 
 }
 
+$(document).on("click", ".eq-item-text", function(e) {
+	// let id = $(e.target).next().attr("data");
+	// $(".equip-form").slideDown("fast")
+	// loadEquipInfo(id);
 
+	// $(window).on("swipeleft", function(e) {
+	// 	$(".equip-form").slideUp("fast");
+	// });
+	let form = new EquipmentModForm($(e.target).next().attr("data"));
+	e.stopPropagation();
+})
 
 
 
