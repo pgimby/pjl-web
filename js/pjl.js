@@ -326,13 +326,14 @@ class EquipmentModForm {
 	}
 
 	_setEventListeners() {
+		var that = this;
 
 		$(document).on("submit", ".equip-mod-form", function(e) {
 			e.preventDefault();
 			let dat = $(e.target).serialize();
 			console.log(dat)
-			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + this.id, function(data) {
-				this.removeForm();
+			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + that.id, function(data) {
+				that.removeForm();
 			});
 		});
 
@@ -343,7 +344,7 @@ class EquipmentModForm {
 
 
 		$(document).on("click", "#add-location", function(e) {
-			let form = this.form.select(".loc-content");
+			let form = that.form.select(".loc-content");
 			let row = form.insert("div", "#add-location").classed("loc-row", true);
 			row.insert("label", "#add-location").html("Room");
 			row.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
@@ -353,7 +354,7 @@ class EquipmentModForm {
 			form.insert("div", "#add-location").classed("sep", true);
 		});
 
-		$(window).on("swipeleft", this.removeForm.bind(this));
+		$(window).on("swipeleft", that.removeForm.bind(that));
 	}
 
 	_unsetEventListeners() {
