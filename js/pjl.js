@@ -227,17 +227,17 @@ class EquipmentModForm {
 		let idbutton = formbody.append("div").classed("id-button", true);
 		let idcontent = formbody.append("div").classed("id-content", true);
 		idcontent.append("label").html("Name");
-		idcontent.append("input").classed("eq-name")
+		idcontent.append("input").classed("eq-name", true)
 					.attr("name", "eq-name")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
 		idcontent.append("label").html("Manufacturer");
-		idcontent.append("input").classed("eq-make")
+		idcontent.append("input").classed("eq-make", true)
 					.attr("name", "eq-make")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
 		idcontent.append("label").html("Model");
-		idcontent.append("input").classed("eq-model")
+		idcontent.append("input").classed("eq-model", true)
 					.attr("name", "eq-model")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
