@@ -24,12 +24,12 @@ os.system("mount " + slugFolder + " " + sourceFolder)
 
 
 # sync master copy to live copy
-os.system("rsync -avz " + sourceFolder + "/ " + destFolder + "/")
+os.system("rsync --delete -avz " + sourceFolder + "/ " + destFolder + "/")
 
 
 # change permissions and ownerships of files and folders
 os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
-os.system("find " + destFolder + " -type f -exec chmod 6445 {} \;")
+os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
 os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 
