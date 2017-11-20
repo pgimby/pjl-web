@@ -663,7 +663,6 @@ $(document).on("click touch", ".contact", function(e) {
 $(document).on("click touch", "body", function(e) {
 	hideContactForm();
 	hideMobileNav();
-	hideEquipModForm();
 	e.stopPropagation();
 });
 
@@ -681,16 +680,7 @@ $(window).on("swiperight", showMobileNav);
 
 
 
-$(document).on("click touch", ".db-mod-menu-row", function(e) {
-	let formrow = $(e.target);
-	$(".db-mod-menu-row").each(function(index, el) {
-		if ($(el) !== formrow) {
-			$(el).next().slideUp("fast");
-		}
-	});
-	let formsection = formrow.next();
-	formsection.slideToggle("fast");
-});
+
 
 
 
