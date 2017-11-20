@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 $id = $_POST['eq-id'];
 $name = $_POST['eq-name'];
 $make = $_POST['eq-make'];
@@ -17,7 +17,10 @@ foreach($xml->children() as $item) {
 	if ($item['id'] == $id) {
 		$item->InventoryName = $name;
 		$item->Identification->Manufacturer = $make;
-		$items->Identification->Model = $model;
+		$item->Identification->Model = $model;
+		$item->Quantity->Total = $total;
+		$item->Quantity->InService = $service;
+		$item->Quantity->UnderRepair = $repair;
 
 		list($loc) = $item->Locations->xpath("Location");
 		unset($loc[0]);
