@@ -331,6 +331,7 @@ class EquipmentModForm {
 		$(document).on("submit", ".equip-mod-form", function(e) {
 			e.preventDefault();
 			let dat = $(e.target).serialize();
+			console.log(dat)
 			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + that.id, function(data) {
 				that.removeForm();
 			});
