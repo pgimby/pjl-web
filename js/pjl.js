@@ -254,17 +254,17 @@ class EquipmentModForm {
 		let amountbutton = formbody.append("div").classed("amount-button", true);
 		let amountcontent = formbody.append("div").classed("amount-content", true);
 		amountcontent.append("label").html("Total");
-		amountcontent.append("input").classed("eq-total")
+		amountcontent.append("input").classed("eq-total", true)
 					.attr("name", "eq-total")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
 		amountcontent.append("label").html("In Service");
-		amountcontent.append("input").classed("eq-service")
+		amountcontent.append("input").classed("eq-service", true)
 					.attr("name", "eq-service")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
 		amountcontent.append("label").html("Under Repair");
-		amountcontent.append("input").classed("eq-repair")
+		amountcontent.append("input").classed("eq-repair", true)
 					.attr("name", "eq-repair")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
@@ -272,7 +272,7 @@ class EquipmentModForm {
 
 		let formfooter = form.append("div").classed("footer", true);
 		let submit = formfooter.append("input")
-						.classed("submit-button")
+						.classed("submit-button", true)
 						.attr("name", "submit")
 						.attr("type", "submit")
 						.attr("value", "Submit");
