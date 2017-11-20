@@ -361,7 +361,7 @@ class EquipmentModForm {
 		$(document).off("submit", ".equip-mod-form");
 		$(document).off("click", ".equip-mod-form");
 		$(document).off("click", "#add-location");
-		$(window).off("swipeleft", that.removeForm);
+		$(window).off("swipeleft", this.removeForm);
 	}
 
 	removeForm() {
