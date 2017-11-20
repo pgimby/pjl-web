@@ -361,11 +361,11 @@ class EquipmentModForm {
 		$(document).off("submit", ".equip-mod-form");
 		$(document).off("click", ".equip-mod-form");
 		$(document).off("click", "#add-location");
-		$(window).off("swipeleft", this.removeForm);
+		$(window).off("swipeleft", this.removeForm.bind(this));
 	}
 
 	removeForm() {
-		_unsetEventListeners();
+		this._unsetEventListeners();
 		$(".equip-mod-form").slideUp("fast", function() {
 			d3.select(".equip-mod-form").remove();
 		});
