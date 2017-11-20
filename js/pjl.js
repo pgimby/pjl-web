@@ -221,10 +221,10 @@ class EquipmentModForm {
 	_buildForm() {
 		let form = d3.select("main").append("form").classed("equip-mod-form", true);
 		let formheader = form.append("div").classed("header", true);
-		let headerid = formheader.append("h3").classed("id", true).html("# " + String(this.id));
+		let headerid = formheader.append("h3").classed("id", true).html("Equipment Item #" + String(this.id));
 
 		let formbody = form.append("div").classed("buttons", true);
-		let idbutton = formbody.append("div").classed("id-button", true);
+		let idbutton = formbody.append("h3").classed("button id-button", true).html("Identification");
 		let idcontent = formbody.append("div").classed("id-content", true);
 		idcontent.append("label").html("Name");
 		idcontent.append("input").classed("eq-name", true)
@@ -243,7 +243,7 @@ class EquipmentModForm {
 					.attr("autocomplete", "off");
 
 
-		let locbutton = formbody.append("div").classed("loc-button", true);
+		let locbutton = formbody.append("h3").classed("button loc-button", true).html("Add/Change Locations");
 		let loccontent = formbody.append("div").classed("loc-content", true);
 		let addloc = loccontent.append("i").classed("fa fa-plus fa-lg", true)
 									.attr("id", "add-location")
@@ -251,20 +251,24 @@ class EquipmentModForm {
 
 
 
-		let amountbutton = formbody.append("div").classed("amount-button", true);
+		let amountbutton = formbody.append("h3").classed("button amount-button", true).html("Change Service Amounts");
 		let amountcontent = formbody.append("div").classed("amount-content", true);
-		amountcontent.append("label").html("Total");
-		amountcontent.append("input").classed("eq-total", true)
+		let amountrow = amountcontent.append("div").classed("amount-row", true);
+		amountrow.append("label").html("Total");
+		amountrow.append("input").classed("eq-total", true)
 					.attr("name", "eq-total")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
-		amountcontent.append("label").html("In Service");
-		amountcontent.append("input").classed("eq-service", true)
+
+		amountrow = amountcontent.append("div").classed("amount-row", true);
+		amountrow.append("label").html("In Service");
+		amountrow.append("input").classed("eq-service", true)
 					.attr("name", "eq-service")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
-		amountcontent.append("label").html("Under Repair");
-		amountcontent.append("input").classed("eq-repair", true)
+		amountrow = amountcontent.append("div").classed("amount-row", true);
+		amountrow.append("label").html("Under Repair");
+		amountrow.append("input").classed("eq-repair", true)
 					.attr("name", "eq-repair")
 					.attr("type", "text")
 					.attr("autocomplete", "off");
@@ -272,7 +276,7 @@ class EquipmentModForm {
 
 		let formfooter = form.append("div").classed("footer", true);
 		let submit = formfooter.append("input")
-						.classed("submit-button", true)
+						.classed("submit", true)
 						.attr("name", "submit")
 						.attr("type", "submit")
 						.attr("value", "Submit");

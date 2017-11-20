@@ -942,7 +942,7 @@ footer {
 	background-color: #444;
 }
 
-#add-location {
+/*#add-location {
 	padding: 5px;
 	background-color: #333;
 	border: 1px solid #000;
@@ -955,7 +955,7 @@ footer {
 
 #add-location:hover {
 	background-color: #555
-}
+}*/
 
 
 @media only screen and (max-width : 800px) {
