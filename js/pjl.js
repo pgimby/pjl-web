@@ -365,6 +365,7 @@ class EquipmentModForm {
 	}
 
 	removeForm() {
+		console.log(this)
 		this._unsetEventListeners();
 		$(".equip-mod-form").slideUp("fast", function() {
 			d3.select(".equip-mod-form").remove();
