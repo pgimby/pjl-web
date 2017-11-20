@@ -326,14 +326,13 @@ class EquipmentModForm {
 	}
 
 	_setEventListeners() {
-		let that = this;
 
 		$(document).on("submit", ".equip-mod-form", function(e) {
 			e.preventDefault();
 			let dat = $(e.target).serialize();
 			console.log(dat)
-			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + that.id, function(data) {
-				that.removeForm();
+			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + this.id, function(data) {
+				this.removeForm();
 			});
 		});
 
@@ -344,7 +343,7 @@ class EquipmentModForm {
 
 
 		$(document).on("click", "#add-location", function(e) {
-			let form = that.form.select(".loc-content");
+			let form = this.form.select(".loc-content");
 			let row = form.insert("div", "#add-location").classed("loc-row", true);
 			row.insert("label", "#add-location").html("Room");
 			row.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
@@ -354,18 +353,18 @@ class EquipmentModForm {
 			form.insert("div", "#add-location").classed("sep", true);
 		});
 
-		$(window).on("swipeleft", that.removeForm);
+		$(window).on("swipeleft", this.removeForm.bind(this));
 	}
 
 	_unsetEventListeners() {
 		$(document).off("submit", ".equip-mod-form");
 		$(document).off("click", ".equip-mod-form");
 		$(document).off("click", "#add-location");
-		$(window).off("swipeleft", this.removeForm.bind(this));
+		$(window).off("swipeleft", this.removeForm);
 	}
 
 	removeForm() {
-		console.log(this)
+		console.log(this);
 		this._unsetEventListeners();
 		$(".equip-mod-form").slideUp("fast", function() {
 			d3.select(".equip-mod-form").remove();
