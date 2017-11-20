@@ -120,66 +120,66 @@ function linkPDFs() {
 
 
 
-function loadEquipInfo(id) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-    	if (xhttp.readyState == 4 && xhttp.status == 200) {
-            let docXML = xhttp.responseXML;
-            populateEquipInfo(docXML, id);
-    	}
-  	};
-  	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
-  	xhttp.send();
-}
+// function loadEquipInfo(id) {
+// 	var xhttp = new XMLHttpRequest();
+// 	xhttp.onreadystatechange = function() {
+//     	if (xhttp.readyState == 4 && xhttp.status == 200) {
+//             let docXML = xhttp.responseXML;
+//             populateEquipInfo(docXML, id);
+//     	}
+//   	};
+//   	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
+//   	xhttp.send();
+// }
 
-function populateEquipInfo(xml, id) {
-	let items = xml.getElementsByTagName("Item");
-	for (let i = 0; i < items.length; i++) {
-		if (items[i].getAttribute("id") == id) {
-			let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
-			let make = (items[i].getElementsByTagName("Manufacturer")[0].hasChildNodes() ? items[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
-			let model = (items[i].getElementsByTagName("Model")[0].hasChildNodes() ? items[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
-			let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
-			let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
-			let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
-			let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
-			let form = d3.select(".location-subform");
+// function populateEquipInfo(xml, id) {
+// 	let items = xml.getElementsByTagName("Item");
+// 	for (let i = 0; i < items.length; i++) {
+// 		if (items[i].getAttribute("id") == id) {
+// 			let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
+// 			let make = (items[i].getElementsByTagName("Manufacturer")[0].hasChildNodes() ? items[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
+// 			let model = (items[i].getElementsByTagName("Model")[0].hasChildNodes() ? items[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
+// 			let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
+// 			let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
+// 			let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
+// 			let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
+// 			let form = d3.select(".location-subform");
 
-			for (let j = 0; j < locations.length; j++) {
-				form.insert("label", "#add-location").html("Room");
-				form.insert("input", "#add-location")
-						.attr("id","eq-room")
-						.attr("name","eq-room[]")
-						.attr("type","text")
-						.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue)
-						.attr("autocomplete", "off");
-				form.insert("label", "#add-location").html("Storage");
-				form.insert("input", "#add-location")
-						.attr("id","eq-storage")
-						.attr("name","eq-storage[]")
-						.attr("type","text")
-						.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue)
-						.attr("autocomplete", "off");
-			}
-			$("#eq-name").attr("value", name)
-			$("#eq-make").attr("value", make)
-			$("#eq-model").attr("value", model)
-			$("#eq-total").attr("value", amount)
-			$("#eq-service").attr("value", service)
-			$("#eq-repair").attr("value", repair)
-			break;
-		}
-	}
+// 			for (let j = 0; j < locations.length; j++) {
+// 				form.insert("label", "#add-location").html("Room");
+// 				form.insert("input", "#add-location")
+// 						.attr("id","eq-room")
+// 						.attr("name","eq-room[]")
+// 						.attr("type","text")
+// 						.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue)
+// 						.attr("autocomplete", "off");
+// 				form.insert("label", "#add-location").html("Storage");
+// 				form.insert("input", "#add-location")
+// 						.attr("id","eq-storage")
+// 						.attr("name","eq-storage[]")
+// 						.attr("type","text")
+// 						.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue)
+// 						.attr("autocomplete", "off");
+// 			}
+// 			$("#eq-name").attr("value", name)
+// 			$("#eq-make").attr("value", make)
+// 			$("#eq-model").attr("value", model)
+// 			$("#eq-total").attr("value", amount)
+// 			$("#eq-service").attr("value", service)
+// 			$("#eq-repair").attr("value", repair)
+// 			break;
+// 		}
+// 	}
 
 
-}
+// }
 
-function hideEquipModForm() {
-	if ($(".equip-form").css("display") != "none") {
-		$(".equip-form").slideUp("fast");
-		d3.selectAll(".location-subform label, .location-subform input").remove();
-	}
-}
+// function hideEquipModForm() {
+// 	if ($(".equip-form").css("display") != "none") {
+// 		$(".equip-form").slideUp("fast");
+// 		d3.selectAll(".location-subform label, .location-subform input").remove();
+// 	}
+// }
 
 
 
@@ -372,7 +372,9 @@ class EquipmentModForm {
 }
 
 $(document).on("click", ".eq-item-text", function(e) {
-	let form = new EquipmentModForm($(e.target).next().attr("data"));
+	let id = $(e.target).next().attr("data");
+	console.log(id);
+	let form = new EquipmentModForm(id);
 	e.stopPropagation();
 })
 
