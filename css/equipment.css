@@ -55,7 +55,7 @@ h2.eq-item-text:hover {
 	right: 0;
 	width: 100%;
 	max-width: 500px;
-	height: 90%;
+	height: 100%;
 	margin: auto;
 	overflow-y: scroll;
 	background-color: #333;
@@ -111,12 +111,38 @@ h2.eq-item-text:hover {
 	margin: 8px auto;
 }
 
+.equip-mod-form .amount-content input {
+	max-width: 72px;
+}
+
 .equip-mod-form .loc-content {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	width: 80%;
 	margin: 8px auto;
+}
+
+.equip-mod-form .loc-content input {
+	max-width: 72px;
+}
+
+.equip-mod-form .loc-row {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 4px 0;
+}
+
+.equip-mod-form .loc-content .sep {
+	border-bottom: 1px solid #bbb;
+	height: 0px;
+	width: 100%;
+	margin: 4px 0;
+}
+
+.equip-mod-form .loc-row input {
+	max-width: 72px;
 }
 
 .equip-mod-form .button {

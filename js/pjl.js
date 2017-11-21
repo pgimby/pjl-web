@@ -120,90 +120,71 @@ function linkPDFs() {
 
 
 
-function loadEquipInfo(id) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-    	if (xhttp.readyState == 4 && xhttp.status == 200) {
-            let docXML = xhttp.responseXML;
-            populateEquipInfo(docXML, id);
-    	}
-  	};
-  	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
-  	xhttp.send();
-}
+// function loadEquipInfo(id) {
+// 	var xhttp = new XMLHttpRequest();
+// 	xhttp.onreadystatechange = function() {
+//     	if (xhttp.readyState == 4 && xhttp.status == 200) {
+//             let docXML = xhttp.responseXML;
+//             populateEquipInfo(docXML, id);
+//     	}
+//   	};
+//   	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
+//   	xhttp.send();
+// }
 
-function populateEquipInfo(xml, id) {
-	let items = xml.getElementsByTagName("Item");
-	for (let i = 0; i < items.length; i++) {
-		if (items[i].getAttribute("id") == id) {
-			let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
-			let make = (items[i].getElementsByTagName("Manufacturer")[0].hasChildNodes() ? items[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
-			let model = (items[i].getElementsByTagName("Model")[0].hasChildNodes() ? items[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
-			let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
-			let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
-			let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
-			let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
-			let form = d3.select(".location-subform");
+// function populateEquipInfo(xml, id) {
+// 	let items = xml.getElementsByTagName("Item");
+// 	for (let i = 0; i < items.length; i++) {
+// 		if (items[i].getAttribute("id") == id) {
+// 			let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
+// 			let make = (items[i].getElementsByTagName("Manufacturer")[0].hasChildNodes() ? items[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
+// 			let model = (items[i].getElementsByTagName("Model")[0].hasChildNodes() ? items[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
+// 			let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
+// 			let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
+// 			let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
+// 			let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
+// 			let form = d3.select(".location-subform");
 
-			for (let j = 0; j < locations.length; j++) {
-				form.insert("label", "#add-location").html("Room");
-				form.insert("input", "#add-location")
-						.attr("id","eq-room")
-						.attr("name","eq-room[]")
-						.attr("type","text")
-						.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue)
-						.attr("autocomplete", "off");
-				form.insert("label", "#add-location").html("Storage");
-				form.insert("input", "#add-location")
-						.attr("id","eq-storage")
-						.attr("name","eq-storage[]")
-						.attr("type","text")
-						.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue)
-						.attr("autocomplete", "off");
-			}
-			$("#eq-name").attr("value", name)
-			$("#eq-make").attr("value", make)
-			$("#eq-model").attr("value", model)
-			$("#eq-total").attr("value", amount)
-			$("#eq-service").attr("value", service)
-			$("#eq-repair").attr("value", repair)
-			break;
-		}
-	}
+// 			for (let j = 0; j < locations.length; j++) {
+// 				form.insert("label", "#add-location").html("Room");
+// 				form.insert("input", "#add-location")
+// 						.attr("id","eq-room")
+// 						.attr("name","eq-room[]")
+// 						.attr("type","text")
+// 						.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue)
+// 						.attr("autocomplete", "off");
+// 				form.insert("label", "#add-location").html("Storage");
+// 				form.insert("input", "#add-location")
+// 						.attr("id","eq-storage")
+// 						.attr("name","eq-storage[]")
+// 						.attr("type","text")
+// 						.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue)
+// 						.attr("autocomplete", "off");
+// 			}
+// 			$("#eq-name").attr("value", name)
+// 			$("#eq-make").attr("value", make)
+// 			$("#eq-model").attr("value", model)
+// 			$("#eq-total").attr("value", amount)
+// 			$("#eq-service").attr("value", service)
+// 			$("#eq-repair").attr("value", repair)
+// 			break;
+// 		}
+// 	}
 
-	$(document).on("submit", ".equip-form", function(e) {
-		e.preventDefault();
-		let dat = $(e.target).serialize();
-		$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + id, function(data) {
-			hideEquipModForm();
-		});
 
-	});
-}
+// }
 
-function hideEquipModForm() {
-	if ($(".equip-form").css("display") != "none") {
-		$(".equip-form").slideUp("fast");
-		d3.selectAll(".location-subform label, .location-subform input").remove();
-	}
-}
+// function hideEquipModForm() {
+// 	if ($(".equip-form").css("display") != "none") {
+// 		$(".equip-form").slideUp("fast");
+// 		d3.selectAll(".location-subform label, .location-subform input").remove();
+// 	}
+// }
 
 
 
 
-$(document).on("click", ".equip-form", function(e) {
-	e.stopPropagation();
-});
 
-
-
-$(document).on("click", "#add-location", function(e) {
-	let form = d3.select(".location-subform");
-	form.insert("label", "#add-location").html("Room");
-	form.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
-	form.insert("label", "#add-location").html("Storage");
-	form.insert("input", "#add-location").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
-});
 
 
 
@@ -214,16 +195,19 @@ class EquipmentModForm {
 
 	constructor(id) {
 		this.id = id;
+		this.form;
 		this._buildForm();
+		this._populateForm();
+		this._setEventListeners();
 	}
 
 
 	_buildForm() {
-		let form = d3.select("main").append("form").classed("equip-mod-form", true);
-		let formheader = form.append("div").classed("header", true);
+		this.form = d3.select("main").append("form").classed("equip-mod-form", true);
+		let formheader = this.form.append("div").classed("header", true);
 		let headerid = formheader.append("h3").classed("id", true).html("Equipment Item #" + String(this.id));
 
-		let formbody = form.append("div").classed("buttons", true);
+		let formbody = this.form.append("div").classed("buttons", true);
 		let idbutton = formbody.append("h3").classed("button id-button", true).html("Identification");
 		let idcontent = formbody.append("div").classed("id-content", true);
 		idcontent.append("label").html("Name");
@@ -274,7 +258,7 @@ class EquipmentModForm {
 					.attr("autocomplete", "off");
 
 
-		let formfooter = form.append("div").classed("footer", true);
+		let formfooter = this.form.append("div").classed("footer", true);
 		let submit = formfooter.append("input")
 						.classed("submit", true)
 						.attr("name", "submit")
@@ -284,7 +268,7 @@ class EquipmentModForm {
 
 
 	_populateForm() {
-
+		this._loadEquipDB()
 	}
 
 	_loadEquipDB() {
@@ -293,15 +277,99 @@ class EquipmentModForm {
 		xhttp.onreadystatechange = function() {
 	    	if (xhttp.readyState == 4 && xhttp.status == 200) {
 	            let docXML = xhttp.responseXML;
-	            that._populateForm();
+	            that._populateFields(docXML);
 	    	}
 	  	};
 	  	xhttp.open("GET", siteroot + equipmentdatabasepath, true);
 	  	xhttp.send();
 	}
 
-	refresh() {
+	_populateFields(xml) {
+		let that = this;
+		let items = xml.getElementsByTagName("Item");
+		for (let i = 0; i < items.length; i++) {
+			if (items[i].getAttribute("id") == that.id) {
+				let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
+				let make = (items[i].getElementsByTagName("Manufacturer")[0].hasChildNodes() ? items[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
+				let model = (items[i].getElementsByTagName("Model")[0].hasChildNodes() ? items[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
+				let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
+				let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
+				let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
+				let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
+				let form = that.form.select(".loc-content");
 
+				for (let j = 0; j < locations.length; j++) {
+					form.insert("label", "#add-location").html("Room");
+					form.insert("input", "#add-location")
+							.attr("id","eq-room")
+							.attr("name","eq-room[]")
+							.attr("type","text")
+							.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue)
+							.attr("autocomplete", "off");
+					form.insert("label", "#add-location").html("Storage");
+					form.insert("input", "#add-location")
+							.attr("id","eq-storage")
+							.attr("name","eq-storage[]")
+							.attr("type","text")
+							.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue)
+							.attr("autocomplete", "off");
+				}
+				$(".eq-name").attr("value", name)
+				$(".eq-make").attr("value", make)
+				$(".eq-model").attr("value", model)
+				$(".eq-total").attr("value", amount)
+				$(".eq-service").attr("value", service)
+				$(".eq-repair").attr("value", repair)
+				break;
+			}
+		}
+	}
+
+	_setEventListeners() {
+		var that = this;
+
+		$(document).on("submit", ".equip-mod-form", function(e) {
+			e.preventDefault();
+			let dat = $(e.target).serialize();
+			console.log(dat)
+			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + that.id, function(data) {
+				that.removeForm();
+			});
+		});
+
+		$(document).on("click", ".equip-mod-form", function(e) {
+			e.stopPropagation();
+		});
+
+
+
+		$(document).on("click", "#add-location", function(e) {
+			let form = that.form.select(".loc-content");
+			let row = form.insert("div", "#add-location").classed("loc-row", true);
+			row.insert("label", "#add-location").html("Room");
+			row.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
+			row = form.insert("div", "#add-location").classed("loc-row", true);
+			row.insert("label", "#add-location").html("Storage");
+			row.insert("input", "#add-location").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
+			form.insert("div", "#add-location").classed("sep", true);
+		});
+
+		$(window).on("swipeleft", that.removeForm.bind(that));
+	}
+
+	_unsetEventListeners() {
+		$(document).off("submit", ".equip-mod-form");
+		$(document).off("click", ".equip-mod-form");
+		$(document).off("click", "#add-location");
+		$(window).off("swipeleft", this.removeForm);
+	}
+
+	removeForm() {
+		console.log(this);
+		this._unsetEventListeners();
+		$(".equip-mod-form").slideUp("fast", function() {
+			d3.select(".equip-mod-form").remove();
+		});
 	}
 
 
@@ -309,14 +377,9 @@ class EquipmentModForm {
 }
 
 $(document).on("click", ".eq-item-text", function(e) {
-	// let id = $(e.target).next().attr("data");
-	// $(".equip-form").slideDown("fast")
-	// loadEquipInfo(id);
-
-	// $(window).on("swipeleft", function(e) {
-	// 	$(".equip-form").slideUp("fast");
-	// });
-	let form = new EquipmentModForm($(e.target).next().attr("data"));
+	let id = $(e.target).next().attr("data");
+	console.log(id);
+	let form = new EquipmentModForm(id);
 	e.stopPropagation();
 })
 
@@ -605,7 +668,6 @@ $(document).on("click touch", ".contact", function(e) {
 $(document).on("click touch", "body", function(e) {
 	hideContactForm();
 	hideMobileNav();
-	hideEquipModForm();
 	e.stopPropagation();
 });
 
@@ -623,16 +685,7 @@ $(window).on("swiperight", showMobileNav);
 
 
 
-$(document).on("click touch", ".db-mod-menu-row", function(e) {
-	let formrow = $(e.target);
-	$(".db-mod-menu-row").each(function(index, el) {
-		if ($(el) !== formrow) {
-			$(el).next().slideUp("fast");
-		}
-	});
-	let formsection = formrow.next();
-	formsection.slideToggle("fast");
-});
+
 
 
 

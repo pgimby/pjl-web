@@ -17,7 +17,10 @@ foreach($xml->children() as $item) {
 	if ($item['id'] == $id) {
 		$item->InventoryName = $name;
 		$item->Identification->Manufacturer = $make;
-		$items->Identification->Model = $model;
+		$item->Identification->Model = $model;
+		$item->Quantity->Total = $total;
+		$item->Quantity->InService = $service;
+		$item->Quantity->UnderRepair = $repair;
 
 		list($loc) = $item->Locations->xpath("Location");
 		unset($loc[0]);
@@ -30,7 +33,6 @@ foreach($xml->children() as $item) {
 	}
 }
 
-echo "success";
 file_put_contents("/var/www/html/data/equipmentDB.xml", $xml->asXML());
 
 ?>
