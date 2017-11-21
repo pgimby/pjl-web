@@ -20,22 +20,22 @@ group = "pjl_admins"
 apacheUser = "www-data"
 
 # mount the master copy of the repository on to web server
-#os.system("mount " + slugFolder + " " + sourceFolder)
+os.system("mount " + slugFolder + " " + sourceFolder)
 
 
 # sync master copy to live copy
-#os.system("rsync --delete -avz " + sourceFolder + "/ " + destFolder + "/")
+os.system("rsync --delete -avz " + sourceFolder + "/ " + destFolder + "/")
 
 
 # unmount source files
-#os.system("umount " + sourceFolder)
+os.system("umount " + sourceFolder)
 
 
 # change permissions and ownerships of files and folders
-#os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
-#os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
-#os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
-#os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
+os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
+os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
+os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
+os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 
 os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
 os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
