@@ -25,9 +25,11 @@ foreach($xml->children() as $item) {
 		list($loc) = $item->Locations->xpath("Location");
 		unset($loc[0]);
 		foreach($rooms as $index=>$room) {
-			$loc = $item->Locations->addChild("Location");
-			$loc->addChild("Room", $room);
-			$loc->addChild("Storage", $stores[$index]);
+			if (!empty($rooms) and !empty($stores[$index])) {
+				$loc = $item->Locations->addChild("Location");
+				$loc->addChild("Room", $room);
+				$loc->addChild("Storage", $stores[$index]);
+			}
 		}
 		break;
 	}
