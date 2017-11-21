@@ -126,10 +126,6 @@ class EquipmentModForm {
 		self.id = id;
 		self.form = d3.select("main").append("form").classed("equip-mod-form", true);
 		console.log("constructor",self.form)
-		self._buildForm();
-		self._populateForm();
-		self._setEventListeners();
-
 
 
 		self._buildForm = function() {
@@ -297,6 +293,9 @@ class EquipmentModForm {
 			});
 		}
 
+		self._buildForm();
+		self._populateForm();
+		self._setEventListeners();
 	}
 
 }
