@@ -37,13 +37,13 @@ apacheUser = "www-data"
 #os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 #os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 
-os.system("echo chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
-os.system("echo chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
-os.system("echo chmod 660 " + webRoot + "/data/labDB.xml" )
-os.system("echo chmod 660 " + webRoot + "/data/equipmentDB.xml" )
+os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
+os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
+os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
+os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
 
-os.system("echo chown root" + apacheUser + " " + webRoot + "/data/labDB.xml" )
-os.system("echo chmod 775 " + webRoot + "/data" )
+os.system("chown root." + apacheUser + " " + webRoot + "/data" )
+os.system("chmod 775 " + webRoot + "/data" )
 
 # confirm end of script
 print("...and then there will be cake")
