@@ -198,7 +198,7 @@ h2.eq-item-text:hover {
 
 @media only screen and (max-width : 800px) {
 	.equip-mod-form {
-		width: 100%;
+		width: auto;
 		height: 100%;
 		overflow-y: scroll;
 	}
