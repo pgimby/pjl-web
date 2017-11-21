@@ -874,7 +874,7 @@ footer {
 }
 
 
-.contact {
+/*.contact {
 	position: fixed;
 	margin: 0 auto;
 	bottom: 0;
@@ -926,7 +926,7 @@ footer {
 
 #comment-email::placeholder, .comment-form textarea {
 	color: #000;
-}
+}*/
 
 .submit-button {
 	margin: 4px auto;
@@ -963,10 +963,6 @@ footer {
 	background-color: #555
 }*/
 
-
-@media only screen and (max-width : 800px) {
-
-}
 
 
 
