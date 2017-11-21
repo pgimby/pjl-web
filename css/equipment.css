@@ -145,6 +145,10 @@ h2.eq-item-text:hover {
 	max-width: 72px;
 }
 
+.equip-mod-form input {
+	line-height: 1.6em;
+}
+
 .equip-mod-form .button {
 	margin: 4px 0;
 	border-top: 1px solid #111;
@@ -177,6 +181,7 @@ h2.eq-item-text:hover {
 	justify-content: space-around;
 	border-top: 1px solid #111;
 	background-color: #222;
+	min-height: 36px;
 }
 
 .equip-mod-form .submit {
@@ -198,7 +203,7 @@ h2.eq-item-text:hover {
 
 @media only screen and (max-width : 800px) {
 	.equip-mod-form {
-		width: 100%;
+		width: auto;
 		height: 100%;
 		overflow-y: scroll;
 	}

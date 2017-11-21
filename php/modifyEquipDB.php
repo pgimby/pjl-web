@@ -22,12 +22,16 @@ foreach($xml->children() as $item) {
 		$item->Quantity->InService = $service;
 		$item->Quantity->UnderRepair = $repair;
 
-		list($loc) = $item->Locations->xpath("Location");
-		unset($loc[0]);
+		$locs = $item->Locations->xpath("Location");
+		foreach($locs as $l) {
+			unset($l[0]);
+		}
 		foreach($rooms as $index=>$room) {
-			$loc = $item->Locations->addChild("Location");
-			$loc->addChild("Room", $room);
-			$loc->addChild("Storage", $stores[$index]);
+			if (!empty($rooms) and !empty($stores[$index])) {
+				$loc = $item->Locations->addChild("Location");
+				$loc->addChild("Room", $room);
+				$loc->addChild("Storage", $stores[$index]);
+			}
 		}
 		break;
 	}
