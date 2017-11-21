@@ -125,11 +125,9 @@ class EquipmentModForm {
 		var self = this;
 		self.id = id;
 		self.form = d3.select("main").append("form").classed("equip-mod-form", true);
-		console.log("constructor",self.form)
 
 
 		self._buildForm = function() {
-			console.log("_buildForm",self.form)
 			let formheader = self.form.append("div").classed("header", true);
 			let headerid = formheader.append("h3").classed("id", true).html("Equipment Item #" + String(self.id));
 
