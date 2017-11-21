@@ -571,15 +571,15 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 
 
 $(document).on("click touch", ".need-help", function(e) {
-	showContactForm();
+	window.location.href = "mailto:pgimby@phas.ucalgary.ca?Subject=PJLWeb%20Bug%20Report";
 	e.stopPropagation();
 });
 
 
 
-$(document).on("click touch", ".contact", function(e) {
-	e.stopPropagation();
-});
+// $(document).on("click touch", ".contact", function(e) {
+// 	e.stopPropagation();
+// });
 
 
 
@@ -1075,14 +1075,14 @@ function hideMobileNav() {
 }
 
 
-function showContactForm() {
-	$(".contact").slideDown("fast");
-}
+// function showContactForm() {
+// 	$(".contact").slideDown("fast");
+// }
 
 
-function hideContactForm() {
-	$(".contact").slideUp("fast");
-}
+// function hideContactForm() {
+// 	$(".contact").slideUp("fast");
+// }
 
 
 
