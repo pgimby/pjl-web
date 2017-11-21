@@ -982,13 +982,6 @@ footer {
 
 
 @media screen and (max-width: 880px) {
-	.sort-span-desktop {
-		display: none;
-	}
-
-	.sort-span-mobile {
-		display: inline;
-	}
 
 	footer .wrap {
 		display: -webkit-flex;
