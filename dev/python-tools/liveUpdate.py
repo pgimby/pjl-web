@@ -12,12 +12,12 @@ import os
 slugFolder = "slug:/usr/local/master/labs/repository"
 sourceFolder = "/mnt/local/repository.slug"
 destFolder = "/mnt/local/repository"
-
+webRoot = "/var/www/html"
 
 # define owners of files
 owner = "pgimby"
 group = "pjl_admins"
-
+apacheUser = "www-data"
 
 # mount the master copy of the repository on to web server
 os.system("mount " + slugFolder + " " + sourceFolder)
@@ -27,16 +27,23 @@ os.system("mount " + slugFolder + " " + sourceFolder)
 os.system("rsync --delete -avz " + sourceFolder + "/ " + destFolder + "/")
 
 
+# unmount source files
+os.system("umount " + sourceFolder)
+
+
 # change permissions and ownerships of files and folders
 os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
 os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
 os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 
+os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
+os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
+os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
+os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
 
-# unmount source files
-os.system("umount " + sourceFolder)
-
+os.system("chown root." + apacheUser + " " + webRoot + "/data" )
+os.system("chmod 775 " + webRoot + "/data" )
 
 # confirm end of script
 print("...and then there will be cake")
