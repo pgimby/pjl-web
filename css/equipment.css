@@ -181,6 +181,7 @@ h2.eq-item-text:hover {
 	justify-content: space-around;
 	border-top: 1px solid #111;
 	background-color: #222;
+	min-height: 36px;
 }
 
 .equip-mod-form .submit {
