@@ -7,6 +7,12 @@
 /*******************************************************************/
 
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: logoFont;
     src: url(../fonts/webfonts_Flipside-BRK/Flipside-BRK.ttf.woff);
