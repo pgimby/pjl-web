@@ -14,6 +14,9 @@
             echo "message sending success";
          } else {
             echo "message sending failed";
+            echo $to;
+            echo $subject;
+            echo $body;
          }
     }
 ?>
