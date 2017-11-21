@@ -79,7 +79,7 @@ header {
 
 #header-baseline {
 	height: 36px;
-	width: 100%;
+	width: 100vw;
 	background-color: #333;
 	position: fixed;
 	border-bottom: 1px solid #FFF;
