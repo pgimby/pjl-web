@@ -472,7 +472,7 @@ svg text {
 	width: 40px;
 	height: 40px;
 	top: -45px;
-	right: -35px;
+	right: 0;
 }
 
 	.search-icon:hover {
