@@ -121,8 +121,9 @@ function linkPDFs() {
 
 class EquipmentModForm {
 
+	var that = this;
+
 	constructor(id) {
-		var that = this;
 		that.id = id;
 		that.form = d3.select("main").append("form").classed("equip-mod-form", true);
 		console.log("constructor",that.form)
