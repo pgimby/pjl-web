@@ -122,22 +122,22 @@ function linkPDFs() {
 class EquipmentModForm {
 
 	constructor(id) {
-		var self = this;
-		self.id = id;
-		self.form = d3.select("main").append("form").classed("equip-mod-form", true);
-		console.log("constructor",self.form)
-		self._buildForm();
-		self._populateForm();
-		self._setEventListeners();
+		var that = this;
+		that.id = id;
+		that.form = d3.select("main").append("form").classed("equip-mod-form", true);
+		console.log("constructor",that.form)
+		that._buildForm();
+		that._populateForm();
+		that._setEventListeners();
 	}
 
 
 	_buildForm() {
-		console.log("_buildForm",self.form)
-		let formheader = self.form.append("div").classed("header", true);
-		let headerid = formheader.append("h3").classed("id", true).html("Equipment Item #" + String(self.id));
+		console.log("_buildForm",that.form)
+		let formheader = that.form.append("div").classed("header", true);
+		let headerid = formheader.append("h3").classed("id", true).html("Equipment Item #" + String(that.id));
 
-		let formbody = self.form.append("div").classed("buttons", true);
+		let formbody = that.form.append("div").classed("buttons", true);
 		let idbutton = formbody.append("h3").classed("button id-button", true).html("Identification");
 		let idcontent = formbody.append("div").classed("id-content", true);
 		idcontent.append("label").html("Name");
@@ -188,7 +188,7 @@ class EquipmentModForm {
 					.attr("autocomplete", "off");
 
 
-		let formfooter = this.form.append("div").classed("footer", true);
+		let formfooter = that.form.append("div").classed("footer", true);
 		let submit = formfooter.append("input")
 						.classed("submit", true)
 						.attr("name", "submit")
@@ -198,7 +198,7 @@ class EquipmentModForm {
 
 
 	_populateForm() {
-		self._loadEquipDB()
+		that._loadEquipDB()
 	}
 
 	_loadEquipDB() {
@@ -206,7 +206,7 @@ class EquipmentModForm {
 		xhttp.onreadystatechange = function() {
 	    	if (xhttp.readyState == 4 && xhttp.status == 200) {
 	            let docXML = xhttp.responseXML;
-	            self._populateFields(docXML);
+	            that._populateFields(docXML);
 	    	}
 	  	};
 	  	xhttp.open("GET", siteroot + equipmentdatabasepath, true);
@@ -224,7 +224,7 @@ class EquipmentModForm {
 				let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
 				let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
 				let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
-				let form = self.form.select(".loc-content");
+				let form = that.form.select(".loc-content");
 
 				for (let j = 0; j < locations.length; j++) {
 					form.insert("label", "#add-location").html("Room");
@@ -258,8 +258,8 @@ class EquipmentModForm {
 		$(document).on("submit", ".equip-mod-form", function(e) {
 			e.preventDefault();
 			let dat = $(e.target).serialize();
-			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + self.id, function(data) {
-				self.removeForm();
+			$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + that.id, function(data) {
+				that.removeForm();
 			});
 		});
 
@@ -270,7 +270,7 @@ class EquipmentModForm {
 
 
 		$(document).on("click", "#add-location", function(e) {
-			let form = self.form.select(".loc-content");
+			let form = that.form.select(".loc-content");
 			let row = form.insert("div", "#add-location").classed("loc-row", true);
 			row.insert("label", "#add-location").html("Room");
 			row.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
@@ -280,20 +280,20 @@ class EquipmentModForm {
 			form.insert("div", "#add-location").classed("sep", true);
 		});
 
-		$(window).on("swipeleft", self.removeForm);
+		$(window).on("swipeleft", that.removeForm);
 	}
 
 	_unsetEventListeners() {
 		$(document).off("submit", ".equip-mod-form");
 		$(document).off("click", ".equip-mod-form");
 		$(document).off("click", "#add-location");
-		$(window).off("swipeleft", self.removeForm);
+		$(window).off("swipeleft", that.removeForm);
 	}
 
 	removeForm() {
-		self._unsetEventListeners();
+		that._unsetEventListeners();
 		$(".equip-mod-form").slideUp("fast", function() {
-			self.form.remove();
+			that.form.remove();
 		});
 	}
 
