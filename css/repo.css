@@ -369,12 +369,20 @@ select {
 	flex-wrap: wrap;
 }
 
+.lab-data-equipment {
+	display: inline;
+}
+
+.equip-item {
+	display: inline;
+}
+/*
 .equip-item:hover {
 	color: #fff;
 	background-color: #555;
 	border-radius: 3px;
 	cursor: pointer;
-}
+}*/
 
 
 #show-all-button {

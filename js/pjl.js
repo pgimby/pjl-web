@@ -124,7 +124,7 @@ class EquipmentModForm {
 	constructor(id) {
 		var self = this;
 		self.id = id;
-		self.form = d3.select("main").append("form").classed("equip-mod-form", true);
+		self.form = d3.select("body").append("form").classed("equip-mod-form", true);
 
 
 		self._buildForm = function() {
@@ -289,6 +289,7 @@ class EquipmentModForm {
 			$(".equip-mod-form").slideUp("fast", function() {
 				self.form.remove();
 			});
+			$("main").removeClass("blurred-page");
 		}
 
 		self._buildForm();
@@ -577,14 +578,9 @@ $(document).on("click touch", ".need-help", function(e) {
 
 
 
-// $(document).on("click touch", ".contact", function(e) {
-// 	e.stopPropagation();
-// });
-
-
 
 $(document).on("click touch", "body", function(e) {
-	hideContactForm();
+	// hideContactForm();
 	hideMobileNav();
 	e.stopPropagation();
 });
@@ -603,6 +599,7 @@ $(window).on("swiperight", showMobileNav);
 
 
 $(document).on("click", ".eq-item-text", function(e) {
+	$("main").addClass("blurred-page");
 	let id = $(e.target).next().attr("data");
 	let form = new EquipmentModForm(id);
 	e.stopPropagation();
@@ -660,7 +657,9 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
 		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
 		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
-		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + spanTheList(getLabEquipmentList(lab), "equip-item").join(", "));
+		var labequipment = extendedlabdata.append("div").classed("lab-data-equipment", true);
+		getLabEquipmentList(lab, labequipment);
+		//.html("<span>Equipment:</span> " + spanTheList(getLabEquipmentList(lab), "equip-item").join(", "));
 
 		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
 		var directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
@@ -676,7 +675,26 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 
 
 
+function getLabEquipmentList(lab, selection) {  //returns an array of d3 nodes to be appended to the lab equipment div given an XML "lab" node
+	let equipnode = lab.getElementsByTagName("Equipment")[0];
+	let items = equipnode.getElementsByTagName("Item");
+	selection.append("p").classed("equipment-label", true).html("<span>Equipment: </span>");
+	for (let i = 0; i < items.length; i++) {
+		let alt = (Boolean(items[i].getElementsByTagName("Alt")[0]) ? {name: items[i].getElementsByTagName("Alt")[0].childNodes[0].nodeValue, id: items[i].getAttribute("id")} : null);
+		let item = {};
+		item.name = items[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+		item.id = items[i].getAttribute("id");
+		item.amount = items[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue;
+		item.alt = alt;
 
+		let eqitem = selection.append("div").classed("equip-item", true);
+		eqitem.append("p").classed("equip-item-primary", true).attr("data-eqid", item.id).html(item.name);
+		eqitem.append("p").classed("equip-item-amount", true).html("(" + String(item.amount) + ")");
+		if (Boolean(item.alt)) {
+			eqitem.append("p").classed("equip-item-alt", true).attr("data-eqid", item.alt.id).html(item.alt.name);
+		}
+	}
+}
 
 
 
@@ -1074,15 +1092,6 @@ function hideMobileNav() {
 	}
 }
 
-
-// function showContactForm() {
-// 	$(".contact").slideDown("fast");
-// }
-
-
-// function hideContactForm() {
-// 	$(".contact").slideUp("fast");
-// }
 
 
 
@@ -1705,14 +1714,16 @@ function getLabDisciplinesList(lab) {  //return an array of disciplines (strings
 
 
 
-function getLabEquipmentList(lab) {  //return an array of equipment (strings) for an XML "lab" node - not type safe
-	var list = [];
-	var equipment = lab.getElementsByTagName("Item");
-	for (var i = equipment.length - 1; i >= 0; i--) {
-		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue + ")");
-	}
-	return list;
-}
+// function getLabEquipmentList(lab) {  //return an array of equipment (strings) for an XML "lab" node - not type safe
+// 	let list = [];
+// 	let ids = [];
+// 	var equipment = lab.getElementsByTagName("Item");
+// 	for (var i = equipment.length - 1; i >= 0; i--) {
+// 		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue + ")");
+// 		ids.push()
+// 	}
+// 	return {"equip": list, "ids": ids};
+// }
 
 
 
@@ -1915,9 +1926,9 @@ function mostRecentDecimalSemester() {
 }
 
 
-function spanTheList(list, id) {
-	for (var i = list.length - 1; i >= 0; i--) {
-		list[i] = "<span class='" + id + "'>" + String(list[i]).split("(")[0].trim() + "</span>" + " (" + String(list[i]).split("(")[1];
+function spanTheList(list, classname, ids) {
+	for (let i = list.length - 1; i >= 0; i--) {
+		list[i] = "<span class='" + classname + "' data-eqid=" + ids[i] + ">" + String(list[i]).split("(")[0].trim() + "</span>" + " (" + String(list[i]).split("(")[1];
 	}
 	return list;
 }
