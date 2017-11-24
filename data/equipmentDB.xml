@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
   <Item id="0001">
     <InventoryName>Fluke multimeter</InventoryName>
@@ -8,19 +8,13 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      <Location>
-        <Room>ST037</Room>
-        <Storage>C1</Storage>
-      </Location>
-      <Location>
-        <Room>ST038</Room>
-        <Storage>C1</Storage>
-      </Location>
-    </Locations>
+      
+      
+    <Location><Room>ST038</Room><Storage>C3</Storage></Location><Location><Room>ST37</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total>48</Total>
-      <InService>46</InService>
-      <UnderRepair>2</UnderRepair>
+      <Total>45</Total>
+      <InService>43</InService>
+      <UnderRepair></UnderRepair>
     </Quantity>
     <Documents>
       <Document>

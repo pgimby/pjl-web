@@ -9,9 +9,10 @@ import os
 
 
 # define folder locations
-slugFolder = "slug:/usr/local/master/labs/repository"
-sourceFolder = "/mnt/local/repository.slug"
-destFolder = "/mnt/local/repository"
+slugFolder = "slug:/usr/local/master/labs"
+sourceFolder = "/mnt/local/labs.slug"
+destFolder = "/mnt/local/labs"
+repositoryFolder = "/mnt/local/labs/repository"
 webRoot = "/var/www/html"
 
 # define owners of files

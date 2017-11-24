@@ -549,7 +549,8 @@ $(document).on("mouseleave", ".resource-dropdown", function(e) {
 
 $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-content", function(e) {
 	var links = {"pjl-regress": "/",
-				 "pjl-lab-schedule": "/",
+				 "pjl-lab-schedule": "/data/schedules/schedule-current.pdf",
+				 "pjl-rooms-schedule": "/data/schedules/rooms-current.pdf",
 				 "pjl-geiger": "/",
 				 "pjl-repository": "/repository",
 				 "pjl-linearization": "/",
