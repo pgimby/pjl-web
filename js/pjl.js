@@ -369,6 +369,7 @@ $(document).on("click", ".search-icon", function(e) {
 $(document).on("keypress", "#search-bar", function(e) {
 	var key = e.which;
 	if (key == 13) {
+		console.log("enter")
 	 	$(".search-icon").click();
 	 	return false;
 	}
