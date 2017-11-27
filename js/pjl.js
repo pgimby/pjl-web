@@ -39,6 +39,12 @@ var siteroot = "";
 function initRepoPage() {  //initialize the repository page
 	loadXML();
 	$("#search-bar").val("");
+	// $(".dl-modal").slimScroll({
+	//     position: 'left',
+	//     height: 'auto',
+	//     railVisible: true,
+	//     alwaysVisible: false
+	// });
 }
 
 
@@ -119,12 +125,17 @@ function linkPDFs() {
 
 
 
+
+
+
+
+
 class EquipmentModForm {
 
 	constructor(id) {
 		var self = this;
 		self.id = id;
-		self.form = d3.select("main").append("form").classed("equip-mod-form", true);
+		self.form = d3.select("body").append("form").classed("equip-mod-form", true);
 
 
 		self._buildForm = function() {
@@ -289,6 +300,7 @@ class EquipmentModForm {
 			$(".equip-mod-form").slideUp("fast", function() {
 				self.form.remove();
 			});
+			$("main").removeClass("blurred-page");
 		}
 
 		self._buildForm();
@@ -368,6 +380,7 @@ $(document).on("click", ".search-icon", function(e) {
 $(document).on("keypress", "#search-bar", function(e) {
 	var key = e.which;
 	if (key == 13) {
+		console.log("enter")
 	 	$(".search-icon").click();
 	 	return false;
 	}
@@ -383,12 +396,38 @@ $(document).on("click", "#search-help-button", function(e) {
 
 
 $(document).on("click", "#zip-icon", function(e) {
-	$("#zip-options-number").text("(" + String(countNumRecords()) + " records selected)");
+	$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
 	$("main").addClass("blurred-page");
 	$(".modal-screen").css("display", "block");
-	$("#zip-options").stop().fadeIn(200);
+	$(".dl-modal").stop().fadeIn(200);
 });
 
+
+$(document).on("click", ".dl-modal-check", function(e) {
+	let checkitem = $(e.target);
+	if (checkitem.attr("id") == "ALL" && checkitem.hasClass("checked")) {
+		return;
+	} else if (checkitem.attr("id") == "ALL" && !checkitem.hasClass("checked")) {
+		checkitem.toggleClass("checked");
+		checkitem.siblings().removeClass("checked");
+	} else if (checkitem.attr("id") != "ALL" && $(".dl-modal-check#ALL").hasClass("checked")) {
+		checkitem.toggleClass("checked");
+		$(".dl-modal-check#ALL").removeClass("checked");
+	} else if (checkitem.attr("id") != "ALL" && !$(".dl-modal-check#ALL").hasClass("checked")) {
+		checkitem.toggleClass("checked");
+	}
+	if (!$(".dl-modal-check").hasClass("checked")) {
+		$(".dl-modal-check#ALL").addClass("checked");
+	}
+});
+
+
+
+
+
+$(document).on("click", ".dl-modal, .eq-modal", function(e) {
+	e.stopPropagation();
+});
 
 
 $(document).on("click", ".modal-close-button", function(e) {
@@ -413,14 +452,14 @@ $(document).on("click", ".modal-content", function(e) {
 
 
 
-$(document).on("click", "#zip-download-confirm", function(e) {
-	var all = $("#ALL").prop("checked");
-	var pdf = $("#PDF").prop("checked");
-	var tex = $("#TEX").prop("checked");
-	var dat = $("#DAT").prop("checked");
-	var img = $("#IMG").prop("checked");
-	var extradocs = $("#EXTRA").prop("checked");
-	if (!pdf && !tex && !extradocs && !all && !dat && !img) {
+$(document).on("click", ".dl-modal-footer", function(e) {
+	var all = $("#ALL").hasClass("checked");
+	var pdf = $("#PDF").hasClass("checked");
+	var tex = $("#TEX").hasClass("checked");
+	var tmp = $("#TEMPLATES").hasClass("checked");
+	var med = $("#MEDIA").hasClass("checked");
+	var extradocs = $("#EXTRA").hasClass("checked");
+	if (!pdf && !tex && !extradocs && !all && !tmp && !med) {
 		$("#zip-download-confirm").css({"borderRadius": "0"});
 		$("#zip-options-warning").stop().slideDown(400, function() {
 			setTimeout(function(){
@@ -434,7 +473,7 @@ $(document).on("click", "#zip-download-confirm", function(e) {
 	$(".modal-screen").css({display: 'none'});
 	$("#zip-options").css({display: 'none'});
 	$("#zip-progress-bar").slideDown(200, function() {
-		collectFiles2Zip(all, pdf, tex, dat, img, extradocs);
+		collectFiles2Zip(all, pdf, tex, tmp, med, extradocs);
 	});
 });
 
@@ -549,6 +588,7 @@ $(document).on("mouseleave", ".resource-dropdown", function(e) {
 $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-content", function(e) {
 	var links = {"pjl-regress": "/",
 				 "pjl-lab-schedule": "/data/schedules/schedule-current.pdf",
+				 "pjl-rooms-schedule": "/data/schedules/rooms-current.pdf",
 				 "pjl-geiger": "/",
 				 "pjl-repository": "/repository",
 				 "pjl-linearization": "/",
@@ -577,14 +617,9 @@ $(document).on("click touch", ".need-help", function(e) {
 
 
 
-// $(document).on("click touch", ".contact", function(e) {
-// 	e.stopPropagation();
-// });
-
-
 
 $(document).on("click touch", "body", function(e) {
-	hideContactForm();
+	// hideContactForm();
 	hideMobileNav();
 	e.stopPropagation();
 });
@@ -603,6 +638,7 @@ $(window).on("swiperight", showMobileNav);
 
 
 $(document).on("click", ".eq-item-text", function(e) {
+	$("main").addClass("blurred-page");
 	let id = $(e.target).next().attr("data");
 	let form = new EquipmentModForm(id);
 	e.stopPropagation();
@@ -660,7 +696,9 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
 		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
 		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
-		var labequipment = extendedlabdata.append("p").classed("lab-data-equipment", true).html("<span>Equipment:</span> " + spanTheList(getLabEquipmentList(lab), "equip-item").join(", "));
+		var labequipment = extendedlabdata.append("div").classed("lab-data-equipment", true);
+		getLabEquipmentList(lab, labequipment);
+		//.html("<span>Equipment:</span> " + spanTheList(getLabEquipmentList(lab), "equip-item").join(", "));
 
 		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
 		var directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
@@ -676,7 +714,26 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 
 
 
+function getLabEquipmentList(lab, selection) {  //returns an array of d3 nodes to be appended to the lab equipment div given an XML "lab" node
+	let equipnode = lab.getElementsByTagName("Equipment")[0];
+	let items = equipnode.getElementsByTagName("Item");
+	selection.append("p").classed("equipment-label", true).html("<span>Equipment: </span>");
+	for (let i = 0; i < items.length; i++) {
+		let alt = (Boolean(items[i].getElementsByTagName("Alt")[0]) ? {name: items[i].getElementsByTagName("Alt")[0].childNodes[0].nodeValue, id: items[i].getAttribute("id")} : null);
+		let item = {};
+		item.name = items[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+		item.id = items[i].getAttribute("id");
+		item.amount = items[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue;
+		item.alt = alt;
 
+		let eqitem = selection.append("div").classed("equip-item", true);
+		eqitem.append("p").classed("equip-item-primary", true).attr("data-eqid", item.id).html(item.name);
+		eqitem.append("p").classed("equip-item-amount", true).html("(" + String(item.amount) + ")");
+		if (Boolean(item.alt)) {
+			eqitem.append("p").classed("equip-item-alt", true).attr("data-eqid", item.alt.id).html(item.alt.name);
+		}
+	}
+}
 
 
 
@@ -1075,15 +1132,6 @@ function hideMobileNav() {
 }
 
 
-// function showContactForm() {
-// 	$(".contact").slideDown("fast");
-// }
-
-
-// function hideContactForm() {
-// 	$(".contact").slideUp("fast");
-// }
-
 
 
 var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.50}
@@ -1453,7 +1501,7 @@ function fileDownloadPromise() {  //return a jQuery promise
 
 
 function beginDownload(filepath, promise) {
-//start downloading PDF and resolve associated promise upon completion (or failure) - not type safe
+//start downloading and resolve associated promise upon completion (or failure) - not type safe
 //return XML HTTP request object
 	var xhttp = new XMLHttpRequest();
 	xhttp.responseType = "blob";
@@ -1468,6 +1516,9 @@ function beginDownload(filepath, promise) {
     		promise.reject();
     	} else if (this.status == 403) {
     		promise.reject();
+    	} else {
+    		$("#zip-progress-bar progress").attr("value", "0");
+			$("#zip-progress-bar").stop().slideUp(500);
     	}
   	};
   	xhttp.open("GET", siteroot + filepath, true);
@@ -1487,7 +1538,7 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 
 
 // var promises = []
-function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
+function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 	var dirlist = [];
 	var filelist = [];
 	var promises = [];
@@ -1496,7 +1547,6 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
-			// console.log("embedded filelist",filelist)
 			promise.resolve();
 		}
 	}
@@ -1509,17 +1559,15 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		let promise = $.Deferred();
 		promises.push(promise)
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
-		// console.log("dir",dirlist[i])
 	}
 
 	var deferredFileList = $.when.apply($, promises);
 
 	deferredFileList.done(function() {
-		filteredlist = filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist);
-		if(doEXTRA) {
+		filteredlist = filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist);
+		if(doEXTRA || doALL) {
 			filteredlist.concat(extradocs);
 		}
-		// console.log("filtered",filteredlist);
 		makePromisesBeginZip(filteredlist);
 		console.log("An elegant syntax for ease of use,\neasy reading. Not abstruse.\n\nHaving this would sure be swell.\nPHP can rot in hell.")
 	});
@@ -1527,7 +1575,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 }
 
 
-function filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist) {
+function filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist) {
 	if (doALL) {
 		return filelist;
 	}
@@ -1544,11 +1592,11 @@ function filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist) {
 			filteredfiles.push(filelist[i]);
 			continue;
 		}
-		if ((filelist[i].endsWith(".txt") || filelist[i].endsWith(".dat") || filelist[i].endsWith(".xml")) && doDAT) {
+		if ((filelist[i].endsWith(".txt") || filelist[i].endsWith(".dat") || filelist[i].endsWith(".xml") || filelist[i].endsWith(".xlsx") || filelist[i].endsWith(".ods") || filelist[i].endsWith(".csv") || filelist[i].endsWith(".tsv") || filelist[i].endsWith(".cmbl")) && doTMP) {
 			filteredfiles.push(filelist[i]);
 			continue;
 		}
-		if ((filelist[i].endsWith(".png") || filelist[i].endsWith(".jpg") || filelist[i].endsWith(".jpeg") || filelist[i].endsWith(".gif") || filelist[i].endsWith(".tiff")) && doIMG) {
+		if ((filelist[i].endsWith(".png") || filelist[i].endsWith(".jpg") || filelist[i].endsWith(".jpeg") || filelist[i].endsWith(".gif") || filelist[i].endsWith(".tiff") || filelist[i].endsWith(".mp4") || filelist[i].endsWith(".avi") || filelist[i].endsWith(".dv")) && doMED) {
 			filteredfiles.push(filelist[i]);
 			continue;
 		}
@@ -1705,14 +1753,16 @@ function getLabDisciplinesList(lab) {  //return an array of disciplines (strings
 
 
 
-function getLabEquipmentList(lab) {  //return an array of equipment (strings) for an XML "lab" node - not type safe
-	var list = [];
-	var equipment = lab.getElementsByTagName("Item");
-	for (var i = equipment.length - 1; i >= 0; i--) {
-		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue + ")");
-	}
-	return list;
-}
+// function getLabEquipmentList(lab) {  //return an array of equipment (strings) for an XML "lab" node - not type safe
+// 	let list = [];
+// 	let ids = [];
+// 	var equipment = lab.getElementsByTagName("Item");
+// 	for (var i = equipment.length - 1; i >= 0; i--) {
+// 		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue + ")");
+// 		ids.push()
+// 	}
+// 	return {"equip": list, "ids": ids};
+// }
 
 
 
@@ -1915,9 +1965,9 @@ function mostRecentDecimalSemester() {
 }
 
 
-function spanTheList(list, id) {
-	for (var i = list.length - 1; i >= 0; i--) {
-		list[i] = "<span class='" + id + "'>" + String(list[i]).split("(")[0].trim() + "</span>" + " (" + String(list[i]).split("(")[1];
+function spanTheList(list, classname, ids) {
+	for (let i = list.length - 1; i >= 0; i--) {
+		list[i] = "<span class='" + classname + "' data-eqid=" + ids[i] + ">" + String(list[i]).split("(")[0].trim() + "</span>" + " (" + String(list[i]).split("(")[1];
 	}
 	return list;
 }
