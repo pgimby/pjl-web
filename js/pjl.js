@@ -39,6 +39,12 @@ var siteroot = "";
 function initRepoPage() {  //initialize the repository page
 	loadXML();
 	$("#search-bar").val("");
+	// $(".dl-modal").slimScroll({
+	//     position: 'left',
+	//     height: 'auto',
+	//     railVisible: true,
+	//     alwaysVisible: false
+	// });
 }
 
 
@@ -114,6 +120,11 @@ function linkPDFs() {
   	xhttp.open("GET", siteroot + "/dev/labDB.xml", true);
   	xhttp.send();
 }
+
+
+
+
+
 
 
 
@@ -385,12 +396,38 @@ $(document).on("click", "#search-help-button", function(e) {
 
 
 $(document).on("click", "#zip-icon", function(e) {
-	$("#zip-options-number").text("(" + String(countNumRecords()) + " records selected)");
+	$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
 	$("main").addClass("blurred-page");
 	$(".modal-screen").css("display", "block");
-	$("#zip-options").stop().fadeIn(200);
+	$(".dl-modal").stop().fadeIn(200);
 });
 
+
+$(document).on("click", ".dl-modal-check", function(e) {
+	let checkitem = $(e.target);
+	if (checkitem.attr("id") == "ALL" && checkitem.hasClass("checked")) {
+		return;
+	} else if (checkitem.attr("id") == "ALL" && !checkitem.hasClass("checked")) {
+		checkitem.toggleClass("checked");
+		checkitem.siblings().removeClass("checked");
+	} else if (checkitem.attr("id") != "ALL" && $(".dl-modal-check#ALL").hasClass("checked")) {
+		checkitem.toggleClass("checked");
+		$(".dl-modal-check#ALL").removeClass("checked");
+	} else if (checkitem.attr("id") != "ALL" && !$(".dl-modal-check#ALL").hasClass("checked")) {
+		checkitem.toggleClass("checked");
+	}
+	if (!$(".dl-modal-check").hasClass("checked")) {
+		$(".dl-modal-check#ALL").addClass("checked");
+	}
+});
+
+
+
+
+
+$(document).on("click", ".dl-modal, .eq-modal", function(e) {
+	e.stopPropagation();
+});
 
 
 $(document).on("click", ".modal-close-button", function(e) {
@@ -415,14 +452,14 @@ $(document).on("click", ".modal-content", function(e) {
 
 
 
-$(document).on("click", "#zip-download-confirm", function(e) {
-	var all = $("#ALL").prop("checked");
-	var pdf = $("#PDF").prop("checked");
-	var tex = $("#TEX").prop("checked");
-	var dat = $("#DAT").prop("checked");
-	var img = $("#IMG").prop("checked");
-	var extradocs = $("#EXTRA").prop("checked");
-	if (!pdf && !tex && !extradocs && !all && !dat && !img) {
+$(document).on("click", ".dl-modal-footer", function(e) {
+	var all = $("#ALL").hasClass("checked");
+	var pdf = $("#PDF").hasClass("checked");
+	var tex = $("#TEX").hasClass("checked");
+	var tmp = $("#TEMPLATES").hasClass("checked");
+	var med = $("#MEDIA").hasClass("checked");
+	var extradocs = $("#EXTRA").hasClass("checked");
+	if (!pdf && !tex && !extradocs && !all && !tmp && !med) {
 		$("#zip-download-confirm").css({"borderRadius": "0"});
 		$("#zip-options-warning").stop().slideDown(400, function() {
 			setTimeout(function(){
@@ -436,7 +473,7 @@ $(document).on("click", "#zip-download-confirm", function(e) {
 	$(".modal-screen").css({display: 'none'});
 	$("#zip-options").css({display: 'none'});
 	$("#zip-progress-bar").slideDown(200, function() {
-		collectFiles2Zip(all, pdf, tex, dat, img, extradocs);
+		collectFiles2Zip(all, pdf, tex, tmp, med, extradocs);
 	});
 });
 
@@ -1464,7 +1501,7 @@ function fileDownloadPromise() {  //return a jQuery promise
 
 
 function beginDownload(filepath, promise) {
-//start downloading PDF and resolve associated promise upon completion (or failure) - not type safe
+//start downloading and resolve associated promise upon completion (or failure) - not type safe
 //return XML HTTP request object
 	var xhttp = new XMLHttpRequest();
 	xhttp.responseType = "blob";
@@ -1479,6 +1516,9 @@ function beginDownload(filepath, promise) {
     		promise.reject();
     	} else if (this.status == 403) {
     		promise.reject();
+    	} else {
+    		$("#zip-progress-bar progress").attr("value", "0");
+			$("#zip-progress-bar").stop().slideUp(500);
     	}
   	};
   	xhttp.open("GET", siteroot + filepath, true);
@@ -1498,7 +1538,7 @@ function canZip() {  //return boolean for ability to zip currently displayed rec
 
 
 // var promises = []
-function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
+function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 	var dirlist = [];
 	var filelist = [];
 	var promises = [];
@@ -1507,7 +1547,6 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
-			// console.log("embedded filelist",filelist)
 			promise.resolve();
 		}
 	}
@@ -1520,17 +1559,15 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 		let promise = $.Deferred();
 		promises.push(promise)
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
-		// console.log("dir",dirlist[i])
 	}
 
 	var deferredFileList = $.when.apply($, promises);
 
 	deferredFileList.done(function() {
-		filteredlist = filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist);
-		if(doEXTRA) {
+		filteredlist = filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist);
+		if(doEXTRA || doALL) {
 			filteredlist.concat(extradocs);
 		}
-		// console.log("filtered",filteredlist);
 		makePromisesBeginZip(filteredlist);
 		console.log("An elegant syntax for ease of use,\neasy reading. Not abstruse.\n\nHaving this would sure be swell.\nPHP can rot in hell.")
 	});
@@ -1538,7 +1575,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doDAT, doIMG, doEXTRA) {
 }
 
 
-function filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist) {
+function filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist) {
 	if (doALL) {
 		return filelist;
 	}
@@ -1555,11 +1592,11 @@ function filterFileList(doALL, doPDF, doTEX, doDAT, doIMG, filelist) {
 			filteredfiles.push(filelist[i]);
 			continue;
 		}
-		if ((filelist[i].endsWith(".txt") || filelist[i].endsWith(".dat") || filelist[i].endsWith(".xml")) && doDAT) {
+		if ((filelist[i].endsWith(".txt") || filelist[i].endsWith(".dat") || filelist[i].endsWith(".xml") || filelist[i].endsWith(".xlsx") || filelist[i].endsWith(".ods") || filelist[i].endsWith(".csv") || filelist[i].endsWith(".tsv") || filelist[i].endsWith(".cmbl")) && doTMP) {
 			filteredfiles.push(filelist[i]);
 			continue;
 		}
-		if ((filelist[i].endsWith(".png") || filelist[i].endsWith(".jpg") || filelist[i].endsWith(".jpeg") || filelist[i].endsWith(".gif") || filelist[i].endsWith(".tiff")) && doIMG) {
+		if ((filelist[i].endsWith(".png") || filelist[i].endsWith(".jpg") || filelist[i].endsWith(".jpeg") || filelist[i].endsWith(".gif") || filelist[i].endsWith(".tiff") || filelist[i].endsWith(".mp4") || filelist[i].endsWith(".avi") || filelist[i].endsWith(".dv")) && doMED) {
 			filteredfiles.push(filelist[i]);
 			continue;
 		}
