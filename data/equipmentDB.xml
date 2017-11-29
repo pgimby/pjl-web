@@ -18,13 +18,10 @@
       </Location>
     </Locations>
     <Quantity>
-<<<<<<< HEAD
       <Total>61</Total>
       <InService>3</InService>
-=======
       <Total>45</Total>
       <InService>43</InService>
->>>>>>> baa5fb1b04f6f4bf852494f8fa2bc265acd3439e
       <UnderRepair/>
     </Quantity>
     <Documents>
