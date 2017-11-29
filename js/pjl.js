@@ -124,9 +124,118 @@ function linkPDFs() {
 
 
 
+class EquipmentDisplay {
+
+	constructor(id) {
+		var self = this;
+		self.id = id;
+		self.modalmask = d3.select("body").append("div").classed("modal-screen", true).style("display", "block");
 
 
+		self._loadEquipDB = function() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+		    	if (xhttp.readyState == 4 && xhttp.status == 200) {
+		            let docXML = xhttp.responseXML;
+		            let data = self._getItemData(docXML, self.id);
+		            self._buildDisplay(data);
+		    	}
+		  	};
+		  	xhttp.open("GET", siteroot + equipmentdatabasepath, true);
+		  	xhttp.send();
+		}
 
+		self._getItemData = function(xml, id) {
+			let nodes = xml.getElementsByTagName("Item");
+			for (let i = 0; i < nodes.length; i++) {
+				if (nodes[i].getAttribute("id") == id) {
+					return nodes[i];
+				}
+			}
+		}
+
+		self._buildDisplay = function(data) {
+			let name = (data.getElementsByTagName("InventoryName")[0].childNodes[0] ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "none");
+			let make = (data.getElementsByTagName("Manufacturer")[0].childNodes[0] ? data.getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "none");
+			let model = (data.getElementsByTagName("Model")[0].childNodes[0] ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "none");
+			let locations = [];
+			let locationnodes = data.getElementsByTagName("Locations")[0].getElementsByTagName("Location");
+			for (let i = 0; i < locationnodes.length; i++) {
+				let room = locationnodes[i].getElementsByTagName("Room")[0].childNodes[0].nodeValue;
+				let storage = locationnodes[i].getElementsByTagName("Storage")[0].childNodes[0].nodeValue;
+				locations.push({"room": room, "storage": storage})
+			}
+			let total = (data.getElementsByTagName("Total")[0].childNodes[0] ? data.getElementsByTagName("Total")[0].childNodes[0].nodeValue : "N/A")
+			let service = (data.getElementsByTagName("InService")[0].childNodes[0] ? data.getElementsByTagName("InService")[0].childNodes[0].nodeValue : "N/A")
+			let repair = (data.getElementsByTagName("UnderRepair")[0].childNodes[0] ? data.getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "N/A")
+			let docs = [];
+			let docnodes = data.getElementsByTagName("Document");
+			for (let i = 0; i < docnodes.length; i++) {
+				let name = docnodes[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+				let path = docnodes[i].getElementsByTagName("Location")[0].childNodes[0].nodeValue;
+				docs.push({"name": name, "path": path})
+			}
+
+			let modal = self.modalmask.append("div").classed("eq-modal", true);
+			let header = modal.append("div").classed("eq-modal-header", true);
+			header.append("h1").classed("eq-modal-title", true).html("Inventory");
+			header.append("i").classed("fa fa-times fa-2x modal-close-button", true).attr("aria-hidden", "true");
+
+			let content = modal.append("div").classed("eq-modal-content", true);
+			let img = content.append("div").classed("eq-modal-img", true);
+			img.append("img").attr("src", "/img/img-placeholder.png");
+			let ident = content.append("div").classed("eq-modal-id", true);
+			ident.append("h3").classed("eq-modal-name", true).html(name);
+			let mm = ident.append("div").classed("eq-make-model", true);
+			mm.append("p").classed("eq-make", true).html(make);
+			mm.append("p").classed("eq-model", true).html(model);
+			let locs = content.append("div").classed("eq-modal-locations", true);
+			locs.append("h1").classed("modal-header", true).html("Locations");
+			for (let i = 0; i < locations.length; i++) {
+				locs.append("p").classed("eq-modal-location", true).html(locations[i].room + " " + locations[i].storage);
+			}
+
+			let amts = content.append("div").classed("eq-modal-amounts", true);
+			amts.append("h1").classed("modal-header", true).html("Amounts");
+			let amt1 = amts.append("div").classed("eq-modal-amount total", true);
+			amt1.append("h2").html(total);
+			amt1.append("h3").html("Total");
+			let amt2 = amts.append("div").classed("eq-modal-amount service", true);
+			amt2.append("h2").html(service);
+			amt2.append("h3").html("In Service");
+			let amt3 = amts.append("div").classed("eq-modal-amount repair", true);
+			amt3.append("h2").html(repair);
+			amt3.append("h3").html("Under Repair");
+
+			let dcs = content.append("div").classed("eq-modal-docs", true);
+			dcs.append("h1").classed("modal-header", true).html("Documents");
+			for (let i = 0; i < docs.length; i++) {
+				let dc = dcs.append("div").classed("eq-modal-doc", true);
+				dc.append("i").classed("fa fa-file-o", true).attr("aria-hidden", "true");
+				dc.append("a").attr("href", docs[i].path).attr("target", "_blank").html(docs[i].name);
+			}
+		}
+
+		self._setEventListeners = function() {
+			$(document).on("click", "modal-screen", self.removeForm);
+
+			$(document).on("click", ".eq-modal", function(e) {
+				e.stopPropagation();
+			});
+		}
+
+		self.removeForm = function() {
+			$(".eq-modal").slideUp("fast", function() {
+				self.modalmask.remove();
+			});
+			$("main").removeClass("blurred-page");
+			$(document).off("click", ".modal-screen");
+			$(document).off("click", ".eq-modal");
+		}
+
+		self._loadEquipDB();
+	}
+}
 
 
 
@@ -303,6 +412,7 @@ class EquipmentModForm {
 			$("main").removeClass("blurred-page");
 		}
 
+		$("main").addClass("blurred-page")
 		self._buildForm();
 		self._populateForm();
 		self._setEventListeners();
@@ -714,7 +824,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 
 
 
-function getLabEquipmentList(lab, selection) {  //returns an array of d3 nodes to be appended to the lab equipment div given an XML "lab" node
+function getLabEquipmentList(lab, selection) {  //appends equipment to the lab equipment div given an XML "lab" node and d3 selection to append to
 	let equipnode = lab.getElementsByTagName("Equipment")[0];
 	let items = equipnode.getElementsByTagName("Item");
 	selection.append("p").classed("equipment-label", true).html("<span>Equipment: </span>");
@@ -730,12 +840,17 @@ function getLabEquipmentList(lab, selection) {  //returns an array of d3 nodes t
 		eqitem.append("p").classed("equip-item-primary", true).attr("data-eqid", item.id).html(item.name);
 		eqitem.append("p").classed("equip-item-amount", true).html("(" + String(item.amount) + ")");
 		if (Boolean(item.alt)) {
-			eqitem.append("p").classed("equip-item-alt", true).attr("data-eqid", item.alt.id).html(item.alt.name);
+			eqitem.append("p").classed("equip-item-alt", true).attr("data-eqid", item.alt.id).html("[" + item.alt.name + "]");
 		}
 	}
 }
 
-
+$(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
+	let item = $(e.target);
+	let id = item.attr("data-eqid");
+	let href = "/staffresources/equipdb?id=" + id
+	window.open(href, "_blank");
+});
 
 
 

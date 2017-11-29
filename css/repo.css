@@ -370,19 +370,46 @@ select {
 }
 
 .lab-data-equipment {
-	display: inline;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10px;
+}
+
+.equipment-label {
+	margin-left: 0;
 }
 
 .equip-item {
-	display: inline;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: flex-start;
+	white-space: nowrap;
 }
-/*
-.equip-item:hover {
+
+.equip-item:not(:last-child):after {
+	content: ",";
+	padding-right: 3px;
+	bottom: -3px;
+	position: relative;
+	margin-left: -3px;
+}
+
+.equip-item * {
+	margin: 0;
+}
+
+.equip-item-alt {
+	color: #999;
+}
+
+
+.equip-item-primary:hover, .equip-item-alt:hover {
 	color: #fff;
 	background-color: #555;
 	border-radius: 3px;
 	cursor: pointer;
-}*/
+}
 
 
 #show-all-button {

@@ -1,4 +1,4 @@
-<Labs>
+﻿<Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines>
@@ -8145,7 +8145,7 @@
       </Item>
       <Item id="0416">
         <Name>LM3900 quad amplifer</Name>
-        <Alt id="0220">LM3301 quad amplifie </Alt>
+        <Alt id="0220">LM3301 quad amplifier</Alt>
         <Amount>1</Amount>
       </Item>
       <Item id="0417">
