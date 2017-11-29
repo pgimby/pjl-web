@@ -24,8 +24,10 @@ apacheUser = "www-data"
 os.system("mount " + slugFolder + " " + sourceFolder)
 
 
-# sync master copy to live copy
-os.system("rsync --delete -avz " + sourceFolder + "/ " + destFolder + "/")
+# Test to make sure master repository is mount, and if so sync master copy to live copy
+mountTest = os.system("mount | grep labs.slug")
+if mountTest == 0:
+    os.system("rsync --delete -avz " + sourceFolder + "/ " + destFolder + "/")
 
 
 # unmount source files
