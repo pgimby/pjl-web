@@ -201,6 +201,162 @@ h2.eq-item-text:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.eq-modal {
+	width: 50%;
+	max-width: 360px;
+	max-height: 80%;
+	position: fixed;
+	margin: auto;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	box-shadow: 0 0 8px 0 #777;
+	border-radius: 4px;
+}
+
+.eq-modal-header {
+	display: flex;
+	display: -webkit-flex;
+	background-color: #424242;
+	justify-content: space-between;
+	border-radius: 4px 4px 0 0;
+}
+
+.eq-modal-title {
+	color: #ddd;
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+
+.eq-modal-title > span {
+	font-size: .6em;
+	line-height: .6em;
+}
+
+.eq-modal-content {
+	height: 400px;
+	overflow-y: auto;
+}
+
+.eq-modal-content > div {
+	margin: 8px auto;
+}
+
+.eq-modal-amounts > *:not(:first-child),
+.eq-modal-locations > *:not(:first-child),
+.eq-modal-docs > *:not(:first-child) {
+	margin-left: 20px;
+}
+
+.eq-modal-img img {
+	display: block;
+	margin: 0 auto;
+	width: 220px;
+}
+
+.eq-modal-name {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.eq-make-model {
+	text-align: center;
+	color: #777;
+}
+
+
+.eq-make-model p {
+	display: inline;
+	margin: 0;
+}
+
+.eq-make-model p:last-child:before {
+	content: '\00B7';
+	padding-right: 8px;
+}
+
+.eq-modal-location {
+	color: #333;
+	font-weight: 500;
+}
+
+.eq-modal-amount h2 {
+	display: inline-block;
+	font-size: 1.8em;
+	border-right: 1px solid #999;
+	text-align: right;
+	width: 64px;
+	margin-right: 0;
+	margin-left: 0;
+	height: 32px;
+	padding-right: 4px;
+	color: #bbb;
+}
+
+.eq-modal-amount h3 {
+	display: inline-block;
+	margin-left: 0;
+	vertical-align: -1px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #333;
+	font-weight: 500;
+}
+
+.eq-modal-doc {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.eq-modal-doc a {
+	letter-spacing: 2px;
+}
+
+.eq-modal-doc i {
+	font-weight: 600;
+	color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width : 800px) {
 	.equip-mod-form {
 		width: auto;
