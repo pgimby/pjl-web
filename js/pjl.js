@@ -712,7 +712,9 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 				 "pjl-lab-rules":"/",
 				 "pjl-rad-safety":"/",
 				 "pjl-orientation":"/",
-				 "pjl-hazard-ass":"/",
+				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL-current.pdf",
+				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV-current.pdf",
+				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD-current.pdf",
 				 "pjl-equipment-page":"/staffresources/equipdb"}
 	var buttonid = $(e.target).attr("id");
 	window.open(links[buttonid], '_blank');
