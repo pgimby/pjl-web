@@ -54,9 +54,37 @@ function initLandingPage() {
 }
 
 
-function initEquipmentPage() {
+function initEquipmentModPage() {
 	loadEquipmentXML();
 }
+
+function initEquipmentPage() {
+	equipmentPageQueryString();
+	enableEquipmentSearchAutoComplete();
+}
+
+
+function enableEquipmentSearchAutoComplete() {
+
+}
+
+
+function equipmentPageQueryString() {
+	try {
+		let query = window.location.href.split("?")[1].split("&");
+		queryobj = {};
+		for (let i = 0; i < query.length; i++) {
+			let param = query[i].split("=");
+			queryobj[param[0]] = param[1];
+		}
+		if (queryobj.id) {
+			new EquipmentDisplay(queryobj.id);
+		}
+	} catch (e if e instanceof TypeError) {
+
+	}
+}
+
 
 
 function loadEquipmentXML() {
@@ -850,7 +878,7 @@ function getLabEquipmentList(lab, selection) {  //appends equipment to the lab e
 $(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
 	let item = $(e.target);
 	let id = item.attr("data-eqid");
-	let href = "/staffresources/equipdb?id=" + id
+	let href = "/staffresources/equipment?id=" + id
 	window.open(href, "_blank");
 });
 
