@@ -802,12 +802,12 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 				 "pjl-latex-template": "/",
 				 "pjl-inventory":"/",
 				 "pjl-github":"https://github.com/pgimby/pjl-web",
-				 "pjl-lab-rules":"/",
-				 "pjl-rad-safety":"/",
-				 "pjl-orientation":"/",
-				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL-current.pdf",
-				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV-current.pdf",
-				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD-current.pdf",
+				 "pjl-lab-rules":"/data/safety/lab-rules/Lab-Rules.pdf",
+				 "pjl-rad-safety":"/data/safety/training/Radiation-Safety.pdf",
+				 "pjl-orientation":"/data/safety/training/Orientation.pdf",
+				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL.pdf",
+				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV.pdf",
+				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf",
 				 "pjl-equipment-page":"/staffresources/equipdb"}
 	var buttonid = $(e.target).attr("id");
 	window.open(links[buttonid], '_blank');
