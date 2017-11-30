@@ -48,5 +48,10 @@ os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
 os.system("chown root." + apacheUser + " " + webRoot + "/data" )
 os.system("chmod 775 " + webRoot + "/data" )
 
+
+# recreate symlinks after rsync from master repository
+#os.system("echo rm " + webRoot + "/data/repository")
+#os.system("echo ln -s " + destFolder + "/repository " + webRoot + "/data/repository")
+
 # confirm end of script
 print("...and then there will be cake")
