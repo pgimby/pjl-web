@@ -345,8 +345,39 @@ h2.eq-item-text:hover {
 
 
 
+.eq-record-flex {
+	display: -webkit-flex;
+	display: flex;
+	border: solid 1px;
+    border-radius: 4px;
+    margin: 2px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
 
+.eq-record-flex:hover {
+	cursor: pointer;
+	/*box-shadow: 0 0 2px 1px #31841d;*/
+}
 
+.eq-record-flex * {
+	pointer-events: none;
+}
+
+.eq-record-id {
+	flex: 1;
+}
+
+.eq-record-name {
+	flex: 2;
+}
+
+.eq-record-make {
+	flex: 1;
+}
+
+.eq-record-model {
+	flex: 1;
+}
 
 
 

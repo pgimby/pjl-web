@@ -55,24 +55,53 @@ function initLandingPage() {
 
 
 function initEquipmentModPage() {
-	loadEquipmentXML();
+	loadEquipmentXML(populateEquipDisplay);
 }
 
 function initEquipmentPage() {
 	equipmentPageQueryString();
-	enableEquipmentSearchAutoComplete();
+	loadEquipmentXML(enableEquipmentSearchAutoComplete, populateEquipmentFilters, createEquipRecordSnapshots);
 }
 
 
-function enableEquipmentSearchAutoComplete() {
+function enableEquipmentSearchAutoComplete(xml) {
+	let namenodes = xml.getElementsByTagName("InventoryName");
+	let datalist = d3.select("#equipment-datalist");
+	let names = [];
+	for (let i = 0; i < namenodes.length; i++) {
+		datalist.append("option").attr("value", (namenodes[i].childNodes[0] ? namenodes[i].childNodes[0].nodeValue : "—"));
+	}
+}
 
+
+function populateEquipmentFilters(xml) {
+	let manufacturers = new Set(["—"]);
+	let rooms = new Set(["—"]);
+	let mannodes = xml.getElementsByTagName("Manufacturer");
+	let roomnodes = xml.getElementsByTagName("Room");
+	for (let i = 0; i < mannodes.length; i++) {
+		manufacturers.add((mannodes[i].childNodes[0] ? mannodes[i].childNodes[0].nodeValue : "—"));
+	}
+	for (let i = 0; i < roomnodes.length; i++) {
+		rooms.add((roomnodes[i].childNodes[0] ? roomnodes[i].childNodes[0].nodeValue : "—"));
+	}
+
+	let manlist = d3.select("#manufacturer-select");
+	let roomlist = d3.select("#room-select");
+	for (let item of manufacturers) {
+		manlist.append("option").attr("value", item).html(item);
+	}
+	for (let item of rooms) {
+		roomlist.append("option").attr("value", item).html(item);
+	}
 }
 
 
 function equipmentPageQueryString() {
-	try {
-		let query = window.location.href.split("?")[1].split("&");
-		queryobj = {};
+	let url = window.location.href.split("?");
+	let queryobj = {};
+	if (url.length > 1) {
+		var query = url[1].split("&");
 		for (let i = 0; i < query.length; i++) {
 			let param = query[i].split("=");
 			queryobj[param[0]] = param[1];
@@ -80,19 +109,20 @@ function equipmentPageQueryString() {
 		if (queryobj.id) {
 			new EquipmentDisplay(queryobj.id);
 		}
-	} catch (e if e instanceof TypeError) {
-
 	}
 }
 
 
 
 function loadEquipmentXML() {
+	let args = arguments;
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
     	if (xhttp.readyState == 4 && xhttp.status == 200) {
             let docXML = xhttp.responseXML;
-            populateEquipDisplay(docXML);
+            for (let i = 0; i < args.length; i++) {
+            	args[i](docXML);
+            }
     	}
   	};
   	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
@@ -110,6 +140,41 @@ function populateEquipDisplay(xml) {
 	sortEquipList();
 	linkPDFs();
 }
+
+
+
+
+
+
+function createEquipRecordSnapshots(xml) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
+	var equiplist = xml.getElementsByTagName("Item");
+	for (let i = 0; i < equiplist.length; i++) {
+		// console.log(equiplist[i])
+		let eqid = equiplist[i].getAttribute("id");
+		let eqname = (equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0] ? equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "—");
+		let eqmake = (equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "—");
+		let eqmodel = (equiplist[i].getElementsByTagName("Model")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "—");
+
+		let snapshot = d3.select("#eq-list-box").append("div").classed("eq-record-flex", true).classed("record-rendered", true);
+		let id = snapshot.append("p").classed("eq-record-id", true).html(eqid);
+		let make = snapshot.append("p").classed("eq-record-make", true).html(eqmake);
+		let model = snapshot.append("p").classed("eq-record-model", true).html(eqmodel);
+		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
+	}
+}
+
+$(document).on("click", ".eq-record-flex", function(e) {
+	console.log($(e.target).children(".eq-record-id").text())
+	new EquipmentDisplay($(e.target).children(".eq-record-id").text());
+});
+
+
+
+
+
+
+
+
 
 
 function sortEquipList() {

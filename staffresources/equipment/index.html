@@ -128,7 +128,8 @@
 
         <div class="search-container">
         <form class="search-box">
-          <input type="text" id="search-bar" placeholder="Name or manufacturer..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name or manufacturer...'" list="equipment-list">
+          <input type="text" id="search-bar" placeholder="Equipment name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Equipment name...'" list="equipment-datalist">
+          <datalist id="equipment-datalist"></datalist>
           <a><img class="search-icon" src="/img/search-icon.png"></a> <!-- may I see your silly walk? -->
         </form>
         </div></br>
@@ -181,8 +182,8 @@
 
 
         <p id="search-results">Showing <span id="num-unmasked-results"></span> of <span id="num-results"></span> search results</p>
-        <div id="zip-icon"></div>
-        <p id="expand-all-button" expanded="false">expand all</p>
+        <!-- <div id="zip-icon"></div> -->
+        <!-- <p id="expand-all-button" expanded="false">expand all</p> -->
 
 
 
@@ -192,19 +193,14 @@
 
 
         <div id="records-header">
-            <a style="visibility: hidden; margin: 0 11px">Download</a> <!-- just here to match spacing on records display -->
-            <p class="record-header-button" id="sort-course" sorted="false"><span>Course</span></p>
-            <p class="record-header-button" id="sort-version">
-              <span class="sort-span-mobile" id="sort-semester" sorted="false">Sem.</span>
-              <span class="sort-span-desktop" id="sort-semester" sorted="false">Semester</span>
-              /
-              <span id="sort-year" sorted="false">Year</span>
-            </p>
-            <p class="record-header-button" id="sort-name" sorted="false"><span>Lab<span></p>
-            <div style="width:46px"></div>
+            <p class="record-header-button" id="sort-id" sorted="false"><span>ID #</span></p>
+            <p class="record-header-button" id="sort-make" sorted="false"><span>Manufacturer</span></p>
+            <p class="record-header-button" id="sort-model" sorted="false"><span>Model</span></p>
+            <p class="record-header-button" id="sort-name" sorted="false"><span>Name</span></p>
+            <!-- <div style="width:46px"></div> -->
           </div>
 
-        <div id="lab-list-box">
+        <div id="eq-list-box">
 
         </div>
         <p id="show-all-button">show all</p></br>
