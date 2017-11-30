@@ -803,7 +803,7 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 				 "pjl-inventory":"/",
 				 "pjl-github":"https://github.com/pgimby/pjl-web",
 				 "pjl-lab-rules":"/data/safety/lab-rules/Lab-Rules.pdf",
-				 "pjl-rad-safety":"/data/safety/training/Radiation-Safety.pdf",
+				 "pjl-rad-safety":"/data/safety/training/Radiation-Safety/Radiation-Safety.pdf",
 				 "pjl-orientation":"/data/safety/training/Orientation.pdf",
 				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL.pdf",
 				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV.pdf",
