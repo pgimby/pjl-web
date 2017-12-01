@@ -1734,8 +1734,8 @@ function makePromisesBeginZip(filelist) {
 		return function() {
 			let currentval = parseFloat($("#zip-progress-bar progress").attr("value"));
 			let newval = currentval + (1/files.length)
-			console.log((1/files.length), newval.toFixed(1))
-			$("#zip-progress-bar progress").attr("value", newval.toFixed(1));
+			console.log((1/files.length), newval.toFixed(3))
+			$("#zip-progress-bar progress").attr("value", newval.toFixed(3));
 		}
 	}
 
