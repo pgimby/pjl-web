@@ -1765,6 +1765,7 @@ function makePromisesBeginZip(filelist) {
 		setTimeout(function() {
 			$("#file-prep").text("Download failed.");
 			setTimeout(function() {
+				console.log("zip failed")
 				$("#zip-progress-bar progress").attr("value", "0");
 				$("#zip-progress-bar").stop().slideUp(500, function() {
 				$("#file-prep").text("Preparing files...");
@@ -1779,6 +1780,7 @@ function makePromisesBeginZip(filelist) {
 			xhrs[i].abort();
 			promises[i].reject();
 		}
+		console.log("zip cancelled")
 		$("#zip-progress-bar progress").attr("value", "0");
 		$("#zip-progress-bar").stop().slideUp(500);
 		return;
@@ -1809,6 +1811,7 @@ function beginDownload(filepath, promise) {
     	} else if (this.status == 403) {
     		promise.reject();
     	} else {
+    		console.log("zip failed line 1814")
     		$("#zip-progress-bar progress").attr("value", "0");
 			$("#zip-progress-bar").stop().slideUp(500);
     	}
