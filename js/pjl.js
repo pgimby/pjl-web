@@ -1732,7 +1732,7 @@ function makePromisesBeginZip(filelist) {
 
 	function increaseProgress(j) {
 		return function() {
-			console.log((j/files.length).toFixed(1))
+			console.log(j, files.length, (j/files.length).toFixed(1))
 			$("#zip-progress-bar progress").attr("value", (j/files.length).toFixed(1));
 		}
 	}
