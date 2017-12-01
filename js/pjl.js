@@ -1811,7 +1811,7 @@ function beginDownload(filepath, promise) {
     	} else if (this.status == 403) {
     		promise.reject();
     	} else {
-    		console.log("zip failed line 1814")
+    		console.log("zip failed line 1814", this.status)
     		$("#zip-progress-bar progress").attr("value", "0");
 			$("#zip-progress-bar").stop().slideUp(500);
     	}
