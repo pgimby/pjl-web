@@ -164,7 +164,6 @@ function createEquipRecordSnapshots(xml) {  //create and append to DOM an approp
 }
 
 $(document).on("click", ".eq-record-flex", function(e) {
-	console.log($(e.target).children(".eq-record-id").text())
 	new EquipmentDisplay($(e.target).children(".eq-record-id").text());
 });
 
@@ -315,19 +314,20 @@ class EquipmentDisplay {
 			$(document).on("click", ".eq-modal", function(e) {
 				e.stopPropagation();
 			});
+
+			$(document).on("click", ".modal-close-button", self.removeForm);
 		}
 
 		self.removeForm = function() {
-			$(".eq-modal").slideUp("fast", function() {
-				self.modalmask.remove();
-			});
-			$(".modal-screen").remove();
+			self.modalmask.remove();
 			$("main").removeClass("blurred-page");
 			$(document).off("click", ".modal-screen");
 			$(document).off("click", ".eq-modal");
+			$(document).off("click", ".modal-close-button");
 		}
 
 		self._loadEquipDB();
+		self._setEventListeners();
 		$("main").addClass("blurred-page");
 	}
 }
