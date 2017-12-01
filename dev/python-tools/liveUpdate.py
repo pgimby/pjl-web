@@ -6,6 +6,7 @@
 
 
 import os
+import subprocess
 
 
 # define folder locations
@@ -25,9 +26,11 @@ os.system("mount " + slugFolder + " " + sourceFolder)
 
 
 # Test to make sure master repository is mount, and if so sync master copy to live copy
-mountTest = os.system("mount | grep labs.slug")
+mountTest = os.system("mount | grep labs.slug > /dev/null")
 if mountTest == 0:
-    os.system("rsync --delete -avz " + sourceFolder + "/ " + destFolder + "/")
+    os.system("rsync --delete -avz " + sourceFolder + "/repository/ " + destFolder + "/repository/")
+    os.system("rsync --delete -avz " + sourceFolder + "/safety/ " + destFolder + "/safety/")
+    os.system("rsync --delete -avz " + sourceFolder + "/schedules/ " + destFolder + "/schedules/")
 
 
 # unmount source files
@@ -47,6 +50,11 @@ os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
 
 os.system("chown root." + apacheUser + " " + webRoot + "/data" )
 os.system("chmod 775 " + webRoot + "/data" )
+
+
+# recreate symlinks after rsync from master repository
+#os.system("echo rm " + webRoot + "/data/repository")
+#os.system("echo ln -s " + destFolder + "/repository " + webRoot + "/data/repository")
 
 # confirm end of script
 print("...and then there will be cake")
