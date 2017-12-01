@@ -707,7 +707,6 @@ $(document).on("click", "#zip-icon", function(e) {
 
 $(document).on("click", ".dl-modal-check", function(e) {
 	let checkitem = $(e.target);
-	console.log(checkitem)
 	if (checkitem.attr("id") == "ALL" && checkitem.hasClass("checked")) {
 		return;
 	} else if (checkitem.attr("id") == "ALL" && !checkitem.hasClass("checked")) {
@@ -1733,6 +1732,7 @@ function makePromisesBeginZip(filelist) {
 
 	function increaseProgress(j) {
 		return function() {
+			console.log((j/files.length).toFixed(1))
 			$("#zip-progress-bar progress").attr("value", (j/files.length).toFixed(1));
 		}
 	}
