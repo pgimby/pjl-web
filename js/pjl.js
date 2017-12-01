@@ -1730,11 +1730,10 @@ function makePromisesBeginZip(filelist) {
 	var promises = [];
 	var xhrs = [];
 
-	function increaseProgress(j) {
+	function increaseProgress() {
 		return function() {
 			let currentval = parseFloat($("#zip-progress-bar progress").attr("value"));
 			let newval = currentval + (1/files.length)
-			console.log((1/files.length), newval.toFixed(3))
 			$("#zip-progress-bar progress").attr("value", newval.toFixed(3));
 		}
 	}
@@ -1743,7 +1742,7 @@ function makePromisesBeginZip(filelist) {
 		let downloadingfile = new $.Deferred();
 		downloadingfile.done(function(filename, blob) {
 			zip.file(filename, blob);
-		}, increaseProgress(i));
+		}, increaseProgress());
 		let xhr = beginDownload(files[i], downloadingfile);
 		promises.push(downloadingfile);
 		xhrs.push(xhr);
