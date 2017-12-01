@@ -415,7 +415,6 @@ class DownloadModalWindow {
 
 		self.removeWindow = function() {
 			self.modalmask.remove();
-			// $(".modal-screen").remove();
 			$("main").removeClass("blurred-page");
 			$(document).off("click", ".modal-screen");
 			$(document).off("click", ".modal-close-button");
@@ -1733,6 +1732,7 @@ function makePromisesBeginZip(filelist) {
 	var xhrs = [];
 
 	function increaseProgress(j) {
+		console.log(j, files.length, String(j/files.length));
 		return function() {
 			$("#zip-progress-bar progress").attr("value", String(j/files.length));
 		}
@@ -1898,7 +1898,7 @@ function filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist) {
 
 
 
-function getExtraDocsFromRecord(record) {
+function getExtraDocsFromRecord(record) { //record is an HTML DOM element
 	var docs = $(record).children(".extra-docs").children(".extra-doc");
 	list = [];
 	for (var i = docs.length - 1; i >= 0; i--) {
