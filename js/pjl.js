@@ -1754,6 +1754,7 @@ function makePromisesBeginZip(filelist) {
 	deferredzip.done(function() {
 		zip.generateAsync({type:"blob"}).then(function (blob) {
 			saveAs(blob, zipoutputfilename);
+			console.log("zip done")
 			$("#zip-progress-bar progress").attr("value", "0");
 			$("#zip-progress-bar").stop().slideUp(500);
 		});
