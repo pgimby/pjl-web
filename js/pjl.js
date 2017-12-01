@@ -175,7 +175,7 @@ $(document).on("click", ".eq-record-flex", function(e) {
 
 
 
-
+// TEMPORARY FUNCTIONS FOR TEMPORARY EQUIPMENT MOD PAGE -----------------------
 
 function sortEquipList() {
 	items = $(".eq-item-display");
@@ -214,7 +214,7 @@ function linkPDFs() {
   	xhttp.send();
 }
 
-
+//-----------------------------------------------------------------------------------
 
 
 class EquipmentDisplay {
@@ -310,7 +310,7 @@ class EquipmentDisplay {
 		}
 
 		self._setEventListeners = function() {
-			$(document).on("click", "modal-screen", self.removeForm);
+			$(document).on("click", ".modal-screen", self.removeForm);
 
 			$(document).on("click", ".eq-modal", function(e) {
 				e.stopPropagation();
@@ -321,12 +321,94 @@ class EquipmentDisplay {
 			$(".eq-modal").slideUp("fast", function() {
 				self.modalmask.remove();
 			});
+			$(".modal-screen").remove();
 			$("main").removeClass("blurred-page");
 			$(document).off("click", ".modal-screen");
 			$(document).off("click", ".eq-modal");
 		}
 
 		self._loadEquipDB();
+		$("main").addClass("blurred-page");
+	}
+}
+
+
+class DownloadModalWindow {
+
+	constructor(id) {
+		var self = this;
+		self.id = id;
+		self.modalmask = d3.select("body").append("div").classed("modal-screen", true).style("display", "block");
+
+		self._buildWindow = function() {
+			let modal = self.modalmask.append("div").classed("dl-modal", true);
+
+			let header = modal.append("div").classed("dl-modal-header", true);
+			header.append("h1").classed("dl-modal-title", true).html("Download Options<br><span id='dl-modal-number'></span>");
+			header.append("i").classed("fa fa-times fa-2x modal-close-button", true).attr("aria-hidden", "true");
+
+			let content = modal.append("div").classed("dl-modal-content", true);
+			let msg = content.append("p").html("Select which types of files you want to download or download everything.");
+			let chk1 = content.append("div").classed("dl-modal-check", true).attr("id", "PDF");
+			chk1.append("i").classed("fa fa-file-o fa-2x", true).attr("aria-hidden", "true");
+			let div1 = chk1.append("dl-modal-item-content", true);
+			div1.append("h3").html("PDF");
+			div1.append("p").html("PDF of the final lab document (.pdf)");
+
+			let chk2 = content.append("div").classed("dl-modal-check", true).attr("id", "TEX");
+			chk2.append("i").classed("fa fa-file-o fa-2x", true).attr("aria-hidden", "true");
+			let div2 = chk2.append("dl-modal-item-content", true);
+			div2.append("h3").html("TEX");
+			div2.append("p").html("LaTeX source documents for the lab (.tex)");
+
+			let chk3 = content.append("div").classed("dl-modal-check", true).attr("id", "MEDIA");
+			chk3.append("i").classed("fa fa-file-o fa-2x", true).attr("aria-hidden", "true");
+			let div3 = chk3.append("dl-modal-item-content", true);
+			div3.append("h3").html("Media");
+			div3.append("p").html("Images and video files (.tiff, .png, .jpeg, .gif, .mp4, .avi, .dv)");
+
+			let chk4 = content.append("div").classed("dl-modal-check", true).attr("id", "TEMPLATES");
+			chk4.append("i").classed("fa fa-file-o fa-2x", true).attr("aria-hidden", "true");
+			let div4 = chk4.append("dl-modal-item-content", true);
+			div4.append("h3").html("Templates");
+			div4.append("p").html("Data templates used in the experiment (.cmbl, .xlxs, .dat, .csv, .tsv, .txt)");
+
+			let chk5 = content.append("div").classed("dl-modal-check", true).attr("id", "EXTRA");
+			chk5.append("i").classed("fa fa-file-o fa-2x", true).attr("aria-hidden", "true");
+			let div5 = chk5.append("dl-modal-item-content", true);
+			div5.append("h3").html("Support Documents");
+			div5.append("p").html("Supporting documents for the lab and its development (various)");
+
+			let chk6 = content.append("div").classed("dl-modal-check", true).attr("id", "ALL");
+			chk6.append("i").classed("fa fa-file-o fa-2x", true).attr("aria-hidden", "true");
+			let div6 = chk6.append("dl-modal-item-content", true);
+			div6.append("h3").html("Everything");
+			div6.append("p").html("All files associated with the lab (various)");
+
+
+			let footer = modal.append("div").classed("dl-modal-footer", true);
+			footer.append("h3").classed("dl-modal-confirm", true).html("Download");
+		}
+
+		self._setEventListeners = function() {
+			$(document).on("click", ".modal-screen", self.removeWindow);
+
+			$(document).on("click", ".dl-modal", function(e) {
+				e.stopPropagation();
+			});
+		}
+
+		self.removeWindow = function() {
+			self.modalmask.remove();
+			// $(".modal-screen").remove();
+			$("main").removeClass("blurred-page");
+			$(document).off("click", ".modal-screen");
+			$(document).off("click", ".dl-modal");
+		}
+
+		$("main").addClass("blurred-page");
+		self._buildWindow();
+		self._setEventListeners();
 	}
 }
 
@@ -599,15 +681,17 @@ $(document).on("click", "#search-help-button", function(e) {
 
 
 $(document).on("click", "#zip-icon", function(e) {
+	new DownloadModalWindow();
 	$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
-	$("main").addClass("blurred-page");
-	$(".modal-screen").css("display", "block");
-	$(".dl-modal").stop().fadeIn(200);
+	// $("main").addClass("blurred-page");
+	// $(".modal-screen").css("display", "block");
+	// $(".dl-modal").stop().fadeIn(200);
 });
 
 
 $(document).on("click", ".dl-modal-check", function(e) {
 	let checkitem = $(e.target);
+	console.log(checkitem)
 	if (checkitem.attr("id") == "ALL" && checkitem.hasClass("checked")) {
 		return;
 	} else if (checkitem.attr("id") == "ALL" && !checkitem.hasClass("checked")) {
@@ -628,9 +712,9 @@ $(document).on("click", ".dl-modal-check", function(e) {
 
 
 
-$(document).on("click", ".dl-modal, .eq-modal", function(e) {
-	e.stopPropagation();
-});
+// $(document).on("click", ".dl-modal, .eq-modal", function(e) {
+// 	e.stopPropagation();
+// });
 
 
 $(document).on("click", ".modal-close-button", function(e) {
@@ -641,17 +725,18 @@ $(document).on("click", ".modal-close-button", function(e) {
 
 
 
-$(document).on("click", ".modal-screen", function(e) {
-	$("main").removeClass("blurred-page");
-	$(".modal-screen").css({display: 'none'});
-	$("#zip-options").css({display: 'none'});
-});
+// $(document).on("click", ".modal-screen", function(e) {
+// 	$("main").removeClass("blurred-page");
+// 	$(".modal-screen").css({display: 'none'});
+// 	$("#zip-options").css({display: 'none'});
+// 	console.log("line 647 listener")
+// });
 
 
 
-$(document).on("click", ".modal-content", function(e) {
-	e.stopPropagation();
-});
+// $(document).on("click", ".modal-content", function(e) {
+// 	e.stopPropagation();
+// });
 
 
 
@@ -946,6 +1031,9 @@ $(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
 	let href = "/staffresources/equipment?id=" + id
 	window.open(href, "_blank");
 });
+
+
+
 
 
 
