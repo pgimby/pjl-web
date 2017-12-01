@@ -379,7 +379,7 @@ class DownloadModalWindow {
 			div5.append("h3").html("Support Documents");
 			div5.append("p").html("Supporting documents for the lab and its development (various)");
 
-			let chk6 = content.append("div").classed("dl-modal-check", true).attr("id", "ALL");
+			let chk6 = content.append("div").classed("dl-modal-check checked", true).attr("id", "ALL");
 			chk6.append("i").classed("fa fa-file-o fa-2x", true).attr("aria-hidden", "true");
 			let div6 = chk6.append("dl-modal-item-content", true);
 			div6.append("h3").html("Everything");
@@ -396,6 +396,21 @@ class DownloadModalWindow {
 			$(document).on("click", ".dl-modal", function(e) {
 				e.stopPropagation();
 			});
+
+			$(document).on("click", ".modal-close-button", self.removeWindow);
+
+			$(document).on("click", ".dl-modal-footer", function(e) {
+				var all = $("#ALL").hasClass("checked");
+				var pdf = $("#PDF").hasClass("checked");
+				var tex = $("#TEX").hasClass("checked");
+				var tmp = $("#TEMPLATES").hasClass("checked");
+				var med = $("#MEDIA").hasClass("checked");
+				var extradocs = $("#EXTRA").hasClass("checked");
+				self.removeWindow();
+				$("#zip-progress-bar").slideDown(200, function() {
+					collectFiles2Zip(all, pdf, tex, tmp, med, extradocs);
+				});
+			});
 		}
 
 		self.removeWindow = function() {
@@ -403,7 +418,9 @@ class DownloadModalWindow {
 			// $(".modal-screen").remove();
 			$("main").removeClass("blurred-page");
 			$(document).off("click", ".modal-screen");
+			$(document).off("click", ".modal-close-button");
 			$(document).off("click", ".dl-modal");
+			$(document).off("click", ".dl-modal-footer");
 		}
 
 		$("main").addClass("blurred-page");
@@ -717,11 +734,11 @@ $(document).on("click", ".dl-modal-check", function(e) {
 // });
 
 
-$(document).on("click", ".modal-close-button", function(e) {
-	$("main").removeClass("blurred-page");
-	$(".modal-screen").css({display: 'none'});
-	$("#zip-options").css({display: 'none'});
-});
+// $(document).on("click", ".modal-close-button", function(e) {
+// 	$("main").removeClass("blurred-page");
+// 	$(".modal-screen").css({display: 'none'});
+// 	$("#zip-options").css({display: 'none'});
+// });
 
 
 
@@ -740,51 +757,28 @@ $(document).on("click", ".modal-close-button", function(e) {
 
 
 
-$(document).on("click", ".dl-modal-footer", function(e) {
-	var all = $("#ALL").hasClass("checked");
-	var pdf = $("#PDF").hasClass("checked");
-	var tex = $("#TEX").hasClass("checked");
-	var tmp = $("#TEMPLATES").hasClass("checked");
-	var med = $("#MEDIA").hasClass("checked");
-	var extradocs = $("#EXTRA").hasClass("checked");
-	if (!pdf && !tex && !extradocs && !all && !tmp && !med) {
-		$("#zip-download-confirm").css({"borderRadius": "0"});
-		$("#zip-options-warning").stop().slideDown(400, function() {
-			setTimeout(function(){
-				$("#zip-options-warning").stop().slideUp(400);
-				$("#zip-download-confirm").css({"borderRadius": "0 0 4px 4px"});
-			}, 2000);
-		});
-		return false;
-	}
-	$("main").removeClass("blurred-page");
-	$(".modal-screen").css({display: 'none'});
-	$("#zip-options").css({display: 'none'});
-	$("#zip-progress-bar").slideDown(200, function() {
-		collectFiles2Zip(all, pdf, tex, tmp, med, extradocs);
-	});
-});
 
 
-$(document).on("change", ".download-checkbox", function(e) {
-	var checkboxes = $(".dc-right");
-	if($(e.target).prop("id") == "ALL") {
-		checkboxes.each(function() {
-			$(this).prop("checked", false)
-		});
-	} else {
-		var somethingchecked = false;
-		checkboxes.each(function() {
-			if ($(this).prop("checked")) {
-				somethingchecked = true;
-			}
-		});
-		if (somethingchecked) {
-			$("#ALL").prop("checked", false);
-		}
-	}
 
-});
+// $(document).on("change", ".download-checkbox", function(e) {
+// 	var checkboxes = $(".dc-right");
+// 	if($(e.target).prop("id") == "ALL") {
+// 		checkboxes.each(function() {
+// 			$(this).prop("checked", false)
+// 		});
+// 	} else {
+// 		var somethingchecked = false;
+// 		checkboxes.each(function() {
+// 			if ($(this).prop("checked")) {
+// 				somethingchecked = true;
+// 			}
+// 		});
+// 		if (somethingchecked) {
+// 			$("#ALL").prop("checked", false);
+// 		}
+// 	}
+
+// });
 
 
 
