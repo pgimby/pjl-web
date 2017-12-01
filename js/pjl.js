@@ -1810,10 +1810,6 @@ function beginDownload(filepath, promise) {
     		promise.reject();
     	} else if (this.status == 403) {
     		promise.reject();
-    	} else {
-    		console.log("zip failed line 1814", this.status)
-    		$("#zip-progress-bar progress").attr("value", "0");
-			$("#zip-progress-bar").stop().slideUp(500);
     	}
   	};
   	xhttp.open("GET", siteroot + filepath, true);
