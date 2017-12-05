@@ -8,6 +8,8 @@ var mainxmlpath = "/data/labDB.xml";
 var equipmentdatabasepath = "/data/equipmentDB.xml";
 var zipoutputfilename = "PJL-lab-docs.zip";
 var siteroot = "";
+
+var recordmasklength = 20;
 // var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
@@ -76,7 +78,7 @@ function enableEquipmentSearchAutoComplete(xml) {
 
 function populateEquipmentFilters(xml) {
 	let manufacturers = new Set(["—"]);
-	let rooms = new Set(["—"]);
+	let rooms = new Set([]);
 	let mannodes = xml.getElementsByTagName("Manufacturer");
 	let roomnodes = xml.getElementsByTagName("Room");
 	for (let i = 0; i < mannodes.length; i++) {
@@ -155,12 +157,22 @@ function createEquipRecordSnapshots(xml) {  //create and append to DOM an approp
 		let eqmake = (equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "—");
 		let eqmodel = (equiplist[i].getElementsByTagName("Model")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "—");
 
-		let snapshot = d3.select("#eq-list-box").append("div").classed("eq-record-flex", true).classed("record-rendered", true);
+		let snapshot = d3.select("#record-list-box").append("div").classed("eq-record-flex", true).classed("record-rendered", true);
 		let id = snapshot.append("p").classed("eq-record-id", true).html(eqid);
 		let make = snapshot.append("p").classed("eq-record-make", true).html(eqmake);
 		let model = snapshot.append("p").classed("eq-record-model", true).html(eqmodel);
 		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
+		let roomnodes = equiplist[i].getElementsByTagName("Room");
+		let rooms = [];
+		for (let r = 0; r < roomnodes.length; r++) {
+			rooms.push(roomnodes[r].childNodes[0].nodeValue);
+		}
+		snapshot.attr("data-rooms", rooms.join());
+		let repair = (equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0] ? equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "—");
+		snapshot.attr("data-repair", repair);
 	}
+	applyRecordsMask(true);
+	displayNumResults(countNumRecords());
 }
 
 $(document).on("click", ".eq-record-flex", function(e) {
@@ -201,7 +213,7 @@ function linkPDFs() {
             		let equipment = labs[j].getElementsByTagName("Item");
             		eqtwoloop: for (let k = 0; k < equipment.length; k++) {
             			if (equipment[k].getAttribute("id") == id) {
-            				$(items[i]).attr("target", "_blank").attr("href", "http://www.pjl.ucalgary.ca"+labs[j].getElementsByTagName("Path")[0].childNodes[0].nodeValue);
+            				$(items[i]).attr("target", "_blank").attr("href", "http://www.pjl.ucalgary.ca" + labs[j].getElementsByTagName("Path")[0].childNodes[0].nodeValue);
             				break labloop;
 	            		}
             		}
@@ -636,6 +648,7 @@ $(document).on("click", "#clear-filters-button", function(e) {
 	for (var i = selects.length - 1; i >= 0; i--) {
 		$(selects[i]).val([]);
 	}
+	console.log(selects)
 	filterResults(getCurrentFilter(), fullset=true);
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
@@ -680,8 +693,9 @@ $(document).on("click", ".search-icon", function(e) {
 
 $(document).on("keypress", "#search-bar", function(e) {
 	var key = e.which;
+	console.log("enter")
 	if (key == 13) {
-		console.log("enter")
+		console.log(key, 13)
 	 	$(".search-icon").click();
 	 	return false;
 	}
@@ -800,6 +814,30 @@ $(document).on("click", "#sort-semester", function(e) {
 
 $(document).on("click", "#sort-course", function(e) {
 	sortRecords("course");
+});
+
+
+
+$(document).on("click", "#sort-eq-id", function(e) {
+	sortRecords("eq-id");
+});
+
+
+
+$(document).on("click", "#sort-eq-make", function(e) {
+	sortRecords("eq-make");
+});
+
+
+
+$(document).on("click", "#sort-eq-model", function(e) {
+	sortRecords("eq-model");
+});
+
+
+
+$(document).on("click", "#sort-eq-name", function(e) {
+	sortRecords("eq-name");
 });
 
 
@@ -963,7 +1001,7 @@ function populateFilters(docXML) {  //read XML and populate the HTML select boxe
 function createRecordSnapshots(lab) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
 	var versionlist = getVersionList(lab);
 	for (var i = versionlist.length - 1; i >= 0; i--) {
-		var detailsbox = d3.select("#lab-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
+		var detailsbox = d3.select("#record-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
 
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
 		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", siteroot + versionlist[i].path).attr("target", "_blank");
@@ -1025,7 +1063,9 @@ $(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
 });
 
 
-
+function isEquipmentDatabase() {
+	return (document.title == "Physics Junior Laboratory - Equipment Database" ? true : false);
+}
 
 
 
@@ -1034,58 +1074,111 @@ $(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
 //*******************************************************************************************
 
 
+function interpretRepairFilter(value) {
+	switch (value) {
+		case "0":
+			return [0,0.1];
+		case "1-2":
+			return [1,2];
+		case "3-5":
+			return [3,5];
+		case ">5":
+			return [5,9999];
+		default:
+			return [0,9999];
+	}
+}
+
 
 function filterResults(filter, fullset=true) {  //given a filter object, filter displayed records and update DOM appropriately
-	if(fullset) {
-		var lablist = $(".lab-record-flex");
-	} else {
-		var lablist = getCurrentRecords();
-	}
-	var numrecords = lablist.length;
-	for (var i = lablist.length - 1; i >= 0; i--) {
-		var lab = $(lablist[i]);
-		var courses = lab.find(".courses").text().split(", ");
-		var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
-		var topics = lab.find(".lab-data-topics").text().slice(8,).split(", ");
+	if (isEquipmentDatabase()) {
+		if(fullset) {
+			var recordlist = $(".eq-record-flex");
+		} else {
+			var recordlist = getCurrentRecords();
+		}
+		var numrecords = recordlist.length;
+		for (let i = 0; i < recordlist.length; i++) {
+			let item = $(recordlist[i]);
+			let id = item.find(".eq-record-id").text();
+			let make = item.find(".eq-record-make").text();
+			let rooms = item.attr("data-rooms").split(",");
+			let repair = (item.attr("data-repair") == "—" ? -1 : parseFloat(item.attr("data-repair")));
 
-		if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4)) || filter["year-filter"].length == 0) {
-			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			if (filter["manufacturer-filter"].includes(make) || filter["manufacturer-filter"].length == 0) {
+				item.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				item.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
+
+			if (doArraysOverlap(rooms, filter["room-filter"]) || filter["room-filter"].length == 0) {
+				item.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				item.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
+
+			let repairrange = interpretRepairFilter(filter["repair-filter"]);
+			if ((repair >= repairrange[0] && repair < repairrange[1]) || filter["repair-filter"].length == 0) {
+				item.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				item.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
 		}
-		else if (lab.find(".version-semester").text().endsWith("—") && filter["year-filter"].includes("—")) {
-			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+	} else {
+		if(fullset) {
+			var recordlist = $(".lab-record-flex");
 		} else {
-			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			continue;
+			var recordlist = getCurrentRecords();
 		}
-		if (doArraysOverlap(courses, filter["course-filter"])                                    || filter["course-filter"].length == 0) {
-			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-		} else {
-			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			continue;
+		var numrecords = recordlist.length;
+		for (let i = recordlist.length - 1; i >= 0; i--) {
+			let lab = $(recordlist[i]);
+			let courses = lab.find(".courses").text().split(", ");
+			let disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
+			let topics = lab.find(".lab-data-topics").text().slice(8,).split(", ");
+
+			if (filter["year-filter"].includes(lab.find(".version-semester").text().slice(-4)) || filter["year-filter"].length == 0) {
+				lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			}
+			else if (lab.find(".version-semester").text().endsWith("—") && filter["year-filter"].includes("—")) {
+				lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
+			if (doArraysOverlap(courses, filter["course-filter"]) || filter["course-filter"].length == 0) {
+				lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
+			if (filter["semester-filter"].includes(lab.find(".version-semester").text().slice(0,-5)) || filter["semester-filter"].length == 0) {
+				lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else if(lab.find(".version-semester").text().startsWith("—") && filter["semester-filter"].includes("—")) {
+				lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
+			if (doArraysOverlap(disciplines, filter["discipline-filter"]) || filter["discipline-filter"].length == 0) {
+				lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
+			if (doArraysOverlap(topics, filter["topic-filter"]) || filter["topic-filter"].length == 0) {
+				lab.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				lab.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
 		}
-		if (filter["semester-filter"].includes(lab.find(".version-semester").text().slice(0,-5)) || filter["semester-filter"].length == 0) {
-			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-		} else if(lab.find(".version-semester").text().startsWith("—") && filter["semester-filter"].includes("—")) {
-			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-		} else {
-			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			continue;
-		}
-		if (doArraysOverlap(disciplines, filter["discipline-filter"])                            || filter["discipline-filter"].length == 0) {
-			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-		} else {
-			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			continue;
-		}
-		if (doArraysOverlap(topics, filter["topic-filter"])                            || filter["topic-filter"].length == 0) {
-			lab.removeClass("record-not-rendered masked").addClass("record-rendered");
-		} else {
-			lab.removeClass("record-rendered masked").addClass("record-not-rendered");
-			continue;
-		}
+		falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name"), $("#sort-course")]);
+		$("#record-list-box").removeClass("records-unmasked");
 	}
-	falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name"), $("#sort-course")]);
-	$("#lab-list-box").removeClass("records-unmasked");
 }
 
 
@@ -1110,143 +1203,96 @@ function updateZipStatus() {  //confirm that zipping is available and update the
 
 function sortRecords(by) {  //take column header identifier string and sort accordingly - not type safe
 	var records = getCurrentRecords();
-	var sorted = [];
-	for (var i = records.length - 1; i >= 0; i--) {
-		records[i].detach();
+	let recordlistbox = $("#record-list-box");
+	for (let record of records) {
+		record.detach();
 	}
 	switch (by) {
 		case "course":
 			if ($("#sort-course").attr("sorted") == "true") {
 				records.reverse();
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-course")]);
-				falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name")]);
 			} else {
 				records.sort(compareLabsByCourse);
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-course")]);
-				falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name")]);
 			}
+			truifySort([$("#sort-course")]);
+			falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name")]);
 			break;
 		case "semester":
 			if ($("#sort-semester").attr("sorted") == "true") {
 				records.reverse();
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-semester")]);
-				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-name")]);
 			} else {
 				records.sort(compareLabsBySemester);
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-semester")]);
-				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-name")]);
 			}
+			truifySort([$("#sort-semester")]);
+			falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-name")]);
 			break;
 		case "year":
 			if ($("#sort-year").attr("sorted") == "true") {
 				records.reverse();
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-year")]);
-				falsifySort([$("#sort-semester"), $("#sort-course"), $("#sort-name")]);
 			} else {
 				records.sort(compareLabsByYear);
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-year")]);
-				falsifySort([$("#sort-semester"), $("#sort-course"), $("#sort-name")]);
 			}
+			truifySort([$("#sort-year")]);
+			falsifySort([$("#sort-semester"), $("#sort-course"), $("#sort-name")]);
 			break;
 		case "name":
 			if ($("#sort-name").attr("sorted") == "true") {
 				records.reverse();
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-name")]);
-				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester")]);
 			} else {
 				records.sort(compareLabsByName);
-				var lablistbox = $("#lab-list-box");
-				for (var i = records.length - 1; i >= 0; i--) {
-					if (!$("#lab-list-box").hasClass("records-unmasked")) {
-						if (i > records.length - 21) {
-							records[i].removeClass("masked");
-						} else {
-							records[i].addClass("masked");
-						}
-					}
-					lablistbox.append(records[i]);
-				}
-				truifySort([$("#sort-name")]);
-				falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester")]);
 			}
+			truifySort([$("#sort-name")]);
+			falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester")]);
 			break;
+		case "eq-id":
+			if ($("#sort-eq-id").attr("sorted") == "true") {
+				records.reverse();
+			} else {
+				records.sort(compareEquipById);
+			}
+			truifySort([$("#sort-eq-id")]);
+			falsifySort([$("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-name")]);
+			break;
+		case "eq-make":
+			if ($("#sort-eq-make").attr("sorted") == "true") {
+				records.reverse();
+			} else {
+				records.sort(compareEquipByMake);
+			}
+			truifySort([$("#sort-eq-make")]);
+			falsifySort([$("#sort-eq-id"), $("#sort-eq-model"), $("#sort-eq-name")]);
+			break;
+		case "eq-model":
+			if ($("#sort-eq-model").attr("sorted") == "true") {
+				records.reverse();
+			} else {
+				records.sort(compareEquipByModel);
+			}
+			truifySort([$("#sort-eq-model")]);
+			falsifySort([$("#sort-eq-make"), $("#sort-eq-id"), $("#sort-eq-name")]);
+			break;
+		case "eq-name":
+			if ($("#sort-eq-name").attr("sorted") == "true") {
+				console.log("reverse")
+				records.reverse();
+			} else {
+				console.log("forward")
+				records.sort(compareEquipByName);
+			}
+			truifySort([$("#sort-eq-name")]);
+			falsifySort([$("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-id")]);
+			break;
+	}
+	for (let i = 0; i < records.length; i++) {
+		if (!recordlistbox.hasClass("records-unmasked")) {
+			if (i < recordmasklength) {
+				console.log(i, records[i].find(".lab-data-id").text())
+				records[i].removeClass("masked");
+			} else {
+				records[i].addClass("masked");
+			}
+		}
+		recordlistbox.append(records[i]);
 	}
 }
 
@@ -1327,16 +1373,16 @@ function applyRecordsMask(truthy) {
 		$("#show-all-button").css("visibility", "hidden");
 	}
 	falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name"), $("#sort-course")]);
-	$("#lab-list-box").addClass("records-unmasked");
+	$("#record-list-box").addClass("records-unmasked");
 	if (Boolean(truthy)) {
-		$("#lab-list-box").removeClass("records-unmasked");
+		$("#record-list-box").removeClass("records-unmasked");
 	}
 }
 
 
 
 function unmaskAll(records) {
-	$("#lab-list-box").addClass("records-unmasked");
+	$("#record-list-box").addClass("records-unmasked");
 	for (var i = records.length - 1; i >= 0; i--) {
 		records[i].removeClass("masked");
 	}
@@ -1443,16 +1489,31 @@ var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.
 
 
 function generateSearchResults(query, selector) {  //take query and search-selector and make yes/no decisions on what records to include; display accordingly
-	var minsimilarity = 0.4;
-	var querybigrams = makeBigramList(query);
-	var lablist = getAllRecords();
-	var skipsim = ("id" == selector ? true : false)
-	for (var i = lablist.length - 1; i >= 0; i--) {
-		lablist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
-		var similarity = (skipsim ? 0.0 : compareQueryWithLabRecord(querybigrams, lablist[i], selector));
-		if (similarity < minsimilarity && !queryLiteralInLabRecord(query, lablist[i], selector)) {
-			lablist[i].removeClass("record-rendered").addClass("record-not-rendered");
-		}
+	let minsimilarity = 0.4;
+	let querybigrams = makeBigramList(query);
+	let recordlist = getAllRecords();
+	let recordtype = (isEquipmentDatabase() ? "equipment" : "lab")
+	let skipsim = ("id" == selector ? true : false)
+
+	switch (recordtype) {
+		case "equipment":
+			for (let i = 0; i < recordlist.length; i++) {
+				recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
+				let similarity = compareQueryWithEquipRecord(querybigrams, recordlist[i]);
+				if (similarity < .9) {
+					recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
+				}
+			}
+			break;
+		case "lab":
+			for (let i = 0; i < recordlist.length; i++) {
+				recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
+				let similarity = (skipsim ? 0.0 : compareQueryWithLabRecord(querybigrams, recordlist[i], selector));
+				if (similarity < minsimilarity && !queryLiteralInLabRecord(query, recordlist[i], selector)) {
+					recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
+				}
+			}
+			break;
 	}
 }
 
@@ -1562,6 +1623,15 @@ function compareQueryWithLabRecord(querybigrams, lab, selector) {
 }
 
 
+function compareQueryWithEquipRecord(querybigrams, eqitem) {
+	let name = eqitem.find(".eq-record-name").html();
+	let recordbigrams = makeBigramList(name);
+	return sorensenDiceCoef(recordbigrams, querybigrams);
+}
+
+
+
+
 
 function sorensenDiceCoef(bigrams1, bigrams2) {  //calculate Sorensen-Dice Coefficient for two sets (arrays) of bigrams - not type safe
 	var count = 0;
@@ -1628,7 +1698,7 @@ function defaultSearchHandler(searchphrase) {  //handle a non-selected search re
 			window.open("https://xkcd.com", '_blank');
 			break;
 		default:
-			$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+			$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "all");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1638,7 +1708,7 @@ function defaultSearchHandler(searchphrase) {  //handle a non-selected search re
 
 
 function courseSearchHandler(searchphrase) {  //handle the search request for course search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "course");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1647,7 +1717,7 @@ function courseSearchHandler(searchphrase) {  //handle the search request for co
 
 
 function labSearchHandler(searchphrase) {  //handle the search request for lab name search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "lab");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1656,7 +1726,7 @@ function labSearchHandler(searchphrase) {  //handle the search request for lab n
 
 
 function yearSearchHandler(searchphrase) {  //handle the search request for year search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "year");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1665,7 +1735,7 @@ function yearSearchHandler(searchphrase) {  //handle the search request for year
 
 
 function semesterSearchHandler(searchphrase) {  //handle the search request for semester search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "semester");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1674,7 +1744,7 @@ function semesterSearchHandler(searchphrase) {  //handle the search request for 
 
 
 function topicSearchHandler(searchphrase) {  //handle the search request for topic search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "topic");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1683,7 +1753,7 @@ function topicSearchHandler(searchphrase) {  //handle the search request for top
 
 
 function disciplineSearchHandler(searchphrase) {  //handle the search request for discipline search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "discipline");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1692,7 +1762,7 @@ function disciplineSearchHandler(searchphrase) {  //handle the search request fo
 
 
 function equipmentSearchHandler(searchphrase) {  //handle the search request for equipment search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "equipment");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1701,7 +1771,7 @@ function equipmentSearchHandler(searchphrase) {  //handle the search request for
 
 
 function idSearchHandler(searchphrase) {  //handle the search request for id search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#lab-list-box').offset().top)}, 500);
+	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
 			generateSearchResults(searchphrase, "id");
 			displayNumResults(countNumRecords());
 	 		$("#search-bar").val("");
@@ -1955,11 +2025,21 @@ function sendEquipXMLModification(data) { //data is a dictionary
 function getCurrentRecords() {  //returns currently displayed lab records as array of jQuery objects
 	var list = [];
 	var lablist = $(".lab-record-flex");
-	for (var i = lablist.length - 1; i >= 0; i--) {
-		if($(lablist[i]).hasClass("record-rendered")) {
-			list.push($(lablist[i]));
+	if (isEquipmentDatabase()) {
+		let eqlist = $(".eq-record-flex");
+		for (let i = 0; i < eqlist.length; i++) {
+			if($(eqlist[i]).hasClass("record-rendered")) {
+				list.push($(eqlist[i]));
+			}
+		}
+	} else {
+		for (let i = 0; i < lablist.length; i++) {
+			if($(lablist[i]).hasClass("record-rendered")) {
+				list.push($(lablist[i]));
+			}
 		}
 	}
+
 	return list;
 }
 
@@ -1968,8 +2048,15 @@ function getCurrentRecords() {  //returns currently displayed lab records as arr
 function getAllRecords() {  //returns all lab records as array of jquery objects
 	var list = [];
 	var lablist = $(".lab-record-flex");
-	for (var i = lablist.length - 1; i >= 0; i--) {
-		list.push($(lablist[i]));
+	if (lablist.length > 0) {
+		for (var i = lablist.length - 1; i >= 0; i--) {
+			list.push($(lablist[i]));
+		}
+	} else {
+		let eqlist = $(".eq-record-flex");
+		for (var i = 0; i < eqlist.length; i++) {
+			list.push($(eqlist[i]));
+		}
 	}
 	return list;
 }
@@ -1984,9 +2071,9 @@ function countNumRecords() {  //return the number of currently displayed records
 
 
 function getCurrentFilter() {  //return a filter object of currently activated filters
-	var selects = $("select");
-	var filter = {};
-	for (var i = selects.length - 1; i >= 0; i--) {
+	let selects = $("select");
+	let filter = {};
+	for (let i = selects.length - 1; i >= 0; i--) {
 		if (selects[i].value) {
 			filter[$(selects[i]).parent().attr("id")] = $(selects[i]).val();
 		} else {
@@ -2192,6 +2279,62 @@ function compareLabsByYear(a, b) {  //comparison function for Array.prototype.so
 function compareLabsByName(a, b) {  //comparison function for Array.prototype.sort on lab name of jQuery ".lab-record-flex" selection - not type safe
 	var a = a.find(".lab-title").text().toLowerCase();
 	var b = b.find(".lab-title").text().toLowerCase();
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+function compareEquipById(a, b) {
+	var a = a.find(".eq-record-id").text().toLowerCase();
+	var b = b.find(".eq-record-id").text().toLowerCase();
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+function compareEquipByMake(a, b) {
+	var a = a.find(".eq-record-make").text().toLowerCase();
+	var b = b.find(".eq-record-make").text().toLowerCase();
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+function compareEquipByModel(a, b) {
+	var a = a.find(".eq-record-model").text().toLowerCase();
+	var b = b.find(".eq-record-model").text().toLowerCase();
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+function compareEquipByName(a, b) {
+	var a = a.find(".eq-record-name").text().toLowerCase();
+	var b = b.find(".eq-record-name").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}

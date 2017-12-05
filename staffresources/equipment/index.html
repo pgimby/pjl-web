@@ -2,7 +2,8 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Physics Junior Laboratory</title>
+    <!-- if you change the title then also change the function 'isEquipmentDatabase' in pjl.js -->
+    <title>Physics Junior Laboratory - Equipment Database</title>
     <link rel="stylesheet" href="/css/site-wide.css">
     <link rel="stylesheet" href="/css/equipment.css">
     <link rel="stylesheet" href="/css/repo.css">
@@ -11,6 +12,7 @@
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/jquery.mobile.custom.min.js"></script>
     <script src="/js/d3.min.js"></script>
+    <script src="/js/jszip.min.js"></script>
     <script src="/js/FileSaver.js"></script>
     <script src="/js/pjl.js"></script>
 
@@ -150,23 +152,23 @@
         <!-- LAB RECORDS FILTER SELECTIONS - FILLED DYNAMICALLY -->
 
         <div class="filter">
-          <div id="course-filter">
+          <div id="manufacturer-filter">
             <h3>Manufacturer</h3>
             <select id="manufacturer-select" multiple="multiple">
             </select>
           </div>
-          <div id="year-filter">
+          <div id="room-filter">
             <h3>Room</h3>
             <select id="room-select" multiple="multiple">
             </select>
           </div>
-          <div id="semester-filter">
+          <div id="repair-filter">
             <h3>Repair Backlog</h3>
             <select id="backlog-select" size="4">
               <option value="0">0</option>
-              <option value="2">0-2</option>
-              <option value="5">2-5</option>
-              <option value="6">&gt;5</option>
+              <option value="1-2">1-2</option>
+              <option value="3-5">3-5</option>
+              <option value=">5">&gt;5</option>
             </select>
           </div>
           <div id="filter-mod-buttons">
@@ -193,14 +195,14 @@
 
 
         <div id="records-header">
-            <p class="record-header-button" id="sort-id" sorted="false"><span>ID #</span></p>
-            <p class="record-header-button" id="sort-make" sorted="false"><span>Manufacturer</span></p>
-            <p class="record-header-button" id="sort-model" sorted="false"><span>Model</span></p>
-            <p class="record-header-button" id="sort-name" sorted="false"><span>Name</span></p>
+            <p class="record-header-button" id="sort-eq-id" sorted="false"><span>ID #</span></p>
+            <p class="record-header-button" id="sort-eq-make" sorted="false"><span>Manufacturer</span></p>
+            <p class="record-header-button" id="sort-eq-model" sorted="false"><span>Model</span></p>
+            <p class="record-header-button" id="sort-eq-name" sorted="false"><span>Name</span></p>
             <!-- <div style="width:46px"></div> -->
           </div>
 
-        <div id="eq-list-box">
+        <div id="record-list-box">
 
         </div>
         <p id="show-all-button">show all</p></br>

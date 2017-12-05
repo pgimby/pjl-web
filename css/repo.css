@@ -272,7 +272,7 @@ select {
 
 /*LAB RECORD LIST DISPLAY*/
 
-#lab-list-box {
+#record-list-box {
 	display: -webkit-flex;
     display: flex;
     flex-direction: column;

@@ -40,6 +40,14 @@ h2.eq-item-text:hover {
 
 
 
+#backlog-select {
+	width: 128px;
+}
+
+
+
+
+
 /*EQUIPMENT DATABASE MODIFICATION FORM*/
 
 
@@ -362,6 +370,10 @@ h2.eq-item-text:hover {
 .eq-record-flex * {
 	pointer-events: none;
 }
+
+.eq-record-flex.masked {
+		display: none !important;
+	}
 
 .eq-record-id {
 	flex: 1;
