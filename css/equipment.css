@@ -271,7 +271,7 @@ h2.eq-item-text:hover {
 }
 
 .eq-modal-content > div {
-	margin: 8px auto;
+	margin: 16px auto;
 }
 
 .eq-modal-amounts > *:not(:first-child),
@@ -351,6 +351,81 @@ h2.eq-item-text:hover {
 
 
 
+.eq-modal-amounts input {
+	font-size: 2em;
+	width: 56px;
+	line-height: 0;
+	margin: 4px 0;
+}
+
+.eq-modal-id > input {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 0;
+	font-size: .9em;
+	font-family: 'Proxima Nova', sans-serif;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+}
+
+.eq-make-model input {
+	text-align: center;
+	color: #777;
+	display: inline;
+	margin: 0;
+	width: 30%;
+	line-height: 0;
+}
+
+.eq-modal-location input {
+	display: inline;
+	width: 72px;
+}
+
+.eq-modal #add-location {
+	float: right;
+	margin-right: 12px;
+	padding: 4px;
+}
+
+.eq-modal #add-location:hover {
+	color: #666;
+}
+
+
+.eq-modal-footer {
+	background-color: #424242;
+	width: 100%;
+	border-radius: 0 0 4px 4px;
+	position: relative;
+	top: 2px;
+}
+
+.eq-modal-footer:hover {
+	background-color: #333;
+}
+
+.eq-modal-confirm {
+	font-size: 1.2em;
+	text-align: center;
+	color: #ddd;
+	pointer-events: none;
+}
+
+.eq-modal-footer:hover .dl-modal-confirm {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .eq-record-flex {
@@ -383,6 +458,10 @@ h2.eq-item-text:hover {
 	flex: 2;
 }
 
+#sort-eq-name {
+	flex: 2 !important;
+}
+
 .eq-record-make {
 	flex: 1;
 }
@@ -406,4 +485,23 @@ h2.eq-item-text:hover {
 		height: 100%;
 		overflow-y: scroll;
 	}
+
+	#sort-eq-model {
+		display: none;
+	}
+
+	.eq-record-model {
+		display: none;
+	}
+
+	.eq-modal {
+		width: 100%;
+		height: 100vh;
+		border-radius: unset;
+		box-shadow: unset;
+		max-width: unset;
+		margin: unset;
+		max-height: unset;
+	}
+
 }

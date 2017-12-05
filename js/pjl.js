@@ -180,6 +180,10 @@ $(document).on("click", ".eq-record-flex", function(e) {
 });
 
 
+$(document).on("click", "#edit-mode-button", function(e) {
+	window.location = "./edit/";
+});
+
 
 
 
@@ -343,6 +347,19 @@ class EquipmentDisplay {
 		$("main").addClass("blurred-page");
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class DownloadModalWindow {
