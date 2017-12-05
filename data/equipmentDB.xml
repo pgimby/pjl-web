@@ -49,15 +49,15 @@
   <Item id="0330">
     <InventoryName>LED apparatus</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>PJL</Manufacturer>
+      <Model></Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>17</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3846,11 +3846,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>Other</Storage></Location><Location><Room>ST032</Room><Storage>Other</Storage></Location><Location><Room>ST034</Room><Storage>Other</Storage></Location><Location><Room>ST036</Room><Storage>Other</Storage></Location><Location><Room>ST038</Room><Storage>Other</Storage></Location><Location><Room>ST029</Room><Storage>Other</Storage></Location><Location><Room>ST037</Room><Storage>Other</Storage></Location><Location><Room>ST042</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>57</Total>
+      <InService>57</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5286,7 +5286,7 @@
     <InventoryName>series and parallel RLC circuit board</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
-      <Model></Model>
+      <Model/>
     </Identification>
     <Kit isKit="false"/>
     <Locations><Location><Room>ST029</Room><Storage>D1</Storage></Location></Locations>
