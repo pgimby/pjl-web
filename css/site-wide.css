@@ -145,7 +145,7 @@ svg text {
 
 
 #landing-hero {
-	width: 100vw;
+	/*width: 100vw;*/
 	height: 400px;
 	background-color: #222;
 	overflow: hidden;
@@ -157,7 +157,7 @@ svg text {
 }
 
 .hero-bottom {
-	width: 100vw;
+	/*width: 100vw;*/
 	height: 36px;
 	background-color: #222;
 	border-top: 1px solid #111;
@@ -571,7 +571,7 @@ footer {
 
 #footer-baseline {
 	height: 40px;
-	width: 100vw;
+	/*width: 100vw;*/
 	background-color: #939393;
 	position: relative;
 	bottom: -100%;
