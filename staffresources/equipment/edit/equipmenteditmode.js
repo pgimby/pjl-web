@@ -7,7 +7,11 @@ $(document).on("click", ".eq-record-flex", function(e) {
 	new EquipmentEditDisplay($(e.target).children(".eq-record-id").text());
 });
 
+$(document).off("click", "#edit-mode-button");
 
+$(document).on("click", "#edit-mode-button", function(e) {
+	window.location = "../";
+});
 
 
 
