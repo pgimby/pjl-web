@@ -180,7 +180,7 @@ class EquipmentEditDisplay {
 						.attr("autocomplete", "off");
 			});
 
-			$(document).on("click", ".eq-modal-footer", function(e) {
+			$(document).on("submit", ".eq-modal-edit-form", function(e) {
 				e.preventDefault();
 				let dat = $(e.target).serialize();
 				console.log(dat)
