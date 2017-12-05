@@ -81,20 +81,20 @@ class EquipmentEditDisplay {
 			let ident = content.append("div").classed("eq-modal-id", true);
 			ident.append("input").classed("eq-modal-name", true)
 						.attr("name", "eq-name")
-						.attr("value", name)
+						.property("value", name)
 						.attr("type", "text")
 						.attr("placeholder", "Name...")
 						.attr("autocomplete", "off");
 			let mm = ident.append("div").classed("eq-make-model", true);
 			mm.append("input").classed("eq-make", true)
 						.attr("name", "eq-make")
-						.attr("value", make)
+						.property("value", make)
 						.attr("type", "text")
 						.attr("placeholder", "Manufacturer...")
 						.attr("autocomplete", "off");
 			mm.append("input").classed("eq-model", true)
 						.attr("name", "eq-model")
-						.attr("value", model)
+						.property("value", model)
 						.attr("type", "text")
 						.attr("placeholder", "Model...")
 						.attr("autocomplete", "off");
@@ -104,13 +104,13 @@ class EquipmentEditDisplay {
 				let loc = self.locs.append("div").classed("eq-modal-location", true);
 				loc.append("input").classed("eq-modal-room", true)
 						.attr("name", "eq-room[]")
-						.attr("value", locations[i].room)
+						.property("value", locations[i].room)
 						.attr("type", "text")
 						.attr("placeholder", "Room")
 						.attr("autocomplete", "off");
 				loc.append("input").classed("eq-modal-storage", true)
 						.attr("name", "eq-storage[]")
-						.attr("value", locations[i].storage)
+						.property("value", locations[i].storage)
 						.attr("type", "text")
 						.attr("placeholder", "Storage...")
 						.attr("autocomplete", "off");
@@ -124,21 +124,21 @@ class EquipmentEditDisplay {
 			let amt1 = amts.append("div").classed("eq-modal-amount total", true);
 			amt1.append("input").classed("eq-modal-total", true)
 						.attr("name", "eq-total")
-						.attr("value", total)
+						.property("value", total)
 						.attr("type", "text")
 						.attr("autocomplete", "off");
 			amt1.append("h3").html("Total");
 			let amt2 = amts.append("div").classed("eq-modal-amount service", true);
 			amt2.append("input").classed("eq-modal-service", true)
 						.attr("name", "eq-service")
-						.attr("value", service)
+						.property("value", service)
 						.attr("type", "text")
 						.attr("autocomplete", "off");
 			amt2.append("h3").html("In Service");
 			let amt3 = amts.append("div").classed("eq-modal-amount repair", true);
 			amt3.append("input").classed("eq-modal-repair", true)
 						.attr("name", "eq-repair")
-						.attr("value", repair)
+						.property("value", repair)
 						.attr("type", "text")
 						.attr("autocomplete", "off");
 			amt3.append("h3").html("Under Repair");
@@ -168,13 +168,13 @@ class EquipmentEditDisplay {
 				let loc = self.locs.insert("div", "#add-location").classed("eq-modal-location", true);
 				loc.append("input").classed("eq-modal-room", true)
 						.attr("name", "eq-room[]")
-						.attr("value", "")
+						.property("value", "")
 						.attr("type", "text")
 						.attr("placeholder", "Room...")
 						.attr("autocomplete", "off");
 				loc.append("input").classed("eq-modal-storage", true)
 						.attr("name", "eq-storage[]")
-						.attr("value", "")
+						.property("value", "")
 						.attr("type", "text")
 						.attr("placeholder", "Storage...")
 						.attr("autocomplete", "off");
