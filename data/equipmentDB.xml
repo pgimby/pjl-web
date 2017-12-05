@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
   <Item id="0001">
     <InventoryName>Fluke multimeter</InventoryName>
@@ -18,8 +18,6 @@
       </Location>
     </Locations>
     <Quantity>
-      <Total>61</Total>
-      <InService>3</InService>
       <Total>45</Total>
       <InService>43</InService>
       <UnderRepair/>
