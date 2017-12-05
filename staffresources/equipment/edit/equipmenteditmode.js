@@ -180,9 +180,8 @@ class EquipmentEditDisplay {
 						.attr("autocomplete", "off");
 			});
 
-			$(document).on("submit", ".eq-modal-edit-form", function(e) {
-				e.preventDefault();
-				let dat = $(e.target).serialize();
+			$(document).on("click", ".eq-modal-footer", function(e) {
+				let dat = $(".eq-modal-edit-form").serialize();
 				console.log(dat)
 				$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + self.id, function(data) {
 					self.removeForm();
