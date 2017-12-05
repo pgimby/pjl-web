@@ -490,6 +490,33 @@ svg text {
 
 
 
+#edit-mode-button {
+	display: block;
+	padding: 3px;
+	margin: 0;
+	position: relative;
+	top: 30px;
+	font-size: .6em;
+	height: 12px;
+	color: #456545;
+	transition: all .3s ease;
+}
+
+	#edit-mode-button:hover {
+		cursor: pointer;
+		color: #009900;/*#0000EE;*/
+		transition: all .3s ease;
+	}
+
+	#edit-mode-button:active {
+		/*color: #7777FF;*/
+		opacity: .7;
+		transition: none;
+	}
+
+
+
+
 
 
 
