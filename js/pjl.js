@@ -41,12 +41,6 @@ var recordmasklength = 20;
 function initRepoPage() {  //initialize the repository page
 	loadXML();
 	$("#search-bar").val("");
-	// $(".dl-modal").slimScroll({
-	//     position: 'left',
-	//     height: 'auto',
-	//     railVisible: true,
-	//     alwaysVisible: false
-	// });
 }
 
 
@@ -190,46 +184,6 @@ $(document).on("click", "#edit-mode-button", function(e) {
 
 
 
-// TEMPORARY FUNCTIONS FOR TEMPORARY EQUIPMENT MOD PAGE -----------------------
-
-function sortEquipList() {
-	items = $(".eq-item-display");
-	items.sort(compareEquipNames);
-	items.each(function() {
-		$("main").append(this);
-	});
-}
-
-function compareEquipNames(a,b) {
-	return ($(a).find(".eq-item-text").text() < $(b).find(".eq-item-text").text()) ? 1 : ($(a).find(".eq-item-text").text() > $(b).find(".eq-item-text").text()) ? -1 : 0;
-}
-
-function linkPDFs() {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-    	if (xhttp.readyState == 4 && xhttp.status == 200) {
-            let docXML = xhttp.responseXML;
-            let labs = docXML.getElementsByTagName("Lab");
-            let items = $(".eq-item-pdf");
-            eqloop: for (let i = 0; i < items.length; i++) {
-            	let id = $(items[i]).attr("data");
-            	labloop: for (let j = 0; j < labs.length; j++) {
-            		let equipment = labs[j].getElementsByTagName("Item");
-            		eqtwoloop: for (let k = 0; k < equipment.length; k++) {
-            			if (equipment[k].getAttribute("id") == id) {
-            				$(items[i]).attr("target", "_blank").attr("href", "http://www.pjl.ucalgary.ca" + labs[j].getElementsByTagName("Path")[0].childNodes[0].nodeValue);
-            				break labloop;
-	            		}
-            		}
-            	}
-            }
-    	}
-  	};
-  	xhttp.open("GET", siteroot + "/dev/labDB.xml", true);
-  	xhttp.send();
-}
-
-//-----------------------------------------------------------------------------------
 
 
 class EquipmentDisplay {
@@ -459,191 +413,6 @@ class DownloadModalWindow {
 
 
 
-class EquipmentModForm {
-
-	constructor(id) {
-		var self = this;
-		self.id = id;
-		self.form = d3.select("body").append("form").classed("equip-mod-form", true);
-
-
-		self._buildForm = function() {
-			let formheader = self.form.append("div").classed("header", true);
-			let headerid = formheader.append("h3").classed("id", true).html("Equipment Item #" + String(self.id));
-
-			let formbody = self.form.append("div").classed("buttons", true);
-			let idbutton = formbody.append("h3").classed("button id-button", true).html("Identification");
-			let idcontent = formbody.append("div").classed("id-content", true);
-			idcontent.append("label").html("Name");
-			idcontent.append("input").classed("eq-name", true)
-						.attr("name", "eq-name")
-						.attr("type", "text")
-						.attr("autocomplete", "off");
-			idcontent.append("label").html("Manufacturer");
-			idcontent.append("input").classed("eq-make", true)
-						.attr("name", "eq-make")
-						.attr("type", "text")
-						.attr("autocomplete", "off");
-			idcontent.append("label").html("Model");
-			idcontent.append("input").classed("eq-model", true)
-						.attr("name", "eq-model")
-						.attr("type", "text")
-						.attr("autocomplete", "off");
-
-
-			let locbutton = formbody.append("h3").classed("button loc-button", true).html("Add/Change Locations");
-			let loccontent = formbody.append("div").classed("loc-content", true);
-			let addloc = loccontent.append("i").classed("fa fa-plus fa-lg", true)
-										.attr("id", "add-location")
-										.attr("aria-hidden", "true");
-
-
-
-			let amountbutton = formbody.append("h3").classed("button amount-button", true).html("Change Service Amounts");
-			let amountcontent = formbody.append("div").classed("amount-content", true);
-			let amountrow = amountcontent.append("div").classed("amount-row", true);
-			amountrow.append("label").html("Total");
-			amountrow.append("input").classed("eq-total", true)
-						.attr("name", "eq-total")
-						.attr("type", "text")
-						.attr("autocomplete", "off");
-
-			amountrow = amountcontent.append("div").classed("amount-row", true);
-			amountrow.append("label").html("In Service");
-			amountrow.append("input").classed("eq-service", true)
-						.attr("name", "eq-service")
-						.attr("type", "text")
-						.attr("autocomplete", "off");
-			amountrow = amountcontent.append("div").classed("amount-row", true);
-			amountrow.append("label").html("Under Repair");
-			amountrow.append("input").classed("eq-repair", true)
-						.attr("name", "eq-repair")
-						.attr("type", "text")
-						.attr("autocomplete", "off");
-
-
-			let formfooter = self.form.append("div").classed("footer", true);
-			let submit = formfooter.append("input")
-							.classed("submit", true)
-							.attr("name", "submit")
-							.attr("type", "submit")
-							.attr("value", "Submit");
-		}
-
-
-		self._populateForm = function() {
-			self._loadEquipDB()
-		}
-
-		self._loadEquipDB = function() {
-			var xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function() {
-		    	if (xhttp.readyState == 4 && xhttp.status == 200) {
-		            let docXML = xhttp.responseXML;
-		            self._populateFields(docXML);
-		    	}
-		  	};
-		  	xhttp.open("GET", siteroot + equipmentdatabasepath, true);
-		  	xhttp.send();
-		}
-
-		self._populateFields = function(xml) {
-			let items = xml.getElementsByTagName("Item");
-			for (let i = 0; i < items.length; i++) {
-				if (items[i].getAttribute("id") == self.id) {
-					let name = items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue;
-					let make = (items[i].getElementsByTagName("Manufacturer")[0].hasChildNodes() ? items[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
-					let model = (items[i].getElementsByTagName("Model")[0].hasChildNodes() ? items[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
-					let amount = (items[i].getElementsByTagName("Total")[0].hasChildNodes() ? items[i].getElementsByTagName("Total")[0].childNodes[0].nodeValue : "");
-					let service = (items[i].getElementsByTagName("InService")[0].hasChildNodes() ? items[i].getElementsByTagName("InService")[0].childNodes[0].nodeValue : "");
-					let repair = (items[i].getElementsByTagName("UnderRepair")[0].hasChildNodes() ? items[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "");
-					let locations = items[i].getElementsByTagName("Locations")[0].getElementsByTagName("Location");
-					let form = self.form.select(".loc-content");
-
-					for (let j = 0; j < locations.length; j++) {
-						form.insert("label", "#add-location").html("Room");
-						form.insert("input", "#add-location")
-								.attr("id","eq-room")
-								.attr("name","eq-room[]")
-								.attr("type","text")
-								.attr("value", locations[j].getElementsByTagName("Room")[0].childNodes[0].nodeValue)
-								.attr("autocomplete", "off");
-						form.insert("label", "#add-location").html("Storage");
-						form.insert("input", "#add-location")
-								.attr("id","eq-storage")
-								.attr("name","eq-storage[]")
-								.attr("type","text")
-								.attr("value", locations[j].getElementsByTagName("Storage")[0].childNodes[0].nodeValue)
-								.attr("autocomplete", "off");
-					}
-					$(".eq-name").attr("value", name)
-					$(".eq-make").attr("value", make)
-					$(".eq-model").attr("value", model)
-					$(".eq-total").attr("value", amount)
-					$(".eq-service").attr("value", service)
-					$(".eq-repair").attr("value", repair)
-					break;
-				}
-			}
-		}
-
-		self._setEventListeners = function() {
-
-			$(document).on("submit", ".equip-mod-form", function(e) {
-				e.preventDefault();
-				let dat = $(e.target).serialize();
-				console.log(dat)
-				$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + self.id, function(data) {
-					self.removeForm();
-				});
-			});
-
-			$(document).on("click", ".equip-mod-form", function(e) {
-				e.stopPropagation();
-			});
-
-
-
-			$(document).on("click", "#add-location", function(e) {
-				let form = self.form.select(".loc-content");
-				let row = form.insert("div", "#add-location").classed("loc-row", true);
-				row.insert("label", "#add-location").html("Room");
-				row.insert("input", "#add-location").attr("id","eq-room").attr("name","eq-room[]").attr("type","text");
-				row = form.insert("div", "#add-location").classed("loc-row", true);
-				row.insert("label", "#add-location").html("Storage");
-				row.insert("input", "#add-location").attr("id","eq-storage").attr("name","eq-storage[]").attr("type","text");
-				form.insert("div", "#add-location").classed("sep", true);
-			});
-
-			$(window).on("swipeleft", self.removeForm);
-		}
-
-		self._unsetEventListeners = function() {
-			$(document).off("submit", ".equip-mod-form");
-			$(document).off("click", ".equip-mod-form");
-			$(document).off("click", "#add-location");
-			$(window).off("swipeleft", self.removeForm);
-		}
-
-		self.removeForm = function() {
-			self._unsetEventListeners();
-			$(".equip-mod-form").slideUp("fast", function() {
-				self.form.remove();
-			});
-			$("main").removeClass("blurred-page");
-		}
-
-		$("main").addClass("blurred-page")
-		self._buildForm();
-		self._populateForm();
-		self._setEventListeners();
-	}
-
-}
-
-
-
-
 
 
 
@@ -731,9 +500,6 @@ $(document).on("click", "#search-help-button", function(e) {
 $(document).on("click", "#zip-icon", function(e) {
 	new DownloadModalWindow();
 	$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
-	// $("main").addClass("blurred-page");
-	// $(".modal-screen").css("display", "block");
-	// $(".dl-modal").stop().fadeIn(200);
 });
 
 
@@ -756,59 +522,6 @@ $(document).on("click", ".dl-modal-check", function(e) {
 });
 
 
-
-
-
-// $(document).on("click", ".dl-modal, .eq-modal", function(e) {
-// 	e.stopPropagation();
-// });
-
-
-// $(document).on("click", ".modal-close-button", function(e) {
-// 	$("main").removeClass("blurred-page");
-// 	$(".modal-screen").css({display: 'none'});
-// 	$("#zip-options").css({display: 'none'});
-// });
-
-
-
-// $(document).on("click", ".modal-screen", function(e) {
-// 	$("main").removeClass("blurred-page");
-// 	$(".modal-screen").css({display: 'none'});
-// 	$("#zip-options").css({display: 'none'});
-// 	console.log("line 647 listener")
-// });
-
-
-
-// $(document).on("click", ".modal-content", function(e) {
-// 	e.stopPropagation();
-// });
-
-
-
-
-
-
-// $(document).on("change", ".download-checkbox", function(e) {
-// 	var checkboxes = $(".dc-right");
-// 	if($(e.target).prop("id") == "ALL") {
-// 		checkboxes.each(function() {
-// 			$(this).prop("checked", false)
-// 		});
-// 	} else {
-// 		var somethingchecked = false;
-// 		checkboxes.each(function() {
-// 			if ($(this).prop("checked")) {
-// 				somethingchecked = true;
-// 			}
-// 		});
-// 		if (somethingchecked) {
-// 			$("#ALL").prop("checked", false);
-// 		}
-// 	}
-
-// });
 
 
 
@@ -933,17 +646,17 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 				 "pjl-graphing": "/",
 				 "pjl-scint": "/",
 				 "pjl-latex-template": "/",
-				 "pjl-inventory":"/",
+				 "pjl-tikz-examples": "/",
+				 "pjl-inventory":"/staffresources/equipment",
 				 "pjl-github":"https://github.com/pgimby/pjl-web",
 				 "pjl-lab-rules":"/data/safety/lab-rules/Lab-Rules.pdf",
 				 "pjl-rad-safety":"/data/safety/training/Radiation-Safety/Radiation-Safety.pdf",
 				 "pjl-orientation":"/data/safety/training/Orientation.pdf",
 				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL.pdf",
 				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV.pdf",
-				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf",
-				 "pjl-equipment-page":"/staffresources/equipdb"}
+				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf"}
 	var buttonid = $(e.target).attr("id");
-	window.open(links[buttonid], '_blank');
+	window.location = links[buttonid];
 });
 
 
@@ -957,7 +670,6 @@ $(document).on("click touch", ".need-help", function(e) {
 
 
 $(document).on("click touch", "body", function(e) {
-	// hideContactForm();
 	hideMobileNav();
 	e.stopPropagation();
 });
@@ -971,8 +683,7 @@ $(document).on("click touch", "#mobile-nav-button", function(e) {
 
 
 
-$(window).on("swipeleft", hideMobileNav);
-$(window).on("swiperight", showMobileNav);
+
 
 
 $(document).on("click", ".eq-item-text", function(e) {
@@ -2111,13 +1822,13 @@ function getLabId(lab) {  //return lab ID as a string for an XML "lab" node - no
 
 function mayISeeYourSillyWalk() {  //I'd like to apply for a government grant to develop my silly walk
 	var itsnotparticularlysillyisit = "The right leg isn't silly at all and the left leg merely does a forward aerial half turn every alternate step.";
-	$(".search-icon").attr("src","./img/silly-walk.png");
+	$(".search-icon").attr("src","/img/silly-walk.png");
 	$(".search-icon").css({height: "45px", width: "35px", top: "-49px", right: "-35px"})
 	$("#search-bar").attr("placeholder", itsnotparticularlysillyisit);
 	$("#search-bar").css("font-size", "11px");
 	$("#search-bar").val("");
 	setTimeout(function() {
-		$(".search-icon").attr("src","./img/search-icon.png");
+		$(".search-icon").attr("src","/img/search-icon.png");
 		$(".search-icon").css({height: "40px", width: "40px", top: "-45px", right: "-35px"})
 		$("#search-bar").attr("placeholder", "Keyword, topic, course...");
 		$("#search-bar").css("font-size", "1rem");
@@ -2150,17 +1861,6 @@ function getLabDisciplinesList(lab) {  //return an array of disciplines (strings
 
 
 
-// function getLabEquipmentList(lab) {  //return an array of equipment (strings) for an XML "lab" node - not type safe
-// 	let list = [];
-// 	let ids = [];
-// 	var equipment = lab.getElementsByTagName("Item");
-// 	for (var i = equipment.length - 1; i >= 0; i--) {
-// 		list.push(equipment[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + " (" + equipment[i].getElementsByTagName("Amount")[0].childNodes[0].nodeValue + ")");
-// 		ids.push()
-// 	}
-// 	return {"equip": list, "ids": ids};
-// }
-
 
 
 function getLabSoftwareList(lab) {  //return an array of software (strings) for an XML "lab" node - not type safe
@@ -2190,13 +1890,13 @@ function getExtraLabDocs(lab) {  //return an array of extra doc objects for an X
 
 function iCameHereForAnArgument() {  //Oh, I'm sorry, this is abuse...
 	var i = 0;
-	$(".search-icon").attr("src","./img/silly-walk.png");
+	$(".search-icon").attr("src","/img/silly-walk.png");
 	$(".search-icon").css({height: "45px", width: "35px", top: "-49px", right: "-35px"})
 	$("#search-bar").val("");
 	var id = setInterval(function() {
 		if (i == argument.length - 1) {
 			clearInterval(id);
-			$(".search-icon").attr("src","./img/search-icon.png");
+			$(".search-icon").attr("src","/img/search-icon.png");
 			$(".search-icon").css({height: "40px", width: "40px", top: "-45px", right: "-35px"});
 			$("#search-bar").val("");
 			$("#search-bar").attr("placeholder", "Keyword, topic, course...");

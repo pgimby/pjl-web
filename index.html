@@ -3,14 +3,19 @@
 <html lang="en" dir="ltr">
   <head>
     <title>Physics Junior Laboratory</title>
-    <link rel="stylesheet" href="./css/site-wide.css">
-    <link rel="stylesheet" href="./css/repo.css">
+    <link rel="icon" href="/img/pjl_icon_112x.png">
+    <link rel="stylesheet" href="/css/site-wide.min.css">
+    <link rel="stylesheet" href="/css/repo.min.css">
     <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/jquery-ui.min.js"></script>
-    <script src="./js/jquery.mobile.custom.min.js"></script>
-    <script src="./js/d3.min.js"></script>
-    <script src="./js/pjl.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/jquery.mobile.custom.min.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/pjl.js"></script>
+    <script>
+      $(window).on("swipeleft", hideMobileNav);
+      $(window).on("swiperight", showMobileNav);
+    </script>
 
 
 
@@ -57,19 +62,20 @@
       </div>
       <div class="mobile-resource-dropdown-content">
         <p id="pjl-repository">Repository</p>
-        <p id="pjl-latex-template">Lab LaTeX template</p>
         <p id="pjl-lab-schedule">Experiment schedule</p>
         <p id="pjl-rooms-schedule">Lab room schedule</p>
+        <p id="pjl-latex-template">Lab LaTeX template</p>
+        <p id="pjl-tikz-examples">Tikz LaTeX examples</p>
       </div>
 
       <div class="mobile-resource-button">
         <p class="mobile-resource-button-text">Staff</p>
       </div>
       <div class="mobile-resource-dropdown-content">
-        <p id="pjl-lab-schedule">Experiment schedule</p>
-        <p id="pjl-rooms-schedule">Lab room schedule</p>
+        <p id="pjl-repository">Repository</p>
+        <p id="pjl-lab-schedule">Experiment Schedule</p>
+        <p id="pjl-rooms-schedule">Lab Room Schedule</p>
         <p id="pjl-inventory">Inventory</p>
-        <p id="pjl-equipment-page">Equipment Management</p>
         <p id="pjl-github">PJLWeb GitHub</p>
       </div>
 
@@ -78,8 +84,8 @@
       </div>
       <div class="mobile-resource-dropdown-content">
         <p id="pjl-lab-rules">Lab Rules</p>
-        <p id="pjl-rad-safety">Radiation Safety</p>
         <p id="pjl-orientation">Physics Lab Orientation</p>
+        <p id="pjl-rad-safety">Radiation Safety</p>
         <p id="pjl-hacf-pjl">Hazard Assessment Control Form (PJL)</p>
         <p id="pjl-hacf-adv">Hazard Assessment Control Form (Advanced TA)</p>
         <p id="pjl-hacf-std">Hazard Assessment Control Form (Standard TA)</p>
@@ -117,7 +123,7 @@
 	    		<h1 id="landing-hero-welcome">Welcome</h1>
 	    		<h1 id="landing-hero-pjl">Physics Junior Laboratory</h1>
     		</div>
-    		<img src="./img/chalkphysalpha.png">
+    		<img src="/img/chalkphysalpha.png">
     	</div>
     	<div class="hero-bottom">
         <div class="wrap" id="resource-buttons">
@@ -144,9 +150,10 @@
             <div class="resource-dropdown">
               <div class="resource-dropdown-content">
                 <p id="pjl-repository">Repository</p>
+                <p id="pjl-lab-schedule">Experiment schedule</p>
+                <p id="pjl-rooms-schedule">Lab room schedule</p>
                 <p id="pjl-latex-template">Lab LaTeX template</p>
-	        <p id="pjl-lab-schedule">Experiment schedule</p>
-        	<p id="pjl-rooms-schedule">Lab room schedule</p>
+                <p id="pjl-tikz-examples">Tikz LaTeX examples</p>
               </div>
             </div>
           </div>
@@ -154,12 +161,11 @@
             <p class="resource-button-text">Staff</p>
             <div class="resource-dropdown">
               <div class="resource-dropdown-content">
+                <p id="pjl-repository">Repository</p>
       	        <p id="pjl-lab-schedule">Experiment Schedule</p>
               	<p id="pjl-rooms-schedule">Lab Room Schedule</p>
                 <p id="pjl-inventory">Inventory</p>
-                <p id="pjl-repository">Repository</p>
                 <p id="pjl-github">PJLWeb GitHub</p>
-                <p id="pjl-equipment-page">Equipment Management</p>
               </div>
             </div>
           </div>
@@ -168,11 +174,11 @@
             <div class="resource-dropdown">
               <div class="resource-dropdown-content">
                 <p id="pjl-lab-rules">Lab Rules</p>
-                <p id="pjl-rad-safety">Radiation Safety</p>
                 <p id="pjl-orientation">Physics Lab Orientation</p>
-	        <p id="pjl-hacf-pjl">Hazard Assessment Control Form (PJL)</p>
-        	<p id="pjl-hacf-adv">Hazard Assessment Control Form (Advanced TA)</p>
-	        <p id="pjl-hacf-std">Hazard Assessment Control Form (Standard TA)</p>
+                <p id="pjl-rad-safety">Radiation Safety</p>
+      	        <p id="pjl-hacf-pjl">Hazard Assessment Control Form (PJL)</p>
+              	<p id="pjl-hacf-adv">Hazard Assessment Control Form (Advanced TA)</p>
+      	        <p id="pjl-hacf-std">Hazard Assessment Control Form (Standard TA)</p>
               </div>
             </div>
           </div>
@@ -274,20 +280,19 @@
           <div id="staff-members">
             <!-- Staff member - Peter -->
             <div class="staff-member">
-              <!-- <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740" target="_blank"><img class="staff-mugshot" src="./img/pgimby-crop.png"/></a> -->
               <div class="staff-details">
                 <h3 class="staff-name" id="staff-name-gimby">Peter Gimby</h3>
                 <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
                 <div class="staff-phone staff-small-detail">
-                  <img class="contact-icon" src="./img/phone-icon.png"/>
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
                   <p>+1 (403) 220-5403</p>
                 </div>
                 <div class="staff-office staff-small-detail">
-                  <img class="contact-icon" src="./img/location-icon.png"/>
+                  <img class="contact-icon" src="/img/location-icon.png"/>
                   <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A" target="_blank">Science Theatres 068A</a>
                 </div>
                 <div class="staff-email staff-small-detail">
-                  <img class="contact-icon" src="./img/email-icon.png"/>
+                  <img class="contact-icon" src="/img/email-icon.png"/>
                   <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
                 </div>
               </div>
@@ -297,20 +302,19 @@
 
             <!-- Staff member - Wes -->
             <div class="staff-member">
-              <!-- <a href="http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst" target="_blank"><img class="staff-mugshot" src="./img/wernst-crop.png"/></a> -->
               <div class="staff-details">
                 <h3 class="staff-name" id="staff-name-ernst">Wesley Ernst</h3>
                 <h4 class="staff-title">Laboratory Technician</h4>
                 <div class="staff-phone staff-small-detail">
-                  <img class="contact-icon" src="./img/phone-icon.png"/>
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
                   <p>+1 (403) 220-7401</p>
                 </div>
                 <div class="staff-office staff-small-detail">
-                  <img class="contact-icon" src="./img/location-icon.png"/>
+                  <img class="contact-icon" src="/img/location-icon.png"/>
                   <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68" target="_blank">Science Theatres 068</a>
                 </div>
                 <div class="staff-email staff-small-detail">
-                  <img class="contact-icon" src="./img/email-icon.png"/>
+                  <img class="contact-icon" src="/img/email-icon.png"/>
                   <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
                 </div>
               </div>
@@ -339,10 +343,8 @@
         <div id="zip-progress-header">
           <h2 id="file-prep">Preparing files...</h2>
           <div class="modal-close-button" id="cancel-download">
-            <!-- <img class="modal-close-icon" src="./img/close-icon-bright.png"> -->
           </div>
         </div>
-        <!-- <h2 id="file-prep">Preparing files...</h2> -->
         <progress value="0" max="1"></progress>
       </div>
 

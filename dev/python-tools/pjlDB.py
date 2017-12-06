@@ -322,10 +322,10 @@ class equipDB():
 
 
 
-    
 
 
-    
+
+
 
 
 
@@ -350,7 +350,7 @@ class _equipmentItem():
             for doc in item.findall(".//Document"):
                 document = {"name": doc.findtext("Name"), "location": doc.findtext("Location")}
                 self.documents.append(document)
-                
+
         elif not item and isValidID(idnum):
             self.id_num = idnum
             self.name = ""
@@ -360,13 +360,13 @@ class _equipmentItem():
             self.locations = []
             self.quantity = {"total": "", "service": "", "repair": ""}
             self.documents = []
-            
+
         else:
             raise Exception("Invalid arguments passed to _equipmentItem: either a valid Item or a valid equipment ID must be passed")
 
 
 
-        
+
 
     def addDocument(self, doc):
         if isinstance(dict, doc) and "name" in doc and "location" in doc:
@@ -388,8 +388,8 @@ class _equipmentItem():
 
 
 
-            
-        
+
+
 
 class labDB():
 
@@ -397,9 +397,9 @@ class labDB():
     For modifying and appending to the lab database XML file
     """
 
-    def __init__(self, tree):
-        self.tree = tree
-        self.root = tree.getroot()
+    def __init__(self, pathtoXML):
+        self.tree = ET.parse(pathtoXML)
+        self.root = self.tree.getroot()
         self.labs = []
         self._makelabs()
         self.new_id = self._getNextAvailableID()
@@ -852,7 +852,9 @@ class _labItem():
 
 
 
-
+#-----------------------------------------
+#      EXAMPLE CODE AND USE CASES
+#-----------------------------------------
 
 
 
@@ -871,8 +873,7 @@ if __name__ == "__main__":
 
         #Import an XML and make a database object
 
-        tree = ET.parse("../labDB.xml")
-        db = labDB(tree)
+        db = labDB("../labDB.xml")
 
 
 
@@ -956,12 +957,22 @@ if __name__ == "__main__":
 
         #or by id number
 
-        lab = db.getLab(idnum="0037")
+        lab = db.getLab(idnum=0037)
 
 
         #change any of its properties
 
         lab.topics = ["PDE", "Polarization"]
+
+
+        #...or add a new version to a lab
+
+        new_version = {"path": "/data/repository/path/to/pdf",
+                       "semester": "Fall",
+                       "year": "2013",
+                       "course": "PHYS 375",
+                       "directory": "/data/repository/path/to/directory/"}
+        lab.addVersion(new_version)
 
 
         #add back to the db to replace the previous version
@@ -977,8 +988,7 @@ if __name__ == "__main__":
 
         #VALIDATING A DATABASE
 
-        tree = ET.parse("../labDB.xml")
-        db = labDB(tree)
+        db = labDB("../labDB.xml")
         db.validateFull(error_log=True)  #full validation suite
 
         # with db.log_file_object() as f:

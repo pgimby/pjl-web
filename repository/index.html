@@ -2,17 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <title>Physics Junior Laboratory - Document Repository</title>
-    <link rel="stylesheet" href="../css/site-wide.css">
-    <link rel="stylesheet" href="../css/repo.css">
-    <link rel="icon" href="../img/silly-walk.png">
+    <link rel="icon" href="/img/pjl_icon_112x.png">
+    <link rel="stylesheet" href="/css/site-wide.min.css">
+    <link rel="stylesheet" href="/css/repo.min.css">
     <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/d3.min.js"></script>
-    <script src="../js/jszip.min.js"></script>
-    <script src="../js/FileSaver.js"></script>
-    <script src="../js/jQuery-slimScroll-1.3.8/jquery.slimscroll.min.js"></script>
-    <script src="../js/argument.js"></script>
-    <script src="../js/pjl.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/jszip.min.js"></script>
+    <script src="/js/FileSaver.js"></script>
+    <script src="/js/argument.js"></script>
+    <script src="/js/pjl.js"></script>
 
 
 
@@ -37,59 +36,12 @@
   <body onload=initRepoPage()>
 
 
-    <div class="mobile-landing-nav">
-      <div class="mobile-resource-button">
-        <p class="mobile-resource-button-text">Students</p>
-      </div>
-      <div class="mobile-resource-dropdown-content">
-        <p id="pjl-lab-schedule">Lab schedule</p>
-        <p id="pjl-regress">Linear regression</p>
-        <p id="pjl-linearization">Linearization of experimental data</p>
-        <p id="pjl-compare-two">Procedure for comparing two values</p>
-        <p id="pjl-uncertainty">Uncertainty analysis</p>
-        <p id="pjl-graphing">Graphing experimental data</p>
-        <p id="pjl-geiger">How Geiger counters work</p>
-        <p id="pjl-scint">How scintillation counters work</p>
-      </div>
-
-      <div class="mobile-resource-button">
-        <p class="mobile-resource-button-text">Instructors</p>
-      </div>
-      <div class="mobile-resource-dropdown-content">
-        <p id="pjl-repository">Repository</p>
-        <p id="pjl-latex-template">Lab LaTeX template</p>
-        <p id="pjl-lab-schedule">Lab Schedule</p>
-      </div>
-
-      <div class="mobile-resource-button">
-        <p class="mobile-resource-button-text">Staff</p>
-      </div>
-      <div class="mobile-resource-dropdown-content">
-        <p id="pjl-inventory">Inventory</p>
-        <p id="pjl-github">PJLWeb GitHub</p>
-        <p id="pjl-lab-schedule">Lab Schedule</p>
-        <p id="pjl-equipment-page">Equipment Management</p>
-      </div>
-
-      <div class="mobile-resource-button">
-        <p class="mobile-resource-button-text">Safety in the Labs</p>
-      </div>
-      <div class="mobile-resource-dropdown-content">
-        <p id="pjl-lab-rules">Lab Rules</p>
-        <p id="pjl-rad-safety">Radiation Safety</p>
-        <p id="pjl-orientation">Physics Lab Orientation</p>
-        <p id="pjl-hazard-ass">Hazard Assessment Control Form</p>
-      </div>
-    </div>
-
-
 
     <!-- HEADER FOR STYLE - MAYBE THROW SOME NAVIGATION IN HERE EVENTUALLY -->
 
     <header>
       <div id="header-baseline">
       <div class="wrap">
-        <i id="mobile-nav-button" class="fa fa-bars fa-lg" aria-hidden="true"></i>
         <a id="pjl-logo" href="/">PJL</a>
         <div class="need-help">
           <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
@@ -117,7 +69,6 @@
         <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
 
         <div class="hero">
-          <!-- <a href="http://www.ucalgary.ca/science/" target="_blank" id="logo-link"><img id="logo" src="./img/uc-logo.png"/></a> -->
           <div class="title-flex">
             <h1 id="title">Department of Physics and Astronomy</h1>
             <h1 id="subtitle">Physics Junior Laboratory Document Repository</h1>
@@ -135,7 +86,7 @@
         <div class="search-container">
         <form class="search-box">
           <input type="text" id="search-bar" placeholder="Keyword, topic, course..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Keyword, topic, course...'">
-          <a><img class="search-icon" src="../img/search-icon.png"></a> <!-- may I see your silly walk? -->
+          <a><img class="search-icon" src="/img/search-icon.png"></a> <!-- may I see your silly walk? -->
           <p id="search-help-button">search tips</p>
           <div id="search-help">
             <p id="tips">Tips</p>
@@ -283,20 +234,19 @@
           <div id="staff-members">
             <!-- Staff member - Peter -->
             <div class="staff-member">
-              <!-- <a href="http://contacts.ucalgary.ca/info/phas/profiles/486-152740" target="_blank"><img class="staff-mugshot" src="./img/pgimby-crop.png"/></a> -->
               <div class="staff-details">
                 <h3 class="staff-name" id="staff-name-gimby">Peter Gimby</h3>
                 <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
                 <div class="staff-phone staff-small-detail">
-                  <img class="contact-icon" src="../img/phone-icon.png"/>
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
                   <p>+1 (403) 220-5403</p>
                 </div>
                 <div class="staff-office staff-small-detail">
-                  <img class="contact-icon" src="../img/location-icon.png"/>
+                  <img class="contact-icon" src="/img/location-icon.png"/>
                   <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A" target="_blank">Science Theatres 068A</a>
                 </div>
                 <div class="staff-email staff-small-detail">
-                  <img class="contact-icon" src="../img/email-icon.png"/>
+                  <img class="contact-icon" src="/img/email-icon.png"/>
                   <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
                 </div>
               </div>
@@ -306,20 +256,19 @@
 
             <!-- Staff member - Wes -->
             <div class="staff-member">
-              <!-- <a href="http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst" target="_blank"><img class="staff-mugshot" src="./img/wernst-crop.png"/></a> -->
               <div class="staff-details">
                 <h3 class="staff-name" id="staff-name-ernst">Wesley Ernst</h3>
                 <h4 class="staff-title">Laboratory Technician</h4>
                 <div class="staff-phone staff-small-detail">
-                  <img class="contact-icon" src="../img/phone-icon.png"/>
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
                   <p>+1 (403) 220-7401</p>
                 </div>
                 <div class="staff-office staff-small-detail">
-                  <img class="contact-icon" src="../img/location-icon.png"/>
+                  <img class="contact-icon" src="/img/location-icon.png"/>
                   <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68" target="_blank">Science Theatres 068</a>
                 </div>
                 <div class="staff-email staff-small-detail">
-                  <img class="contact-icon" src="../img/email-icon.png"/>
+                  <img class="contact-icon" src="/img/email-icon.png"/>
                   <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
                 </div>
               </div>
@@ -348,151 +297,12 @@
         <div id="zip-progress-header">
           <h2 id="file-prep">Preparing files...</h2>
           <i class="fa fa-times fa-2x modal-close-button" id="cancel-download" aria-hidden="true"></i>
-          <!-- <div class="modal-close-button" id="cancel-download"> -->
-            <!-- <img class="modal-close-icon" src="./img/close-icon-bright.png"> -->
-          <!-- </div> -->
         </div>
-        <!-- <h2 id="file-prep">Preparing files...</h2> -->
         <progress value="0" max="1"></progress>
       </div>
 
 
     </footer>
-
-
-
-
-
-  <!-- MODAL DIALOGS -->
-
-  <!-- <div class="modal-screen">
-    <div class="modal-content" id="zip-options">
-      <div id="zip-options-header">
-        <h1 id="zip-options-title">Download Options <span id="zip-options-number"></span></h1>
-        <div class="modal-close-button">
-        </div>
-      </div>
-
-      <div id="zip-options-body">
-        <p>Which files do you want to download?</p>
-        <div id="download-options">
-        <div id="download-options-left">
-        	<div>
-	            <input class="download-checkbox" type="checkbox" name="ALL" id="ALL" checked>
-	            <label for="ALL">All Files</label>
-        	</div>
-        </div>
-        <div class="vertical-divider"></div>
-        <div id="download-options-right">
-        	<div class="download-options-row">
-	        	<div class="download-options-col">
-	        		<div class="download-options-item">
-			            <input class="download-checkbox dc-right" type="checkbox" name="PDF" id="PDF">
-			            <label for="PDF">PDF</label>
-		          	</div>
-		          	<div class="download-options-item">
-			            <input class="download-checkbox dc-right" type="checkbox" name="DAT" id="DAT">
-			            <label for="DAT">Data</label>
-		         	</div>
-	        	</div>
-	        	<div class="download-options-col">
-	        		<div class="download-options-item">
-			            <input class="download-checkbox dc-right" type="checkbox" name="TEX" id="TEX">
-			            <label for="TEX">TEX</label>
-		          	</div>
-		          	<div class="download-options-item">
-			            <input class="download-checkbox dc-right" type="checkbox" name="IMG" id="IMG">
-			            <label for="IMG">Images</label>
-		          	</div>
-	        	</div>
-        	</div>
-          	<div class="download-options-row">
-	          	<div class="download-options-item">
-		            <input class="download-checkbox dc-right" type="checkbox" name="EXTRA" id="EXTRA">
-		            <label for="EXTRA">Additional Documents</label>
-	          	</div>
-          	</div>
-        </div>
-
-
-        </div>
-      </div>
-
-      <div id="zip-options-footer">
-        <h1 id="zip-download-confirm">Download</h1>
-      </div>
-      <div id="zip-options-warning">
-        <i class="fa fa-exclamation" aria-hidden="true"></i>
-        <p>You must select at least one type of file</p>
-      </div>
-    </div>
-  </div> -->
-
-
-
-
-<!--   <div class="modal-screen">
-    <div class="dl-modal">
-      <div class="dl-modal-header">
-        <h1 class="dl-modal-title">Download Options</br><span id="dl-modal-number"></span></h1>
-        <i class="fa fa-times fa-2x modal-close-button" aria-hidden="true"></i>
-      </div>
-      <div class="dl-modal-content">
-        <p>Select which types of files you want to download or download everything.</p>
-        <div class="dl-modal-check" id="PDF">
-          <i class="fa fa-file-o fa-2x" aria-hidden="true"></i>
-          <div class="dl-modal-item-content">
-            <h3>PDF</h3>
-            <p>PDF of the final lab document (.pdf)</p>
-          </div>
-        </div>
-
-        <div class="dl-modal-check" id="TEX">
-          <i class="fa fa-file-o fa-2x" aria-hidden="true"></i>
-          <div class="dl-modal-item-content">
-            <h3>TEX</h3>
-            <p>LaTeX source documents for the lab (.tex)</p>
-          </div>
-        </div>
-
-        <div class="dl-modal-check" id="MEDIA">
-          <i class="fa fa-file-o fa-2x" aria-hidden="true"></i>
-          <div class="dl-modal-item-content">
-            <h3>Media</h3>
-            <p>Images and video files (.tiff, .png, .jpeg, .gif, .mp4, .avi, .dv)</p>
-          </div>
-        </div>
-
-        <div class="dl-modal-check" id="TEMPLATES">
-          <i class="fa fa-file-o fa-2x" aria-hidden="true"></i>
-          <div class="dl-modal-item-content">
-            <h3>Templates</h3>
-            <p>Data templates used in the experiment (.cmbl, .xlxs, .dat, .csv, .tsv, .txt)</p>
-          </div>
-        </div>
-
-        <div class="dl-modal-check" id="EXTRA">
-          <i class="fa fa-file-o fa-2x" aria-hidden="true"></i>
-          <div class="dl-modal-item-content">
-            <h3>Support Documents</h3>
-            <p>Supporting documents for the lab and its development (various)</p>
-          </div>
-        </div>
-
-        <div class="dl-modal-check checked" id="ALL">
-          <i class="fa fa-file-o fa-2x" aria-hidden="true"></i>
-          <div class="dl-modal-item-content">
-            <h3>Everything</h3>
-            <p>All files associated with the lab (various)</p>
-          </div>
-        </div>
-      </div>
-      <div class="dl-modal-footer">
-        <h3 class="dl-modal-confirm">Download</h3>
-      </div>
-    </div>
-  </div> -->
-
 
 
 
