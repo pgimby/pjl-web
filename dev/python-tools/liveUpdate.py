@@ -31,6 +31,7 @@ if mountTest == 0:
     os.system("rsync --delete -avz " + sourceFolder + "/repository/ " + destFolder + "/repository/")
     os.system("rsync --delete -avz " + sourceFolder + "/safety/ " + destFolder + "/safety/")
     os.system("rsync --delete -avz " + sourceFolder + "/schedules/ " + destFolder + "/schedules/")
+    os.system("rsync --delete -avz " + sourceFolder + "/web-security/ " + destFolder + "/web-security/")
 
 
 # unmount source files
