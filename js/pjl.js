@@ -491,6 +491,7 @@ $(document).on("keypress", "#search-bar", function(e) {
 
 
 $(document).on("click", "#search-help-button", function(e) {
+	console.log($(e.target), $(e.target).next())
 	$(".search-container").toggleClass("search-help-opened");
 	$(e.target).next().stop().slideToggle(300);
 });
