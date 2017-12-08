@@ -467,11 +467,17 @@ _labItem().support_docs = [{"name":"Hugo's notes", "path":"/data/repository/path
 ```
 db = labDB("../labDB.xml")
 
+lab = db.getLab(idnum=0001)
+
 new_version = {"path": "/data/repository/path/to/pdf",
                "semester": "Fall",
                "year": "2013",
                "course": "PHYS 375",
                "directory": "/data/repository/path/to/directory/"}
+               
+lab.addVersion(new_version)
+
+db.addLab(lab)
 ```
 
 
@@ -481,7 +487,13 @@ new_version = {"path": "/data/repository/path/to/pdf",
 ```
 db = labDB("../labDB.xml")
 
+lab = db.getLab(idnum=0001)
+
 new_item = {"id": "0001", "name": "Fluke multimeter", "amount": "1"}
+
+lab.addEquipment(new_item)
+
+db.addLab(lab)
 ```
 
 
@@ -492,7 +504,13 @@ new_item = {"id": "0001", "name": "Fluke multimeter", "amount": "1"}
 ```
 db = labDB("../labDB.xml")
 
+lab = db.getLab(idnum=0001)
+
 new_doc = {"name": "manual", "path": "/path/to/file"}
+
+lab.addSupportDoc(new_doc)
+
+db.addLab(lab)
 ```
 
 
