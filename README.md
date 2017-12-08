@@ -32,14 +32,6 @@ Demos repository (unconfirmed)
 403, 404, 500, 503 HTTP error pages  
 
 
-# Site Map
-
-<img src="/dev/sitemap.png" width="480">
-
-# Source Map
-
-<img src="/dev/sourcemap.png" width="480">
-
 
 # Lab Meta Data
 
@@ -214,8 +206,7 @@ db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
 
 ```
 #Import an XML and make a database object
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 
 #make a new lab object with the next available lab ID
 newlab = db.newLab(db.new_id)
@@ -333,8 +324,7 @@ db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
 > Performs a full validation of the database being held. If `error_log` is True, the error log is written to a file in the working directory. If False, the error log is printed to the console.
 
 ```
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 db.validateFull(error_log=True)
 ```
 
@@ -343,8 +333,7 @@ db.validateFull(error_log=True)
 > Checks if the database contains any duplicate lab IDs. Returns True if no duplicates found, False if duplicates found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.noDuplicateIDs(log_file=f)
@@ -355,8 +344,7 @@ with db.log_file_object() as f:
 > Checks if the database contains any non-unique equipment IDs. Returns True if none found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasUniqueEquipIDs(log_file=f)
@@ -367,8 +355,7 @@ with db.log_file_object() as f:
 > Checks if the database contains any improper directory roots. Returns True if no improper paths found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidPathRoots(log_file=f)
@@ -379,8 +366,7 @@ with db.log_file_object() as f:
 > Checks for invalid topics. Returns True if no invalid topics found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidTopics(log_file=f)
@@ -391,8 +377,7 @@ with db.log_file_object() as f:
 > Checks for invalid disciplines. Returns True if no invalid disciplines found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidDisciplines(log_file=f)
@@ -403,8 +388,7 @@ with db.log_file_object() as f:
 > Checks for invalid lab types. Returns True if no invalid types found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-tree = ET.parse("../labDB.xml")
-db = labDB(tree)
+db = labDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidTypes(log_file=f)
@@ -475,7 +459,71 @@ _labItem().support_docs = [{"name":"Hugo's notes", "path":"/data/repository/path
 
 
 ### Methods
-> This object has no methods...yet
+
+
+##### _labItem.addVersion(version)
+> Appends a new version to an existing `_labItem` object's version list. Takes a valid version dictionary as an argument. The dictionary must have keys for "path", "year", "course", "semester", and "directory". These may be empty strings but they must exist.
+
+```
+db = labDB("../labDB.xml")
+
+new_version = {"path": "/data/repository/path/to/pdf",
+               "semester": "Fall",
+               "year": "2013",
+               "course": "PHYS 375",
+               "directory": "/data/repository/path/to/directory/"}
+```
+
+
+##### _labItem.addEquipment(item)
+> Appends a new equipment item to an existing `_labItem` object's equipment list. Takes a valid equipment item dictionary as an argument. The dictionary must have keys for "id", "name", and "amount". These may be empty strings but they must exist.
+
+```
+db = labDB("../labDB.xml")
+
+new_item = {"id": "0001", "name": "Fluke multimeter", "amount": "1"}
+```
+
+
+
+##### _labItem.addSupportDoc(doc)
+> Appends a new support document to an existing `_labItem` object's support document list. Takes a valid document dictionary as an argument. The dictionary must have keys for "name" and "path".. These may be empty strings but they must exist.
+
+```
+db = labDB("../labDB.xml")
+
+new_doc = {"name": "manual", "path": "/path/to/file"}
+```
+
+
+
+
+
+
+
+## pjlDB.equipDB
+
+
+
+### Properties
+
+
+### Methods
+
+
+
+## pjlDB._equipmentItem
+
+
+
+### Properties
+
+
+### Methods
+
+
+
+
 
 
 

@@ -6,7 +6,6 @@
 
 var mainxmlpath = "/data/labDB.xml";
 var equipmentdatabasepath = "/data/equipmentDB.xml";
-var zipoutputfilename = "PJL-lab-docs.zip";
 var siteroot = "";
 
 var recordmasklength = 20;
@@ -1553,6 +1552,8 @@ function makePromisesBeginZip(filelist) {
 
 
 	deferredzip.done(function() {
+		let today = new Date();
+		let zipoutputfilename = "PJL_"+ String(today.getHours()%12).padStart(2, '0') + "-" + String(today.getMinutes()).padStart(2, '0') + ".zip";
 		zip.generateAsync({type:"blob"}).then(function (blob) {
 			saveAs(blob, zipoutputfilename);
 			console.log("zip done")
