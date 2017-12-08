@@ -405,7 +405,7 @@ with db.log_file_object() as f:
 ### Properties
 
 ##### _labItem.id_num
-> A string holding an integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
+> An integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
 
 
 ##### _labItem.name
