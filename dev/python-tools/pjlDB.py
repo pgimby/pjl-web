@@ -61,9 +61,9 @@ class equipDB():
     For modifying and appending to the equipment database XML file
     """
 
-    def __init__(self, tree):
-        self.tree = tree
-        self.root = tree.getroot()
+    def __init__(self, pathtoXML):
+        self.tree = ET.parse(pathtoXML)
+        self.root = self.tree.getroot()
         self.equipment = []
         self._makeEquipment()
         self.new_id = self._getNextAvailableID()
@@ -149,7 +149,7 @@ class equipDB():
             return None
         if idnum:
             try:
-                idnum = str(idnum)
+                idnum = str(idnum).zfill(4)
                 for item in self.equipment:
                     if item.id_num == idnum:
                         return item
@@ -584,7 +584,7 @@ class labDB():
             return None
         if idnum:
             try:
-                idnum = str(idnum)
+                idnum = str(idnum).zfill(4)
                 for lab in self.labs:
                     if lab.id_num == idnum:
                         return lab
@@ -957,7 +957,7 @@ if __name__ == "__main__":
 
         #or by id number
 
-        lab = db.getLab(idnum=0037)
+        lab = db.getLab(idnum=37)
 
 
         #change any of its properties

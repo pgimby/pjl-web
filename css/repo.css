@@ -50,6 +50,10 @@
 		transition: none;
 	}
 
+.search-help-opened {
+	margin-bottom: 156px;
+}
+
 #search-help {
 	display: none;
 	width: 490px;
