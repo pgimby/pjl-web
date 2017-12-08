@@ -7,3 +7,9 @@ from pjlDB import *
 db = equipDB("../../data/equipmentDB.xml")
 
 db.validateFull(error_log=False)
+
+
+db = labDB("../../data/labDB.xml")
+
+db.validateFull(error_log=False)
+

@@ -206,7 +206,7 @@ db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
 
 ```
 #Import an XML and make a database object
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 #make a new lab object with the next available lab ID
 newlab = db.newLab(db.new_id)
@@ -269,126 +269,139 @@ db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
 > Returns a list of valid disciplines taken from the pjl-web README.
 
 
+##### pjlDB.crossValidateEquipment()
+> This function returns nothing. It checks if every equipment item listed in the lab database has an entry in the equipment database. If an item is found listed in the equipment list for a lab and it isn't listed in the equipment database an error log will be printed in the console.
 
 
-## pjlDB.labDB
+
+
+## pjlDB.LabDB
 
 
 
 ### Properties
 
-##### labDB.tree
+##### LabDB.tree
 > An `xml.etree.ElementTree.ElementTree` object for the database being held.
 
 
-##### labDB.root
-> An `xml.etree.ElementTree.Element` object that is the root element of labDB.tree.
+##### LabDB.root
+> An `xml.etree.ElementTree.Element` object that is the root element of LabDB.tree.
 
 
-##### labDB.labs
-> a list of `_labItem` objects. All the properties and methods of this class are described below.
+##### LabDB.labs
+> a list of `_LabItem` objects. All the properties and methods of this class are described below.
 
 
-##### labDB.new_id
+##### LabDB.new_id
 > This will always return the next available unused lab ID in the appropriate string form.
 
 
-##### labDB.length
+##### LabDB.length
 > This will always return the current number of labs in the held database.
 
 
 
 ### Methods
 
-##### labDB.newLab(idnum)
-> Returns an empty `_labItem` object with lab ID set to `idnum`. Throws an exception if `idnum` is not a valid form or if `idnum` already exists in the database.
+##### LabDB.log_file_object()
+> Returns an open error log file object that can be written into.
+
+```
+with LabDB.log_file_object() as f:
+    f.write("my custom error message")
+```
 
 
-##### labDB.getLab(idnum=None, name=None)
-> Returns a `_labItem` object belonging to either `idnum` or `name`. Either lab ID or lab name may be used to access one of the labs in the database. Throws an exception if a matching lab cannot be found or if invalid arguments are passed.
+##### LabDB.newLab(idnum)
+> Returns an empty `_LabItem` object with lab ID set to `idnum`. Throws an exception if `idnum` is not a valid form or if `idnum` already exists in the database.
 
 
-##### labDB.addLab(labitem)
-> Adds a `_labItem` object to the held database. If an identical lab already exists, it is replaced. If it does not already exist, a new lab entry is appended to the held database.
+##### LabDB.getLab(idnum=None, name=None)
+> Returns a `_LabItem` object belonging to either `idnum` or `name`. Either lab ID or lab name may be used to access one of the labs in the database. Throws an exception if a matching lab cannot be found or if invalid arguments are passed.
 
 
-##### labDB.deleteLab(idnum=None, name=None)
-> Deletes a `_labItem` object belonging to either `idnum` or `name`. Either lab ID or lab name may be used to access one of the labs in the database. Throws an exception if a matching lab cannot be found or if invalid arguments are passed.
+##### LabDB.addLab(labitem)
+> Adds a `_LabItem` object to the held database. If an identical lab already exists, it is replaced. If it does not already exist, a new lab entry is appended to the held database.
 
 
-##### labDB.save(filename, ignore_validation=False, error_log=False)
-> Saves the database as an XML file with UTF-8 encoding. If `ignore_validation` is True, `labDB` will attempt to write the XML without any validation of its contents. If False, a full validation will be performed before writing. If `error_log` is True, an error report will be saved to the working directory. If False, the error log will be printed to the console.
+##### LabDB.deleteLab(idnum=None, name=None)
+> Deletes a `_LabItem` object belonging to either `idnum` or `name`. Either lab ID or lab name may be used to access one of the labs in the database. Throws an exception if a matching lab cannot be found or if invalid arguments are passed.
 
 
-##### labDB.validateFull(error_log=False)
+##### LabDB.save(filename, ignore_validation=False, error_log=False)
+> Saves the database as an XML file with UTF-8 encoding. If `ignore_validation` is True, `LabDB` will attempt to write the XML without any validation of its contents. If False, a full validation will be performed before writing. If `error_log` is True, an error report will be saved to the working directory. If False, the error log will be printed to the console.
+
+
+##### LabDB.validateFull(error_log=False)
 > Performs a full validation of the database being held. If `error_log` is True, the error log is written to a file in the working directory. If False, the error log is printed to the console.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 db.validateFull(error_log=True)
 ```
 
 
-##### labDB.noDuplicateIDs(log_file=None)
+##### LabDB.noDuplicateIDs(log_file=None)
 > Checks if the database contains any duplicate lab IDs. Returns True if no duplicates found, False if duplicates found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.noDuplicateIDs(log_file=f)
 ```
 
 
-##### labDB.hasUniqueEquipIDs(log_file=None)
+##### LabDB.hasUniqueEquipIDs(log_file=None)
 > Checks if the database contains any non-unique equipment IDs. Returns True if none found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasUniqueEquipIDs(log_file=f)
 ```
 
 
-##### labDB.hasValidPathRoots(log_file=None)
+##### LabDB.hasValidPathRoots(log_file=None)
 > Checks if the database contains any improper directory roots. Returns True if no improper paths found, False if found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidPathRoots(log_file=f)
 ```
 
 
-##### labDB.hasValidTopics(log_file=None)
+##### LabDB.hasValidTopics(log_file=None)
 > Checks for invalid topics. Returns True if no invalid topics found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidTopics(log_file=f)
 ```
 
 
-##### labDB.hasValidDisciplines(log_file=None)
+##### LabDB.hasValidDisciplines(log_file=None)
 > Checks for invalid disciplines. Returns True if no invalid disciplines found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidDisciplines(log_file=f)
 ```
 
 
-##### labDB.hasValidTypes(log_file=None)
+##### LabDB.hasValidTypes(log_file=None)
 > Checks for invalid lab types. Returns True if no invalid types found, False if any found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 with db.log_file_object() as f:
     db.hasValidTypes(log_file=f)
@@ -396,62 +409,69 @@ with db.log_file_object() as f:
 
 
 
+##### LabDB._isItAKit(idnum)
+> Checks if an equipment item, specified by its 4 digit ID number, `idnum`, is a kit. Kits have the unique ability to have multiple names in the lab database as different parts of a kit may be used in the set up for a lab. Regardless of the name used, there will be one ID number shared by all which will correspond to one entry in the equipment database.
 
 
-## pjlDB._labItem(lab=None, idnum=None)
-> Used by `labDB` objects to store lab items. Type checking and validation of its properties is performed by the `labDB` object **not** the `_labItem` object. Optional arguments are an `xml.etree.ElementTree.Element` object representing a lab entry or a lab ID number (see properties for idnum format).
+
+
+
+## pjlDB._LabItem(lab=None, idnum=None)
+> Used by `LabDB` objects to store lab items. Type checking and validation of its properties is performed by the `LabDB` object **not** the `_LabItem` object. Optional arguments are an `xml.etree.ElementTree.Element` object representing a lab entry or a lab ID number (see properties for idnum format).
 
 
 ### Properties
 
-##### _labItem.id_num
+##### _LabItem.id_num
 > An integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
 
 
-##### _labItem.name
+##### _LabItem.name
 > A string representing the name of a lab.
 
 
-##### _labItem.disciplines
+##### _LabItem.disciplines
 > A list of strings representing valid disciplines associated with a lab. Valid disciplines are those listed in the pjl-web README.
 
 
-##### _labItem.topics
+##### _LabItem.topics
 > A list of strings representing valid topics associated with a lab. Valid topics are those listed in the pjl-web README.
 
 
-##### _labItem.versions
+##### _LabItem.versions
 > A list of dictionaries representing individual versions. Each dictionary has 4 keys: "path", "semester", "year", and "course".  
 
 ```
 #a single-element list containing one version dictionary
-_labItem().versions = [{"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}]
+_LabItem().versions = [{"path:"/data/repository/path/to/file.pdf", "semester":"Fall", "year" : "2012", "course":"PHYS 397"}]
 ```
 
 
-##### _labItem.equipment
-> A list of dictionaries representing individual equipment items. Each dictionary has 3 keys: "id", "name", and "amount".  
+##### _LabItem.equipment
+> A list of dictionaries representing individual equipment items. Each dictionary has 5 keys: "id", "name", "amount", "alt-id", and "alt-name". The last two key/value pairs are for alternate equipment, if it exists. If there is no alternate equipment item then the values must be empty strings, i.e., `{"alt-id": "", "alt-name": ""}`.  
 
 ```
-_labItem().equipment = [{"id":"0001", "name":"Fluke multimeter", "amount" : "2"},
+_LabItem().equipment = [{"id":"0001", "name":"Fluke multimeter", "amount" : "2", "alt-id"},
                         {"id":"0003", "name":"string", "amount" : "1"}]
 ```
 
 
-##### _labItem.lab_type
+
+
+##### _LabItem.lab_type
 > A string containing either "Lab" or "Labatorial" representing the type of the lab.
 
 
-##### _labItem.support_docs
+##### _LabItem.support_docs
 > A list of dictionaries representing individual documents. Each dictionary has 2 keys: "name" and "path".  
 
 ```
-_labItem().support_docs = [{"name":"Hugo's notes", "path":"/data/repository/path/to/file.pdf"},
+_LabItem().support_docs = [{"name":"Hugo's notes", "path":"/data/repository/path/to/file.pdf"},
                            {"name":"source", "path":"/data/repository/path/to/file.tex"}]
 ```
 
 
-##### _labItem.software
+##### _LabItem.software
 > A list of strings representing required software, libraries, or files for a lab.
 
 
@@ -461,11 +481,11 @@ _labItem().support_docs = [{"name":"Hugo's notes", "path":"/data/repository/path
 ### Methods
 
 
-##### _labItem.addVersion(version)
-> Appends a new version to an existing `_labItem` object's version list. Takes a valid version dictionary as an argument. The dictionary must have keys for "path", "year", "course", "semester", and "directory". These may be empty strings but they must exist.
+##### _LabItem.addVersion(version)
+> Appends a new version to an existing `_LabItem` object's version list. Takes a valid version dictionary as an argument. The dictionary must have keys for "path", "year", "course", "semester", and "directory". These may be empty strings but they must exist.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 lab = db.getLab(idnum=0001)
 
@@ -481,15 +501,19 @@ db.addLab(lab)
 ```
 
 
-##### _labItem.addEquipment(item)
-> Appends a new equipment item to an existing `_labItem` object's equipment list. Takes a valid equipment item dictionary as an argument. The dictionary must have keys for "id", "name", and "amount". These may be empty strings but they must exist.
+##### _LabItem.addEquipment(item)
+> Appends a new equipment item to an existing `_LabItem` object's equipment list. Takes a valid equipment item dictionary as an argument. The dictionary must have keys for "id", "name", and "amount". These may be empty strings but they must exist.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 lab = db.getLab(idnum=0001)
 
 new_item = {"id": "0001", "name": "Fluke multimeter", "amount": "1"}
+
+#optionally, an alternate equipment item may be specified
+new_item = {"id": "0001", "name": "Fluke multimeter", "amount": "1", "alt-id": "0106", "alt-name": "Philips multimeter"}
+
 
 lab.addEquipment(new_item)
 
@@ -498,11 +522,11 @@ db.addLab(lab)
 
 
 
-##### _labItem.addSupportDoc(doc)
-> Appends a new support document to an existing `_labItem` object's support document list. Takes a valid document dictionary as an argument. The dictionary must have keys for "name" and "path".. These may be empty strings but they must exist.
+##### _LabItem.addSupportDoc(doc)
+> Appends a new support document to an existing `_LabItem` object's support document list. Takes a valid document dictionary as an argument. The dictionary must have keys for "name" and "path". These may be empty strings but they must exist.
 
 ```
-db = labDB("../labDB.xml")
+db = LabDB("../labDB.xml")
 
 lab = db.getLab(idnum=0001)
 
@@ -519,27 +543,97 @@ db.addLab(lab)
 
 
 
-## pjlDB.equipDB
+## pjlDB.EquipDB
 
 
 
 ### Properties
 
+##### EquipDB.tree
+> An `xml.etree.ElementTree.ElementTree` object for the database being held.
+
+
+##### EquipDB.root
+> An `xml.etree.ElementTree.Element` object that is the root element of EquipDB.tree.
+
+
+##### EquipDB.equipment
+> a list of `_EquipmentItem` objects. All the properties and methods of this class are described below.
+
+
+##### EquipDB.new_id
+> This will always return the next available unused equipment ID in the appropriate string form.
+
+
+##### EquipDB.length
+> This will always return the current number of items in the held database.
+
 
 ### Methods
 
+> TODO
 
 
-## pjlDB._equipmentItem
+
+## pjlDB._EquipmentItem
 
 
 
 ### Properties
 
+##### _EquipmentItem.id_num
+> An integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each equipment item.
+
+
+##### _EquipmentItem.name
+> A string representing the inventory name of an equipment item.
+
+
+##### _EquipmentItem.manufacturer
+> A string representing the manufacturer of an equipment item, if one exists.
+
+
+##### _EquipmentItem.model
+> A string representing the model of an equipment item, if one exists.
+
+
+##### _EquipmentItem.is_kit
+> returns a Boolean if the equipment item is a kit.
+
+
+##### _EquipmentItem.locations
+> A list of dictionaries identifying storage locations of the item.
+
+```
+_EquipmentItem.locations = [{"room": "ST037", "storage": "C12"}]
+```
+
+
+##### _EquipmentItem.quantity
+> A dictionary identifying the total, in service, and under repair quantities of an item.
+
+```
+_EquipmentItem.quantity = {"total": "30", "service": "25", "repair": "5"}
+```
+
+
+##### _EquipmentItem.documents
+> A list of dictionaries identifying relevant documents to the item.
+
+```
+_EquipmentItem.documents = [document = {"name": "Manual", "location": "/path/to/doc"},
+document = {"name": Warrantee, "location": "/path/to/doc"}]
+```
+
 
 ### Methods
 
+##### _EquipmentItem.addDocument(doc)
+> Appends a new document to an existing `_EquipmentItem` object's document list. Takes a valid document dictionary as an argument. The dictionary must have keys for "name" and "location". These may be empty strings but they must exist. 
 
+
+##### _EquipmentItem.addLocation(location)
+> Appends a new location to an existing `_EquipmentItem` object's location list. Takes a valid location dictionary as an argument. The dictionary must have keys for "room" and "storage". These may be empty strings but they must exist. 
 
 
 
