@@ -1,7 +1,1 @@
-<Files equipmentDB.xml>
-FileETag None
-Header unset ETag
-Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
-Header set Pragma "no-cache"
-Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
-</Files>
+/mnt/local/labs/web-security/.htaccess-noCache
