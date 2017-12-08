@@ -1,0 +1,62 @@
+#!/usr/bin/python3
+
+#import packages
+import os
+import re
+import urllib.request as rq
+import xml.etree.ElementTree as ET
+
+
+
+
+r = re.compile(r'href="([^"]*)"')
+links = []
+pjlroot = "http://www.pjl.ucalgary.ca"
+
+
+
+def get_status_code(url):
+    """ This function retreives the status code of a website by requesting
+        HEAD data from the host. This means that it only requests the headers.
+        If the host cannot be reached or something else goes wrong, it returns
+        None instead.
+    """
+    try:
+        req = rq.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11"}, method="HEAD")
+        conn = rq.urlopen(req)
+        return str(conn.getcode())
+    except Exception as e:
+        if e.code == 405:
+            try:
+                conn = rq.urlopen(url)
+                return str(conn.getcode())
+            except Exception as e:
+                return "FAILED"
+
+def getPathsFromXML(xml_path):
+    tree = ET.parse(xml_path)
+    root = tree.getroot()
+    paths = root.findall(".//Path")
+    
+
+
+
+
+
+
+
+
+for dirpath, dirnames, files in os.walk("../../"):
+    for ff in files:
+        if (ff.endswith(".php") or ff.endswith(".html") or ff.endswith(".txt")):
+            with open(dirpath + "/" + ff, "r") as f:
+                try:
+                    s = f.read()
+                    for m in re.findall(r, s):
+                        if m.startswith("http"):
+                            status = get_status_code(m)
+                            print("STATUS: " + status + "       for link " + m + " in file " + dirpath + "/" + ff)
+                except:
+                    print("Failed to read file: ", dirpath + "/" + ff)
+
+
