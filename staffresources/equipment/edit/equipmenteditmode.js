@@ -47,6 +47,7 @@ class EquipmentEditDisplay {
 		}
 
 		self._buildDisplay = function(data) {
+			let id = data.getAttribute("id");
 			let name = (data.getElementsByTagName("InventoryName")[0].childNodes[0] ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "");
 			let make = (data.getElementsByTagName("Manufacturer")[0].childNodes[0] ? data.getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
 			let model = (data.getElementsByTagName("Model")[0].childNodes[0] ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
@@ -72,7 +73,7 @@ class EquipmentEditDisplay {
 
 			let modal = self.form.append("div").classed("eq-modal", true);
 			let header = modal.append("div").classed("eq-modal-header", true);
-			header.append("h1").classed("eq-modal-title", true).html("Inventory");
+			header.append("h1").classed("eq-modal-title", true).html("Inventory" + "<span>  (" + id +")</span>");
 			header.append("i").classed("fa fa-times fa-2x modal-close-button", true).attr("aria-hidden", "true");
 
 			let content = modal.append("div").classed("eq-modal-content", true);
