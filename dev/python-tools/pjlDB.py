@@ -46,6 +46,24 @@ def getDisciplines():
     return lst
 
 
+def crossValidateEquipment(eqdb, labdb):
+    labs = labdb.labs
+    equipment = eqdb.equipment
+    error_log = []
+    for lab in labs:
+        items = lab.equipment
+        for item in items:
+            itemfound = False
+            for eq in equipment:
+                if eq.name == item["name"] and eq.id_num == item["id"]:
+                    itemfound = True
+                    break
+            if not itemfound and not labdb._isItAKit(item["id"]):
+                error_log.append("Item " + item["name"] + "(" + item["id"] + ")" + " from lab " + lab.id_num + " not found in equipment database.")
+    if error_log:
+        [print(i) for i in error_log]
+    else:
+        print("A place for everything and everything in its place. No errors found. Gold sticker.")
 
 
 
@@ -53,9 +71,7 @@ def getDisciplines():
 
 
 
-
-
-class equipDB():
+class EquipDB():
 
     """
     For modifying and appending to the equipment database XML file
@@ -99,7 +115,7 @@ class equipDB():
             return False
 
 
-
+        
     def noDuplicateIDs(self, log_file=None):
         error_log = []
         good = True
@@ -117,9 +133,6 @@ class equipDB():
             else:
                 [print(i) for i in error_log]
         return good
-
-
-
 
 
 
@@ -201,15 +214,15 @@ class equipDB():
 
     def newItem(self, idn):
         if isValidID(idn) and not self._idExistsAlready(idn):
-            return _equipmentItem(idnum=idn)
+            return _EquipmentItem(idnum=idn)
         else:
             raise Exception("Invalid lab ID number: IDs must be number strings of length 4 and mustn't exist already in the tree")
 
 
 
     def addItem(self, equipitem):
-        if not isinstance(equipitem, _equipmentItem):
-            raise TypeError("Argument passed to equipDB.addItem was not an _equipItem object")
+        if not isinstance(equipitem, _EquipmentItem):
+            raise TypeError("Argument passed to EquipDB.addItem was not an _EquipmentItem object")
         if equipitem.id_num in [item.id_num for item in self.equipment]:
             tmp = [equipitem if equipitem.id_num == item.id_num else item for item in self.equipment]
             self.equipment = tmp[:]
@@ -227,7 +240,7 @@ class equipDB():
 
     def save(self, filename, ignore_validation=False, error_log=False):
         if not isinstance(filename, str):
-            raise TypeError("Argument of equipDB.save must be string")
+            raise TypeError("Argument of EquipDB.save must be string")
         if ignore_validation:
             self.tree.write(filename, encoding="UTF-8")
             print("XML object not validated and written to " + filename)
@@ -244,7 +257,7 @@ class equipDB():
 
     def _makeEquipment(self):
         for child in self.root:
-            self.equipment.append(_equipmentItem(item=child))
+            self.equipment.append(_EquipmentItem(item=child))
 
 
 
@@ -329,7 +342,7 @@ class equipDB():
 
 
 
-class _equipmentItem():
+class _EquipmentItem():
 
     def __init__(self, item=None, idnum=None):
         if item and isinstance(item, ET.Element):
@@ -362,9 +375,7 @@ class _equipmentItem():
             self.documents = []
 
         else:
-            raise Exception("Invalid arguments passed to _equipmentItem: either a valid Item or a valid equipment ID must be passed")
-
-
+            raise Exception("Invalid arguments passed to _EquipmentItem: either a valid Item or a valid equipment ID must be passed")
 
 
 
@@ -372,7 +383,7 @@ class _equipmentItem():
         if isinstance(dict, doc) and "name" in doc and "location" in doc:
             self.documents.append(doc)
         else:
-            raise Exception("Invalid argument passed to _equipmentItem.addDocument: argument must be dictionary with appropriate keys.")
+            raise Exception("Invalid argument passed to _EquipmentItem.addDocument: argument must be dictionary with appropriate keys.")
 
 
 
@@ -380,7 +391,7 @@ class _equipmentItem():
         if isinstance(dict, loc) and "room" in loc and "storage" in loc:
             self.locations.append(loc)
         else:
-            raise Exception("Invalid argument passed to _equipmentItem.addLocation: argument must be dictionary with appropriate keys.")
+            raise Exception("Invalid argument passed to _EquipmentItem.addLocation: argument must be dictionary with appropriate keys.")
 
 
 
@@ -390,8 +401,12 @@ class _equipmentItem():
 
 
 
+        
 
-class labDB():
+
+
+
+class LabDB():
 
     """
     For modifying and appending to the lab database XML file
@@ -480,15 +495,33 @@ class labDB():
                 for item in lab.equipment:
                     if item["id"] == idn:
                         matching_items.add(item["name"])
+                        
             if len(matching_items) > 1:
-                good = False
-                error_log.append("Equipment ID \"" + idn + "\" has multiple names.")
+                if not self._isItAKit(idn):
+                    good = False
+                    error_log.append("Equipment ID \"" + idn + "\" has multiple names.")
         if good == False:
             if log_file:
                 [log_file.write(i + "\n") for i in error_log]
             else:
                 [print(i) for i in error_log]
         return good
+
+
+
+    def _isItAKit(self, idnum):
+        tree = ET.parse("../../data/equipmentDB.xml")
+        root = tree.getroot()
+        for child in root:
+            if child.attrib["id"] == idnum:
+                if child.find(".//Kit").attrib["isKit"] == "true":
+                    return True
+                else:
+                    return False
+        raise Exception("Invalid equipment ID number.")
+            
+                
+                
 
 
 
@@ -636,15 +669,15 @@ class labDB():
 
     def newLab(self, idn):
         if isValidID(idn) and not self._idExistsAlready(idn):
-            return _labItem(idnum=idn)
+            return _LabItem(idnum=idn)
         else:
             raise Exception("Invalid lab ID number: IDs must be number strings of length 4 and mustn't exist already in the tree")
 
 
 
     def addLab(self, labitem):
-        if not isinstance(labitem, _labItem):
-            raise TypeError("Argument passed to labDB.addLab was not a _labItem object")
+        if not isinstance(labitem, _LabItem):
+            raise TypeError("Argument passed to LabDB.addLab was not a _LabItem object")
         if labitem.id_num in [lab.id_num for lab in self.labs]:
             tmp = [labitem if labitem.id_num == lab.id_num else lab for lab in self.labs]
             self.labs = tmp[:]
@@ -662,7 +695,7 @@ class labDB():
 
     def save(self, filename, ignore_validation=False, error_log=False):
         if not isinstance(filename, str):
-            raise TypeError("Argument of labDB.save must be string")
+            raise TypeError("Argument of LabDB.save must be string")
         if ignore_validation:
             self.tree.write(filename, encoding="UTF-8")
             print("XML object not validated and written to " + filename)
@@ -679,7 +712,7 @@ class labDB():
 
     def _makelabs(self):
         for child in self.root:
-            self.labs.append(_labItem(lab=child))
+            self.labs.append(_LabItem(lab=child))
 
 
 
@@ -747,6 +780,10 @@ class labDB():
                 name.text = i["name"]
                 amount = ET.SubElement(item, "Amount")
                 amount.text = i["amount"]
+                if i["alt-id"] and i["alt-name"]:
+                    alt = ET.SubElement(item, "Alt")
+                    alt.text = i["alt-name"]
+                    alt.attrib = {"id": i["alt-id"]}
             typ = ET.SubElement(lab, "Type")
             typ.text = labitem.lab_type
             supportdocs = ET.SubElement(lab, "SupportDocs")
@@ -770,7 +807,13 @@ class labDB():
 
 
 
-class _labItem():
+
+        
+
+
+
+
+class _LabItem():
 
     def __init__(self, lab=None, idnum=None):
         if lab and isinstance(lab, ET.Element):
@@ -785,7 +828,9 @@ class _labItem():
                               "directory": i.findtext("Directory")} for i in lab.find("Versions").findall("Version")]
             self.equipment = [{"id": i.attrib["id"],
                                "name": i.findtext("Name"),
-                               "amount": i.findtext("Amount")} for i in lab.find("Equipment").findall("Item")]
+                               "amount": i.findtext("Amount"),
+                               "alt-name": i.findtext("Alt") if isinstance(i.find("Alt"), ET.Element) else "",
+                               "alt-id": i.find("Alt").attrib["id"] if isinstance(i.find("Alt"), ET.Element) else ""} for i in lab.find("Equipment").findall("Item")]
             self.lab_type = lab.findtext("Type")
             self.support_docs = [{"name": i.findtext("Name"),
                                   "path": i.findtext("Path")} for i in lab.find("SupportDocs").findall("Doc")]
@@ -801,9 +846,10 @@ class _labItem():
             self.support_docs = []
             self.software = []
         else:
-            raise Exception("Invalid arguments passed to _labItem: either a valid lab or a valid lab ID must be passed")
+            raise Exception("Invalid arguments passed to _LabItem: either a valid lab or a valid lab ID must be passed")
 
 
+        
     def addVersion(self, version):
         if isinstance(dict, version) \
            and "path" in version \
@@ -813,19 +859,28 @@ class _labItem():
            and "directory" in version:
             self.versions.append(version)
         else:
-            raise Exception("Invalid argument passed to _labItem.addVersion: argument must be dictionary with appropriate keys.")
+            raise Exception("Invalid argument passed to _LabItem.addVersion: argument must be dictionary with appropriate keys.")
 
+
+        
     def addEquipment(self, item):
         if isinstance(dict, item) and "id" in item and "name" in item and "amount" in item:
-            self.equipment.append(item)
+            if "alt-id" in item and "alt-name" in item:
+                self.equipment.append(item)
+            else:
+                item["alt-id"] = ""
+                item["alt-name"] = ""
+                self.equipment.append(item)
         else:
-            raise Exception("Invalid argument passed to _labItem.addEquipment: argument must be dictionary with appropriate keys.")
+            raise Exception("Invalid argument passed to _LabItem.addEquipment: argument must be dictionary with appropriate keys.")
 
+
+        
     def addSupportDoc(self, doc):
         if isinstance(dict, doc) and "name" in doc and "path" in doc:
             self.support_docs.append(doc)
         else:
-            raise Exception("Invalid argument passed to _labItem.addSupportDoc: argument must be dictionary with appropriate keys.")
+            raise Exception("Invalid argument passed to _LabItem.addSupportDoc: argument must be dictionary with appropriate keys.")
 
 
 
@@ -873,7 +928,7 @@ if __name__ == "__main__":
 
         #Import an XML and make a database object
 
-        db = labDB("../labDB.xml")
+        db = LabDB("../labDB.xml")
 
 
 
@@ -988,7 +1043,7 @@ if __name__ == "__main__":
 
         #VALIDATING A DATABASE
 
-        db = labDB("../labDB.xml")
+        db = LabDB("../labDB.xml")
         db.validateFull(error_log=True)  #full validation suite
 
         # with db.log_file_object() as f:

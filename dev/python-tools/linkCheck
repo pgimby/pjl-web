@@ -12,7 +12,7 @@ import xml.etree.ElementTree as ET
 r = re.compile(r'href="([^"]*)"')
 links = []
 pjlroot = "http://www.pjl.ucalgary.ca"
-
+count404 = 0
 
 
 def get_status_code(url):
@@ -26,37 +26,40 @@ def get_status_code(url):
         conn = rq.urlopen(req)
         return str(conn.getcode())
     except Exception as e:
-        if e.code == 405:
-            try:
-                conn = rq.urlopen(url)
-                return str(conn.getcode())
-            except Exception as e:
-                return "FAILED"
+        return str(e.code)
 
 def getPathsFromXML(xml_path):
     tree = ET.parse(xml_path)
     root = tree.getroot()
     paths = root.findall(".//Path")
-    
+    paths[:] = [pjlroot + i.text for i in paths]
+    return paths
 
 
-
-
-
-
-
+def checkLink(url, filename=None):
+    global count404
+    status = get_status_code(url)
+    if status != "401":
+        if filename:
+            print("STATUS: " + status + "       for link " + url + " in file " + dirpath + "/" + ff)
+        else:
+            print("STATUS: " + status + "       for link " + url)
+    else:
+        count404 += 1
+        return
 
 for dirpath, dirnames, files in os.walk("../../"):
     for ff in files:
-        if (ff.endswith(".php") or ff.endswith(".html") or ff.endswith(".txt")):
+        if (ff.endswith(".html") or ff.endswith(".txt")):
             with open(dirpath + "/" + ff, "r") as f:
                 try:
                     s = f.read()
                     for m in re.findall(r, s):
                         if m.startswith("http"):
-                            status = get_status_code(m)
-                            print("STATUS: " + status + "       for link " + m + " in file " + dirpath + "/" + ff)
+                            checkLink(m)
                 except:
                     print("Failed to read file: ", dirpath + "/" + ff)
 
 
+[checkLink(i) for i in getPathsFromXML("../../data/labDB.xml")]
+print(str(count404), "forbidden requests")
