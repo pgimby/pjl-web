@@ -740,7 +740,7 @@ footer {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
-	margin: 0 100px 10px 0;
+	margin: 0 40px 10px 0;
 }
 
 .staff-name:hover {

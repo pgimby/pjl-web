@@ -197,15 +197,23 @@ class EquipmentEditDisplay {
 			$(document).on("click touch", ".eq-modal-content #increment-repair", function(e) {
 				let repairinput = $(e.target).parent().children("input");
 				let serviceinput = $(e.target).parent().prev().children("input");
-				repairinput.prop("value", parseInt(repairinput.prop("value")) + 1);
-				serviceinput.prop("value", parseInt(serviceinput.prop("value")) - 1)
+				let repairvalue = repairinput.prop("value");
+				let servicevalue = serviceinput.prop("value");
+				if (repairvalue && servicevalue && servicevalue > 0) {
+					repairinput.prop("value", parseInt(repairvalue) + 1);
+					serviceinput.prop("value", parseInt(servicevalue) - 1);
+				}
 			});
 
 			$(document).on("click touch", ".eq-modal-content #decrement-repair", function(e) {
 				let repairinput = $(e.target).parent().children("input");
 				let serviceinput = $(e.target).parent().prev().children("input");
-				repairinput.prop("value", parseInt(repairinput.prop("value")) - 1);
-				serviceinput.prop("value", parseInt(serviceinput.prop("value")) + 1)
+				let repairvalue = repairinput.prop("value");
+				let servicevalue = serviceinput.prop("value");
+				if (repairvalue && servicevalue && repairvalue > 0) {
+					repairinput.prop("value", parseInt(repairvalue) - 1);
+					serviceinput.prop("value", parseInt(servicevalue) + 1);
+				}
 			});
 		}
 
