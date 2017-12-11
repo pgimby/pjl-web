@@ -390,6 +390,7 @@ svg text {
 
 video {
 	width: 100%;
+	background: #000;
 }
 
 .video-title {
