@@ -116,8 +116,8 @@ class EquipmentEditDisplay {
 						.attr("autocomplete", "off");
 			}
 			self.locs.append("i").classed("fa fa-plus fa-lg", true)
-										.attr("id", "add-location")
-										.attr("aria-hidden", "true");
+						.attr("id", "add-location")
+						.attr("aria-hidden", "true");
 
 			let amts = content.append("div").classed("eq-modal-amounts", true);
 			amts.append("h1").classed("modal-header", true).html("Amounts");
@@ -142,6 +142,12 @@ class EquipmentEditDisplay {
 						.attr("type", "text")
 						.attr("autocomplete", "off");
 			amt3.append("h3").html("Under Repair");
+			amt3.append("i").classed("fa fa-plus", true)
+						.attr("id", "increment-repair")
+						.attr("aria-hidden", "true");
+			amt3.append("i").classed("fa fa-minus", true)
+						.attr("id", "decrement-repair")
+						.attr("aria-hidden", "true");
 
 			let dcs = content.append("div").classed("eq-modal-docs", true);
 			dcs.append("h1").classed("modal-header", true).html("Documents");
@@ -156,15 +162,15 @@ class EquipmentEditDisplay {
 		}
 
 		self._setEventListeners = function() {
-			$(document).on("click", ".modal-screen", self.removeForm);
+			$(document).on("click touch", ".modal-screen", self.removeForm);
 
-			$(document).on("click", ".eq-modal", function(e) {
+			$(document).on("click touch", ".eq-modal", function(e) {
 				e.stopPropagation();
 			});
 
-			$(document).on("click", ".modal-close-button", self.removeForm);
+			$(document).on("click touch", ".modal-close-button", self.removeForm);
 
-			$(document).on("click", "#add-location", function(e) {
+			$(document).on("click touch", "#add-location", function(e) {
 				let loc = self.locs.insert("div", "#add-location").classed("eq-modal-location", true);
 				loc.append("input").classed("eq-modal-room", true)
 						.attr("name", "eq-room[]")
@@ -180,23 +186,39 @@ class EquipmentEditDisplay {
 						.attr("autocomplete", "off");
 			});
 
-			$(document).on("click", ".eq-modal-footer", function(e) {
+			$(document).on("click touch", ".eq-modal-footer", function(e) {
 				let dat = $(".eq-modal-edit-form").serialize();
 				console.log(dat)
 				$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + self.id, function(data) {
 					self.removeForm();
 				});
 			});
+
+			$(document).on("click touch", ".eq-modal-content #increment-repair", function(e) {
+				let repairinput = $(e.target).parent().children("input");
+				let serviceinput = $(e.target).parent().prev().children("input");
+				repairinput.prop("value", parseInt(repairinput.prop("value")) + 1);
+				serviceinput.prop("value", parseInt(serviceinput.prop("value")) - 1)
+			});
+
+			$(document).on("click touch", ".eq-modal-content #decrement-repair", function(e) {
+				let repairinput = $(e.target).parent().children("input");
+				let serviceinput = $(e.target).parent().prev().children("input");
+				repairinput.prop("value", parseInt(repairinput.prop("value")) - 1);
+				serviceinput.prop("value", parseInt(serviceinput.prop("value")) + 1)
+			});
 		}
 
 		self.removeForm = function() {
 			self.modalmask.remove();
 			$("main").removeClass("blurred-page");
-			$(document).off("click", ".modal-screen");
-			$(document).off("click", ".eq-modal");
-			$(document).off("click", ".modal-close-button");
-			$(document).off("click", "#add-location");
-			$(document).off("click", ".eq-modal-footer");
+			$(document).off("click touch", ".modal-screen");
+			$(document).off("click touch", ".eq-modal");
+			$(document).off("click touch", ".modal-close-button");
+			$(document).off("click touch", "#add-location");
+			$(document).off("click touch", ".eq-modal-footer");
+			$(document).off("click touch", ".eq-modal-content #increment-repair");
+			$(document).off("click touch", ".eq-modal-content #decrement-repair");
 		}
 
 		self._loadEquipDB();

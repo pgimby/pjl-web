@@ -661,6 +661,12 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 
 
 
+$(document).on("click touch", ".video-desc #video-see-more", function() {
+	window.location = "http://www.phas.ucalgary.ca/teaching_learning/demonstrations";
+});
+
+
+
 $(document).on("click touch", ".need-help", function(e) {
 	window.location.href = "mailto:pgimby@phas.ucalgary.ca?Subject=PJLWeb%20Bug%20Report";
 	e.stopPropagation();

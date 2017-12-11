@@ -332,6 +332,29 @@ svg text {
 	margin: 0 auto 128px auto;
 }
 
+#landing-grid-1 {
+	/*flex-direction: column;*/
+}
+
+#landing-grid-1 .landing-icon {
+	width: 48px;
+	height: 48px;
+	margin: auto;
+}
+
+#landing-grid-1 .landing-icon-box > div {
+	/*flex: 4;
+	text-align: left;*/
+}
+
+#landing-grid-1 .landing-icon-box {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	/*width: unset;*/
+	margin: 8px 0;
+}
+
 .landing-icon-box {
 	width: 300px;
 }
@@ -360,24 +383,46 @@ svg text {
 
 .video-container {
 	position: relative;
-	padding-top: 75%;
 	max-width: 1100px;
 	width: 60%;
 	margin: 72px auto;
 }
 
 video {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	width: 100%;
+	background: #000;
 }
 
+.video-title {
+	font-size: 1.6em;
+	margin-left: 0;
+	letter-spacing: 2px;
+	color: #333;
+	border-bottom: 1px solid #333;
+	margin-right: 0;
+	margin-bottom: 8px;
+	padding: 4px;
+}
 
+.video-desc p {
+	margin: 4px;
+}
 
+.video-desc #video-see-more {
+	float: right;
+	padding: 6px;
+	margin: 0;
+	font-size: .8em;
+	height: 12px;
+	color: #456545;
+	transition: all .3s ease;
+}
 
+.video-desc #video-see-more:hover {
+	cursor: pointer;
+	color: #009900;
+	transition: all .3s ease;
+}
 
 
 
@@ -1106,6 +1151,8 @@ footer {
 	#landing-hero-pjl {
 		font-size: 1.6em;
 		text-align: center;
+		left: 0;
+		right: 0;
 	}
 
 	.dl-modal {
@@ -1119,22 +1166,23 @@ footer {
 	}
 
 	.video-container {
-		position: relative;
-		padding-top: 75%;
 		max-width: 1100px;
 		width: 100%;
 		margin: 72px auto;
 	}
 
-	.landing-icon {
-		max-width: 128px;
-		max-height: 128px;
-		margin: auto;
-		flex: 1;
-	}
 
 	#landing-grid-1 {
 		flex-direction: column;
+	}
+
+	#landing-grid-1 .landing-icon-box {
+		flex-direction: row;
+	}
+
+	#landing-grid-2 .landing-icon {
+		width: 64px;
+		height: 64px;
 	}
 
 	.landing-icon-box {

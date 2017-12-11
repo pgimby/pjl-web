@@ -50,7 +50,7 @@ h2.eq-item-text:hover {
 /*EQUIPMENT DATABASE MODIFICATION FORM*/
 
 
-.equip-mod-form {
+/*.equip-mod-form {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
@@ -206,7 +206,7 @@ h2.eq-item-text:hover {
 	background: linear-gradient(to bottom, #444 0%, #444 50%, #333 100%);
 	color: #fff;
 }
-
+*/
 
 
 
@@ -394,6 +394,43 @@ h2.eq-item-text:hover {
 	color: #666;
 }
 
+.eq-modal-amount.repair {
+	position: relative;
+}
+
+.eq-modal #increment-repair {
+	background-color: rgba(0, 136, 0, .8);
+	color: #fff;
+	padding: 2px 3px;
+	position: absolute;
+	left: 43px;
+	border-radius: 4px;
+	top: 0px;
+	box-shadow: -1px 1px 1px #444;
+}
+
+.eq-modal #increment-repair:hover,
+.eq-modal #increment-repair:active {
+	background-color: #008800;
+	cursor: pointer;
+}
+
+.eq-modal #decrement-repair {
+	background-color: rgba(200, 0, 0, .8);
+	color: #fff;
+	padding: 2px 3px;
+	position: absolute;
+	left: 64px;
+	border-radius: 4px;
+	top: 0px;
+	box-shadow: -1px 1px 1px #444;
+}
+
+.eq-modal #decrement-repair:hover,
+.eq-modal #decrement-repair:active {
+	background-color: #c80000;
+	cursor: pointer;
+}
 
 .eq-modal-footer {
 	background-color: #424242;
@@ -483,7 +520,6 @@ h2.eq-item-text:hover {
 	.equip-mod-form {
 		width: auto;
 		height: 100%;
-		overflow-y: scroll;
 	}
 
 	#sort-eq-model {
@@ -502,6 +538,13 @@ h2.eq-item-text:hover {
 		max-width: unset;
 		margin: unset;
 		max-height: unset;
+		overflow-y: auto;
+	}
+
+	.eq-modal-content {
+		min-height: unset;
+		height: unset;
+		overflow-y: unset;
 	}
 
 }
