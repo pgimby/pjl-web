@@ -73,6 +73,10 @@
 		color: #555555;
 	}
 
+	#search-help p:nth-child(2) {
+		margin-left: 0;
+	}
+
 	#search-help #tips {
 		position: relative;
 		left: -16px;

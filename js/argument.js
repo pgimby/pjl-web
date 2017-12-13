@@ -1,4 +1,4 @@
-var argument = ["Is this the right room for an argument?",
+var montyargument = ["Is this the right room for an argument?",
 "I've told you once.",
 "No you haven't!",
 "Yes I have.",

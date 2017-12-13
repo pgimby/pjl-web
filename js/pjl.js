@@ -7,24 +7,10 @@
 var mainxmlpath = "/data/labDB.xml";
 var equipmentdatabasepath = "/data/equipmentDB.xml";
 var siteroot = "";
-
 var recordmasklength = 20;
-// var docXML;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
 
-//I wouldn't mind adding a "show more" or "show all" button at the bottom of the record list
-//or maybe have a scroll box of a specific size. When we load all the labs from the final XML
-//the initial length will be huge and you'll have to scroll forever to get to the footer. - Donesies
-
-//Also would like to have the zip, expand all, maybe search bar pinned to the top while scrolling
-//down through the list along with a "back to top" button.
-
-
-//Somehow need to deal with file errors in the zip call. Think about how to bail gracefully.
-//The top-level promise is waiting for all the files to load, what happens if one doesn't?
-//---set a deferred.fail() callback on the top-level promise. easy peasy. - Donesies
-
 
 
 
@@ -32,159 +18,14 @@ var recordmasklength = 20;
 
 
 //*******************************************************************************************
-//   PAGE INITIALIZATION
+//   MODAL CLASS DEFINITIONS (need to stay at top because JS classes aren't hoisted)
 //*******************************************************************************************
 
 
 
-function initRepoPage() {  //initialize the repository page
-	loadXML();
-	$("#search-bar").val("");
-}
 
-
-
-function initLandingPage() {
-	console.log("landing page initalized")
-}
-
-
-function initEquipmentModPage() {
-	loadEquipmentXML(populateEquipDisplay);
-}
-
-function initEquipmentPage() {
-	equipmentPageQueryString();
-	loadEquipmentXML(enableEquipmentSearchAutoComplete, populateEquipmentFilters, createEquipRecordSnapshots);
-}
-
-
-function enableEquipmentSearchAutoComplete(xml) {
-	let namenodes = xml.getElementsByTagName("InventoryName");
-	let datalist = d3.select("#equipment-datalist");
-	let names = [];
-	for (let i = 0; i < namenodes.length; i++) {
-		datalist.append("option").attr("value", (namenodes[i].childNodes[0] ? namenodes[i].childNodes[0].nodeValue : "—"));
-	}
-}
-
-
-function populateEquipmentFilters(xml) {
-	let manufacturers = new Set(["—"]);
-	let rooms = new Set([]);
-	let mannodes = xml.getElementsByTagName("Manufacturer");
-	let roomnodes = xml.getElementsByTagName("Room");
-	for (let i = 0; i < mannodes.length; i++) {
-		manufacturers.add((mannodes[i].childNodes[0] ? mannodes[i].childNodes[0].nodeValue : "—"));
-	}
-	for (let i = 0; i < roomnodes.length; i++) {
-		rooms.add((roomnodes[i].childNodes[0] ? roomnodes[i].childNodes[0].nodeValue : "—"));
-	}
-
-	let manlist = d3.select("#manufacturer-select");
-	let roomlist = d3.select("#room-select");
-	for (let item of manufacturers) {
-		manlist.append("option").attr("value", item).html(item);
-	}
-	for (let item of rooms) {
-		roomlist.append("option").attr("value", item).html(item);
-	}
-}
-
-
-function equipmentPageQueryString() {
-	let url = window.location.href.split("?");
-	let queryobj = {};
-	if (url.length > 1) {
-		var query = url[1].split("&");
-		for (let i = 0; i < query.length; i++) {
-			let param = query[i].split("=");
-			queryobj[param[0]] = param[1];
-		}
-		if (queryobj.id) {
-			new EquipmentDisplay(queryobj.id);
-		}
-	}
-}
-
-
-
-function loadEquipmentXML() {
-	let args = arguments;
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-    	if (xhttp.readyState == 4 && xhttp.status == 200) {
-            let docXML = xhttp.responseXML;
-            for (let i = 0; i < args.length; i++) {
-            	args[i](docXML);
-            }
-    	}
-  	};
-  	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
-  	xhttp.send();
-}
-
-function populateEquipDisplay(xml) {
-	container = d3.select("main");
-	items = xml.getElementsByTagName("Item");
-	for (let i = 0; i < items.length; i++) {
-		item = container.append("div").classed("eq-item-display", true);
-		item.append("h2").classed("eq-item-text", true).html(items[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue);
-		item.append("a").classed("eq-item-pdf", true).html("PDF").attr("data", items[i].getAttribute("id"));
-	}
-	sortEquipList();
-	linkPDFs();
-}
-
-
-
-
-
-
-function createEquipRecordSnapshots(xml) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
-	var equiplist = xml.getElementsByTagName("Item");
-	for (let i = 0; i < equiplist.length; i++) {
-		// console.log(equiplist[i])
-		let eqid = equiplist[i].getAttribute("id");
-		let eqname = (equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0] ? equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "—");
-		let eqmake = (equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "—");
-		let eqmodel = (equiplist[i].getElementsByTagName("Model")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "—");
-
-		let snapshot = d3.select("#record-list-box").append("div").classed("eq-record-flex", true).classed("record-rendered", true);
-		let id = snapshot.append("p").classed("eq-record-id", true).html(eqid);
-		let make = snapshot.append("p").classed("eq-record-make", true).html(eqmake);
-		let model = snapshot.append("p").classed("eq-record-model", true).html(eqmodel);
-		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
-		let roomnodes = equiplist[i].getElementsByTagName("Room");
-		let rooms = [];
-		for (let r = 0; r < roomnodes.length; r++) {
-			rooms.push(roomnodes[r].childNodes[0].nodeValue);
-		}
-		snapshot.attr("data-rooms", rooms.join());
-		let repair = (equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0] ? equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "—");
-		snapshot.attr("data-repair", repair);
-	}
-	applyRecordsMask(true);
-	displayNumResults(countNumRecords());
-}
-
-$(document).on("click", ".eq-record-flex", function(e) {
-	new EquipmentDisplay($(e.target).children(".eq-record-id").text());
-});
-
-
-$(document).on("click", "#edit-mode-button", function(e) {
-	window.location = "./edit/";
-});
-
-
-
-
-
-
-
-
-
+// this class defines a modal dialog for viewing (not modifying) the details of an equipment item
+//it is instantiated whenever an equipment item is clicked in the inventory list
 class EquipmentDisplay {
 
 	constructor(id) {
@@ -192,7 +33,7 @@ class EquipmentDisplay {
 		self.id = id;
 		self.modalmask = d3.select("body").append("div").classed("modal-screen", true).style("display", "block");
 
-
+		//retrieve the equipment xml and build the display
 		self._loadEquipDB = function() {
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
@@ -206,6 +47,7 @@ class EquipmentDisplay {
 		  	xhttp.send();
 		}
 
+		//given the entire xml document, retreive just the item matching 'id'
 		self._getItemData = function(xml, id) {
 			let nodes = xml.getElementsByTagName("Item");
 			for (let i = 0; i < nodes.length; i++) {
@@ -215,6 +57,7 @@ class EquipmentDisplay {
 			}
 		}
 
+		//build the display on top of the modal mask and populate with the equipment details contained in 'data'
 		self._buildDisplay = function(data) {
 			let id = data.getAttribute("id");
 			let name = (data.getElementsByTagName("InventoryName")[0].childNodes[0] ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "none");
@@ -278,6 +121,7 @@ class EquipmentDisplay {
 			}
 		}
 
+		//set event listeners to handle closing and to prevent click events from bubbling up from the dialog to the modal mask
 		self._setEventListeners = function() {
 			$(document).on("click", ".modal-screen", self.removeForm);
 
@@ -288,6 +132,7 @@ class EquipmentDisplay {
 			$(document).on("click", ".modal-close-button", self.removeForm);
 		}
 
+		//disconnect event listeners and remove the modal mask from the DOM. Removal of modal mask also removes its children, i.e., the entire dialog
 		self.removeForm = function() {
 			self.modalmask.remove();
 			$("main").removeClass("blurred-page");
@@ -296,6 +141,7 @@ class EquipmentDisplay {
 			$(document).off("click", ".modal-close-button");
 		}
 
+		//everything above this is a definition. This is where it's all called.
 		self._loadEquipDB();
 		self._setEventListeners();
 		$("main").addClass("blurred-page");
@@ -304,18 +150,8 @@ class EquipmentDisplay {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//this class defines a modal dialog for initializing the downloading of documents from the lab repo.
+//it is instantiated whenever the zip button is clicked on the repo page.
 class DownloadModalWindow {
 
 	constructor(id) {
@@ -323,6 +159,7 @@ class DownloadModalWindow {
 		self.id = id;
 		self.modalmask = d3.select("body").append("div").classed("modal-screen", true).style("display", "block");
 
+		//build the dialog on top of the modal mask
 		self._buildWindow = function() {
 			let modal = self.modalmask.append("div").classed("dl-modal", true);
 
@@ -373,6 +210,8 @@ class DownloadModalWindow {
 			footer.append("h3").classed("dl-modal-confirm", true).html("Download");
 		}
 
+		//set event listeners for closing and to prevent click events from bubbling up from the dialog to the modal mask
+		//set event listener for initializing the download and toggling the selections
 		self._setEventListeners = function() {
 			$(document).on("click", ".modal-screen", self.removeWindow);
 
@@ -394,6 +233,24 @@ class DownloadModalWindow {
 					collectFiles2Zip(all, pdf, tex, tmp, med, extradocs);
 				});
 			});
+
+			$(document).on("click", ".dl-modal-check", function(e) {
+				let checkitem = $(e.target);
+				if (checkitem.attr("id") == "ALL" && checkitem.hasClass("checked")) {
+					return;
+				} else if (checkitem.attr("id") == "ALL" && !checkitem.hasClass("checked")) {
+					checkitem.toggleClass("checked");
+					checkitem.siblings().removeClass("checked");
+				} else if (checkitem.attr("id") != "ALL" && $(".dl-modal-check#ALL").hasClass("checked")) {
+					checkitem.toggleClass("checked");
+					$(".dl-modal-check#ALL").removeClass("checked");
+				} else if (checkitem.attr("id") != "ALL" && !$(".dl-modal-check#ALL").hasClass("checked")) {
+					checkitem.toggleClass("checked");
+				}
+				if (!$(".dl-modal-check").hasClass("checked")) {
+					$(".dl-modal-check#ALL").addClass("checked");
+				}
+			});
 		}
 
 		self.removeWindow = function() {
@@ -403,6 +260,7 @@ class DownloadModalWindow {
 			$(document).off("click", ".modal-close-button");
 			$(document).off("click", ".dl-modal");
 			$(document).off("click", ".dl-modal-footer");
+			$(document).off("click", ".dl-modal-check");
 		}
 
 		$("main").addClass("blurred-page");
@@ -410,6 +268,50 @@ class DownloadModalWindow {
 		self._setEventListeners();
 	}
 }
+
+
+
+
+
+
+
+
+//*******************************************************************************************
+//   PAGE INITIALIZATION
+//*******************************************************************************************
+
+
+
+function initRepoPage() {  //initialize the repository page
+	loadXML();
+	$("#search-bar").val("");
+}
+
+
+
+function initLandingPage() { //nothing needs to be initialized on the landing page... yet.
+}
+
+
+
+function initEquipmentPage() {
+	equipmentPageQueryString();
+	//see the comment on this function
+	loadEquipmentXML(enableEquipmentSearchAutoComplete, populateEquipmentFilters, createEquipRecordSnapshots);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -435,7 +337,6 @@ $(document).on("click", "#clear-filters-button", function(e) {
 	for (var i = selects.length - 1; i >= 0; i--) {
 		$(selects[i]).val([]);
 	}
-	console.log(selects)
 	filterResults(getCurrentFilter(), fullset=true);
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
@@ -454,6 +355,8 @@ $(document).on("click", "select", function(e) {
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
 });
+
+
 
 $(document).on("change", "select", function(e) {
 	filterResults(getCurrentFilter());
@@ -480,9 +383,7 @@ $(document).on("click", ".search-icon", function(e) {
 
 $(document).on("keypress", "#search-bar", function(e) {
 	var key = e.which;
-	console.log("enter")
 	if (key == 13) {
-		console.log(key, 13)
 	 	$(".search-icon").click();
 	 	return false;
 	}
@@ -502,27 +403,6 @@ $(document).on("click", "#zip-icon", function(e) {
 	new DownloadModalWindow();
 	$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
 });
-
-
-$(document).on("click", ".dl-modal-check", function(e) {
-	let checkitem = $(e.target);
-	if (checkitem.attr("id") == "ALL" && checkitem.hasClass("checked")) {
-		return;
-	} else if (checkitem.attr("id") == "ALL" && !checkitem.hasClass("checked")) {
-		checkitem.toggleClass("checked");
-		checkitem.siblings().removeClass("checked");
-	} else if (checkitem.attr("id") != "ALL" && $(".dl-modal-check#ALL").hasClass("checked")) {
-		checkitem.toggleClass("checked");
-		$(".dl-modal-check#ALL").removeClass("checked");
-	} else if (checkitem.attr("id") != "ALL" && !$(".dl-modal-check#ALL").hasClass("checked")) {
-		checkitem.toggleClass("checked");
-	}
-	if (!$(".dl-modal-check").hasClass("checked")) {
-		$(".dl-modal-check#ALL").addClass("checked");
-	}
-});
-
-
 
 
 
@@ -622,6 +502,8 @@ $(document).on("mouseleave", ".resource-button", function(e) {
 	$(e.target).children(".resource-dropdown").hide();
 });
 
+
+
 $(document).on("mouseleave", ".resource-dropdown", function(e) {
 	if($(e.target).is("p")) {
 		$(e.target).parent().parent().hide();
@@ -631,7 +513,6 @@ $(document).on("mouseleave", ".resource-dropdown", function(e) {
 		$(e.target).hide();
 	}
 });
-
 
 
 
@@ -675,7 +556,6 @@ $(document).on("click touch", ".need-help", function(e) {
 
 
 
-
 $(document).on("click touch", "body", function(e) {
 	hideMobileNav();
 	e.stopPropagation();
@@ -690,6 +570,24 @@ $(document).on("click touch", "#mobile-nav-button", function(e) {
 
 
 
+$(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
+	let item = $(e.target);
+	let id = item.attr("data-eqid");
+	let href = "/staffresources/equipment?id=" + id
+	window.open(href, "_blank");
+});
+
+
+
+$(document).on("click", ".eq-record-flex", function(e) {
+	new EquipmentDisplay($(e.target).children(".eq-record-id").text());
+});
+
+
+
+$(document).on("click", "#edit-mode-button", function(e) {
+	window.location = "./edit/";
+});
 
 
 
@@ -699,6 +597,24 @@ $(document).on("click", ".eq-item-text", function(e) {
 	let form = new EquipmentModForm(id);
 	e.stopPropagation();
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -740,7 +656,7 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var detailsbox = d3.select("#record-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
 
 		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
-		var download = snapshot.append("a").classed("version-path", true).html("Download").attr("href", siteroot + versionlist[i].path).attr("target", "_blank");
+		var download = snapshot.append("a").classed("version-path", true).html("See PDF").attr("href", siteroot + versionlist[i].path).attr("target", "_blank");
 		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", siteroot + "/img/download-icon.svg");  //alternate for mobile display
 		var course = snapshot.append("p").classed("courses", true).html(versionlist[i].course);
 		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
@@ -754,7 +670,6 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
 		var labequipment = extendedlabdata.append("div").classed("lab-data-equipment", true);
 		getLabEquipmentList(lab, labequipment);
-		//.html("<span>Equipment:</span> " + spanTheList(getLabEquipmentList(lab), "equip-item").join(", "));
 
 		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
 		var directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
@@ -791,17 +706,45 @@ function getLabEquipmentList(lab, selection) {  //appends equipment to the lab e
 	}
 }
 
-$(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
-	let item = $(e.target);
-	let id = item.attr("data-eqid");
-	let href = "/staffresources/equipment?id=" + id
-	window.open(href, "_blank");
-});
 
 
-function isEquipmentDatabase() {
-	return (document.title == "Physics Junior Laboratory - Equipment Database" ? true : false);
+function createEquipRecordSnapshots(xml) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
+	var equiplist = xml.getElementsByTagName("Item");
+	for (let i = 0; i < equiplist.length; i++) {
+		// console.log(equiplist[i])
+		let eqid = equiplist[i].getAttribute("id");
+		let eqname = (equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0] ? equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "—");
+		let eqmake = (equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "—");
+		let eqmodel = (equiplist[i].getElementsByTagName("Model")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "—");
+
+		let snapshot = d3.select("#record-list-box").append("div").classed("eq-record-flex", true).classed("record-rendered", true);
+		let id = snapshot.append("p").classed("eq-record-id", true).html(eqid);
+		let make = snapshot.append("p").classed("eq-record-make", true).html(eqmake);
+		let model = snapshot.append("p").classed("eq-record-model", true).html(eqmodel);
+		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
+		let roomnodes = equiplist[i].getElementsByTagName("Room");
+		let rooms = [];
+		for (let r = 0; r < roomnodes.length; r++) {
+			rooms.push(roomnodes[r].childNodes[0].nodeValue);
+		}
+		snapshot.attr("data-rooms", rooms.join());
+		let repair = (equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0] ? equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "—");
+		snapshot.attr("data-repair", repair);
+	}
+	applyRecordsMask(true);
+	displayNumResults(countNumRecords());
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -809,21 +752,6 @@ function isEquipmentDatabase() {
 //   DOM MODIFIER FUNCTIONS
 //*******************************************************************************************
 
-
-function interpretRepairFilter(value) {
-	switch (value) {
-		case "0":
-			return [0,0.1];
-		case "1-2":
-			return [1,2];
-		case "3-5":
-			return [3,5];
-		case ">5":
-			return [5,9999];
-		default:
-			return [0,9999];
-	}
-}
 
 
 function filterResults(filter, fullset=true) {  //given a filter object, filter displayed records and update DOM appropriately
@@ -1022,7 +950,6 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 	for (let i = 0; i < records.length; i++) {
 		if (!recordlistbox.hasClass("records-unmasked")) {
 			if (i < recordmasklength) {
-				console.log(i, records[i].find(".lab-data-id").text())
 				records[i].removeClass("masked");
 			} else {
 				records[i].addClass("masked");
@@ -1140,7 +1067,6 @@ function setNumberRecordsUnmasked() {
 
 
 
-
 function showMostRecent() {
 	var uniquelabs = [];
 	var records = getCurrentRecords();
@@ -1190,6 +1116,31 @@ function showMostRecent() {
 }
 
 
+
+function populateEquipmentFilters(xml) {
+	let manufacturers = new Set(["—"]);
+	let rooms = new Set([]);
+	let mannodes = xml.getElementsByTagName("Manufacturer");
+	let roomnodes = xml.getElementsByTagName("Room");
+	for (let i = 0; i < mannodes.length; i++) {
+		manufacturers.add((mannodes[i].childNodes[0] ? mannodes[i].childNodes[0].nodeValue : "—"));
+	}
+	for (let i = 0; i < roomnodes.length; i++) {
+		rooms.add((roomnodes[i].childNodes[0] ? roomnodes[i].childNodes[0].nodeValue : "—"));
+	}
+
+	let manlist = d3.select("#manufacturer-select");
+	let roomlist = d3.select("#room-select");
+	for (let item of manufacturers) {
+		manlist.append("option").attr("value", item).html(item);
+	}
+	for (let item of rooms) {
+		roomlist.append("option").attr("value", item).html(item);
+	}
+}
+
+
+
 function showMobileNav() {
 	if($(".mobile-landing-nav").css("display") == "none") {
 		$(".mobile-landing-nav").show("slide", {direction: "left"}, 300);
@@ -1206,7 +1157,9 @@ function hideMobileNav() {
 
 
 
-var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.50}
+
+
+
 
 
 
@@ -1228,28 +1181,24 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 	let minsimilarity = 0.4;
 	let querybigrams = makeBigramList(query);
 	let recordlist = getAllRecords();
-	let recordtype = (isEquipmentDatabase() ? "equipment" : "lab")
-	let skipsim = ("id" == selector ? true : false)
+	let skipsim = ("id" == selector ? true : false);
 
-	switch (recordtype) {
-		case "equipment":
-			for (let i = 0; i < recordlist.length; i++) {
-				recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
-				let similarity = compareQueryWithEquipRecord(querybigrams, recordlist[i]);
-				if (similarity < .9) {
-					recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
-				}
+	if (isEquipmentDatabase()) {
+		for (let i = 0; i < recordlist.length; i++) {
+			recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
+			let similarity = compareQueryWithEquipRecord(querybigrams, recordlist[i]);
+			if (similarity < .9) {
+				recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
 			}
-			break;
-		case "lab":
-			for (let i = 0; i < recordlist.length; i++) {
-				recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
-				let similarity = (skipsim ? 0.0 : compareQueryWithLabRecord(querybigrams, recordlist[i], selector));
-				if (similarity < minsimilarity && !queryLiteralInLabRecord(query, recordlist[i], selector)) {
-					recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
-				}
+		}
+	} else {
+		for (let i = 0; i < recordlist.length; i++) {
+			recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
+			let similarity = (skipsim ? 0.0 : compareQueryWithLabRecord(querybigrams, recordlist[i], selector));
+			if (similarity < minsimilarity && !queryLiteralInLabRecord(query, recordlist[i], selector)) {
+				recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
 			}
-			break;
+		}
 	}
 }
 
@@ -1293,8 +1242,6 @@ function queryLiteralInLabRecord(query, lab, selector) {
 			return id == query;
 			break;
 	}
-
-
 }
 
 
@@ -1359,6 +1306,7 @@ function compareQueryWithLabRecord(querybigrams, lab, selector) {
 }
 
 
+//Returns Sorensen-Dice coefficient comparing equipment name with a search query
 function compareQueryWithEquipRecord(querybigrams, eqitem) {
 	let name = eqitem.find(".eq-record-name").html();
 	let recordbigrams = makeBigramList(name);
@@ -1367,10 +1315,9 @@ function compareQueryWithEquipRecord(querybigrams, eqitem) {
 
 
 
-
-
-function sorensenDiceCoef(bigrams1, bigrams2) {  //calculate Sorensen-Dice Coefficient for two sets (arrays) of bigrams - not type safe
-	var count = 0;
+//calculate Sorensen-Dice Coefficient for two sets (arrays) of bigrams - not type safe
+function sorensenDiceCoef(bigrams1, bigrams2) {
+	let count = 0;
 	$.each(bigrams1, function(i, d) {
 		if (bigrams2.includes(d)) {
 			count++;
@@ -1381,12 +1328,13 @@ function sorensenDiceCoef(bigrams1, bigrams2) {  //calculate Sorensen-Dice Coeff
 
 
 
-//this is the top of the search stream, pulling raw query right from the search bar
-function searchQueryHandler() {  //handle search request by checking for search selectors and pass along the appropriate branch
-	var query = $("#search-bar").val();
-	var split = query.split(":");
-	var selector = split[0];
-	var searchphrase = split.slice(1,).join(" ");
+//This is the top of the search stream, pulling raw query right from the search bar.
+//Handle search request by checking for search selectors and pass along the appropriate branch.
+function searchQueryHandler() {
+	let query = $("#search-bar").val();
+	let split = query.split(":");
+	let selector = split[0].trim();
+	let searchphrase = split.slice(1,).join(" ").trim();
 	switch (selector.toLowerCase()) {
 		case "course":
 			courseSearchHandler(searchphrase);
@@ -1419,7 +1367,8 @@ function searchQueryHandler() {  //handle search request by checking for search 
 
 
 
-function defaultSearchHandler(searchphrase) {  //handle a non-selected search request - not type safe
+//handle a non-selected search request - not type safe
+function defaultSearchHandler(searchphrase) {
 	if(isEmptyString(searchphrase)) {
 		return;
 	}
@@ -1434,84 +1383,99 @@ function defaultSearchHandler(searchphrase) {  //handle a non-selected search re
 			window.open("https://xkcd.com", '_blank');
 			break;
 		default:
-			$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
+			// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
 			generateSearchResults(searchphrase, "all");
 			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+	 		//$("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 	}
 }
 
 
 
-function courseSearchHandler(searchphrase) {  //handle the search request for course search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
+//handle the search request for course search selector - not type safe
+function courseSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
 			generateSearchResults(searchphrase, "course");
 			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+	 		// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
 
-function labSearchHandler(searchphrase) {  //handle the search request for lab name search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "lab");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+//handle the search request for lab name search selector - not type safe
+function labSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "lab");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
 
-function yearSearchHandler(searchphrase) {  //handle the search request for year search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "year");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+//handle the search request for year search selector - not type safe
+function yearSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "year");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
 
-function semesterSearchHandler(searchphrase) {  //handle the search request for semester search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "semester");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+//handle the search request for semester search selector - not type safe
+function semesterSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "semester");
+	displayNumResults(countNumRecords());
+	 // $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
 
-function topicSearchHandler(searchphrase) {  //handle the search request for topic search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "topic");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+//handle the search request for topic search selector - not type safe
+function topicSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "topic");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
 
-function disciplineSearchHandler(searchphrase) {  //handle the search request for discipline search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "discipline");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+//handle the search request for discipline search selector - not type safe
+function disciplineSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "discipline");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
 
-function equipmentSearchHandler(searchphrase) {  //handle the search request for equipment search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "equipment");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+//handle the search request for equipment search selector - not type safe
+function equipmentSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "equipment");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
 
-function idSearchHandler(searchphrase) {  //handle the search request for id search selector - not type safe
-	$('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);
-			generateSearchResults(searchphrase, "id");
-			displayNumResults(countNumRecords());
-	 		$("#search-bar").val("");
+//handle the search request for id search selector - not type safe
+function idSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "id");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
+
+
+
+
+
+
+
 
 
 
@@ -1531,19 +1495,22 @@ function idSearchHandler(searchphrase) {  //handle the search request for id sea
 
 
 function makePromisesBeginZip(filelist) {
-	var zip = new JSZip();
-	var files = filelist;
-	var promises = [];
-	var xhrs = [];
+	let zip = new JSZip();
+	let files = filelist;
+	let promises = [];
+	let xhrs = [];
 
+	//this callback runs whenever a file is successfully retreived. It updates the progress bar.
 	function increaseProgress() {
 		return function() {
 			let currentval = parseFloat($("#zip-progress-bar progress").attr("value"));
-			let newval = currentval + (1/files.length)
+			let newval = currentval + (1/files.length);
 			$("#zip-progress-bar progress").attr("value", newval.toFixed(3));
 		}
 	}
 
+	//Start the file download and make associated promises.
+	//Also save the list of XHRs
 	for (let i = 0; i < files.length; i++) {
 		let downloadingfile = new $.Deferred();
 		downloadingfile.done(function(filename, blob) {
@@ -1554,27 +1521,27 @@ function makePromisesBeginZip(filelist) {
 		xhrs.push(xhr);
 	}
 
-
 	deferredzip = $.when.apply($, promises);
 
-
+	//if the file download succeeds, serve the zipped file to the user
 	deferredzip.done(function() {
 		let today = new Date();
 		let zipoutputfilename = "PJL_"+ String(today.getHours()%12).padStart(2, '0') + "-" + String(today.getMinutes()).padStart(2, '0') + ".zip";
 		zip.generateAsync({type:"blob"}).then(function (blob) {
+			//'saveAs' is a FileSaver.js function
 			saveAs(blob, zipoutputfilename);
-			console.log("zip done")
 			$("#zip-progress-bar progress").attr("value", "0");
 			$("#zip-progress-bar").stop().slideUp(500);
 		});
 		return false;
 	});
 
+	//if the file download fails, close the zip progress bar and continue on
 	deferredzip.fail(function() {
 		setTimeout(function() {
 			$("#file-prep").text("Download failed.");
 			setTimeout(function() {
-				console.log("zip failed")
+				console.log("zip failed or cancelled");
 				$("#zip-progress-bar progress").attr("value", "0");
 				$("#zip-progress-bar").stop().slideUp(500, function() {
 				$("#file-prep").text("Preparing files...");
@@ -1583,37 +1550,35 @@ function makePromisesBeginZip(filelist) {
 		}, 700);
 	});
 
-
+	//if the close is clicked on the docnload progress bar, abort XHRs and reject associate promises.
+	//The promise fail callbacks will take care of the rest..
 	$(document).on("click", "#cancel-download", function(e) {
-		for (var i = xhrs.length - 1; i >= 0; i--) {
+		for (let i = xhrs.length - 1; i >= 0; i--) {
 			xhrs[i].abort();
 			promises[i].reject();
 		}
-		console.log("zip cancelled")
 		$("#zip-progress-bar progress").attr("value", "0");
 		$("#zip-progress-bar").stop().slideUp(500);
+		$(document).off("click", "#cancel-download");
 		return;
 	});
-
 }
 
 
-function fileDownloadPromise() {  //return a jQuery promise
-	return new $.Deferred();
-}
 
-
-function beginDownload(filepath, promise) {
 //start downloading and resolve associated promise upon completion (or failure) - not type safe
 //return XML HTTP request object
+function beginDownload(filepath, promise) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.responseType = "blob";
 	xhttp.onreadystatechange = function() {
     	if (this.readyState == 4 && this.status == 200) {
             blob = this.response;
+            //get the filename from the path
             var filename = filepath.split("/");
             filename = filename[filename.length-1];
-            promise.notify();
+            // promise.notify(); //this line might be dead code - TOTEST
+            //'filename' and 'blob' are passed as arguments to the resolved callback (see 'downloadingfile' promise in 'makePromisesBeginZip')
             promise.resolve(filename, blob);
     	} else if(this.status == 404) {
     		promise.reject();
@@ -1628,41 +1593,39 @@ function beginDownload(filepath, promise) {
 
 
 
-function canZip() {  //return boolean for ability to zip currently displayed records
-	var bool = false;
-	if (countNumRecords() > 0 && JSZip.support.blob) {
-		bool = true
-	}
-	return bool;
-}
-
-
-// var promises = []
+//The top of the zipping process. Get all lab directories and collect their file contents to be passed to JSZip for zipping and serving to user.
 function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
-	var dirlist = [];
-	var filelist = [];
-	var promises = [];
-	var extradocs = [];
-	var records = getCurrentRecords();
+	let dirlist = [];
+	let filelist = [];
+	let promises = [];
+	let extradocs = [];
+	let records = getCurrentRecords();
+
+	//callback to be run when PHP returns a list of contents for a given directory (when its promise is resolved)
 	function fileCallback(promise) {
 		return function(d) {
 			filelist = filelist.concat(d.split(","));
 			promise.resolve();
 		}
 	}
-	for (var i = records.length - 1; i >= 0; i--) {
+
+	//Compile directory lists to be sniffed. Concurrently compile a list of extra documents from the corresponding lab record
+	for (let i = records.length - 1; i >= 0; i--) {
 		dirlist.push(records[i].find(".version-directory").text());
 		extradocs.concat(getExtraDocsFromRecord(records[i]));
 	}
 
-	for (var i = dirlist.length - 1; i >= 0; i--) {
+	//Create a promise for each directory to be resolved when PHP successfully returns a file list representing the contents of the directory
+	for (let i = dirlist.length - 1; i >= 0; i--) {
 		let promise = $.Deferred();
-		promises.push(promise)
+		promises.push(promise);
 		$.post(siteroot + "/php/getFileListRecursive.php", "dirpath=" + dirlist[i], fileCallback(promise));
 	}
 
-	var deferredFileList = $.when.apply($, promises);
+	//create a new promise to be resolved when all other promises are resolved
+	let deferredFileList = $.when.apply($, promises);
 
+	//when PHP has finished sniffing all the files inside the directories and returned the file lists 'deferredFileList' is resolved
 	deferredFileList.done(function() {
 		filteredlist = filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist);
 		if(doEXTRA || doALL) {
@@ -1671,16 +1634,21 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 		makePromisesBeginZip(filteredlist);
 		console.log("An elegant syntax for ease of use,\neasy reading. Not abstruse.\n\nHaving this would sure be swell.\nPHP can rot in hell.")
 	});
+
+	//There is no graceful way to bail from this from a website functionality perspective.
+	//If this promise fails the website should be considered broken so a simple console log is printed.
 	deferredFileList.fail(function() {console.log("File collection failed: Unable to locate files for selection.")});
 }
 
 
+//Take an array of file paths and filter it according to boolean arguments. Return filtered list
 function filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist) {
+	//if 'Everything' options selected then return the whole, unfiltered list.
 	if (doALL) {
 		return filelist;
 	}
-	var filteredfiles = [];
-	for (var i = filelist.length - 1; i >= 0; i--) {
+	let filteredfiles = [];
+	for (let i = filelist.length - 1; i >= 0; i--) {
 		if(!filelist[i].startsWith("/data/")) {
 			continue;
 		}
@@ -1706,10 +1674,11 @@ function filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist) {
 
 
 
-function getExtraDocsFromRecord(record) { //record is an HTML DOM element
-	var docs = $(record).children(".extra-docs").children(".extra-doc");
+//record is an HTML DOM element. Returns a list of dictionaries holding information about a lab's extra documents
+function getExtraDocsFromRecord(record) {
+	let docs = $(record).find(".extra-doc");//children(".extra-docs").children(".extra-doc");
 	list = [];
-	for (var i = docs.length - 1; i >= 0; i--) {
+	for (let i = docs.length - 1; i >= 0; i--) {
 		let docname = docs[i].text();
 		let docpath = docs[i].attr("href");
 		list.push({name: docname, url: docpath});
@@ -1722,14 +1691,23 @@ function getExtraDocsFromRecord(record) { //record is an HTML DOM element
 
 
 
+
+
+
+
+
+
+
+
 //*******************************************************************************************
 //   GENERAL FUNCTIONS
 //*******************************************************************************************
 
 
 
-function loadXML() {  //load the XML document holding all the lab records (see global var for XML URL)
-	var xhttp = new XMLHttpRequest();
+//load the XML document holding all the lab records and pass it along to callbacks
+function loadXML() {
+	let xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
     	if (xhttp.readyState == 4 && xhttp.status == 200) {
             let docXML = xhttp.responseXML;
@@ -1744,56 +1722,74 @@ function loadXML() {  //load the XML document holding all the lab records (see g
 
 
 
-function sendEquipXMLModification(data) { //data is a dictionary
-	//data = {itemid:"0001", make: "Pasco", model: "8010A", amount: "10", service: "10", repair: "0"}
-	$.ajax({
-	  method: "POST",
-	  url: "/php/modifyEquipDB.php",
-	  data: data
-	})
-	  .done(function( msg ) {
-	    alert( "Data saved: " + msg );
-	  });
+//the repair backlog filter has strings indicating ranges of backlog.
+//This function maps them to a numerical range in the form of an array.
+function interpretRepairFilter(value) {
+	switch (value) {
+		case "0":
+			return [0,0.1];
+		case "1-2":
+			return [1,2];
+		case "3-5":
+			return [3,5];
+		case ">5":
+			return [5,9999];
+		default:
+			return [0,9999];
+	}
 }
 
 
 
+//return boolean for ability to zip currently displayed records
+function canZip() {
+	let bool = false;
+	if (countNumRecords() > 0 && JSZip.support.blob) {
+		bool = true
+	}
+	return bool;
+}
 
 
-function getCurrentRecords() {  //returns currently displayed lab records as array of jQuery objects
-	var list = [];
-	var lablist = $(".lab-record-flex");
+
+//returns currently displayed lab records as array of jQuery objects
+//Finds rendered records even if they're masked. Masked records are records that are unmasked by the 'show all' button.
+//Records classed with 'record-not-rendered' remain in the DOM but are not rendered because they have been excluded by a user search or filter.
+function getCurrentRecords() {
+	let list = [];
 	if (isEquipmentDatabase()) {
 		let eqlist = $(".eq-record-flex");
-		for (let i = 0; i < eqlist.length; i++) {
+		for (let i = eqlist.length - 1; i >= 0; i--) {
 			if($(eqlist[i]).hasClass("record-rendered")) {
 				list.push($(eqlist[i]));
 			}
 		}
 	} else {
-		for (let i = 0; i < lablist.length; i++) {
-			if($(lablist[i]).hasClass("record-rendered")) {
+		let lablist = $(".lab-record-flex");
+		for (let i = lablist.length - 1; i >= 0; i--) {
+			if ($(lablist[i]).hasClass("record-rendered")) {
 				list.push($(lablist[i]));
 			}
 		}
 	}
-
 	return list;
 }
 
 
 
-function getAllRecords() {  //returns all lab records as array of jquery objects
+//returns all lab records as array of jQuery objects
+//This function is reusable for both equipment inventory page and lab repo page
+function getAllRecords() {
 	var list = [];
-	var lablist = $(".lab-record-flex");
-	if (lablist.length > 0) {
-		for (var i = lablist.length - 1; i >= 0; i--) {
-			list.push($(lablist[i]));
+	if (isEquipmentDatabase()) {
+		let eqlist = $(".eq-record-flex");
+		for (let i = eqlist.length - 1; i >= 0; i--) {
+			list.push($(eqlist[i]));
 		}
 	} else {
-		let eqlist = $(".eq-record-flex");
-		for (var i = 0; i < eqlist.length; i++) {
-			list.push($(eqlist[i]));
+		let lablist = $(".lab-record-flex");
+		for (let i = lablist.length - 1; i >= 0; i--) {
+			list.push($(lablist[i]));
 		}
 	}
 	return list;
@@ -1801,14 +1797,16 @@ function getAllRecords() {  //returns all lab records as array of jquery objects
 
 
 
-function countNumRecords() {  //return the number of currently displayed records
-	var currentrecords = getCurrentRecords();
+//return the number of currently displayed records
+function countNumRecords() {
+	let currentrecords = getCurrentRecords();
 	return currentrecords.length;
 }
 
 
 
-function getCurrentFilter() {  //return a filter object of currently activated filters
+//return a filter object of currently activated filters
+function getCurrentFilter() {
 	let selects = $("select");
 	let filter = {};
 	for (let i = selects.length - 1; i >= 0; i--) {
@@ -1823,14 +1821,15 @@ function getCurrentFilter() {  //return a filter object of currently activated f
 
 
 
-function getLabId(lab) {  //return lab ID as a string for an XML "lab" node - not type safe
+//return lab ID as a string for an XML "lab" node - not type safe
+function getLabId(lab) {
 	return lab.getAttribute("labId");
 }
 
 
 
 function mayISeeYourSillyWalk() {  //I'd like to apply for a government grant to develop my silly walk
-	var itsnotparticularlysillyisit = "The right leg isn't silly at all and the left leg merely does a forward aerial half turn every alternate step.";
+	let itsnotparticularlysillyisit = "The right leg isn't silly at all and the left leg merely does a forward aerial half turn every alternate step.";
 	$(".search-icon").attr("src","/img/silly-walk.png");
 	$(".search-icon").css({height: "45px", width: "35px", top: "-49px", right: "-35px"})
 	$("#search-bar").attr("placeholder", itsnotparticularlysillyisit);
@@ -1848,10 +1847,11 @@ function mayISeeYourSillyWalk() {  //I'd like to apply for a government grant to
 
 
 
-function getLabTopicsList(lab) {  //return an array of topics (strings) for an XML "lab" node - not type safe
-	var list = [];
-	var topics = lab.getElementsByTagName("Topic");
-	for (var i = topics.length - 1; i >= 0; i--) {
+//return an array of topics (strings) for an XML "lab" node - not type safe
+function getLabTopicsList(lab) {
+	let list = [];
+	let topics = lab.getElementsByTagName("Topic");
+	for (let i = topics.length - 1; i >= 0; i--) {
 		list.push(topics[i].childNodes[0].nodeValue);
 	}
 	return list;
@@ -1859,10 +1859,11 @@ function getLabTopicsList(lab) {  //return an array of topics (strings) for an X
 
 
 
-function getLabDisciplinesList(lab) {  //return an array of disciplines (strings) for an XML "lab" node - not type safe
-	var list = [];
-	var disciplines = lab.getElementsByTagName("Discipline");
-	for (var i = disciplines.length - 1; i >= 0; i--) {
+//return an array of disciplines (strings) for an XML "lab" node - not type safe
+function getLabDisciplinesList(lab) {
+	let list = [];
+	let disciplines = lab.getElementsByTagName("Discipline");
+	for (let i = disciplines.length - 1; i >= 0; i--) {
 		list.push(disciplines[i].childNodes[0].nodeValue);
 	}
 	return list;
@@ -1870,13 +1871,12 @@ function getLabDisciplinesList(lab) {  //return an array of disciplines (strings
 
 
 
-
-
-function getLabSoftwareList(lab) {  //return an array of software (strings) for an XML "lab" node - not type safe
-	var list = [];
-	var software = lab.getElementsByTagName("Software")[0];
-	var names = software.getElementsByTagName("Name");
-	for (var i = names.length - 1; i >= 0; i--) {
+//return an array of software (strings) for an XML "lab" node - not type safe
+function getLabSoftwareList(lab) {
+	let list = [];
+	let software = lab.getElementsByTagName("Software")[0];
+	let names = software.getElementsByTagName("Name");
+	for (let i = names.length - 1; i >= 0; i--) {
 		list.push(names[i].childNodes[0].nodeValue);
 	}
 	return list;
@@ -1884,12 +1884,13 @@ function getLabSoftwareList(lab) {  //return an array of software (strings) for 
 
 
 
-function getExtraLabDocs(lab) {  //return an array of extra doc objects for an XML "lab" node - not type safe
-	var list = [];
-	var docs = lab.getElementsByTagName("Doc");
-	for (var i = docs.length - 1; i >= 0; i--) {
-		var docname = docs[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
-		var docpath = docs[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue;
+//return an array of extra doc objects for an XML "lab" node - not type safe
+function getExtraLabDocs(lab) {
+	let list = [];
+	let docs = lab.getElementsByTagName("Doc");
+	for (let i = docs.length - 1; i >= 0; i--) {
+		let docname = docs[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+		let docpath = docs[i].getElementsByTagName("Path")[0].childNodes[0].nodeValue;
 		list.push({name: docname, url: docpath});
 	}
 	return list;
@@ -1898,12 +1899,12 @@ function getExtraLabDocs(lab) {  //return an array of extra doc objects for an X
 
 
 function iCameHereForAnArgument() {  //Oh, I'm sorry, this is abuse...
-	var i = 0;
+	let i = 0;
 	$(".search-icon").attr("src","/img/silly-walk.png");
-	$(".search-icon").css({height: "45px", width: "35px", top: "-49px", right: "-35px"})
+	$(".search-icon").css({height: "45px", width: "35px", top: "-49px", right: "-35px"});
 	$("#search-bar").val("");
-	var id = setInterval(function() {
-		if (i == argument.length - 1) {
+	let id = setInterval(function() {
+		if (i == montyargument.length - 1) {
 			clearInterval(id);
 			$(".search-icon").attr("src","/img/search-icon.png");
 			$(".search-icon").css({height: "40px", width: "40px", top: "-45px", right: "-35px"});
@@ -1911,22 +1912,23 @@ function iCameHereForAnArgument() {  //Oh, I'm sorry, this is abuse...
 			$("#search-bar").attr("placeholder", "Keyword, topic, course...");
 			return;
 		}
-		$("#search-bar").attr("placeholder", argument[i]);
+		$("#search-bar").attr("placeholder", montyargument[i]);
 		i++;
 	}, 1000);
 }
 
 
 
-function getVersionList(lab) {  //return an array of version objects for a given XML "lab" node
-	var versionlist = [];
-	var list = lab.getElementsByTagName("Version");
-	for (var i = list.length - 1; i >= 0; i--) {
-		var p = list[i].getElementsByTagName("Path")[0];
-		var y = list[i].getElementsByTagName("Year")[0];
-		var s = list[i].getElementsByTagName("Semester")[0];
-		var c = list[i].getElementsByTagName("Course")[0];
-		var d = list[i].getElementsByTagName("Directory")[0];
+//return an array of version objects for a given XML "lab" node
+function getVersionList(lab) {
+	let versionlist = [];
+	let versions = lab.getElementsByTagName("Version");
+	for (let i = versions.length - 1; i >= 0; i--) {
+		let p = versions[i].getElementsByTagName("Path")[0];
+		let y = versions[i].getElementsByTagName("Year")[0];
+		let s = versions[i].getElementsByTagName("Semester")[0];
+		let c = versions[i].getElementsByTagName("Course")[0];
+		let d = versions[i].getElementsByTagName("Directory")[0];
 		versionlist.push({path: (Boolean(p.childNodes[0]) ? p.childNodes[0].nodeValue : "—"),
 						  semester: (Boolean(s.childNodes[0]) ? s.childNodes[0].nodeValue : "—"),
 						  year: (Boolean(y.childNodes[0]) ? y.childNodes[0].nodeValue : "—"),
@@ -1937,23 +1939,25 @@ function getVersionList(lab) {  //return an array of version objects for a given
 }
 
 
+
 //PETER WROTE THIS ONE
-function getValidFilterOptions(docXML, type) {  //return the set of values available for filtering on a given filter type as an array - not type safe
-	var nodelist = docXML.getElementsByTagName(type);
-    var valueslist = [];
-    for (var i = 0; i < nodelist.length; i ++) {
-	    var value = nodelist[i].childNodes[0];
-	    valueslist.push((Boolean(value) ? value.nodeValue : "—"));
+//return the set of values available for filtering on a given filter type as an array - not type safe
+function getValidFilterOptions(docXML, type) {
+	let nodes = docXML.getElementsByTagName(type);
+    let valueslist = [];
+    for (let i = nodes.length - 1; i >= 0; i--) {
+	    valueslist.push(nodes[i].childNodes[0] ? nodes[i].childNodes[0].nodeValue : "—");
     }
     return Array.from(new Set(valueslist)).sort();
 }
 
 
 
-function getCurrentRecordPaths() {  //return currently displayed lab document paths as a list of strings
-	var paths = [];
-	var records = getCurrentRecords();
-	for (var i = records.length - 1; i >= 0; i--) {
+//return currently displayed lab document paths as a list of strings
+function getCurrentRecordPaths() {
+	let paths = [];
+	let records = getCurrentRecords();
+	for (let i = records.length - 1; i >= 0; i--) {
 		paths.push(records[i].find(".version-path").attr("href"));
 	}
 	return paths;
@@ -1961,9 +1965,10 @@ function getCurrentRecordPaths() {  //return currently displayed lab document pa
 
 
 
-function compareLabsByCourse(a, b) {  //comparison function for Array.prototype.sort on lab course of jQuery ".lab-record-flex" selection - not type safe
-	var a = a.find(".courses").text().split(", ")[0];
-	var b = b.find(".courses").text().split(", ")[0];
+//comparison function for Array.prototype.sort on lab course of jQuery ".lab-record-flex" selection - not type safe
+function compareLabsByCourse(a, b) {
+	a = a.find(".courses").text().split(", ")[0];
+	b = b.find(".courses").text().split(", ")[0];
 	if (a < b) {
 		return -1;
 	}
@@ -1975,9 +1980,10 @@ function compareLabsByCourse(a, b) {  //comparison function for Array.prototype.
 
 
 
-function compareLabsBySemester(a, b) {  //comparison function for Array.prototype.sort on lab semester of jQuery ".lab-record-flex" selection - not type safe
-	var a = a.find(".version-semester").text().split(" ")[0];
-	var b = b.find(".version-semester").text().split(" ")[0];
+//comparison function for Array.prototype.sort on lab semester of jQuery ".lab-record-flex" selection - not type safe
+function compareLabsBySemester(a, b) {
+	a = a.find(".version-semester").text().split(" ")[0];
+	b = b.find(".version-semester").text().split(" ")[0];
 	if (a < b) {
 		return -1;
 	}
@@ -1989,9 +1995,10 @@ function compareLabsBySemester(a, b) {  //comparison function for Array.prototyp
 
 
 
-function compareLabsByYear(a, b) {  //comparison function for Array.prototype.sort on lab year of jQuery ".lab-record-flex" selection - not type safe
-	var a = a.find(".version-semester").text().split(" ")[1];
-	var b = b.find(".version-semester").text().split(" ")[1];
+//comparison function for Array.prototype.sort on lab year of jQuery ".lab-record-flex" selection - not type safe
+function compareLabsByYear(a, b) {
+	a = a.find(".version-semester").text().split(" ")[1];
+	b = b.find(".version-semester").text().split(" ")[1];
 	if (a < b) {
 		return -1;
 	}
@@ -2003,9 +2010,10 @@ function compareLabsByYear(a, b) {  //comparison function for Array.prototype.so
 
 
 
-function compareLabsByName(a, b) {  //comparison function for Array.prototype.sort on lab name of jQuery ".lab-record-flex" selection - not type safe
-	var a = a.find(".lab-title").text().toLowerCase();
-	var b = b.find(".lab-title").text().toLowerCase();
+//comparison function for Array.prototype.sort on lab name of jQuery ".lab-record-flex" selection - not type safe
+function compareLabsByName(a, b) {
+	a = a.find(".lab-title").text().toLowerCase();
+	b = b.find(".lab-title").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}
@@ -2017,9 +2025,10 @@ function compareLabsByName(a, b) {  //comparison function for Array.prototype.so
 
 
 
+//sorting comparison function that takes two '.eq-record-flex' selections and compares them by id number
 function compareEquipById(a, b) {
-	var a = a.find(".eq-record-id").text().toLowerCase();
-	var b = b.find(".eq-record-id").text().toLowerCase();
+	a = a.find(".eq-record-id").text().toLowerCase();
+	b = b.find(".eq-record-id").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}
@@ -2031,9 +2040,10 @@ function compareEquipById(a, b) {
 
 
 
+//sorting comparison function that takes two '.eq-record-flex' selections and compares them by manufacturer
 function compareEquipByMake(a, b) {
-	var a = a.find(".eq-record-make").text().toLowerCase();
-	var b = b.find(".eq-record-make").text().toLowerCase();
+	a = a.find(".eq-record-make").text().toLowerCase();
+	b = b.find(".eq-record-make").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}
@@ -2045,9 +2055,10 @@ function compareEquipByMake(a, b) {
 
 
 
+//sorting comparison function that takes two '.eq-record-flex' selections and compares them by model
 function compareEquipByModel(a, b) {
-	var a = a.find(".eq-record-model").text().toLowerCase();
-	var b = b.find(".eq-record-model").text().toLowerCase();
+	a = a.find(".eq-record-model").text().toLowerCase();
+	b = b.find(".eq-record-model").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}
@@ -2059,9 +2070,10 @@ function compareEquipByModel(a, b) {
 
 
 
+//sorting comparison function that takes two '.eq-record-flex' selections and compares them by name
 function compareEquipByName(a, b) {
-	var a = a.find(".eq-record-name").text().toLowerCase();
-	var b = b.find(".eq-record-name").text().toLowerCase();
+	a = a.find(".eq-record-name").text().toLowerCase();
+	b = b.find(".eq-record-name").text().toLowerCase();
 	if (a < b) {
 		return -1;
 	}
@@ -2072,11 +2084,70 @@ function compareEquipByName(a, b) {
 }
 
 
-
-function flash(jQueryDOMSelection) {
-	jQueryDOMSelection.css("opacity", ".8");
-	jQueryDOMSelection.stop().animate({opacity: 1}, 600);
+//given a jQuery selection, this function will animate a flash effect on it for major style points.
+function flash(jqitem) {
+	jqitem.css("opacity", ".8");
+	jqitem.stop().animate({opacity: 1}, 600);
 }
+
+
+
+//Takes the equipment xml and populates the data-list associated with the search bar so that autocomplete has a list of equipment names to match against
+function enableEquipmentSearchAutoComplete(xml) {
+	let namenodes = xml.getElementsByTagName("InventoryName");
+	let datalist = d3.select("#equipment-datalist");
+	let names = [];
+	for (let i = namenodes.length - 1; i >= 0; i--) {
+		datalist.append("option").attr("value", (namenodes[i].childNodes[0] ? namenodes[i].childNodes[0].nodeValue : "—"));
+	}
+}
+
+
+
+//whenever the equipment inventory page is loaded this function checks the URL for a query string holding an ID number.
+//For example, http://www.pjl.ucalgary.ca/staffresources/equipment/?id=0003
+//If an ID is found it will load the page with an equipment display for that item.
+function equipmentPageQueryString() {
+	let url = window.location.href.split("?");
+	let queryobj = {};
+	if (url.length > 1) {
+		let query = url[1].split("&");
+		for (let i = query.length - 1; i >= 0 ; i--) {
+			let param = query[i].split("=");
+			queryobj[param[0]] = param[1];
+		}
+		if (queryobj.id) {
+			new EquipmentDisplay(queryobj.id);
+		}
+	}
+}
+
+
+
+//this is a great pattern for re-using a 'loadXML'-type function.
+//Any number of arguments may be passed as long as they are functions (not function calls) which take an xmlDoc as an argument.
+//When the document successfully loads, each function is called and passed 'docXML' as an argument.
+function loadEquipmentXML() {
+	let args = arguments;
+	let xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+    	if (xhttp.readyState == 4 && xhttp.status == 200) {
+            let docXML = xhttp.responseXML;
+            for (let i = args.length - 1; i >= 0; i--) {
+            	args[i](docXML);
+            }
+    	}
+  	};
+  	xhttp.open("GET", siteroot + "/data/equipmentDB.xml", true);
+  	xhttp.send();
+}
+
+
+
+
+
+
+
 
 
 
@@ -2092,16 +2163,30 @@ function flash(jQueryDOMSelection) {
 
 
 
-function doArraysOverlap(array1, array2) {  //determines if two arrays share any entries - not type safe
+//determines if two arrays share any entries - not type safe
+function doArraysOverlap(array1, array2) {
 	return array1.some(x => array2.includes(x));
 }
 
 
+//Uses the HTML 'title' tag to determine if the current page is the lab repo or the equipment inventory.
+//Allows for reusability of some functions
+function isEquipmentDatabase() {
+	return (document.title == "Physics Junior Laboratory - Equipment Database" ? true : false);
+}
 
-function makeBigramList(string) {  //takes a string and returns an array of bigrams - not type safe
-	list = [];
-	var string = string.toLowerCase();
-	for (var i = 0; i <= string.length - 2; i++) {
+
+
+//Map a plain English semester string to a year decimal for comparison of most recent lab versions
+var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.50};
+
+
+
+//takes a string and returns an array of bigrams - not type safe
+function makeBigramList(string) {
+	let list = [];
+	string = string.toLowerCase();
+	for (let i = 0; i <= string.length - 2; i++) {
 		list.push(string[i] + string[i+1]);
 	}
 	return Array.from(new Set(list));
@@ -2109,27 +2194,24 @@ function makeBigramList(string) {  //takes a string and returns an array of bigr
 
 
 
-function arithmeticMean(list) {  //calculates arithmetic mean of and array of numbers - not type safe
+//calculates arithmetic mean of and array of numbers - not type safe
+function arithmeticMean(list) {
 	return list.reduce((a, b) => a + b, 0) / list.length;
 }
 
 
 
-function isEmptyString(string) {  //checks if string is empty - not type safe
+//checks if string is empty - not type safe
+function isEmptyString(string) {
 	return !string.replace(/\s/g, '').length;
 }
 
 
 
+//Gets the most recent semester as a decimal date
+//For example, December returns 1.0 and April returns 0.25
 function mostRecentDecimalSemester() {
-	var date = new Date();
+	let date = new Date();
 	return Math.round(date.getMonth() / 3) / 4;
 }
 
-
-function spanTheList(list, classname, ids) {
-	for (let i = list.length - 1; i >= 0; i--) {
-		list[i] = "<span class='" + classname + "' data-eqid=" + ids[i] + ">" + String(list[i]).split("(")[0].trim() + "</span>" + " (" + String(list[i]).split("(")[1];
-	}
-	return list;
-}
