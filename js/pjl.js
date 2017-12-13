@@ -282,18 +282,21 @@ class DownloadModalWindow {
 
 
 
-function initRepoPage() {  //initialize the repository page
+//Initialize the repository page.
+function initRepoPage() {
 	loadXML();
 	$("#search-bar").val("");
 }
 
 
 
-function initLandingPage() { //nothing needs to be initialized on the landing page... yet.
+//Nothing needs to be initialized on the landing page... yet.
+function initLandingPage() {
+
 }
 
 
-
+//Initialize the equipment inventory page.
 function initEquipmentPage() {
 	equipmentPageQueryString();
 	//see the comment on this function
@@ -325,14 +328,14 @@ function initEquipmentPage() {
 
 
 
-$(document).on("click", ".lab-details-drop-icon-flex", function(e) {
+$(document).on("click touch", ".lab-details-drop-icon-flex", function(e) {
 	var extendeddataflex = $(e.target).parent().siblings(".lab-record-detailed-flex");
 	extendeddataflex.stop().slideToggle("fast");
 });
 
 
 
-$(document).on("click", "#clear-filters-button", function(e) {
+$(document).on("click touch", "#clear-filters-button", function(e) {
 	var selects = $("select");
 	for (var i = selects.length - 1; i >= 0; i--) {
 		$(selects[i]).val([]);
@@ -344,13 +347,13 @@ $(document).on("click", "#clear-filters-button", function(e) {
 
 
 
-$(document).on("click", "#show-recent-button", function(e) {
+$(document).on("click touch", "#show-recent-button", function(e) {
 	showMostRecent();
 });
 
 
 
-$(document).on("click", "select", function(e) {
+$(document).on("click touch", "select", function(e) {
 	filterResults(getCurrentFilter());
 	displayNumResults(countNumRecords());
 	applyRecordsMask(true)
@@ -374,7 +377,7 @@ $(document).on("mousedown", "option", function(e) {
 
 
 
-$(document).on("click", ".search-icon", function(e) {
+$(document).on("click touch", ".search-icon", function(e) {
 	searchQueryHandler();
 	applyRecordsMask(true)
 });
@@ -382,7 +385,7 @@ $(document).on("click", ".search-icon", function(e) {
 
 
 $(document).on("keypress", "#search-bar", function(e) {
-	var key = e.which;
+	let key = e.which;
 	if (key == 13) {
 	 	$(".search-icon").click();
 	 	return false;
@@ -391,7 +394,7 @@ $(document).on("keypress", "#search-bar", function(e) {
 
 
 
-$(document).on("click", "#search-help-button", function(e) {
+$(document).on("click touch", "#search-help-button", function(e) {
 	console.log($(e.target), $(e.target).next())
 	$(".search-container").toggleClass("search-help-opened");
 	$(e.target).next().stop().slideToggle(300);
@@ -399,70 +402,70 @@ $(document).on("click", "#search-help-button", function(e) {
 
 
 
-$(document).on("click", "#zip-icon", function(e) {
+$(document).on("click touch", "#zip-icon", function(e) {
 	new DownloadModalWindow();
 	$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
 });
 
 
 
-$(document).on("click", "#sort-name", function(e) {
+$(document).on("click touch", "#sort-name", function(e) {
 	sortRecords("name");
 });
 
 
 
-$(document).on("click", "#sort-year", function(e) {
+$(document).on("click touch", "#sort-year", function(e) {
 	sortRecords("year");
 });
 
 
 
-$(document).on("click", "#sort-semester", function(e) {
+$(document).on("click touch", "#sort-semester", function(e) {
 	sortRecords("semester");
 });
 
 
 
-$(document).on("click", "#sort-course", function(e) {
+$(document).on("click touch", "#sort-course", function(e) {
 	sortRecords("course");
 });
 
 
 
-$(document).on("click", "#sort-eq-id", function(e) {
+$(document).on("click touch", "#sort-eq-id", function(e) {
 	sortRecords("eq-id");
 });
 
 
 
-$(document).on("click", "#sort-eq-make", function(e) {
+$(document).on("click touch", "#sort-eq-make", function(e) {
 	sortRecords("eq-make");
 });
 
 
 
-$(document).on("click", "#sort-eq-model", function(e) {
+$(document).on("click touch", "#sort-eq-model", function(e) {
 	sortRecords("eq-model");
 });
 
 
 
-$(document).on("click", "#sort-eq-name", function(e) {
+$(document).on("click touch", "#sort-eq-name", function(e) {
 	sortRecords("eq-name");
 });
 
 
 
-$(document).on("click", ".download-icon", function(e) {
+$(document).on("click touch", ".download-icon", function(e) {
 	window.open(siteroot + $(e.target).parent().parent().find(".version-path").attr("href"), "_blank");
 });
 
 
 
-$(document).on("click", "#expand-all-button", function(e) {
+$(document).on("click touch", "#expand-all-button", function(e) {
 	flash($("#records-header"));
-	var expanded = $(e.target).attr("expanded");
+	let expanded = $(e.target).attr("expanded");
 	if (expanded == "true") {
 		toggleRecordExpansion(false);
 	} else {
@@ -472,7 +475,7 @@ $(document).on("click", "#expand-all-button", function(e) {
 
 
 
-$(document).on("click", "#show-all-button", function(e) {
+$(document).on("click touch", "#show-all-button", function(e) {
 	$(e.target).css("visibility", "hidden");
 	applyRecordsMask(false);
 	falsifySort([$("#sort-year"), $("#sort-course"), $("#sort-semester"), $("#sort-name")]);
@@ -480,14 +483,20 @@ $(document).on("click", "#show-all-button", function(e) {
 
 
 
-$(document).on("click", "#staff-name-ernst", function(e) {
+$(document).on("click touch", "#staff-name-ernst", function(e) {
 	window.open("http://phas.ucalgary.ca/phas_info/profiles/wesley-ernst");
 });
 
 
 
-$(document).on("click", "#staff-name-gimby", function(e) {
+$(document).on("click touch", "#staff-name-gimby", function(e) {
 	window.open("http://phas.ucalgary.ca/phas_info/profiles/peter-gimby");
+});
+
+
+
+$(document).on("click touch", "#staff-name-ahmed", function(e) {
+	window.open("http://phas.ucalgary.ca/phas_info/profiles/zain-ahmed");
 });
 
 
@@ -516,8 +525,8 @@ $(document).on("mouseleave", ".resource-dropdown", function(e) {
 
 
 
-$(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-content", function(e) {
-	var links = {"pjl-regress": "/",
+$(document).on("click touch", ".resource-dropdown-content, .mobile-resource-dropdown-content", function(e) {
+	let links = {"pjl-regress": "/",
 				 "pjl-lab-schedule": "/data/schedules/schedule-current.pdf",
 				 "pjl-rooms-schedule": "/data/schedules/rooms-current.pdf",
 				 "pjl-geiger": "/",
@@ -536,8 +545,8 @@ $(document).on("click", ".resource-dropdown-content, .mobile-resource-dropdown-c
 				 "pjl-orientation":"/data/safety/training/Orientation.pdf",
 				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL.pdf",
 				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV.pdf",
-				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf"}
-	var buttonid = $(e.target).attr("id");
+				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf"};
+	let buttonid = $(e.target).attr("id");
 	window.location = links[buttonid];
 });
 
@@ -570,33 +579,25 @@ $(document).on("click touch", "#mobile-nav-button", function(e) {
 
 
 
-$(document).on("click", ".equip-item-primary, .equip-item-alt", function(e) {
+$(document).on("click touch", ".equip-item-primary, .equip-item-alt", function(e) {
 	let item = $(e.target);
 	let id = item.attr("data-eqid");
-	let href = "/staffresources/equipment?id=" + id
+	let href = "/staffresources/equipment?id=" + id;
 	window.open(href, "_blank");
 });
 
 
 
-$(document).on("click", ".eq-record-flex", function(e) {
+$(document).on("click touch", ".eq-record-flex", function(e) {
 	new EquipmentDisplay($(e.target).children(".eq-record-id").text());
 });
 
 
 
-$(document).on("click", "#edit-mode-button", function(e) {
+$(document).on("click touch", "#edit-mode-button", function(e) {
 	window.location = "./edit/";
 });
 
-
-
-$(document).on("click", ".eq-item-text", function(e) {
-	$("main").addClass("blurred-page");
-	let id = $(e.target).next().attr("data");
-	let form = new EquipmentModForm(id);
-	e.stopPropagation();
-})
 
 
 
@@ -625,9 +626,10 @@ $(document).on("click", ".eq-item-text", function(e) {
 
 
 
-function populateRecordList(docXML) {  //read XML and append all lab records to DOM; update displayed records counter - not type safe
-	var labs = docXML.getElementsByTagName("Lab");
-	for (var i = labs.length - 1; i >= 0; i--) {
+//read XML and append all lab records to DOM; update displayed records counter - not type safe
+function populateRecordList(docXML) {
+	let labs = docXML.getElementsByTagName("Lab");
+	for (let i = labs.length - 1; i >= 0; i--) {
 		createRecordSnapshots(labs[i]);
 	}
 	displayNumResults(countNumRecords());
@@ -635,11 +637,12 @@ function populateRecordList(docXML) {  //read XML and append all lab records to 
 
 
 
-function populateFilters(docXML) {  //read XML and populate the HTML select boxes with available filter options - not type safe
-	var types = ["Course", "Year", "Semester", "Discipline", "Topic"];
-	for (var i = types.length - 1; i >= 0; i--) {
-		var validlist = getValidFilterOptions(docXML, types[i]);
-		for (var j = validlist.length - 1; j >= 0; j--) {
+//read XML and populate the HTML select boxes with available filter options - not type safe
+function populateFilters(docXML) {
+	let types = ["Course", "Year", "Semester", "Discipline", "Topic"];
+	for (let i = types.length - 1; i >= 0; i--) {
+		let validlist = getValidFilterOptions(docXML, types[i]);
+		for (let j = validlist.length - 1; j >= 0; j--) {
 			d3.select("#" + types[i].toLowerCase() + "-select")
 			  .append("option")
 			  .attr("value", validlist[j])
@@ -650,34 +653,35 @@ function populateFilters(docXML) {  //read XML and populate the HTML select boxe
 
 
 
-function createRecordSnapshots(lab) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
-	var versionlist = getVersionList(lab);
-	for (var i = versionlist.length - 1; i >= 0; i--) {
-		var detailsbox = d3.select("#record-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
+//create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
+function createRecordSnapshots(lab) {
+	let versionlist = getVersionList(lab);
+	for (let i = versionlist.length - 1; i >= 0; i--) {
+		let detailsbox = d3.select("#record-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
 
-		var snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
-		var download = snapshot.append("a").classed("version-path", true).html("See PDF").attr("href", siteroot + versionlist[i].path).attr("target", "_blank");
+		let snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
+		let download = snapshot.append("a").classed("version-path", true).html("See PDF").attr("href", siteroot + versionlist[i].path).attr("target", "_blank");
 		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", siteroot + "/img/download-icon.svg");  //alternate for mobile display
-		var course = snapshot.append("p").classed("courses", true).html(versionlist[i].course);
-		var date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
-		var labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
-		var dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
-		var dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", siteroot + "/img/dropdown-arrow.png");
+		let course = snapshot.append("p").classed("courses", true).html(versionlist[i].course);
+		let date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
+		let labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+		let dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
+		let dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", siteroot + "/img/dropdown-arrow.png");
 
-		var extendedlabdata = detailsbox.append("div").classed("lab-record-detailed-flex", true).attr("style", "display: none");
-		var labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
-		var labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
-		var labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
-		var labequipment = extendedlabdata.append("div").classed("lab-data-equipment", true);
+		let extendedlabdata = detailsbox.append("div").classed("lab-record-detailed-flex", true).attr("style", "display: none");
+		let labid = extendedlabdata.append("p").classed("lab-data-id", true).html("<span>Lab ID:</span> " + getLabId(lab));
+		let labtopics = extendedlabdata.append("p").classed("lab-data-topics", true).html("<span>Topics:</span> " + getLabTopicsList(lab).join(", "));
+		let labdisciplines = extendedlabdata.append("p").classed("lab-data-disciplines", true).html("<span>Disciplines:</span> " + getLabDisciplinesList(lab).join(", "));
+		let labequipment = extendedlabdata.append("div").classed("lab-data-equipment", true);
 		getLabEquipmentList(lab, labequipment);
 
-		var software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
-		var directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
+		let software = extendedlabdata.append("p").classed("lab-data-software", true).html("<span>Software:</span> " + getLabSoftwareList(lab).join(", "));
+		let directory = extendedlabdata.append("p").classed("version-directory", true).html(versionlist[i].directory).style("display", "none");
 
-		var labdoclist = getExtraLabDocs(lab);
-		var labdocs = extendedlabdata.append("div").classed("extra-docs", true);
+		let labdoclist = getExtraLabDocs(lab);
+		let labdocs = extendedlabdata.append("div").classed("extra-docs", true);
 		labdocs.append("p").html("<span>Additional Documents:</span> ");
-		for (var j = labdoclist.length - 1; j >= 0; j--) {
+		for (let j = labdoclist.length - 1; j >= 0; j--) {
 			labdocs.append("a").classed("extra-doc", true).attr("href", labdoclist[j].url).html(labdoclist[j].name).attr("target", "_blank");
 		}
 	}
@@ -685,11 +689,12 @@ function createRecordSnapshots(lab) {  //create and append to DOM an appropriate
 
 
 
-function getLabEquipmentList(lab, selection) {  //appends equipment to the lab equipment div given an XML "lab" node and d3 selection to append to
+//appends equipment to the lab equipment div given an XML "lab" node and d3 selection to append to
+function getLabEquipmentList(lab, selection) {
 	let equipnode = lab.getElementsByTagName("Equipment")[0];
 	let items = equipnode.getElementsByTagName("Item");
 	selection.append("p").classed("equipment-label", true).html("<span>Equipment: </span>");
-	for (let i = 0; i < items.length; i++) {
+	for (let i = items.length - 1; i >= 0; i--) {
 		let alt = (Boolean(items[i].getElementsByTagName("Alt")[0]) ? {name: items[i].getElementsByTagName("Alt")[0].childNodes[0].nodeValue, id: items[i].getAttribute("id")} : null);
 		let item = {};
 		item.name = items[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
@@ -708,10 +713,10 @@ function getLabEquipmentList(lab, selection) {  //appends equipment to the lab e
 
 
 
-function createEquipRecordSnapshots(xml) {  //create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
-	var equiplist = xml.getElementsByTagName("Item");
-	for (let i = 0; i < equiplist.length; i++) {
-		// console.log(equiplist[i])
+//create and append to DOM an appropriate number of records given an XML "lab" node - not type safe
+function createEquipRecordSnapshots(xml) {
+	let equiplist = xml.getElementsByTagName("Item");
+	for (let i = equiplist.length - 1; i >= 0; i--) {
 		let eqid = equiplist[i].getAttribute("id");
 		let eqname = (equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0] ? equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "—");
 		let eqmake = (equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "—");
@@ -724,7 +729,7 @@ function createEquipRecordSnapshots(xml) {  //create and append to DOM an approp
 		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
 		let roomnodes = equiplist[i].getElementsByTagName("Room");
 		let rooms = [];
-		for (let r = 0; r < roomnodes.length; r++) {
+		for (let r = roomnodes.length - 1; r >= 0; r--) {
 			rooms.push(roomnodes[r].childNodes[0].nodeValue);
 		}
 		snapshot.attr("data-rooms", rooms.join());
@@ -754,15 +759,16 @@ function createEquipRecordSnapshots(xml) {  //create and append to DOM an approp
 
 
 
-function filterResults(filter, fullset=true) {  //given a filter object, filter displayed records and update DOM appropriately
+//given a filter object, filter displayed records and update DOM appropriately
+function filterResults(filter, fullset=true) {
 	if (isEquipmentDatabase()) {
 		if(fullset) {
 			var recordlist = $(".eq-record-flex");
 		} else {
 			var recordlist = getCurrentRecords();
 		}
-		var numrecords = recordlist.length;
-		for (let i = 0; i < recordlist.length; i++) {
+		let numrecords = recordlist.length;
+		for (let i = recordlist.length - 1; i >= 0; i--) {
 			let item = $(recordlist[i]);
 			let id = item.find(".eq-record-id").text();
 			let make = item.find(".eq-record-make").text();
@@ -797,7 +803,7 @@ function filterResults(filter, fullset=true) {  //given a filter object, filter 
 		} else {
 			var recordlist = getCurrentRecords();
 		}
-		var numrecords = recordlist.length;
+		let numrecords = recordlist.length;
 		for (let i = recordlist.length - 1; i >= 0; i--) {
 			let lab = $(recordlist[i]);
 			let courses = lab.find(".courses").text().split(", ");
@@ -847,14 +853,16 @@ function filterResults(filter, fullset=true) {  //given a filter object, filter 
 
 
 
-function displayNumResults(numresults) {  //update number of displayed records and zip status
+//update number of displayed records and zip status
+function displayNumResults(numresults) {
 	$("#num-results").text(numresults);
 	updateZipStatus();
 }
 
 
 
-function updateZipStatus() {  //confirm that zipping is available and update the zip icon accordingly
+//confirm that zipping is available and update the zip icon accordingly
+function updateZipStatus() {
 	let canzip = canZip()
 	if (canzip) {
 		$("#zip-icon").css("display", "inline-block");
@@ -865,11 +873,12 @@ function updateZipStatus() {  //confirm that zipping is available and update the
 
 
 
-function sortRecords(by) {  //take column header identifier string and sort accordingly - not type safe
-	var records = getCurrentRecords();
+//take column header identifier string and sort accordingly - not type safe
+function sortRecords(by) {
+	let records = getCurrentRecords();
 	let recordlistbox = $("#record-list-box");
-	for (let record of records) {
-		record.detach();
+	for (let i = records.length - 1; i >= 0; i--) {
+		records[i].detach();
 	}
 	switch (by) {
 		case "course":
@@ -937,19 +946,17 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 			break;
 		case "eq-name":
 			if ($("#sort-eq-name").attr("sorted") == "true") {
-				console.log("reverse")
 				records.reverse();
 			} else {
-				console.log("forward")
 				records.sort(compareEquipByName);
 			}
 			truifySort([$("#sort-eq-name")]);
 			falsifySort([$("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-id")]);
 			break;
 	}
-	for (let i = 0; i < records.length; i++) {
+	for (let i = records.length - 1; i >= 0; i--) {
 		if (!recordlistbox.hasClass("records-unmasked")) {
-			if (i < recordmasklength) {
+			if (i >= records.length - recordmasklength) {
 				records[i].removeClass("masked");
 			} else {
 				records[i].addClass("masked");
@@ -961,28 +968,31 @@ function sortRecords(by) {  //take column header identifier string and sort acco
 
 
 
-function falsifySort(headers) {  //set these headers' (jQuery selections) attribute "sorted=false" - not type safe
-	for (var i = headers.length - 1; i >= 0; i--) {
+//set these headers' (jQuery selections) attribute "sorted=false" - not type safe
+function falsifySort(headers) {
+	for (let i = headers.length - 1; i >= 0; i--) {
 		headers[i].attr("sorted", "false")
 	}
 }
 
 
 
-function truifySort(headers) {  //set these headers' (jQuery selections) attribute "sorted=true" - not type safe
-	for (var i = headers.length - 1; i >= 0; i--) {
+//set these headers' (jQuery selections) attribute "sorted=true" - not type safe
+function truifySort(headers) {
+	for (let i = headers.length - 1; i >= 0; i--) {
 		headers[i].attr("sorted", "true")
 	}
 }
 
 
 
-function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts if falsy - type-safe
-	var button = $("#expand-all-button");
+//expands display if truthy, contracts if falsy - type-safe
+function toggleRecordExpansion(truthy) {
+	let button = $("#expand-all-button");
 	if (Boolean(truthy)) {
-		var extendeddatarecords = $(".lab-record-detailed-flex");
-		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
-			var record = $(extendeddatarecords[i]).parent();
+		let extendeddatarecords = $(".lab-record-detailed-flex");
+		for (let i = extendeddatarecords.length - 1; i >= 0; i--) {
+			let record = $(extendeddatarecords[i]).parent();
 			if (record.hasClass("record-rendered") && record.filter(".record-rendered").length < 100) {
 				$(extendeddatarecords[i]).stop().slideDown()
 			} else {
@@ -991,9 +1001,9 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 		}
 		setExpandedButtonTruth(true)
 	} else {
-		var extendeddatarecords = $(".lab-record-detailed-flex");
-		for (var i = extendeddatarecords.length - 1; i >= 0; i--) {
-			var record = $(extendeddatarecords[i]).parent();
+		let extendeddatarecords = $(".lab-record-detailed-flex");
+		for (let i = extendeddatarecords.length - 1; i >= 0; i--) {
+			let record = $(extendeddatarecords[i]).parent();
 			if (record.hasClass("record-rendered") && record.filter(".record-rendered").length < 100) {
 				$(extendeddatarecords[i]).stop().slideUp()
 			} else {
@@ -1006,8 +1016,9 @@ function toggleRecordExpansion(truthy) {  //expands display if truthy, contracts
 
 
 
-function setExpandedButtonTruth(truthy) {  //sets "expand-all-button" expanded=truthy - type safe
-	var button = $("#expand-all-button");
+//sets "expand-all-button" expanded=truthy - type safe
+function setExpandedButtonTruth(truthy) {
+	let button = $("#expand-all-button");
 	button.attr("expanded", String(Boolean(truthy)));
 	if (Boolean(truthy)) {
 		button.html("collapse all");
@@ -1018,23 +1029,25 @@ function setExpandedButtonTruth(truthy) {  //sets "expand-all-button" expanded=t
 
 
 
+//Apply the records mask if 'truthy' is true, remove the mask if false
 function applyRecordsMask(truthy) {
-	var masksize = 20;
-	var records = getCurrentRecords();
+	let masksize = 20;
+	let records = getCurrentRecords();
 	unmaskAll(records);
 	if (records.length > masksize && Boolean(truthy)) {
-		for (var i = records.length - 1; i >= masksize; i--) {
+		for (let i = records.length - 1; i >= masksize; i--) {
 			records[i].addClass("masked");
 		}
 		$("#num-unmasked-results").text(String(masksize));
 		$("#show-all-button").css("visibility", "visible");
 	} else {
-		for (var i = records.length - 1; i >= 0; i--) {
+		for (let i = records.length - 1; i >= 0; i--) {
 			records[i].removeClass("masked");
 		}
 		$("#num-unmasked-results").text(String(records.length));
 		$("#show-all-button").css("visibility", "hidden");
 	}
+	//Reset all the record headers to their unsorted state
 	falsifySort([$("#sort-year"), $("#sort-semester"), $("#sort-name"), $("#sort-course")]);
 	$("#record-list-box").addClass("records-unmasked");
 	if (Boolean(truthy)) {
@@ -1044,9 +1057,10 @@ function applyRecordsMask(truthy) {
 
 
 
+//Unmask all the records.
 function unmaskAll(records) {
 	$("#record-list-box").addClass("records-unmasked");
-	for (var i = records.length - 1; i >= 0; i--) {
+	for (let i = records.length - 1; i >= 0; i--) {
 		records[i].removeClass("masked");
 	}
 	$("#show-all-button").css("visibility", "hidden");
@@ -1054,10 +1068,11 @@ function unmaskAll(records) {
 
 
 
+//Counts the number of unmasked records and updates the 'Showing X of XXX total records' string on the page
 function setNumberRecordsUnmasked() {
-	var records = getCurrentRecords();
-	var num = records.length;
-	for (var i = records.length - 1; i >= 0; i--) {
+	let records = getCurrentRecords();
+	let num = records.length;
+	for (let i = records.length - 1; i >= 0; i--) {
 		if (records[i].hasClass("masked")) {
 			num--;
 		}
@@ -1067,28 +1082,32 @@ function setNumberRecordsUnmasked() {
 
 
 
+//filter the records by showing only those from the most recent semester and year.
 function showMostRecent() {
-	var uniquelabs = [];
-	var records = getCurrentRecords();
+	let uniquelabs = [];
+	let records = getCurrentRecords();
 	unmaskAll(records);
 	setNumberRecordsUnmasked();
 
-	for (var i = records.length - 1; i >= 0; i--) {
-		var labid = records[i].find(".lab-data-id").text().slice(-4,);
+	//build a set ('set', meaning list without duplicate entries) of lab IDs.
+	//Since we're here, we'll un-render all the records as well
+	for (let i = records.length - 1; i >= 0; i--) {
+		let labid = records[i].find(".lab-data-id").text().slice(-4,);
 		if(!uniquelabs.includes(labid)) {
 			uniquelabs.push(labid);
 		}
 		records[i].removeClass("record-rendered").addClass("record-not-rendered");
 	}
 
-	for (var i = uniquelabs.length - 1; i >= 0; i--) {
-		var year = 0;
-		var mostrecent = null;
-		var sameyeardifcourse = [];
-		for (var j = records.length - 1; j >= 0; j--) {
+	//go through the labs by ID and render their most recent version along with recent versions of the same lab from different courses
+	for (let i = uniquelabs.length - 1; i >= 0; i--) {
+		let year = 0;
+		let mostrecent = null;
+		let sameyeardifcourse = [];
+		for (let j = records.length - 1; j >= 0; j--) {
 			if (records[j].find(".lab-data-id").text().slice(-4,) == uniquelabs[i]) {
-				var recordsemester = records[j].find(".version-semester").text();
-				var date = parseFloat(recordsemester.split(" ")[1]) + parseFloat(semesterDecimal[recordsemester.split(" ")[0]]);
+				let recordsemester = records[j].find(".version-semester").text();
+				let date = parseFloat(recordsemester.split(" ")[1]) + parseFloat(semesterDecimal[recordsemester.split(" ")[0]]);
 				if (date > year) {
 					mostrecent = records[j];
 					year = date;
@@ -1104,12 +1123,11 @@ function showMostRecent() {
 		}
 		if(mostrecent) {
 			mostrecent.removeClass("record-not-rendered").addClass("record-rendered");
-			for (var j = sameyeardifcourse.length - 1; j >= 0; j--) {
+			for (let j = sameyeardifcourse.length - 1; j >= 0; j--) {
 				sameyeardifcourse[j].removeClass("record-not-rendered").addClass("record-rendered");
 			}
 		}
 	}
-	sortRecords("year");
 	sortRecords("year");
 	displayNumResults(countNumRecords());
 	setNumberRecordsUnmasked();
@@ -1117,30 +1135,32 @@ function showMostRecent() {
 
 
 
+//Populate the filters with appropriate values found in equipment XML
 function populateEquipmentFilters(xml) {
 	let manufacturers = new Set(["—"]);
 	let rooms = new Set([]);
 	let mannodes = xml.getElementsByTagName("Manufacturer");
 	let roomnodes = xml.getElementsByTagName("Room");
-	for (let i = 0; i < mannodes.length; i++) {
+	for (let i = mannodes.length - 1; i >= 0; i--) {
 		manufacturers.add((mannodes[i].childNodes[0] ? mannodes[i].childNodes[0].nodeValue : "—"));
 	}
-	for (let i = 0; i < roomnodes.length; i++) {
+	for (let i = roomnodes.length - 1; i >= 0; i--) {
 		rooms.add((roomnodes[i].childNodes[0] ? roomnodes[i].childNodes[0].nodeValue : "—"));
 	}
 
 	let manlist = d3.select("#manufacturer-select");
 	let roomlist = d3.select("#room-select");
-	for (let item of manufacturers) {
-		manlist.append("option").attr("value", item).html(item);
+	for (let i = manufacturers.length - 1; i >= 0; i--) {
+		manlist.append("option").attr("value", manufacturers[i]).html(manufacturers[i]);
 	}
-	for (let item of rooms) {
-		roomlist.append("option").attr("value", item).html(item);
+	for (let i = rooms.length - 1; i >= 0; i--) {
+		roomlist.append("option").attr("value", rooms[i]).html(rooms[i]);
 	}
 }
 
 
 
+//Show the mobile Nav if not already displayed
 function showMobileNav() {
 	if($(".mobile-landing-nav").css("display") == "none") {
 		$(".mobile-landing-nav").show("slide", {direction: "left"}, 300);
@@ -1148,6 +1168,8 @@ function showMobileNav() {
 }
 
 
+
+//Hide the mobile nav if it is currently displayed
 function hideMobileNav() {
 	if($(".mobile-landing-nav").css("display") == "block") {
 		$(".mobile-landing-nav").hide("slide", {direction: "left"}, 300);
@@ -1177,14 +1199,15 @@ function hideMobileNav() {
 
 
 
-function generateSearchResults(query, selector) {  //take query and search-selector and make yes/no decisions on what records to include; display accordingly
+//take query and search-selector and make yes/no decisions on what records to include; display accordingly
+function generateSearchResults(query, selector) {
 	let minsimilarity = 0.4;
 	let querybigrams = makeBigramList(query);
 	let recordlist = getAllRecords();
 	let skipsim = ("id" == selector ? true : false);
 
 	if (isEquipmentDatabase()) {
-		for (let i = 0; i < recordlist.length; i++) {
+		for (let i = recordlist.length - 1; i >= 0; i--) {
 			recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
 			let similarity = compareQueryWithEquipRecord(querybigrams, recordlist[i]);
 			if (similarity < .9) {
@@ -1192,7 +1215,7 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 			}
 		}
 	} else {
-		for (let i = 0; i < recordlist.length; i++) {
+		for (let i = recordlist.length - 1; i >= 0; i--) {
 			recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
 			let similarity = (skipsim ? 0.0 : compareQueryWithLabRecord(querybigrams, recordlist[i], selector));
 			if (similarity < minsimilarity && !queryLiteralInLabRecord(query, recordlist[i], selector)) {
@@ -1204,15 +1227,16 @@ function generateSearchResults(query, selector) {  //take query and search-selec
 
 
 
+//Given a selector, return true if the search query can be found exactly in a record
 function queryLiteralInLabRecord(query, lab, selector) {
-	var courses = lab.find(".courses").text().toLowerCase();
-	var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).toLowerCase();
-	var topics = lab.find(".lab-data-topics").text().slice(8,).toLowerCase();
-	var equipment = lab.find(".lab-data-equipment").text().slice(11,).toLowerCase();
-	var semester = lab.find(".version-semester").text().split(" ")[0].toLowerCase();
-	var year = lab.find(".version-semester").text().split(" ")[1].toLowerCase();
-	var labtitle = lab.find(".lab-title").text().toLowerCase();
-	var id = lab.find(".lab-data-id").text().slice(-4,).toLowerCase();
+	let courses = lab.find(".courses").text().toLowerCase();
+	let disciplines = lab.find(".lab-data-disciplines").text().slice(13,).toLowerCase();
+	let topics = lab.find(".lab-data-topics").text().slice(8,).toLowerCase();
+	let equipment = lab.find(".lab-data-equipment").text().slice(11,).toLowerCase();
+	let semester = lab.find(".version-semester").text().split(" ")[0].toLowerCase();
+	let year = lab.find(".version-semester").text().split(" ")[1].toLowerCase();
+	let labtitle = lab.find(".lab-title").text().toLowerCase();
+	let id = lab.find(".lab-data-id").text().slice(-4,).toLowerCase();
 	switch (selector) {
 		case "all":
 			return courses.includes(query) || disciplines.includes(query) || topics.includes(query) || equipment.includes(query) || semester.includes(query) || year.includes(query) || labtitle.includes(query);
@@ -1248,10 +1272,10 @@ function queryLiteralInLabRecord(query, lab, selector) {
 
 //make bigram sets for appropriate meta data of record and perform SDC comparison with search query; return best score - super not type safe
 function compareQueryWithLabRecord(querybigrams, lab, selector) {
-	var courses = lab.find(".courses").text().split(", ");
-	var disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
-	var topics = lab.find(".lab-data-topics").text().slice(8,).split(", ");
-	var equipment = lab.find(".lab-data-equipment").text().slice(11,).split(", ");
+	let courses = lab.find(".courses").text().split(", ");
+	let disciplines = lab.find(".lab-data-disciplines").text().slice(13,).split(", ");
+	let topics = lab.find(".lab-data-topics").text().slice(8,).split(", ");
+	let equipment = lab.find(".lab-data-equipment").text().slice(11,).split(", ");
 	courses = courses.map(function(d) {
 		return makeBigramList(d.slice(4,));
 	});
@@ -1264,10 +1288,10 @@ function compareQueryWithLabRecord(querybigrams, lab, selector) {
 	equipment = equipment.map(function(d) {
 		return makeBigramList(d);
 	});
-	var semester = [makeBigramList(lab.find(".version-semester").text().split(" ")[0])];
-	var year = [makeBigramList(lab.find(".version-semester").text().split(" ")[1].slice(2,))];
-	var labtitle = [makeBigramList(lab.find(".lab-title").text())];
-	var totest = [""];
+	let semester = [makeBigramList(lab.find(".version-semester").text().split(" ")[0])];
+	let year = [makeBigramList(lab.find(".version-semester").text().split(" ")[1].slice(2,))];
+	let labtitle = [makeBigramList(lab.find(".lab-title").text())];
+	let totest = [""];
 	switch (selector) {
 		case "all":
 			totest = disciplines.concat(courses, semester, year, labtitle, topics, equipment);
@@ -1295,9 +1319,9 @@ function compareQueryWithLabRecord(querybigrams, lab, selector) {
 			break;
 	}
 
-	var max = 0.0;
-	for (var i = totest.length - 1; i >= 0; i--) {
-		var result = sorensenDiceCoef(querybigrams, totest[i]);
+	let max = 0.0;
+	for (let i = totest.length - 1; i >= 0; i--) {
+		let result = sorensenDiceCoef(querybigrams, totest[i]);
 		if (result > max) {
 			max = result
 		}
@@ -1395,9 +1419,9 @@ function defaultSearchHandler(searchphrase) {
 //handle the search request for course search selector - not type safe
 function courseSearchHandler(searchphrase) {
 	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
-			generateSearchResults(searchphrase, "course");
-			displayNumResults(countNumRecords());
-	 		// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
+	generateSearchResults(searchphrase, "course");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
 
 
@@ -1493,7 +1517,7 @@ function idSearchHandler(searchphrase) {
 //*******************************************************************************************
 
 
-
+//Given a list of file paths, download them, zip them, and serve them to the user.
 function makePromisesBeginZip(filelist) {
 	let zip = new JSZip();
 	let files = filelist;
