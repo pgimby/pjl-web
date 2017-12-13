@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
   <Item id="0001">
     <InventoryName>Fluke multimeter</InventoryName>
@@ -8,18 +8,12 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      <Location>
-        <Room>ST037</Room>
-        <Storage>C1</Storage>
-      </Location>
-      <Location>
-        <Room>ST038</Room>
-        <Storage>C1</Storage>
-      </Location>
-    </Locations>
+      
+      
+    <Location><Room>ST038</Room><Storage>C3</Storage></Location><Location><Room>ST037</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total>48</Total>
-      <InService>46</InService>
+      <Total>46</Total>
+      <InService>44</InService>
       <UnderRepair>2</UnderRepair>
     </Quantity>
     <Documents>
@@ -47,15 +41,15 @@
   <Item id="0330">
     <InventoryName>LED apparatus</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>PJL</Manufacturer>
+      <Model></Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>18</Total>
+      <InService>17</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -304,13 +298,13 @@
     <InventoryName>Pasco air blower</InventoryName>
     <Identification>
       <Manufacturer>Pasco</Manufacturer>
-      <Model/>
+      <Model>SF-9216</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST034</Room><Storage>Cart1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
+      <Total>13</Total>
+      <InService>13</InService>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -337,10 +331,10 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
+      <Total>12</Total>
+      <InService>12</InService>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -352,11 +346,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST009</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -457,11 +451,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C13</Storage></Location><Location><Room>ST034</Room><Storage>D27</Storage></Location><Location><Room>ST032</Room><Storage>D27</Storage></Location><Location><Room>ST030</Room><Storage>D27</Storage></Location><Location><Room>ST029</Room><Storage>D14</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>29</Total>
+      <InService>29</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -483,15 +477,15 @@
   <Item id="0071">
     <InventoryName>demonstration Vernier scale</InventoryName>
     <Identification>
-      <Manufacturer>Vernier</Manufacturer>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>2</Total>
+      <InService>2</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -739,15 +733,15 @@
   <Item id="0075">
     <InventoryName>water constant volume gas apparatus</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C5</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>3</Total>
+      <InService>3</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -934,15 +928,15 @@
   <Item id="0346">
     <InventoryName>Geiger-Mueller tube power supply</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C6</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>20</Total>
+      <InService>20</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1285,11 +1279,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D11</Storage></Location><Location><Room>ST038</Room><Storage>C10</Storage></Location><Location><Room>ST037</Room><Storage>D6</Storage></Location><Location><Room>ST036</Room><Storage>D12</Storage></Location><Location><Room>ST034</Room><Storage>D12</Storage></Location><Location><Room>ST032</Room><Storage>D12</Storage></Location><Location><Room>ST030</Room><Storage>D12</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>96</Total>
+      <InService>96</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1311,15 +1305,15 @@
   <Item id="0192">
     <InventoryName>mechanical gauge set</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST050</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1330,11 +1324,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST039</Room><Storage>C8</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>26</Total>
+      <InService>26</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1375,11 +1369,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C8</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>10</Total>
+      <InService>10</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1390,11 +1384,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C6</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>17</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1450,11 +1444,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D19</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>29</Total>
+      <InService>29</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1480,11 +1474,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1647,9 +1641,9 @@
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>47</Total>
+      <InService>47</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1987,15 +1981,15 @@
   <Item id="0035">
     <InventoryName>polarizer</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Ealing</Manufacturer>
+      <Model>23-2355</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C2</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>15</Total>
+      <InService>15</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2129,11 +2123,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST039</Room><Storage>D5</Storage></Location><Location><Room>ST039</Room><Storage>D6</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>122</Total>
+      <InService>122</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2305,14 +2299,14 @@
   <Item id="0337">
     <InventoryName>milligram digital balance</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Acculab</Manufacturer>
+      <Model>VIC-303</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
+      <Total>2</Total>
+      <InService>2</InService>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -2384,11 +2378,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>31</Total>
+      <InService>31</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2504,26 +2498,26 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C4</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>99</Total>
+      <InService>99</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
   <Item id="0109">
     <InventoryName>adjustable end stop</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Pasco</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>D3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>23</Total>
+      <InService>23</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2650,15 +2644,15 @@
   <Item id="0456">
     <InventoryName>Nalgene calorimeter</InventoryName>
     <Identification>
-      <Manufacturer>Nalgene</Manufacturer>
-      <Model/>
+      <Manufacturer>Pasco</Manufacturer>
+      <Model>TD-8552</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>D17</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>43</Total>
+      <InService>43</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2669,11 +2663,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST034</Room><Storage>C4</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>12</Total>
+      <InService>12</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2770,14 +2764,14 @@
   <Item id="0012">
     <InventoryName>digital balance</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Acculab</Manufacturer>
+      <Model>VIC-5101</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
+      <Total>6</Total>
+      <InService>6</InService>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -2816,15 +2810,15 @@
   <Item id="0027">
     <InventoryName>Moll’s thermopile</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Kipp &amp; Zonen</Manufacturer>
+      <Model>CA2-764644</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C16</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2996,15 +2990,15 @@
   <Item id="0208">
     <InventoryName>Biot-Savart single wire apparatus</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3072,14 +3066,14 @@
     <InventoryName>B&amp;K function generator</InventoryName>
     <Identification>
       <Manufacturer>B&amp;K</Manufacturer>
-      <Model/>
+      <Model>3011B</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>24</Total>
+      <InService>23</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3090,11 +3084,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>16</Total>
+      <InService>16</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3120,11 +3114,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C4</Storage></Location><Location><Room>ST009</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>25</Total>
+      <InService>25</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3271,11 +3265,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D16</Storage></Location><Location><Room>ST030</Room><Storage>D22</Storage></Location><Location><Room>ST029</Room><Storage>D12</Storage></Location><Location><Room>ST036</Room><Storage>D22</Storage></Location><Location><Room>ST034</Room><Storage>D22</Storage></Location><Location><Room>ST032</Room><Storage>D22</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>44</Total>
+      <InService>43</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3423,10 +3417,10 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
+      <Total>16</Total>
+      <InService>16</InService>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -3689,16 +3683,16 @@
   <Item id="0113">
     <InventoryName>Hall probe kit</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="true">InAs hall probe, female BNC to male banana adaptor, BNC coaxial cable
 </Kit>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>30</Total>
+      <InService>30</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3709,11 +3703,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C16</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>5</Total>
+      <InService>5</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3844,11 +3838,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>Other</Storage></Location><Location><Room>ST032</Room><Storage>Other</Storage></Location><Location><Room>ST034</Room><Storage>Other</Storage></Location><Location><Room>ST036</Room><Storage>Other</Storage></Location><Location><Room>ST038</Room><Storage>Other</Storage></Location><Location><Room>ST029</Room><Storage>Other</Storage></Location><Location><Room>ST037</Room><Storage>Other</Storage></Location><Location><Room>ST042</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>57</Total>
+      <InService>57</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4051,14 +4045,14 @@
     <InventoryName>Pasco driven harmonic motion apparatus</InventoryName>
     <Identification>
       <Manufacturer>Pasco</Manufacturer>
-      <Model/>
+      <Model>9210-A</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C16</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4337,15 +4331,15 @@
   <Item id="0190">
     <InventoryName>electromagnet</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D8</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>10</Total>
+      <InService>10</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4476,11 +4470,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>25</Total>
+      <InService>25</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4578,14 +4572,14 @@
     <InventoryName>Ortec alpha spectrometer</InventoryName>
     <Identification>
       <Manufacturer>Ortec</Manufacturer>
-      <Model/>
+      <Model>EASY-MCA-8K-CH</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4806,11 +4800,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C11</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>0</InService>
+      <UnderRepair>6</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4997,15 +4991,15 @@
   <Item id="0372">
     <InventoryName>60 cm acrylic tube</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST034</Room><Storage>S2</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5073,14 +5067,14 @@
     <InventoryName>Philips multimeter</InventoryName>
     <Identification>
       <Manufacturer>Philips</Manufacturer>
-      <Model/>
+      <Model>PM/2525/2535</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST039</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5242,11 +5236,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D10</Storage></Location><Location><Room>ST037</Room><Storage>D5</Storage></Location><Location><Room>ST036</Room><Storage>D20</Storage></Location><Location><Room>ST034</Room><Storage>D20</Storage></Location><Location><Room>ST032</Room><Storage>D20</Storage></Location><Location><Room>ST030</Room><Storage>D20</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>41</Total>
+      <InService>41</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5272,26 +5266,26 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST032</Room><Storage>C4</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>22</Total>
+      <InService>22</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
   <Item id="0174">
     <InventoryName>series and parallel RLC circuit board</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5389,14 +5383,14 @@
     <InventoryName>Pasco Fourier synthesizer</InventoryName>
     <Identification>
       <Manufacturer>Pasco</Manufacturer>
-      <Model/>
+      <Model>WA-9307A</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C6</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5558,11 +5552,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>44</Total>
+      <InService>44</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5976,15 +5970,15 @@
   <Item id="0002">
     <InventoryName>Anatek power supply</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Anatek</Manufacturer>
+      <Model>25-2S</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST037</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>43</Total>
+      <InService>40</InService>
+      <UnderRepair>3</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6096,15 +6090,15 @@
   <Item id="0048">
     <InventoryName>light detector</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Extech</Manufacturer>
+      <Model>401020</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C2</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>16</Total>
+      <InService>16</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6295,11 +6289,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>C2</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>21</Total>
+      <InService>21</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6430,11 +6424,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C6</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>4</Total>
+      <InService>4</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6550,11 +6544,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>D18</Storage></Location><Location><Room>ST029</Room><Storage>C6</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>26</Total>
+      <InService>26</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6610,11 +6604,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>Other</Storage></Location><Location><Room>ST038</Room><Storage>Other</Storage></Location><Location><Room>ST036</Room><Storage>Other</Storage></Location><Location><Room>ST034</Room><Storage>Other</Storage></Location><Location><Room>ST032</Room><Storage>Other</Storage></Location><Location><Room>ST030</Room><Storage>Other</Storage></Location><Location><Room>ST037</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>54</Total>
+      <InService>54</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6730,11 +6724,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>C2</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>45</Total>
+      <InService>45</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7072,15 +7066,15 @@
   <Item id="0155">
     <InventoryName>high voltage probe</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Fluke</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C8</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7147,15 +7141,15 @@
   <Item id="0166">
     <InventoryName>optical bench pivot</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C2</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7301,11 +7295,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C4</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>24</Total>
+      <InService>24</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7316,11 +7310,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>36</Total>
+      <InService>36</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7342,15 +7336,15 @@
   <Item id="0028">
     <InventoryName>diopter gauge</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Carton</Manufacturer>
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST029</Room><Storage>C1</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>9</Total>
+      <InService>9</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7587,11 +7581,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>41</Total>
+      <InService>41</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7662,11 +7656,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST038</Room><Storage>C6</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>19</Total>
+      <InService>19</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7692,11 +7686,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST039</Room><Storage>Other</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>18</Total>
+      <InService>18</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7718,15 +7712,15 @@
   <Item id="0230">
     <InventoryName>thermistor</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Pasco</Manufacturer>
+      <Model>TD-8559</Model>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>D16</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>45</Total>
+      <InService>45</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7752,11 +7746,11 @@
       <Model/>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST036</Room><Storage>C3</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>48</Total>
+      <InService>48</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
