@@ -1137,22 +1137,29 @@ function showMostRecent() {
 
 //Populate the filters with appropriate values found in equipment XML
 function populateEquipmentFilters(xml) {
+	console.log("hi")
 	let manufacturers = new Set(["—"]);
 	let rooms = new Set([]);
 	let mannodes = xml.getElementsByTagName("Manufacturer");
 	let roomnodes = xml.getElementsByTagName("Room");
+
 	for (let i = mannodes.length - 1; i >= 0; i--) {
 		manufacturers.add((mannodes[i].childNodes[0] ? mannodes[i].childNodes[0].nodeValue : "—"));
 	}
+
 	for (let i = roomnodes.length - 1; i >= 0; i--) {
 		rooms.add((roomnodes[i].childNodes[0] ? roomnodes[i].childNodes[0].nodeValue : "—"));
 	}
 
+	manufacturers = Array.from(manufacturers);
+	rooms = Array.from(rooms);
 	let manlist = d3.select("#manufacturer-select");
 	let roomlist = d3.select("#room-select");
+
 	for (let i = manufacturers.length - 1; i >= 0; i--) {
 		manlist.append("option").attr("value", manufacturers[i]).html(manufacturers[i]);
 	}
+
 	for (let i = rooms.length - 1; i >= 0; i--) {
 		roomlist.append("option").attr("value", rooms[i]).html(rooms[i]);
 	}
