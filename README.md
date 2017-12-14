@@ -721,6 +721,11 @@ document = {"name": Warrantee, "location": "/path/to/doc"}]
 
 ![](img/screengrabs/landing.png)
 
+![](img/screengrabs/repo.png)
+
+![](img/screengrabs/inventory.png)
+
+![](img/screengrabs/inventory-edit.png)
 
 
 
