@@ -306,7 +306,30 @@ db.save("path/to/updated/equipmentDB.xml", ignore_validation=False, error_log=Fa
 ## Use Cases
 #### A PJL lab tech wants to add the previous semester's lab versions to existing labs in the database.
 
+```
+new_versions = [[0001, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 397'],
+                [0032, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 375'],
+                [0101, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 211']]
 
+
+db = labDB("path/to/labDB.xml")
+
+for version in new_versions:
+
+    lab = db.getLab(idnum=version[0])
+
+    new_version = {"path": version[1],
+                   "semester": version[2],
+                   "year": version[3],
+                   "course": version[4],
+                   "directory": "/" + "/".join(version[1].split("/")[:-1])}
+    
+    lab.addVersion(new_version)
+
+    db.addLab(lab)
+
+db.save("/dev/updatedlabDB.xml", ignore_validation=False, error_log=True)
+```
 
 #### The PJL has received a new multimeter that will replace the Philips multimeter in all lab setups. A lab tech wants to replace instances of the Philips multimeter with the new multimeter but keep the Philips as an alternate.
 
