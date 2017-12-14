@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 import re
 import datetime
 
-
+readme_location = "../../README.md"
 
 
 
@@ -27,7 +27,7 @@ def getTopics():
 
     """returns a list of strings"""
 
-    with open("../../README.md", "r") as f:
+    with open(readme_location, "r") as f:
         s = f.read()
         m = re.search(r"<!---start topics-->\n([.\s\S]*)\n<!---end topics-->", s)
     lst = [i.strip() for i in m.group(0).split("\n")[1:-1]]
@@ -39,7 +39,7 @@ def getDisciplines():
 
     """returns a list of strings"""
 
-    with open("../../README.md", "r") as f:
+    with open(readme_location, "r") as f:
         s = f.read()
         m = re.search(r"<!---start disciplines-->\n([.\s\S]*)\n<!---end disciplines-->", s)
     lst = [i.strip() for i in m.group(0).split("\n")[1:-1]]
@@ -115,7 +115,7 @@ class EquipDB():
             return False
 
 
-        
+
     def noDuplicateIDs(self, log_file=None):
         error_log = []
         good = True
@@ -231,7 +231,7 @@ class EquipDB():
             self.new_id = self._getNextAvailableID()
         else:
             self.equipment.append(equipitem)
-            self.root.append(self._labItemToXMLNode(equipitem))
+            self.root.append(self._equipItemToXMLNode(equipitem))
             self._updateXML()
             self.length = len(self.root)
             self.new_id = self._getNextAvailableID()
@@ -239,6 +239,7 @@ class EquipDB():
 
 
     def save(self, filename, ignore_validation=False, error_log=False):
+        self._updateXML()
         if not isinstance(filename, str):
             raise TypeError("Argument of EquipDB.save must be string")
         if ignore_validation:
@@ -292,7 +293,7 @@ class EquipDB():
 
 
 
-    def _equipItemToXMLNode(equipitem):
+    def _equipItemToXMLNode(self, equipitem):
         if equipitem.id_num:
             item = ET.Element("Item", {"id": equipitem.id_num})
             name = ET.SubElement(item, "InventoryName")
@@ -311,7 +312,7 @@ class EquipDB():
                 room.text = i["room"]
                 storage = ET.SubElement(location, "Storage")
                 storage.text = i["storage"]
-            quantity = ET.SubElement(lab, "Quantity")
+            quantity = ET.SubElement(item, "Quantity")
             total = ET.SubElement(quantity, "Total")
             total.text = equipitem.quantity["total"]
             service = ET.SubElement(quantity, "InService")
@@ -322,9 +323,9 @@ class EquipDB():
             for d in equipitem.documents:
                 doc = ET.SubElement(documents, "Document")
                 docname = ET.SubElement(doc, "Name")
-                docname.text = d.name
+                docname.text = d["name"]
                 loc = ET.SubElement(doc, "Location")
-                loc.text = d.location
+                loc.text = d["location"]
             return item
         else:
             raise Exception("Any piece of equipment added to the tree must have, at minimum, an ID number")
@@ -401,7 +402,7 @@ class _EquipmentItem():
 
 
 
-        
+
 
 
 
@@ -495,7 +496,7 @@ class LabDB():
                 for item in lab.equipment:
                     if item["id"] == idn:
                         matching_items.add(item["name"])
-                        
+
             if len(matching_items) > 1:
                 if not self._isItAKit(idn):
                     good = False
@@ -519,9 +520,9 @@ class LabDB():
                 else:
                     return False
         raise Exception("Invalid equipment ID number.")
-            
-                
-                
+
+
+
 
 
 
@@ -694,6 +695,7 @@ class LabDB():
 
 
     def save(self, filename, ignore_validation=False, error_log=False):
+        self._updateXML()
         if not isinstance(filename, str):
             raise TypeError("Argument of LabDB.save must be string")
         if ignore_validation:
@@ -709,6 +711,20 @@ class LabDB():
             return False
 
 
+    def replaceEquipment(self, replaced, replaced_with, push_to_alternate=False):
+        if replaced and replaced_with and isValidID(replaced):
+            for i, lab in enumerate(self.labs):
+                for j, item in enumerate(lab.equipment):
+                    if item["id"] == replaced:
+                        if push_to_alternate:
+                            self.labs[i].equipment[j]["alt-id"] = self.labs[i].equipment[j]["id"]
+                            self.labs[i].equipment[j]["alt-name"] = self.labs[i].equipment[j]["name"]
+                        self.labs[i].equipment[j]["id"] = replaced_with.id_num
+                        self.labs[i].equipment[j]["name"] = replaced_with.name
+        else:
+            raise Exception("Invalid arguments passed to _LabDB.replaceEquipment")
+
+        
 
     def _makelabs(self):
         for child in self.root:
@@ -808,7 +824,7 @@ class LabDB():
 
 
 
-        
+
 
 
 
@@ -849,7 +865,7 @@ class _LabItem():
             raise Exception("Invalid arguments passed to _LabItem: either a valid lab or a valid lab ID must be passed")
 
 
-        
+
     def addVersion(self, version):
         if isinstance(dict, version) \
            and "path" in version \
@@ -862,7 +878,7 @@ class _LabItem():
             raise Exception("Invalid argument passed to _LabItem.addVersion: argument must be dictionary with appropriate keys.")
 
 
-        
+
     def addEquipment(self, item):
         if isinstance(dict, item) and "id" in item and "name" in item and "amount" in item:
             if "alt-id" in item and "alt-name" in item:
@@ -875,7 +891,7 @@ class _LabItem():
             raise Exception("Invalid argument passed to _LabItem.addEquipment: argument must be dictionary with appropriate keys.")
 
 
-        
+
     def addSupportDoc(self, doc):
         if isinstance(dict, doc) and "name" in doc and "path" in doc:
             self.support_docs.append(doc)

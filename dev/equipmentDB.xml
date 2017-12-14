@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
   <Item id="0001">
     <InventoryName>Fluke multimeter</InventoryName>
@@ -19,7 +19,7 @@
     <Documents>
       <Document>
         <Name>user manual</Name>
-        <Location>/equipment/docs/0001/manual.pdf</Location>
+        <Location>/data/equipment/0001/manual.pdf</Location>
       </Document>
     </Documents>
   </Item>

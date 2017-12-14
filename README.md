@@ -2,17 +2,15 @@
 ### Document dump for the PJL at UofC
 
 
-
 ## **To Do List**
 
 XML validation (done)  
-PHP to handle database edit POSTS (investigate Apache mod for Python)  
-Refine site-wide/page-specific scripts and stylesheets and implement page-specific JS namespaces (dashboard done - repo not done)  
-Dashboard to edit XMLs (in progress)  
-Populate equipment tags in lab XML (final draft done - awaiting Peter's review)  
-Populate topics / disciplines / ID#s (in progress)  
+PHP to handle database edit POSTS (done)  
+Refine site-wide/page-specific scripts and stylesheets and implement page-specific JS namespaces (done)  
+Dashboard to edit XMLs (removed from project - functionality incorporated into inventory page)  
+Populate equipment tags in lab XML (done)  
+Populate topics / disciplines / ID#s (done)  
 Add legacy labs (done)  
-Student guide  
 Support docs  
 External references (done)  
 Companion guides  
@@ -22,13 +20,13 @@ Companion guides
 
 ## **Pages to add**
 
-Landing page  
-Repository (alpha finished)  
-Equipment page template with URL string queries  
-Database editing dashboard(s) (in progress)  
-Staff profiles  
-Room scheduling interactive map (SVG ready to go)  
-Demos repository (unconfirmed)  
+Landing page (completed)  
+Repository (completed)  
+Equipment page template with URL string queries (completed)  
+Database editing dashboard(s) (removed from project)  
+Staff profiles (removed from project)  
+Room scheduling interactive map (removed from project)  
+Demos repository (removed from project)  
 403, 404, 500, 503 HTTP error pages  
 
 
@@ -37,7 +35,7 @@ Demos repository (unconfirmed)
 
 
 ## **Disciplines**  
-###### Labs are identified with disciplines when the discipline constitutes a significant focus of the lab
+###### Labs are identified with disciplines when the discipline constitutes a significant focus of the lab (This is a master list. Disciplines added to this list will be read by pjlDB.py to validate the XML)
 
 <!---start disciplines-->
 Newtonian Mechanics  
@@ -57,7 +55,7 @@ Computer Skills
 
 
 ## **Topics**  
-###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is an explicitly necessary pre-requisite
+###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is an explicitly necessary pre-requisite (This is a master list. Topics added to this list will be read by pjlDB.py to validate the XML)
 
 <!---start topics-->
 Electrostatics  
@@ -87,7 +85,6 @@ Refraction
 Hydrostatics  
 Gas Laws  
 Programming  
-
 <!---end topics-->
 
 
@@ -115,6 +112,7 @@ Programming
                 <Semester />
                 <Year />
                 <Course />
+                <Directory />
             </Version>
             ...
         </Versions>
@@ -154,10 +152,14 @@ Programming
             <Manufacturer />
             <Model />
         </Identification>
-        <Location>
-            <Room />
-            <Storage />
-        </Location>
+        <Kit isKit="false"/>
+        <Locations>
+            <Location>
+                <Room />
+                <Storage />
+            </Location>
+            ...
+        </Locations>
         <Quantity>
             <Total />
             <InService />
@@ -166,10 +168,7 @@ Programming
         <Documents>
             <Document>
                 <Name />
-                <location>
-                    <Online />
-                    <Offline />
-                </location>
+                <Location />
             </Document>
             ...
         </Documents>
@@ -184,6 +183,18 @@ Programming
 
 ## Example Code
 
+### Importing the Module and Creating a Database Object
+
+```
+from pjlDB import *
+
+#lab database
+db = LabDB("path/to/labDB.xml")
+
+#equipment database
+db = EquipDB("path/to/equipmentDB.xml")
+```
+
 ### Modifying a Lab in the Database
 
 ```
@@ -195,6 +206,18 @@ lab = db.getLab(idnum="0037")
 
 #change any of its properties
 lab.topics = ["PDE", "Polarization"]
+lab.addVersion({"path": "/data/repository/path/to/version.pdf, 
+                "semester": "Winter", 
+                "year": "2018", 
+                "course": "PHYS 369", 
+                "directory": "/data/repository/path/to/directory"})
+lab.addEquipment({"id": "0001", 
+                  "name": Fluke multimeter", 
+                  "amount": "2", 
+                  "alt-id": "0005", 
+                  "alt-name": "Philips multimeter"})
+lab.addSupportDoc({"name": "user manual", 
+                   "path": "/path/to/support/doc.pdf"})
 
 #add back to the db to replace the previous version
 db.addLab(lab)
@@ -235,10 +258,10 @@ versions = [{"path": "/data/repository/path/to/pdf",
 newlab.versions = versions
 
 #Add equipment
-equipment = [{"id": "0035", "name": "Fluke multimeter", "amount": "2"},
-             {"id": "0003", "name": "Anatek power supply", "amount": "1"},
-             {"id": "0143", "name": "small optical bench mount", "amount": "12"},
-             {"id": "0205", "name": "1 m optical bench", "amount": "1"}]
+equipment = [{"id": "0035", "name": "Fluke multimeter", "amount": "2", "alt-name": "Philips multimeter", "alt-id": "0005"},
+             {"id": "0003", "name": "Anatek power supply", "amount": "1", "alt-name": "", "alt-id": ""},
+             {"id": "0143", "name": "small optical bench mount", "amount": "12", "alt-name": "", "alt-id": ""},
+             {"id": "0205", "name": "1 m optical bench", "amount": "1", "alt-name": "", "alt-id": ""}]
 newlab.equipment = equipment
 
 #Add support documents and software
@@ -250,8 +273,114 @@ newlab.software = software
 
 #Add this new lab to the database and save the changes
 db.addLab(newlab)
-db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
+db.save("../../dev/updated_lab_database.xml", ignore_validation=False, error_log=True)
 ```
+
+
+### Adding New Equipment to the Equipment Database
+
+```
+db = EquipDB("path/to/equipmentDB.xml")
+
+newitem = db.newItem(db.new_id)
+
+#add equipment info
+#you may also simply add the item with only an ID and modify its information via
+#the website equipment edit page
+
+newitem.name = "Canon digital camera"
+newitem.manufacturer = "Canon"
+newitem.model = "ABC-123"
+newitem.is_kit = False
+newitem.locations = [{"room": "ST039", "storage": "Other"}]
+newitem.quantity = {"total": "12", "service": "12","repair": "0"}
+newitem.documents = [{"name": "warrantee", "location": "/path/to/document.pdf"}]
+
+db.addItem(newitem)
+db.save("path/to/updated/equipmentDB.xml", ignore_validation=False, error_log=False)
+
+```
+
+
+## Use Cases
+#### A PJL lab tech wants to add the previous semester's lab versions to existing labs in the database.
+
+```
+from pjlDB import *
+
+new_versions = [[0001, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 397'],
+                [0032, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 375'],
+                [0101, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 211']]
+
+
+db = LabDB("path/to/labDB.xml")
+
+for version in new_versions:
+
+    lab = db.getLab(idnum=version[0])
+
+    new_version = {"path": version[1],
+                   "semester": version[2],
+                   "year": version[3],
+                   "course": version[4],
+                   "directory": "/" + "/".join(version[1].split("/")[:-1])}
+    
+    lab.addVersion(new_version)
+
+    db.addLab(lab)
+
+db.save("/dev/updatedlabDB.xml", ignore_validation=False, error_log=True)
+```
+
+#### The PJL has received a new multimeter that will replace the Philips multimeter in all lab setups. A lab tech wants to replace instances of the Philips multimeter with the new multimeter but keep the Philips as an alternate.
+
+```
+#import packages
+from pjlDB import *
+
+
+eqdb = EquipDB("../equipmentDB.xml")
+
+
+
+#create the new item and fill in its properties
+new_item = eqdb.newItem(eqdb.new_id)
+
+#any or all of these properties may be unassigned
+#a valid equipment item only needs an ID number
+new_item.name = "Pasco multimeter"
+new_item.manufacturer = "Pasco"
+new_item.model = "A1"
+new_item.is_kit = False
+new_item.locations = [{"room": "ST038", "storage": "C4"}]
+new_item.quantity = {"total": "24", "service": "24", "repair": "0"}
+new_item.documents = [{"name": "user manual", "location": "/data/equipment/0601/manual.pdf"}]
+
+#add new item to the inventory and save
+eqdb.addItem(new_item)
+eqdb.save("updatedequipmentDB.xml")
+
+
+#now that we've created a new equipment item we need to find all labs
+#that contain the item it will replace
+
+#we're replacing the Philips multimeter, id=0005
+replaced = "0005"
+
+#we're replacing it with the newly created item
+replaced_with = new_item
+
+#open up the lab database
+labdb = LabDB("../labDB.xml")
+
+#push_to_alternate will make the old item an alternate piece of equipment for the lab
+labdb.replaceEquipment(replaced, replaced_with, push_to_alternate=True)
+
+labdb.save("updatedlabDB.xml")
+```
+
+
+
 
 
 
@@ -339,6 +468,21 @@ with LabDB.log_file_object() as f:
 ```
 db = LabDB("../labDB.xml")
 db.validateFull(error_log=True)
+```
+
+
+##### LabDB.replaceEquipment(replaced, replace_with, push_to_alternate=False)
+> Replace all instances of equipment item (`id=replaced`) with a new piece of equipment (a valid `_EquipmentItem` object). Optionally, the replaced item may become an alternate piece of equipment by setting `push_to_alternate=False`. If `push_to_alternate=True`, the equipment will simply be replaced in all lab equipment lists.
+
+```
+eqdb = EquipDB("equipmentDB.xml")
+labdb = LabDB("labDB.xml")
+
+replaced = "0005"
+replace_with = eqdb.getItem(idnum="0001")
+
+labdb.replaceEquipment(replaced, replaced_with, push_to_alternate=True)
+labdb.save("updatedlabDB.xml")
 ```
 
 
@@ -636,10 +780,19 @@ document = {"name": Warrantee, "location": "/path/to/doc"}]
 > Appends a new location to an existing `_EquipmentItem` object's location list. Takes a valid location dictionary as an argument. The dictionary must have keys for "room" and "storage". These may be empty strings but they must exist. 
 
 
+## **Page Tour**
 
+##### Landing Page
+![](img/screengrabs/landing.png)
 
+##### Lab Repository
+![](img/screengrabs/repo.png)
 
+##### Equipment Inventory
+![](img/screengrabs/inventory.png)
 
+##### Inventory Edit Page
+![](img/screengrabs/inventory-edit.png)
 
 
 
