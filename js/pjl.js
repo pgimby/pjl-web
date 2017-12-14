@@ -4,7 +4,7 @@
 //   GLOBALS
 //*******************************************************************************************
 
-var mainxmlpath = "/data/labDB.xml";
+var labdatabasepath = "/data/labDB.xml";
 var equipmentdatabasepath = "/data/equipmentDB.xml";
 var siteroot = "";
 var recordmasklength = 20;
@@ -50,7 +50,7 @@ class EquipmentDisplay {
 		//given the entire xml document, retreive just the item matching 'id'
 		self._getItemData = function(xml, id) {
 			let nodes = xml.getElementsByTagName("Item");
-			for (let i = 0; i < nodes.length; i++) {
+			for (let i = nodes.length - 1; i >= 0; i--) {
 				if (nodes[i].getAttribute("id") == id) {
 					return nodes[i];
 				}
@@ -65,7 +65,7 @@ class EquipmentDisplay {
 			let model = (data.getElementsByTagName("Model")[0].childNodes[0] ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "none");
 			let locations = [];
 			let locationnodes = data.getElementsByTagName("Locations")[0].getElementsByTagName("Location");
-			for (let i = 0; i < locationnodes.length; i++) {
+			for (let i = locationnodes.length - 1; i >= 0; i--) {
 				let room = locationnodes[i].getElementsByTagName("Room")[0].childNodes[0].nodeValue;
 				let storage = locationnodes[i].getElementsByTagName("Storage")[0].childNodes[0].nodeValue;
 				locations.push({"room": room, "storage": storage})
@@ -75,7 +75,7 @@ class EquipmentDisplay {
 			let repair = (data.getElementsByTagName("UnderRepair")[0].childNodes[0] ? data.getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "N/A")
 			let docs = [];
 			let docnodes = data.getElementsByTagName("Document");
-			for (let i = 0; i < docnodes.length; i++) {
+			for (let i = docnodes.length - 1; i >= 0; i--) {
 				let name = docnodes[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 				let path = docnodes[i].getElementsByTagName("Location")[0].childNodes[0].nodeValue;
 				docs.push({"name": name, "path": path})
@@ -96,7 +96,7 @@ class EquipmentDisplay {
 			mm.append("p").classed("eq-model", true).html(model);
 			let locs = content.append("div").classed("eq-modal-locations", true);
 			locs.append("h1").classed("modal-header", true).html("Locations");
-			for (let i = 0; i < locations.length; i++) {
+			for (let i = locations.length - 1; i >= 0; i--) {
 				locs.append("p").classed("eq-modal-location", true).html(locations[i].room + " " + locations[i].storage);
 			}
 
@@ -114,7 +114,7 @@ class EquipmentDisplay {
 
 			let dcs = content.append("div").classed("eq-modal-docs", true);
 			dcs.append("h1").classed("modal-header", true).html("Documents");
-			for (let i = 0; i < docs.length; i++) {
+			for (let i = docs.length - 1; i >= 0; i--) {
 				let dc = dcs.append("div").classed("eq-modal-doc", true);
 				dc.append("i").classed("fa fa-file-o", true).attr("aria-hidden", "true");
 				dc.append("a").attr("href", docs[i].path).attr("target", "_blank").html(docs[i].name);
@@ -337,7 +337,7 @@ $(document).on("click touch", ".lab-details-drop-icon-flex", function(e) {
 
 $(document).on("click touch", "#clear-filters-button", function(e) {
 	var selects = $("select");
-	for (var i = selects.length - 1; i >= 0; i--) {
+	for (let i = selects.length - 1; i >= 0; i--) {
 		$(selects[i]).val([]);
 	}
 	filterResults(getCurrentFilter(), fullset=true);
@@ -1031,14 +1031,13 @@ function setExpandedButtonTruth(truthy) {
 
 //Apply the records mask if 'truthy' is true, remove the mask if false
 function applyRecordsMask(truthy) {
-	let masksize = 20;
 	let records = getCurrentRecords();
 	unmaskAll(records);
-	if (records.length > masksize && Boolean(truthy)) {
-		for (let i = records.length - 1; i >= masksize; i--) {
+	if (records.length > recordmasklength && Boolean(truthy)) {
+		for (let i = records.length - 1; i >= recordmasklength; i--) {
 			records[i].addClass("masked");
 		}
-		$("#num-unmasked-results").text(String(masksize));
+		$("#num-unmasked-results").text(String(recordmasklength));
 		$("#show-all-button").css("visibility", "visible");
 	} else {
 		for (let i = records.length - 1; i >= 0; i--) {
@@ -1542,7 +1541,7 @@ function makePromisesBeginZip(filelist) {
 
 	//Start the file download and make associated promises.
 	//Also save the list of XHRs
-	for (let i = 0; i < files.length; i++) {
+	for (let i = files.length - 1; i >= 0; i--) {
 		let downloadingfile = new $.Deferred();
 		downloadingfile.done(function(filename, blob) {
 			zip.file(filename, blob);
@@ -1747,7 +1746,7 @@ function loadXML() {
             applyRecordsMask(true);
     	}
   	};
-  	xhttp.open("GET", siteroot + mainxmlpath, true);
+  	xhttp.open("GET", siteroot + labdatabasepath, true);
   	xhttp.send();
 }
 
@@ -2217,7 +2216,7 @@ var semesterDecimal = {"Fall": 0.75, "Winter": 0.0, "Spring": 0.25, "Summer": 0.
 function makeBigramList(string) {
 	let list = [];
 	string = string.toLowerCase();
-	for (let i = 0; i <= string.length - 2; i++) {
+	for (let i = 0; i < string.length - 1; i++) {
 		list.push(string[i] + string[i+1]);
 	}
 	return Array.from(new Set(list));
