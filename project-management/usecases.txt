@@ -1,0 +1,46 @@
+Use cases for PJL database backend:
+
+A PJL lab tech wants to add a new lab to the database.
+
+
+
+
+A PJL lab tech wants to add the previous semester's lab versions to existing labs in the database.
+
+
+The PJL has received a new multimeter that will replace the Philips multimeter in all lab setups. A lab tech wants to replace instances of the Philips multimeter with the new multimeter but keep the Philips as an alternate.
+
+
+A PJL lab tech wants to add a new kind of equipment to the inventory.
+
+
+
+
+
+
+Use cases for the PJL website
+
+An instructor will be teaching PHYS 325 for the first time in several years. They want to see the lab experiments that have been run in the intervening time period.
+
+
+An instructor would like to modify last semester's lab experiment document to correct errata found by TAs.
+
+
+A PJL lab tech just pulled a force plate out of service and wants to update the equipment inventory to reflect this change.
+
+
+A PJL lab tech has just finished repairing a broken force plate and wants to update the equipment inventory to reflect this change.
+
+
+An instructor wants to add a lab involving Statistical mechanics and wants to know if the PJL has any labs covering that topic.
+
+
+An instructor thinks there may be an error in a companion guide and wants to investigate the original data.
+
+
+A PJL tech is doing repairs and wants to prioritize their efforts by focusing on the equipment with the most items down for repair. They want to see any equipment with a repair backlog greater than 5.
+
+
+The repair backlog of Cenco power supplies is quite high. Concerned that there may not be enough power supplies to service upcoming labs, a PJL lab tech wants to know which labs the Cenco power supplies are used in.
+
+

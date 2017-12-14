@@ -38,6 +38,7 @@ Demos repository (unconfirmed)
 
 ## **Disciplines**  
 ###### Labs are identified with disciplines when the discipline constitutes a significant focus of the lab
+###### This is a master list. Disciplines added to this list will be read by pjlDB.py to validate the XML
 
 <!---start disciplines-->
 Newtonian Mechanics  
@@ -58,6 +59,7 @@ Computer Skills
 
 ## **Topics**  
 ###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is an explicitly necessary pre-requisite
+###### This is a master list. Topics added to this list will be read by pjlDB.py to validate the XML
 
 <!---start topics-->
 Electrostatics  
@@ -184,6 +186,18 @@ Programming
 
 ## Example Code
 
+### Importing the Module and Creating a Database Object
+
+```
+from pjlDB import *
+
+#lab database
+db = LabDB("path/to/labDB.xml")
+
+#equipment database
+db = EquipDB("path/to/equipmentDB.xml")
+```
+
 ### Modifying a Lab in the Database
 
 ```
@@ -195,6 +209,18 @@ lab = db.getLab(idnum="0037")
 
 #change any of its properties
 lab.topics = ["PDE", "Polarization"]
+lab.addVersion({"path": "/data/repository/path/to/version.pdf, 
+                "semester": "Winter", 
+                "year": "2018", 
+                "course": "PHYS 369", 
+                "directory": "/data/repository/path/to/directory"})
+lab.addEquipment({"id": "0001", 
+                  "name": Fluke multimeter", 
+                  "amount": "2", 
+                  "alt-id": "0005", 
+                  "alt-name": "Philips multimeter"})
+lab.addSupportDoc({"name": "user manual", 
+                   "path": "/path/to/support/doc.pdf"})
 
 #add back to the db to replace the previous version
 db.addLab(lab)
@@ -235,10 +261,10 @@ versions = [{"path": "/data/repository/path/to/pdf",
 newlab.versions = versions
 
 #Add equipment
-equipment = [{"id": "0035", "name": "Fluke multimeter", "amount": "2"},
-             {"id": "0003", "name": "Anatek power supply", "amount": "1"},
-             {"id": "0143", "name": "small optical bench mount", "amount": "12"},
-             {"id": "0205", "name": "1 m optical bench", "amount": "1"}]
+equipment = [{"id": "0035", "name": "Fluke multimeter", "amount": "2", "alt-name": "Philips multimeter", "alt-id": "0005"},
+             {"id": "0003", "name": "Anatek power supply", "amount": "1", "alt-name": "", "alt-id": ""},
+             {"id": "0143", "name": "small optical bench mount", "amount": "12", "alt-name": "", "alt-id": ""},
+             {"id": "0205", "name": "1 m optical bench", "amount": "1", "alt-name": "", "alt-id": ""}]
 newlab.equipment = equipment
 
 #Add support documents and software
@@ -250,8 +276,41 @@ newlab.software = software
 
 #Add this new lab to the database and save the changes
 db.addLab(newlab)
-db.save("../../dev/updated_lab_database.xml", ignore_validation=False)
+db.save("../../dev/updated_lab_database.xml", ignore_validation=False, error_log=True)
 ```
+
+
+### Adding New Equipment to the Equipment Database
+
+```
+db = EquipDB("path/to/equipmentDB.xml")
+
+item = db.newItem(db.new_id)
+
+#add equipment info
+#you may also simply add the item with only an ID and modify its information via
+#the website equipment edit page
+
+item.name = "Canon digital camera"
+item.manufacturer = "Canon"
+item.model = "ABC-123"
+item.is_kit = False
+item.locations = [{"room": "ST039", "storage": "Other"}]
+item.quantity = {"total": "12", "service": "12","repair": "0"}
+item.documents = [{"name": "warrantee", "location": "/path/to/document.pdf"}]
+
+db.addItem(item)
+db.save("path/to/updated/equipmentDB.xml", ignore_validation=False, error_log=False)
+
+```
+
+
+## Use Cases
+#### A PJL lab tech wants to add the previous semester's lab versions to existing labs in the database.
+
+
+
+#### The PJL has received a new multimeter that will replace the Philips multimeter in all lab setups. A lab tech wants to replace instances of the Philips multimeter with the new multimeter but keep the Philips as an alternate.
 
 
 

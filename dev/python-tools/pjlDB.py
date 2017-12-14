@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 import re
 import datetime
 
-
+readme_location = "../../README.md"
 
 
 
@@ -27,7 +27,7 @@ def getTopics():
 
     """returns a list of strings"""
 
-    with open("../../README.md", "r") as f:
+    with open(readme_location, "r") as f:
         s = f.read()
         m = re.search(r"<!---start topics-->\n([.\s\S]*)\n<!---end topics-->", s)
     lst = [i.strip() for i in m.group(0).split("\n")[1:-1]]
@@ -39,7 +39,7 @@ def getDisciplines():
 
     """returns a list of strings"""
 
-    with open("../../README.md", "r") as f:
+    with open(readme_location, "r") as f:
         s = f.read()
         m = re.search(r"<!---start disciplines-->\n([.\s\S]*)\n<!---end disciplines-->", s)
     lst = [i.strip() for i in m.group(0).split("\n")[1:-1]]
