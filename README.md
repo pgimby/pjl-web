@@ -719,12 +719,16 @@ document = {"name": Warrantee, "location": "/path/to/doc"}]
 
 ## **Page Tour**
 
+##### Landing Page
 ![](img/screengrabs/landing.png)
 
+##### Lab Repository
 ![](img/screengrabs/repo.png)
 
+##### Equipment Inventory
 ![](img/screengrabs/inventory.png)
 
+##### Inventory Edit Page
 ![](img/screengrabs/inventory-edit.png)
 
 
