@@ -307,12 +307,14 @@ db.save("path/to/updated/equipmentDB.xml", ignore_validation=False, error_log=Fa
 #### A PJL lab tech wants to add the previous semester's lab versions to existing labs in the database.
 
 ```
+from pjlDB import *
+
 new_versions = [[0001, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 397'],
                 [0032, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 375'],
                 [0101, '/data/repository/path/to/PDF.pdf', 'Fall', 2017, 'PHYS 211']]
 
 
-db = labDB("path/to/labDB.xml")
+db = LabDB("path/to/labDB.xml")
 
 for version in new_versions:
 
