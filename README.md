@@ -6,13 +6,12 @@
 ## **To Do List**
 
 XML validation (done)  
-PHP to handle database edit POSTS (investigate Apache mod for Python)  
-Refine site-wide/page-specific scripts and stylesheets and implement page-specific JS namespaces (dashboard done - repo not done)  
-Dashboard to edit XMLs (in progress)  
-Populate equipment tags in lab XML (final draft done - awaiting Peter's review)  
-Populate topics / disciplines / ID#s (in progress)  
+PHP to handle database edit POSTS (done)  
+Refine site-wide/page-specific scripts and stylesheets and implement page-specific JS namespaces (done)  
+Dashboard to edit XMLs (removed from project - functionality incorporated into inventory page)  
+Populate equipment tags in lab XML (done)  
+Populate topics / disciplines / ID#s (done)  
 Add legacy labs (done)  
-Student guide  
 Support docs  
 External references (done)  
 Companion guides  
@@ -22,13 +21,13 @@ Companion guides
 
 ## **Pages to add**
 
-Landing page  
-Repository (alpha finished)  
-Equipment page template with URL string queries  
-Database editing dashboard(s) (in progress)  
-Staff profiles  
-Room scheduling interactive map (SVG ready to go)  
-Demos repository (unconfirmed)  
+Landing page (completed)  
+Repository (completed)  
+Equipment page template with URL string queries (completed)  
+Database editing dashboard(s) (removed from project)  
+Staff profiles (removed from project)  
+Room scheduling interactive map (removed from project)  
+Demos repository (removed from project)  
 403, 404, 500, 503 HTTP error pages  
 
 
@@ -87,7 +86,6 @@ Refraction
 Hydrostatics  
 Gas Laws  
 Programming  
-
 <!---end topics-->
 
 
