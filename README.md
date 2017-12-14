@@ -283,21 +283,21 @@ db.save("../../dev/updated_lab_database.xml", ignore_validation=False, error_log
 ```
 db = EquipDB("path/to/equipmentDB.xml")
 
-item = db.newItem(db.new_id)
+newitem = db.newItem(db.new_id)
 
 #add equipment info
 #you may also simply add the item with only an ID and modify its information via
 #the website equipment edit page
 
-item.name = "Canon digital camera"
-item.manufacturer = "Canon"
-item.model = "ABC-123"
-item.is_kit = False
-item.locations = [{"room": "ST039", "storage": "Other"}]
-item.quantity = {"total": "12", "service": "12","repair": "0"}
-item.documents = [{"name": "warrantee", "location": "/path/to/document.pdf"}]
+newitem.name = "Canon digital camera"
+newitem.manufacturer = "Canon"
+newitem.model = "ABC-123"
+newitem.is_kit = False
+newitem.locations = [{"room": "ST039", "storage": "Other"}]
+newitem.quantity = {"total": "12", "service": "12","repair": "0"}
+newitem.documents = [{"name": "warrantee", "location": "/path/to/document.pdf"}]
 
-db.addItem(item)
+db.addItem(newitem)
 db.save("path/to/updated/equipmentDB.xml", ignore_validation=False, error_log=False)
 
 ```
