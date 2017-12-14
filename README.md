@@ -2,7 +2,6 @@
 ### Document dump for the PJL at UofC
 
 
-
 ## **To Do List**
 
 XML validation (done)  
@@ -718,9 +717,9 @@ document = {"name": Warrantee, "location": "/path/to/doc"}]
 > Appends a new location to an existing `_EquipmentItem` object's location list. Takes a valid location dictionary as an argument. The dictionary must have keys for "room" and "storage". These may be empty strings but they must exist. 
 
 
+## **Page Tour**
 
-
-
+![](img/screengrabs/landing.png)
 
 
 
