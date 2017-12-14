@@ -37,8 +37,7 @@ Demos repository (unconfirmed)
 
 
 ## **Disciplines**  
-###### Labs are identified with disciplines when the discipline constitutes a significant focus of the lab
-###### This is a master list. Disciplines added to this list will be read by pjlDB.py to validate the XML
+###### Labs are identified with disciplines when the discipline constitutes a significant focus of the lab (This is a master list. Disciplines added to this list will be read by pjlDB.py to validate the XML)
 
 <!---start disciplines-->
 Newtonian Mechanics  
@@ -58,8 +57,7 @@ Computer Skills
 
 
 ## **Topics**  
-###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is an explicitly necessary pre-requisite
-###### This is a master list. Topics added to this list will be read by pjlDB.py to validate the XML
+###### Labs are identified with topics when the topic constitutes a significant focus of the lab or if the topic is an explicitly necessary pre-requisite (This is a master list. Topics added to this list will be read by pjlDB.py to validate the XML)
 
 <!---start topics-->
 Electrostatics  
@@ -117,6 +115,7 @@ Programming
                 <Semester />
                 <Year />
                 <Course />
+                <Directory />
             </Version>
             ...
         </Versions>
@@ -156,10 +155,14 @@ Programming
             <Manufacturer />
             <Model />
         </Identification>
-        <Location>
-            <Room />
-            <Storage />
-        </Location>
+        <Kit isKit="false"/>
+        <Locations>
+            <Location>
+                <Room />
+                <Storage />
+            </Location>
+            ...
+        </Locations>
         <Quantity>
             <Total />
             <InService />
@@ -168,10 +171,7 @@ Programming
         <Documents>
             <Document>
                 <Name />
-                <location>
-                    <Online />
-                    <Offline />
-                </location>
+                <Location />
             </Document>
             ...
         </Documents>
