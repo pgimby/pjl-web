@@ -334,6 +334,54 @@ db.save("/dev/updatedlabDB.xml", ignore_validation=False, error_log=True)
 
 #### The PJL has received a new multimeter that will replace the Philips multimeter in all lab setups. A lab tech wants to replace instances of the Philips multimeter with the new multimeter but keep the Philips as an alternate.
 
+```
+#import packages
+from pjlDB import *
+
+
+eqdb = EquipDB("../equipmentDB.xml")
+
+
+
+#create the new item and fill in its properties
+new_item = eqdb.newItem(eqdb.new_id)
+
+#any or all of these properties may be unassigned
+#a valid equipment item only needs an ID number
+new_item.name = "Pasco multimeter"
+new_item.manufacturer = "Pasco"
+new_item.model = "A1"
+new_item.is_kit = False
+new_item.locations = [{"room": "ST038", "storage": "C4"}]
+new_item.quantity = {"total": "24", "service": "24", "repair": "0"}
+new_item.documents = [{"name": "user manual", "location": "/data/equipment/0601/manual.pdf"}]
+
+#add new item to the inventory and save
+eqdb.addItem(new_item)
+eqdb.save("updatedequipmentDB.xml")
+
+
+#now that we've created a new equipment item we need to find all labs
+#that contain the item it will replace
+
+#we're replacing the Philips multimeter, id=0005
+replaced = "0005"
+
+#we're replacing it with the newly created item
+replaced_with = new_item
+
+#open up the lab database
+labdb = LabDB("../labDB.xml")
+
+#push_to_alternate will make the old item an alternate piece of equipment for the lab
+labdb.replaceEquipment(replaced, replaced_with, push_to_alternate=True)
+
+labdb.save("updatedlabDB.xml")
+```
+
+
+
+
 
 
 ## Convenience Functions
@@ -420,6 +468,21 @@ with LabDB.log_file_object() as f:
 ```
 db = LabDB("../labDB.xml")
 db.validateFull(error_log=True)
+```
+
+
+##### LabDB.replaceEquipment(replaced, replace_with, push_to_alternate=False)
+> Replace all instances of equipment item (`id=replaced`) with a new piece of equipment (a valid `_EquipmentItem` object). Optionally, the replaced item may become an alternate piece of equipment by setting `push_to_alternate=False`. If `push_to_alternate=True`, the equipment will simply be replaced in all lab equipment lists.
+
+```
+eqdb = EquipDB("equipmentDB.xml")
+labdb = LabDB("labDB.xml")
+
+replaced = "0005"
+replace_with = eqdb.getItem(idnum="0001")
+
+labdb.replaceEquipment(replaced, replaced_with, push_to_alternate=True)
+labdb.save("updatedlabDB.xml")
 ```
 
 
