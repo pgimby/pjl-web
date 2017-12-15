@@ -1706,7 +1706,7 @@ function filterFileList(doALL, doPDF, doTEX, doTMP, doMED, filelist) {
 
 //record is an HTML DOM element. Returns a list of dictionaries holding information about a lab's extra documents
 function getExtraDocsFromRecord(record) {
-	let docs = $(record).find(".extra-doc");//children(".extra-docs").children(".extra-doc");
+	let docs = $(record).children(".extra-docs").children(".extra-doc");
 	list = [];
 	for (let i = docs.length - 1; i >= 0; i--) {
 		let docname = docs[i].text();
