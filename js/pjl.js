@@ -8,6 +8,7 @@ var labdatabasepath = "/data/labDB.xml";
 var equipmentdatabasepath = "/data/equipmentDB.xml";
 var siteroot = "";
 var recordmasklength = 20;
+var selectedrecords = 0;
 
 // Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code
 
@@ -404,7 +405,11 @@ $(document).on("click touch", "#search-help-button", function(e) {
 
 $(document).on("click touch", "#zip-icon", function(e) {
 	new DownloadModalWindow();
-	$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
+	if ($("#zip-icon").hasClass("active")) {
+		$("#dl-modal-number").text("(" + String($(".fa-circle.selected").length) + " records selected)");
+	} else {
+		$("#dl-modal-number").text("(" + String(countNumRecords()) + " records selected)");
+	}
 });
 
 
@@ -600,10 +605,15 @@ $(document).on("click touch", "#edit-mode-button", function(e) {
 
 
 
-
-
-
-
+$(document).on("click", ".record-click-mask", function(e) {
+	if ($(e.target).parent().children(".fa-circle").hasClass("selected")) {
+		$(e.target).parent().children(".fa-circle").removeClass("selected");
+		selectedRecords(-1);
+	} else {
+		$(e.target).parent().children(".fa-circle").addClass("selected");
+		selectedRecords(1);
+	}
+})
 
 
 
@@ -660,11 +670,13 @@ function createRecordSnapshots(lab) {
 		let detailsbox = d3.select("#record-list-box").append("div").classed("lab-record-flex", true).classed("record-rendered", true);
 
 		let snapshot = detailsbox.append("div").classed("lab-record-simple-flex", true);
+		snapshot.append("i").classed("fa fa-circle", true).attr("aria-hidden", "true");
 		let download = snapshot.append("a").classed("version-path", true).html("See PDF").attr("href", siteroot + versionlist[i].path).attr("target", "_blank");
 		snapshot.append("img").classed("download-icon", true).html("Download").attr("src", siteroot + "/img/download-icon.svg");  //alternate for mobile display
-		let course = snapshot.append("p").classed("courses", true).html(versionlist[i].course);
-		let date = snapshot.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
-		let labtitle = snapshot.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+		let clickmask = snapshot.append("div").classed("record-click-mask", true);
+		let course = clickmask.append("p").classed("courses", true).html(versionlist[i].course);
+		let date = clickmask.append("p").classed("version-semester", true).html(versionlist[i].semester + " " + versionlist[i].year);
+		let labtitle = clickmask.append("p").classed("lab-title", true).html(lab.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 		let dropiconflex = snapshot.append("div").classed("lab-details-drop-icon-flex", true);
 		let dropicon = dropiconflex.append("img").classed("lab-details-drop-icon", true).attr("src", siteroot + "/img/dropdown-arrow.png");
 
@@ -1052,6 +1064,7 @@ function applyRecordsMask(truthy) {
 	if (Boolean(truthy)) {
 		$("#record-list-box").removeClass("records-unmasked");
 	}
+	selectedRecords(0);
 }
 
 
@@ -1130,13 +1143,13 @@ function showMostRecent() {
 	sortRecords("year");
 	displayNumResults(countNumRecords());
 	setNumberRecordsUnmasked();
+	selectedRecords(0);
 }
 
 
 
 //Populate the filters with appropriate values found in equipment XML
 function populateEquipmentFilters(xml) {
-	console.log("hi")
 	let manufacturers = new Set(["—"]);
 	let rooms = new Set([]);
 	let mannodes = xml.getElementsByTagName("Manufacturer");
@@ -1639,11 +1652,22 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 		}
 	}
 
-	//Compile directory lists to be sniffed. Concurrently compile a list of extra documents from the corresponding lab record
-	for (let i = records.length - 1; i >= 0; i--) {
-		dirlist.push(records[i].find(".version-directory").text());
-		extradocs.concat(getExtraDocsFromRecord(records[i]));
+	//Compile directory lists to be sniffed. Concurrently compile a list of extra documents from the corresponding lab record.
+	//First checks for a user sub selection of records. If no sub selection then it collects all rendered records.
+	if ($("#zip-icon").hasClass("active")) {
+		for (let i = records.length - 1; i >= 0; i--) {
+			if (records[i].children(".lab-record-simple-flex").children("fa-circle").hasClass("selected")) {
+				dirlist.push(records[i].find(".version-directory").text());
+				extradocs.concat(getExtraDocsFromRecord(records[i]));
+			}
+		}
+	} else {
+		for (let i = records.length - 1; i >= 0; i--) {
+			dirlist.push(records[i].find(".version-directory").text());
+			extradocs.concat(getExtraDocsFromRecord(records[i]));
+		}
 	}
+
 
 	//Create a promise for each directory to be resolved when PHP successfully returns a file list representing the contents of the directory
 	for (let i = dirlist.length - 1; i >= 0; i--) {
@@ -1716,6 +1740,16 @@ function getExtraDocsFromRecord(record) {
 	return list;
 }
 
+
+
+//adds a class 'active' to the #zip-icon so it knows to download only the user-selected subset of records
+function zipSome(truthy) {
+	if (Boolean(truthy)) {
+		$("#zip-icon").addClass("active");
+	} else {
+		$("#zip-icon").removeClass("active");
+	}
+}
 
 
 
@@ -2174,7 +2208,22 @@ function loadEquipmentXML() {
 
 
 
-
+//increments (1), decrements (-1), or resets (0) the selectedrecords variable to keep track of the number of user-selected records.
+function selectedRecords(amount) {
+	if (amount == -1) {
+		selectedrecords = selectedrecords + amount;
+	} else if (amount == 1) {
+		selectedrecords = selectedrecords + amount;
+	} else if (amount == 0) {
+		selectedrecords = 0;
+		$(".lab-record-simple-flex .fa-circle").removeClass("selected");
+	}
+	if (selectedrecords == 0) {
+		zipSome(false);
+	} else {
+		zipSome(true);
+	}
+}
 
 
 

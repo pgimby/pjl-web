@@ -28,6 +28,13 @@
 
 
 
+
+
+
+
+
+
+
 #search-help-button {
 	position: absolute;
 	margin: 0;
@@ -194,7 +201,7 @@ select {
 	height: 38px;
 	cursor: pointer;
 	float: right;
-	border-radius: 8px;
+	border-radius: 4px;
 	position: relative;
 	z-index: 1;
 	right: 4px;
@@ -209,6 +216,12 @@ select {
 		box-shadow: 0 0 3px 1px rgba(0,0,0,.2) inset;
 		transform: translateY(2px);
 	}
+
+#zip-icon.active {
+	background: url("../img/zip-icon-active.png");
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+}
 
 #records-header {
 	display: -webkit-flex;
@@ -301,6 +314,7 @@ select {
 	display: -webkit-flex;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 	.lab-record-simple-flex p {
@@ -310,6 +324,34 @@ select {
 	.lab-record-simple-flex .lab-title {
 		flex: 2;
 	}
+
+
+
+.lab-record-simple-flex .fa-circle {
+	display: none;
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	left: -12px;
+	text-shadow: 0 0 0 2px #090;
+	color: #060;
+	font-size: 8px;
+	line-height: 0;
+}
+
+.lab-record-simple-flex .fa-circle.selected {
+	display: inline-block;
+}
+
+.record-click-mask {
+	display: -webkit-flex;
+	display: flex;
+	flex: 1;
+}
+
+.record-click-mask:hover {
+	cursor: pointer;
+}
 
 .lab-details-drop-icon-flex {
 	display: -webkit-flex;
@@ -434,6 +476,11 @@ select {
 		transition: none;
 	}
 
+
+
+.courses, .version-semester, .lab-title {
+	pointer-events: none;
+}
 
 
 
