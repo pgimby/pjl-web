@@ -1656,7 +1656,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 	//First checks for a user sub selection of records. If no sub selection then it collects all rendered records.
 	if ($("#zip-icon").hasClass("active")) {
 		for (let i = records.length - 1; i >= 0; i--) {
-			if (records[i].children(".lab-record-simple-flex").children("fa-circle").hasClass("selected")) {
+			if (records[i].children(".lab-record-simple-flex").children(".fa-circle").hasClass("selected")) {
 				dirlist.push(records[i].find(".version-directory").text());
 				extradocs.concat(getExtraDocsFromRecord(records[i]));
 			}
