@@ -1,0 +1,235 @@
+#!/usr/bin/python3
+
+import fnmatch
+import os
+import re
+
+#root_path = '/home/pgimby/temp/'
+root_path = '/usr/local/master/labs/repository/'
+#os.system("ls " + root_path)
+output = 'tmp/tikz.tex'
+pattern = "*FULL*"
+pattern2 = "*.tex"
+doc_preamble = ['\\input{standard-preamble.tex}\n', '\\begin{document}\n', '\\title{Sample Tikz Diagrams}\n', '\\listoffigures', '\\newpage' ]
+doc_end = ['\\end{document}\n']
+
+
+def addTextList(text_list, o):
+
+	'''writes preamble for latex file into '''
+	for i in text_list:
+		o.write(str(i) + "\n")
+
+
+def listOfLabs(root_path):
+
+	'''generate list of lab folders'''
+	listOfLabs = []
+	for item in os.listdir(root_path):
+		if os.path.isdir(root_path + item):
+			listOfLabs.append(item)
+	return listOfLabs
+
+
+
+
+
+def sectionTitle(path):
+#def sectionTitle(path, o):	
+
+	'''insert new section header'''
+	#print(path)
+	if path:
+		#with open("/usr/local/master/labs/repository/0072-Nuclear-Decay/0072-PHYS325WI2016/Nuclear-Decay-FULL-WI2016.tex", "r") as f:
+		#tex = path[0]
+		#print(path)
+		#print(type(tex))
+		#	print(f.read())
+		with open(path, "r", encoding='latin-1') as f:
+		#with open(tex, "r") as f:
+			s = f.read()
+			title = re.search(r"\\chapter{([.\s\S]*?)}", s)
+			title = str(title.group(0)).replace("chapter", "section")
+			title = title + '\n'
+			return title
+
+
+def getTikz(path, typ, diagrams):
+
+	'''collect tizk pictures and add to doc'''
+	with open(path, "r") as f:
+		s = f.read()
+		#m = re.findall(r"(\\begin{"+typ+"}[.\s\S]*?\\end{"+typ+"})", s)
+		m = re.findall(r"\\begin{"+typ+"}[.\s\S]*?\n([.\s\S]*?)\\end{"+typ+"}", s)
+		for tikzcode in m:
+			if "tikzpicture" in tikzcode:
+				if checkForEmpty(tikzcode) == "False":
+					tikzcode = removeUnwanted(tikzcode)
+					diagrams.append(tikzcode)
+			#		print(tikzcode)
+				#tikzcode = fixErrors(tikzcode)
+		#		print(type(tikzcode))
+		#		
+		#return diagrams
+				#o.write(tikzcode + "\n\n\n")
+
+
+def checkForEmpty(lst):
+
+	'''check if a string is empty'''
+	if len(lst) != 0:
+		empty = "False"
+		return empty
+	else:
+		empty = "True"
+		return empty
+
+
+def removeUnwanted(tikzcode):
+
+	'''used to make all figures the same type'''
+	#tikzcode = tikzcode.replace("{marginfigure}", "{figure}")
+	#tikzcode = tikzcode.replace("{mainfigure}", "{figure}")
+	tikzcode = re.sub(r"\center([.\s\S]*?)\n", "", tikzcode)
+	#tikzcode = re.sub(r"end{figure}", "end{mainfigure}", tikzcode)
+	return tikzcode
+
+
+def compileLatex(o):
+
+	'''compile the output .tex file'''
+	os.system("pdflatex " + o)
+
+
+def texPath(labpath):			
+
+	'''creates a list of tex files with the nae *FULL* '''
+
+	listOfTex = []
+	titleList = []
+	for root, dirs, files in os.walk(labpath):
+		for filename in fnmatch.filter(files,pattern):
+			if fnmatch.fnmatch(filename, "*.tex"):
+				if filename:
+					tex = os.path.join(root,filename)
+					#print(tex)
+					title = sectionTitle(tex)
+					listOfTex.append(os.path.join(root,filename))
+	#print(type(titleList))
+#	listOfTex = str(listOfTex)
+	#print(type(listOfTex))
+#	listOfTex = title + listOfTex
+	#print(latexpaths)
+	return listOfTex
+
+
+def getTexPaths(lablist, root):
+	
+	
+	'''generates list of all tex files of interest '''
+	latexpaths = []
+	for lab in lablist:
+
+		'''list of absolute path to all folders'''
+		labpath = root + lab
+		#print(labpath)
+		#title = sectionTitle(labpath)
+		
+		
+		'''path to all tex files of interest'''
+		texfile = texPath(labpath)
+		#title = sectionTitle(texfile)
+		#print(title)
+		#print(texfile)
+		#latexpaths = texfile + latexpaths + texfile
+	return latexpaths
+
+
+
+
+with open(output, "w") as o:
+	
+	'''list of all labs by folder'''
+	lablist = listOfLabs(root_path)   
+	#print(lablist)
+
+	texPaths = getTexPaths(lablist, root_path)
+	#for lab in lablist:
+	#	print(lab)
+	#addTextList(doc_preamble, o)
+	
+	#latexpaths = []
+	#for lab in listOfLabs(root_path):
+	#	labpath = root_path + lab
+	#	texfiles = texPath(labpath)
+	#	latexpaths = latexpaths + texfiles
+	#listofdiagrams = []
+	#for tex in texPaths:
+	#	sectionTitle(tex,o)
+	#	getTikz(tex, "figure", listofdiagrams)
+		#getTikz(version, "marginfigure", listofdiagrams)
+		#getTikz(tex, "mainfigure", listofdiagrams)
+		
+
+
+	#	print(latexpaths)
+#	for i in latexpaths:
+#		print(i)
+
+	#printtype(latexpaths)
+		#docs = docs.remove("")
+		#print(docs)
+		#if docs:
+		#	sectionTitle(docs[0],o)
+		#listofdiagrams = []
+		#for version in docs:
+			#diagrams = []
+			#getTikz(version, "figure", listofdiagrams)
+			#getTikz(version, "marginfigure", listofdiagrams)
+			#getTikz(version, "mainfigure", listofdiagrams)
+		#listofdiagrams = set(listofdiagrams)
+		#listofdiagrams = list(listofdiagrams)
+		#for figure in listofdiagrams:
+		#	o.write("\\begin{mainfigure}\n")
+		#	o.write(figure)
+		#	o.write("end{mainfigure}\n\n")
+		#o.write("\\newpage\n")
+	#addTextList(doc_end, o)
+
+#compileLatex(output)
+#compileLatex(output)
+
+
+
+''' Old functions '''
+
+
+
+
+	
+			#for k in docs[j]:
+			#	print(k)
+
+			#return
+		#for i in listofdiagrams:
+		#	print(listofdiagrams[i][0])
+
+			#set(listofdiagrams)
+			#print(type(listofdiagrams))
+			#listofdiagrams=list(set(listofdiagrams))
+			#print(type(listofdiagrams))
+		#o.write(listofdiagrams)
+		
+				#sectionTitle(i,o)
+		#print(title)
+		#print(lst)
+#with open(output, 'w') as o:
+
+#	for i in listOfDocs(root_path):
+#		
+#		getTikz(i, "figure", o)
+#		getTikz(i, "marginfigure", o)
+#		getTikz(i, "mainfigure", o)
+#	addTextList(doc_end, o)
+#compileLatex(output)
+
