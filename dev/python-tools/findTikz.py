@@ -8,8 +8,8 @@ import re
 '''Define Paths '''
 root_path = "/usr/local/master/labs/"
 repository = root_path + "/repository"
-output_path = root_path + "/landingpage/templates"
-output_file = output_path + "/tikz.tex"
+output_path = root_path + "/landingpage/tikz-examples"
+output_file = output_path + "/tikz-examples.tex"
 typ = ["mainfigure", "marginfigure", "figure"]
 
 '''Define other parameters'''
@@ -61,7 +61,6 @@ def getTikz(lab, typ):
 				match = re.findall(r"\\begin{" + t + "}[.\s\S]*?\n([.\s\S]*?)\\\end{" + t + "}", s)
 				for i in match:
 					if "tikzpicture" in i:
-						print(i, "\n\n\n")
 						texCode.append(i)
 	
 	return list(set(texCode))
@@ -75,7 +74,6 @@ def addTextFromList(text_list, o):
 
 def writeTikzToFile(texCode, o):
 	o.write(texCode[0] + "\n\n")
-	[print(i) for i in texCode[1]]
 	for i in texCode[1]:
 		o.write("\\begin{figure}\n")
 		o.write(i + "\n")
