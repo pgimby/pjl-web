@@ -1542,6 +1542,7 @@ function makePromisesBeginZip(filelist) {
 	let files = filelist;
 	let promises = [];
 	let xhrs = [];
+	console.log(filelist)
 
 	//this callback runs whenever a file is successfully retreived. It updates the progress bar.
 	function increaseProgress() {
@@ -1558,7 +1559,6 @@ function makePromisesBeginZip(filelist) {
 		let downloadingfile = new $.Deferred();
 		downloadingfile.done(function(filename, blob) {
 			zip.file(filename, blob);
-			console.log(filename)
 		}, increaseProgress());
 		let xhr = beginDownload(files[i], downloadingfile);
 		promises.push(downloadingfile);
