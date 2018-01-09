@@ -76,8 +76,9 @@ def writeTikzToFile(texCode, o):
 	o.write(texCode[0] + "\n\n")
 	for i in texCode[1]:
 		o.write("\\begin{figure}\n")
-		o.write(i + "\n")
+		o.write(i)
 		o.write("\\end{figure}\n")
+		o.write("\n")
 
 
 def compileLatex(o):
