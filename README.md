@@ -406,7 +406,19 @@ labdb.replaceEquipment(replaced, replaced_with, push_to_alternate=True)
 labdb.save("updatedlabDB.xml")
 ```
 
+#### An instructor has designed and written a new lab experiment. A PJL lab tech wants to add this new lab to the database.
 
+```
+#import packages
+from pjlDB
+```
+
+
+#### The PJL just received 2 new oscilloscopes for use in the shop. A lab tech wants to add this new item to the inventory.
+
+```
+
+```
 
 
 
@@ -436,6 +448,7 @@ labdb.save("updatedlabDB.xml")
 
 
 ### Properties
+> Properties can be assigned to directly but beware that you will overwrite what was there before.
 
 ##### LabDB.tree
 > An `xml.etree.ElementTree.ElementTree` object for the database being held.
@@ -592,6 +605,7 @@ with db.log_file_object() as f:
 
 
 ### Properties
+> Properties can be assigned to directly but beware that you will overwrite what was there before.
 
 ##### _LabItem.id_num
 > An integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each lab.
@@ -622,8 +636,8 @@ _LabItem().versions = [{"path:"/data/repository/path/to/file.pdf", "semester":"F
 > A list of dictionaries representing individual equipment items. Each dictionary has 5 keys: "id", "name", "amount", "alt-id", and "alt-name". The last two key/value pairs are for alternate equipment, if it exists. If there is no alternate equipment item then the values must be empty strings, i.e., `{"alt-id": "", "alt-name": ""}`.  
 
 ```
-_LabItem().equipment = [{"id":"0001", "name":"Fluke multimeter", "amount" : "2", "alt-id"},
-                        {"id":"0003", "name":"string", "amount" : "1"}]
+_LabItem().equipment = [{"id":"0001", "name":"Fluke multimeter", "amount" : "2", "alt-id": "0132", "alt-name": "some item"},
+                        {"id":"0003", "name":"string", "amount" : "1", "alt-id": "", "alt-name": ""}]
 ```
 
 
@@ -719,6 +733,7 @@ db.addLab(lab)
 
 
 ### Properties
+> Properties can be assigned to directly but beware that you will overwrite what was there before.
 
 ##### EquipDB.tree
 > An `xml.etree.ElementTree.ElementTree` object for the database being held.
@@ -841,6 +856,7 @@ db.validateFull(error_log=True)
 
 
 ### Properties
+> Properties can be assigned to directly but beware that you will overwrite what was there before.
 
 ##### _EquipmentItem.id_num
 > An integer between 0001 and 9999 inclusive. These are ID numbers and are unique to each equipment item.
@@ -882,8 +898,8 @@ _EquipmentItem.quantity = {"total": "30", "service": "25", "repair": "5"}
 > A list of dictionaries identifying relevant documents to the item.
 
 ```
-_EquipmentItem.documents = [document = {"name": "Manual", "location": "/path/to/doc"},
-document = {"name": Warrantee, "location": "/path/to/doc"}]
+_EquipmentItem.documents = [{"name": "Manual", "location": "/path/to/doc"},
+                            {"name": Warrantee, "location": "/path/to/doc"}]
 ```
 
 
