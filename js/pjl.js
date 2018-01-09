@@ -1558,6 +1558,7 @@ function makePromisesBeginZip(filelist) {
 		let downloadingfile = new $.Deferred();
 		downloadingfile.done(function(filename, blob) {
 			zip.file(filename, blob);
+			console.log(filename)
 		}, increaseProgress());
 		let xhr = beginDownload(files[i], downloadingfile);
 		promises.push(downloadingfile);
