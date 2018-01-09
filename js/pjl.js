@@ -1621,10 +1621,6 @@ function beginDownload(filepath, promise) {
 	xhttp.onreadystatechange = function() {
     	if (this.readyState == 4 && this.status == 200) {
             blob = this.response;
-            //get the filename from the path
-            var filename = filepath.split("/");
-            filename = filename[filename.length-1];
-            // promise.notify(); //this line might be dead code - TOTEST
             //'filename' and 'blob' are passed as arguments to the resolved callback (see 'downloadingfile' promise in 'makePromisesBeginZip')
             promise.resolve(filepath.replace("/data/repository", ""), blob);
     	} else if(this.status == 404) {
@@ -1651,7 +1647,6 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 	//callback to be run when PHP returns a list of contents for a given directory (when its promise is resolved)
 	function fileCallback(promise) {
 		return function(d) {
-			// console.log(d)
 			filelist = filelist.concat(d.split(","));
 			promise.resolve();
 		}
@@ -1691,7 +1686,6 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 			filteredlist.concat(extradocs);
 		}
 		makePromisesBeginZip(filteredlist);
-		console.log(filteredlist)
 		console.log("An elegant syntax for ease of use,\neasy reading. Not abstruse.\n\nHaving this would sure be swell.\nPHP can rot in hell.")
 	});
 
