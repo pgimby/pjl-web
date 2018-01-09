@@ -1172,6 +1172,7 @@ footer {
 	.dl-modal-footer {
 		position: absolute;
 		bottom: 2px;
+		top: unset;
 	}
 
 	.dl-modal-content {
