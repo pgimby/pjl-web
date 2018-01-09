@@ -13,7 +13,7 @@ foreach($objects as $file => $object){
 	$tmp = explode("/", $file);
 	$filename = end($tmp);
 	if ($filename != ".." and $filename != "." and strpos($filename, ".") != 0) {
-		$files .= "," . str_replace("/var/www/html", "", $file);
+		$files .= "," . $dir . str_replace("/var/www/html", "", $file);
 	}
 }
 
