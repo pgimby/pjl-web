@@ -550,7 +550,10 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-orientation":"/data/safety/training/Orientation.pdf",
 				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL.pdf",
 				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV.pdf",
-				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf"};
+				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf",
+				 "pjl-581":"/data/landingpage/physics581.zip",
+				 "pjl-481":"/data/landingpage/physics481.zip",
+				 "pjl-381":"/data/landingpage/physics381.zip"};
 	let buttonid = $(e.target).attr("id");
 	window.location = links[buttonid];
 });
