@@ -514,7 +514,7 @@ labdb.save("updatedlabDB.xml")
 
 
 ##### LabDB.noDuplicateIDs(log_file=None)
-> Checks if the database contains any duplicate lab IDs. Returns True if no duplicates found, False if duplicates found. if `log` is None then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
+> Checks if the database contains any duplicate lab IDs. Returns True if no duplicates found, False if duplicates found. if `log_file` is `None` then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
 
 ```
 db = LabDB("../labDB.xml")
@@ -742,7 +742,97 @@ db.addLab(lab)
 
 ### Methods
 
-> TODO
+##### EquipDB.log_file_object()
+> Returns an open error log file object that can be written into.
+
+```
+with EquipDB.log_file_object() as f:
+    f.write("my custom error message")
+```
+
+
+##### EquipDB.validateFull(error_log=False)
+> Performs a full validation of the database being held. If `error_log` is True, the error log is written to a file in the working directory. If False, the error log is printed to the console.
+
+```
+db = EquipDB("../equipmentDB.xml")
+db.validateFull(error_log=True)
+```
+
+
+##### EquipDB.noDuplicateIDs(log_file=None)
+> Checks if the database contains any duplicate equipment IDs. Returns True if no duplicates found, False if duplicates found. If `log_file` is `None` then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
+
+```
+db = EquipDB("../equipmentDB.xml")
+
+with db.log_file_object() as f:
+    db.noDuplicateIDs(log_file=f)
+```
+
+
+##### EquipDB.hasValidPathRoots(log_file=None)
+> Confirms that equipment document locations have the proper directory prefix. Returns True if path roots are valid, False otherwise. If `log_file` is `None` then error log is printed to the console. If a file object is passed as an argument then the error log is written to that file.
+
+```
+db = EquipDB("../equipmentDB.xml")
+
+with db.log_file_object() as f:
+    db.hasValidPathRoots(log_file=f)
+```
+
+
+##### EquipDB.getItem(idnum=None, name=None)
+> Returns an `_EquipmentItem` object belonging to either `idnum` or `name`. Either equipment ID or equipment name may be used to access one of the items in the database. Throws an exception if a matching item cannot be found or if invalid arguments are passed.
+
+```
+db = EquipDB("../equipmentDB.xml")
+
+equipment_item1 = db.getItem(idnum=0012)
+equipment_item2 = db.getItem(name='Fluke multimeter')
+```
+
+
+##### EquipDB.deleteItem(idnum=None, name=None)
+> Deletes an `_EquipmentItem` object belonging to either `idnum` or `name`. Either equipment ID or equipment name may be used to access one of the items in the database. Throws an exception if a matching item cannot be found or if invalid arguments are passed.
+
+
+
+##### EquipDB.newItem(idn)
+> Returns a new `_EquipmentItem` object with ID number `idn`. If an item already exists in the database with ID number `idn` an exception is thrown. Use with `EquipDB.new_id` to generate a new item with the next available free ID number.
+
+```
+db = EquipDB("../equipmentDB.xml")
+
+new_item = db.newItem(db.new_id)
+```
+
+
+##### EquipDB.addItem(equipitem)
+> Adds an `_EquipmentItem` object to the held database. If an identical item already exists, it is replaced. If it does not already exist, a new equipment entry is appended to the held database.
+
+```
+db = EquipDB("../equipmentDB.xml")
+
+new_item = db.newItem(db.new_id)
+
+db.addItem(new_item)
+```
+
+
+##### EquipDB.save(filename, ignore_validation=False, error_log=False)
+> Saves the database as an XML file with UTF-8 encoding. If `ignore_validation` is True, `EquipDB` will attempt to write the XML without any validation of its contents. If False, a full validation will be performed before writing. If `error_log` is True, an error report will be saved to the working directory. If False, the error log will be printed to the console.
+
+```
+db = EquipDB("../equipmentDB.xml")
+db.validateFull(error_log=True)
+```
+
+
+
+
+
+
 
 
 
