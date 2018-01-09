@@ -1169,6 +1169,15 @@ footer {
 		max-height: unset;
 	}
 
+	.dl-modal-footer {
+		position: absolute;
+		bottom: 2px;
+	}
+
+	.dl-modal-footer {
+		height: unset;
+	}
+
 	.video-container {
 		max-width: 1100px;
 		width: 100%;
