@@ -1561,7 +1561,6 @@ function makePromisesBeginZip(filelist) {
 	for (let i = files.length - 1; i >= 0; i--) {
 		let downloadingfile = new $.Deferred();
 		downloadingfile.done(function(filename, blob) {
-			console.log(filename)
 			zip.file(filename, blob);
 		}, increaseProgress());
 		let xhr = beginDownload(files[i], downloadingfile);
@@ -1652,6 +1651,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 	//callback to be run when PHP returns a list of contents for a given directory (when its promise is resolved)
 	function fileCallback(promise) {
 		return function(d) {
+			console.log(d)
 			filelist = filelist.concat(d.split(","));
 			promise.resolve();
 		}
