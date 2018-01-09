@@ -1651,7 +1651,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 	//callback to be run when PHP returns a list of contents for a given directory (when its promise is resolved)
 	function fileCallback(promise) {
 		return function(d) {
-			console.log(d)
+			// console.log(d)
 			filelist = filelist.concat(d.split(","));
 			promise.resolve();
 		}
@@ -1691,6 +1691,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 			filteredlist.concat(extradocs);
 		}
 		makePromisesBeginZip(filteredlist);
+		console.log(filteredlist)
 		console.log("An elegant syntax for ease of use,\neasy reading. Not abstruse.\n\nHaving this would sure be swell.\nPHP can rot in hell.")
 	});
 
