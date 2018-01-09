@@ -381,7 +381,7 @@ class _EquipmentItem():
 
 
     def addDocument(self, doc):
-        if isinstance(dict, doc) and "name" in doc and "location" in doc:
+        if isinstance(doc, dict) and "name" in doc and "location" in doc:
             self.documents.append(doc)
         else:
             raise Exception("Invalid argument passed to _EquipmentItem.addDocument: argument must be dictionary with appropriate keys.")
@@ -389,7 +389,7 @@ class _EquipmentItem():
 
 
     def addLocation(self, loc):
-        if isinstance(dict, loc) and "room" in loc and "storage" in loc:
+        if isinstance(loc, dict) and "room" in loc and "storage" in loc:
             self.locations.append(loc)
         else:
             raise Exception("Invalid argument passed to _EquipmentItem.addLocation: argument must be dictionary with appropriate keys.")
@@ -724,7 +724,7 @@ class LabDB():
         else:
             raise Exception("Invalid arguments passed to _LabDB.replaceEquipment")
 
-        
+
 
     def _makelabs(self):
         for child in self.root:
@@ -867,7 +867,7 @@ class _LabItem():
 
 
     def addVersion(self, version):
-        if isinstance(dict, version) \
+        if isinstance(version, dict) \
            and "path" in version \
            and "semester" in version \
            and "year" in version \
@@ -880,7 +880,7 @@ class _LabItem():
 
 
     def addEquipment(self, item):
-        if isinstance(dict, item) and "id" in item and "name" in item and "amount" in item:
+        if isinstance(item, dict) and "id" in item and "name" in item and "amount" in item:
             if "alt-id" in item and "alt-name" in item:
                 self.equipment.append(item)
             else:
@@ -893,7 +893,7 @@ class _LabItem():
 
 
     def addSupportDoc(self, doc):
-        if isinstance(dict, doc) and "name" in doc and "path" in doc:
+        if isinstance(doc, dict) and "name" in doc and "path" in doc:
             self.support_docs.append(doc)
         else:
             raise Exception("Invalid argument passed to _LabItem.addSupportDoc: argument must be dictionary with appropriate keys.")
