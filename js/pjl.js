@@ -1626,7 +1626,7 @@ function beginDownload(filepath, promise) {
             filename = filename[filename.length-1];
             // promise.notify(); //this line might be dead code - TOTEST
             //'filename' and 'blob' are passed as arguments to the resolved callback (see 'downloadingfile' promise in 'makePromisesBeginZip')
-            promise.resolve(filename, blob);
+            promise.resolve(filepath.replace("/data/repository", ""), blob);
     	} else if(this.status == 404) {
     		promise.reject();
     	} else if (this.status == 403) {
