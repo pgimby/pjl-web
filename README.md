@@ -808,8 +808,15 @@ equipment_item2 = db.getItem(name='Fluke multimeter')
 ```
 
 
-##### EquipDB.deleteItem(idnum=None, name=None)
-> Deletes an `_EquipmentItem` object belonging to either `idnum` or `name`. Either equipment ID or equipment name may be used to access one of the items in the database. Throws an exception if a matching item cannot be found or if invalid arguments are passed.
+##### EquipDB.deleteItem(lab_database, idnum=None, name=None)
+> Deletes an `_EquipmentItem` object belonging to either `idnum` or `name`. Either equipment ID or equipment name may be used to access one of the items in the database. The argument `lab_database` is a `LabDB` object and is used to confirm if the item being deleted is an essential part of any lab set ups. Throws an exception if a matching item cannot be found or if invalid arguments are passed.
+
+```
+labdb = LabDB("../labDB.xml")
+eqdb = EquipDB("../equipmentDB.xml")
+
+eqdb.deleteItem(labdb, idnum="0001")
+```
 
 
 
