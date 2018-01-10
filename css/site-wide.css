@@ -187,10 +187,6 @@ svg text {
 
 #landing-intro-container {
 	padding: 72px 0;
-	/*display: -webkit-flex;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;*/
 }
 
 
@@ -343,15 +339,12 @@ svg text {
 }
 
 #landing-grid-1 .landing-icon-box > div {
-	/*flex: 4;
-	text-align: left;*/
 }
 
 #landing-grid-1 .landing-icon-box {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	/*width: unset;*/
 	margin: 8px 0;
 }
 
@@ -506,8 +499,48 @@ video {
 }
 
 
+/*Downloads page styles*/
 
+#downloads-title {
+	width: 100%;
+	text-align: left;
+	margin-top: 80px;
+}
 
+#file-downloads-container {
+	min-height: 100vh;
+	width: 100%;
+}
+
+#file-downloads-container > a {
+	all: unset;
+}
+
+.file-download {
+	width: 600px;
+	padding: 4px;
+	margin: 24px 12px;
+	border-radius: 2px;
+}
+
+.file-download:hover {
+	box-shadow: 0 0 4px 0 #777;
+	cursor: default;
+}
+
+.file-download > * {
+	display: inline-block;
+	line-height: 3em;
+	pointer-events: none;
+}
+
+.file-download > i {
+	font-size: 3em;
+}
+
+.file-download p {
+	color: #777;
+}
 
 
 
@@ -945,10 +978,6 @@ footer {
 }
 
 .dl-modal-content {
-	/*display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;*/
 	height: 400px;
 	overflow-y: auto;
 }
