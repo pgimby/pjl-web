@@ -71,9 +71,9 @@ class EquipmentDisplay {
 				let storage = locationnodes[i].getElementsByTagName("Storage")[0].childNodes[0].nodeValue;
 				locations.push({"room": room, "storage": storage})
 			}
-			let total = (data.getElementsByTagName("Total")[0].childNodes[0] ? data.getElementsByTagName("Total")[0].childNodes[0].nodeValue : "N/A")
-			let service = (data.getElementsByTagName("InService")[0].childNodes[0] ? data.getElementsByTagName("InService")[0].childNodes[0].nodeValue : "N/A")
-			let repair = (data.getElementsByTagName("UnderRepair")[0].childNodes[0] ? data.getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "N/A")
+			let total = (data.getElementsByTagName("Total")[0].childNodes[0] ? data.getElementsByTagName("Total")[0].childNodes[0].nodeValue : "N/A");
+			let service = (data.getElementsByTagName("InService")[0].childNodes[0] ? data.getElementsByTagName("InService")[0].childNodes[0].nodeValue : "N/A");
+			let repair = (data.getElementsByTagName("UnderRepair")[0].childNodes[0] ? data.getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "N/A");
 			let docs = [];
 			let docnodes = data.getElementsByTagName("Document");
 			for (let i = docnodes.length - 1; i >= 0; i--) {
@@ -89,7 +89,7 @@ class EquipmentDisplay {
 
 			let content = modal.append("div").classed("eq-modal-content", true);
 			let img = content.append("div").classed("eq-modal-img", true);
-			let thumbnail = (data.getElementsByTagName("Thumbnail")[0].childNodes[0] ? data.getElementsByTagName("Thumbnail")[0].childNodes[0].nodeValue : "/img/img-placeholder.png");
+			let thumbnail = (Boolean(data.getElementsByTagName("Thumbnail")[0]) ? data.getElementsByTagName("Thumbnail")[0].childNodes[0].nodeValue : "/img/img-placeholder.png");
 			img.append("img").attr("src", thumbnail);
 			let ident = content.append("div").classed("eq-modal-id", true);
 			ident.append("h3").classed("eq-modal-name", true).html(name);
