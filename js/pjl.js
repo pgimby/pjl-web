@@ -544,17 +544,18 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-scint": "/",
 				 "pjl-latex-template": "/data/landingpage/templates.zip",
 				 "pjl-tikz-examples": "/data/landingpage/tikz-examples.zip",
-				 "pjl-inventory":"/staffresources/equipment",
-				 "pjl-github":"https://github.com/pgimby/pjl-web",
-				 "pjl-lab-rules":"/data/safety/lab-rules/Lab-Rules.pdf",
-				 "pjl-rad-safety":"/data/safety/training/Radiation-Safety/Radiation-Safety.pdf",
-				 "pjl-orientation":"/data/safety/training/Orientation.pdf",
-				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL.pdf",
-				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV.pdf",
-				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf",
-				 "pjl-581":"/data/landingpage/physics581.zip",
-				 "pjl-481":"/data/landingpage/physics481.zip",
-				 "pjl-381":"/data/landingpage/physics381.zip"};
+				 "pjl-inventory": "/staffresources/equipment",
+				 "pjl-github": "https://github.com/pgimby/pjl-web",
+				 "pjl-lab-rules": "/data/safety/lab-rules/Lab-Rules.pdf",
+				 "pjl-rad-safety": "/data/safety/training/Radiation-Safety/Radiation-Safety.pdf",
+				 "pjl-orientation": "/data/safety/training/Orientation.pdf",
+				 "pjl-hacf-pjl": "/data/safety/HACFs/HACF-PJL.pdf",
+				 "pjl-hacf-adv": "/data/safety/HACFs/HACF-TA-ADV.pdf",
+				 "pjl-hacf-std": "/data/safety/HACFs/HACF-TA-STD.pdf",
+				 "pjl-581": "/data/landingpage/physics581.zip",
+				 "pjl-481": "/data/landingpage/physics481.zip",
+				 "pjl-381": "/data/landingpage/physics381.zip",
+				 "pjl-downloads": "/downloads"};
 	let buttonid = $(e.target).attr("id");
 	window.location = links[buttonid];
 });
