@@ -89,7 +89,8 @@ class EquipmentDisplay {
 
 			let content = modal.append("div").classed("eq-modal-content", true);
 			let img = content.append("div").classed("eq-modal-img", true);
-			img.append("img").attr("src", "/img/img-placeholder.png");
+			let thumbnail = (data.getElementsByTagName("Thumbnail")[0].childNodes[0] ? data.getElementsByTagName("Thumbnail")[0].childNodes[0].nodeValue : "/img/img-placeholder.png");
+			img.append("img").attr("src", thumbnail);
 			let ident = content.append("div").classed("eq-modal-id", true);
 			ident.append("h3").classed("eq-modal-name", true).html(name);
 			let mm = ident.append("div").classed("eq-make-model", true);
