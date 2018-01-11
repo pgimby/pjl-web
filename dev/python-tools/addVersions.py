@@ -16,9 +16,9 @@ with open("lst.csv", 'r') as o:
 	for version in new_versions:
 		lab = db.getLab(idnum=version[0])
 		new_version = {"path": version[1],"semester": version[2],"year": version[3],"course": version[4],"directory": "/".join(version[1].split("/")[:-1])}
+		lab.addVersion(new_version)
+		db.addLab(lab)
 
-	lab.addVersion(new_version)
-	db.addLab(lab)
 
-#db.save("/dev/tmp.xml", ignore_validation=True, error_log=True)
-db.save("/dev/updatedlabDB.xml", ignore_validation=False, error_log=True)
+#db.save("../updatedlabDB.xml", ignore_validation=False, error_log=False)
+db.save("../labDB.xml", ignore_validation=False, error_log=False)

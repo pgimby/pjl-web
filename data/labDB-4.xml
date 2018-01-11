@@ -248,7 +248,7 @@
         <Name>Geiger-Mueller tube BNC cable</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="03465">
+      <Item id="0346">
         <Name>Geiger-Mueller tube power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -3194,8 +3194,12 @@
   </Lab>
   <Lab labId="0045">
     <Name>Electric Charges and the Forces between them</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Electrostatics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259WI2017/Phys259-Labatorial01-Charges-and-Forces-WI2017.pdf</Path>
@@ -3319,8 +3323,14 @@
   </Lab>
   <Lab labId="0096">
     <Name>Hall Effect and Magnetic Hysteresis</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Magnetism</Topic>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0096-Hall-Effect-and-Magnetic-Hysteresis/0096-PHYS397FA2016/Hall-Effect-and-Magnetic-Hysteresis-FA2016.pdf</Path>
@@ -6835,8 +6845,13 @@
   </Lab>
   <Lab labId="0005">
     <Name>Newton's Third Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0005-Newtons-Third-Law/0005-PHYS211FA2016/Phys211-221-Labatorial07-Newtons-3rd-Law-FA2016.pdf</Path>
@@ -7232,8 +7247,13 @@
   </Lab>
   <Lab labId="0004">
     <Name>Newton's Second Law</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0004-Newtons-Second-Law/0004-PHYS211FA2016/Phys211-221-Labatorial06-Newtons-2nd-Law-FA2016.pdf</Path>
@@ -8206,8 +8226,12 @@
   </Lab>
   <Lab labId="0023">
     <Name>Introduction to 3D Computational Modelling</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Programming</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0023-Introduction-to-3D-Computational-Modelling/0023-PHYS227FA2016/227_2016_Lab01_Introduction_to_computation.pdf</Path>
@@ -8461,8 +8485,12 @@
   </Lab>
   <Lab labId="0015">
     <Name>Introduction to Electric Circuits</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223WI2017/Phys223-Labatorial04-Electric-Circuits-WI2017.pdf</Path>
@@ -8664,8 +8692,17 @@
   </Lab>
   <Lab labId="0070">
     <Name>Evidence for Quantized Atomic Energy Levels</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Quantum Mechanics</Discipline>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Collisions</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Circuits</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2017/Evidence-for-Quantized-Atomic-Energy-Levels-WI2017.pdf</Path>
@@ -8754,8 +8791,12 @@
   </Lab>
   <Lab labId="0087">
     <Name>Measurements and Uncertainties for Engineers</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0087-Measurements-and-Uncertainties-for-Engineers/0087-PHYS365FA2016/Measurements-and-Uncertainties-FA2016.pdf</Path>
@@ -9177,8 +9218,12 @@
   </Lab>
   <Lab labId="0047">
     <Name>Electric Resistivity of Play-Doh</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2017/Phys259-Labatorial07-Play-Doh-Resistors-WI2017.pdf</Path>
@@ -9322,8 +9367,15 @@
   </Lab>
   <Lab labId="0034">
     <Name>Electric Field Mapping</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Electrostatics</Topic>
+      <Topic>Integration</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2017/Electric-Potential-Mapping-WI2017.pdf</Path>
@@ -9416,8 +9468,13 @@
   </Lab>
   <Lab labId="0039">
     <Name>Magnetic Fields and Magnetic Force</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Electricity and Magnetism</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Circuits</Topic>
+      <Topic>Magnetism</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0039-Magnetic-Fields-and-Magnetic-Force/0039-PHYS259WI2017/Phys259-Labatorial08-Magnetic-Fields-WI2017.pdf</Path>
@@ -9834,8 +9891,13 @@
   </Lab>
   <Lab labId="0007">
     <Name>Statics (Newton's First Law in 2 Dimensions)</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>Statics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0007-Statics-Newtons-First-Law-in-2-Dimensions/0007-PHYS211FA2016/Phys211-221-Labatorial05-Statics-FA2016.pdf</Path>
@@ -10090,8 +10152,12 @@
   </Lab>
   <Lab labId="0008">
     <Name>Two Dimensional Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Kinematics</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0008-Two-Dimensional-Motion/0008-PHYS211FA2016/Phys211-221-Labatorial04-2D-Motion-FA2016.pdf</Path>
@@ -11138,8 +11204,15 @@
   </Lab>
   <Lab labId="0124">
     <Name>Bifilar Suspension</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Dynamics</Topic>
+      <Topic>Rotational Motion</Topic>
+      <Topic>Newton’s Laws</Topic>
+      <Topic>ODE</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0124-Bifilar-Suspension/0124-LEGACY/Bifilar-Suspension.pdf</Path>
@@ -12038,8 +12111,14 @@
   </Lab>
   <Lab labId="0140">
     <Name>Advanced Measurements and Uncertainties</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+      <Discipline>Math</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Statistics</Topic>
+      <Topic>Measurements</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0140-Advanced-Measurements-and-Uncertainties/0140-PHYS323FA2011/Advanced-Measurements-and-Uncertainties.pdf</Path>
@@ -14680,8 +14759,14 @@
   </Lab>
   <Lab labId="0182">
     <Name>Modelling Motion</Name>
-    <Disciplines/>
-    <Topics/>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Computer Skills</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Kinematics</Topic>
+      <Topic>Programming</Topic>
+    </Topics>
     <Versions>
       <Version>
         <Path>/data/repository/0182-Modelling-Motion/0182-PHYS227FA2016/227_2016_Lab03_Modelling_Motion.pdf</Path>
