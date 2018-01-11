@@ -20,5 +20,5 @@ with open("lst.csv", 'r') as o:
 		db.addLab(lab)
 
 
-#db.save("../updatedlabDB.xml", ignore_validation=False, error_log=False)
-db.save("../labDB.xml", ignore_validation=False, error_log=False)
+db.save("../updatedlabDB.xml", ignore_validation=False, error_log=False)
+#db.save("../labDB.xml", ignore_validation=False, error_log=False)
