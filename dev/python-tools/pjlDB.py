@@ -181,10 +181,33 @@ class EquipDB():
 
 
 
-    def deleteItem(self, idnum=None, name=None):
+    def deleteItem(self, lab_database, idnum=None, name=None):
         if not idnum and not name:
             return None
+        if not isinstance(lab_database, LabDB):
+            raise TypeError("Argument 'lab_database' passed to EquipDB.deleteItem was not a LabDB object")
+
         if idnum and isValidID(idnum):
+            check, labs = self._isPrimaryEquipment(idnum, lab_database)
+            if check:
+                print("Item " + str(idnum) + " is used in the following labs (primary equipment):\n")
+                for lab in labs:
+                    print(lab["name"] + " (" + lab["id"] + ")")
+                goahead = input("Doth thou wisheth to proceed? (y/N)")
+                if goahead != "Y" and goahead != "y":
+                    print("Deletion aborted")
+                    return None
+
+            check, labs = self._isAlternateEquipment(idnum, lab_database)
+            if check:
+                print("Item " + str(idnum) + " is used in the following labs (alternate equipment):\n")
+                for lab in labs:
+                    print(lab["name"] + " (" + lab["id"] + ")")
+                goahead = input("Doth thou wisheth to proceed? (y/N)")
+                if goahead != "Y" and goahead != "y":
+                    print("Deletion aborted")
+                    return None
+
             try:
                 for item in self.equipment:
                     if item.id_num == idnum:
@@ -256,6 +279,32 @@ class EquipDB():
 
 
 
+    def _isPrimaryEquipment(self, idnum, lab_database):
+        check = False
+        labs = []
+        for lab in lab_database.labs:
+            for eq in lab.equipment:
+                if eq["id"] == idnum:
+                    labs.append({"name": lab.name, "id": lab.id_num})
+                    check = True
+                    break
+        return check, labs
+
+
+
+    def _isAlternateEquipment(self, idnum, lab_database):
+        check = False
+        labs = []
+        for lab in lab_database.labs:
+            for eq in lab.equipment:
+                if eq["alt-id"] == idnum:
+                    labs.append({"name": lab.name, "id": lab.id_num})
+                    check = True
+                    break
+        return check, labs
+
+
+
     def _makeEquipment(self):
         for child in self.root:
             self.equipment.append(_EquipmentItem(item=child))
@@ -303,6 +352,8 @@ class EquipDB():
             manufacturer.text = equipitem.manufacturer
             model = ET.SubElement(identification, "Model")
             model.text = equipitem.model
+            thumb = ET.SubElement(identification, "Thumbnail")
+            thumb.text = equipitem.thumbnail
             kit = ET.SubElement(item, "Kit")
             kit.attrib = {"isKit": "true" if equipitem.is_kit else "false"}
             locations = ET.SubElement(item, "Locations")
@@ -351,6 +402,7 @@ class _EquipmentItem():
             self.name = item.findtext("InventoryName")
             self.manufacturer = item.findtext(".//Manufacturer")
             self.model = item.findtext(".//Model")
+            self.thumbnail = item.findtext(".//Thumbnail")
             self.is_kit = True if item.find("Kit").attrib["isKit"] == "true" else False
             self.locations = []
             for loc in item.findall(".//Location"):
@@ -374,6 +426,7 @@ class _EquipmentItem():
             self.locations = []
             self.quantity = {"total": "", "service": "", "repair": ""}
             self.documents = []
+            self.thumbnail = "/img/img-placeholder.png"
 
         else:
             raise Exception("Invalid arguments passed to _EquipmentItem: either a valid Item or a valid equipment ID must be passed")

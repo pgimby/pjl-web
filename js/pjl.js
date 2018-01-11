@@ -61,9 +61,9 @@ class EquipmentDisplay {
 		//build the display on top of the modal mask and populate with the equipment details contained in 'data'
 		self._buildDisplay = function(data) {
 			let id = data.getAttribute("id");
-			let name = (Boolean(data.getElementsByTagName("InventoryName")[0]) ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "none");
-			let make = (Boolean(data.getElementsByTagName("Manufacturer")[0]) ? data.getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "none");
-			let model = (Boolean(data.getElementsByTagName("Model")[0]) ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "none");
+			let name = (data.getElementsByTagName("InventoryName")[0].childNodes[0] ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "none");
+			let make = (data.getElementsByTagName("Manufacturer")[0].childNodes[0] ? data.getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "none");
+			let model = (data.getElementsByTagName("Model")[0].childNodes[0] ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "none");
 			let locations = [];
 			let locationnodes = data.getElementsByTagName("Locations")[0].getElementsByTagName("Location");
 			for (let i = locationnodes.length - 1; i >= 0; i--) {
@@ -71,9 +71,9 @@ class EquipmentDisplay {
 				let storage = locationnodes[i].getElementsByTagName("Storage")[0].childNodes[0].nodeValue;
 				locations.push({"room": room, "storage": storage})
 			}
-			let total = (Boolean(data.getElementsByTagName("Total")[0]) ? data.getElementsByTagName("Total")[0].childNodes[0].nodeValue : "N/A");
-			let service = (Boolean(data.getElementsByTagName("InService")[0]) ? data.getElementsByTagName("InService")[0].childNodes[0].nodeValue : "N/A");
-			let repair = (Boolean(data.getElementsByTagName("UnderRepair")[0]) ? data.getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "N/A");
+			let total = (data.getElementsByTagName("Total")[0].childNodes[0] ? data.getElementsByTagName("Total")[0].childNodes[0].nodeValue : "N/A");
+			let service = (data.getElementsByTagName("InService")[0].childNodes[0] ? data.getElementsByTagName("InService")[0].childNodes[0].nodeValue : "N/A");
+			let repair = (data.getElementsByTagName("UnderRepair")[0].childNodes[0] ? data.getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "N/A");
 			let docs = [];
 			let docnodes = data.getElementsByTagName("Document");
 			for (let i = docnodes.length - 1; i >= 0; i--) {
@@ -544,17 +544,18 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-scint": "/",
 				 "pjl-latex-template": "/data/landingpage/templates.zip",
 				 "pjl-tikz-examples": "/data/landingpage/tikz-examples.zip",
-				 "pjl-inventory":"/staffresources/equipment",
-				 "pjl-github":"https://github.com/pgimby/pjl-web",
-				 "pjl-lab-rules":"/data/safety/lab-rules/Lab-Rules.pdf",
-				 "pjl-rad-safety":"/data/safety/training/Radiation-Safety/Radiation-Safety.pdf",
-				 "pjl-orientation":"/data/safety/training/Orientation.pdf",
-				 "pjl-hacf-pjl":"/data/safety/HACFs/HACF-PJL.pdf",
-				 "pjl-hacf-adv":"/data/safety/HACFs/HACF-TA-ADV.pdf",
-				 "pjl-hacf-std":"/data/safety/HACFs/HACF-TA-STD.pdf",
-				 "pjl-581":"/data/landingpage/physics581.zip",
-				 "pjl-481":"/data/landingpage/physics481.zip",
-				 "pjl-381":"/data/landingpage/physics381.zip"};
+				 "pjl-inventory": "/staffresources/equipment",
+				 "pjl-github": "https://github.com/pgimby/pjl-web",
+				 "pjl-lab-rules": "/data/safety/lab-rules/Lab-Rules.pdf",
+				 "pjl-rad-safety": "/data/safety/training/Radiation-Safety/Radiation-Safety.pdf",
+				 "pjl-orientation": "/data/safety/training/Orientation.pdf",
+				 "pjl-hacf-pjl": "/data/safety/HACFs/HACF-PJL.pdf",
+				 "pjl-hacf-adv": "/data/safety/HACFs/HACF-TA-ADV.pdf",
+				 "pjl-hacf-std": "/data/safety/HACFs/HACF-TA-STD.pdf",
+				 "pjl-581": "/data/landingpage/physics581.zip",
+				 "pjl-481": "/data/landingpage/physics481.zip",
+				 "pjl-381": "/data/landingpage/physics381.zip",
+				 "pjl-downloads": "/downloads"};
 	let buttonid = $(e.target).attr("id");
 	window.location = links[buttonid];
 });
