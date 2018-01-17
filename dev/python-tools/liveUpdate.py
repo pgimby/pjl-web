@@ -33,6 +33,7 @@ if mountTest == 0:
     os.system("rsync --delete -avz " + sourceFolder + "/schedules/ " + destFolder + "/schedules/")
     os.system("rsync --delete -avz " + sourceFolder + "/web-security/ " + destFolder + "/web-security/")
     os.system("rsync --delete -avz " + sourceFolder + "/landingpage/ " + destFolder + "/landingpage/")
+    os.system("rsync --delete -avz " + sourceFolder + "/downloads/ " + destFolder + "/downloads/")
 
 
 # unmount source files
@@ -44,6 +45,8 @@ os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
 os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
 os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
+#os.system("find " + destFolder + " -name *FULL* -type f -exec chmod 000 {} \;")
+#os.system("find " + destFolder + " -name *-CG-* -type f -exec chmod 000 {} \;")
 
 os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
 os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
