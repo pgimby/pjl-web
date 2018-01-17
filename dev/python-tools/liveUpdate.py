@@ -7,7 +7,6 @@
 
 import os
 import subprocess
-checkPermissions = "no"
 
 # define folder locations
 slugFolder = "slug:/usr/local/master/labs"
@@ -21,39 +20,45 @@ owner = "pgimby"
 group = "pjl_admins"
 apacheUser = "www-data"
 
-# mount the master copy of the repository on to web server
-os.system("mount " + slugFolder + " " + sourceFolder)
+host="watt"
+myhost = os.uname()[1]
+if host == myhost:
+
+    # mount the master copy of the repository on to web server
+    os.system("mount " + slugFolder + " " + sourceFolder)
 
 
 # Test to make sure master repository is mount, and if so sync master copy to live copy
-mountTest = os.system("mount | grep labs.slug > /dev/null")
-if mountTest == 0:
-    os.system("rsync --delete -avz " + sourceFolder + "/repository/ " + destFolder + "/repository/")
-    os.system("rsync --delete -avz " + sourceFolder + "/safety/ " + destFolder + "/safety/")
-    os.system("rsync --delete -avz " + sourceFolder + "/schedules/ " + destFolder + "/schedules/")
-    os.system("rsync --delete -avz " + sourceFolder + "/web-security/ " + destFolder + "/web-security/")
-    os.system("rsync --delete -avz " + sourceFolder + "/landingpage/ " + destFolder + "/landingpage/")
-    os.system("rsync --delete -avz " + sourceFolder + "/downloads/ " + destFolder + "/downloads/")
+    mountTest = os.system("mount | grep labs.slug > /dev/null")
+    if mountTest == 0:
+        os.system("rsync --delete -avz " + sourceFolder + "/repository/ " + destFolder + "/repository/")
+        os.system("rsync --delete -avz " + sourceFolder + "/safety/ " + destFolder + "/safety/")
+        os.system("rsync --delete -avz " + sourceFolder + "/schedules/ " + destFolder + "/schedules/")
+        os.system("rsync --delete -avz " + sourceFolder + "/web-security/ " + destFolder + "/web-security/")
+        os.system("rsync --delete -avz " + sourceFolder + "/landingpage/ " + destFolder + "/landingpage/")
+        os.system("rsync --delete -avz " + sourceFolder + "/downloads/ " + destFolder + "/downloads/")
+
+    # change permissions and ownerships of files and folders
+    os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
+    os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
+    os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
+    os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
+
+    # Change permissions of a few important files/folders
+    os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
+    os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
+    os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
+    os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
+    os.system("chown root." + apacheUser + " " + webRoot + "/data" )
+    os.system("chmod 775 " + webRoot + "/data" )
 
 
-# unmount source files
-os.system("umount " + sourceFolder)
+    # unmount source files
+    os.system("umount " + sourceFolder)
+else:
+    print("This script is designed to be run on " + host + " only")
+    print("Exiting")
+    exit()
 
-
-# change permissions and ownerships of files and folders
-
-if checkPermissions == "yes":
-	os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
-	os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
-	os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
-	os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
-
-	os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
-	os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
-	os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
-	os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
-
-	os.system("chown root." + apacheUser + " " + webRoot + "/data" )
-	os.system("chmod 775 " + webRoot + "/data" )
 
 print("...and then there will be cake")

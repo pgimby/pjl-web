@@ -331,16 +331,16 @@
   <Item id="0206">
     <InventoryName>air track cart</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer></Manufacturer>
+      <Model></Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>D13</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>21</Total>
+      <InService>21</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -460,11 +460,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>D9</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>112</Total>
+      <InService>112</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1939,16 +1939,16 @@
   <Item id="0205">
     <InventoryName>inclinometer</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Dasco</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>D4</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>10</Total>
+      <InService>10</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2877,11 +2877,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>D9</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>79</Total>
+      <InService>79</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2968,14 +2968,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      <Location>
-        <Room>ST030</Room>
-        <Storage>D3</Storage>
-      </Location>
-    </Locations>
+      
+    <Location><Room>ST030</Room><Storage>D7</Storage></Location></Locations>
     <Quantity>
-      <Total>23</Total>
-      <InService>23</InService>
+      <Total>29</Total>
+      <InService>29</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -4974,11 +4971,11 @@
     </Identification>
     <Kit isKit="true">plastic beaker, brass rectangle (2), brass disk (2), ball bearing, aluminum tube
 </Kit>
-    <Locations/>
+    <Locations><Location><Room>ST030</Room><Storage>D4</Storage></Location></Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>8</Total>
+      <InService>8</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
