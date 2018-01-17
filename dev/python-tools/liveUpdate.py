@@ -7,7 +7,7 @@
 
 import os
 import subprocess
-
+checkPermissions = "no"
 
 # define folder locations
 slugFolder = "slug:/usr/local/master/labs"
@@ -41,25 +41,19 @@ os.system("umount " + sourceFolder)
 
 
 # change permissions and ownerships of files and folders
-os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
-os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
-os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
-os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
-#os.system("find " + destFolder + " -name *FULL* -type f -exec chmod 000 {} \;")
-#os.system("find " + destFolder + " -name *-CG-* -type f -exec chmod 000 {} \;")
 
-os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
-os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
-os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
-os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
+if checkPermissions == "yes":
+	os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
+	os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
+	os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
+	os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 
-os.system("chown root." + apacheUser + " " + webRoot + "/data" )
-os.system("chmod 775 " + webRoot + "/data" )
+	os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
+	os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
+	os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
+	os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
 
+	os.system("chown root." + apacheUser + " " + webRoot + "/data" )
+	os.system("chmod 775 " + webRoot + "/data" )
 
-# recreate symlinks after rsync from master repository
-#os.system("echo rm " + webRoot + "/data/repository")
-#os.system("echo ln -s " + destFolder + "/repository " + webRoot + "/data/repository")
-
-# confirm end of script
 print("...and then there will be cake")
