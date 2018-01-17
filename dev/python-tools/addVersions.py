@@ -9,8 +9,6 @@ import csv
 with open("lst.csv", 'r') as o:
 	reader = csv.reader(o)
 	new_versions = list(reader)
-#new_versions = [['0102', '/data/repository/0102-AC-Circuits-and-Voltage-Dividers/0102-PHYS497WI2018/AC-Circuits-and-Voltage-Dividers-WI2018.pdf ', 'Winter', '2018', 'PHYS 497']]
-
 	db = LabDB("../../data/labDB.xml")
 
 	for version in new_versions:
@@ -20,5 +18,4 @@ with open("lst.csv", 'r') as o:
 		db.addLab(lab)
 
 
-db.save("../updatedlabDB.xml", ignore_validation=False, error_log=False)
-#db.save("../labDB.xml", ignore_validation=False, error_log=False)
+db.save("../updatedlabDB.xml", ignore_validation=False, error_log=True)
