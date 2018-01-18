@@ -3,8 +3,7 @@
 # Script is to be run on slug to update permissions and ownership of files to sync to webserver
 #
 # Written by Peter Gimby Jan 17, 2018
-#
-# Must be run with sudo
+
 import os
 
 root="/usr/local/master/labs"
@@ -42,7 +41,3 @@ else:
 	exit()
 
 print("...and then there will be cake")
-	#changePerm(webSecurity,"root","root","644","755")
-	#for i in publicDocs:
-	
-	#	changePerm(i,"pgimby","pjl_admins","644","755")
