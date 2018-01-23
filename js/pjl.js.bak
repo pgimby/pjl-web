@@ -64,7 +64,6 @@ class EquipmentDisplay {
 			let name = (data.getElementsByTagName("InventoryName")[0].childNodes[0] ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "none");
 			let make = (data.getElementsByTagName("Manufacturer")[0].childNodes[0] ? data.getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "none");
 			let model = (data.getElementsByTagName("Model")[0].childNodes[0] ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "none");
-			let kitparts = (data.getElementsByTagName("Kit")[0].childNodes[0] ? data.getElementsByTagName("Kit")[0].childNodes[0].nodeValue : "none");
 			let locations = [];
 			let locationnodes = data.getElementsByTagName("Locations")[0].getElementsByTagName("Location");
 			for (let i = locationnodes.length - 1; i >= 0; i--) {
@@ -97,7 +96,6 @@ class EquipmentDisplay {
 			let mm = ident.append("div").classed("eq-make-model", true);
 			mm.append("p").classed("eq-make", true).html(make);
 			mm.append("p").classed("eq-model", true).html(model);
-			let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);
 			let locs = content.append("div").classed("eq-modal-locations", true);
 			locs.append("h1").classed("modal-header", true).html("Locations");
 			for (let i = locations.length - 1; i >= 0; i--) {
@@ -746,25 +744,14 @@ function createEquipRecordSnapshots(xml) {
 		let make = snapshot.append("p").classed("eq-record-make", true).html(eqmake);
 		let model = snapshot.append("p").classed("eq-record-model", true).html(eqmodel);
 		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
-		
-		let locationsnode = equiplist[i].getElementsByTagName("Locations")[0];
-		if (locationsnode.childNodes) {
-			let locationnodes = locationsnode.getElementsByTagName("Location");
-
-			locations = [];
-			for (let r = locationnodes.length - 1; r >= 0; r--) {
-				let room = locationnodes[r].getElementsByTagName("Room")[0].childNodes[0].nodeValue;
-				let storage = locationnodes[r].getElementsByTagName("Storage")[0].childNodes[0].nodeValue;
-				locations.push(room + "-" + storage);
-			}
-			snapshot.attr("data-locations", locations.join());
-		} else {
-			snapshot.attr("data-locations", "");
+		let roomnodes = equiplist[i].getElementsByTagName("Room");
+		let rooms = [];
+		for (let r = roomnodes.length - 1; r >= 0; r--) {
+			rooms.push(roomnodes[r].childNodes[0].nodeValue);
 		}
-
+		snapshot.attr("data-rooms", rooms.join());
 		let repair = (equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0] ? equiplist[i].getElementsByTagName("UnderRepair")[0].childNodes[0].nodeValue : "—");
 		snapshot.attr("data-repair", repair);
-
 	}
 	applyRecordsMask(true);
 	displayNumResults(countNumRecords());
@@ -802,14 +789,7 @@ function filterResults(filter, fullset=true) {
 			let item = $(recordlist[i]);
 			let id = item.find(".eq-record-id").text();
 			let make = item.find(".eq-record-make").text();
-			let locations = item.attr("data-locations").split(",");
-			let rooms = locations.map(function(d){
-				return d.split("-")[0]
-			})
-			let storage = locations.map(function(d){
-				return d.split("-")[1]
-			})
-
+			let rooms = item.attr("data-rooms").split(",");
 			let repair = (item.attr("data-repair") == "—" ? -1 : parseFloat(item.attr("data-repair")));
 
 			if (filter["manufacturer-filter"].includes(make) || filter["manufacturer-filter"].length == 0) {
@@ -819,38 +799,11 @@ function filterResults(filter, fullset=true) {
 				continue;
 			}
 
-			if (filter["room-filter"].length != 0 && filter["storage-filter"].length != 0) {
-
-				for (let j = locations.length - 1; j >= 0; j--){
-					room = locations[j].split("-")[0];
-					storage = locations[j].split("-")[1];
-					if (filter["room-filter"].includes(room) && filter["storage-filter"].includes(storage)) {
-						item.removeClass("record-not-rendered masked").addClass("record-rendered");
-						console.log("if")
-						break
-					} else {
-						console.log("else")
-						item.removeClass("record-rendered masked").addClass("record-not-rendered");
-					}
-				}
-
-
+			if (doArraysOverlap(rooms, filter["room-filter"]) || filter["room-filter"].length == 0) {
+				item.removeClass("record-not-rendered masked").addClass("record-rendered");
 			} else {
-
-				if (doArraysOverlap(rooms, filter["room-filter"]) || filter["room-filter"].length == 0) {
-					item.removeClass("record-not-rendered masked").addClass("record-rendered");
-				} else {
-					item.removeClass("record-rendered masked").addClass("record-not-rendered");
-					continue;
-				}
-
-				if (doArraysOverlap(storage, filter["storage-filter"]) || filter["storage-filter"].length == 0) {
-					item.removeClass("record-not-rendered masked").addClass("record-rendered");
-				} else {
-					item.removeClass("record-rendered masked").addClass("record-not-rendered");
-					continue;
-				}
-
+				item.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
 			}
 
 			let repairrange = interpretRepairFilter(filter["repair-filter"]);
@@ -1203,11 +1156,9 @@ function showMostRecent() {
 //Populate the filters with appropriate values found in equipment XML
 function populateEquipmentFilters(xml) {
 	let manufacturers = new Set(["—"]);
-	let rooms = new Set(["—"]);
-	let storage = new Set(["—"]);
+	let rooms = new Set([]);
 	let mannodes = xml.getElementsByTagName("Manufacturer");
 	let roomnodes = xml.getElementsByTagName("Room");
-	let storagenodes = xml.getElementsByTagName("Storage");
 
 	for (let i = mannodes.length - 1; i >= 0; i--) {
 		manufacturers.add((mannodes[i].childNodes[0] ? mannodes[i].childNodes[0].nodeValue : "—"));
@@ -1217,20 +1168,10 @@ function populateEquipmentFilters(xml) {
 		rooms.add((roomnodes[i].childNodes[0] ? roomnodes[i].childNodes[0].nodeValue : "—"));
 	}
 
-	for (let i = storagenodes.length - 1; i >= 0; i--) {
-		storage.add((storagenodes[i].childNodes[0] ? storagenodes[i].childNodes[0].nodeValue : "—"));
-	}
-
 	manufacturers = Array.from(manufacturers);
 	rooms = Array.from(rooms);
-	storage = Array.from(storage);
-
-	storage.sort().reverse();
-
-
 	let manlist = d3.select("#manufacturer-select");
 	let roomlist = d3.select("#room-select");
-	let storagelist = d3.select('#storage-select');
 
 	for (let i = manufacturers.length - 1; i >= 0; i--) {
 		manlist.append("option").attr("value", manufacturers[i]).html(manufacturers[i]);
@@ -1238,10 +1179,6 @@ function populateEquipmentFilters(xml) {
 
 	for (let i = rooms.length - 1; i >= 0; i--) {
 		roomlist.append("option").attr("value", rooms[i]).html(rooms[i]);
-	}
-
-	for (let i = storage.length - 1; i >= 0; i--) {
-		storagelist.append("option").attr("value", storage[i]).html(storage[i]);
 	}
 }
 
