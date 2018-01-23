@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
   <Item id="0001">
     <InventoryName>Fluke multimeter</InventoryName>
@@ -2529,7 +2529,7 @@
     <Documents/>
   </Item>
   <Item id="0471">
-    <InventoryName>aluminum bar with multiple notches</InventoryName>
+    <InventoryName>15 mm light spring</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -2861,7 +2861,7 @@
     <Documents/>
   </Item>
   <Item id="0112">
-    <InventoryName>15 mm light spring</InventoryName>
+    <InventoryName>air track spring</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -5493,7 +5493,7 @@
     <Documents/>
   </Item>
   <Item id="0490">
-    <InventoryName>thermoelectric apparatus</InventoryName>
+    <InventoryName>Thermoelectric apparatus</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
@@ -5706,7 +5706,7 @@
     <Documents/>
   </Item>
   <Item id="0272">
-    <InventoryName>aluminum bar with hook and multiple notches</InventoryName>
+    <InventoryName>water reservoir</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6754,7 +6754,7 @@
     <Documents/>
   </Item>
   <Item id="0451">
-    <InventoryName>magnetic bumper</InventoryName>
+    <InventoryName>magnetic bumber</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8633,7 +8633,7 @@
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
-    <Kit isKit="true">steel rod (1), knife edge support (1), knife edge (1), knife edge (1), small cylindrical plastic mass (1), small cylindrical metal mass (1), large cylindrical plastic mass (1), large cylindrical metal mass (1)</Kit>
+    <Kit isKit="false"/>
     <Locations/>
     <Quantity>
       <Total/>
@@ -9120,48 +9120,6 @@
       <Total/>
       <InService/>
       <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0180">
-    <InventoryName>compound pendulum kit</InventoryName>
-    <Identification>
-      <Manufacturer>PJL</Manufacturer>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="true">steel rod (1), knife edge support (1), knife edge (1), knife edge (1), small cylindrical plastic mass (1), small cylindrical metal mass (1)</Kit>
-    <Locations>
-      <Location>
-        <Room>ST030</Room>
-        <Storage>C2</Storage>
-      </Location>
-    </Locations>
-    <Quantity>
-      <Total>11</Total>
-      <InService>11</InService>
-      <UnderRepair>0</UnderRepair>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0198">
-    <InventoryName>8 inch front serface mirror</InventoryName>
-    <Identification>
-      <Manufacturer>PJL</Manufacturer>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="true"/>
-    <Locations>
-      <Location>
-        <Room>ST032</Room>
-        <Storage>C3</Storage>
-      </Location>
-    </Locations>
-    <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
-      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>

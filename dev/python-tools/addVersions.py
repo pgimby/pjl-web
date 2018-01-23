@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''This Fails and im not sure why'''
+'''Adds version from a csv file and adds them to the repository'''
 
 from pjlDB import *
 import csv

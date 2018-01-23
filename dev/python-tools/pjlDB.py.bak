@@ -356,7 +356,6 @@ class EquipDB():
             thumb.text = equipitem.thumbnail
             kit = ET.SubElement(item, "Kit")
             kit.attrib = {"isKit": "true" if equipitem.is_kit else "false"}
-            kit.text = equipitem.kit
             locations = ET.SubElement(item, "Locations")
             for i in equipitem.locations:
                 location = ET.SubElement(locations, "Location")
@@ -405,7 +404,6 @@ class _EquipmentItem():
             self.model = item.findtext(".//Model")
             self.thumbnail = item.findtext(".//Thumbnail")
             self.is_kit = True if item.find("Kit").attrib["isKit"] == "true" else False
-            self.kit = item.findtext("Kit")
             self.locations = []
             for loc in item.findall(".//Location"):
                 location = {"room": loc.findtext("Room"),
@@ -425,7 +423,6 @@ class _EquipmentItem():
             self.manufacturer = ""
             self.model = ""
             self.is_kit = False
-            self.kit = ""
             self.locations = []
             self.quantity = {"total": "", "service": "", "repair": ""}
             self.documents = []

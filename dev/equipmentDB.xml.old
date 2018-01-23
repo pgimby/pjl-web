@@ -17,6 +17,10 @@
         <Room>ST037</Room>
         <Storage>C3</Storage>
       </Location>
+      <Location>
+        <Room/>
+        <Storage/>
+      </Location>
     </Locations>
     <Quantity>
       <Total>46</Total>
@@ -75,16 +79,16 @@
   <Item id="0032">
     <InventoryName>slinky</InventoryName>
     <Identification>
-      <Manufacturer>Shinco</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D4</Storage></Location><Location><Room>ST032</Room><Storage>D5</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>35</Total>
-      <InService>35</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -167,11 +171,23 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-      
-      
-      
-    <Location><Room>ST037</Room><Storage>C2</Storage></Location><Location><Room>ST029</Room><Storage>Other</Storage></Location><Location><Room>ST038</Room><Storage>C3</Storage></Location><Location><Room>ST046</Room><Storage>Other</Storage></Location></Locations>
+      <Location>
+        <Room>ST037</Room>
+        <Storage>C2</Storage>
+      </Location>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+      <Location>
+        <Room>ST046</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>26</Total>
       <InService>24</InService>
@@ -187,7 +203,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>38</Total>
       <InService>38</InService>
@@ -256,10 +277,10 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>9</Total>
-      <InService>9</InService>
+      <Total/>
+      <InService/>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -320,7 +341,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService>18</InService>
@@ -331,15 +357,20 @@
   <Item id="0206">
     <InventoryName>air track cart</InventoryName>
     <Identification>
-      <Manufacturer>Pasco</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D13</Storage></Location><Location><Room>ST034</Room><Storage>Cart1</Storage></Location><Location><Room>ST036</Room><Storage>Cart1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D13</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>46</Total>
-      <InService>46</InService>
+      <Total>21</Total>
+      <InService>21</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -353,8 +384,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST034</Room><Storage>Cart1</Storage></Location><Location><Room>ST036</Room><Storage>Cart1</Storage></Location></Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>13</Total>
       <InService>13</InService>
@@ -382,16 +416,19 @@
     <InventoryName>Neva mains rectifier</InventoryName>
     <Identification>
       <Manufacturer>Neva</Manufacturer>
-      <Model>5212</Model>
+      <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>C1</Storage></Location><Location><Room>ST017</Room><Storage>C53</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>14</Total>
-      <InService>14</InService>
+      <Total>12</Total>
+      <InService>12</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -457,7 +494,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D9</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D9</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>112</Total>
       <InService>112</InService>
@@ -473,11 +515,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D11</Storage></Location><Location><Room>ST036</Room><Storage>D11</Storage></Location><Location><Room>ST034</Room><Storage>D11</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>6</Total>
-      <InService>6</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -489,7 +531,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>5</Total>
       <InService>5</InService>
@@ -681,16 +728,16 @@
   <Item id="0200">
     <InventoryName>aluminum rail</InventoryName>
     <Identification>
-      <Manufacturer>Griffin and George</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>6</Total>
-      <InService>6</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -702,11 +749,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C5</Storage></Location><Location><Room>ST032</Room><Storage>C7</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>17</Total>
-      <InService>17</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -1147,16 +1194,16 @@
   <Item id="0068">
     <InventoryName>Geissler tube power supply</InventoryName>
     <Identification>
-      <Manufacturer>Electro-Technic Products</Manufacturer>
-      <Model>SP200</Model>
+      <Manufacturer/>
+      <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>20</Total>
-      <InService>20</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -1437,16 +1484,16 @@
   <Item id="0231">
     <InventoryName>3 resistor set</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D24</Storage></Location><Location><Room>ST032</Room><Storage>D24</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>33</Total>
-      <InService>33</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -1941,10 +1988,15 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D4</Storage></Location><Location><Room>ST036</Room><Storage>D13</Storage></Location><Location><Room>ST034</Room><Storage>D4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>25</Total>
-      <InService>25</InService>
+      <Total>10</Total>
+      <InService>10</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -1978,11 +2030,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D11</Storage></Location><Location><Room>ST036</Room><Storage>D11</Storage></Location><Location><Room>ST034</Room><Storage>D11</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>3</Total>
-      <InService>3</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2005,14 +2057,14 @@
   <Item id="0501">
     <InventoryName>projectile launcher</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>20</Total>
+      <Total/>
       <InService/>
       <UnderRepair/>
     </Quantity>
@@ -2180,16 +2232,16 @@
   <Item id="0232">
     <InventoryName>2 resistor set</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D25</Storage></Location><Location><Room>ST032</Room><Storage>D25</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>37</Total>
-      <InService>37</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2234,12 +2286,18 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-      
-    <Location><Room>ST029</Room><Storage>C2</Storage></Location><Location><Room>ST029</Room><Storage>D10</Storage></Location><Location><Room>ST030</Room><Storage>D20</Storage></Location><Location><Room>ST036</Room><Storage>D20</Storage></Location><Location><Room>ST032</Room><Storage>D20</Storage></Location><Location><Room>ST034</Room><Storage>D20</Storage></Location></Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C2</Storage>
+      </Location>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D10</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>72</Total>
-      <InService>72</InService>
+      <Total>50</Total>
+      <InService>50</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -2252,7 +2310,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>48</Total>
       <InService>48</InService>
@@ -2338,7 +2401,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C10</Storage></Location><Location><Room>ST038</Room><Storage>C8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C10</Storage>
+      </Location>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>19</Total>
       <InService>19</InService>
@@ -2386,16 +2458,16 @@
   <Item id="0278">
     <InventoryName>motor driven turntable</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C6</Storage></Location><Location><Room>ST036</Room><Storage>C8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>10</Total>
-      <InService>10</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2430,27 +2502,27 @@
     </Identification>
     <Kit isKit="true">glass tube, stopper with catcher, large stopper, matched steel balls
 </Kit>
-    <Locations><Location><Room>ST036</Room><Storage>C9</Storage></Location><Location><Room>ST036</Room><Storage>C7</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>16</Total>
-      <InService>16</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
   <Item id="0185">
     <InventoryName>set of hanging masses</InventoryName>
     <Identification>
-      <Manufacturer>Ohaus</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D21</Storage></Location><Location><Room>ST034</Room><Storage>D21</Storage></Location><Location><Room>ST032</Room><Storage>D21</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>22</Total>
-      <InService>22</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2495,11 +2567,11 @@
     </Identification>
     <Kit isKit="true">
 </Kit>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>20</Total>
-      <InService>20</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2563,16 +2635,16 @@
   <Item id="0079">
     <InventoryName>red spring scale</InventoryName>
     <Identification>
-      <Manufacturer>Pasco</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>25</Total>
-      <InService>25</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2659,16 +2731,16 @@
   <Item id="0019">
     <InventoryName>introductory student spectroscope</InventoryName>
     <Identification>
-      <Manufacturer>Griffin and George</Manufacturer>
-      <Model>P1719</Model>
+      <Manufacturer/>
+      <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C4</Storage></Location><Location><Room>ST032</Room><Storage>C8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>13</Total>
-      <InService>13</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2691,16 +2763,16 @@
   <Item id="0226">
     <InventoryName>protractor</InventoryName>
     <Identification>
-      <Manufacturer></Manufacturer>
-      <Model></Model>
+      <Manufacturer/>
+      <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>59</Total>
-      <InService>59</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2713,8 +2785,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>2</Total>
       <InService>2</InService>
@@ -2783,11 +2858,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>12</Total>
-      <InService>12</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2831,16 +2906,16 @@
   <Item id="0201">
     <InventoryName>large compass</InventoryName>
     <Identification>
-      <Manufacturer>Griffin and George</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>12</Total>
-      <InService>11</InService>
-      <UnderRepair>1</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2868,10 +2943,15 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D9</Storage></Location><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D9</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>156</Total>
-      <InService>156</InService>
+      <Total>79</Total>
+      <InService>79</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -2916,16 +2996,16 @@
   <Item id="0078">
     <InventoryName>green spring scale</InventoryName>
     <Identification>
-      <Manufacturer>Pasco</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>25</Total>
-      <InService>25</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -2959,8 +3039,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>D7</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>29</Total>
       <InService>29</InService>
@@ -3136,11 +3219,14 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST034</Room><Storage>C4</Storage></Location><Location><Room>ST036</Room><Storage>C6</Storage></Location></Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>18</Total>
-      <InService>18</InService>
+      <Total>12</Total>
+      <InService>12</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -3169,11 +3255,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>12</Total>
-      <InService>12</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -3185,11 +3271,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>Other</Storage></Location><Location><Room>ST036</Room><Storage>Other</Storage></Location><Location><Room>ST032</Room><Storage>Other</Storage></Location><Location><Room>ST034</Room><Storage>Other</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>40</Total>
-      <InService>40</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -3255,8 +3341,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -3342,11 +3431,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C5</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>7</Total>
-      <InService>7</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -3417,16 +3506,16 @@
   <Item id="0036">
     <InventoryName>illuminated test object</InventoryName>
     <Identification>
-      <Manufacturer>Central Scientific Company</Manufacturer>
-      <Model>86027</Model>
+      <Manufacturer/>
+      <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C4</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -3475,11 +3564,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C6</Storage></Location><Location><Room>ST036</Room><Storage>C8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>9</Total>
-      <InService>9</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -3576,7 +3665,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>10</Total>
       <InService>10</InService>
@@ -3593,8 +3687,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>23</InService>
@@ -3688,11 +3785,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C9</Storage></Location><Location><Room>ST036</Room><Storage>C7</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>18</Total>
-      <InService>18</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -3874,16 +3971,16 @@
   <Item id="0370">
     <InventoryName>thin lens kit</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="true">optical screen, lens holder (2), illuminated test object, plastic ruler, 5 cm focal length 38 mm diameter double convex lens, 10 cm focal length 28 mm diameter double convex lens, 20 cm focal length 38 mm diameter double convex lens, 100 cm focal length 38 mm diameter plano-convex lens, -10 cm focal length 38 mm diameter double concave lens. 
 </Kit>
-    <Locations><Location><Room>ST032</Room><Storage>C4</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>22</Total>
-      <InService>22</InService>
+      <Total/>
+      <InService/>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -3891,15 +3988,15 @@
   <Item id="0212">
     <InventoryName>current balance kit</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="true">masking tape, plastic ruler, current balance apparatus, bubble level, spacer bar, milligram mass set
 </Kit>
-    <Locations><Location><Room>ST030</Room><Storage>C3</Storage></Location><Location><Room>ST030</Room><Storage>C5</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>18</Total>
+      <Total/>
       <InService/>
       <UnderRepair/>
     </Quantity>
@@ -4094,16 +4191,16 @@
   <Item id="0321">
     <InventoryName>flywheel</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>Other</Storage></Location><Location><Room>ST036</Room><Storage>Other</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>13</Total>
-      <InService>13</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4253,11 +4350,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D25</Storage></Location><Location><Room>ST032</Room><Storage>D25</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>53</Total>
-      <InService>53</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4269,7 +4366,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C10</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C10</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>17</Total>
       <InService>17</InService>
@@ -4360,11 +4462,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>24</Total>
-      <InService>24</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4429,11 +4531,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D11</Storage></Location><Location><Room>ST036</Room><Storage>D11</Storage></Location><Location><Room>ST034</Room><Storage>D11</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>16</Total>
-      <InService>16</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4461,11 +4563,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>48</Total>
-      <InService>48</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4590,11 +4692,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D20</Storage></Location><Location><Room>ST036</Room><Storage>D20</Storage></Location><Location><Room>ST034</Room><Storage>D20</Storage></Location><Location><Room>ST032</Room><Storage>D20</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>31</Total>
-      <InService>31</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4675,10 +4777,10 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>9</Total>
-      <InService>9</InService>
+      <Total/>
+      <InService/>
       <UnderRepair/>
     </Quantity>
     <Documents/>
@@ -4829,11 +4931,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C5</Storage></Location><Location><Room>ST036</Room><Storage>C5</Storage></Location><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>24</Total>
-      <InService>24</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4878,11 +4980,11 @@
     </Identification>
     <Kit isKit="true">plastic beaker, assorted ball bearings
 </Kit>
-    <Locations><Location><Room>ST036</Room><Storage>D14</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>13</Total>
-      <InService>13</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -4959,10 +5061,15 @@
     </Identification>
     <Kit isKit="true">plastic beaker, brass rectangle (2), brass disk (2), ball bearing, aluminum tube
 </Kit>
-    <Locations><Location><Room>ST030</Room><Storage>D4</Storage></Location><Location><Room>ST036</Room><Storage>D13</Storage></Location><Location><Room>ST034</Room><Storage>D4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>24</Total>
-      <InService>24</InService>
+      <Total>8</Total>
+      <InService>8</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -5007,11 +5114,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>S1</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -5208,11 +5315,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location><Location><Room>ST032</Room><Storage>C5</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>11</Total>
-      <InService>11</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -5495,16 +5602,16 @@
   <Item id="0490">
     <InventoryName>thermoelectric apparatus</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C5</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>6</Total>
-      <InService>6</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -5559,16 +5666,16 @@
   <Item id="0018">
     <InventoryName>advanced student spectroscope</InventoryName>
     <Identification>
-      <Manufacturer>Griffin and George</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C6</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>7</Total>
-      <InService>7</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -5798,11 +5905,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D20</Storage></Location><Location><Room>ST036</Room><Storage>D20</Storage></Location><Location><Room>ST034</Room><Storage>D20</Storage></Location><Location><Room>ST032</Room><Storage>D20</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>24</Total>
-      <InService>24</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -5831,11 +5938,14 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST034</Room><Storage>S2</Storage></Location></Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>S2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
+      <Total>6</Total>
+      <InService>6</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -5901,7 +6011,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -5938,7 +6053,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>94</Total>
       <InService>94</InService>
@@ -5992,7 +6112,12 @@
     </Identification>
     <Kit isKit="true">acrylic rod (2), PVC rod (2), rod hanger, hanger string, rayon cloth, leaf electrometer
 </Kit>
-    <Locations><Location><Room>ST038</Room><Storage>C7</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -6150,11 +6275,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>19</Total>
-      <InService>19</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -6288,11 +6413,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location><Location><Room>ST032</Room><Storage>C5</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -6405,11 +6530,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>6</Total>
-      <InService>6</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -6599,28 +6724,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0455">
-    <InventoryName>mercury manometer</InventoryName>
-    <Identification>
-      <Manufacturer>PJL</Manufacturer>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations>
-      <Location>
-        <Room>ST029</Room>
-        <Storage>C16</Storage>
-      </Location>
-    </Locations>
-    <Quantity>
-      <Total>6</Total>
-      <InService>6</InService>
-      <UnderRepair>0</UnderRepair>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0433">
+    <Item id="0433">
     <InventoryName>sample thermopile housing</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6724,16 +6828,16 @@
   <Item id="0177">
     <InventoryName>parallel plate conductor board</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>27</Total>
-      <InService>27</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -6754,7 +6858,7 @@
     <Documents/>
   </Item>
   <Item id="0451">
-    <InventoryName>magnetic bumper</InventoryName>
+    <InventoryName>magnetic bumber</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6841,16 +6945,16 @@
   <Item id="0505">
     <InventoryName>wire potentiometer</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C7</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>29</Total>
-      <InService>29</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -6926,16 +7030,16 @@
   <Item id="0178">
     <InventoryName>dipole conductor board</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>23</Total>
-      <InService>23</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -6948,11 +7052,11 @@
     </Identification>
     <Kit isKit="true">slide with four single slits, slide with 4 double slits, slide with multiple slits, slide with aperatures, triple diffraction grating, 208 μm mesh grating, 176 μm mesh grating, 152 μm mesh grating, 127 μm mesh grating, 90 μm mesh grating, 76 μm mesh grating, 65 μm mesh grating
 </Kit>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>16</Total>
-      <InService>16</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -6965,11 +7069,11 @@
     </Identification>
     <Kit isKit="true">1/8” diameter teflon sphere (12), 5/23” diameter teflon sphere (12), 3/16” diameter teflon sphere (12), 1/4” diameter teflon sphere (12), 5/16” diameter teflon sphere (12), 3/8” diameter teflon sphere (12), 1/2” diameter teflon sphere (12)
 </Kit>
-    <Locations><Location><Room>ST034</Room><Storage>S2</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -7002,7 +7106,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>12</Total>
       <InService>12</InService>
@@ -7034,16 +7143,16 @@
   <Item id="0179">
     <InventoryName>potential mapping probe</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>38</Total>
-      <InService>38</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -7348,11 +7457,14 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>C2</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>23</Total>
-      <InService>23</InService>
+      <Total>21</Total>
+      <InService>21</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -7360,16 +7472,16 @@
   <Item id="0460">
     <InventoryName>yellow spring scale</InventoryName>
     <Identification>
-      <Manufacturer>Pasco</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>18</Total>
-      <InService>18</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -7434,11 +7546,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D4</Storage></Location><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>78</Total>
-      <InService>78</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -7551,11 +7663,11 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C5</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>6</Total>
-      <InService>6</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -7781,16 +7893,16 @@
   <Item id="0082">
     <InventoryName>brown spring scale</InventoryName>
     <Identification>
-      <Manufacturer>Pasco</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>18</Total>
-      <InService>18</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -7867,11 +7979,14 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>C2</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total>67</Total>
-      <InService>67</InService>
+      <Total>45</Total>
+      <InService>45</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
@@ -7927,16 +8042,16 @@
   <Item id="0203">
     <InventoryName>solenoid for aluminum rail</InventoryName>
     <Identification>
-      <Manufacturer>Griffin and George</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>6</Total>
-      <InService>6</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -8263,16 +8378,16 @@
   <Item id="0260">
     <InventoryName>pendulum apparatus</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>S1</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>10</Total>
-      <InService>10</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -8311,16 +8426,16 @@
   <Item id="0175">
     <InventoryName>potential mapping apparatus</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>38</Total>
-      <InService>38</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -8613,16 +8728,16 @@
   <Item id="0097">
     <InventoryName>air track</InventoryName>
     <Identification>
-      <Manufacturer>Pasco</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>Other</Storage></Location><Location><Room>ST034</Room><Storage>Cart1</Storage></Location><Location><Room>ST036</Room><Storage>Cart1</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>25</Total>
-      <InService>25</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -8633,8 +8748,13 @@
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
-    <Kit isKit="true">steel rod (1), knife edge support (1), knife edge (1), knife edge (1), small cylindrical plastic mass (1), small cylindrical metal mass (1), large cylindrical plastic mass (1), large cylindrical metal mass (1)</Kit>
-    <Locations/>
+    <Kit isKit="true">steel rod, knife edge support, knife edge, knife edge, small cylindrical plastic mass, small cylindrical metal mass, large cylindrical plastic mass, large cylindrical metal mass</Kit>
+    <Locations>
+         <Location>
+        <Room>ST030</Room>
+        <Storage>C2</Storage>
+      </Location>
+      </Locations>
     <Quantity>
       <Total/>
       <InService/>
@@ -8652,9 +8772,9 @@
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total>26</Total>
-      <InService>26</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -8880,16 +9000,16 @@
   <Item id="0389">
     <InventoryName>stand with laser and protractor</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C6</Storage></Location><Location><Room>ST036</Room><Storage>C8</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -8918,8 +9038,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C6</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C6</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>19</Total>
       <InService>19</InService>
@@ -8930,16 +9053,16 @@
   <Item id="0426">
     <InventoryName>concentric ring conductor board</InventoryName>
     <Identification>
-      <Manufacturer>PJL</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>21</Total>
-      <InService>21</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -9004,16 +9127,16 @@
   <Item id="0202">
     <InventoryName>compass holder</InventoryName>
     <Identification>
-      <Manufacturer>Griffin and George</Manufacturer>
+      <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>12</Total>
-      <InService>12</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -9057,16 +9180,16 @@
   <Item id="0319">
     <InventoryName>strobe light</InventoryName>
     <Identification>
-      <Manufacturer>Winsco</Manufacturer>
-      <Model>E-40</Model>
+      <Manufacturer/>
+      <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C6</Storage></Location></Locations>
+    <Locations/>
     <Quantity>
-      <Total>17</Total>
-      <InService>17</InService>
-      <UnderRepair>0</UnderRepair>
+      <Total/>
+      <InService/>
+      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -9140,27 +9263,6 @@
     <Quantity>
       <Total>11</Total>
       <InService>11</InService>
-      <UnderRepair>0</UnderRepair>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0198">
-    <InventoryName>8 inch front serface mirror</InventoryName>
-    <Identification>
-      <Manufacturer>PJL</Manufacturer>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="true"/>
-    <Locations>
-      <Location>
-        <Room>ST032</Room>
-        <Storage>C3</Storage>
-      </Location>
-    </Locations>
-    <Quantity>
-      <Total>8</Total>
-      <InService>8</InService>
       <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
