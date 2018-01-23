@@ -101,12 +101,14 @@ class EquipDB():
         if error_log:
             f = self.log_file_object()
             tests = [self.noDuplicateIDs(log_file=f),
-                 self.hasValidPathRoots(log_file=f)]
+                 self.hasValidPathRoots(log_file=f),
+                 self.noDuplicateNames(log_file=f)]
             f.close()
         else:
             f = None
             tests = [self.noDuplicateIDs(log_file=f),
-                 self.hasValidPathRoots(log_file=f)]
+                 self.hasValidPathRoots(log_file=f),
+                 self.noDuplicateNames(log_file=f)]
         if f:
             f.close()
         if all(tests):
@@ -126,6 +128,26 @@ class EquipDB():
             else:
                 good = False
                 error_log.append("Equipment item \"" + item.id_num +
+                                 "\" is a duplicate of another item in the database")
+        if good == False:
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
+            else:
+                [print(i) for i in error_log]
+        return good
+
+
+
+    def noDuplicateNames(self, log_file=None):
+        error_log = []
+        good = true
+        seen = set()
+        for item in self.equipment:
+            if item.name not in seen:
+                seen.add(item.name)
+            else:
+                good = False
+                error_log.append("Equipment item \"" + item.name +
                                  "\" is a duplicate of another item in the database")
         if good == False:
             if log_file:
