@@ -405,7 +405,7 @@ class _EquipmentItem():
             self.model = item.findtext(".//Model")
             self.thumbnail = item.findtext(".//Thumbnail")
             self.is_kit = True if item.find("Kit").attrib["isKit"] == "true" else False
-            self.kit = item.findtext("Kit")
+            self.kit = item.findtext(".//Kit")
             self.locations = []
             for loc in item.findall(".//Location"):
                 location = {"room": loc.findtext("Room"),
