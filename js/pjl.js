@@ -98,7 +98,7 @@ class EquipmentDisplay {
 			mm.append("p").classed("eq-make", true).html(make);
 			mm.append("p").classed("eq-model", true).html(model);
 			if (kitparts) {
-				let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);	
+				let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);
 			}
 			let locs = content.append("div").classed("eq-modal-locations", true);
 			locs.append("h1").classed("modal-header", true).html("Locations");
@@ -1286,7 +1286,7 @@ function generateSearchResults(query, selector) {
 	let minsimilarity = 0.4;
 	let querybigrams = makeBigramList(query);
 	let recordlist = getAllRecords();
-	let skipsim = ("id" == selector ? true : false);
+	let skipsim = ("id" == selector || "eqid" == selector);
 
 	if (isEquipmentDatabase()) {
 		for (let i = recordlist.length - 1; i >= 0; i--) {
@@ -1319,6 +1319,9 @@ function queryLiteralInLabRecord(query, lab, selector) {
 	let year = lab.find(".version-semester").text().split(" ")[1].toLowerCase();
 	let labtitle = lab.find(".lab-title").text().toLowerCase();
 	let id = lab.find(".lab-data-id").text().slice(-4,).toLowerCase();
+	let eqids = lab.find(".equip-item-primary").map(function() {
+		return $(this).attr("data-eqid");
+	}).get();
 	switch (selector) {
 		case "all":
 			return courses.includes(query) || disciplines.includes(query) || topics.includes(query) || equipment.includes(query) || semester.includes(query) || year.includes(query) || labtitle.includes(query);
@@ -1346,6 +1349,9 @@ function queryLiteralInLabRecord(query, lab, selector) {
 			break;
 		case "id":
 			return id == query;
+			break;
+		case "eqid":
+			return eqids.includes(query);
 			break;
 	}
 }
@@ -1466,6 +1472,9 @@ function searchQueryHandler() {
 		case "id":
 			idSearchHandler(searchphrase);
 			break;
+		case "eqid":
+			eqidSearchHandler(searchphrase);
+			break;
 		default:
 			defaultSearchHandler(query);
 	}
@@ -1572,6 +1581,16 @@ function equipmentSearchHandler(searchphrase) {
 function idSearchHandler(searchphrase) {
 	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
 	generateSearchResults(searchphrase, "id");
+	displayNumResults(countNumRecords());
+	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
+}
+
+
+
+//handle the search request for id search selector - not type safe
+function eqidSearchHandler(searchphrase) {
+	// $('html, body').animate({scrollTop: ($('#record-list-box').offset().top)}, 500);  //UNCOMMENT TO SCROLL DOWN TO SEARCH RESULTS AFTER SEARCH
+	generateSearchResults(searchphrase, "eqid");
 	displayNumResults(countNumRecords());
 	// $("#search-bar").val("");  //UNCOMMENT TO CLEAR SEARCH BAR AFTER SEARCH
 }
