@@ -1290,7 +1290,7 @@ function generateSearchResults(query, selector) {
 		for (let i = recordlist.length - 1; i >= 0; i--) {
 			recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
 			let similarity = compareQueryWithEquipRecord(querybigrams, recordlist[i]);
-			if (similarity < .9) {
+			if (similarity < .4) {
 				recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
 			}
 		}
