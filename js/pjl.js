@@ -746,7 +746,7 @@ function createEquipRecordSnapshots(xml) {
 		let make = snapshot.append("p").classed("eq-record-make", true).html(eqmake);
 		let model = snapshot.append("p").classed("eq-record-model", true).html(eqmodel);
 		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
-		
+
 		let locationsnode = equiplist[i].getElementsByTagName("Locations")[0];
 		if (locationsnode.childNodes) {
 			let locationnodes = locationsnode.getElementsByTagName("Location");
@@ -803,13 +803,12 @@ function filterResults(filter, fullset=true) {
 			let id = item.find(".eq-record-id").text();
 			let make = item.find(".eq-record-make").text();
 			let locations = item.attr("data-locations").split(",");
-			let rooms = locations.map(function(d){
+			let rooms = Array.from(new Set(locations.map(function(d){
 				return d.split("-")[0]
-			})
-			let storage = locations.map(function(d){
+			})));
+			let storage = Array.from(new Set(locations.map(function(d){
 				return d.split("-")[1]
-			})
-
+			})));
 			let repair = (item.attr("data-repair") == "—" ? -1 : parseFloat(item.attr("data-repair")));
 
 			if (filter["manufacturer-filter"].includes(make) || filter["manufacturer-filter"].length == 0) {
@@ -819,24 +818,27 @@ function filterResults(filter, fullset=true) {
 				continue;
 			}
 
-			if (filter["room-filter"].length != 0 && filter["storage-filter"].length != 0) {
+			let repairrange = interpretRepairFilter(filter["repair-filter"]);
+			if ((repair >= repairrange[0] && repair < repairrange[1]) || filter["repair-filter"].length == 0) {
+				item.removeClass("record-not-rendered masked").addClass("record-rendered");
+			} else {
+				item.removeClass("record-rendered masked").addClass("record-not-rendered");
+				continue;
+			}
 
+			if (filter["room-filter"].length != 0 && filter["storage-filter"].length != 0) {
 				for (let j = locations.length - 1; j >= 0; j--){
 					room = locations[j].split("-")[0];
 					storage = locations[j].split("-")[1];
 					if (filter["room-filter"].includes(room) && filter["storage-filter"].includes(storage)) {
 						item.removeClass("record-not-rendered masked").addClass("record-rendered");
-						console.log("if")
 						break
 					} else {
-						console.log("else")
 						item.removeClass("record-rendered masked").addClass("record-not-rendered");
+						continue;
 					}
 				}
-
-
 			} else {
-
 				if (doArraysOverlap(rooms, filter["room-filter"]) || filter["room-filter"].length == 0) {
 					item.removeClass("record-not-rendered masked").addClass("record-rendered");
 				} else {
@@ -850,15 +852,6 @@ function filterResults(filter, fullset=true) {
 					item.removeClass("record-rendered masked").addClass("record-not-rendered");
 					continue;
 				}
-
-			}
-
-			let repairrange = interpretRepairFilter(filter["repair-filter"]);
-			if ((repair >= repairrange[0] && repair < repairrange[1]) || filter["repair-filter"].length == 0) {
-				item.removeClass("record-not-rendered masked").addClass("record-rendered");
-			} else {
-				item.removeClass("record-rendered masked").addClass("record-not-rendered");
-				continue;
 			}
 		}
 	} else {
