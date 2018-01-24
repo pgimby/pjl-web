@@ -64,7 +64,7 @@ class EquipmentDisplay {
 			let name = (data.getElementsByTagName("InventoryName")[0].childNodes[0] ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "none");
 			let make = (data.getElementsByTagName("Manufacturer")[0].childNodes[0] ? data.getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "none");
 			let model = (data.getElementsByTagName("Model")[0].childNodes[0] ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "none");
-			let kitparts = (data.getElementsByTagName("Kit")[0].childNodes[0] ? data.getElementsByTagName("Kit")[0].childNodes[0].nodeValue : "none");
+			let kitparts = (data.getElementsByTagName("Kit")[0].childNodes[0] ? data.getElementsByTagName("Kit")[0].childNodes[0].nodeValue : false);
 			let locations = [];
 			let locationnodes = data.getElementsByTagName("Locations")[0].getElementsByTagName("Location");
 			for (let i = locationnodes.length - 1; i >= 0; i--) {
@@ -97,7 +97,9 @@ class EquipmentDisplay {
 			let mm = ident.append("div").classed("eq-make-model", true);
 			mm.append("p").classed("eq-make", true).html(make);
 			mm.append("p").classed("eq-model", true).html(model);
-			let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);
+			if (kitparts) {
+				let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);	
+			}
 			let locs = content.append("div").classed("eq-modal-locations", true);
 			locs.append("h1").classed("modal-header", true).html("Locations");
 			for (let i = locations.length - 1; i >= 0; i--) {

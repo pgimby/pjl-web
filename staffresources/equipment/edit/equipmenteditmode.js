@@ -51,6 +51,7 @@ class EquipmentEditDisplay {
 			let name = (data.getElementsByTagName("InventoryName")[0].childNodes[0] ? data.getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "");
 			let make = (data.getElementsByTagName("Manufacturer")[0].childNodes[0] ? data.getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "");
 			let model = (data.getElementsByTagName("Model")[0].childNodes[0] ? data.getElementsByTagName("Model")[0].childNodes[0].nodeValue : "");
+			let kitparts = (data.getElementsByTagName("Kit")[0].childNodes[0] ? data.getElementsByTagName("Kit")[0].childNodes[0].nodeValue : false);
 			let locations = [];
 			let locationnodes = data.getElementsByTagName("Locations")[0].getElementsByTagName("Location");
 			for (let i = 0; i < locationnodes.length; i++) {
@@ -99,6 +100,9 @@ class EquipmentEditDisplay {
 						.attr("type", "text")
 						.attr("placeholder", "Model...")
 						.attr("autocomplete", "off");
+			if (kitparts) {
+				let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);	
+			}
 			self.locs = content.append("div").classed("eq-modal-locations", true);
 			self.locs.append("h1").classed("modal-header", true).html("Locations");
 			for (let i = 0; i < locations.length; i++) {
