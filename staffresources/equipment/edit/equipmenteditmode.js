@@ -198,7 +198,7 @@ class EquipmentEditDisplay {
 				let datetime = "&eq-datetime=" +
 							   dt.getFullYear() + "-" +
 							   String(dt.getMonth()+1).padStart(2, '0') + "-" +
-							   String(dt.getDay()).padStart(2, '0') + "T" +
+							   String(dt.getDate()).padStart(2, '0') + "T" +
 							   String(dt.getHours()).padStart(2, '0') + ":" +
 							   String(dt.getMinutes()).padStart(2, '0') + ":" +
 							   String(dt.getSeconds()).padStart(2, '0');
