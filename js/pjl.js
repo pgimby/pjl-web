@@ -1237,8 +1237,9 @@ function populateEquipmentFilters(xml) {
 	rooms = Array.from(rooms);
 	storage = Array.from(storage);
 
+	manufacturers.sort().reverse();
+	rooms.sort().reverse();
 	storage.sort().reverse();
-
 
 	let manlist = d3.select("#manufacturer-select");
 	let roomlist = d3.select("#room-select");
