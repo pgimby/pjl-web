@@ -319,8 +319,24 @@ h2.eq-item-text:hover {
 	flex: 2;
 }
 
+.eq-record-date {
+	flex: 1;
+}
+
 #sort-eq-name {
 	flex: 2 !important;
+}
+
+#sort-eq-make {
+	flex: 1 !important;
+}
+
+#sort-eq-model {
+	flex: 1 !important;
+}
+
+#sort-eq-date {
+	flex: 1 !important;
 }
 
 .eq-record-make {
@@ -351,6 +367,14 @@ h2.eq-item-text:hover {
 	}
 
 	.eq-record-model {
+		display: none;
+	}
+
+	#sort-eq-date {
+		display: none;
+	}
+
+	.eq-record-date {
 		display: none;
 	}
 

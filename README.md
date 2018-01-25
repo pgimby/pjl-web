@@ -406,19 +406,7 @@ labdb.replaceEquipment(replaced, replaced_with, push_to_alternate=True)
 labdb.save("updatedlabDB.xml")
 ```
 
-#### An instructor has designed and written a new lab experiment. A PJL lab tech wants to add this new lab to the database.
 
-```
-#import packages
-from pjlDB
-```
-
-
-#### The PJL just received 2 new oscilloscopes for use in the shop. A lab tech wants to add this new item to the inventory.
-
-```
-
-```
 
 
 
