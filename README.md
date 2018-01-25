@@ -437,8 +437,9 @@ from pjlDB
 > Returns a list of valid disciplines taken from the pjl-web README.
 
 
-##### pjlDB.crossValidateEquipment()
-> This function returns nothing. It checks if every equipment item listed in the lab database has an entry in the equipment database. If an item is found listed in the equipment list for a lab and it isn't listed in the equipment database an error log will be printed in the console.
+##### pjlDB.crossValidateEquipment(eqdb, labdb)
+> This function returns nothing. It checks if every equipment item listed in the lab database has an entry in the equipment database. If an item is found listed in the equipment list for a lab and it isn't listed in the equipment database an error log will be printed in the console.  
+As arguments it takes database objects where `eqdb` is an `EquipDB` object and `labdb` is a `LabDB` object.
 
 
 
