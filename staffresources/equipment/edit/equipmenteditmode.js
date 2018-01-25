@@ -101,7 +101,7 @@ class EquipmentEditDisplay {
 						.attr("placeholder", "Model...")
 						.attr("autocomplete", "off");
 			if (kitparts) {
-				let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);	
+				let kititems = ident.append("p").classed("eq-itemlist", true).html(kitparts);
 			}
 			self.locs = content.append("div").classed("eq-modal-locations", true);
 			self.locs.append("h1").classed("modal-header", true).html("Locations");
@@ -193,8 +193,18 @@ class EquipmentEditDisplay {
 
 			$(document).on("click touch", ".eq-modal-footer", function(e) {
 				let dat = $(".eq-modal-edit-form").serialize();
+				// console.log(dat)
+				let dt = new Date();
+				let datetime = "&eq-datetime=" +
+							   dt.getFullYear() + "-" +
+							   String(dt.getMonth()+1).padStart(2, '0') + "-" +
+							   String(dt.getDay()).padStart(2, '0') + "T" +
+							   String(dt.getHours()).padStart(2, '0') + ":" +
+							   String(dt.getMinutes()).padStart(2, '0') + ":" +
+							   String(dt.getSeconds()).padStart(2, '0');
+				dat += datetime + "&eq-id=" + self.id
 				console.log(dat)
-				$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + self.id, function(data) {
+				$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + self.id + "&eq-datetime=" + datetime, function(data) {
 					self.removeForm();
 				});
 			});

@@ -4,6 +4,7 @@
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 header("Pragma: no-cache"); // HTTP 1.0.
 header("Expires: 0"); // Proxies.
+$datetime = $_POST['eq-datetime']
 $id = $_POST['eq-id'];
 $name = $_POST['eq-name'];
 $make = $_POST['eq-make'];
@@ -18,6 +19,7 @@ $xml=simplexml_load_file("/var/www/html/data/equipmentDB.xml") or die("Error: Ca
 
 foreach($xml->children() as $item) {
 	if ($item['id'] == $id) {
+		$item['lastModified'] = $datetime;
 		$item->InventoryName = $name;
 		$item->Identification->Manufacturer = $make;
 		$item->Identification->Model = $model;

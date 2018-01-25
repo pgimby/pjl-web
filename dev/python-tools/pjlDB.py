@@ -66,7 +66,12 @@ def crossValidateEquipment(eqdb, labdb):
         print("A place for everything and everything in its place. No errors found. Gold sticker.")
 
 
-
+def rightNow(self):
+        date = datetime.datetime.today()
+        date = str(date.year) + "-" + str(date.month).zfill(2) + "-" + \
+               str(date.day).zfill(2) + "T" + str(date.hour).zfill(2) + ":" + \
+               str(date.minute).zfill(2) + ":" + str(date.second).zfill(2)
+        return date
 
 
 
@@ -140,7 +145,7 @@ class EquipDB():
 
     def noDuplicateNames(self, log_file=None):
         error_log = []
-        good = true
+        good = True
         seen = set()
         for item in self.equipment:
             if item.name not in seen:
@@ -268,6 +273,7 @@ class EquipDB():
     def addItem(self, equipitem):
         if not isinstance(equipitem, _EquipmentItem):
             raise TypeError("Argument passed to EquipDB.addItem was not an _EquipmentItem object")
+        equipitem.last_modified = rightNow()
         if equipitem.id_num in [item.id_num for item in self.equipment]:
             tmp = [equipitem if equipitem.id_num == item.id_num else item for item in self.equipment]
             self.equipment = tmp[:]
@@ -366,7 +372,7 @@ class EquipDB():
 
     def _equipItemToXMLNode(self, equipitem):
         if equipitem.id_num:
-            item = ET.Element("Item", {"id": equipitem.id_num})
+            item = ET.Element("Item", {"id": equipitem.id_num, "lastModified": equipitem.last_modified})
             name = ET.SubElement(item, "InventoryName")
             name.text = equipitem.name
             identification = ET.SubElement(item, "Identification")
@@ -422,6 +428,7 @@ class _EquipmentItem():
     def __init__(self, item=None, idnum=None):
         if item and isinstance(item, ET.Element):
             self.id_num = item.attrib["id"]
+            self.last_modified = item.attrib["lastModified"]
             self.name = item.findtext("InventoryName")
             self.manufacturer = item.findtext(".//Manufacturer")
             self.model = item.findtext(".//Model")
@@ -429,7 +436,7 @@ class _EquipmentItem():
             self.is_kit = True if item.find("Kit").attrib["isKit"] == "true" else False
             self.kit = item.findtext(".//Kit")
             self.locations = []
-            for loc in item.findall(".//Location"):
+            for loc in item.findall("./Locations/Location"):
                 location = {"room": loc.findtext("Room"),
                             "storage": loc.findtext("Storage")}
                 self.locations.append(location)
@@ -443,6 +450,7 @@ class _EquipmentItem():
 
         elif not item and isValidID(idnum):
             self.id_num = idnum
+            self.last_modified = rightNow()
             self.name = ""
             self.manufacturer = ""
             self.model = ""
@@ -471,6 +479,8 @@ class _EquipmentItem():
             self.locations.append(loc)
         else:
             raise Exception("Invalid argument passed to _EquipmentItem.addLocation: argument must be dictionary with appropriate keys.")
+
+
 
 
 
