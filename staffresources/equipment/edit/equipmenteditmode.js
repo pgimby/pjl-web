@@ -204,7 +204,7 @@ class EquipmentEditDisplay {
 							   String(dt.getSeconds()).padStart(2, '0');
 				dat += datetime + "&eq-id=" + self.id
 				console.log(dat)
-				$.post(siteroot + "/php/modifyEquipDB.php", dat + "&eq-id=" + self.id + "&eq-datetime=" + datetime, function(data) {
+				$.post(siteroot + "/php/modifyEquipDB.php", dat, function(data) {
 					self.removeForm();
 				});
 			});
