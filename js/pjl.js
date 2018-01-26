@@ -1310,7 +1310,7 @@ function generateSearchResults(query, selector) {
 		for (let i = recordlist.length - 1; i >= 0; i--) {
 			recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
 			let similarity = compareQueryWithEquipRecord(querybigrams, recordlist[i]);
-			if (similarity < 0.5) {
+			if (similarity < 0.9 && !queryLiteralInEquipmentRecord(query, recordlist[i])) {
 				recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
 			}
 		}
@@ -1323,6 +1323,16 @@ function generateSearchResults(query, selector) {
 			}
 		}
 	}
+}
+
+
+//Given a query, return true if query can be found exactly in equipment record
+function queryLiteralInEquipmentRecord(query, item) {
+	let name = item.find(".eq-record-name").text().toLowerCase();
+	if (name.includes(query)) {
+		return true;
+	}
+	return false;
 }
 
 
