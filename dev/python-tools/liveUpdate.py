@@ -37,6 +37,7 @@ if host == myhost:
         os.system("rsync --delete -avz " + sourceFolder + "/web-security/ " + destFolder + "/web-security/")
         os.system("rsync --delete -avz " + sourceFolder + "/landingpage/ " + destFolder + "/landingpage/")
         os.system("rsync --delete -avz " + sourceFolder + "/downloads/ " + destFolder + "/downloads/")
+        os.system("rsync --delete -avz " + sourceFolder + "/equipimg/ " + destFolder + "/equipimg/")
 
     # change permissions and ownerships of files and folders
     os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
