@@ -140,7 +140,7 @@ class EquipDB():
 
     def noDuplicateNames(self, log_file=None):
         error_log = []
-        good = true
+        good = True
         seen = set()
         for item in self.equipment:
             if item.name not in seen:

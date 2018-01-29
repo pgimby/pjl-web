@@ -17,6 +17,10 @@
         <Room>ST037</Room>
         <Storage>C3</Storage>
       </Location>
+      <Location>
+        <Room/>
+        <Storage/>
+      </Location>
     </Locations>
     <Quantity>
       <Total>46</Total>

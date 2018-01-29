@@ -14,7 +14,8 @@ repository  = root + "/repository"
 safety = root + "/safety"
 schedules  = root + "/safety"
 underConstruction  = root + "/under-construction"
-publicDocs = [downloads, landingpage, repository, safety, schedules, underConstruction]
+equipimg = root + "/equipimg"
+publicDocs = [downloads, landingpage, repository, safety, schedules, underConstruction, equipimg]
 
 # define owners of files
 owner = "pgimby"
