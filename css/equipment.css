@@ -53,7 +53,7 @@ h2.eq-item-text:hover {
 .eq-modal {
 	width: 50%;
 	max-width: 360px;
-	max-height: 80%;
+	max-height: 100vh;
 	position: fixed;
 	margin: auto;
 	top: 50%;
@@ -90,7 +90,7 @@ h2.eq-item-text:hover {
 
 .eq-modal-content {
 	min-height: 400px;
-	height:400px;
+	height: calc(100vh - 76px);
 	overflow-y: auto;
 }
 
@@ -319,8 +319,24 @@ h2.eq-item-text:hover {
 	flex: 2;
 }
 
+.eq-record-date {
+	flex: 1;
+}
+
 #sort-eq-name {
 	flex: 2 !important;
+}
+
+#sort-eq-make {
+	flex: 1 !important;
+}
+
+#sort-eq-model {
+	flex: 1 !important;
+}
+
+#sort-eq-date {
+	flex: 1 !important;
 }
 
 .eq-record-make {
@@ -351,6 +367,14 @@ h2.eq-item-text:hover {
 	}
 
 	.eq-record-model {
+		display: none;
+	}
+
+	#sort-eq-date {
+		display: none;
+	}
+
+	.eq-record-date {
 		display: none;
 	}
 

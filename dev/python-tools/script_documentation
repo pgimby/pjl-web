@@ -44,7 +44,7 @@ Lab: Electron Diffraction (0068)                            Item: Neva mains rec
 Found 3 equipment records in /home/wes/pjlweb/dev/labDB.xml
 
 Description:
-This script will return instances of an equipment item, specified by its 4-digit ID number, in the lab database XML file (labDB.xml). It was used in development to identify unstandardized equipment items with the ID 0000.
+This script will return instances of an equipment item, specified by its 4-digit ID number, in the lab database XML file (labDB.xml). It was used in development to identify equipment items yet to be standardized, i.e., having the ID 0000.
 
 
 

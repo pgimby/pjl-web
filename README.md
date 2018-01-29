@@ -406,19 +406,7 @@ labdb.replaceEquipment(replaced, replaced_with, push_to_alternate=True)
 labdb.save("updatedlabDB.xml")
 ```
 
-#### An instructor has designed and written a new lab experiment. A PJL lab tech wants to add this new lab to the database.
 
-```
-#import packages
-from pjlDB
-```
-
-
-#### The PJL just received 2 new oscilloscopes for use in the shop. A lab tech wants to add this new item to the inventory.
-
-```
-
-```
 
 
 
@@ -437,8 +425,9 @@ from pjlDB
 > Returns a list of valid disciplines taken from the pjl-web README.
 
 
-##### pjlDB.crossValidateEquipment()
-> This function returns nothing. It checks if every equipment item listed in the lab database has an entry in the equipment database. If an item is found listed in the equipment list for a lab and it isn't listed in the equipment database an error log will be printed in the console.
+##### pjlDB.crossValidateEquipment(eqdb, labdb)
+> This function returns nothing. It checks if every equipment item listed in the lab database has an entry in the equipment database. If an item is found listed in the equipment list for a lab and it isn't listed in the equipment database an error log will be printed in the console.  
+As arguments it takes database objects where `eqdb` is an `EquipDB` object and `labdb` is a `LabDB` object.
 
 
 

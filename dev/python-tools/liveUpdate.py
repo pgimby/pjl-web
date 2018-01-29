@@ -45,11 +45,11 @@ if host == myhost:
     os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
 
     # Change permissions of a few important files/folders
-    os.system("chown root." + apacheUser + " " + webRoot + "/data/labDB.xml" )
-    os.system("chown root." + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
+    os.system("chown root:" + apacheUser + " " + webRoot + "/data/labDB.xml" )
+    os.system("chown root:" + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
     os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
     os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
-    os.system("chown root." + apacheUser + " " + webRoot + "/data" )
+    os.system("chown root:" + apacheUser + " " + webRoot + "/data" )
     os.system("chmod 775 " + webRoot + "/data" )
 
 

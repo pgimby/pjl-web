@@ -467,6 +467,12 @@ $(document).on("click touch", "#sort-eq-name", function(e) {
 
 
 
+$(document).on("click touch", "#sort-eq-date", function(e) {
+	sortRecords("eq-date");
+});
+
+
+
 $(document).on("click touch", ".download-icon", function(e) {
 	window.open(siteroot + $(e.target).parent().parent().find(".version-path").attr("href"), "_blank");
 });
@@ -742,12 +748,14 @@ function createEquipRecordSnapshots(xml) {
 		let eqname = (equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0] ? equiplist[i].getElementsByTagName("InventoryName")[0].childNodes[0].nodeValue : "—");
 		let eqmake = (equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Manufacturer")[0].childNodes[0].nodeValue : "—");
 		let eqmodel = (equiplist[i].getElementsByTagName("Model")[0].childNodes[0] ? equiplist[i].getElementsByTagName("Model")[0].childNodes[0].nodeValue : "—");
+		let eqdate = equiplist[i].getAttribute("lastModified");
 
 		let snapshot = d3.select("#record-list-box").append("div").classed("eq-record-flex", true).classed("record-rendered", true);
 		let id = snapshot.append("p").classed("eq-record-id", true).html(eqid);
 		let make = snapshot.append("p").classed("eq-record-make", true).html(eqmake);
 		let model = snapshot.append("p").classed("eq-record-model", true).html(eqmodel);
 		let name = snapshot.append("p").classed("eq-record-name", true).html(eqname);
+		let date = snapshot.append("p").classed("eq-record-date", true).html(eqdate);
 
 		let locationsnode = equiplist[i].getElementsByTagName("Locations")[0];
 		if (locationsnode.childNodes) {
@@ -983,7 +991,7 @@ function sortRecords(by) {
 				records.sort(compareEquipById);
 			}
 			truifySort([$("#sort-eq-id")]);
-			falsifySort([$("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-name")]);
+			falsifySort([$("#sort-eq-date"), $("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-name")]);
 			break;
 		case "eq-make":
 			if ($("#sort-eq-make").attr("sorted") == "true") {
@@ -992,7 +1000,7 @@ function sortRecords(by) {
 				records.sort(compareEquipByMake);
 			}
 			truifySort([$("#sort-eq-make")]);
-			falsifySort([$("#sort-eq-id"), $("#sort-eq-model"), $("#sort-eq-name")]);
+			falsifySort([$("#sort-eq-date"), $("#sort-eq-id"), $("#sort-eq-model"), $("#sort-eq-name")]);
 			break;
 		case "eq-model":
 			if ($("#sort-eq-model").attr("sorted") == "true") {
@@ -1001,7 +1009,7 @@ function sortRecords(by) {
 				records.sort(compareEquipByModel);
 			}
 			truifySort([$("#sort-eq-model")]);
-			falsifySort([$("#sort-eq-make"), $("#sort-eq-id"), $("#sort-eq-name")]);
+			falsifySort([$("#sort-eq-date"), $("#sort-eq-make"), $("#sort-eq-id"), $("#sort-eq-name")]);
 			break;
 		case "eq-name":
 			if ($("#sort-eq-name").attr("sorted") == "true") {
@@ -1010,7 +1018,16 @@ function sortRecords(by) {
 				records.sort(compareEquipByName);
 			}
 			truifySort([$("#sort-eq-name")]);
-			falsifySort([$("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-id")]);
+			falsifySort([$("#sort-eq-date"), $("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-id")]);
+			break;
+		case "eq-date":
+			if ($("#sort-eq-date").attr("sorted") == "true") {
+				records.reverse();
+			} else {
+				records.sort(compareEquipByDate);
+			}
+			truifySort([$("#sort-eq-date")]);
+			falsifySort([$("#sort-eq-name"), $("#sort-eq-make"), $("#sort-eq-model"), $("#sort-eq-id")]);
 			break;
 	}
 	for (let i = records.length - 1; i >= 0; i--) {
@@ -1220,8 +1237,9 @@ function populateEquipmentFilters(xml) {
 	rooms = Array.from(rooms);
 	storage = Array.from(storage);
 
+	manufacturers.sort().reverse();
+	rooms.sort().reverse();
 	storage.sort().reverse();
-
 
 	let manlist = d3.select("#manufacturer-select");
 	let roomlist = d3.select("#room-select");
@@ -1292,7 +1310,7 @@ function generateSearchResults(query, selector) {
 		for (let i = recordlist.length - 1; i >= 0; i--) {
 			recordlist[i].removeClass("record-not-rendered masked").addClass("record-rendered");
 			let similarity = compareQueryWithEquipRecord(querybigrams, recordlist[i]);
-			if (similarity < .4) {
+			if (similarity < 0.9 && !queryLiteralInEquipmentRecord(query, recordlist[i])) {
 				recordlist[i].removeClass("record-rendered").addClass("record-not-rendered");
 			}
 		}
@@ -1305,6 +1323,16 @@ function generateSearchResults(query, selector) {
 			}
 		}
 	}
+}
+
+
+//Given a query, return true if query can be found exactly in equipment record
+function queryLiteralInEquipmentRecord(query, item) {
+	let name = item.find(".eq-record-name").text().toLowerCase();
+	if (name.includes(query)) {
+		return true;
+	}
+	return false;
 }
 
 
@@ -2217,6 +2245,21 @@ function compareEquipByModel(a, b) {
 function compareEquipByName(a, b) {
 	a = a.find(".eq-record-name").text().toLowerCase();
 	b = b.find(".eq-record-name").text().toLowerCase();
+	if (a < b) {
+		return -1;
+	}
+	if (b < a) {
+		return 1;
+	}
+	return 0;
+}
+
+
+
+//sorting comparison function that takes two '.eq-record-flex' selections and compares them by last modified date
+function compareEquipByDate(a, b) {
+	a = a.find(".eq-record-date").text();
+	b = b.find(".eq-record-date").text();
 	if (a < b) {
 		return -1;
 	}
