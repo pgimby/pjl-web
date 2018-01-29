@@ -66,7 +66,7 @@ def crossValidateEquipment(eqdb, labdb):
         print("A place for everything and everything in its place. No errors found. Gold sticker.")
 
 
-def rightNow(self):
+def rightNow():
         date = datetime.datetime.today()
         date = str(date.year) + "-" + str(date.month).zfill(2) + "-" + \
                str(date.day).zfill(2) + "T" + str(date.hour).zfill(2) + ":" + \
