@@ -16,17 +16,16 @@ from pjlDB import *
 inputDir = "/usr/local/master/labs/equipimg"
 slugRoot = "/home/pgimby/pjl-web"
 equipDir = "/staffresources/equipment/equipimg"
-db = EquipDB("../../data/equipmentDB.xml.bak")
-#nameDir = "Support_Docs"
+db = EquipDB("../../data/equipmentDB.xml")
 
 # def imgInfo(inputDir):
-#  	equipInfos = {}
-#  	for root, dirs, files in os.walk(inputDir):
-#  		for i in files:
-#  			imgPath = "/".join([root, i])
-#  			equID = i
-#  			equipInfos[equID] = imgPath
-#  	return equipInfos
+#   	equipInfos = {}
+#   	for root, dirs, files in os.walk(inputDir):
+#   		for i in files:
+#   			imgPath = "/".join([root, i])
+#   			equID = i
+#   			equipInfos[equID] = imgPath
+# 	#return equipInfos
 
 # def outInfo(name, equipRoot):
 # 	eqID = str(name)[:4]
@@ -34,14 +33,25 @@ db = EquipDB("../../data/equipmentDB.xml.bak")
 # 	return eqID,webPath
 
 
-# equipInfos = imgInfo(inputDir)
-# for i in equipInfos:
-# 	eqID,webPath = outInfo(i,equipDir)
-# 	equip = db.getItem(idnum=eqID)
-# 	equip.thumbnail = webPath
-# 	db.addItem(equip)
+host="slug"
+myhost = os.uname()[1]
+if host != myhost:
+	print("This script is designed to be run on " + host + " only")
+	print("Exiting")
+	exit()
 
-db.save("../updatedequipmentDB.xml", ignore_validation=False, error_log=True)
+
+#equipInfos = imgInfo(inputDir)
+ #for i in equipInfos:
+ #	eqID,webPath = outInfo(i,equipDir)
+ #	equip = db.getItem(idnum=eqID)
+ #	equip.thumbnail = webPath
+ #	db.addItem(equip)
+
+
+
+
+#db.save("../updatedequipmentDB.xml", ignore_validation=False, error_log=True)
 
 	#print(eqID + " " + webPath)
 	#print(i + " " +equipInfos[i])
