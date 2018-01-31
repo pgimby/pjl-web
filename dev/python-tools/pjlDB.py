@@ -166,7 +166,7 @@ class EquipDB():
     def hasValidPathRoots(self, log_file=None):
         error_log = []
         good = True
-        valid_path_prefix = "/data/equipment/"
+        valid_path_prefix = "/staffresources/equipment/equipman"
         for item in self.equipment:
             for document in item.documents:
                 if not document["location"].startswith(valid_path_prefix):
