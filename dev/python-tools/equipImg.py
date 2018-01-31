@@ -2,11 +2,10 @@
 #
 # Script to add Equipment Images  to the equipmentDB.xml
 
-# This script get all of the files in staffresources/equipment/equipimg for any allfolder called Support_Docs. 
-# It the grabs any file in those folder and posts it in the labDB.xml file that is 
-# associated with that file. The name given to the file is based on the name of the
-# original file, but it is truncated to avoid posting files with exeptionally long
-# file names.
+# This script get all of the files in staffresources/equipment/equipimg folder.
+# Each image is named with the pattern ####img.jpg where #### is the equipment ID #.
+# The path of each image present will over write the existing path listed in the
+# equipmentDB.xml file. There should be only one image per equipment ID #
 
 import xml.etree.ElementTree as ET
 import os
@@ -16,7 +15,7 @@ from pjlDB import *
 inputDir = "/usr/local/master/labs/equipimg"
 slugRoot = "/home/pgimby/pjl-web"
 equipDir = "/staffresources/equipment/equipimg"
-db = EquipDB("../../data/equipmentDB.xml")
+db = EquipDB("../equipmentDB.xml")
 
 def imgInfo(inputDir):
 	equipInfos = {}
@@ -33,6 +32,7 @@ def outInfo(name, equipRoot):
 	return eqID,webPath
 
 
+'''checks to make sure that this script is being run on the right computer'''
 host="slug"
 myhost = os.uname()[1]
 if host != myhost:
@@ -49,5 +49,4 @@ for i in equipInfos:
 	db.addItem(equip)
 
 db.save("../updatedequipmentDB.xml", ignore_validation=False, error_log=True)
-
-
+print("...and then there will be cake")
