@@ -171,8 +171,8 @@ class EquipDB():
             for document in item.documents:
                 if not document["location"].startswith(valid_path_prefix):
                     good = False
-                    error_log.append("Bad version path \"" +
-                                     document["location"] + "\" in lab " +
+                    error_log.append("Bad document path \"" +
+                                     document["location"] + "\" in equipment item " +
                                      item.id_num + " (" +
                                      item.name + ")")
         if good == False:
