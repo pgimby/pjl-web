@@ -553,7 +553,8 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-graphing": "/",
 				 "pjl-scint": "/",
 				 "pjl-latex-template": "/data/landingpage/templates.zip",
-				 "pjl-tikz-examples": "/data/landingpage/tikz-examples.zip",
+				 "pjl-tikz-examples-view": "/data/landingpage/tikz_examples/tikz_examples.pdf",
+				 "pjl-tikz-examples-dl": "/data/landingpage/tikz_examples.zip",
 				 "pjl-inventory": "/staffresources/equipment",
 				 "pjl-github": "https://github.com/pgimby/pjl-web",
 				 "pjl-lab-rules": "/data/safety/lab-rules/Lab-Rules.pdf",
@@ -664,9 +665,10 @@ function populateRecordList(docXML) {
 
 //read XML and populate the HTML select boxes with available filter options - not type safe
 function populateFilters(docXML) {
+	let sorttypes = {"Course": false, "Year": true, "Semester": false, "Discipline": false, "Topic": false};
 	let types = ["Course", "Year", "Semester", "Discipline", "Topic"];
 	for (let i = types.length - 1; i >= 0; i--) {
-		let validlist = getValidFilterOptions(docXML, types[i]);
+		let validlist = getValidFilterOptions(docXML, types[i], sorttypes[types[i]]);
 		for (let j = validlist.length - 1; j >= 0; j--) {
 			d3.select("#" + types[i].toLowerCase() + "-select")
 			  .append("option")
@@ -2113,13 +2115,18 @@ function getVersionList(lab) {
 
 //PETER WROTE THIS ONE
 //return the set of values available for filtering on a given filter type as an array - not type safe
-function getValidFilterOptions(docXML, type) {
+function getValidFilterOptions(docXML, type, order) {
 	let nodes = docXML.getElementsByTagName(type);
     let valueslist = [];
     for (let i = nodes.length - 1; i >= 0; i--) {
 	    valueslist.push(nodes[i].childNodes[0] ? nodes[i].childNodes[0].nodeValue : "—");
     }
-    return Array.from(new Set(valueslist)).sort();
+    if (order == true){
+	    return Array.from(new Set(valueslist)).sort();
+	}
+	else {
+		return Array.from(new Set(valueslist)).sort().reverse();
+	}
 }
 
 
