@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
   <Item id="0001" lastModified="2018-01-25T12:34:45">
     <InventoryName>Fluke multimeter</InventoryName>
@@ -23,12 +23,7 @@
       <InService>44</InService>
       <UnderRepair>2</UnderRepair>
     </Quantity>
-    <Documents>
-      <Document>
-        <Name>user manual</Name>
-        <Location>/data/equipment/0001/manual.pdf</Location>
-      </Document>
-    </Documents>
+    <Documents/>
   </Item>
   <Item id="0413" lastModified="2018-01-25T12:34:45">
     <InventoryName>BNC tee</InventoryName>
@@ -80,7 +75,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D4</Storage></Location><Location><Room>ST032</Room><Storage>D5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D4</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>35</Total>
       <InService>35</InService>
@@ -167,11 +171,23 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-      
-      
-      
-    <Location><Room>ST037</Room><Storage>C2</Storage></Location><Location><Room>ST029</Room><Storage>Other</Storage></Location><Location><Room>ST038</Room><Storage>C3</Storage></Location><Location><Room>ST046</Room><Storage>Other</Storage></Location></Locations>
+      <Location>
+        <Room>ST037</Room>
+        <Storage>C2</Storage>
+      </Location>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+      <Location>
+        <Room>ST046</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>26</Total>
       <InService>24</InService>
@@ -187,7 +203,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>38</Total>
       <InService>38</InService>
@@ -196,7 +217,7 @@
     <Documents/>
   </Item>
   <Item id="0142" lastModified="2018-01-25T12:34:45">
-    <InventoryName>0.1 &#x3BC;Ci Po-210 alpha source</InventoryName>
+    <InventoryName>0.1 μCi Po-210 alpha source</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -248,15 +269,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0472" lastModified="2018-01-25T12:34:45">
+  <Item id="0472" lastModified="2018-01-29T11:13:20">
     <InventoryName>15 mm tight spring</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0472img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D26</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>9</Total>
       <InService>9</InService>
@@ -320,7 +346,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService>18</InService>
@@ -336,7 +367,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D13</Storage></Location><Location><Room>ST034</Room><Storage>Cart1</Storage></Location><Location><Room>ST036</Room><Storage>Cart1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D13</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>46</Total>
       <InService>46</InService>
@@ -353,8 +397,15 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST034</Room><Storage>Cart1</Storage></Location><Location><Room>ST036</Room><Storage>Cart1</Storage></Location></Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>13</Total>
       <InService>13</InService>
@@ -387,8 +438,15 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>C1</Storage></Location><Location><Room>ST017</Room><Storage>C53</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+      <Location>
+        <Room>ST017</Room>
+        <Storage>C53</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>14</Total>
       <InService>14</InService>
@@ -457,7 +515,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D9</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D9</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>112</Total>
       <InService>112</InService>
@@ -473,7 +536,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D11</Storage></Location><Location><Room>ST036</Room><Storage>D11</Storage></Location><Location><Room>ST034</Room><Storage>D11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D11</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D11</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -489,7 +565,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>5</Total>
       <InService>5</InService>
@@ -513,12 +594,12 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0073" lastModified="2018-01-25T12:34:45">
+  <Item id="0073" lastModified="2018-01-29T11:13:20">
     <InventoryName>hot plate</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0073img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
@@ -631,7 +712,7 @@
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
-    <Kit isKit="true">50 &#x2126; BNC feedthrough termination, 7 m RG59 coaxial cable, 7 m twinaxial cable, reflectionless signal splitter, 0.5 m RG58 coaxial cable, BNC male-male adapter (2), BNC female-female adapter, male BNC to female banana,  variable resistive termination adapter, short circuit termination
+    <Kit isKit="true">50 Ω BNC feedthrough termination, 7 m RG59 coaxial cable, 7 m twinaxial cable, reflectionless signal splitter, 0.5 m RG58 coaxial cable, BNC male-male adapter (2), BNC female-female adapter, male BNC to female banana,  variable resistive termination adapter, short circuit termination
 </Kit>
     <Locations>
       <Location>
@@ -686,7 +767,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -702,7 +788,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C5</Storage></Location><Location><Room>ST032</Room><Storage>C7</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C5</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>17</Total>
       <InService>17</InService>
@@ -833,7 +928,7 @@
     <Documents/>
   </Item>
   <Item id="0508" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1.0 &#xB5;Ci Na-22 gamma source</InventoryName>
+    <InventoryName>1.0 µCi Na-22 gamma source</InventoryName>
     <Identification>
       <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
@@ -1144,15 +1239,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0068" lastModified="2018-01-25T12:34:45">
+  <Item id="0068" lastModified="2018-01-29T11:13:20">
     <InventoryName>Geissler tube power supply</InventoryName>
     <Identification>
       <Manufacturer>Electro-Technic Products</Manufacturer>
       <Model>SP200</Model>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0068img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>20</Total>
       <InService>20</InService>
@@ -1177,7 +1277,7 @@
     <Documents/>
   </Item>
   <Item id="0138" lastModified="2018-01-25T12:34:45">
-    <InventoryName>10 M&#x2126; resistor</InventoryName>
+    <InventoryName>10 MΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -1209,7 +1309,7 @@
     <Documents/>
   </Item>
   <Item id="0115" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1 &#xB5;F capacitor</InventoryName>
+    <InventoryName>1 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -1225,7 +1325,7 @@
     <Documents/>
   </Item>
   <Item id="0146" lastModified="2018-01-25T12:34:45">
-    <InventoryName>6.8 k&#x2126; resistor</InventoryName>
+    <InventoryName>6.8 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -1442,7 +1542,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D24</Storage></Location><Location><Room>ST032</Room><Storage>D24</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D24</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D24</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>33</Total>
       <InService>33</InService>
@@ -1770,7 +1879,7 @@
     <Documents/>
   </Item>
   <Item id="0276" lastModified="2018-01-25T12:34:45">
-    <InventoryName>10 &#xB5;Ci Tl-204 beta source</InventoryName>
+    <InventoryName>10 µCi Tl-204 beta source</InventoryName>
     <Identification>
       <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
@@ -1807,7 +1916,7 @@
     <Documents/>
   </Item>
   <Item id="0154" lastModified="2018-01-25T12:34:45">
-    <InventoryName>25 &#x2126; potentiometer</InventoryName>
+    <InventoryName>25 Ω potentiometer</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
@@ -1865,7 +1974,7 @@
     <Documents/>
   </Item>
   <Item id="0271" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1 &#xB5;Ci Co-60 gamma source</InventoryName>
+    <InventoryName>1 µCi Co-60 gamma source</InventoryName>
     <Identification>
       <Manufacturer>Nucleus</Manufacturer>
       <Model/>
@@ -1941,7 +2050,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D4</Storage></Location><Location><Room>ST036</Room><Storage>D13</Storage></Location><Location><Room>ST034</Room><Storage>D4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D4</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D13</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>25</Total>
       <InService>25</InService>
@@ -1978,7 +2100,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D11</Storage></Location><Location><Room>ST036</Room><Storage>D11</Storage></Location><Location><Room>ST034</Room><Storage>D11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D11</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D11</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>3</Total>
       <InService>3</InService>
@@ -2002,15 +2137,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0501" lastModified="2018-01-25T12:34:45">
+  <Item id="0501" lastModified="2018-01-29T11:13:20">
     <InventoryName>projectile launcher</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0501img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>20</Total>
       <InService/>
@@ -2051,7 +2191,7 @@
     <Documents/>
   </Item>
   <Item id="0399" lastModified="2018-01-25T12:34:45">
-    <InventoryName>100 &#xB5;m pinhole</InventoryName>
+    <InventoryName>100 µm pinhole</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -2177,15 +2317,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0232" lastModified="2018-01-25T12:34:45">
+  <Item id="0232" lastModified="2018-01-29T11:13:20">
     <InventoryName>2 resistor set</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0232img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D25</Storage></Location><Location><Room>ST032</Room><Storage>D25</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D25</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D25</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>37</Total>
       <InService>37</InService>
@@ -2234,9 +2383,31 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-      
-    <Location><Room>ST029</Room><Storage>C2</Storage></Location><Location><Room>ST029</Room><Storage>D10</Storage></Location><Location><Room>ST030</Room><Storage>D20</Storage></Location><Location><Room>ST036</Room><Storage>D20</Storage></Location><Location><Room>ST032</Room><Storage>D20</Storage></Location><Location><Room>ST034</Room><Storage>D20</Storage></Location></Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C2</Storage>
+      </Location>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D10</Storage>
+      </Location>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D20</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>72</Total>
       <InService>72</InService>
@@ -2252,7 +2423,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>48</Total>
       <InService>48</InService>
@@ -2338,7 +2514,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C10</Storage></Location><Location><Room>ST038</Room><Storage>C8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C10</Storage>
+      </Location>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>19</Total>
       <InService>19</InService>
@@ -2391,7 +2576,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C6</Storage></Location><Location><Room>ST036</Room><Storage>C8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C6</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>10</Total>
       <InService>10</InService>
@@ -2430,7 +2624,16 @@
     </Identification>
     <Kit isKit="true">glass tube, stopper with catcher, large stopper, matched steel balls
 </Kit>
-    <Locations><Location><Room>ST036</Room><Storage>C9</Storage></Location><Location><Room>ST036</Room><Storage>C7</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C9</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>16</Total>
       <InService>16</InService>
@@ -2438,15 +2641,28 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0185" lastModified="2018-01-25T12:34:45">
+  <Item id="0185" lastModified="2018-01-29T11:13:20">
     <InventoryName>set of hanging masses</InventoryName>
     <Identification>
       <Manufacturer>Ohaus</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0185img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D21</Storage></Location><Location><Room>ST034</Room><Storage>D21</Storage></Location><Location><Room>ST032</Room><Storage>D21</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D21</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D21</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D21</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>22</Total>
       <InService>22</InService>
@@ -2455,7 +2671,7 @@
     <Documents/>
   </Item>
   <Item id="0123" lastModified="2018-01-25T12:34:45">
-    <InventoryName>10 k&#x2126; resistor</InventoryName>
+    <InventoryName>10 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -2495,7 +2711,12 @@
     </Identification>
     <Kit isKit="true">
 </Kit>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>20</Total>
       <InService>20</InService>
@@ -2536,7 +2757,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D26</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>17</Total>
       <InService>17</InService>
@@ -2568,7 +2794,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>25</Total>
       <InService>25</InService>
@@ -2656,15 +2887,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0019" lastModified="2018-01-25T12:34:45">
+  <Item id="0019" lastModified="2018-01-29T11:13:20">
     <InventoryName>introductory student spectroscope</InventoryName>
     <Identification>
       <Manufacturer>Griffin and George</Manufacturer>
       <Model>P1719</Model>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0019img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C4</Storage></Location><Location><Room>ST032</Room><Storage>C8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C4</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>13</Total>
       <InService>13</InService>
@@ -2696,7 +2936,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>59</Total>
       <InService>59</InService>
@@ -2713,8 +2958,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>2</Total>
       <InService>2</InService>
@@ -2723,7 +2971,7 @@
     <Documents/>
   </Item>
   <Item id="0323" lastModified="2018-01-25T12:34:45">
-    <InventoryName>large unpolarized capacitor 10 &#xB5;F - 50 &#xB5;F</InventoryName>
+    <InventoryName>large unpolarized capacitor 10 µF - 50 µF</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -2739,7 +2987,7 @@
     <Documents/>
   </Item>
   <Item id="0275" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1.0 &#xB5;Ci Am-241 alpha source</InventoryName>
+    <InventoryName>1.0 µCi Am-241 alpha source</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -2783,7 +3031,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>12</Total>
       <InService>12</InService>
@@ -2836,7 +3089,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>12</Total>
       <InService>11</InService>
@@ -2868,7 +3126,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D9</Storage></Location><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D9</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D26</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>156</Total>
       <InService>156</InService>
@@ -2921,7 +3188,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>25</Total>
       <InService>25</InService>
@@ -2959,8 +3231,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>D7</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>29</Total>
       <InService>29</InService>
@@ -2969,7 +3244,7 @@
     <Documents/>
   </Item>
   <Item id="0222" lastModified="2018-01-25T12:34:45">
-    <InventoryName>36 k&#x3A9; resistor</InventoryName>
+    <InventoryName>36 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -3017,7 +3292,7 @@
     <Documents/>
   </Item>
   <Item id="0074" lastModified="2018-01-25T12:34:45">
-    <InventoryName>0.1 &#x3BC;Ci Sr-90 beta source</InventoryName>
+    <InventoryName>0.1 μCi Sr-90 beta source</InventoryName>
     <Identification>
       <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
@@ -3038,7 +3313,7 @@
     <Documents/>
   </Item>
   <Item id="0151" lastModified="2018-01-25T12:34:45">
-    <InventoryName>10 k&#x2126; potentiometer</InventoryName>
+    <InventoryName>10 kΩ potentiometer</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -3086,7 +3361,7 @@
     <Documents/>
   </Item>
   <Item id="0103" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1.0 &#xB5;Ci Cs-137 gamma source</InventoryName>
+    <InventoryName>1.0 µCi Cs-137 gamma source</InventoryName>
     <Identification>
       <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
@@ -3136,8 +3411,15 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST034</Room><Storage>C4</Storage></Location><Location><Room>ST036</Room><Storage>C6</Storage></Location></Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C4</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C6</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService>18</InService>
@@ -3169,7 +3451,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>12</Total>
       <InService>12</InService>
@@ -3185,7 +3472,24 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>Other</Storage></Location><Location><Room>ST036</Room><Storage>Other</Storage></Location><Location><Room>ST032</Room><Storage>Other</Storage></Location><Location><Room>ST034</Room><Storage>Other</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>40</Total>
       <InService>40</InService>
@@ -3215,7 +3519,7 @@
     <Documents/>
   </Item>
   <Item id="0496" lastModified="2018-01-25T12:34:45">
-    <InventoryName>5 kilo&#x2126; - 10 kilo&#x2126; pair</InventoryName>
+    <InventoryName>5 kiloΩ - 10 kiloΩ pair</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -3255,8 +3559,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -3298,7 +3605,7 @@
     <Documents/>
   </Item>
   <Item id="0027" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Moll&#x2019;s thermopile</InventoryName>
+    <InventoryName>Moll’s thermopile</InventoryName>
     <Identification>
       <Manufacturer>Kipp &amp; Zonen</Manufacturer>
       <Model>CA2-764644</Model>
@@ -3342,7 +3649,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>7</Total>
       <InService>7</InService>
@@ -3422,7 +3734,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>8</Total>
       <InService>8</InService>
@@ -3431,7 +3748,7 @@
     <Documents/>
   </Item>
   <Item id="0376" lastModified="2018-01-25T12:34:45">
-    <InventoryName>200 k&#x3A9; resistor</InventoryName>
+    <InventoryName>200 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -3475,7 +3792,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C6</Storage></Location><Location><Room>ST036</Room><Storage>C8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C6</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>9</Total>
       <InService>9</InService>
@@ -3537,7 +3863,7 @@
     <Documents/>
   </Item>
   <Item id="0148" lastModified="2018-01-25T12:34:45">
-    <InventoryName>5.1 k&#x2126; resistor</InventoryName>
+    <InventoryName>5.1 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -3576,7 +3902,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>10</Total>
       <InService>10</InService>
@@ -3593,8 +3924,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>23</InService>
@@ -3688,7 +4022,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C9</Storage></Location><Location><Room>ST036</Room><Storage>C7</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C9</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService>18</InService>
@@ -3761,7 +4104,7 @@
     <Documents/>
   </Item>
   <Item id="0140" lastModified="2018-01-25T12:34:45">
-    <InventoryName>100 &#x2126; resistor</InventoryName>
+    <InventoryName>100 Ω resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -3794,7 +4137,7 @@
     <Documents/>
   </Item>
   <Item id="0145" lastModified="2018-01-25T12:34:45">
-    <InventoryName>9.1 k&#x2126; resistor</InventoryName>
+    <InventoryName>9.1 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -3809,12 +4152,12 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0008" lastModified="2018-01-25T12:34:45">
+  <Item id="0008" lastModified="2018-01-29T11:13:20">
     <InventoryName>laboratory jack</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0008img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
@@ -3880,7 +4223,12 @@
     </Identification>
     <Kit isKit="true">optical screen, lens holder (2), illuminated test object, plastic ruler, 5 cm focal length 38 mm diameter double convex lens, 10 cm focal length 28 mm diameter double convex lens, 20 cm focal length 38 mm diameter double convex lens, 100 cm focal length 38 mm diameter plano-convex lens, -10 cm focal length 38 mm diameter double concave lens. 
 </Kit>
-    <Locations><Location><Room>ST032</Room><Storage>C4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>22</Total>
       <InService>22</InService>
@@ -3897,7 +4245,16 @@
     </Identification>
     <Kit isKit="true">masking tape, plastic ruler, current balance apparatus, bubble level, spacer bar, milligram mass set
 </Kit>
-    <Locations><Location><Room>ST030</Room><Storage>C3</Storage></Location><Location><Room>ST030</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C3</Storage>
+      </Location>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService/>
@@ -3945,7 +4302,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST029</Room><Storage>D5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>1</Total>
       <InService>1</InService>
@@ -3986,7 +4348,7 @@
     <Documents/>
   </Item>
   <Item id="0124" lastModified="2018-01-25T12:34:45">
-    <InventoryName>100 k&#x2126; resistor</InventoryName>
+    <InventoryName>100 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -4023,7 +4385,7 @@
     <Documents/>
   </Item>
   <Item id="0139" lastModified="2018-01-25T12:34:45">
-    <InventoryName>20 k&#x2126; resistor</InventoryName>
+    <InventoryName>20 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -4099,7 +4461,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>Other</Storage></Location><Location><Room>ST036</Room><Storage>Other</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>13</Total>
       <InService>13</InService>
@@ -4209,7 +4580,7 @@
     <Documents/>
   </Item>
   <Item id="0351" lastModified="2018-01-25T12:34:45">
-    <InventoryName>10 k&#x3A9; Eico decade resistor box</InventoryName>
+    <InventoryName>10 kΩ Eico decade resistor box</InventoryName>
     <Identification>
       <Manufacturer>Eico</Manufacturer>
       <Model>1171</Model>
@@ -4245,15 +4616,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0267" lastModified="2018-01-25T12:34:45">
+  <Item id="0267" lastModified="2018-01-29T11:13:20">
     <InventoryName>set of short connecting leads</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0267img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D25</Storage></Location><Location><Room>ST032</Room><Storage>D25</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D25</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D25</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>53</Total>
       <InService>53</InService>
@@ -4269,7 +4649,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C10</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C10</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>17</Total>
       <InService>17</InService>
@@ -4360,7 +4745,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -4369,7 +4759,7 @@
     <Documents/>
   </Item>
   <Item id="0375" lastModified="2018-01-25T12:34:45">
-    <InventoryName>82 k&#x3A9; resistor</InventoryName>
+    <InventoryName>82 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -4429,7 +4819,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D11</Storage></Location><Location><Room>ST036</Room><Storage>D11</Storage></Location><Location><Room>ST034</Room><Storage>D11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D11</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D11</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>16</Total>
       <InService>16</InService>
@@ -4453,15 +4856,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0225" lastModified="2018-01-25T12:34:45">
+  <Item id="0225" lastModified="2018-01-29T11:13:20">
     <InventoryName>push pins</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0225img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>48</Total>
       <InService>48</InService>
@@ -4567,7 +4975,7 @@
     <Documents/>
   </Item>
   <Item id="0133" lastModified="2018-01-25T12:34:45">
-    <InventoryName>2.2 k&#x2126; resistor</InventoryName>
+    <InventoryName>2.2 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -4590,7 +4998,24 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D20</Storage></Location><Location><Room>ST036</Room><Storage>D20</Storage></Location><Location><Room>ST034</Room><Storage>D20</Storage></Location><Location><Room>ST032</Room><Storage>D20</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D20</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>31</Total>
       <InService>31</InService>
@@ -4647,7 +5072,7 @@
     <Documents/>
   </Item>
   <Item id="0507" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1.0 &#xB5;Ci Cd-109 gamma source</InventoryName>
+    <InventoryName>1.0 µCi Cd-109 gamma source</InventoryName>
     <Identification>
       <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
@@ -4675,7 +5100,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>9</Total>
       <InService>9</InService>
@@ -4829,7 +5259,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C5</Storage></Location><Location><Room>ST036</Room><Storage>C5</Storage></Location><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C5</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -4878,7 +5321,12 @@
     </Identification>
     <Kit isKit="true">plastic beaker, assorted ball bearings
 </Kit>
-    <Locations><Location><Room>ST036</Room><Storage>D14</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D14</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>13</Total>
       <InService>13</InService>
@@ -4887,7 +5335,7 @@
     <Documents/>
   </Item>
   <Item id="0125" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1 k&#x2126; resistor</InventoryName>
+    <InventoryName>1 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -4959,7 +5407,20 @@
     </Identification>
     <Kit isKit="true">plastic beaker, brass rectangle (2), brass disk (2), ball bearing, aluminum tube
 </Kit>
-    <Locations><Location><Room>ST030</Room><Storage>D4</Storage></Location><Location><Room>ST036</Room><Storage>D13</Storage></Location><Location><Room>ST034</Room><Storage>D4</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D4</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D13</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -4999,15 +5460,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0159" lastModified="2018-01-25T12:34:45">
+  <Item id="0159" lastModified="2018-01-29T11:13:20">
     <InventoryName>Teachspin magnetic force apparatus</InventoryName>
     <Identification>
       <Manufacturer>Teachspin</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0159img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>S1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>S1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>8</Total>
       <InService>8</InService>
@@ -5016,7 +5482,7 @@
     <Documents/>
   </Item>
   <Item id="0104" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1.0 &#x3BC;Ci Ba-133 gamma source</InventoryName>
+    <InventoryName>1.0 μCi Ba-133 gamma source</InventoryName>
     <Identification>
       <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
@@ -5208,7 +5674,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location><Location><Room>ST032</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>11</Total>
       <InService>11</InService>
@@ -5477,7 +5952,7 @@
     <Documents/>
   </Item>
   <Item id="0152" lastModified="2018-01-25T12:34:45">
-    <InventoryName>100 k&#x2126; potentiometer</InventoryName>
+    <InventoryName>100 kΩ potentiometer</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -5492,15 +5967,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0490" lastModified="2018-01-25T12:34:45">
+  <Item id="0490" lastModified="2018-01-29T11:13:20">
     <InventoryName>thermoelectric apparatus</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0490img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -5564,7 +6044,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C6</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C6</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>7</Total>
       <InService>7</InService>
@@ -5573,7 +6058,7 @@
     <Documents/>
   </Item>
   <Item id="0118" lastModified="2018-01-25T12:34:45">
-    <InventoryName>0.001 &#x3BC;F capacitor</InventoryName>
+    <InventoryName>0.001 μF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -5642,7 +6127,7 @@
     <Documents/>
   </Item>
   <Item id="0131" lastModified="2018-01-25T12:34:45">
-    <InventoryName>15 k&#x2126; resistor</InventoryName>
+    <InventoryName>15 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -5690,7 +6175,7 @@
     <Documents/>
   </Item>
   <Item id="0114" lastModified="2018-01-25T12:34:45">
-    <InventoryName>0.1 &#xB5;F capacitor</InventoryName>
+    <InventoryName>0.1 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -5705,15 +6190,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0272" lastModified="2018-01-25T12:34:45">
+  <Item id="0272" lastModified="2018-01-29T11:13:20">
     <InventoryName>aluminum bar with hook and multiple notches</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0272img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D26</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>17</Total>
       <InService>17</InService>
@@ -5798,7 +6288,24 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>D20</Storage></Location><Location><Room>ST036</Room><Storage>D20</Storage></Location><Location><Room>ST034</Room><Storage>D20</Storage></Location><Location><Room>ST032</Room><Storage>D20</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>D20</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D20</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -5831,8 +6338,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST034</Room><Storage>S2</Storage></Location></Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>S2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>8</Total>
       <InService>8</InService>
@@ -5901,7 +6411,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -5938,7 +6453,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C11</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>94</Total>
       <InService>94</InService>
@@ -5992,7 +6512,12 @@
     </Identification>
     <Kit isKit="true">acrylic rod (2), PVC rod (2), rod hanger, hanger string, rayon cloth, leaf electrometer
 </Kit>
-    <Locations><Location><Room>ST038</Room><Storage>C7</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>24</Total>
       <InService>24</InService>
@@ -6017,7 +6542,7 @@
     <Documents/>
   </Item>
   <Item id="0153" lastModified="2018-01-25T12:34:45">
-    <InventoryName>70 k&#x2126; potentiometer</InventoryName>
+    <InventoryName>70 kΩ potentiometer</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6070,7 +6595,7 @@
     <Documents/>
   </Item>
   <Item id="0120" lastModified="2018-01-25T12:34:45">
-    <InventoryName>0.0056 &#xB5;F capacitor</InventoryName>
+    <InventoryName>0.0056 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6142,15 +6667,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0381" lastModified="2018-01-25T12:34:45">
+  <Item id="0381" lastModified="2018-01-29T11:13:20">
     <InventoryName>three sided mirror</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0381img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>19</Total>
       <InService>19</InService>
@@ -6217,7 +6747,7 @@
     <Documents/>
   </Item>
   <Item id="0136" lastModified="2018-01-25T12:34:45">
-    <InventoryName>33 k&#x2126; resistor</InventoryName>
+    <InventoryName>33 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6232,12 +6762,12 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0315" lastModified="2018-01-25T12:34:45">
+  <Item id="0315" lastModified="2018-01-29T11:13:20">
     <InventoryName>aluminum bar with notch</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0315img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations/>
@@ -6249,7 +6779,7 @@
     <Documents/>
   </Item>
   <Item id="0119" lastModified="2018-01-25T12:34:45">
-    <InventoryName>10 &#x3BC;F capacitor</InventoryName>
+    <InventoryName>10 μF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6288,7 +6818,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location><Location><Room>ST032</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>8</Total>
       <InService>8</InService>
@@ -6405,7 +6944,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -6558,7 +7102,7 @@
     <Documents/>
   </Item>
   <Item id="0263" lastModified="2018-01-25T12:34:45">
-    <InventoryName>100 &#x2126; GR decade resistance box</InventoryName>
+    <InventoryName>100 Ω GR decade resistance box</InventoryName>
     <Identification>
       <Manufacturer>General Radio</Manufacturer>
       <Model/>
@@ -6648,7 +7192,7 @@
     <Documents/>
   </Item>
   <Item id="0130" lastModified="2018-01-25T12:34:45">
-    <InventoryName>27 k&#x2126; resistor</InventoryName>
+    <InventoryName>27 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6664,7 +7208,7 @@
     <Documents/>
   </Item>
   <Item id="0105" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1.0 &#x3BC;Ci Co-57 gamma source</InventoryName>
+    <InventoryName>1.0 μCi Co-57 gamma source</InventoryName>
     <Identification>
       <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
@@ -6700,15 +7244,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0177" lastModified="2018-01-25T12:34:45">
+  <Item id="0177" lastModified="2018-01-29T11:13:20">
     <InventoryName>parallel plate conductor board</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0177img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>27</Total>
       <InService>27</InService>
@@ -6717,7 +7266,7 @@
     <Documents/>
   </Item>
   <Item id="0144" lastModified="2018-01-25T12:34:45">
-    <InventoryName>10 &#x2126; resistor</InventoryName>
+    <InventoryName>10 Ω resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6825,7 +7374,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C7</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C7</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>29</Total>
       <InService>29</InService>
@@ -6871,7 +7425,7 @@
     <Documents/>
   </Item>
   <Item id="0137" lastModified="2018-01-25T12:34:45">
-    <InventoryName>2.2 M&#x2126; resistor</InventoryName>
+    <InventoryName>2.2 MΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6887,7 +7441,7 @@
     <Documents/>
   </Item>
   <Item id="0049" lastModified="2018-01-25T12:34:45">
-    <InventoryName>50 &#x2126; BNC feedthrough termination</InventoryName>
+    <InventoryName>50 Ω BNC feedthrough termination</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6910,7 +7464,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>23</Total>
       <InService>23</InService>
@@ -6925,9 +7484,14 @@
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
-    <Kit isKit="true">slide with four single slits, slide with 4 double slits, slide with multiple slits, slide with aperatures, triple diffraction grating, 208 &#x3BC;m mesh grating, 176 &#x3BC;m mesh grating, 152 &#x3BC;m mesh grating, 127 &#x3BC;m mesh grating, 90 &#x3BC;m mesh grating, 76 &#x3BC;m mesh grating, 65 &#x3BC;m mesh grating
+    <Kit isKit="true">slide with four single slits, slide with 4 double slits, slide with multiple slits, slide with aperatures, triple diffraction grating, 208 μm mesh grating, 176 μm mesh grating, 152 μm mesh grating, 127 μm mesh grating, 90 μm mesh grating, 76 μm mesh grating, 65 μm mesh grating
 </Kit>
-    <Locations><Location><Room>ST032</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>16</Total>
       <InService>16</InService>
@@ -6935,16 +7499,21 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0216" lastModified="2018-01-25T12:34:45">
+  <Item id="0216" lastModified="2018-01-29T11:13:20">
     <InventoryName>drag force kit</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0216img.jpg</Thumbnail>
     </Identification>
-    <Kit isKit="true">1/8&#x201D; diameter teflon sphere (12), 5/23&#x201D; diameter teflon sphere (12), 3/16&#x201D; diameter teflon sphere (12), 1/4&#x201D; diameter teflon sphere (12), 5/16&#x201D; diameter teflon sphere (12), 3/8&#x201D; diameter teflon sphere (12), 1/2&#x201D; diameter teflon sphere (12)
+    <Kit isKit="true">1/8” diameter teflon sphere (12), 5/23” diameter teflon sphere (12), 3/16” diameter teflon sphere (12), 1/4” diameter teflon sphere (12), 5/16” diameter teflon sphere (12), 3/8” diameter teflon sphere (12), 1/2” diameter teflon sphere (12)
 </Kit>
-    <Locations><Location><Room>ST034</Room><Storage>S2</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>S2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>8</Total>
       <InService>8</InService>
@@ -6981,7 +7550,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST038</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>12</Total>
       <InService>12</InService>
@@ -7018,7 +7592,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>38</Total>
       <InService>38</InService>
@@ -7202,7 +7781,7 @@
     <Documents/>
   </Item>
   <Item id="0128" lastModified="2018-01-25T12:34:45">
-    <InventoryName>620 k&#x2126; resistor</InventoryName>
+    <InventoryName>620 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -7239,7 +7818,7 @@
     <Documents/>
   </Item>
   <Item id="0122" lastModified="2018-01-25T12:34:45">
-    <InventoryName>1 M&#x2126; resistor</InventoryName>
+    <InventoryName>1 MΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -7318,17 +7897,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0061" lastModified="2018-01-25T12:34:45">
+  <Item id="0061" lastModified="2018-01-29T11:13:20">
     <InventoryName>illuminated optical scale projector</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0061img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>C2</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>23</Total>
       <InService>23</InService>
@@ -7344,7 +7926,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService>18</InService>
@@ -7413,7 +8000,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D4</Storage></Location><Location><Room>ST032</Room><Storage>D26</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D4</Storage>
+      </Location>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D26</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>78</Total>
       <InService>78</InService>
@@ -7507,7 +8103,7 @@
     <Documents/>
   </Item>
   <Item id="0126" lastModified="2018-01-25T12:34:45">
-    <InventoryName>3.3 k&#x2126; resistor</InventoryName>
+    <InventoryName>3.3 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -7522,15 +8118,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0041" lastModified="2018-01-25T12:34:45">
+  <Item id="0041" lastModified="2018-01-29T11:13:20">
     <InventoryName>micrometer</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0041img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C5</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -7726,7 +8327,7 @@
     <Documents/>
   </Item>
   <Item id="0127" lastModified="2018-01-25T12:34:45">
-    <InventoryName>910 k&#x2126; resistor</InventoryName>
+    <InventoryName>910 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -7765,7 +8366,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST032</Room><Storage>D8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService>18</InService>
@@ -7806,7 +8412,7 @@
     <Documents/>
   </Item>
   <Item id="0129" lastModified="2018-01-25T12:34:45">
-    <InventoryName>47 k&#x2126; resistor</InventoryName>
+    <InventoryName>47 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -7837,17 +8443,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0054" lastModified="2018-01-25T12:34:45">
+  <Item id="0054" lastModified="2018-01-29T11:13:20">
     <InventoryName>c-clamp</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0054img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST030</Room><Storage>C2</Storage></Location></Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>67</Total>
       <InService>67</InService>
@@ -7872,7 +8481,7 @@
     <Documents/>
   </Item>
   <Item id="0135" lastModified="2018-01-25T12:34:45">
-    <InventoryName>22 k&#x2126; resistor</InventoryName>
+    <InventoryName>22 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -7903,15 +8512,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0203" lastModified="2018-01-25T12:34:45">
+  <Item id="0203" lastModified="2018-01-29T11:13:20">
     <InventoryName>solenoid for aluminum rail</InventoryName>
     <Identification>
       <Manufacturer>Griffin and George</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0203img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
@@ -8203,7 +8817,7 @@
     <Documents/>
   </Item>
   <Item id="0121" lastModified="2018-01-25T12:34:45">
-    <InventoryName>100 &#xB5;F capacitor</InventoryName>
+    <InventoryName>100 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8247,7 +8861,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>S1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>S1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>10</Total>
       <InService>10</InService>
@@ -8295,7 +8914,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>38</Total>
       <InService>38</InService>
@@ -8597,7 +9221,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>Other</Storage></Location><Location><Room>ST034</Room><Storage>Cart1</Storage></Location><Location><Room>ST036</Room><Storage>Cart1</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>25</Total>
       <InService>25</InService>
@@ -8613,7 +9250,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="true">steel rod (1), knife edge support (1), knife edge (1), knife edge (1), small cylindrical plastic mass (1), small cylindrical metal mass (1), large cylindrical plastic mass (1), large cylindrical metal mass (1)</Kit>
-    <Locations><Location><Room>ST030</Room><Storage>C2</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>9</Total>
       <InService>9</InService>
@@ -8670,7 +9312,7 @@
     <Documents/>
   </Item>
   <Item id="0116" lastModified="2018-01-25T12:34:45">
-    <InventoryName>0.01 &#xB5;F capacitor</InventoryName>
+    <InventoryName>0.01 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8686,7 +9328,7 @@
     <Documents/>
   </Item>
   <Item id="0132" lastModified="2018-01-25T12:34:45">
-    <InventoryName>30 k&#x2126; resistor</InventoryName>
+    <InventoryName>30 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8751,7 +9393,7 @@
     <Documents/>
   </Item>
   <Item id="0147" lastModified="2018-01-25T12:34:45">
-    <InventoryName>4.7 k&#x2126; resistor</InventoryName>
+    <InventoryName>4.7 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8767,7 +9409,7 @@
     <Documents/>
   </Item>
   <Item id="0134" lastModified="2018-01-25T12:34:45">
-    <InventoryName>11 k&#x2126; resistor</InventoryName>
+    <InventoryName>11 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8864,7 +9506,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST036</Room><Storage>C6</Storage></Location><Location><Room>ST036</Room><Storage>C8</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C6</Storage>
+      </Location>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>8</Total>
       <InService>8</InService>
@@ -8897,8 +9548,11 @@
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST038</Room><Storage>C6</Storage></Location></Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C6</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>19</Total>
       <InService>19</InService>
@@ -8906,15 +9560,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0426" lastModified="2018-01-25T12:34:45">
+  <Item id="0426" lastModified="2018-01-29T11:13:20">
     <InventoryName>concentric ring conductor board</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0426img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>21</Total>
       <InService>21</InService>
@@ -8926,13 +9585,16 @@
     <InventoryName>wooden stand</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
-      <Model></Model>
+      <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
-      
-    <Location><Room>ST039</Room><Storage>Other</Storage></Location></Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>18</Total>
       <InService>18</InService>
@@ -8977,15 +9639,20 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0202" lastModified="2018-01-25T12:34:45">
+  <Item id="0202" lastModified="2018-01-29T11:13:20">
     <InventoryName>compass holder</InventoryName>
     <Identification>
       <Manufacturer>Griffin and George</Manufacturer>
       <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0202img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST034</Room><Storage>C3</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>12</Total>
       <InService>12</InService>
@@ -9038,7 +9705,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations><Location><Room>ST030</Room><Storage>C6</Storage></Location></Locations>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>C6</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total>17</Total>
       <InService>17</InService>
