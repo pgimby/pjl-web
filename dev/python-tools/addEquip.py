@@ -17,4 +17,4 @@ newitem.quantity = {"total": "8", "service": "8","repair": "0"}
 
 print(db.new_id)
 db.addItem(newitem)
-db.save("/home/pgimby/pjl-web/dev/updatedEquipmentDB.xml", ignore_validation=False, error_log=True)
+#db.save("/home/pgimby/pjl-web/dev/updatedEquipmentDB.xml", ignore_validation=False, error_log=True)

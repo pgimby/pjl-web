@@ -1,0 +1,55 @@
+%\input{standard-preamble.tex}
+\documentclass[justified]{article}
+
+\begin{document}
+
+
+
+\title{Educational Laboratory Website Manual}
+\maketitle
+\tableofcontents
+%\vspace{-1.5cm}
+%\today
+%\begin{adjustwidth}{}{-153pt}
+
+\section{Making Changes to Website}
+
+All changes to the website should be made on the development space on slug (/home/pgimby/pjl-web). The only exception to this rule is that the equipment database equipmentDB.xml can be modified live by using the inventory website in edit mode. Because of this it is important to sync the development and live version of the website before making changes.
+
+\subsection{Sync Live Version and Development Version}
+
+\begin{enumerate}
+\item Sync web-server to github using the procedure outlined in section \ref{proc:sync}. Note that for the web server "watt" the /path/to/web-folder is /var/www/html, while the path for the development version on "slug" is /home/pgimby/pjl-web.
+\end{enumerate}
+
+
+\subsection{Procedure for updating PJL github}\label{proc:sync}
+
+
+\begin{enumerate}
+\item admin-user@computer /path/to/web-folder\\
+	\$ sudo git add .
+\item admin-user@computer /path/to/web-folder\\
+	\$ sudo git commit -m upload latest ``equimpnetDB.xml''
+\item admin-user@computer /path/to/web-folder\\
+	\$ sudo git pull origin master
+\item admin-user@computer /path/to/web-folder\\
+	\$ sudo git push origin master\\
+	Username for `https://github.com': admin-user\\
+	Password for `https://admin-user@github.com': ********
+\end{enumerate}
+%\item Upload made to Slug to github.
+
+
+\section{Making Changes to the Repository}
+
+
+%\end{enumerate}
+%\item Upload changes made to Watt to github.
+
+\section{Adding a new lab to the repository}
+
+
+
+%\end{adjustwidth}
+\end{document}

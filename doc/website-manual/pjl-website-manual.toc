@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Making Changes to Website}{1}
+\contentsline {subsection}{\numberline {1.1}Sync Live Version and Development Version}{1}
+\contentsline {subsection}{\numberline {1.2}Procedure for updating PJL github}{1}
+\contentsline {section}{\numberline {2}Making Changes to the Repository}{2}
+\contentsline {section}{\numberline {3}Adding a new lab to the repository}{2}
