@@ -19,7 +19,17 @@ All changes to the website should be made on the development space on slug (/hom
 \subsection{Sync Live Version and Development Version}
 
 \begin{enumerate}
-\item Sync web-server to github using the procedure outlined in section \ref{proc:sync}. Note that for the web server "watt" the /path/to/web-folder is /var/www/html, while the path for the development version on "slug" is /home/pgimby/pjl-web.
+\item Sync web-server to github using the procedure outlined in section \ref{proc:sync}. Note that for the web server "watt" the /path/to/web-folder is /var/www/html.
+
+\item Sync development server to github using the procedure outlined in section \ref{proc:sync}. Note that for the development version on "slug" the path is /home/pgimby/pjl-web.
+
+\item Sync the web server from the github using
+\begin{itemize}
+	\item admin-user@computer /var/www/html\\
+	\$ sudo git pull origin master
+\end{itemize}
+
+\item Development server is now ready for editing.
 \end{enumerate}
 
 

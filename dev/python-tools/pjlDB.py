@@ -288,7 +288,6 @@ class EquipDB():
             self.new_id = self._getNextAvailableID()
 
 
-
     def save(self, filename, ignore_validation=False, error_log=False):
         self._updateXML()
         if not isinstance(filename, str):

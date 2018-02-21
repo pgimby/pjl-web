@@ -322,6 +322,7 @@ newitem.is_kit = False
 newitem.locations = [{"room": "ST039", "storage": "Other"}]
 newitem.quantity = {"total": "12", "service": "12","repair": "0"}
 newitem.documents = [{"name": "warrantee", "location": "/path/to/document.pdf"}]
+newitem.kit = "name1, name2, name3 (2)"
 
 db.addItem(newitem)
 db.save("path/to/updated/equipmentDB.xml", ignore_validation=False, error_log=False)
