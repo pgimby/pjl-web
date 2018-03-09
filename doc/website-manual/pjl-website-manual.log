@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  20 FEB 2018 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  5 MAR 2018 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,22 +6,103 @@ entering extended mode
 (./pjl-website-manual.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.sty
+Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
+
+(/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.tex
+`dirtree' v0.32, 2012/12/11 (jcc)
+\DT@offset=\dimen103
+\DT@width=\dimen104
+\DT@sep=\dimen105
+\DT@all=\dimen106
+\DT@rulewidth=\dimen107
+\DT@dotwidth=\dimen108
+\DTbaselineskip=\dimen109
+\DT@counti=\count88
+\DT@countii=\count89
+\DT@countiii=\count90
+\DT@countiv=\count91
+\DT@indent=\dimen110
+\DT@parskip=\dimen111
+\DT@baselineskip=\dimen112
+)
+File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count92
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count93
+\lst@currlwidth=\dimen113
+\lst@column=\count94
+\lst@pos=\count95
+\lst@lostspace=\dimen114
+\lst@width=\dimen115
+\lst@newlines=\count96
+\lst@lineno=\count97
+\lst@maxwidth=\dimen116
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 
 LaTeX Warning: Unused global option(s):
@@ -30,71 +111,146 @@ LaTeX Warning: Unused global option(s):
 (./pjl-website-manual.aux)
 \openout1 = `pjl-website-manual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+\c@lstlisting=\count101
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen117
+\scratchbox=\box28
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen118
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks17
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 9.
+(Font)              <12> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 9.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 9.
+(Font)              <6> on input line 12.
 
 
 LaTeX Warning: No \author given.
 
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
 (./pjl-website-manual.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
+(Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
+(Font)              <5> on input line 1.
 )
 \tf@toc=\write3
 \openout3 = `pjl-website-manual.toc'.
 
 
-Overfull \hbox (22.47284pt too wide) in paragraph at lines 22--23
+Overfull \hbox (22.47284pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/n/10 Note that for the web server "watt" the /path/to/web-folder is 
 /var/www/html. 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./pjl-website-manual.
-aux) ) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+[5] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+(/usr/local/master/pjl-web/doc/website-manual/code-samples/labDB-template.txt
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 7.
+ [6])
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/local/master/pjl-web/dev/python-tools/addNewLab.py [7]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9])
+[10] (./pjl-website-manual.aux) ) 
 Here is how much of TeX's memory you used:
- 254 strings out of 493029
- 2958 string characters out of 6136234
- 57067 words of memory out of 5000000
- 3859 multiletter control sequences out of 15000+600000
- 7895 words of font info for 28 fonts, out of 8000000 for 9000
+ 3140 strings out of 493029
+ 42289 string characters out of 6136234
+ 164722 words of memory out of 5000000
+ 6674 multiletter control sequences out of 15000+600000
+ 10029 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,19p,379b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pjl-website-manual.pdf (2 pages, 77233 bytes).
+ 30i,6n,52p,516b,1689s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb>
+Output written on pjl-website-manual.pdf (10 pages, 209236 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -531,7 +531,8 @@ class LabDB():
                  self.hasValidTypes(log_file=f),
                  self.hasValidDisciplines(log_file=f),
                  self.hasValidTopics(log_file=f),
-                 self.hasUniqueEquipIDs(log_file=f)]
+                 self.hasUniqueEquipIDs(log_file=f),
+                 self.noDuplicateNames(log_file=f)]
             f.close()
         else:
             f = None
@@ -540,13 +541,32 @@ class LabDB():
                  self.hasValidTypes(log_file=f),
                  self.hasValidDisciplines(log_file=f),
                  self.hasValidTopics(log_file=f),
-                 self.hasUniqueEquipIDs(log_file=f)]
+                 self.hasUniqueEquipIDs(log_file=f),
+                 self.noDuplicateNames(log_file=f)]
         if f:
             f.close()
         if all(tests):
             return True
         else:
             return False
+
+    def noDuplicateNames(self, log_file=None):
+        error_log = []
+        good = True
+        seen = set()
+        for item in self.labs:
+            if item.name not in seen:
+                seen.add(item.name)
+            else:
+                good = False
+                error_log.append("Lab \"" + item.name +
+                                 "\" is a duplicate of another item in the database")
+        if good == False:
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
+            else:
+                [print(i) for i in error_log]
+        return good
 
 
 

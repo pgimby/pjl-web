@@ -1,6 +1,9 @@
 %\input{standard-preamble.tex}
-\documentclass[justified]{article}
-
+\documentclass[justified]{book}
+\usepackage{dirtree}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.9}
 \begin{document}
 
 
@@ -12,16 +15,22 @@
 %\today
 %\begin{adjustwidth}{}{-153pt}
 
+\section{Introduction}
+
+
+
+
+
 \section{Making Changes to Website}
 
-All changes to the website should be made on the development space on slug (/home/pgimby/pjl-web). The only exception to this rule is that the equipment database equipmentDB.xml can be modified live by using the inventory website in edit mode. Because of this it is important to sync the development and live version of the website before making changes.
+All changes to the website should be made on the development space on slug (/usr/local/master/pjl-web). The only exception to this rule is that the equipment database equipmentDB.xml can be modified live by using the inventory website in edit mode. Because of this it is important to sync the development and live version of the website before making changes.
 
-\subsection{Sync Live Version and Development Version}
+\subsection{Sync Live Version with Development Space}
 
 \begin{enumerate}
 \item Sync web-server to github using the procedure outlined in section \ref{proc:sync}. Note that for the web server "watt" the /path/to/web-folder is /var/www/html.
 
-\item Sync development server to github using the procedure outlined in section \ref{proc:sync}. Note that for the development version on "slug" the path is /home/pgimby/pjl-web.
+\item Sync development space to github using the procedure outlined in section \ref{proc:sync}. Note that for the development version on "slug" the path is /usr/local/master/pjl-web.
 
 \item Sync the web server from the github using
 \begin{itemize}
@@ -29,9 +38,17 @@ All changes to the website should be made on the development space on slug (/hom
 	\$ sudo git pull origin master
 \end{itemize}
 
-\item Development server is now ready for editing.
+\item Development space is now ready for editing.
 \end{enumerate}
 
+\subsection{Order of Making Changes}
+\begin{enumerate}
+\item Sync live version and development space
+\item Changes Inventory
+\item Repository
+\item Update live version on web server
+
+\end{enumerate}
 
 \subsection{Procedure for updating PJL github}\label{proc:sync}
 
@@ -51,15 +68,134 @@ All changes to the website should be made on the development space on slug (/hom
 %\item Upload made to Slug to github.
 
 
-\section{Making Changes to the Repository}
+\section{Repository}
+
+\subsection{Directory structure}
+
+At top most level is a folder called ``repository" that contains all experiment related documents.\\
+
+\noindent At the second level all the files are organized by lab experiment. Each experiment has a folder that is labeled with a naming scheme where the first four characters are the unique identifier number, followed by the name of the lab. The lab name should be descriptive of the experiment itself. In this folder is also a folder called ``Support\_Docs" that contains any documents useful for the experiment, but not actually used to generate the student document. \\
+
+\noindent At the third level files are organized into versions. Each folder follows a naming scheme where the the first four characters are the unique lab identifier number, followed by ``PHYS" followed by the Course Number followed by a two character semester identifier, followed by the year. Each folder contains all the file used to generate the pdf given to students in the course, semester, and year as identified in the folder label. \\
+
+\noindent {\bf Directory structure sample.}
+
+\dirtree{%
+.1 /repository.
+.2 0072-Nuclear-Decay.
+.3 0001-PHYS123FA2017.
+.4 lab.tex.
+.4 photo.jpg.
+.4 student.pdf.
+.2 Support\_Docs.
+}
+\vspace{12pt}
+{\bf Documents can only be added to the repository if they meet the following criteria.}
+\begin{enumerate}
+\item The files include the pdf given to students to be used in their course work.
+\item All files need to generate the pdf are included.
+\end{enumerate}
 
 
 %\end{enumerate}
 %\item Upload changes made to Watt to github.
 
-\section{Adding a new lab to the repository}
+\subsection{Adding a new lab to the repository}
+
+Before beginning ensure that all equipment used in the new experiment are in the lab inventory, and have equipment ID number. 
+
+\begin{enumerate}
+\item Create a folder for the new lab (example ``new-lab-folder"), and place all files for generating student pdf, and the student pdf in new-lab-folder
+\item Inside new-lab-folder make a directory called ``Support\_Docs", and put all documents relevant to lab, but not needed for generation of pdf into it. This might include research papers, sample data, Excel spreadsheets, etc.
+\item Inside new-lab-folder create a file called info.csv and add all relevant information to the file.\\
+
+%Example: The file info.csv needs to be in this form. See below for more details.
+
+	\begin{lstlisting}[backgroundcolor = \color{light-gray},
+					caption = The file info.csv needs to be in this form. See below for more details
+                   %language = C,
+                   xleftmargin = 2cm,
+                   framexleftmargin = 1em
+                   ]
+Name,Vectors-in-One-and-Two-Dimensions
+Type,Labatorial
+Disciplines,Newtonian Mechanics,Optics
+Topics,Collisions,Momentum
+Semester,Fall
+Year,2017
+Course,325
+Equipment,0004-(1)-[0002],0050-(4)
+Software,ImageJ,Canon
+PDF,title.pdf
+\end{lstlisting}
 
 
+Any text that is \textbf{Bold} must be configured for each lab. text in \textit{italic} are notes that must be removed. Standard text must be left as is.
+
+\begin{itemize}
+\item Name, \textbf{Name as to be Seen on Website} \textit{ Use Standard Title Capitalize Convention.}
+\item Type, \textbf{Type} \textit{ Must be either Lab or Labatorial.}
+\item Disciplines, \textbf{Discipline1, Discipline2} \textit{ Disciplines must comma separated be taken from the approved list} \textbf{Need location of this list.}
+\item Topics, \textbf{Topic1, Topic2} \textit{ Topics must comma separated be taken from the approved list} \textbf{Need location of this list.}
+\item Semester, \textbf{Semester} \textit{ Winter, Spring, Summer, or Fall}
+\item Year, \textbf{Year} \textit{: Four digits.}
+\item Course, \textbf{Course Number} \textit{ Three digit number corresponding to the course the experiment was used in.}
+\item Equipment, \textbf{equipID-(Amount)-[alternate equipID], equipID-(Amount)} \textit{ equipID is four digit code of equipment in inventory, Amount is how many are needed, alternate ID is the four digit code of equipment in inventory that can be used if the primary unit is not available. IDs amounts and alternate IDs separated by ``-", and items in equipment list separated by ``,"}
+\item Software, \textbf{Software1, Software2} \textit{ Name of all software needed. Must be software from the list of supported software} \textbf{Need location of this list}
+\item PDF, \textbf{PDF exact Name} \textit{ This needs to be the exact name of the student pdf}
+\end{itemize}	
+
+\item Run ``addNewLab.py /path/to/new-lab-folder" from development space. 
+\end{enumerate}
+
+\subsection{Repository xml template}
+
+\lstinputlisting[language=xml, linerange = {7-49}, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = 2cm, framexleftmargin = 1em]{/usr/local/master/pjl-web/doc/website-manual/code-samples/labDB-template.txt}
+
+
+
+
+\section{Inventory}
+
+\subsection{Inventory structure}
+
+Each item in the inventory should have a unique identifier number, and a unique name. Each item has a place for any number of manuals, and one picture. 
+
+
+\subsection{Adding New Equipment}
+
+
+
+\begin{enumerate}
+\item Compile all rel
+
+	\begin{lstlisting}[backgroundcolor = \color{light-gray}, 	caption = The file info.csv needs to be in this form.
+	               language = csv, xleftmargin = -2cm, xrightmargin = -2cm,
+                   framexleftmargin = 1em
+                   ]
+                   
+name; Unique Name of Kit, is_kit; False, kit ; item1 ; item2 ; item3 (2)
+name; Unique Name of Equipment
+
+\end{lstlisting}
+
+\end{enumerate}
+
+\section{Scripts}
+
+\subsection{Add New Lab - addNewLab.py}
+%	\begin{lstlisting}[backgroundcolor = \color{lightgray},
+ %                  language = python,
+  %                 xleftmargin = -4cm,
+   %                framexleftmargin = 1em,
+    %               xrightmargin = -4cm,
+     %             framexrightmargin = 1em
+      %             ]
+
+
+\lstinputlisting[language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/addNewLab.py}
+
+%\end{lstlisting}
 
 %\end{adjustwidth}
 \end{document}

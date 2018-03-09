@@ -1,5 +1,14 @@
-\contentsline {section}{\numberline {1}Making Changes to Website}{1}
-\contentsline {subsection}{\numberline {1.1}Sync Live Version and Development Version}{1}
-\contentsline {subsection}{\numberline {1.2}Procedure for updating PJL github}{2}
-\contentsline {section}{\numberline {2}Making Changes to the Repository}{2}
-\contentsline {section}{\numberline {3}Adding a new lab to the repository}{2}
+\contentsline {section}{\numberline {0.1}Introduction}{3}
+\contentsline {section}{\numberline {0.2}Making Changes to Website}{3}
+\contentsline {subsection}{\numberline {0.2.1}Sync Live Version with Development Space}{3}
+\contentsline {subsection}{\numberline {0.2.2}Order of Making Changes}{4}
+\contentsline {subsection}{\numberline {0.2.3}Procedure for updating PJL github}{4}
+\contentsline {section}{\numberline {0.3}Repository}{4}
+\contentsline {subsection}{\numberline {0.3.1}Directory structure}{4}
+\contentsline {subsection}{\numberline {0.3.2}Adding a new lab to the repository}{5}
+\contentsline {subsection}{\numberline {0.3.3}Repository xml template}{6}
+\contentsline {section}{\numberline {0.4}Inventory}{7}
+\contentsline {subsection}{\numberline {0.4.1}Inventory structure}{7}
+\contentsline {subsection}{\numberline {0.4.2}Adding New Equipment}{7}
+\contentsline {section}{\numberline {0.5}Scripts}{7}
+\contentsline {subsection}{\numberline {0.5.1}Add New Lab - addNewLab.py}{7}

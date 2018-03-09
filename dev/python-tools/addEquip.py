@@ -4,8 +4,7 @@ from pjlDB import *
 import csv
 import argparse
 
-#db = EquipDB("/home/pgimby/pjl-web/dev/updatedEquipmentDB.xml")
-db = EquipDB("/home/pgimby/pjl-web/dev/equipmentDB.xml")
+db = EquipDB("/usr/local/master/pjl-web/data/equipmentDB.xml")
 
 parser = argparse.ArgumentParser()
 parser.add_argument('source', help='enter path of lab folder(s) to add.  Ex addNewLab /path/to/folder1 ~/path/to/folder2')
@@ -22,14 +21,13 @@ def parseEquInfo(equipInfo,catagory):
 	return lst
 
 
+
 with open(equFile, "r") as o:
 	equipItems = csv.reader(o)
 	for i in equipItems:
-
 		newitem = db.newItem(db.new_id)
 		newitem.name = parseEquInfo(i,"name")[0]
 		print(newitem.id_num)
-		#if parseEquInfo(i,"is_kit")[0] == "True":
 		if "is_kit; True" in ",".join(map(str,i)):
 			newitem.is_kit = True
 			kit = parseEquInfo(i,"kit")
@@ -57,4 +55,4 @@ with open(equFile, "r") as o:
 
 
 
-db.save("/home/pgimby/pjl-web/dev/updatedEquipmentDB.xml", ignore_validation=False, error_log=True)
+db.save("/home/pgimby/pjl-web/dev/equipmentDB.xml", ignore_validation=False, error_log=True)
