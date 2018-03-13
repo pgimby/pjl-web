@@ -1007,7 +1007,7 @@
     <Documents/>
   </Item>
   <Item id="0406" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Vernier force sensor handle</InventoryName>
+    <InventoryName>Vernier force plate sensor handle</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
       <Model/>
@@ -3700,7 +3700,7 @@
     <Documents/>
   </Item>
   <Item id="0405" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Vernier force sensor</InventoryName>
+    <InventoryName>Vernier force plate sensor</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
       <Model/>

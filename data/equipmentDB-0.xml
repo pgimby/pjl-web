@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Equipment>
-  <Item id="0001" lastModified="2018-01-31T09:11:34">
+  <Item id="0001" lastModified="2018-03-09T14:55:08">
     <InventoryName>Fluke multimeter</InventoryName>
     <Identification>
       <Manufacturer>Fluke</Manufacturer>
       <Model>8010A</Model>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0001img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
@@ -274,7 +274,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0472" lastModified="2018-01-29T11:13:20">
+  <Item id="0472" lastModified="2018-03-09T14:55:08">
     <InventoryName>15 mm tight spring</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -599,7 +599,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0073" lastModified="2018-01-29T11:13:20">
+  <Item id="0073" lastModified="2018-03-09T14:55:08">
     <InventoryName>hot plate</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1244,7 +1244,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0068" lastModified="2018-01-29T11:13:20">
+  <Item id="0068" lastModified="2018-03-09T14:55:08">
     <InventoryName>Geissler tube power supply</InventoryName>
     <Identification>
       <Manufacturer>Electro-Technic Products</Manufacturer>
@@ -2142,7 +2142,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0501" lastModified="2018-01-29T11:13:20">
+  <Item id="0501" lastModified="2018-03-09T14:55:08">
     <InventoryName>projectile launcher</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -2322,7 +2322,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0232" lastModified="2018-01-29T11:13:20">
+  <Item id="0232" lastModified="2018-03-09T14:55:08">
     <InventoryName>2 resistor set</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -2646,7 +2646,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0185" lastModified="2018-01-29T11:13:20">
+  <Item id="0185" lastModified="2018-03-09T14:55:08">
     <InventoryName>set of hanging masses</InventoryName>
     <Identification>
       <Manufacturer>Ohaus</Manufacturer>
@@ -2892,7 +2892,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0019" lastModified="2018-01-29T11:13:20">
+  <Item id="0019" lastModified="2018-03-09T14:55:08">
     <InventoryName>introductory student spectroscope</InventoryName>
     <Identification>
       <Manufacturer>Griffin and George</Manufacturer>
@@ -4157,7 +4157,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0008" lastModified="2018-01-29T11:13:20">
+  <Item id="0008" lastModified="2018-03-09T14:55:08">
     <InventoryName>laboratory jack</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4621,7 +4621,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0267" lastModified="2018-01-29T11:13:20">
+  <Item id="0267" lastModified="2018-03-09T14:55:08">
     <InventoryName>set of short connecting leads</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4861,7 +4861,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0225" lastModified="2018-01-29T11:13:20">
+  <Item id="0225" lastModified="2018-03-09T14:55:08">
     <InventoryName>push pins</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5465,7 +5465,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0159" lastModified="2018-01-29T11:13:20">
+  <Item id="0159" lastModified="2018-03-09T14:55:08">
     <InventoryName>Teachspin magnetic force apparatus</InventoryName>
     <Identification>
       <Manufacturer>Teachspin</Manufacturer>
@@ -5972,7 +5972,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0490" lastModified="2018-01-29T11:13:20">
+  <Item id="0490" lastModified="2018-03-09T14:55:08">
     <InventoryName>thermoelectric apparatus</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -6195,7 +6195,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0272" lastModified="2018-01-29T11:13:20">
+  <Item id="0272" lastModified="2018-03-09T14:55:08">
     <InventoryName>aluminum bar with hook and multiple notches</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -6672,7 +6672,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0381" lastModified="2018-01-29T11:13:20">
+  <Item id="0381" lastModified="2018-03-09T14:55:08">
     <InventoryName>three sided mirror</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6767,7 +6767,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0315" lastModified="2018-01-29T11:13:20">
+  <Item id="0315" lastModified="2018-03-09T14:55:08">
     <InventoryName>aluminum bar with notch</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7249,7 +7249,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0177" lastModified="2018-01-29T11:13:20">
+  <Item id="0177" lastModified="2018-03-09T14:55:08">
     <InventoryName>parallel plate conductor board</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -7504,7 +7504,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0216" lastModified="2018-01-29T11:13:20">
+  <Item id="0216" lastModified="2018-03-09T14:55:08">
     <InventoryName>drag force kit</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7526,12 +7526,12 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0002" lastModified="2018-01-25T12:34:45">
+  <Item id="0002" lastModified="2018-03-09T14:55:08">
     <InventoryName>Anatek power supply</InventoryName>
     <Identification>
       <Manufacturer>Anatek</Manufacturer>
       <Model>25-2S</Model>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+      <Thumbnail>/staffresources/equipment/equipimg/0002img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations>
@@ -7902,7 +7902,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0061" lastModified="2018-01-29T11:13:20">
+  <Item id="0061" lastModified="2018-03-09T14:55:08">
     <InventoryName>illuminated optical scale projector</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8123,7 +8123,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0041" lastModified="2018-01-29T11:13:20">
+  <Item id="0041" lastModified="2018-03-09T14:55:08">
     <InventoryName>micrometer</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8448,7 +8448,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0054" lastModified="2018-01-29T11:13:20">
+  <Item id="0054" lastModified="2018-03-09T14:55:08">
     <InventoryName>c-clamp</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8517,7 +8517,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0203" lastModified="2018-01-29T11:13:20">
+  <Item id="0203" lastModified="2018-03-09T14:55:08">
     <InventoryName>solenoid for aluminum rail</InventoryName>
     <Identification>
       <Manufacturer>Griffin and George</Manufacturer>
@@ -9565,7 +9565,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0426" lastModified="2018-01-29T11:13:20">
+  <Item id="0426" lastModified="2018-03-09T14:55:08">
     <InventoryName>concentric ring conductor board</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -9644,7 +9644,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0202" lastModified="2018-01-29T11:13:20">
+  <Item id="0202" lastModified="2018-03-09T14:55:08">
     <InventoryName>compass holder</InventoryName>
     <Identification>
       <Manufacturer>Griffin and George</Manufacturer>
