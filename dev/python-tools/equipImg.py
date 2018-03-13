@@ -12,10 +12,11 @@ import os
 from pjlDB import *
 
 
-inputDir = "/usr/local/master/labs/equipimg"
-slugRoot = "/home/pgimby/pjl-web"
+root = "/usr/local/master"
+inputDir = root +"/labs/equipimg"
+slugRoot = root + "/pjl-web"
 equipDir = "/staffresources/equipment/equipimg"
-db = EquipDB("../equipmentDB.xml")
+db = EquipDB(root + "/pjl-web/data/equipmentDB.xml")
 
 def imgInfo(inputDir):
 	equipInfos = {}
@@ -48,5 +49,5 @@ for i in equipInfos:
 	equip.thumbnail = webPath
 	db.addItem(equip)
 
-db.save("../updatedequipmentDB.xml", ignore_validation=False, error_log=True)
+db.save("../equipmentDB.xml", ignore_validation=False, error_log=True)
 print("...and then there will be cake")

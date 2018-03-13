@@ -1007,7 +1007,7 @@
     <Documents/>
   </Item>
   <Item id="0406" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Vernier force plate sensor handle</InventoryName>
+    <InventoryName>Vernier force sensor handle</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
       <Model/>
@@ -3700,7 +3700,7 @@
     <Documents/>
   </Item>
   <Item id="0405" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Vernier force plate sensor</InventoryName>
+    <InventoryName>Vernier force sensor</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
       <Model/>
@@ -9867,7 +9867,7 @@
     <Documents/>
   </Item>
   <Item id="0515" lastModified="2018-02-21T12:42:55">
-    <InventoryName>Daedalon air supply</InventoryName>
+    <InventoryName>Daedalon air blower</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -9899,7 +9899,7 @@
     <Documents/>
   </Item>
   <Item id="0527" lastModified="2018-02-21T12:42:55">
-    <InventoryName>small puck</InventoryName>
+    <InventoryName>small air table puck</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -9962,56 +9962,8 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0531" lastModified="2018-03-08T11:26:27">
-    <InventoryName>air puck central peg</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0532" lastModified="2018-03-08T11:26:27">
-    <InventoryName>air table rail mount</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0533" lastModified="2018-03-08T11:26:27">
-    <InventoryName>air puck velcro strip</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0534" lastModified="2018-03-08T14:33:42">
-    <InventoryName>large puck</InventoryName>
+  <Item id="0531" lastModified="2018-03-05T16:21:47">
+    <InventoryName>large air table puck</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>

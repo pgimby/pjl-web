@@ -10,5 +10,6 @@
 \contentsline {section}{\numberline {0.4}Inventory}{7}
 \contentsline {subsection}{\numberline {0.4.1}Inventory structure}{7}
 \contentsline {subsection}{\numberline {0.4.2}Adding New Equipment}{7}
+\contentsline {subsection}{\numberline {0.4.3}Adding photos of equipment}{7}
 \contentsline {section}{\numberline {0.5}Scripts}{7}
 \contentsline {subsection}{\numberline {0.5.1}Add New Lab - addNewLab.py}{7}

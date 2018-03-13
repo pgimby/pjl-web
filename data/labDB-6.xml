@@ -283,6 +283,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0102-AC-Circuits-and-Voltage-Dividers/0102-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0102-AC-Circuits-and-Voltage-Dividers/0102-PHYS497WI2018/AC-Circuits-and-Voltage-Dividers-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0102-AC-Circuits-and-Voltage-Dividers/0102-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -1143,6 +1150,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0116-Resistor-Capacitor-Inductor-LRC-Filters/0116-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0116-Resistor-Capacitor-Inductor-LRC-Filters/0116-PHYS497WI2018/Resistor-Capacitor-Inductor-LRC-Filters-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0116-Resistor-Capacitor-Inductor-LRC-Filters/0116-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0010">
@@ -1469,6 +1483,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0114-Operational-Amplifier-Comparator/0114-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0114-Operational-Amplifier-Comparator/0114-PHYS497WI2018/Operational-Amplifier-Comparator-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0114-Operational-Amplifier-Comparator/0114-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -1593,6 +1614,13 @@
         <Year>2017</Year>
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0107-Basic-OpAmp-Difference-Amplifier/0107-PHYS497WI2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0107-Basic-OpAmp-Difference-Amplifier/0107-PHYS497WI2018/Basic-OpAmp-Difference-Amplifie-2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0107-Basic-OpAmp-Difference-Amplifier/0107-PHYS497WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -2172,6 +2200,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0115-Phase-Locked-Loop-Frequency-Synthesizer/0115-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0115-Phase-Locked-Loop-Frequency-Synthesizer/0115-PHYS497WI2018/Phase-Locked-Loop-Frequency-Synthesizer-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0115-Phase-Locked-Loop-Frequency-Synthesizer/0115-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -2536,6 +2571,13 @@
         <Year>2017</Year>
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0118-The-NPN-Transistor-Bias-and-Switching/0118-PHYS497WI2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0118-The-NPN-Transistor-Bias-and-Switching/0118-PHYS497WI2018/The-NPN-Transistor-Bias-and-Switching-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0118-The-NPN-Transistor-Bias-and-Switching/0118-PHYS497WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -3665,6 +3707,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0108-DC-Circuits/0108-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0108-DC-Circuits/0108-PHYS497WI2018/DC-Circuits-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0108-DC-Circuits/0108-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -4018,6 +4067,13 @@
         <Year>2017</Year>
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0113-OpAmps-Current-to-Voltage-Converter/0113-PHYS497WI2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0113-OpAmps-Current-to-Voltage-Converter/0113-PHYS497WI2018/OpAmps-I-V-and-Computing-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0113-OpAmps-Current-to-Voltage-Converter/0113-PHYS497WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -4866,6 +4922,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0117-Swept-Frequency-Waveform-Generator-DFT/0117-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0117-Swept-Frequency-Waveform-Generator-DFT/0117-PHYS497WI2018/Swept-Frequency-Waveform-Generator-DFT-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0117-Swept-Frequency-Waveform-Generator-DFT/0117-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -5355,6 +5418,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0110-Introduction-to-OpAmps/0110-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0110-Introduction-to-OpAmps/0110-PHYS497WI2018/Introduction-to-OpAmps-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0110-Introduction-to-OpAmps/0110-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -5654,6 +5724,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0119-The-Transformer-and-the-PN-Rectifier-Bridge/0119-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0119-The-Transformer-and-the-PN-Rectifier-Bridge/0119-PHYS497WI2018/The-Transformer-The-PN-Rectifier-Bridge-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2017</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0119-The-Transformer-and-the-PN-Rectifier-Bridge/0119-PHYS497WI2087</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -5720,6 +5797,13 @@
         <Year>2017</Year>
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0112-Lock-In-Detector/0112-PHYS497WI2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0112-Lock-In-Detector/0112-PHYS497WI2018/Lock-In-Detector-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0112-Lock-In-Detector/0112-PHYS497WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -8019,6 +8103,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0111-Introduction-to-Phase-Locked-Loop/0111-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0111-Introduction-to-Phase-Locked-Loop/0111-PHYS497WI2018/Introduction-to-Phase-Locked-Loop-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0111-Introduction-to-Phase-Locked-Loop/0111-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -8161,6 +8252,13 @@
         <Year>2017</Year>
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0106-Basic-Digital-Instruments/0106-PHYS497WI2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0106-Basic-Digital-Instruments/0106-PHYS497WI2018/Basic-Digital-Instruments-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0106-Basic-Digital-Instruments/0106-PHYS497WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -9083,6 +9181,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2018/AC-Circuits-Waveforms-and-Phase-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0103-AC-Circuits-Waveforms-and-Phase/0103-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -9486,7 +9591,7 @@
         <Directory>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2012</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2018/Electric-Potential-Mapping-WI2018.pdf</Path>
+        <Path>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2018/Electric-Potential-Mapping-ST-WI2018.pdf</Path>
         <Semester>Winter</Semester>
         <Year>2018</Year>
         <Course>PHYS 255</Course>
@@ -9683,6 +9788,13 @@
         <Year>2017</Year>
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0104-Active-Filters-and-Anti-Aliasing-Filters/0104-PHYS497WI2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0104-Active-Filters-and-Anti-Aliasing-Filters/0104-PHYS497WI2018/Active-Filters-and-Anti-Aliasing-Filters-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0104-Active-Filters-and-Anti-Aliasing-Filters/0104-PHYS497WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -10410,6 +10522,13 @@
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0105-Bandwidth-and-Stabillity/0105-PHYS497WI2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0105-Bandwidth-and-Stabillity/0105-PHYS497WI2018/Bandwidth-and-Stabillity-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0105-Bandwidth-and-Stabillity/0105-PHYS497WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0313">
@@ -10695,6 +10814,13 @@
         <Year>2017</Year>
         <Course>PHYS 497</Course>
         <Directory>/data/repository/0109-Introduction-to-Digital-Logic/0109-PHYS497WI2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0109-Introduction-to-Digital-Logic/0109-PHYS497WI2018/Introduction-to-Digital-Logic-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 497</Course>
+        <Directory>/data/repository/0109-Introduction-to-Digital-Logic/0109-PHYS497WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
