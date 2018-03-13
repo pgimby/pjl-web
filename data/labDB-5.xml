@@ -2533,7 +2533,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0112">
-        <Name>air track spring</Name>
+        <Name>15 mm light spring</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0111">
@@ -3185,7 +3185,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0112">
-        <Name>air track spring</Name>
+        <Name>15 mm light spring</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0111">
@@ -7774,11 +7774,7 @@
         <Name>35 mCi Cs-137 gamma source</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0408">
-        <Name>35 mCi Cs-137 gamma source</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0250">
+       <Item id="0250">
         <Name>HP 6516A high voltage power supply</Name>
         <Amount>1</Amount>
       </Item>
@@ -7802,8 +7798,8 @@
         <Name>cylindrical lead shield</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0053">
-        <Name>radiation sample holder</Name>
+      <Item id="0102">
+        <Name>assortment of scattering rods</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0010">
@@ -11172,8 +11168,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0272">
-        <Name>water reservoir</Name>
+      <Item id="0504">
+        <Name>ten litre glass asperator bottle</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0273">
@@ -11712,7 +11708,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0451">
-        <Name>magnetic bumber</Name>
+        <Name>magnetic bumper</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0011">
@@ -11914,10 +11910,6 @@
         <Name>helium constant volume gas apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0455">
-        <Name>mercury manometer</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
         <Amount>1</Amount>
@@ -11972,7 +11964,7 @@
         <Amount>4</Amount>
       </Item>
       <Item id="0112">
-        <Name>air track spring</Name>
+        <Name>15 mm light spring</Name>
         <Amount>5</Amount>
       </Item>
       <Item id="0111">
@@ -12663,7 +12655,7 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0471">
+      <Item id="0112">
         <Name>15 mm light spring</Name>
         <Amount>4</Amount>
       </Item>
@@ -12675,12 +12667,12 @@
         <Name>tapered brass springs</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0081">
-        <Name>aluminum bar</Name>
+      <Item id="0272">
+        <Name>aluminum bar with hook and multiple notches</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0315">
-        <Name>aluminum bar with notch</Name>
+      <Item id="0471">
+        <Name>aluminum bar with multiple notches</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0185">
@@ -12776,7 +12768,7 @@
     <Software />
   </Lab>
   <Lab labId="0150">
-    <Name>Kater's Pendulum</Name>
+    <Name>Kater's pendulum kit</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
     </Disciplines>
@@ -13544,7 +13536,7 @@
     </Versions>
     <Equipment>
       <Item id="0490">
-        <Name>Thermoelectric apparatus</Name>
+        <Name>thermoelectric apparatus</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0001">
@@ -13737,8 +13729,8 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0272">
-        <Name>water reservoir</Name>
+      <Item id="0504">
+        <Name>ten litre glass asperator bottle</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0257">

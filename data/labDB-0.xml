@@ -1454,6 +1454,13 @@
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0033-Gauss-Law/0033-PHYS255WI2012</Directory>
       </Version>
+           <Version>
+        <Path>/data/repository/0033-Gauss-Law/0033-PHYS255WI2018/Gauss-Law-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0033-Gauss-Law/0033-PHYS255WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment/>
     <Type>Labatorial</Type>
@@ -1812,6 +1819,13 @@
         <Year>2017</Year>
         <Course>PHYS 365</Course>
         <Directory>/data/repository/0074-Plancks-Constant-with-LEDs/0074-PHYS365FA2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0074-Plancks-Constant-with-LEDs/0074-PHYS325WI2018/Plancks-Constant-from-LEDs-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0074-Plancks-Constant-with-LEDs/0074-PHYS325WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -2671,6 +2685,13 @@
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0077-Radioactive-Decay/0077-PHYS325WI2013</Directory>
       </Version>
+            <Version>
+        <Path>/data/repository/0068-Electron-Diffraction/0068-PHYS325WI2018/Electron-Diffraction-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0068-Electron-Diffraction/0068-PHYS325WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0039">
@@ -3472,6 +3493,13 @@
         <Year>2015</Year>
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0029-Biot-Savart-Law/0029-PHYS255WI2015</Directory>
+      </Version>
+            <Version>
+        <Path>/data/repository/0029-Biot-Savart-Law/0029-PHYS255WI2018/Biot-Savart-Law-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0029-Biot-Savart-Law/0029-PHYS255WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -5324,6 +5352,13 @@
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0037-Faradays-Law/0037-PHYS255WI2015</Directory>
       </Version>
+            <Version>
+        <Path>/data/repository/0037-Faradays-Law/0037-PHYS255WI2018/Faradays-Law-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0037-Faradays-Law/0037-PHYS255WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0024">
@@ -6138,6 +6173,13 @@
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0031-Charge-to-Mass-Ratio-of-the-Electron/0031-PHYS255WI2012</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0031-Charge-to-Mass-Ratio-of-the-Electron/0031-PHYS255WI2018/Charge-to-Mass-Ratio-of-the-Electron-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0031-Charge-to-Mass-Ratio-of-the-Electron/0031-PHYS255WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0002">
@@ -6385,6 +6427,13 @@
         <Year>2013</Year>
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0071-Faraday-Effect/0071-PHYS325WI2013</Directory>
+      </Version>
+            <Version>
+        <Path>/data/repository/0071-Faraday-Effect/0071-PHYS325WI2018/Faraday-Effect-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0071-Faraday-Effect/0071-PHYS325WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -6683,6 +6732,13 @@
         <Year>2012</Year>
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS255WI2012</Directory>
+      </Version>
+            <Version>
+        <Path>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS255WI2018/Electric-Charges-and-Forces-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS255WI2018</Directory>
       </Version>
     </Versions>
     <Equipment/>
@@ -7541,6 +7597,13 @@
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0040-Magnetic-Fields-and-Forces/0040-PHYS255WI2012</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0040-Magnetic-Fields-and-Forces/0040-PHYS255WI2018/Magnetic-Fields-and-Forces-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0040-Magnetic-Fields-and-Forces/0040-PHYS255WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0002">
@@ -7722,6 +7785,13 @@
         <Year>2012</Year>
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0067-Compton-Scattering/0067-PHYS325WI2012</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0067-Compton-Scattering/0067-PHYS325WI2018/Compton-Scattering-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0067-Compton-Scattering/0067-PHYS325WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -8772,6 +8842,13 @@
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2012</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2018/Evidence-for-Quantized-Atomic-Energy-Levels-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0070-Evidence-for-Quantized-Atomic-Energy-Levels/0070-PHYS325WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0422">
@@ -9509,6 +9586,13 @@
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2012</Directory>
       </Version>
+            <Version>
+        <Path>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2018/Electric-Potential-Mapping-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0034-Electric-Field-Mapping/0034-PHYS255WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0001">
@@ -9818,6 +9902,13 @@
         <Year>2012</Year>
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0072-Nuclear-Decay/0072-PHYS325WI2012</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0072-Nuclear-Decay/0072-PHYS325WI2018/Nuclear-Decay-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0072-Nuclear-Decay/0072-PHYS325WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -10357,6 +10448,13 @@
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0066-Colour-Temperature/0066-PHYS325WI2012</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0066-Colour-Temperature/0066-PHYS325WI2018/Colour-Temperature-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0066-Colour-Temperature/0066-PHYS325WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0070">
@@ -10539,6 +10637,13 @@
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0078-Rutherford-Scattering/0078-PHYS325WI2012</Directory>
       </Version>
+            <Version>
+        <Path>/data/repository/0078-Rutherford-Scattering/0078-PHYS325WI2018/Rutherford-Scattering-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0078-Rutherford-Scattering/0078-PHYS325WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0059">
@@ -10615,6 +10720,13 @@
         <Year>2012</Year>
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0065-Black-Body-Radiation/0065-PHYS325WI2012</Directory>
+      </Version>
+            <Version>
+        <Path>/data/repository/0065-Black-Body-Radiation/0065-PHYS325WI2018/Black-Body-Radiation-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0065-Black-Body-Radiation/0065-PHYS325WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -10835,6 +10947,13 @@
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0068-Electron-Diffraction/0068-PHYS325WI2012</Directory>
       </Version>
+            <Version>
+        <Path>/data/repository/0068-Electron-Diffraction/0068-PHYS325WI2018/Electron-Diffraction-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0068-Electron-Diffraction/0068-PHYS325WI2018</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0001">
@@ -10956,6 +11075,13 @@
         <Year>2012</Year>
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0073-Photoelectric-Effect/0073-PHYS325WI2012</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0073-Photoelectric-Effect/0073-PHYS325WI2018/Photoelectric-Effect-ST-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 325</Course>
+        <Directory>/data/repository/0073-Photoelectric-Effect/0073-PHYS325WI2018</Directory>
       </Version>
     </Versions>
     <Equipment>

@@ -4338,7 +4338,7 @@
     <Software />
   </Lab>
   <Lab labId="0054">
-    <Name>Electromagnetic Induction</Name>
+    <Name>Advanced Electromagnetic Induction</Name>
     <Disciplines>
       <Discipline>Electricity and Magnetism</Discipline>
     </Disciplines>
@@ -4350,18 +4350,18 @@
     </Topics>
     <Versions>
       <Version>
-        <Path>/data/repository/0054-Electromagnetic-Induction/0054-PHYS323FA2012/eminduc.pdf</Path>
+        <Path>/data/repository/0054-Advanced-Electromagnetic-Induction/0054-PHYS323FA2012/eminduc.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2012</Year>
         <Course>PHYS 323</Course>
-        <Directory>/data/repository/0054-Electromagnetic-Induction/0054-PHYS323FA2012</Directory>
+        <Directory>/data/repository/0054-Advanced-Electromagnetic-Induction/0054-PHYS323FA2012</Directory>
       </Version>
       <Version>
-        <Path>/data/repository/0054-Electromagnetic-Induction/0054-PHYS323FA2011/eminduc.pdf</Path>
+        <Path>/data/repository/0054-Advanced-Electromagnetic-Induction/0054-PHYS323FA2011/eminduc.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2011</Year>
         <Course>PHYS 323</Course>
-        <Directory>/data/repository/0054-Electromagnetic-Induction/0054-PHYS323FA2011</Directory>
+        <Directory>/data/repository/0054-Advanced-Electromagnetic-Induction/0054-PHYS323FA2011</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -11169,7 +11169,7 @@
     </Versions>
     <Equipment>
       <Item id="0504">
-        <Name>ten litre glass asperator bottle</Name>
+        <Name>10 L glass aspirator bottle</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0273">
@@ -13306,7 +13306,7 @@
     <Software />
   </Lab>
   <Lab labId="0159">
-    <Name>Newton's Second Law</Name>
+    <Name>Newton's Second Law - Legact</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
     </Disciplines>
@@ -13316,11 +13316,11 @@
     </Topics>
     <Versions>
       <Version>
-        <Path>/data/repository/0159-Newtons-Second-Law/0159-LEGACY/Newtons-Second-Law.pdf</Path>
+        <Path>/data/repository/0159-Newtons-Second-Law-Legacy/0159-LEGACY/Newtons-Second-Law.pdf</Path>
         <Semester />
         <Year />
         <Course />
-        <Directory>/data/repository/0159-Newtons-Second-Law/0159-LEGACY</Directory>
+        <Directory>/data/repository/0159-Newtons-Second-Law-Legacy/0159-LEGACY</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -13730,7 +13730,7 @@
     </Versions>
     <Equipment>
       <Item id="0504">
-        <Name>ten litre glass asperator bottle</Name>
+        <Name>10 L glass aspirator bottle</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0257">
@@ -14056,7 +14056,7 @@
     </Versions>
     <Equipment>
       <Item id="0504">
-        <Name>ten litre glass asperator bottle</Name>
+        <Name>10 L glass aspirator bottle</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0506">
