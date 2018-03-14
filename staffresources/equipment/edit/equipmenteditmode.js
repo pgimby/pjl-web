@@ -78,8 +78,11 @@ class EquipmentEditDisplay {
 			header.append("i").classed("fa fa-times fa-2x modal-close-button", true).attr("aria-hidden", "true");
 
 			let content = modal.append("div").classed("eq-modal-content", true);
+			let thumbnail = (Boolean(data.getElementsByTagName("Thumbnail")[0]) ? data.getElementsByTagName("Thumbnail")[0].childNodes[0].nodeValue : "/img/img-placeholder.png");
+			console.log(thumbnail)
 			let img = content.append("div").classed("eq-modal-img", true);
-			img.append("img").attr("src", "/img/img-placeholder.png");
+			img.append("img").attr("src", thumbnail);
+			//img.append("img").attr("src", "/img/img-placeholder.png");
 			let ident = content.append("div").classed("eq-modal-id", true);
 			ident.append("input").classed("eq-modal-name", true)
 						.attr("name", "eq-name")
