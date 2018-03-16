@@ -5,62 +5,152 @@
 # Written by Peter Gimby, Nov 17 2017
 
 
-import os
-import subprocess
+import os, subprocess, argparse, filecmp, time
 
-# define folder locations
-slugFolder = "slug:/usr/local/master/labs"
-sourceFolder = "/mnt/local/labs.slug"
-destFolder = "/mnt/local/labs"
-repositoryFolder = "/mnt/local/labs/repository"
-webRoot = "/var/www/html"
+'''define folder locations'''
+webSource = "/usr/local/master/pjl-web"
+labSource = "/usr/local/master/labs"
+webDest = "/mnt/local/pjl-web"
+labDest = "/mnt/local/labs"
+webMount = "/mnt/pjl-web-mnt"
+labMount = "/mnt/lab-mnt"
+labFolders = ["downloads", "equipimg", "equipman", "landingpage", "repository", "safety", "schedules", "web-security"]
+webFolders = ["css", "data", "dev", "doc", "downloads", "fonts", "img", "js", "php", "repository", "staffresources"]
+webFiles = ["index.html", "README.md"]
+webFileReverse = ["equipmentDB.xml"]
+mountInfo = [{"source": webSource, "mountPt": webMount}, {"source": labSource, "mountPt": labMount}]
 
-# define owners of files
+'''define owners of files and general permissions'''
 owner = "pgimby"
 group = "pjl_admins"
 apacheUser = "www-data"
-
-host="watt"
-myhost = os.uname()[1]
-if host == myhost:
-
-    # mount the master copy of the repository on to web server
-    os.system("mount " + slugFolder + " " + sourceFolder)
+devhost="slug"
+webserver="watt"
 
 
-# Test to make sure master repository is mount, and if so sync master copy to live copy
-    mountTest = os.system("mount | grep labs.slug > /dev/null")
-    if mountTest == 0:
-        os.system("rsync --delete -avz " + sourceFolder + "/repository/ " + destFolder + "/repository/")
-        os.system("rsync --delete -avz " + sourceFolder + "/safety/ " + destFolder + "/safety/")
-        os.system("rsync --delete -avz " + sourceFolder + "/schedules/ " + destFolder + "/schedules/")
-        os.system("rsync --delete -avz " + sourceFolder + "/web-security/ " + destFolder + "/web-security/")
-        os.system("rsync --delete -avz " + sourceFolder + "/landingpage/ " + destFolder + "/landingpage/")
-        os.system("rsync --delete -avz " + sourceFolder + "/downloads/ " + destFolder + "/downloads/")
-        os.system("rsync --delete -avz " + sourceFolder + "/equipimg/ " + destFolder + "/equipimg/")
-        os.system("rsync --delete -avz " + sourceFolder + "/equipman/ " + destFolder + "/equipman/")
+def testHost(host):
+    thishost = os.uname()[1]
+    if not host == thishost:
+        print("This script is designed to be run on " + thishost + " only. Exiting...")
+        gracefullExit(mountInfo)
 
-    # change permissions and ownerships of files and folders
-    os.system("find " + destFolder + " -type d -exec chmod 755 {} \;")
-    os.system("find " + destFolder + " -type f -exec chmod 644 {} \;")
-    os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
-    os.system("find " + destFolder + " -type d -exec chown " + owner + "." + group + " {} \;")
+def mountFolder(source,mountPoint,remote,option):
+    fullSource = remote + ":" + source
+    os.system("mount -t nfs -o " + option + " " + fullSource + " " + mountPoint)
+    if not os.system("mount | grep " + fullSource + " > /dev/null") == 0:
+        print(fullSource + " did not mount properly. Exiting...")
+        gracefullExit(mountInfo)
 
-    # Change permissions of a few important files/folders
-    os.system("chown root:" + apacheUser + " " + webRoot + "/data/labDB.xml" )
-    os.system("chown root:" + apacheUser + " " + webRoot + "/data/equipmentDB.xml" )
-    os.system("chmod 660 " + webRoot + "/data/labDB.xml" )
-    os.system("chmod 660 " + webRoot + "/data/equipmentDB.xml" )
-    os.system("chown root:" + apacheUser + " " + webRoot + "/data" )
-    os.system("chmod 775 " + webRoot + "/data" )
+def umountFolder(mountPoint):
+    os.system("umount " + mountPoint )
+
+def syncFolder(testMode,source,dest):
+    print("syning " + source)
+    os.system("rsync" + testMode + " " + source + " " + dest)
+
+def getDbFiles(dest,key):
+    allFiles = os.listdir(dest)
+    dbFiles = []
+    for f in allFiles:
+        if f.startswith(key) and f.split(".")[0][-1] in ['0','1','2','3','4','5','6','7']:
+            dbFiles.append(f)
+    return sorted(dbFiles)
+
+def incrementFiles(files,dest,key,source,osTest):
+    for i,f in enumerate(files):
+        name = f.split(".")[0]
+        index = int(name[-1])
+        index += 1
+        f = name[:-1] + str(index) + ".xml"
+        os.system(osTest + "mv " + dest + "/" + files[i] + " " + dest + "/" + f)
+    os.system(osTest + "mv " + dest + key + ".xml " + dest + "/" + key + "-0.xml")
+    os.system(osTest + "cp " + source + " " + dest)
 
 
-    # unmount source files
-    os.system("umount " + sourceFolder)
-else:
-    print("This script is designed to be run on " + host + " only")
-    print("Exiting")
+def wheel(dbFile,source,dest,key,osTest):
+    print("updating equipmentDB.xml")
+    dbFiles = getDbFiles(dest,key)
+    incrementFiles(list(reversed(dbFiles)),dest,key,source,osTest)
+
+def changePerm(varDir,owner,group,filePerm,options,osTest):
+    print("changing permissions of " + varDir + " with find" + options + ". This may take a minute.")
+    os.system(osTest + "find " + varDir + options + " -exec chmod " + filePerm + " {} \;")
+    os.system(osTest + "find " + varDir + options + " -exec chown " + owner + "." + group + " {} \;")
+
+def gracefullExit(mountInfo):
+    for i in mountInfo:
+        umountFolder(i["mountPt"])
     exit()
 
+'''Main Script'''
+
+'''User input to allow for a test mode during development'''
+parser = argparse.ArgumentParser()
+parser.add_argument('-t', '--test', help='test adding to xml without moving folders', action='store_true')
+args = parser.parse_args()
+testMode = args.test
+
+if not os.getuid() == 0:
+    print("This script must be run by \"The Great and Powerful Sudo\".")
+    exit()
+
+'''Parameters and options for operating in test mode'''
+if testMode == True:
+    rsycnOption = " -avnz --no-l"
+    osTest = "echo "
+else:
+    rsycnOption = " -az --no-l"
+    osTest = ""
+
+'''Confirm that this script won't accidently run on the wrong machine'''
+testHost(devhost)
+
+'''mounts folder for syncing files and confirms success'''
+mountFolder(webDest,webMount,webserver,"rw")
+mountFolder(labDest,labMount,webserver,"rw")
+
+'''update equipmenDB.xml from web server to development space'''
+for i in webFileReverse:
+    source = webMount + "/data/" + i
+    dest = webSource + "/data/" 
+    key = "equipmentDB"
+    if not filecmp.cmp(source, dest + i):
+        wheel(i,source,dest,key,osTest)
+
+'''Set permissions and owners of files and folders'''
+changePerm(labSource,owner,group,"644"," -type f",osTest)
+changePerm(labSource,owner,group,"755"," -type d",osTest)
+changePerm(webSource,owner,group,"644"," -type f",osTest)
+changePerm(webSource,owner,group,"755", " -type d",osTest)
+
+'''Sets the permission for executable'''
+changePerm(webSource,owner,group,"750"," -type f -name \'*.py\'",osTest)
+
+'''rsync lab content folders'''
+for i in labFolders:
+    source = labSource + "/" + i + "/"
+    dest = labMount + "/" + i + "/"
+    print(i)
+    syncFolder(rsycnOption,source,dest)
+
+'''rsync webpage folders'''
+for i in webFolders:
+    source = webSource + "/" + i + "/"
+    dest = webMount + "/" + i + "/"
+    syncFolder(rsycnOption,source,dest)
+
+'''rsync webpage files'''
+for i in webFiles:
+    source = webSource + "/" + i
+    dest = webMount + "/"
+    syncFolder(rsycnOption,source,dest)
+
+'''changes the permissions of specific files and folders needed for live update of equipment numbers'''
+changePerm(webMount + "/data" ,"root","www-data","660"," -type f -name equipmentDB.xml",osTest)
+changePerm(webMount + "/data" ,"root","www-data","775"," -type d -name \'data\'",osTest)
+
+'''unmounts folders used for syncing files'''
+umountFolder(webMount)
+umountFolder(labMount)
 
 print("...and then there will be cake")

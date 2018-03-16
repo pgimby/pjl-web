@@ -327,7 +327,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0197" lastModified="2018-01-25T12:34:45">
+  <Item id="0197" lastModified="2018-02-21T14:36:56">
     <InventoryName>salt</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -335,11 +335,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -393,7 +398,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0011" lastModified="2018-01-25T12:34:45">
+  <Item id="0011" lastModified="2018-02-21T14:49:06">
     <InventoryName>Pasco air blower</InventoryName>
     <Identification>
       <Manufacturer>Pasco</Manufacturer>
@@ -636,7 +641,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0207" lastModified="2018-01-25T12:34:45">
+  <Item id="0207" lastModified="2018-02-21T14:08:40">
     <InventoryName>Vernier LabPro data logger</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
@@ -646,9 +651,9 @@
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>49</Total>
+      <InService>49</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1006,19 +1011,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0406" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Vernier force plate sensor handle</InventoryName>
+  <Item id="0406" lastModified="2018-02-21T14:11:49">
+    <InventoryName>Vernier force sensor handle</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>144</Total>
+      <InService>144</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2126,7 +2136,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0247" lastModified="2018-01-25T12:34:45">
+  <Item id="0247" lastModified="2018-02-21T14:36:47">
     <InventoryName>250 mL graduated cylinder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2134,11 +2144,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>16</Total>
+      <InService>16</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3049,7 +3064,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0072" lastModified="2018-01-25T12:34:45">
+  <Item id="0072" lastModified="2018-02-21T14:06:34">
     <InventoryName>Vernier temperature probe</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
@@ -3206,7 +3221,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0030" lastModified="2018-01-25T12:34:45">
+  <Item id="0030" lastModified="2018-02-21T14:12:49">
     <InventoryName>small optical bench mount</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3699,19 +3714,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0405" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Vernier force plate sensor</InventoryName>
+  <Item id="0405" lastModified="2018-02-21T13:57:56">
+    <InventoryName>Vernier force sensor</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
-      <Model/>
+      <Model>FP-BTA</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>36</Total>
+      <InService>34</InService>
+      <UnderRepair>2</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3978,7 +3998,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0022" lastModified="2018-01-25T12:34:45">
+  <Item id="0022" lastModified="2018-02-21T14:12:46">
     <InventoryName>1 m optical bench</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5712,11 +5732,11 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0050" lastModified="2018-01-25T12:34:45">
+  <Item id="0050" lastModified="2018-02-21T14:00:38">
     <InventoryName>Vernier position sensor</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
-      <Model/>
+      <Model>motion2</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
@@ -7037,7 +7057,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0013" lastModified="2018-01-25T12:34:45">
+  <Item id="0013" lastModified="2018-02-21T14:01:19">
     <InventoryName>Vernier magnetic field probe</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
@@ -7052,9 +7072,9 @@
       </Location>
     </Locations>
     <Quantity>
-      <Total>44</Total>
+      <Total>45</Total>
       <InService>44</InService>
-      <UnderRepair>0</UnderRepair>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7737,19 +7757,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0365" lastModified="2018-01-25T12:34:45">
+  <Item id="0365" lastModified="2018-02-21T13:59:26">
     <InventoryName>Vernier instrumentation amplifier</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
-      <Model/>
+      <Model>INA-DIN</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>2</Total>
+      <InService>2</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -9107,7 +9132,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0240" lastModified="2018-01-25T12:34:45">
+  <Item id="0240" lastModified="2018-02-21T14:12:44">
     <InventoryName>bucket</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9450,11 +9475,11 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0014" lastModified="2018-01-25T12:34:45">
+  <Item id="0014" lastModified="2018-02-21T13:57:12">
     <InventoryName>Vernier voltage probe</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
-      <Model/>
+      <Model>DVP-BTA</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
@@ -9665,11 +9690,11 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0015" lastModified="2018-01-25T12:34:45">
+  <Item id="0015" lastModified="2018-02-21T13:57:01">
     <InventoryName>Vernier current probe</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
-      <Model/>
+      <Model>DCP-BTA</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
@@ -9818,7 +9843,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0347" lastModified="2018-02-21T12:42:55">
+  <Item id="0347" lastModified="2018-02-21T14:48:20">
     <InventoryName>air table</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9826,11 +9851,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>14</Total>
+      <InService>14</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -9850,7 +9884,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0461" lastModified="2018-02-21T12:42:55">
+  <Item id="0461" lastModified="2018-02-21T14:53:04">
     <InventoryName>camera stand</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9858,31 +9892,45 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>14</Total>
+      <InService>14</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0515" lastModified="2018-02-21T12:42:55">
-    <InventoryName>Daedalon air supply</InventoryName>
+  <Item id="0515" lastModified="2018-03-05T15:49:06">
+    <InventoryName>Daedalon air blower</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>15</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0526" lastModified="2018-02-21T12:42:55">
+  <Item id="0526" lastModified="2018-02-21T14:49:22">
     <InventoryName>Daedalon air hose</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9890,11 +9938,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>Cart1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>17</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -9946,72 +9999,8 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0530" lastModified="2018-02-21T12:42:55">
-    <InventoryName>3 ft ubs extention</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0531" lastModified="2018-03-08T11:26:27">
-    <InventoryName>air puck central peg</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0532" lastModified="2018-03-08T11:26:27">
-    <InventoryName>air table rail mount</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0533" lastModified="2018-03-08T11:26:27">
-    <InventoryName>air puck velcro strip</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0534" lastModified="2018-03-08T14:33:42">
-    <InventoryName>large puck</InventoryName>
+  <Item id="0530" lastModified="2018-02-21T13:23:54">
+    <InventoryName>3 ft usb extension</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
