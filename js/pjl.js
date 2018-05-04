@@ -545,6 +545,8 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 	let links = {"pjl-regress": "/",
 				 "pjl-lab-schedule": "/data/schedules/schedule-current.pdf",
 				 "pjl-rooms-schedule": "/data/schedules/rooms-current.pdf",
+				 "pjl-archive-room-schedule": "/data/schedules/room-index.html",
+				 "pjl-archive-experiment-schedule": "/data/schedules/schedule-index.html",
 				 "pjl-geiger": "/",
 				 "pjl-repository": "/repository",
 				 "pjl-linearization": "/",
@@ -566,7 +568,9 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-581": "/data/landingpage/physics581.zip",
 				 "pjl-481": "/data/landingpage/physics481.zip",
 				 "pjl-381": "/data/landingpage/physics381.zip",
-				 "pjl-downloads": "/downloads"};
+				 "pjl-downloads": "/data/downloads",
+				 "pjl-standard-procedures": "/staffresources/procedures/procedure-index.html"};
+
 	let buttonid = $(e.target).attr("id");
 	window.location = links[buttonid];
 });

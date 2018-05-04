@@ -15,7 +15,7 @@ labDest = "/mnt/local/labs"
 webMount = "/mnt/pjl-web-mnt"
 labMount = "/mnt/lab-mnt"
 labFolders = ["downloads", "equipimg", "equipman", "landingpage", "repository", "safety", "schedules", "web-security"]
-webFolders = ["css", "data", "dev", "doc", "downloads", "fonts", "img", "js", "php", "repository", "staffresources"]
+webFolders = ["css", "data", "dev", "doc", "fonts", "img", "js", "php", "repository", "staffresources"]
 webFiles = ["index.html", "README.md"]
 webFileReverse = ["equipmentDB.xml"]
 mountInfo = [{"source": webSource, "mountPt": webMount}, {"source": labSource, "mountPt": labMount}]
@@ -109,12 +109,13 @@ testHost(devhost)
 mountFolder(webDest,webMount,webserver,"rw")
 mountFolder(labDest,labMount,webserver,"rw")
 
-'''update equipmenDB.xml from web server to development space'''
+'''update equipmenDB.xml from web server to development space if it is newer'''
 for i in webFileReverse:
-    source = webMount + "/data/" + i
-    dest = webSource + "/data/" 
     key = "equipmentDB"
-    if not filecmp.cmp(source, dest + i):
+    source = webMount + "/data/" + i
+    dest = webSource + "/data/"
+    if os.path.getctime(source) >  os.path.getctime(dest + "equipmentDB.xml"):
+    #if not filecmp.cmp(source, dest + i):
         wheel(i,source,dest,key,osTest)
 
 '''Set permissions and owners of files and folders'''

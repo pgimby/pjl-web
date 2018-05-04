@@ -547,10 +547,49 @@ video {
 
 
 
+/*Archived Schedule Page Styles*/
 
+#schedule-title {
+	width: 100%;
+	text-align: left;
+	margin-top: 100px;
+}
 
+#schedule-container {
+	min-height: 100vh;
+	width: 100%;
+}
 
+#schedule-container > a {
+	all: unset;
+}
 
+.schedule-download {
+	width: 600px;
+	padding: 4px;
+	/*margin: 24px 12px;*/
+	margin: 4px 12px;
+	border-radius: 2px;
+}
+
+.schedule-download:hover {
+	box-shadow: 0 0 4px 0 #777;
+	cursor: default;
+}
+
+.schedule-download > * {
+	display: inline-block;
+	line-height: 3em;
+	pointer-events: none;
+}
+
+.schedule-download > i {
+	font-size: 3em;
+}
+
+.schedule-download p {
+	color: #777;
+}
 
 
 

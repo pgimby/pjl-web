@@ -8,6 +8,8 @@ import datetime
 readme_location = "../../README.md"
 
 
+class IDDoesNotExist(Exception):
+    pass
 
 
 
@@ -532,7 +534,8 @@ class LabDB():
                  self.hasValidDisciplines(log_file=f),
                  self.hasValidTopics(log_file=f),
                  self.hasUniqueEquipIDs(log_file=f),
-                 self.noDuplicateNames(log_file=f)]
+                 self.noDuplicateNames(log_file=f),
+                 self.noDuplicateVersions(log_file=f)]
             f.close()
         else:
             f = None
@@ -542,7 +545,9 @@ class LabDB():
                  self.hasValidDisciplines(log_file=f),
                  self.hasValidTopics(log_file=f),
                  self.hasUniqueEquipIDs(log_file=f),
-                 self.noDuplicateNames(log_file=f)]
+                 self.noDuplicateNames(log_file=f),
+                 self.noDuplicateVersions(log_file=f)]
+
         if f:
             f.close()
         if all(tests):
@@ -588,6 +593,30 @@ class LabDB():
                 [print(i) for i in error_log]
         return good
 
+
+    def noDuplicateVersions(self, log_file=None):
+        error_log = []
+        good = True
+        seen = set()
+        for lab in self.labs:
+            versionInfo = []
+            for version in lab.versions:
+                versionDict = {}
+                versionDict["course"] = version["course"]
+                versionDict["year"] = version["year"]
+                versionDict["semester"] = version["semester"]
+                if versionDict not in versionInfo:
+                    versionInfo.append(versionDict)
+                else:
+                    error_log.append("Lab \"" + lab.id_num +
+                                     "\" has mulitple instance of the same version" )
+                    good = False
+        if good == False:
+            if log_file:
+                [log_file.write(i + "\n") for i in error_log]
+            else:
+                [print(i) for i in error_log]
+        return good
 
 
     def hasUniqueEquipIDs(self, log_file=None):
@@ -729,7 +758,7 @@ class LabDB():
                 for lab in self.labs:
                     if lab.id_num == idnum:
                         return lab
-                raise Exception("Lab id \"" + idnum + "\" doesn't exist")
+                raise IDDoesNotExist("Lab id \"" + idnum + "\" doesn't exist")
             except Exception as e:
                 raise e
         else:

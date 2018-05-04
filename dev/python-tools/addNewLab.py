@@ -3,7 +3,7 @@
 '''Adds version from a csv file and adds them to the repository'''
 
 from pjlDB import *
-import csv, argparse, os
+import csv, argparse, os, sys
 import xml.etree.ElementTree as ET
 
 '''Folders and file used.'''

@@ -1,9 +1,15 @@
 %\input{standard-preamble.tex}
 \documentclass[justified]{book}
 \usepackage{dirtree}
-\usepackage{listings}
+\usepackage{listings,lstautogobble}
 \usepackage{xcolor}
 \definecolor{light-gray}{gray}{0.9}
+\lstset{backgroundcolor = \color{light-gray},
+		autogobble=true
+}
+
+
+
 \begin{document}
 
 
@@ -17,55 +23,29 @@
 
 \section{Introduction}
 
+The purposes of the pjl website is to be the central information hub for the educational physics labs. It is a base of knowledge from which the department can work collaboratively on building the future of education physics labs.
 
-
-
+\newpage
 
 \section{Making Changes to Website}
 
 All changes to the website should be made on the development space on slug (/usr/local/master/pjl-web). The only exception to this rule is that the equipment database equipmentDB.xml can be modified live by using the inventory website in edit mode. Because of this it is important to sync the development and live version of the website before making changes.
 
-\subsection{Sync Live Version with Development Space}
+\subsection{Sync Live Version and Development Space}
 
-\begin{enumerate}
-\item Sync web-server to github using the procedure outlined in section \ref{proc:sync}. Note that for the web server "watt" the /path/to/web-folder is /var/www/html.
+The script ``liveUpdate.py" (Listing \ref{liveUpdate}) has been designed to sync the live version of the website with the development space for the website. It is important to run this script before and after making changes to the development space. It is run the first time to make sure that the equipment xml file in development has been updated with the changes that made directly on the pjl website. Once the changes to the development space have been made and tested the changes can be pushed to the web-server by running the same command again.
 
-\item Sync development space to github using the procedure outlined in section \ref{proc:sync}. Note that for the development version on "slug" the path is /usr/local/master/pjl-web.
+\vspace{12pt}
+\noindent To sync run...
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+sudo ./liveUpdate.py
+\end{lstlisting}
 
-\item Sync the web server from the github using
-\begin{itemize}
-	\item admin-user@computer /var/www/html\\
-	\$ sudo git pull origin master
-\end{itemize}
+\noindent The command can also be run in test mode by excecuting...
 
-\item Development space is now ready for editing.
-\end{enumerate}
-
-\subsection{Order of Making Changes}
-\begin{enumerate}
-\item Sync live version and development space
-\item Changes Inventory
-\item Repository
-\item Update live version on web server
-
-\end{enumerate}
-
-\subsection{Procedure for updating PJL github}\label{proc:sync}
-
-
-\begin{enumerate}
-\item admin-user@computer /path/to/web-folder\\
-	\$ sudo git add .
-\item admin-user@computer /path/to/web-folder\\
-	\$ sudo git commit -m upload latest ``equimpnetDB.xml''
-\item admin-user@computer /path/to/web-folder\\
-	\$ sudo git pull origin master
-\item admin-user@computer /path/to/web-folder\\
-	\$ sudo git push origin master\\
-	Username for `https://github.com': admin-user\\
-	Password for `https://admin-user@github.com': ********
-\end{enumerate}
-%\item Upload made to Slug to github.
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+sudo ./liveUpdate.py -t
+\end{lstlisting}
 
 
 \section{Repository}
@@ -111,7 +91,7 @@ Before beginning ensure that all equipment used in the new experiment are in the
 
 %Example: The file info.csv needs to be in this form. See below for more details.
 
-	\begin{lstlisting}[backgroundcolor = \color{light-gray},
+\begin{lstlisting}[backgroundcolor = \color{light-gray},
 					caption = The file info.csv needs to be in this form. See below for more details
                    %language = C,
                    xleftmargin = 2cm,
@@ -162,10 +142,52 @@ Any text that is \textbf{Bold} must be configured for each lab. text in \textit{
 Each item in the inventory should have a unique identifier number, and a unique name. Each item has a place for any number of manuals, and one picture. 
 
 
+\subsection{Deleting Old Equipment}
+
+To remove a piece of old equipment run, from the python-tools folder, the command,
+
+%[backgroundcolor = \color{light-gray},
+%					autogobble=true
+%					]
+
+\begin{lstlisting}
+./equipmentEdit.py -d [idnum]       
+\end{lstlisting}
+
+If the piece of equipment is currently listed as part of the equipment list for a current lab the script will prompt you to make sure that you know this. Ideally the equipment list in the lab repository should be updated first before removing the equipment. This will help to keep the lab equipment lists and the equipment database in sync. 
+
 \subsection{Adding New Equipment}
 
+There two ways to add a piece of equipment. 
+\begin{itemize}
 
+\item You can add each item individually with just a name only, and then used the ``edit mode" on the live site to add further information about the item.
 
+\item You can generate a csv file that contains all the relevant information, and then import that information into the database.
+\end{itemize}
+
+\subsubsection{Adding each piece individually}
+
+\noindent To add an individual piece of new equipment to the equipment database.
+
+\begin{enumerate}
+	\item From the /dev/python-tools folder, the command,
+
+	\begin{lstlisting}
+	./equipmentEdit.py -a "Name of equipment"       
+	\end{lstlisting}
+
+	Note that the quotation marks around the name is important, if they are missing the new piece 			of equipment will be call Name.
+
+	\item From the /data folder run the command,
+	
+	\begin{lstlisting}
+	./liveUpdate       
+	\end{lstlisting}
+	
+	which will replace the equipmentDB.xml file to be served, while  backing up the previous 				versions.
+	
+\end{enumerate}
 \begin{enumerate}
 \item Compile all rel
 
@@ -184,6 +206,14 @@ name; Unique Name of Equipment
 \subsection{Adding photos of equipment}
 
 
+\section{Schedules}
+
+\noindent The name of the current schedules should be
+
+\begin{itemize}
+\item schedule-current.pdf
+\item rooms-current.pdf
+\end{itemize}
 
 
 \section{Scripts}
@@ -198,7 +228,9 @@ name; Unique Name of Equipment
       %             ]
 
 
-\lstinputlisting[language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/addNewLab.py}
+\lstinputlisting[label = addnNew, language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/addNewLab.py}
+
+\lstinputlisting[label = liveUpdate, language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/liveUpdate.py}
 
 %\end{lstlisting}
 

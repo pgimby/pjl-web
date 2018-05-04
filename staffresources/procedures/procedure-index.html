@@ -1,13 +1,18 @@
+
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Physics Junior Laboratory - Document Repository</title>
+    <!-- if you change the title then also change the function 'isEquipmentDatabase' in pjl.js -->
+    <title>Physics Junior Laboratory - Standard Procedures</title>
     <link rel="icon" href="/img/pjl_icon_112x.png">
     <link rel="stylesheet" href="/css/site-wide.css">
+    <link rel="stylesheet" href="/css/equipment.css">
     <link rel="stylesheet" href="/css/repo.css">
     <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
     <script src="/js/jquery.js"></script>
     <script src="/js/d3.min.js"></script>
+    <script src="/js/jszip.min.js"></script>
+    <script src="/js/FileSaver.js"></script>
     <script src="/js/pjl.js"></script>
 
 
@@ -30,58 +35,50 @@
 
 
 
-  <body onload=initRepoPage()>
+  <body onload=initEquipmentPage()>
 
 
 
-    <!-- HEADER FOR STYLE - MAYBE THROW SOME NAVIGATION IN HERE EVENTUALLY -->
+
+
+
 
     <header>
       <div id="header-baseline">
-      <div class="wrap">
-        <a id="pjl-logo" href="/">PJL</a>
-        <div class="need-help">
-          <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
-          <p class="need-help-text">report bug</p>
+        <div class="wrap">
+          <a id="pjl-logo" href="/">PJL</a>
+          <div class="need-help">
+            <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
+            <p class="need-help-text">report bug</p>
+          </div>
         </div>
       </div>
-      </div>
-
     </header>
 
-
-
-
-
-
-
-    <!-- MAIN PAGE CONTENT -->
 
 
     <main>
 
       <div class="wrap">
 
-      	<h1 class="landing-heading" id="downloads-title">PJL Downloads</h1>
+        <h1 class="landing-heading" id="downloads-title">PJL Standard Procedures</h1>
 
-      	<div id="file-downloads-container">
-
-
+        <div id="file-downloads-container">
 
 
-      		<!-- THESE ARE THE FILES YOU WANT TO DOWNLOAD - REPLICATE THIS PATTERN TO ADD MORE -->
 
-      		<!-- download attribute specifies the name given to the file upon download -->
-      		<a href="/data/downloads/PHYS325/Evidence-for-Quantized-Atomic-Energy-Levels.cmbl" download="Evidence-for-Quantized-Atomic-Energy-Levels.cmbl">
-	      		<div class="file-download" >
-	      			<i class="fa fa-file-o fa-2x" aria-hidden=true></i>  <!-- icon -->
-	      			<div>
-	      				<h3>Evidence-for-Quantized-Atomic-Energy-Levels.cmbl</h3>  <!-- file name -->
-	      				<p>Template file for PHYS 325</p>  <!-- description -->
-	      			</div>
-	      		</div>
-	      	</a>
 
+          <!-- THESE ARE THE FILES YOU WANT TO DOWNLOAD - REPLICATE THIS PATTERN TO ADD MORE -->
+
+          <!-- download attribute specifies the name given to the file upon download -->
+          <a href="/staffresources/procedures/Annual-Lab-Safety-Procedures/Annual-Lab-Safety-Procedures.pdf" target="_blank">
+            <div class="file-download" >
+              <i class="fa fa-file-o fa-2x" aria-hidden=true></i>  <!-- icon -->
+              <div>
+                <p>Annual Lab Safety Procedure</p>  <!-- description -->
+              </div>
+            </div>
+          </a>
 
 
 
@@ -90,14 +87,27 @@
 
 
 
-      	</div>
+
+        </div>
 
       </div>
 
     </main>
 
 
-    <!-- FOOTER CONTENT -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER CONTENT -->
 
 
     <footer>
@@ -199,17 +209,10 @@
 
       <div id="footer-baseline"></div>
 
-
-      <div id=zip-progress-bar>
-        <div id="zip-progress-header">
-          <h2 id="file-prep">Preparing files...</h2>
-          <i class="fa fa-times fa-2x modal-close-button" id="cancel-download" aria-hidden="true"></i>
-        </div>
-        <progress value="0" max="1"></progress>
-      </div>
-
-
     </footer>
+
+
+
 
 
 
