@@ -8,17 +8,23 @@
 import os, subprocess, argparse, filecmp, time
 
 '''define folder locations'''
-webSource = "/usr/local/master/pjl-web"
-labSource = "/usr/local/master/labs"
+root = "/usr/local/master/"
+webSource = root + "pjl-web"
+labSource = root + "labs"
 webDest = "/mnt/local/pjl-web"
 labDest = "/mnt/local/labs"
 webMount = "/mnt/pjl-web-mnt"
 labMount = "/mnt/lab-mnt"
+devEquipXML = webSource + "/dev/equipmentDB.xml"
+dataEquipXML = webSource + "/data/equipmentDB.xml"
+liveEquipXML = webMount + "/data/equipmentDB.xml"
+
 labFolders = ["downloads", "equipimg", "equipman", "landingpage", "repository", "safety", "schedules", "web-security"]
 webFolders = ["css", "data", "dev", "doc", "fonts", "img", "js", "php", "repository", "staffresources"]
 webFiles = ["index.html", "README.md"]
 webFileReverse = ["equipmentDB.xml"]
 mountInfo = [{"source": webSource, "mountPt": webMount}, {"source": labSource, "mountPt": labMount}]
+
 
 '''define owners of files and general permissions'''
 owner = "pgimby"
@@ -82,6 +88,33 @@ def gracefullExit(mountInfo):
         umountFolder(i["mountPt"])
     exit()
 
+'''checks that file a is newer that file b'''
+def whichIsNewer(a,b,testMode):
+    if os.path.isfile(a) and os.path.isfile(b):
+        if os.path.getmtime(a) > os.path.getmtime(b):
+            if testMode:
+                print(a + " is newer than " + b )
+                print(a + " " + os.path.getmtime(a))
+                print(b + " " + os.path.getmtime(b))
+            return True
+        else:
+            if testMode:
+                print(b + " is newer than " + a)
+                print(a + " " + str(os.path.getmtime(a)))
+                print(b + " " + str(os.path.getmtime(b)))
+            return False
+    else:
+        if not os.path.isfile(a):
+            print("File " + a + " Does not exist. Exiting...")
+            gracefullExit(mountInfo)
+        if not os.path.isfile(b):
+            print("File " + b + " Does not exist. Exiting...")
+            gracefullExit(mountInfo)
+    # if os.path.getmtime(a) > os.path.getmtime(b):
+    #     return True
+    # else:
+    #     return False
+
 '''Main Script'''
 
 '''User input to allow for a test mode during development'''
@@ -109,14 +142,26 @@ testHost(devhost)
 mountFolder(webDest,webMount,webserver,"rw")
 mountFolder(labDest,labMount,webserver,"rw")
 
+
 '''update equipmenDB.xml from web server to development space if it is newer'''
-for i in webFileReverse:
-    key = "equipmentDB"
-    source = webMount + "/data/" + i
-    dest = webSource + "/data/"
-    if os.path.getctime(source) >  os.path.getctime(dest + "equipmentDB.xml"):
-    #if not filecmp.cmp(source, dest + i):
+if whichIsNewer(liveEquipXML,devEquipXML,testMode) and whichIsNewer(liveEquipXML,dataEquipXML,testMode):
+    print("The live version of equipmentDB.xml is newer than the data version.")
+    if input("Do you wish to continue? y/N ") == "y":
         wheel(i,source,dest,key,osTest)
+    else:
+        print("Exiting...")
+        gracefullExit(mountInfo)
+
+
+# for i in webFileReverse:
+#     key = "equipmentDB"
+#     source = webMount + "/data/" + i
+#     dest = webSource + "/data/"
+
+#     if os.path.getmtime(source) >  os.path.getmtime(dest + "equipmentDB.xml"):
+#     #if not filecmp.cmp(source, dest + i):
+
+
 
 '''Set permissions and owners of files and folders'''
 changePerm(labSource,owner,group,"644"," -type f",osTest)
@@ -131,7 +176,6 @@ changePerm(webSource,owner,group,"750"," -type f -name \'*.py\'",osTest)
 for i in labFolders:
     source = labSource + "/" + i + "/"
     dest = labMount + "/" + i + "/"
-    print(i)
     syncFolder(rsycnOption,source,dest)
 
 '''rsync webpage folders'''

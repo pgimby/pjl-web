@@ -16,6 +16,14 @@ eqdbData = root + "/data/equipmentDB.xml"
 labdbData = root + "/data/labDB.xml"
 #destXML = "/dev/testlabDB.xml"
 
+
+def testHost(host):
+    thishost = os.uname()[1]
+    if not host == thishost:
+        print("This script is designed to be run on " + thishost + " only. Exiting...")
+        gracefullExit(mountInfo)
+
+
 '''Checks that the development version of the db is as new or newer that the live one'''
 def checkTimeStamp(dev,data):
 	if os.path.getmtime(data) <= os.path.getmtime(dev):
@@ -213,6 +221,7 @@ def updateSupportFolder(info,supportFolder,labFolder):
 		os.system("rsync -avz " + supportOrigin + "/ " + supportFolder)
 
 
+#Functions for adding a new lab
 
 
 
@@ -223,6 +232,9 @@ def updateSupportFolder(info,supportFolder,labFolder):
 '''Create pjlDB object of each of the relevent xml files'''
 eqdb = pjlDB.EquipDB(eqdbDev)
 labdb = pjlDB.LabDB(labdbDev)
+
+
+
 
 '''Define user options'''
 parser = argparse.ArgumentParser()
@@ -240,6 +252,9 @@ testMode = args.test
 validCourses = ["211", "223", "227", "255", "259", "323", "325", "341", "365", "369", "375", "397", "497"]
 validSemesters = ["Winter", "Spring", "Summer", "Fall"]
 semesterKeys = {"Winter": "WI", "Spring": "SP", "Summer": "SU", "Fall": "FA"}
+
+'''Confirm that this script won't accidently run on the wrong machine'''
+testHost(devhost)
 
 
 '''prints version'''
@@ -275,6 +290,12 @@ if args.add:
 	else:
 		print("something when wrong")
 		exit()
+
+'''add a new lab'''
+if args.new:
+	lab = labdb.newLab(labdb.new_id)
+	print(lab.id_num)
+	print("Adding a brand new lab")
 
 '''confirms that the script has ended properly'''
 print("...and then there will be cake")

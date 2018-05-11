@@ -11,6 +11,8 @@ readme_location = "../../README.md"
 class IDDoesNotExist(Exception):
     pass
 
+class EQIDDoesNotExist(Exception):
+    pass
 
 
 def isValidID(idnum):
@@ -99,7 +101,7 @@ class EquipDB():
         date = str(date.year) + "-" + str(date.month) + "-" + \
                str(date.day) + "_" + str(date.hour) + "." + \
                str(date.minute) + "." + str(date.second)
-        filename = "error_" + date + ".log"
+        filename = "log/error_" + date + ".log"
         return open(filename, "w")
 
 
@@ -195,7 +197,7 @@ class EquipDB():
                 for item in self.equipment:
                     if item.id_num == idnum:
                         return item
-                raise Exception("Equipment id \"" + idnum + "\" doesn't exist")
+                raise EQIDDoesNotExist("Exception: Equipment id \"" + idnum + "\" doesn't exist")
             except Exception as e:
                 raise e
         else:

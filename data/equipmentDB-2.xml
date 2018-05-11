@@ -51,7 +51,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0330" lastModified="2018-01-25T12:34:45">
+  <Item id="0330" lastModified="2018-04-02T15:57:16">
     <InventoryName>LED apparatus</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -67,8 +67,8 @@
     </Locations>
     <Quantity>
       <Total>18</Total>
-      <InService>17</InService>
-      <UnderRepair>1</UnderRepair>
+      <InService>18</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -135,7 +135,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0416" lastModified="2018-01-25T12:34:45">
+  <Item id="0416" lastModified="2018-04-10T10:12:08">
     <InventoryName>LM3900 quad amplifer</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -143,15 +143,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0298" lastModified="2018-01-25T12:34:45">
+  <Item id="0298" lastModified="2018-04-10T14:37:46">
     <InventoryName>air column apparatus with speaker</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -159,11 +164,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST025</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>18</Total>
+      <InService>18</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -221,19 +231,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0142" lastModified="2018-01-25T12:34:45">
+  <Item id="0142" lastModified="2018-04-10T10:47:13">
     <InventoryName>0.1 μCi Po-210 alpha source</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Spectrum Techniques</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -258,7 +273,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0242" lastModified="2018-01-25T12:34:45">
+  <Item id="0242" lastModified="2018-04-10T10:18:15">
     <InventoryName>400 mL glass beaker</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -266,15 +281,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D9</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>9</Total>
+      <InService>9</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0472" lastModified="2018-03-13T14:07:58">
+  <Item id="0472" lastModified="2018-04-10T13:51:15">
     <InventoryName>15 mm tight spring</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -291,11 +311,11 @@
     <Quantity>
       <Total>9</Total>
       <InService>9</InService>
-      <UnderRepair/>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0387" lastModified="2018-01-25T12:34:45">
+  <Item id="0387" lastModified="2018-04-10T10:39:57">
     <InventoryName>20 cm focal length 38 mm diameter double convex lens</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -303,15 +323,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>12</Total>
+      <InService>12</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0194" lastModified="2018-01-25T12:34:45">
+  <Item id="0194" lastModified="2018-04-10T10:19:47">
     <InventoryName>NW25 isolation valve</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -319,15 +344,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST050</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0197" lastModified="2018-01-25T12:34:45">
+  <Item id="0197" lastModified="2018-04-10T10:42:58">
     <InventoryName>salt</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -335,11 +365,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -418,19 +453,19 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0189" lastModified="2018-01-25T12:34:45">
+  <Item id="0189" lastModified="2018-04-10T10:09:59">
     <InventoryName>HP pulse generator</InventoryName>
     <Identification>
       <Manufacturer>HP</Manufacturer>
-      <Model/>
+      <Model>8011A</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -480,7 +515,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0086" lastModified="2018-01-25T12:34:45">
+  <Item id="0086" lastModified="2018-04-10T10:48:52">
     <InventoryName>hanging chain pulley</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -488,15 +523,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D14</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>12</Total>
+      <InService>12</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0328" lastModified="2018-01-25T12:34:45">
+  <Item id="0328" lastModified="2018-04-10T11:44:57">
     <InventoryName>SRL thermistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -504,11 +544,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -583,19 +628,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0266" lastModified="2018-01-25T12:34:45">
+  <Item id="0266" lastModified="2018-04-10T10:32:14">
     <InventoryName>Abbe diagram</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Schott</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>17</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -636,7 +686,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0207" lastModified="2018-03-13T14:07:58">
+  <Item id="0207" lastModified="2018-04-10T14:38:20">
     <InventoryName>Vernier LabPro data logger</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
@@ -644,11 +694,16 @@
       <Thumbnail>/staffresources/equipment/equipimg/0207img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST038</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>48</Total>
+      <InService>48</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -673,19 +728,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0310" lastModified="2018-01-25T12:34:45">
+  <Item id="0310" lastModified="2018-04-10T10:43:08">
     <InventoryName>cylindrical laser mount</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Edmund Optics</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>7</Total>
+      <InService>7</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -732,19 +792,32 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0157" lastModified="2018-01-25T12:34:45">
-    <InventoryName>roughing pump</InventoryName>
+  <Item id="0157" lastModified="2018-04-10T10:35:25">
+    <InventoryName>Roughing pump</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Edwards</Manufacturer>
+      <Model>RV5</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST048</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST50</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>11</Total>
+      <InService>10</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -810,15 +883,28 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0459" lastModified="2018-01-25T12:34:45">
+  <Item id="0459" lastModified="2018-04-10T10:47:35">
     <InventoryName>lens paper</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Edmund scientific</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C2</Storage>
+      </Location>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C4</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total/>
       <InService/>
@@ -826,7 +912,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0326" lastModified="2018-01-25T12:34:45">
+  <Item id="0326" lastModified="2018-04-10T11:45:26">
     <InventoryName>1N914 diode</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -834,11 +920,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -916,7 +1007,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0418" lastModified="2018-01-25T12:34:45">
+  <Item id="0418" lastModified="2018-04-10T14:52:05">
     <InventoryName>flat-bottomed coffee filter</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -924,11 +1015,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>22</Total>
+      <InService>22</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1006,7 +1102,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0406" lastModified="2018-03-13T14:07:58">
+  <Item id="0406" lastModified="2018-04-10T13:51:58">
     <InventoryName>Vernier force plate sensor handle</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
@@ -1016,9 +1112,9 @@
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>144</Total>
+      <InService>144</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1080,7 +1176,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0435" lastModified="2018-01-25T12:34:45">
+  <Item id="0435" lastModified="2018-04-10T10:59:27">
     <InventoryName>oven insert</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1088,11 +1184,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C16</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>2</Total>
+      <InService>2</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1281,7 +1382,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0138" lastModified="2018-01-25T12:34:45">
+  <Item id="0138" lastModified="2018-04-10T11:45:46">
     <InventoryName>10 MΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1289,11 +1390,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1313,7 +1419,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0115" lastModified="2018-01-25T12:34:45">
+  <Item id="0115" lastModified="2018-04-10T11:46:02">
     <InventoryName>1 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1321,15 +1427,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0146" lastModified="2018-01-25T12:34:45">
+  <Item id="0146" lastModified="2018-04-10T11:46:18">
     <InventoryName>6.8 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1337,11 +1448,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1361,7 +1477,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0415" lastModified="2018-01-25T12:34:45">
+  <Item id="0415" lastModified="2018-04-10T11:46:32">
     <InventoryName>LM555 timer</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1369,11 +1485,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1393,19 +1514,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0431" lastModified="2018-01-25T12:34:45">
+  <Item id="0431" lastModified="2018-04-10T11:15:39">
     <InventoryName>Fluke AC current probe</InventoryName>
     <Identification>
       <Manufacturer>Fluke</Manufacturer>
-      <Model/>
+      <Model>80I-600</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C10</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1442,7 +1568,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0311" lastModified="2018-01-25T12:34:45">
+  <Item id="0311" lastModified="2018-04-10T11:32:09">
     <InventoryName>adjustable laboratory stand</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1450,31 +1576,45 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST25A</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>7</Total>
+      <InService>7</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0481" lastModified="2018-01-25T12:34:45">
+  <Item id="0481" lastModified="2018-04-10T11:37:02">
     <InventoryName>Pasco mechanical vibrator apparatus</InventoryName>
     <Identification>
       <Manufacturer>Pasco</Manufacturer>
-      <Model/>
+      <Model>SF-9324</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>D13</Storage>
+      </Location>
+      <Location>
+        <Room>ST017</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0181" lastModified="2018-01-25T12:34:45">
+  <Item id="0181" lastModified="2018-04-10T11:25:28">
     <InventoryName>rubber bands</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1482,7 +1622,12 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST030</Room>
+        <Storage>D9</Storage>
+      </Location>
+    </Locations>
     <Quantity>
       <Total/>
       <InService/>
@@ -1490,7 +1635,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0521" lastModified="2018-01-25T12:34:45">
+  <Item id="0521" lastModified="2018-04-10T11:21:31">
     <InventoryName>set of torsion pendulums</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1499,15 +1644,20 @@
     </Identification>
     <Kit isKit="true">
 </Kit>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029 </Room>
+        <Storage>C14</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>18</Total>
+      <InService>18</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0374" lastModified="2018-01-25T12:34:45">
+  <Item id="0374" lastModified="2018-04-10T14:52:56">
     <InventoryName>liter of glycerin</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1515,11 +1665,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>25</Total>
+      <InService>25</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1564,7 +1719,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0269" lastModified="2018-01-25T12:34:45">
+  <Item id="0269" lastModified="2018-04-10T11:46:22">
     <InventoryName>15 cm focal length 38 mm diameter double convex lens</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1572,15 +1727,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>14</Total>
+      <InService>14</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0245" lastModified="2018-01-25T12:34:45">
+  <Item id="0245" lastModified="2018-04-10T15:08:19">
     <InventoryName>10 mL graduated cylinder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1588,11 +1748,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>23</Total>
+      <InService>23</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1641,19 +1806,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0067" lastModified="2018-01-25T12:34:45">
+  <Item id="0067" lastModified="2018-04-10T14:17:12">
     <InventoryName>sodium lamp</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Pasco</Manufacturer>
+      <Model>OS-9287B</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029 </Room>
+        <Storage>C15</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>14</Total>
+      <InService>14</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1715,7 +1885,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0398" lastModified="2018-01-25T12:34:45">
+  <Item id="0398" lastModified="2018-04-10T16:08:20">
     <InventoryName>25 cm focal length 100 mm diameter double convex lens</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1723,11 +1893,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>17</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1777,7 +1952,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0322" lastModified="2018-01-25T12:34:45">
+  <Item id="0322" lastModified="2018-04-10T14:12:22">
     <InventoryName>charge pump</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1785,15 +1960,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>18</Total>
+      <InService>18</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0524" lastModified="2018-01-25T12:34:45">
+  <Item id="0524" lastModified="2018-04-10T15:45:34">
     <InventoryName>Phywe gas apparatus</InventoryName>
     <Identification>
       <Manufacturer>Phywe</Manufacturer>
@@ -1801,15 +1981,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST25A</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0438" lastModified="2018-01-25T12:34:45">
+  <Item id="0438" lastModified="2018-04-10T11:37:09">
     <InventoryName>LM311 digital comparator</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1817,11 +2002,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1846,7 +2036,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0286" lastModified="2018-01-25T12:34:45">
+  <Item id="0286" lastModified="2018-04-10T14:19:47">
     <InventoryName>helium compressed gas cylinder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1854,11 +2044,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST017</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1904,7 +2099,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0362" lastModified="2018-01-25T12:34:45">
+  <Item id="0362" lastModified="2018-04-10T14:53:05">
     <InventoryName>NW25 rubber O-ring</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -1912,11 +2107,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST048/50</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>10</Total>
+      <InService>10</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1941,19 +2141,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0243" lastModified="2018-01-25T12:34:45">
+  <Item id="0243" lastModified="2018-04-10T15:27:17">
     <InventoryName>250 mL plastic beaker</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Nalgene</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036 </Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>13</Total>
+      <InService>13</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -1999,7 +2204,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0248" lastModified="2018-01-25T12:34:45">
+  <Item id="0248" lastModified="2018-04-10T15:20:41">
     <InventoryName>500 mL graduated cylinder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2007,11 +2212,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>21</Total>
+      <InService>21</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2126,7 +2336,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0247" lastModified="2018-01-25T12:34:45">
+  <Item id="0247" lastModified="2018-04-10T15:14:33">
     <InventoryName>250 mL graduated cylinder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2134,15 +2344,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>15</Total>
+      <InService>15</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0501" lastModified="2018-03-13T14:07:58">
+  <Item id="0501" lastModified="2018-04-10T16:13:19">
     <InventoryName>projectile launcher</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -2158,8 +2373,8 @@
     </Locations>
     <Quantity>
       <Total>20</Total>
-      <InService/>
-      <UnderRepair/>
+      <InService>20</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2253,22 +2468,6 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0475" lastModified="2018-01-25T12:34:45">
-    <InventoryName>movable cylindrical mass</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
   <Item id="0441" lastModified="2018-01-25T12:34:45">
     <InventoryName>electron diffraction optical analogue wheel</InventoryName>
     <Identification>
@@ -2290,7 +2489,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0107" lastModified="2018-01-25T12:34:45">
+  <Item id="0107" lastModified="2018-04-10T11:37:40">
     <InventoryName>breadboard</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2298,27 +2497,37 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0143" lastModified="2018-01-25T12:34:45">
+  <Item id="0143" lastModified="2018-04-10T14:24:49">
     <InventoryName>5.89 nCi Th-230 alpha source</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Isotope Products Laboratories</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029 </Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2347,7 +2556,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0221" lastModified="2018-01-25T12:34:45">
+  <Item id="0221" lastModified="2018-04-10T11:38:16">
     <InventoryName>XR8038 precision waveform generator</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2355,11 +2564,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2457,7 +2671,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0196" lastModified="2018-01-25T12:34:45">
+  <Item id="0196" lastModified="2018-04-10T15:30:20">
     <InventoryName>solid metal cylinder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2465,11 +2679,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>12</Total>
+      <InService>12</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2557,7 +2776,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0195" lastModified="2018-01-25T12:34:45">
+  <Item id="0195" lastModified="2018-04-10T15:31:43">
     <InventoryName>large wooden block</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2565,11 +2784,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>21</Total>
+      <InService>21</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2675,7 +2899,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0123" lastModified="2018-01-25T12:34:45">
+  <Item id="0123" lastModified="2018-04-10T11:39:02">
     <InventoryName>10 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2683,11 +2907,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2775,7 +3004,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0270" lastModified="2018-01-25T12:34:45">
+  <Item id="0270" lastModified="2018-04-10T14:31:33">
     <InventoryName>Fresnel biprism</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2783,11 +3012,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029 </Room>
+        <Storage>C1</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>8</Total>
+      <InService>8</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2828,39 +3062,28 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0522" lastModified="2018-01-25T12:34:45">
-    <InventoryName>photodetector</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0367" lastModified="2018-01-25T12:34:45">
+  <Item id="0367" lastModified="2018-04-10T14:55:19">
     <InventoryName>Oil diffstak high vacuum system</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Edwards High Vacuum LTD</Manufacturer>
+      <Model>H5L2A</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST050</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0237" lastModified="2018-01-25T12:34:45">
+  <Item id="0237" lastModified="2018-04-10T14:46:31">
     <InventoryName>solder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2868,15 +3091,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039 </Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0396" lastModified="2018-01-25T12:34:45">
+  <Item id="0396" lastModified="2018-04-10T16:12:08">
     <InventoryName>-3.6 cm focal length 38 mm diameter double concave lens</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2884,11 +3112,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST032</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>9</Total>
+      <InService>9</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2917,7 +3150,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0289" lastModified="2018-01-25T12:34:45">
+  <Item id="0289" lastModified="2018-04-10T14:45:07">
     <InventoryName>sorption pump</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2925,11 +3158,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST048</Room>
+        <Storage>Other </Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>2</Total>
+      <InService>0</InService>
+      <UnderRepair>2</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -2954,7 +3192,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0337" lastModified="2018-01-25T12:34:45">
+  <Item id="0337" lastModified="2018-04-10T14:59:40">
     <InventoryName>milligram digital balance</InventoryName>
     <Identification>
       <Manufacturer>Acculab</Manufacturer>
@@ -2971,11 +3209,11 @@
     <Quantity>
       <Total>2</Total>
       <InService>2</InService>
-      <UnderRepair/>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0323" lastModified="2018-01-25T12:34:45">
+  <Item id="0323" lastModified="2018-04-10T14:07:48">
     <InventoryName>large unpolarized capacitor 10 µF - 50 µF</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -2983,11 +3221,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029 </Room>
+        <Storage>D3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>53</Total>
+      <InService>53</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3012,7 +3255,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0117" lastModified="2018-01-25T12:34:45">
+  <Item id="0117" lastModified="2018-04-10T11:39:47">
     <InventoryName>100 pF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3020,11 +3263,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3107,7 +3355,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0077" lastModified="2018-01-25T12:34:45">
+  <Item id="0077" lastModified="2018-04-10T16:23:14">
     <InventoryName>hook collar</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3115,11 +3363,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D19</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>89</Total>
+      <InService>89</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3169,7 +3422,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0051" lastModified="2018-01-25T12:34:45">
+  <Item id="0051" lastModified="2018-04-10T11:47:12">
     <InventoryName>stopwatch</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3177,11 +3430,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>33</Total>
+      <InService>33</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3248,7 +3506,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0222" lastModified="2018-01-25T12:34:45">
+  <Item id="0222" lastModified="2018-04-10T12:36:56">
     <InventoryName>36 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3256,11 +3514,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3333,23 +3596,28 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0244" lastModified="2018-01-25T12:34:45">
+  <Item id="0244" lastModified="2018-04-10T15:27:25">
     <InventoryName>1000 mL plastic beaker</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Nalgene</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>14</Total>
+      <InService>14</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0081" lastModified="2018-01-25T12:34:45">
+  <Item id="0081" lastModified="2018-04-10T11:22:26">
     <InventoryName>aluminum bar</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3357,11 +3625,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C14</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>31</Total>
+      <InService>31</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3432,7 +3705,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0391" lastModified="2018-01-25T12:34:45">
+  <Item id="0391" lastModified="2018-04-10T15:56:26">
     <InventoryName>faraday effect media sample holder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3440,11 +3713,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029 </Room>
+        <Storage>C2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>8</InService>
+      <UnderRepair>9</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3555,7 +3833,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0012" lastModified="2018-01-25T12:34:45">
+  <Item id="0012" lastModified="2018-04-10T14:59:32">
     <InventoryName>digital balance</InventoryName>
     <Identification>
       <Manufacturer>Acculab</Manufacturer>
@@ -3572,27 +3850,32 @@
     <Quantity>
       <Total>6</Total>
       <InService>6</InService>
-      <UnderRepair/>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0238" lastModified="2018-01-25T12:34:45">
+  <Item id="0238" lastModified="2018-04-10T14:49:15">
     <InventoryName>soldering iron</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Weller</Manufacturer>
+      <Model>WTCPT</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0161" lastModified="2018-01-25T12:34:45">
+  <Item id="0161" lastModified="2018-04-10T11:50:02">
     <InventoryName>radium isolation nuclear chemistry station</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3601,11 +3884,16 @@
     </Identification>
     <Kit isKit="true">
 </Kit>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST009</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3683,35 +3971,40 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0058" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Protek digital thermometer</InventoryName>
+  <Item id="0058" lastModified="2018-04-10T14:40:25">
+    <InventoryName>Protek Digital thermometer</InventoryName>
     <Identification>
-      <Manufacturer/>
-      <Model/>
+      <Manufacturer>Protek</Manufacturer>
+      <Model>TM-1300K</Model>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>3</Total>
+      <InService>3</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0405" lastModified="2018-03-13T14:07:58">
+  <Item id="0405" lastModified="2018-04-10T11:25:21">
     <InventoryName>Vernier force plate sensor</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
-      <Model/>
+      <Model>FP-BTA</Model>
       <Thumbnail>/staffresources/equipment/equipimg/0405img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>36</Total>
+      <InService>34</InService>
+      <UnderRepair>2</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3752,7 +4045,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0376" lastModified="2018-01-25T12:34:45">
+  <Item id="0376" lastModified="2018-04-10T12:36:09">
     <InventoryName>200 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3760,11 +4053,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -3867,7 +4165,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0148" lastModified="2018-01-25T12:34:45">
+  <Item id="0148" lastModified="2018-04-10T12:35:38">
     <InventoryName>5.1 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -3875,27 +4173,37 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0402" lastModified="2018-01-25T12:34:45">
-    <InventoryName>aluminum rod with wide slit</InventoryName>
+  <Item id="0402" lastModified="2018-04-10T14:04:20">
+    <InventoryName>aluminum bar with wide slit</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C14</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>11</Total>
+      <InService>11</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4003,7 +4311,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0354" lastModified="2018-01-25T12:34:45">
+  <Item id="0354" lastModified="2018-04-10T14:52:34">
     <InventoryName>scotch tape</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4011,11 +4319,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>5</Total>
+      <InService>5</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4108,7 +4421,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0140" lastModified="2018-01-25T12:34:45">
+  <Item id="0140" lastModified="2018-04-10T12:32:04">
     <InventoryName>100 Ω resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4116,11 +4429,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4141,7 +4459,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0145" lastModified="2018-01-25T12:34:45">
+  <Item id="0145" lastModified="2018-04-10T12:35:16">
     <InventoryName>9.1 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4149,11 +4467,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4352,7 +4675,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0124" lastModified="2018-01-25T12:34:45">
+  <Item id="0124" lastModified="2018-04-10T12:34:25">
     <InventoryName>100 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4360,11 +4683,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4389,7 +4717,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0139" lastModified="2018-01-25T12:34:45">
+  <Item id="0139" lastModified="2018-04-10T12:34:04">
     <InventoryName>20 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4397,15 +4725,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0106" lastModified="2018-01-25T12:34:45">
+  <Item id="0106" lastModified="2018-04-10T11:20:28">
     <InventoryName>SRL function generator</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4413,11 +4746,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4536,7 +4874,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0313" lastModified="2018-01-25T12:34:45">
+  <Item id="0313" lastModified="2018-04-10T11:12:56">
     <InventoryName>SRL oscilloscope</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4544,11 +4882,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4763,7 +5106,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0375" lastModified="2018-01-25T12:34:45">
+  <Item id="0375" lastModified="2018-04-10T11:13:37">
     <InventoryName>82 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4771,11 +5114,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -4882,22 +5230,6 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0454" lastModified="2018-01-25T12:34:45">
-    <InventoryName>knife edge support</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
   <Item id="0006" lastModified="2018-01-25T12:34:45">
     <InventoryName>laboratory stand</InventoryName>
     <Identification>
@@ -4979,7 +5311,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0133" lastModified="2018-01-25T12:34:45">
+  <Item id="0133" lastModified="2018-04-10T11:14:27">
     <InventoryName>2.2 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -4987,11 +5319,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5171,7 +5508,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0340" lastModified="2018-01-25T12:34:45">
+  <Item id="0340" lastModified="2018-04-10T11:15:04">
     <InventoryName>116F24 transformer</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5179,11 +5516,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5209,7 +5551,7 @@
     <Documents/>
   </Item>
   <Item id="0293" lastModified="2018-01-25T12:34:45">
-    <InventoryName>stirling engine</InventoryName>
+    <InventoryName>small Stirling engine</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -5339,7 +5681,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0125" lastModified="2018-01-25T12:34:45">
+  <Item id="0125" lastModified="2018-04-10T11:15:52">
     <InventoryName>1 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5347,11 +5689,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5371,7 +5718,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0439" lastModified="2018-01-25T12:34:45">
+  <Item id="0439" lastModified="2018-04-10T11:16:19">
     <InventoryName>CD4024 CMOS binary counter</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5379,11 +5726,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5528,7 +5880,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0320" lastModified="2018-01-25T12:34:45">
+  <Item id="0320" lastModified="2018-04-10T11:17:41">
     <InventoryName>SRL frequency counter</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5536,11 +5888,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5749,22 +6106,6 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0332" lastModified="2018-01-25T12:34:45">
-    <InventoryName>CD4023 CMOS counter-divider</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
   <Item id="0274" lastModified="2018-01-25T12:34:45">
     <InventoryName>K type thermocouple with amplifier</InventoryName>
     <Identification>
@@ -5797,7 +6138,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0223" lastModified="2018-01-25T12:34:45">
+  <Item id="0223" lastModified="2018-04-10T11:47:31">
     <InventoryName>forceps</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5805,11 +6146,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>14</Total>
+      <InService>14</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5903,7 +6249,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0342" lastModified="2018-01-25T12:34:45">
+  <Item id="0342" lastModified="2018-04-10T11:29:11">
     <InventoryName>2N3904 NPN bipolar transistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5911,15 +6257,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0325" lastModified="2018-01-25T12:34:45">
+  <Item id="0325" lastModified="2018-04-10T11:30:37">
     <InventoryName>SRL stopwatch</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5927,11 +6278,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5956,7 +6312,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0152" lastModified="2018-01-25T12:34:45">
+  <Item id="0152" lastModified="2018-04-10T11:29:45">
     <InventoryName>100 kΩ potentiometer</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -5964,11 +6320,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -5993,19 +6354,24 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0169" lastModified="2018-01-25T12:34:45">
+  <Item id="0169" lastModified="2018-04-10T14:27:15">
     <InventoryName>rectangular block worksheet</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>PJL</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST034</Room>
+        <Storage>C3</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>100</Total>
+      <InService>100</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6025,7 +6391,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0392" lastModified="2018-01-25T12:34:45">
+  <Item id="0392" lastModified="2018-04-10T14:27:46">
     <InventoryName>fiber optics mounting rod</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6035,9 +6401,9 @@
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>5</Total>
+      <InService>5</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6062,7 +6428,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0118" lastModified="2018-01-25T12:34:45">
+  <Item id="0118" lastModified="2018-04-10T11:33:45">
     <InventoryName>0.001 μF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6070,15 +6436,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0053" lastModified="2018-01-25T12:34:45">
+  <Item id="0053" lastModified="2018-04-10T14:33:07">
     <InventoryName>radiation sample holder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6086,11 +6457,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>SRT038</Room>
+        <Storage>C6</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>23</Total>
+      <InService>23</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6115,7 +6491,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0425" lastModified="2018-01-25T12:34:45">
+  <Item id="0425" lastModified="2018-04-10T14:34:04">
     <InventoryName>universal tube stand</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6123,15 +6499,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C12</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>8</Total>
+      <InService>8</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0131" lastModified="2018-01-25T12:34:45">
+  <Item id="0131" lastModified="2018-04-10T11:34:59">
     <InventoryName>15 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6139,15 +6520,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0457" lastModified="2018-01-25T12:34:45">
+  <Item id="0457" lastModified="2018-04-10T14:35:03">
     <InventoryName>india ink</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6155,11 +6541,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>C8</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6179,7 +6570,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0114" lastModified="2018-01-25T12:34:45">
+  <Item id="0114" lastModified="2018-04-10T11:34:32">
     <InventoryName>0.1 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6187,11 +6578,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6216,7 +6612,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0026" lastModified="2018-01-25T12:34:45">
+  <Item id="0026" lastModified="2018-04-10T14:35:30">
     <InventoryName>Jarrell Ash monochromator</InventoryName>
     <Identification>
       <Manufacturer>Jarrell Ash</Manufacturer>
@@ -6224,15 +6620,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST009</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0445" lastModified="2018-01-25T12:34:45">
+  <Item id="0445" lastModified="2018-04-10T15:34:09">
     <InventoryName>beaker with drain spout</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6240,11 +6641,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>17</Total>
+      <InService>17</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6318,7 +6724,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0312" lastModified="2018-01-25T12:34:45">
+  <Item id="0312" lastModified="2018-04-10T14:42:50">
     <InventoryName>Nucleus alpha spectrometer</InventoryName>
     <Identification>
       <Manufacturer>Nucleus</Manufacturer>
@@ -6326,11 +6732,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST009</Room>
+        <Storage>Other</Storage>
+      </Location>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>3</Total>
+      <InService>2</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6471,7 +6886,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0386" lastModified="2018-01-25T12:34:45">
+  <Item id="0386" lastModified="2018-04-10T14:43:47">
     <InventoryName>mini-speaker</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6479,11 +6894,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6546,7 +6966,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0153" lastModified="2018-01-25T12:34:45">
+  <Item id="0153" lastModified="2018-04-10T11:35:36">
     <InventoryName>70 kΩ potentiometer</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6554,11 +6974,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6599,7 +7024,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0120" lastModified="2018-01-25T12:34:45">
+  <Item id="0120" lastModified="2018-04-10T11:35:59">
     <InventoryName>0.0056 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6607,15 +7032,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0369" lastModified="2018-01-25T12:34:45">
+  <Item id="0369" lastModified="2018-04-10T13:57:20">
     <InventoryName>Turbomolecular high vacuum system</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6623,11 +7053,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST050</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6751,7 +7186,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0136" lastModified="2018-01-25T12:34:45">
+  <Item id="0136" lastModified="2018-04-10T11:36:22">
     <InventoryName>33 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6759,15 +7194,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0315" lastModified="2018-03-13T14:07:58">
+  <Item id="0315" lastModified="2018-04-10T11:22:01">
     <InventoryName>aluminum bar with notch</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6775,15 +7215,20 @@
       <Thumbnail>/staffresources/equipment/equipimg/0315img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C14</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>25</Total>
+      <InService>25</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0119" lastModified="2018-01-25T12:34:45">
+  <Item id="0119" lastModified="2018-04-10T12:43:53">
     <InventoryName>10 μF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6791,15 +7236,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0385" lastModified="2018-01-25T12:34:45">
+  <Item id="0385" lastModified="2018-04-10T13:55:51">
     <InventoryName>CD4016 CMOS switch</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6807,11 +7257,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6878,7 +7333,7 @@
     <Documents/>
   </Item>
   <Item id="0440" lastModified="2018-01-25T12:34:45">
-    <InventoryName>CD4023 logic gates</InventoryName>
+    <InventoryName>CD4023 CMOS logic gates</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -6893,7 +7348,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0055" lastModified="2018-01-25T12:34:45">
+  <Item id="0055" lastModified="2018-04-10T14:40:01">
     <InventoryName>beaker clamp</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6901,11 +7356,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D19</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>27</Total>
+      <InService>27</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6925,7 +7385,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0366" lastModified="2018-01-25T12:34:45">
+  <Item id="0366" lastModified="2018-04-10T13:57:58">
     <InventoryName>pumpdown and leakout curve apparatus</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6933,11 +7393,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST050</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -6983,7 +7448,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0429" lastModified="2018-01-25T12:34:45">
+  <Item id="0429" lastModified="2018-04-10T11:51:49">
     <InventoryName>AC line separator</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -6991,11 +7456,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST039</Room>
+        <Storage>C3</Storage>
+      </Location>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C10</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>6</Total>
+      <InService>6</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7021,7 +7495,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0525" lastModified="2018-01-25T12:34:45">
+  <Item id="0525" lastModified="2018-04-10T13:59:12">
     <InventoryName>Nuclear Data ND62 PHA</InventoryName>
     <Identification>
       <Manufacturer>Nuclear Data</Manufacturer>
@@ -7029,11 +7503,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST042</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>0</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7090,7 +7569,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0356" lastModified="2018-01-25T12:34:45">
+  <Item id="0356" lastModified="2018-04-10T13:59:44">
     <InventoryName>SRL digital multimeter</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7098,11 +7577,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7180,7 +7664,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0100" lastModified="2018-01-25T12:34:45">
+  <Item id="0100" lastModified="2018-04-10T14:40:50">
     <InventoryName>acrylic X-ray shield</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7188,15 +7672,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C11</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>10</Total>
+      <InService>10</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0130" lastModified="2018-01-25T12:34:45">
+  <Item id="0130" lastModified="2018-04-10T12:33:19">
     <InventoryName>27 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7204,11 +7693,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7233,7 +7727,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0088" lastModified="2018-01-25T12:34:45">
+  <Item id="0088" lastModified="2018-04-10T11:24:27">
     <InventoryName>play-doh electrode</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7241,11 +7735,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST042</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>24</Total>
+      <InService>24</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7270,7 +7769,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0144" lastModified="2018-01-25T12:34:45">
+  <Item id="0144" lastModified="2018-04-10T12:31:08">
     <InventoryName>10 Ω resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7278,11 +7777,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7334,7 +7838,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0156" lastModified="2018-01-25T12:34:45">
+  <Item id="0156" lastModified="2018-04-10T14:00:38">
     <InventoryName>Cary vibrating reed electrometer</InventoryName>
     <Identification>
       <Manufacturer>Cary</Manufacturer>
@@ -7342,11 +7846,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST009</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>2</Total>
+      <InService>1</InService>
+      <UnderRepair>1</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7429,7 +7938,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0137" lastModified="2018-01-25T12:34:45">
+  <Item id="0137" lastModified="2018-04-10T12:42:57">
     <InventoryName>2.2 MΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7437,11 +7946,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7526,7 +8040,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0002" lastModified="2018-03-13T14:07:58">
+  <Item id="0002" lastModified="2018-04-02T16:36:28">
     <InventoryName>Anatek power supply</InventoryName>
     <Identification>
       <Manufacturer>Anatek</Manufacturer>
@@ -7542,8 +8056,8 @@
     </Locations>
     <Quantity>
       <Total>43</Total>
-      <InService>40</InService>
-      <UnderRepair>3</UnderRepair>
+      <InService>41</InService>
+      <UnderRepair>2</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7642,7 +8156,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0417" lastModified="2018-01-25T12:34:45">
+  <Item id="0417" lastModified="2018-04-10T14:01:25">
     <InventoryName>CM3130 OpAmp</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7650,11 +8164,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7721,39 +8240,39 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0164" lastModified="2018-01-25T12:34:45">
-    <InventoryName>e/m apparatus</InventoryName>
+  <Item id="0164" lastModified="2018-04-10T11:23:39">
+    <InventoryName>e/m apparatus - legacy</InventoryName>
     <Identification>
-      <Manufacturer/>
+      <Manufacturer>Leybold</Manufacturer>
       <Model/>
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>15</Total>
+      <InService>5</InService>
+      <UnderRepair>10</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0365" lastModified="2018-03-13T14:07:58">
+  <Item id="0365" lastModified="2018-04-10T11:24:06">
     <InventoryName>Vernier instrumentation amplifier</InventoryName>
     <Identification>
       <Manufacturer>Vernier</Manufacturer>
-      <Model/>
+      <Model>INA-DIN</Model>
       <Thumbnail>/staffresources/equipment/equipimg/0365img.jpg</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
     <Locations/>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>2</Total>
+      <InService>2</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0335" lastModified="2018-01-25T12:34:45">
+  <Item id="0335" lastModified="2018-04-10T14:02:04">
     <InventoryName>300 Hz quartz crystal</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7761,11 +8280,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7785,7 +8309,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0128" lastModified="2018-01-25T12:34:45">
+  <Item id="0128" lastModified="2018-04-10T12:42:37">
     <InventoryName>620 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7793,11 +8317,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7822,7 +8351,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0122" lastModified="2018-01-25T12:34:45">
+  <Item id="0122" lastModified="2018-04-10T14:02:47">
     <InventoryName>1 MΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7830,11 +8359,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -7944,7 +8478,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0488" lastModified="2018-01-25T12:34:45">
+  <Item id="0488" lastModified="2018-04-10T14:46:34">
     <InventoryName>motorola rectifiers and zener diodes data book</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -7952,11 +8486,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>D2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>1</Total>
+      <InService>1</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8038,7 +8577,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0388" lastModified="2018-01-25T12:34:45">
+  <Item id="0388" lastModified="2018-04-10T14:47:10">
     <InventoryName>icelandic fieldspar</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8046,11 +8585,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST029</Room>
+        <Storage>C2</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>32</Total>
+      <InService>32</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8107,7 +8651,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0126" lastModified="2018-01-25T12:34:45">
+  <Item id="0126" lastModified="2018-04-10T10:49:37">
     <InventoryName>3.3 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8115,11 +8659,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8144,7 +8693,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0108" lastModified="2018-01-25T12:34:45">
+  <Item id="0108" lastModified="2018-04-10T10:50:01">
     <InventoryName>9 V battery</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8152,11 +8701,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>E002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8255,7 +8809,7 @@
     <Documents/>
   </Item>
   <Item id="0448" lastModified="2018-01-25T12:34:45">
-    <InventoryName>rubber ball bumber</InventoryName>
+    <InventoryName>rubber ball bumper</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8331,7 +8885,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0127" lastModified="2018-01-25T12:34:45">
+  <Item id="0127" lastModified="2018-04-10T10:50:41">
     <InventoryName>910 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8339,11 +8893,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8416,7 +8975,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0129" lastModified="2018-01-25T12:34:45">
+  <Item id="0129" lastModified="2018-04-10T10:52:46">
     <InventoryName>47 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8424,11 +8983,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8485,7 +9049,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0135" lastModified="2018-01-25T12:34:45">
+  <Item id="0135" lastModified="2018-04-10T10:53:09">
     <InventoryName>22 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8493,15 +9057,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0246" lastModified="2018-01-25T12:34:45">
+  <Item id="0246" lastModified="2018-04-10T15:12:04">
     <InventoryName>100 mL graduated cylinder</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8509,11 +9078,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ST036</Room>
+        <Storage>C5</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>14</Total>
+      <InService>14</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8570,7 +9144,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0355" lastModified="2018-01-25T12:34:45">
+  <Item id="0355" lastModified="2018-04-10T10:53:44">
     <InventoryName>avometer</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8578,11 +9152,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8704,7 +9283,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0384" lastModified="2018-01-25T12:34:45">
+  <Item id="0384" lastModified="2018-04-10T10:54:35">
     <InventoryName>SRL meter stick</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8712,11 +9291,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8821,7 +9405,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0121" lastModified="2018-01-25T12:34:45">
+  <Item id="0121" lastModified="2018-04-10T10:57:45">
     <InventoryName>100 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -8829,11 +9413,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -8880,7 +9469,7 @@
     <Documents/>
   </Item>
   <Item id="0296" lastModified="2018-01-25T12:34:45">
-    <InventoryName>Stirling engine</InventoryName>
+    <InventoryName>large Stirling engine</InventoryName>
     <Identification>
       <Manufacturer/>
       <Model/>
@@ -8911,7 +9500,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0175" lastModified="2018-01-25T12:34:45">
+  <Item id="0175" lastModified="2018-04-02T16:06:38">
     <InventoryName>potential mapping apparatus</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -9043,7 +9632,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0333" lastModified="2018-01-25T12:34:45">
+  <Item id="0333" lastModified="2018-04-10T10:58:28">
     <InventoryName>CD4046 CMOS counter-divider</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9051,15 +9640,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0520" lastModified="2018-01-25T12:34:45">
+  <Item id="0520" lastModified="2018-04-10T10:58:56">
     <InventoryName>LF353 JFET OpAmp</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9067,27 +9661,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0453" lastModified="2018-01-25T12:34:45">
-    <InventoryName>knife edge</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -9300,7 +9883,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0334" lastModified="2018-01-25T12:34:45">
+  <Item id="0334" lastModified="2018-04-10T10:59:26">
     <InventoryName>CD4017 CMOS counter-divider</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9308,15 +9891,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0116" lastModified="2018-01-25T12:34:45">
+  <Item id="0116" lastModified="2018-04-10T10:59:56">
     <InventoryName>0.01 µF capacitor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9324,15 +9912,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0132" lastModified="2018-01-25T12:34:45">
+  <Item id="0132" lastModified="2018-04-10T11:02:56">
     <InventoryName>30 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9340,11 +9933,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -9397,7 +9995,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0147" lastModified="2018-01-25T12:34:45">
+  <Item id="0147" lastModified="2018-04-10T11:04:17">
     <InventoryName>4.7 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9405,15 +10003,20 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0134" lastModified="2018-01-25T12:34:45">
+  <Item id="0134" lastModified="2018-04-10T11:11:03">
     <InventoryName>11 kΩ resistor</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9421,11 +10024,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -9525,22 +10133,6 @@
       <Total>8</Total>
       <InService>8</InService>
       <UnderRepair>0</UnderRepair>
-    </Quantity>
-    <Documents/>
-  </Item>
-  <Item id="0452" lastModified="2018-01-25T12:34:45">
-    <InventoryName>steel rod</InventoryName>
-    <Identification>
-      <Manufacturer/>
-      <Model/>
-      <Thumbnail>/img/img-placeholder.png</Thumbnail>
-    </Identification>
-    <Kit isKit="false"/>
-    <Locations/>
-    <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
     </Quantity>
     <Documents/>
   </Item>
@@ -9686,7 +10278,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0357" lastModified="2018-01-25T12:34:45">
+  <Item id="0357" lastModified="2018-04-10T11:12:05">
     <InventoryName>SRL oscilloscope probe</InventoryName>
     <Identification>
       <Manufacturer/>
@@ -9694,11 +10286,16 @@
       <Thumbnail>/img/img-placeholder.png</Thumbnail>
     </Identification>
     <Kit isKit="false"/>
-    <Locations/>
+    <Locations>
+      <Location>
+        <Room>ES002</Room>
+        <Storage>Other</Storage>
+      </Location>
+    </Locations>
     <Quantity>
-      <Total/>
-      <InService/>
-      <UnderRepair/>
+      <Total>0</Total>
+      <InService>0</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
@@ -9797,7 +10394,7 @@
     </Quantity>
     <Documents/>
   </Item>
-  <Item id="0198" lastModified="2018-01-25T12:34:45">
+  <Item id="0198" lastModified="2018-04-10T11:52:38">
     <InventoryName>20 cm front surface mirror</InventoryName>
     <Identification>
       <Manufacturer>PJL</Manufacturer>
@@ -10023,6 +10620,22 @@
       <Total/>
       <InService/>
       <UnderRepair/>
+    </Quantity>
+    <Documents/>
+  </Item>
+  <Item id="0535" lastModified="2018-05-04T10:35:28">
+    <InventoryName>e/m apparatus</InventoryName>
+    <Identification>
+      <Manufacturer>Daedalon</Manufacturer>
+      <Model>EP-20</Model>
+      <Thumbnail>/img/img-placeholder.png</Thumbnail>
+    </Identification>
+    <Kit isKit="false"/>
+    <Locations/>
+    <Quantity>
+      <Total>18</Total>
+      <InService>18</InService>
+      <UnderRepair>0</UnderRepair>
     </Quantity>
     <Documents/>
   </Item>
