@@ -10,7 +10,7 @@ from xml.etree import ElementTree as ET
 
 # '''define folder locations'''
 root = "/usr/local/master/"
-xml_file = root + "pjl-web/data/equipmentDB.xml"
+xml_file = root + "pjl-web/dev/equipmentDB.xml"
 
 
 def ifNone(entry):

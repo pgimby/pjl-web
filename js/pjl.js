@@ -565,11 +565,13 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-hacf-pjl": "/data/safety/HACFs/HACF-PJL.pdf",
 				 "pjl-hacf-adv": "/data/safety/HACFs/HACF-TA-ADV.pdf",
 				 "pjl-hacf-std": "/data/safety/HACFs/HACF-TA-STD.pdf",
+				 "pjl-laser-safety": "/data/safety/lab-safety-manual/uofclasersafetymanual.pdf",
 				 "pjl-581": "/data/landingpage/physics581.zip",
 				 "pjl-481": "/data/landingpage/physics481.zip",
 				 "pjl-381": "/data/landingpage/physics381.zip",
 				 "pjl-downloads": "/data/downloads",
-				 "pjl-standard-procedures": "/staffresources/procedures/procedure-index.html"};
+				 "pjl-standard-procedures": "/staffresources/procedures/procedure-index.html",
+				 "pjl-docs": "/doc/index.html"};
 
 	let buttonid = $(e.target).attr("id");
 	window.location = links[buttonid];

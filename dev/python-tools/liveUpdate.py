@@ -30,13 +30,13 @@ mountInfo = [{"source": webSource, "mountPt": webMount}, {"source": labSource, "
 owner = "pgimby"
 group = "pjl_admins"
 apacheUser = "www-data"
-devhost="slug"
-webserver="watt"
+devhost=["slug","fry"]
+webserver="watt.pjl.ucalgary.ca"
 
 
 def testHost(host):
     thishost = os.uname()[1]
-    if not host == thishost:
+    if thishost not in host:
         print("This script is designed to be run on " + thishost + " only. Exiting...")
         gracefullExit(mountInfo)
 
@@ -69,14 +69,21 @@ def incrementFiles(files,dest,key,source,osTest):
         index += 1
         f = name[:-1] + str(index) + ".xml"
         os.system(osTest + "mv " + dest + "/" + files[i] + " " + dest + "/" + f)
-    os.system(osTest + "mv " + dest + key + ".xml " + dest + "/" + key + "-0.xml")
-    os.system(osTest + "cp " + source + " " + dest)
+    os.system(osTest + "mv " + dest + "/" + key + ".xml " + dest + "/" + key + "-0.xml")
+    os.system(osTest + "cp " + source + "/" + key + ".xml " + dest + "/" + key + ".xml")
+    #os.system(osTest + "rm " + dest + "/" + key + "-8.xml")
 
 
-def wheel(dbFile,source,dest,key,osTest):
+def wheel(dest,key,source,osTest):
     print("updating equipmentDB.xml")
     dbFiles = getDbFiles(dest,key)
+    #print(dbFiles)
     incrementFiles(list(reversed(dbFiles)),dest,key,source,osTest)
+
+# def wheel(dbFile,source,dest,key,osTest):
+#     print("updating equipmentDB.xml")
+#     dbFiles = getDbFiles(dest,key)
+#     #incrementFiles(list(reversed(dbFiles)),dest,key,source,osTest)
 
 def changePerm(varDir,owner,group,filePerm,options,osTest):
     print("changing permissions of " + varDir + " with find" + options + ". This may take a minute.")
@@ -94,8 +101,8 @@ def whichIsNewer(a,b,testMode):
         if os.path.getmtime(a) > os.path.getmtime(b):
             if testMode:
                 print(a + " is newer than " + b )
-                print(a + " " + os.path.getmtime(a))
-                print(b + " " + os.path.getmtime(b))
+                print(a + " " + str(os.path.getmtime(a)))
+                print(b + " " + str(os.path.getmtime(b)))
             return True
         else:
             if testMode:
@@ -145,22 +152,16 @@ mountFolder(labDest,labMount,webserver,"rw")
 
 '''update equipmenDB.xml from web server to development space if it is newer'''
 if whichIsNewer(liveEquipXML,devEquipXML,testMode) and whichIsNewer(liveEquipXML,dataEquipXML,testMode):
-    print("The live version of equipmentDB.xml is newer than the data version.")
+    print("The live version of equipmentDB.xml is newer than the dev version.")
     if input("Do you wish to continue? y/N ") == "y":
-        wheel(i,source,dest,key,osTest)
+        key = "equipmentDB"
+        dataFolder = webSource + "/data"
+        liveSource = webMount + "/data"
+        wheel(dataFolder,key,liveSource,osTest)
+        #wheel(i,source,dest,key,osTest)
     else:
         print("Exiting...")
         gracefullExit(mountInfo)
-
-
-# for i in webFileReverse:
-#     key = "equipmentDB"
-#     source = webMount + "/data/" + i
-#     dest = webSource + "/data/"
-
-#     if os.path.getmtime(source) >  os.path.getmtime(dest + "equipmentDB.xml"):
-#     #if not filecmp.cmp(source, dest + i):
-
 
 
 '''Set permissions and owners of files and folders'''

@@ -489,7 +489,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -1025,7 +1025,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0044">
@@ -1126,6 +1126,13 @@
         <Year>2018</Year>
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0044-Capacitors/0044-PHYS259WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0044-Capacitors/0044-PHYS259SP2018/Phys259-Labatorial06-Capacitors-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0044-Capacitors/0044-PHYS259SP2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -1475,6 +1482,13 @@
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0033-Gauss-Law/0033-PHYS259WI2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0033-Gauss-Law/0033-PHYS259SP2018/Phys259-Labatorial04-Gauss-Law-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0033-Gauss-Law/0033-PHYS259SP2018/</Directory>
+      </Version>
     </Versions>
     <Equipment/>
     <Type>Labatorial</Type>
@@ -1757,6 +1771,13 @@
         <Year>2018</Year>
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259SP2018/Phys259-Labatorial03-Moving-Charges-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259SP2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -2238,8 +2259,8 @@
         <Name>SRL frequency counter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0332">
-        <Name>CD4023 CMOS counter-divider</Name>
+      <Item id="0440">
+        <Name>CD4023 CMOS logic gates</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0333">
@@ -2535,7 +2556,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0206">
@@ -2888,6 +2909,13 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0014-Ideal-Gas-Law/0014-PHYS223WI2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0014-Ideal-Gas-Law/0014-PHYS223SU2018/Phys223-Labatorial07-Ideal-Gas-Law-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0014-Ideal-Gas-Law/0014-PHYS223SU2018/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0075">
@@ -3193,11 +3221,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -3314,6 +3342,13 @@
         <Year>2018</Year>
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259SP2018/Phys259-Labatorial01-Charges-and-Forces-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259SP2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -3958,7 +3993,7 @@
       </Item>
       <Item id="0157">
         <Name>roughing pump</Name>
-        <Amount>6</Amount>
+        <Amount>8</Amount>
       </Item>
       <Item id="0291">
         <Name>hand operated roughing pump</Name>
@@ -3976,32 +4011,36 @@
         <Name>liquid nitrogen</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0401">
+        <Name>tall liquid nitrogen dewar</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0029">
+        <Name>short liquid nitrogen dewar</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0288">
         <Name>thermocouple vacuum gauge</Name>
-        <Amount>3</Amount>
+        <Amount>5</Amount>
       </Item>
       <Item id="0361">
         <Name>thermocouple vacuum gauge head</Name>
-        <Amount>3</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0287">
         <Name>leaky weld assembly</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0046">
-        <Name>fork clamp</Name>
-        <Amount>2</Amount>
-      </Item>
-      <Item id="0286">
-        <Name>helium compressed gas cylinder</Name>
+      <Item id="0454">
+        <Name>heat gun</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0006">
-        <Name>laboratory stand</Name>
-        <Amount>2</Amount>
+      <Item id="0008">
+        <Name>laboratory jack</Name>
+        <Amount>1</Amount>
       </Item>
-      <Item id="0020">
-        <Name>right angle clamp</Name>
+      <Item id="0286">
+        <Name>helium compressed gas cylinder with regulator</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0285">
@@ -4018,31 +4057,39 @@
       </Item>
       <Item id="0194">
         <Name>NW25 isolation valve</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0432">
+        <Name>NW25 valve</Name>
+        <Amount>4</Amount>
+      </Item>
+      <Item id="0453">
+        <Name>NW25 blank</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0193">
-        <Name>NW 25 flexable vacuum hose</Name>
-        <Amount>1</Amount>
+        <Name>NW25 flexable vacuum hose</Name>
+        <Amount>8</Amount>
       </Item>
       <Item id="0360">
         <Name>NW25 25cm long nipple</Name>
-        <Amount>1</Amount>
+        <Amount>2</Amount>
       </Item>
       <Item id="0359">
-        <Name>NW 25 four-way cross</Name>
-        <Amount>1</Amount>
+        <Name>NW25 four-way cross</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0362">
         <Name>NW25 rubber O-ring</Name>
-        <Amount>16</Amount>
+        <Amount>27</Amount>
       </Item>
       <Item id="0363">
         <Name>NW25 centering ring</Name>
-        <Amount>16</Amount>
+        <Amount>27</Amount>
       </Item>
       <Item id="0364">
-        <Name>NW25 clamps</Name>
-        <Amount>20</Amount>
+        <Name>NW25 clamp</Name>
+        <Amount>27</Amount>
       </Item>
       <Item id="0235">
         <Name>nitrile gloves</Name>
@@ -4073,8 +4120,8 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0368">
-        <Name>RG-83 ionization gauge controller</Name>
-        <Amount>1</Amount>
+        <Name>ionization gauge controller</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0369">
         <Name>Turbomolecular high vacuum system</Name>
@@ -4424,7 +4471,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0047">
@@ -5563,7 +5610,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0092">
@@ -5658,10 +5705,17 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223SU2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223SU2018/Phys223-Labatorial08-First-Law-of-Thermodynamics-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223SU2018/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0293">
-        <Name>stirling engine</Name>
+        <Name>small Stirling engine</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0024">
@@ -6208,7 +6262,7 @@
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0031-Charge-to-Mass-Ratio-of-the-Electron-Legacy/0031-PHYS255WI2012</Directory>
       </Version>
-     </Versions>
+    </Versions>
     <Equipment>
       <Item id="0002">
         <Name>Anatek power supply</Name>
@@ -6304,6 +6358,13 @@
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0046-Electric-Potential/0046-PHYS259WI2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0046-Electric-Potential/0046-PHYS259SP2018/Phys259-Labatorial05-Electric-Potential-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0046-Electric-Potential/0046-PHYS259SP2018/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0024">
@@ -6392,10 +6453,6 @@
       </Item>
       <Item id="0044">
         <Name>plastic ruler</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0236">
-        <Name>bubble level</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0300">
@@ -6597,6 +6654,13 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223WI2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223SU2018/Phys223-Labatorial02-Electric-Fields-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223SU2018/</Directory>
+      </Version>
     </Versions>
     <Equipment/>
     <Type>Labatorial</Type>
@@ -6789,6 +6853,13 @@
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS259WI2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS259SP2018/Phys259-Labatorial02-Electric-Fields-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS259SP2018/</Directory>
+      </Version>
     </Versions>
     <Equipment/>
     <Type>Labatorial</Type>
@@ -6871,7 +6942,7 @@
       </Item>
       <Item id="0398">
         <Name>25 cm focal length 100 mm diameter double convex lens</Name>
-        <Amount>1</Amount>
+        <Amount>3</Amount>
       </Item>
       <Item id="0397">
         <Name>cylindrical He-Ne laser</Name>
@@ -6889,12 +6960,8 @@
         <Name>3-axis translation stage</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0401">
-        <Name>20 cm front surface flat mirror holder</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0402">
-        <Name>aluminum rod with wide slit</Name>
+        <Name>aluminum bar with wide slit</Name>
         <Amount>2</Amount>
       </Item>
       <Item id="0311">
@@ -7540,7 +7607,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0206">
@@ -7855,8 +7922,12 @@
         <Name>Compton scattering apparatus</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0029">
-        <Name>Ortec 8k multichannel analyzer</Name>
+      <Item id="0427">
+        <Name>multichannel analyzer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0105">
@@ -7962,11 +8033,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -8092,6 +8163,13 @@
         <Year>2018</Year>
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0013-Equipotential-Lines/0013-PHYS223WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0013-Equipotential-Lines/0013-PHYS223SU2018/Phys223-Labatorial03-Equipotential-Lines-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0013-Equipotential-Lines/0013-PHYS223SU2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -8291,6 +8369,13 @@
         <Year>2018</Year>
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0011-Electric-Charges-and-Forces/0011-PHYS223WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0011-Electric-Charges-and-Forces/0011-PHYS223SU2018/Phys223-Labatorial01-Electric-Charges-and-Forces-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0011-Electric-Charges-and-Forces/0011-PHYS223SU2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -8722,6 +8807,13 @@
         <Year>2018</Year>
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223SU2018/Phys223-Labatorial04-Electric-Circuits-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223SU2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -9194,6 +9286,20 @@
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS259WI2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS259SP2018/Phys259-Labatorial09-Magnetic-Fields-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS259SP2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS223SU2018/Phys223-Labatorial05-Magnetic-Field-in-a-Slinky-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS223SU2018/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0032">
@@ -9497,6 +9603,13 @@
         <Year>2018</Year>
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259SP2018/Phys259-Labatorial07-Play-Doh-Resistors-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259SP2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -9911,8 +10024,7 @@
       <Item id="0327">
         <Name>LF411 OpAmp</Name>
         <Amount>3</Amount>
-        <Alt id="0220">
-          </Alt>
+        <Alt id="0220">LM3301 quad amplifier</Alt>
       </Item>
       <Item id="0385">
         <Name>CD4016 CMOS switch</Name>
@@ -10014,8 +10126,8 @@
         <Name>radium isolation nuclear chemistry station</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0427">
-        <Name>Ortec alpha spectrometer</Name>
+      <Item id="0332">
+        <Name>alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0157">
@@ -10756,14 +10868,20 @@
         <Name>Nucleus alpha spectrometer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0432">
-        <Name>486 computer</Name>
+      <Item id="0427">
+        <Name>multichannel analyzer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>Maestro 7.01</Name>
+    </Software>
   </Lab>
   <Lab labId="0065">
     <Name>Black Body Radiation</Name>
@@ -10955,7 +11073,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0440">
-        <Name>CD4023 logic gates</Name>
+        <Name>CD4023 CMOS logic gates</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0119">
@@ -11534,16 +11652,12 @@
         <Name>1 m optical bench</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0182">
-        <Name>laser pointer</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0035">
         <Name>polarizer</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0522">
-        <Name>photodetector</Name>
+      <Item id="0048">
+        <Name>light detector</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0183">
@@ -11558,8 +11672,8 @@
         <Name>Philips multimeter</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0199">
-        <Name>laser pointer mount</Name>
+      <Item id="0021">
+        <Name>He-Ne laser</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0215">
@@ -11822,7 +11936,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0052">
@@ -11838,7 +11952,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0448">
-        <Name>rubber ball bumber</Name>
+        <Name>rubber ball bumper</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0095">
@@ -11890,7 +12004,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0206">
@@ -11910,7 +12024,7 @@
         <Amount>2</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0012">
@@ -11958,20 +12072,12 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0452">
-        <Name>steel rod</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0453">
-        <Name>knife edge</Name>
+      <Item id="0180">
+        <Name>compound pendulum kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0454">
-        <Name>knife edge support</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0236">
@@ -12020,7 +12126,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0206">
@@ -12146,11 +12252,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0047">
@@ -12339,7 +12445,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0458">
-        <Name>guage block set</Name>
+        <Name>gauge block set</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0353">
@@ -12748,8 +12854,8 @@
         <Name>-3.6 cm focal length 38 mm diameter double concave lens</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0469">
-        <Name>iris on slide holder</Name>
+      <Item id="0309">
+        <Name>optical iris</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0022">
@@ -12800,8 +12906,8 @@
         <Name>100 mL graduated cylinder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0274">
-        <Name>K type thermocouple with amplifier</Name>
+      <Item id="0058">
+        <Name>Protek digital thermometer</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0001">
@@ -12810,6 +12916,10 @@
       </Item>
       <Item id="0306">
         <Name>liquid nitrogen</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0029">
+        <Name>short liquid nitrogen dewar</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0470">
@@ -12986,23 +13096,11 @@
     </Versions>
     <Equipment>
       <Item id="0268">
-        <Name>Kater's pendulum</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0453">
-        <Name>knife edge</Name>
-        <Amount>2</Amount>
-      </Item>
-      <Item id="0475">
-        <Name>movable cylindrical mass</Name>
+        <Name>Kater's pendulum kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0006">
         <Name>laboratory stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0454">
-        <Name>knife edge support</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0051">
@@ -13128,12 +13226,32 @@
         <Name>hot plate</Name>
         <Amount>2</Amount>
       </Item>
+      <Item id="0182">
+        <Name>copper pellets</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0199">
+        <Name>lead pellets</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0254">
+        <Name>aluminum pellets</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0478">
-        <Name>set of metal pellets</Name>
+        <Name>bismuth pellets</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0479">
-        <Name>non-elemental welding rod pellets</Name>
+        <Name>zinc pellets</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0500">
+        <Name>tin pellets</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0522">
+        <Name>aluminum alloy pellets</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -13245,7 +13363,7 @@
     </Topics>
     <Versions>
       <Version>
-        <Path>/data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.pdf </Path>
+        <Path>/data/repository/0155-Minimum-Deviatin-and-Dispersion/0155-PHYS375FA2015/Angle-of-Minimum-Deviation-and-Dispersion-FA2015.pdf</Path>
         <Semester>Fall</Semester>
         <Year>2015</Year>
         <Course>PHYS 375</Course>
@@ -13455,7 +13573,7 @@
     </Versions>
     <Equipment>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0097">
@@ -13495,7 +13613,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -13527,11 +13645,11 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0096">
-        <Name>air hose</Name>
+        <Name>Pasco air hose</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0011">
-        <Name>Pasco air blower</Name>
+        <Name>Pasco air supply</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0258">
@@ -13976,7 +14094,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0498">
-        <Name>air pipe</Name>
+        <Name>air hose</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -14023,12 +14141,20 @@
         <Name>thermometer</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0500">
-        <Name>selection of gases</Name>
+      <Item id="0286">
+        <Name>helium compressed gas cylinder with regulator</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0254">
-        <Name>two-stage regulator</Name>
+      <Item id="0274">
+        <Name>argon compressed gas cylinder with regulator</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0469">
+        <Name>nitrogen compressed gas cylinder with regulator</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0475">
+        <Name>carbon dioxide compressed gas cylinder with regulator</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -14129,7 +14255,7 @@
     </Versions>
     <Equipment>
       <Item id="0503">
-        <Name>two axle block</Name>
+        <Name>two axle block pulley</Name>
         <Amount>4</Amount>
       </Item>
       <Item id="0092">
@@ -14540,7 +14666,7 @@
     </Versions>
     <Equipment>
       <Item id="0296">
-        <Name>Stirling engine</Name>
+        <Name>large Stirling engine</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0211">
@@ -14699,8 +14825,12 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0264">
-        <Name>T type thermocouple wire</Name>
+        <Name>red constantan T type thermocouple wire</Name>
         <Amount>1</Amount>
+      </Item>
+      <Item id="0530">
+        <Name>blue copper T type thermocouple wire</Name>
+        <Amount>2</Amount>
       </Item>
       <Item id="0265">
         <Name>thermocouple connecting post</Name>
@@ -14742,8 +14872,16 @@
         <Name>liquid nitrogen</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0029">
+        <Name>short liquid nitrogen dewar</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0239">
         <Name>dry ice</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0452">
+        <Name>dry ice dewar</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0234">
@@ -14758,10 +14896,6 @@
         <Name>solder</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0511">
-        <Name>cryogenics safety signs</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0056">
         <Name>thermometer clamp</Name>
         <Amount>2</Amount>
@@ -14773,7 +14907,9 @@
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
-    <Software/>
+    <Software>
+      <Name>cold.doc</Name>
+    </Software>
   </Lab>
   <Lab labId="0178">
     <Name>Torque and the Beam Balance</Name>
@@ -15025,24 +15161,12 @@
         <Name>Daedalon air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0528">
-        <Name>Canon ac adaptor</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0455">
-        <Name>Canon camera</Name>
+        <Name>Canon camera kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0461">
         <Name>camera stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0530">
-        <Name>3 ft ubs extention</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0529">
-        <Name>micro usb to usb cable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0527">
@@ -15102,24 +15226,12 @@
         <Name>Daedalon air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0528">
-        <Name>Canon ac adaptor</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0455">
-        <Name>Canon camera</Name>
+        <Name>Canon camera kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0461">
         <Name>camera stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0530">
-        <Name>3 ft ubs extention</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0529">
-        <Name>micro usb to usb cable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0534">
@@ -15171,12 +15283,8 @@
         <Name>Daedalon air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0528">
-        <Name>Canon ac adaptor</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0455">
-        <Name>Canon camera</Name>
+        <Name>Canon camera kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0461">
@@ -15193,14 +15301,6 @@
       </Item>
       <Item id="0205">
         <Name>inclinometer</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0530">
-        <Name>3 ft ubs extention</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0529">
-        <Name>micro usb to usb cable</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -15236,24 +15336,12 @@
         <Name>Daedalon air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0528">
-        <Name>Canon ac adaptor</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0455">
-        <Name>Canon camera</Name>
+        <Name>Canon camera kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0461">
         <Name>camera stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0530">
-        <Name>3 ft ubs extention</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0529">
-        <Name>micro usb to usb cable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0534">
@@ -15298,7 +15386,7 @@
     </Software>
   </Lab>
   <Lab labId="0183">
-    <Name>Motion on a Inclined Plane</Name>
+    <Name>Projectile Motion on an Air Table</Name>
     <Disciplines>
       <Discipline>Newtonian Mechanics</Discipline>
     </Disciplines>
@@ -15325,12 +15413,8 @@
         <Name>Daedalon air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0528">
-        <Name>Canon ac adaptor</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0455">
-        <Name>Canon camera</Name>
+        <Name>Canon camera kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0461">
@@ -15347,14 +15431,6 @@
       </Item>
       <Item id="0205">
         <Name>inclinometer</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0530">
-        <Name>3 ft ubs extention</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0529">
-        <Name>micro usb to usb cable</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -15431,12 +15507,8 @@
         <Name>Daedalon air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0528">
-        <Name>Canon ac adaptor</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0455">
-        <Name>Canon camera</Name>
+        <Name>Canon camera kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0461">
@@ -15445,14 +15517,6 @@
       </Item>
       <Item id="0527">
         <Name>small air table puck</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0530">
-        <Name>3 ft ubs extention</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0529">
-        <Name>micro usb to usb cable</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -15492,24 +15556,12 @@
         <Name>Daedalon air hose</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0528">
-        <Name>Canon ac adaptor</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0455">
-        <Name>Canon camera</Name>
+        <Name>Canon camera kit</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0461">
         <Name>camera stand</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0530">
-        <Name>3 ft ubs extention</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0529">
-        <Name>micro usb to usb cable</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0534">
@@ -15544,5 +15596,110 @@
       <Name>Canon</Name>
       <Name>Excel</Name>
     </Software>
+  </Lab>
+  <Lab labId="0187">
+    <Name>Charge to Mass Ratio of the Electron</Name>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Math</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Magnetism</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Linear Algebra</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Rotational Motion</Topic>
+    </Topics>
+    <Versions>
+      <Version>
+        <Path>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS223WI2018/Phys223-Labatorial06-Charge to mass ratio-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS223WI2018</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS259WI2018/Phys259-Labatorial08-Charge to mass ratio-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS259WI2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS259SP2018/Phys259-Labatorial08-Charge-to-mass-ratio-SP2018.pdf</Path>
+        <Semester>Spring</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS259SP2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS223SU2018/Phys223-Labatorial06-Charge-to-mass-ratio-SU2018.pdf</Path>
+        <Semester>Summer</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS223SU2018/</Directory>
+      </Version>
+    </Versions>
+    <Equipment>
+      <Item id="0535">
+        <Name>e/m apparatus - legacy</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0024">
+        <Name>computer</Name>
+        <Amount>2</Amount>
+      </Item>
+    </Equipment>
+    <Type>Labatorial</Type>
+    <SupportDocs/>
+    <Software/>
+  </Lab>
+  <Lab labId="0188">
+    <Name>Advanced Charge to Mass Ratio of the Electron</Name>
+    <Disciplines>
+      <Discipline>Newtonian Mechanics</Discipline>
+      <Discipline>Electricity and Magnetism</Discipline>
+      <Discipline>Particle Physics</Discipline>
+      <Discipline>Math</Discipline>
+    </Disciplines>
+    <Topics>
+      <Topic>Magnetism</Topic>
+      <Topic>Integration</Topic>
+      <Topic>Differentiation</Topic>
+      <Topic>Conservation Laws</Topic>
+      <Topic>Linear Algebra</Topic>
+      <Topic>Work and Energy</Topic>
+      <Topic>Rotational Motion</Topic>
+    </Topics>
+    <Versions>
+      <Version>
+        <Path>/data/repository/0188-Advanced-Charge-to-Mass-Ratio-of-the-Electron/0188-PHYS255WI2018/Charge-to-Mass-Ratio-of-the-Electron-WI2018.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 255</Course>
+        <Directory>/data/repository/0188-Advanced-Charge-to-Mass-Ratio-of-the-Electron/0188-PHYS255WI2018</Directory>
+      </Version>
+    </Versions>
+    <Equipment>
+      <Item id="0535">
+        <Name>e/m apparatus - legacy</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0191">
+        <Name>small compass</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0044">
+        <Name>plastic ruler</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Type>Lab</Type>
+    <SupportDocs/>
+    <Software/>
   </Lab>
 </Labs>

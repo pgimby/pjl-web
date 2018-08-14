@@ -41,7 +41,7 @@ The script ``liveUpdate.py" (Listing \ref{liveUpdate}) has been designed to sync
 sudo ./liveUpdate.py
 \end{lstlisting}
 
-\noindent The command can also be run in test mode by excecuting...
+\noindent The command can also be run in test mode by executing...
 
 \begin{lstlisting}[backgroundcolor = \color{light-gray}]
 sudo ./liveUpdate.py -t
@@ -80,6 +80,12 @@ At top most level is a folder called ``repository" that contains all experiment 
 %\end{enumerate}
 %\item Upload changes made to Watt to github.
 
+\subsection{Adding a new version of an existing lab to the repository}
+
+\begin{enumerate}
+\item Compile a folder that contains all file needed to generate the lab experiment pdf, as well as any files need for the lab to run (ie, excel templates, vernier cmbl file, or simulations)
+\end{enumerate}
+
 \subsection{Adding a new lab to the repository}
 
 Before beginning ensure that all equipment used in the new experiment are in the lab inventory, and have equipment ID number. 
@@ -87,30 +93,23 @@ Before beginning ensure that all equipment used in the new experiment are in the
 \begin{enumerate}
 \item Create a folder for the new lab (example ``new-lab-folder"), and place all files for generating student pdf, and the student pdf in new-lab-folder
 \item Inside new-lab-folder make a directory called ``Support\_Docs", and put all documents relevant to lab, but not needed for generation of pdf into it. This might include research papers, sample data, Excel spreadsheets, etc.
-\item Inside new-lab-folder create a file called info.csv and add all relevant information to the file.\\
+
 
 %Example: The file info.csv needs to be in this form. See below for more details.
 
-\begin{lstlisting}[backgroundcolor = \color{light-gray},
-					caption = The file info.csv needs to be in this form. See below for more details
-                   %language = C,
-                   xleftmargin = 2cm,
-                   framexleftmargin = 1em
-                   ]
-Name,Vectors-in-One-and-Two-Dimensions
-Type,Labatorial
-Disciplines,Newtonian Mechanics,Optics
-Topics,Collisions,Momentum
-Semester,Fall
-Year,2017
-Course,325
-Equipment,0004-(1)-[0002],0050-(4)
-Software,ImageJ,Canon
-PDF,title.pdf
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+sudo ./repositoryEdit -n
 \end{lstlisting}
 
+The command can also be run in test mode by executing...
 
-Any text that is \textbf{Bold} must be configured for each lab. text in \textit{italic} are notes that must be removed. Standard text must be left as is.
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+sudo ./repositoryEdit -n -t
+\end{lstlisting}
+
+The script will now take you through several steps to gather the information needed to properly add this new lab to the repository. There are several safeties built into the code, but there will be a request to review the input information and confirm that it is correct. Please take time at this point to carefully review metadata entered.\\
+
+The disciplines, topics, and software entries must align with the master list contained in /data/validDiciplines.txt, /data/validTopics.txt, and /data/validSoftware.txt. New items must be added to these master lists before they can be added to a lab.
 
 \begin{itemize}
 \item Name, \textbf{Name as to be Seen on Website} \textit{ Use Standard Title Capitalize Convention.}
@@ -139,8 +138,53 @@ Any text that is \textbf{Bold} must be configured for each lab. text in \textit{
 
 \subsection{Inventory structure}
 
-Each item in the inventory should have a unique identifier number, and a unique name. Each item has a place for any number of manuals, and one picture. 
+Each item in the inventory should have a unique identifier number, and a unique name. An item can be either a stand alone item, or a kit. If the item is a kit it will need to include a list of the items the kit. If only part of the kit are needed for an experiment the repository xml can reference those items by creating a equipment tag in the labDB.xml that has the id number for the kit, but the name for the individual item(s). Each item has a place for any number of manuals, and one picture.\\
 
+\noindent {\bf All changes outlined in this section are made to the development side of the website. Once all changes have been made, and are satisfactory, the live version of documents must be update and the web server must be updated.}
+
+
+\subsection{Adding New Equipment}
+
+%\noindent To add an individual piece of new equipment to the equipment database.
+
+%\begin{enumerate}
+%	\item 
+From the /dev/python-tools folder, the command,
+
+	\begin{lstlisting}
+	./equipmentEdit.py -n       
+	\end{lstlisting}
+
+A prompt will appear that will as for information regarding the new item. Enter all the information available. it is ok leave some fields blank just as long as there is a name. Once all the available information is added a summary will be displayed as well as a request for confirmation. If the user confirms that the information it will go through a validation process to ensure that the name is unique. If everything check out it will be added to the /dev version of the equipmentDB.xml file.
+
+%\end{enumerate}
+
+
+\subsection{Adding photos of equipment}
+
+When taking photos note that they will require editing before they are added to the database. The final version of photo will be square, so keep this in mind when taking the photographs. Note that all images must be in jpg formate.
+
+\begin{enumerate}
+\item Place images in /usr/local/master/labs/rawphotos
+\item Rename all images using the scheme [idnum]img.jpg where idnum is the id number of the piece of equipment photographed.
+\item Run the conversion script
+
+	\begin{lstlisting}
+	./convertImg.py       
+	\end{lstlisting}
+
+Edited version will now appear in /usr/local/master/rawimages/output
+\item Visually check all photographs in the output folder to confirm that they are still acceptable after they have been converted.
+\item Move all photographs ready to be added to the database to /staffresources/equipment/equipimg
+\item From /dev/python-tools run the script
+
+	\begin{lstlisting}
+	./equipmentEdit.py -i
+	\end{lstlisting}
+
+to update the images in the equipmentDB.xml
+
+\end{enumerate}
 
 \subsection{Deleting Old Equipment}
 
@@ -155,56 +199,6 @@ To remove a piece of old equipment run, from the python-tools folder, the comman
 \end{lstlisting}
 
 If the piece of equipment is currently listed as part of the equipment list for a current lab the script will prompt you to make sure that you know this. Ideally the equipment list in the lab repository should be updated first before removing the equipment. This will help to keep the lab equipment lists and the equipment database in sync. 
-
-\subsection{Adding New Equipment}
-
-There two ways to add a piece of equipment. 
-\begin{itemize}
-
-\item You can add each item individually with just a name only, and then used the ``edit mode" on the live site to add further information about the item.
-
-\item You can generate a csv file that contains all the relevant information, and then import that information into the database.
-\end{itemize}
-
-\subsubsection{Adding each piece individually}
-
-\noindent To add an individual piece of new equipment to the equipment database.
-
-\begin{enumerate}
-	\item From the /dev/python-tools folder, the command,
-
-	\begin{lstlisting}
-	./equipmentEdit.py -a "Name of equipment"       
-	\end{lstlisting}
-
-	Note that the quotation marks around the name is important, if they are missing the new piece 			of equipment will be call Name.
-
-	\item From the /data folder run the command,
-	
-	\begin{lstlisting}
-	./liveUpdate       
-	\end{lstlisting}
-	
-	which will replace the equipmentDB.xml file to be served, while  backing up the previous 				versions.
-	
-\end{enumerate}
-\begin{enumerate}
-\item Compile all rel
-
-	\begin{lstlisting}[backgroundcolor = \color{light-gray}, 	caption = The file info.csv needs to be in this form.
-	               language = csv, xleftmargin = -2cm, xrightmargin = -2cm,
-                   framexleftmargin = 1em
-                   ]
-                   
-name; Unique Name of Kit, is_kit; False, kit ; item1 ; item2 ; item3 (2)
-name; Unique Name of Equipment
-
-\end{lstlisting}
-
-\end{enumerate}
-
-\subsection{Adding photos of equipment}
-
 
 \section{Schedules}
 
@@ -228,7 +222,7 @@ name; Unique Name of Equipment
       %             ]
 
 
-\lstinputlisting[label = addnNew, language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/addNewLab.py}
+\lstinputlisting[label = addnNew, language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/repositoryEdit.py}
 
 \lstinputlisting[label = liveUpdate, language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/liveUpdate.py}
 

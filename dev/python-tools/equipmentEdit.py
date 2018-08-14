@@ -5,37 +5,44 @@
 # Version 1.1 added image update function, manual update function
 # Version 1.2 added ability to edit equipment information of existing items
 
+#Future Version
+#Add logging system to track changes
 
 import pjlDB 
 import os, argparse
 import xml.etree.ElementTree as ET
 
-version = "1.2"
-
-'''Paths for xml files'''
-root = "/usr/local/master/pjl-web/"
-eqdbDev = root + "dev/equipmentDB.xml"
-labdbDev = root + "dev/labDB.xml"
-eqdbData = root + "data/equipmentDB.xml"
-labdbData = root + "data/labDB.xml"
-imageLocal = "staffresources/equipment/equipimg"
-imageDir = root + imageLocal
-manualLocal = "staffresources/equipment/equipman"
-manualDir = root + manualLocal
-devHost="slug"
 
 
 #Fucntion that preform safety checks
 
-'''Checks tat script is being run on the correct host'''
 def testHost(host):
-    thishost = os.uname()[1]
-    if not host == thishost:
-        print("This script is designed to be run on " + thishost + " only. Exiting...")
-        exit()
+	'''
+	Test what computer this being run on. As of now it is machinne specific
+	
+	Args:
+		host (str) name of host script was designed for
+	
+	Return:
+		none
+	'''
+	thishost = os.uname()[1]
+	if thishost not in host:
+		print("This script is designed to be run on " + thishost + " only. Exiting...")
+		exit()
 
-'''Checks that the development version of the db is as new or newer that the live one'''
+
 def checkTimeStamp(dev,data):
+	'''
+	Checks that the source files for the databases referenced are the latest. This protects against overwritting changes by mistake
+
+	Args:
+		dev (str) location of a file
+		data (str) location of a file
+
+	Return:
+		(bool) True if file at data is newer than the one at dev
+	'''
 	if os.path.getmtime(data) <= os.path.getmtime(dev):
 		return True
 	else:
@@ -47,7 +54,6 @@ def checkTimeStamp(dev,data):
 '''Functions used for deleting equipiment items'''
 def deleteEquipItem(eqdb,labdb):
 	valid = False
-	print("a")
 	while not valid:
 		itemID = input("Please enter the id number of the equipment item you wish to remove? ")
 		if len(itemID) == 4 and itemID.isdigit() == True:
@@ -86,26 +92,79 @@ def getItemToEdit(eqdb):
 
 '''Collects information of kit status and/or contents'''
 def getKit(oldItem):
-	if input("Is this item a kit? (y/N) [" + str(oldItem.is_kit) + "] ") == "y":
+	kit = []
+	kitString = ""
+	name = ""
+	print(oldItem.kit)
+	kitStatus = input("Is this item a kit? (y/N) [" + str(oldItem.is_kit) + "] ").lower()
+	if kitStatus == "y":
 		iskit = True
-		name = input("Name of kit: ")
-		kit = []
-		lastItem = False
-		while lastItem == False:
-			lastItem = True
-			kitItemName = input("Kit Item : ")
-			kitItemAmount = input("How many " + kitItemName + "(s) are there? ")
-			if not kitItemAmount == "1":
-				kit.append(kitItemName + "(" + kitItemAmount + ")")
-			else:
-				kit.append(kitItemName)
-			if input("Is this the last item in the kit? (Y/n) ") == "n":
-				lastItem = False
-	else:
+	elif kitStatus == "n":
 		iskit = False
-		name = ""
-		kit = ""
-	return iskit, name, kit
+	else:
+		iskit = oldItem.is_kit
+	if iskit:
+		name = input("Name of kit: [" + oldItem.name + "]")
+		if name == "":
+			name = oldItem.name
+		if input("Would you like to edit the kit contents? y/N ").lower() == "y":
+			lastItem = False
+			kit = editKitList(oldItem)
+			if not input("Would you like to add another item? Y/n ").lower() == "n":
+				kit = addNewKitItem(kit)
+			kitString = ", ".join(kit )
+		else:
+			kitString = oldItem.kit
+	return iskit, name, kitString
+
+def editKitList(oldItem):
+	kit = []
+	origKitList = oldItem.kit.split(",")
+	for i in origKitList:
+		name = i.split("(")[0].strip()
+		try:
+			amount = i.split("(")[1].strip()
+			amount = str(amount.split(")")[0])
+		except:
+			amount = str(1)
+		newName = input("Enter new name [" + name + "] , or enter \'delete\' to remove ")
+		if newName == "delete":
+			continue
+		elif not newName == "":
+			name = newName
+		print(name)
+		newAmount = input("Enter amount of " + name + "(s) [" + amount + "]: ")
+		if newAmount.isdigit():
+			amount = str(newAmount)
+		if amount == "1":
+			item = name
+		else:
+			item = name + " (" + amount +")"
+		kit.append(item)
+	return kit
+
+def addNewKitItem(kit):
+	lastItem = False
+	while not lastItem:
+		kitItemName = input("Kit Item : ")
+		if kitItemName == "":
+			print("Name is blank. Please try again, or enter \'pass\' to continue.")
+			continue
+		if kitItemName.lower() == "pass":
+			lastItem = True
+			continue
+		kitItemAmount = input("How many " + kitItemName + "(s) are there? ")
+		if kitItemAmount == "1":
+			kit.append(kitItemName)
+		elif kitItemAmount == "":
+			kit.append(kitItemName)
+		elif kitItemAmount.isdigit():
+			kit.append(kitItemName + " (" + str(kitItemAmount) + ")")
+		if input("Would you like to add another item? (Y/n) ").lower() == "n":
+			lastItem = True
+	return kit
+
+	print("add extra item")
 
 '''gets name of item'''
 def getName(oldItem):
@@ -232,6 +291,7 @@ def validStorage(oldStorage):
 def getEquipInfo(oldItem,validRooms):
 	info = {}
 	infoIsKit,infoName,infoKit = getKit(oldItem)
+	info["idnum"] = oldItem.id_num
 	info["is_kit"] = infoIsKit
 	info["name"] = infoName
 	info["kit"] = infoKit
@@ -249,10 +309,15 @@ def getEquipInfo(oldItem,validRooms):
 
 '''displays collected information for comfirmations'''
 def checkEquipInfo(info):
+	print("")
+	print("---------------------------------------------------")
+	print("")
+	print("ID Number: " + info["idnum"])
 	print("Name: " + info["name"])
 	print("Is Kit: " + str(info["is_kit"]))
-	if info["is_kit"] == "True":
-	 	print("Kit Contents: " + info["kit"])
+	if info["is_kit"]:
+	 	print("Kit Contents:")
+	 	print(info["kit"])
 	print("Total amount: " + info["quantity"]["total"])
 	print("Amount in service: " + info["quantity"]["service"])
 	print("Amount under repair: " + info["quantity"]["repair"])
@@ -272,6 +337,8 @@ def checkEquipInfo(info):
 '''Modifies equimpnet object and adds them to new equipmentDB xml'''
 def addEquip(item,info,eqdb):
 	item.is_kit = info["is_kit"]
+	if item.is_kit:
+		item.kit = info["kit"]
 	item.name = info["name"]
 	item.quantity["total"] = info["quantity"]["total"]
 	item.quantity["service"] = info["quantity"]["service"]
@@ -280,9 +347,6 @@ def addEquip(item,info,eqdb):
 	item.model = info["model"]
 	item.locations = info["locations"]
 	eqdb.addItem(item)
-
-
-
 
 
 #Functions for updating equipment images
@@ -303,6 +367,9 @@ def imgInfo(imageDir):
 def outInfo(name, equipRoot):
 	eqID = str(name)[:4]
 	webPath = equipRoot + "/" + name
+
+	print("????????????????????????????")
+	print(webPath)
 	return eqID,webPath
 
 
@@ -353,33 +420,62 @@ def nameGenerator(ID,currentLst):
 
 ### Main Script
 
+version = "1.2"
+
+
+'''List of valid rooms and semesters '''
+validRooms = ["ST009","ST017","ST020","ST025","ST029","ST030","ST032","ST034","ST036","ST037","ST038","ST039","ST042","ST046","ST048","ST050","ST068","ES002", "Chem Store", "SA 2nd Floor"]
+
+
+'''Define user options'''
+parser = argparse.ArgumentParser()
+parser.add_argument('-d', '--delete', help='Delete a piece of equipment from db.', action='store_true')
+parser.add_argument('-e', '--edit', help='Edit details of a piece of equipment.', action='store_true')
+parser.add_argument('-i', '--images', help='Add all images in ~/staffresources/equipment/equipimg to the equipment database.', action='store_true')
+parser.add_argument('-m', '--manuals', help='Add all manuals in ~/staffresources/equipment/equipman to the equipment database.', action='store_true')
+parser.add_argument('-n', '--new', help='Add new piece of equipment.".', action='store_true')
+parser.add_argument('-t', '--test', help='Debug mode.top', action='store_true')
+parser.add_argument('-v', '--version', help='Print current verion of script.', action='store_true')
+args = parser.parse_args()
+testMode = args.test
+
+'''Paths for files'''
+root = "/usr/local/master/pjl-web"
+eqdbDev = root + "/dev/equipmentDB.xml"
+labdbDev = root + "/dev/labDB.xml"
+eqdbData = root + "/data/equipmentDB.xml"
+labdbData = root + "/data/labDB.xml"
+imageLocal = "/staffresources/equipment/equipimg"
+imageDir = root + imageLocal
+manualLocal = "/staffresources/equipment/equipman"
+manualDir = root + manualLocal
+
+
+'''Changes the output to a temporary file if script is run in test mode'''
+if testMode:
+	destXML = root + "/dev/test_equipmentDB.xml"
+	print("----------Running in test mode.----------")	
+else:
+	destXML= eqdbDev
+
+'''name of host machine this scipt was written for'''
+devHost=["slug","fry"]
+
+
+'''Confirm that this script won't accidently run on the wrong machine'''
+testHost(devHost)
+
 
 '''Create pjlDB object of each of the relevent xml files'''
 eqdb = pjlDB.EquipDB("/usr/local/master/pjl-web/dev/equipmentDB.xml")
 labdb = pjlDB.LabDB("/usr/local/master/pjl-web/dev/labDB.xml")
 
 
-'''Define user options'''
-parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--delete', help='delete a piece of equipment from db', action='store_true')
-parser.add_argument('-e', '--edit', help='enter id number of the piece of equipment to edit', action='store_true')
-parser.add_argument('-i', '--images', help='update images of the equipment', action='store_true')
-parser.add_argument('-m', '--manuals', help='update manuals of the equipment', action='store_true')
-parser.add_argument('-n', '--new', help='Used this option to add a single piece of equipment. Information regarding the new piece of equimpent will be requested by the script.".', action='store_true')
-parser.add_argument('-t', '--test', help='debug mode', action='store_true')
-parser.add_argument('-v', '--version', help='Print current verion of script', action='store_true')
-args = parser.parse_args()
-
-validRooms = ["ST009","ST017","ST029","ST030","ST032","ST034","ST036","ST037","ST038","ST039","ST042","ST046","ST048","ST050","ES002"]
-
-
-'''Confirm that this script won't accidently run on the wrong machine'''
-testHost(devHost)
-
 '''prints version'''
 if args.version:
 	print("Version " + version)
 	exit()
+
 
 '''Checks that the development version of both key DBs are new or as new as the live versions.'''
 if not checkTimeStamp(eqdbDev,eqdbData) or not checkTimeStamp(labdbDev,labdbData):
@@ -389,6 +485,25 @@ if not checkTimeStamp(eqdbDev,eqdbData) or not checkTimeStamp(labdbDev,labdbData
 		print("Repository development database is out of synce with the live version. Please update the development version before continuing.")
 	print("Exiting...")
 	exit()
+
+
+######################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 '''calls functions for deleting equipment item'''
 if args.delete:
@@ -421,7 +536,8 @@ if args.images:
 			for i in images:
 				if i["id"] == itemID:
 					name = i["name"]
-			equip.thumbnail = "/" + imageLocal + "/" + name
+			#equip.thumbnail = "/" + imageLocal + "/" + name
+			equip.thumbnail = imageLocal + "/" + name
 			print(equip.thumbnail)
 		else:
 			equip.thumbnail = "/img/img-placeholder.png"
@@ -440,12 +556,14 @@ if args.manuals:
 		#eqdb.addItem(equip)
 # db.save("../updatedequipmentDB.xml", ignore_validation=False, error_log=True)
 
-
 '''saves new xml file'''
 if args.test:
-	eqdb.save("/usr/local/master/pjl-web/dev/tmp.xml", ignore_validation=False, error_log=True)
+	print("writing to " + destXML)
+	print(type(destXML))
+	eqdb.save(destXML, ignore_validation=False, error_log=True)
 else:
-	eqdb.save("/usr/local/master/pjl-web/dev/equipmentDB.xml", ignore_validation=False, error_log=True)
+	print("saving to " + destXML)
+	eqdb.save(destXML, ignore_validation=False, error_log=True)
 
 '''confirms that the script has ended properly'''
 print("...and then there will be cake")
