@@ -9,7 +9,7 @@
 #Add logging system to track changes
 
 import pjlDB 
-import os, argparse
+import os, argparse, unicodedata, re
 import xml.etree.ElementTree as ET
 
 
@@ -167,10 +167,19 @@ def addNewKitItem(kit):
 	print("add extra item")
 
 '''gets name of item'''
-def getName(oldItem):
+def getName(oldItem,greek):
 	tempName = input("Name: [" + oldItem.name + "] ")
 	if not tempName == "":
 		newName = tempName
+		Greek = re.findall(r"{([.\s\S]*?)}",newName)
+		for i in Greek:
+			if i.istitle():
+				lookup = 'greek capital letter '
+			else:
+				lookup = 'greek small letter '
+			new = unicodedata.lookup(lookup + i)
+			old = ("{" + i + "}")
+			newName = newName.replace(old,new)
 	else:
 		newName = oldItem.name
 	return newName
@@ -288,7 +297,7 @@ def validStorage(oldStorage):
 
 
 '''Collects input from user on the new piece of equipment'''
-def getEquipInfo(oldItem,validRooms):
+def getEquipInfo(oldItem,validRooms,greek):
 	info = {}
 	infoIsKit,infoName,infoKit = getKit(oldItem)
 	info["idnum"] = oldItem.id_num
@@ -296,7 +305,7 @@ def getEquipInfo(oldItem,validRooms):
 	info["name"] = infoName
 	info["kit"] = infoKit
 	if not infoIsKit:
-		info["name"] = getName(oldItem)
+		info["name"] = getName(oldItem,greek)
 	infoQuantity = getQuantity(oldItem,infoIsKit)
 	info["quantity"] = infoQuantity
 	infoManufacturer = getManufacturer(oldItem)
@@ -420,12 +429,14 @@ def nameGenerator(ID,currentLst):
 
 ### Main Script
 
-version = "1.2"
+version = "1.3"
 
 
 '''List of valid rooms and semesters '''
 validRooms = ["ST009","ST017","ST020","ST025","ST029","ST030","ST032","ST034","ST036","ST037","ST038","ST039","ST042","ST046","ST048","ST050","ST068","ES002", "Chem Store", "SA 2nd Floor"]
 
+'''dictionary of greek characters with matching unicode '''
+greek = {"alpha": "\u03B1", "micro": "\u03BC"}
 
 '''Define user options'''
 parser = argparse.ArgumentParser()
@@ -434,10 +445,12 @@ parser.add_argument('-e', '--edit', help='Edit details of a piece of equipment.'
 parser.add_argument('-i', '--images', help='Add all images in ~/staffresources/equipment/equipimg to the equipment database.', action='store_true')
 parser.add_argument('-m', '--manuals', help='Add all manuals in ~/staffresources/equipment/equipman to the equipment database.', action='store_true')
 parser.add_argument('-n', '--new', help='Add new piece of equipment.".', action='store_true')
-parser.add_argument('-t', '--test', help='Debug mode.top', action='store_true')
+parser.add_argument('-t', '--test', help='Debug mode.', action='store_true')
+parser.add_argument('-x', '--validate', help='Disable validation for xml.', action='store_true')
 parser.add_argument('-v', '--version', help='Print current verion of script.', action='store_true')
 args = parser.parse_args()
 testMode = args.test
+validate = args.validate
 
 '''Paths for files'''
 root = "/usr/local/master/pjl-web"
@@ -457,6 +470,10 @@ if testMode:
 	print("----------Running in test mode.----------")	
 else:
 	destXML= eqdbDev
+
+'''validation disabled warning'''
+if validate:
+	print("validation of output file has been disabled. Be Very Careful!")
 
 '''name of host machine this scipt was written for'''
 devHost=["slug","fry"]
@@ -518,7 +535,7 @@ if args.edit or args.new:
 		equipItem = getItemToEdit(eqdb)
 	confirmed = False
 	while not confirmed:
-		equipInfo = getEquipInfo(equipItem,validRooms)
+		equipInfo = getEquipInfo(equipItem,validRooms,greek)
 		if checkEquipInfo(equipInfo):
 			confirmed = True
 			addEquip(equipItem,equipInfo,eqdb)
@@ -560,10 +577,10 @@ if args.manuals:
 if args.test:
 	print("writing to " + destXML)
 	print(type(destXML))
-	eqdb.save(destXML, ignore_validation=False, error_log=True)
+	eqdb.save(destXML, ignore_validation=validate, error_log=True)
 else:
 	print("saving to " + destXML)
-	eqdb.save(destXML, ignore_validation=False, error_log=True)
+	eqdb.save(destXML, ignore_validation=validate, error_log=True)
 
 '''confirms that the script has ended properly'''
 print("...and then there will be cake")

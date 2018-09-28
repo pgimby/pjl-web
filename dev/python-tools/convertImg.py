@@ -20,9 +20,6 @@ rotate = input("Angle to rotate photos by [0]: ")
 imageList = listOfImg(rootDir)
 for i in imageList:
 	inputPath = rootDir + "/" + i
-	
-	#os.system("convert " + inputPath + " -gravity center -resize 200x200^ -crop 200x200+0+0 " + output + "/"+ i)
-	
 	if rotate == "":
 		os.system("convert " + inputPath + " -resize 200x200^ -crop 200x200+0+0 " + output + "/"+ i)
 	else:

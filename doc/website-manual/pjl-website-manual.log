@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.20)  14 AUG 2018 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.7)  19 SEP 2018 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **pjl-website-manual.tex
 (./pjl-website-manual.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 5 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 9 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
@@ -152,19 +152,16 @@ LaTeX Warning: No \author given.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-(./pjl-website-manual.toc)
+(./pjl-website-manual.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+)
 \tf@toc=\write3
 \openout3 = `pjl-website-manual.toc'.
 
  [3]
-
-LaTeX Warning: Reference `liveUpdate' on page 4 undefined on input line 36.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 47.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 47.
-
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -374,21 +371,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
-Overfull \hbox (14.69522pt too wide) in paragraph at lines 819--820
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (40.19579pt too wide) in paragraph at lines 821--822
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
 
+
+Overfull \hbox (40.19579pt too wide) in paragraph at lines 822--823
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-Overfull \hbox (9.59511pt too wide) in paragraph at lines 843--844
+Overfull \hbox (14.69522pt too wide) in paragraph at lines 850--851
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (80.99669pt too wide) in paragraph at lines 869--870
+Overfull \hbox (80.99669pt too wide) in paragraph at lines 878--879
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -396,7 +399,7 @@ Overfull \hbox (80.99669pt too wide) in paragraph at lines 869--870
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-Overfull \hbox (223.79985pt too wide) in paragraph at lines 931--932
+Overfull \hbox (223.79985pt too wide) in paragraph at lines 940--941
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][] 
  []
@@ -405,7 +408,7 @@ Overfull \hbox (223.79985pt too wide) in paragraph at lines 931--932
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Overfull \hbox (60.59624pt too wide) in paragraph at lines 986--987
+Overfull \hbox (60.59624pt too wide) in paragraph at lines 994--995
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][] 
  []
@@ -414,22 +417,23 @@ Overfull \hbox (60.59624pt too wide) in paragraph at lines 986--987
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-Overfull \hbox (35.09567pt too wide) in paragraph at lines 1069--1071
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-Overfull \hbox (24.89545pt too wide) in paragraph at lines 1077--1078
+Overfull \hbox (70.79646pt too wide) in paragraph at lines 1077--1079
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[] 
+ []
+
+
+Overfull \hbox (24.89545pt too wide) in paragraph at lines 1085--1086
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.59511pt too wide) in paragraph at lines 1084--1085
+Overfull \hbox (9.59511pt too wide) in paragraph at lines 1092--1093
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
  []
@@ -438,19 +442,19 @@ Overfull \hbox (9.59511pt too wide) in paragraph at lines 1084--1085
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Overfull \hbox (254.40053pt too wide) in paragraph at lines 1135--1136
+Overfull \hbox (254.40053pt too wide) in paragraph at lines 1148--1149
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][] 
  []
 
 
-Overfull \hbox (259.50064pt too wide) in paragraph at lines 1137--1138
+Overfull \hbox (259.50064pt too wide) in paragraph at lines 1150--1151
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][] 
  []
 
 
-Overfull \hbox (198.29929pt too wide) in paragraph at lines 1145--1146
+Overfull \hbox (198.29929pt too wide) in paragraph at lines 1158--1159
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -483,48 +487,42 @@ Overfull \hbox (24.89545pt too wide) in paragraph at lines 129--130
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
 Overfull \hbox (14.69522pt too wide) in paragraph at lines 154--155
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
 Overfull \hbox (9.59511pt too wide) in paragraph at lines 194--195
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [33] (./pjl-website-manual.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [33] (./pjl-website-manual.aux) ) 
 Here is how much of TeX's memory you used:
- 3047 strings out of 494880
- 41282 string characters out of 6179601
- 164757 words of memory out of 5000000
- 6367 multiletter control sequences out of 15000+600000
+ 3047 strings out of 494805
+ 41277 string characters out of 6178001
+ 166991 words of memory out of 5000000
+ 6376 multiletter control sequences out of 15000+600000
  10029 words of font info for 35 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 81 hyphenation exceptions out of 8191
  31i,6n,52p,671b,1740s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on pjl-website-manual.pdf (33 pages, 322084 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt10.pfb>
+Output written on pjl-website-manual.pdf (33 pages, 325974 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams

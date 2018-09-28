@@ -32,7 +32,7 @@ group = "pjl_admins"
 apacheUser = "www-data"
 devhost=["slug","fry"]
 webserver="watt.pjl.ucalgary.ca"
-
+#webserver="136.159.54.155"
 
 def testHost(host):
     thishost = os.uname()[1]

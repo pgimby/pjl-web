@@ -815,10 +815,16 @@ def moveVersionDir(info,root):
 	'''
 	versionDir = root + info["directory"]
 	if not os.path.isdir(versionDir):
+		print("E1")
 		os.system("mkdir " + versionDir)
-		os.system("rsync -avz --exclude Support_Docs " + info["originalDir"] + " " + versionDir)
+		print("E2")
+		os.system("echo rsync -avz --exclude Support_Docs " + info["originalDir"] + " " + versionDir)
+		os.system("sudo rsync -avz --exclude Support_Docs " + info["originalDir"] + " " + versionDir)
+		print("E3")
 	else: 
+		print("E4")
 		print("Lab folder " + versionDir + " Already Exists.")
+		print("E5")
 		print("Exiting...")
 		exit()
 
@@ -837,13 +843,16 @@ def addSupportFolder(info,root):
 		none
 	'''
 	originDir = info["originalDir"] + "Support_Docs"
+	print("F1")
 	destinationDir = root + info["labFolder"] + "Support_Docs"
 	if os.path.isdir(originDir):
 		if not os.path.isdir(destinationDir):
-			print("Support_Docs Folder does not exist. Adding new folder " + supportFolder)
+			print("Support_Docs Folder does not exist. Adding new folder " + destinationDir)
 			os.system("mkdir " + destinationDir)
+			print("A1")
 		if os.path.isdir(destinationDir):
 			os.system("rsync -avz " + originDir + "/ " + destinationDir)
+			print("A2")
 		else:
 			print("Something when wrong. Exiting...")
 			exit()
@@ -929,7 +938,6 @@ def getName(originalItem):
 		validName = False
 		while not validName:
 			labName = str(input("Enter name of the new lab. Please use conventional titlecase (ie. This is a Title of a New Lab): "))
-			print("MM")
 			if input("Is this name entered correctly? N/y: ").lower() == "y":
 				validName = True
 			elif input("Would you like to try again? Y/n ").lower() == "n":
@@ -1066,7 +1074,7 @@ def displayLabItem(lab):
 
 def printEquipList(equipList):
 	for i in equipList:
-		print(i["id"] +": " + i["name"] + " (" + i["amount"] + "), " + i["alt-id"] +  i["alt-name"])
+		print(i["id"] +": " + i["name"] + " (" + i["amount"] + "), " + i["alt-id"] + ": " +  i["alt-name"])
 
 #Main Script
 
@@ -1085,10 +1093,12 @@ parser.add_argument('-a', '--add', help='Add a new version to an existing lab.".
 parser.add_argument('-e', '--edit', help='Edit the details of a lab.', action='store_true')
 parser.add_argument('-n', '--new', help='Add a brand new lab.".', action='store_true')
 parser.add_argument('-t', '--test', help='Debug mode.', action='store_true')
+parser.add_argument('-x', '--validate', help='Disable validation for xml.', action='store_true')
 parser.add_argument('-v', '--version', help='Print current verion of script.', action='store_true')
 args = parser.parse_args()
 testMode = args.test
-
+validate = args.validate
+print(validate)
 
 '''Paths for  files'''
 root = "/usr/local/master/pjl-web"
@@ -1108,6 +1118,9 @@ if testMode:
 else:
 	destXML= labdbDev
 
+'''validation disabled warning'''
+if validate:
+	print("validation of output file has been disabled. Be Very Careful!")
 
 '''name of host machine this scipt was written for'''
 #devhost = "slug"
@@ -1143,11 +1156,17 @@ if args.add:
 	print("Adding new lab version.")
 	lab = getLabObject(labdb)
 	versionInfo = getVersionInfo(lab,validCourses,validSemesters,semesterKeys,eqdb,disciplineSource,topicSource,softwareSource,testMode)
+	print("A")
 	confirmEntry(versionInfo)
+	print("B")
 	if validDB(versionInfo,lab,labdb) and validDir(versionInfo,root):
-		labdb.save(destXML, ignore_validation=False, error_log=True)
+		print("C")
+		labdb.save(destXML, ignore_validation=validate, error_log=True)
+		print("D")
 		if not testMode:
+			print("E")
 			moveVersionDir(versionInfo,root)
+			print("F")
 			addSupportFolder(versionInfo,root)
 	else:
 		print("something when wrong")
@@ -1167,11 +1186,14 @@ if args.new:
 			moveVersionDir(newLabInfo,root)
 			addSupportFolder(newLabInfo,root)
 			labdb.addLab(lab)
-			labdb.save(destXML, ignore_validation=False, error_log=True)
+			print(validate)
+			#labdb.save(destXML, ignore_validation=False, error_log=True)
+			labdb.save(destXML, ignore_validation=validate, error_log=True)
 		else:
 			os.system("echo mkdir " + newLabInfo["labFolder"])
 			labdb.addLab(lab)
-			labdb.save(destXML, ignore_validation=False, error_log=True)
+			print(validate)
+			labdb.save(destXML, ignore_validation=validate, error_log=True)
 
 
 if args.edit:
@@ -1179,8 +1201,7 @@ if args.edit:
 	lab = getLabObject(labdb)
 	lab = getEditInfo(lab,eqdb,disciplineSource,topicSource,softwareSource,testMode)
 	if displayLabItem(lab):
-		labdb.save(destXML, ignore_validation=False, error_log=True)
-	#print("Under Construction")
-	#ge
+		labdb.save(destXML, ignore_validation=validate, error_log=True)
+
 '''confirms that the script has ended properly'''
 print("...and then there will be cake")
