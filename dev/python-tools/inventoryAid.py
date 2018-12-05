@@ -76,7 +76,8 @@ for lab in root:
         if picture.findtext("Thumbnail") == "/img/img-placeholder.png":
             hasPicture = "None"
         else:
-            hasPicture = " "
+            hasPicture = picture.findtext("Thumbnail").split("/")[-1]
+            #hasPicture = " "
     print (idNum + "," + name + "," + totalAmount + "," + inService + "," + underRepair + "," + hasPicture + "," + str(printLocations(locations)))
         #print(str(room) + " " + str(storage))
 

@@ -757,10 +757,6 @@
         <Name>stopwatch</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0082">
-        <Name>brown spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0226">
         <Name>protractor</Name>
         <Amount>1</Amount>
@@ -779,6 +775,10 @@
       </Item>
       <Item id="0034">
         <Name>calipers</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0082">
+        <Name>brown 10 N spring scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -843,7 +843,7 @@
         <Amount>1</Amount>
       </Item>
       <Item id="0255">
-        <Name>blue spring scale</Name>
+        <Name>blue 2.5 N spring scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -5462,10 +5462,6 @@
         <Name>bar magnet</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0382">
-        <Name>induction coil</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0191">
         <Name>small compass</Name>
         <Amount>1</Amount>
@@ -5476,6 +5472,10 @@
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0382">
+        <Name>500 turn 8 cm long solenoid</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -7184,14 +7184,6 @@
         <Name>rolling chair</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0078">
-        <Name>green spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
-      <Item id="0079">
-        <Name>red spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0405">
         <Name>Vernier force plate sensor</Name>
         <Amount>2</Amount>
@@ -7199,6 +7191,14 @@
       <Item id="0406">
         <Name>Vernier force plate sensor handle</Name>
         <Amount>4</Amount>
+      </Item>
+      <Item id="0078">
+        <Name>green 5 N spring scale</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0079">
+        <Name>red 20 N spring scale</Name>
+        <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Labatorial</Type>
@@ -7597,10 +7597,6 @@
         <Name>Vernier position sensor</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0078">
-        <Name>green spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0097">
         <Name>air track</Name>
         <Amount>1</Amount>
@@ -7655,6 +7651,10 @@
       </Item>
       <Item id="0405">
         <Name>Vernier force plate sensor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0078">
+        <Name>green 5 N spring scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -9559,10 +9559,6 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0078">
-        <Name>green spring scale</Name>
-        <Amount>2</Amount>
-      </Item>
       <Item id="0020">
         <Name>right angle clamp</Name>
         <Amount>6</Amount>
@@ -9574,6 +9570,10 @@
       <Item id="0020">
         <Name>right angle clamp</Name>
         <Amount>6</Amount>
+      </Item>
+      <Item id="0078">
+        <Name>green 5 N spring scale</Name>
+        <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -11376,10 +11376,6 @@
         <Name>digital balance</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0078">
-        <Name>green spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0445">
         <Name>beaker with drain spout</Name>
         <Amount>1</Amount>
@@ -11418,6 +11414,10 @@
       </Item>
       <Item id="0299">
         <Name>hydrometer</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0078">
+        <Name>green 5 N spring scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -12503,10 +12503,6 @@
       </Version>
     </Versions>
     <Equipment>
-      <Item id="0460">
-        <Name>yellow spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0185">
         <Name>set of hanging masses</Name>
         <Amount>1</Amount>
@@ -12545,6 +12541,10 @@
       </Item>
       <Item id="0052">
         <Name>masking tape</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0460">
+        <Name>yellow 50 N spring scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -14092,8 +14092,16 @@
         <Name>Cannon-Fenske viscometer</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0553">
+        <Name>hose clamp</Name>
+        <Amount>1</Amount>
+      </Item>
       <Item id="0498">
-        <Name>air hose</Name>
+        <Name>air tube for 10 L glass aspirator bottle</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0589">
+        <Name>water tube for 10 L glass aspirator bottle</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -14277,10 +14285,6 @@
         <Name>right angle clamp</Name>
         <Amount>2</Amount>
       </Item>
-      <Item id="0255">
-        <Name>blue spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0185">
         <Name>set of hanging masses</Name>
         <Amount>1</Amount>
@@ -14291,6 +14295,10 @@
       </Item>
       <Item id="0007">
         <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0255">
+        <Name>blue 2.5 N spring scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -15507,16 +15515,16 @@
         <Name>laboratory stand</Name>
         <Amount>1</Amount>
       </Item>
-      <Item id="0078">
-        <Name>green spring scale</Name>
-        <Amount>1</Amount>
-      </Item>
       <Item id="0512">
         <Name>meter stick balance beam</Name>
         <Amount>1</Amount>
       </Item>
       <Item id="0185">
         <Name>set of hanging masses</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0078">
+        <Name>green 5 N spring scale</Name>
         <Amount>1</Amount>
       </Item>
     </Equipment>
@@ -15879,5 +15887,76 @@
       <Name>Excel</Name>
       <Name>ImageJ</Name>
     </Software>
+  </Lab>
+  <Lab labId="0191">
+    <Name>Uncertainty in the Pendulum</Name>
+    <Disciplines>
+      <Discipline>Laboratory Skills</Discipline>
+      <Discipline>Math</Discipline>
+      <Discipline>Newtonian Mechanics</Discipline>
+    </Disciplines>
+    <Topics/>
+    <Versions>
+      <Version>
+        <Path>/data/repository/0191-Uncertainty-in-the-Pendulum/0191-PHYS397FA2018/Pendulum-Uncertainty-ST-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 397</Course>
+        <Directory>/data/repository/0191-Uncertainty-in-the-Pendulum/0191-PHYS397FA2018/</Directory>
+      </Version>
+    </Versions>
+    <Equipment>
+      <Item id="0006">
+        <Name>laboratory stand</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0054">
+        <Name>c-clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0055">
+        <Name>beaker clamp</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0020">
+        <Name>right angle clamp</Name>
+        <Amount>3</Amount>
+      </Item>
+      <Item id="0315">
+        <Name>aluminum bar with notch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0081">
+        <Name>aluminum bar</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0092">
+        <Name>string</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0185">
+        <Name>set of hanging masses</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0051">
+        <Name>stopwatch</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0226">
+        <Name>protractor</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0007">
+        <Name>meter stick</Name>
+        <Amount>1</Amount>
+      </Item>
+      <Item id="0012">
+        <Name>digital balance</Name>
+        <Amount>1</Amount>
+      </Item>
+    </Equipment>
+    <Type>Lab</Type>
+    <SupportDocs/>
+    <Software/>
   </Lab>
 </Labs>

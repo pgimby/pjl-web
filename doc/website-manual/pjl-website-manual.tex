@@ -124,7 +124,7 @@ The disciplines, topics, and software entries must align with the master list co
 \item PDF, \textbf{PDF exact Name} \textit{ This needs to be the exact name of the student pdf}
 \end{itemize}	
 
-\item Run ``addNewLab.py /path/to/new-lab-folder" from development space. 
+%\item Run ``addNewLab.py /path/to/new-lab-folder" from development space. 
 \end{enumerate}
 
 \subsection{Repository xml template}
@@ -155,7 +155,10 @@ From the /dev/python-tools folder, the command,
 	./equipmentEdit.py -n       
 	\end{lstlisting}
 
-A prompt will appear that will as for information regarding the new item. Enter all the information available. it is ok leave some fields blank just as long as there is a name. Once all the available information is added a summary will be displayed as well as a request for confirmation. If the user confirms that the information it will go through a validation process to ensure that the name is unique. If everything check out it will be added to the /dev version of the equipmentDB.xml file.
+A prompt will appear that will as for information regarding the new item. Enter all the information available. it is ok leave some fields blank just as long as there is a name. Once all the available information is added a summary will be displayed as well as a request for confirmation. If the user confirms that the information it will go through a validation process to ensure that the name is unique. If everything check out it will be added to the /dev version of the equipmentDB.xml file.\\
+
+{\bf Note: To add Greek letters enter them as (ex. \{Omega\} or \{mu\}).}
+
 
 %\end{enumerate}
 
@@ -173,8 +176,12 @@ When taking photos note that they will require editing before they are added to 
 	./convertImg.py       
 	\end{lstlisting}
 
-Edited version will now appear in /usr/local/master/rawimages/output
+\item Enter angle to rotate photos. Photos from some cameras will look like they are properly orientated until they are posted on the website, at which time they will look like they are sideways. It is recommended that when using a new camera that the first image to add is used as a test case to determine if the images need to be rotated by the conversion script.
+
+{\bf Edited version will now appear in /usr/local/master/rawimages/output}
+
 \item Visually check all photographs in the output folder to confirm that they are still acceptable after they have been converted.
+
 \item Move all photographs ready to be added to the database to /staffresources/equipment/equipimg
 \item From /dev/python-tools run the script
 
@@ -184,6 +191,9 @@ Edited version will now appear in /usr/local/master/rawimages/output
 
 to update the images in the equipmentDB.xml
 
+\item Check local version of website, and once the photos are acceptable remove all photos from /usr/local/master/rawimages so that they are not added with the next batch of photos.
+
+\item Update live version.
 \end{enumerate}
 
 \subsection{Deleting Old Equipment}
