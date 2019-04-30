@@ -8,10 +8,10 @@
 		autogobble=true
 }
 
-
-
+\usepackage[margin=1in]{geometry}
+\usepackage{layout}
 \begin{document}
-
+%\layout
 
 
 \title{Educational Laboratory Website Manual}
@@ -20,6 +20,8 @@
 %\vspace{-1.5cm}
 %\today
 %\begin{adjustwidth}{}{-153pt}
+
+\chapter{Lab Information Hub}
 
 \section{Introduction}
 
@@ -31,9 +33,22 @@ The purposes of the pjl website is to be the central information hub for the edu
 
 All changes to the website should be made on the development space on slug (/usr/local/master/pjl-web). The only exception to this rule is that the equipment database equipmentDB.xml can be modified live by using the inventory website in edit mode. Because of this it is important to sync the development and live version of the website before making changes.
 
-\subsection{Sync Live Version and Development Space}
+\subsection{Testing changes before updating live version}
 
-The script ``liveUpdate.py" (Listing \ref{liveUpdate}) has been designed to sync the live version of the website with the development space for the website. It is important to run this script before and after making changes to the development space. It is run the first time to make sure that the equipment xml file in development has been updated with the changes that made directly on the pjl website. Once the changes to the development space have been made and tested the changes can be pushed to the web-server by running the same command again.
+In the pjl-web folder run the command.
+
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+python -m SimpleHTTPServer 8000
+\end{lstlisting}
+
+In a browser open up the page localhost:8000. This will show the development version of the website. Confirm that the changes are as expected before updating the live version.
+
+\subsection{Sync Live Version and Development Space}\label{sec:sync}
+
+The script ``liveUpdate.py" (Listing \ref{liveUpdate}) has been designed to sync the live version of the website with the development space for the website. It is important to run this script before and after making changes to the development space. It is run the first time to make sure that the equipment xml file in development has been updated with the changes that made directly on the pjl website. Once the changes to the development space have been made and tested the changes can be pushed to the web-server by running the same command again.\\
+
+The content displayed by the website is generated from the content of the xml files labDB.xml and equipmentDB.xml 
+\noindent {\bf WHEEL XML FILES}
 
 \vspace{12pt}
 \noindent To sync run...
@@ -48,7 +63,19 @@ sudo ./liveUpdate.py -t
 \end{lstlisting}
 
 
-\section{Repository}
+\chapter{Experiment Documents}
+
+\section{Introduction}
+
+``Experiment Documents" are a collection of documents used by students in the educational labs, as well as all supporting documents. {\bf ADD SOME EXAMPLES} \\
+
+\subsection{Criteria for adding document}
+
+{\bf Documents can only be added to the repository if they meet the following criteria.}
+\begin{enumerate}
+\item The files include the pdf given to students to be used in their course work.
+\item All files need to generate the pdf are included.
+\end{enumerate}
 
 \subsection{Directory structure}
 
@@ -69,24 +96,12 @@ At top most level is a folder called ``repository" that contains all experiment 
 .4 student.pdf.
 .2 Support\_Docs.
 }
-\vspace{12pt}
-{\bf Documents can only be added to the repository if they meet the following criteria.}
-\begin{enumerate}
-\item The files include the pdf given to students to be used in their course work.
-\item All files need to generate the pdf are included.
-\end{enumerate}
 
 
 %\end{enumerate}
 %\item Upload changes made to Watt to github.
 
-\subsection{Adding a new version of an existing lab to the repository}
-
-\begin{enumerate}
-\item Compile a folder that contains all file needed to generate the lab experiment pdf, as well as any files need for the lab to run (ie, excel templates, vernier cmbl file, or simulations)
-\end{enumerate}
-
-\subsection{Adding a new lab to the repository}
+\section{Adding a new lab to the repository}
 
 Before beginning ensure that all equipment used in the new experiment are in the lab inventory, and have equipment ID number. 
 
@@ -127,6 +142,89 @@ The disciplines, topics, and software entries must align with the master list co
 %\item Run ``addNewLab.py /path/to/new-lab-folder" from development space. 
 \end{enumerate}
 
+\section{Adding new version of an existing lab}
+
+Note that a version can only be added once, so make sure that everything outlined below is as desired before proceding to step \ref{step:addLab}
+
+\begin{enumerate}
+\item Make a folder that will be contain all file relating to the experiment to add. (ex ``0078-PHYS325WI2019" is a suggested name for a folder that would be used to add lab 0078, used in physics 325, for the Winter 2019 semester.)
+\item Inside the main folder make a folder called ``Support\_Docs". This folder name is not optional because it will be reference in the scripts used for document and website maintenance. 
+\item In the main folder place. \ref{fig:newVersionFolder}
+\begin{itemize}
+\item Main tex file. (ex, Rutherford-Scattering-FULL-WI2019.tex)
+\item Student tex file. (ex, Rutherford-Scattering-ST-WI2019.tex)
+\item TA guide if it exists. (ex, Rutherford-Scattering-CG-WI2019.tex)
+\item PDF of student version of lab. (ex. Rutherford-Scattering-ST-WI2019.pdf)
+\item Any file needed to compile the student version of the pdf. (ex, setup-photo.jpg or standard-preamble.tex)
+\item Any file that is particular this version of an experiment. (ex template-WI2019.xlsx)
+\item Place any general documents into the folder called ``Support\_Docs". (ex, Interesting-Paper.pdf)
+\end{itemize}
+
+\item Run the command. \label{step:addLab}
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+sudo ./repositoryEdit --add
+\end{lstlisting}
+
+Example {\it I}/{\bf O} from script when adding experiment version.
+
+\begin{itemize}
+\item[] {\it Enter lab ID number:}
+\item[] {\bf 0087}
+\item[] {\it Adding version to ``Rutherford Scattering"}
+\item[] {\it Enter absolute path for directory containing lab:}
+\item[] {\bf /home/pgimby/labs/under-construction/PHYS325WI2019/0078-PHYS325WI2019}
+\item[] {\it Enter the name of the student version pdf:}
+\item[] {\bf Rutherford-Scattering-ST-WI2019.pdf}
+\item[] {\it Enter course number:}
+\item[] {\bf 325}
+\item[] {\it Enter semester:}
+\item[] {\bf Winter}
+\item[] {\it Year}
+\item[] {\bf 2019}
+\item[] {\it Would you like to edit the equipment list for this lab? y/N}
+\item[] {\bf n}
+\item[] {\it Would you like to edit the software list for this lab? y/N}
+\item[] {\bf n}
+\item[] {\it Would you like to edit the disciplines list for this lab? y/N}
+\item[] {\bf n}
+\item[] {\it Would you like to edit the topics list for this lab? y/N}
+\item[] {\bf n}
+\item[] {\it Is this information correct? N/y:}
+\item[] {\bf y}
+\end{itemize}
+Note that the lists of equipment, software, disciplines, and topics can be edited here if desired. For more information on the see {\bf NEED REFERENCE}
+\item Sync live version. See section \ref{sec:sync}
+\end{enumerate}
+
+
+\begin{figure}
+%\noindent{\bf Directory structure and sample contents.}\\
+\dirtree{%
+.1 /0078-PHYS325WI2019.
+.2 Rutherford-Scattering-FULL-WI2019.tex.
+.2 Rutherford-Scattering-ST-WI2019.tex.
+.2 Rutherford-Scattering-CG-WI2019.tex.
+.2 Rutherford-Scattering-ST-WI2019.pdf.
+.2 setup-photo.jpg.
+.2 standard-preamble.tex.
+.2 template-WI2019.xlsx.
+.2 Support\_Docs.
+.3 Interesting-Paper.pdf.
+}
+\caption{Directory structure and sample contents.}
+\label{fig:newVersionFolder}
+\end{figure}
+
+
+
+\section{Editing Experiment Documents}\label{sec:EquipEdit}
+
+\subsection{Introduction}
+
+All changes should be made to the fill with the word ``FULL" in the title. This is one document should contain everything needed to compile the student version and the TA version of an experiment. Different version of a experiment are compiled using the script pjldoc.py {\bf REFERENCE TO HOW TO USE THIS SCRIPT}
+
+
+
 \subsection{Repository xml template}
 
 \lstinputlisting[language=xml, linerange = {7-49}, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = 2cm, framexleftmargin = 1em]{/usr/local/master/pjl-web/doc/website-manual/code-samples/labDB-template.txt}
@@ -134,7 +232,7 @@ The disciplines, topics, and software entries must align with the master list co
 
 
 
-\section{Inventory}
+\chapter{Equipment}
 
 \subsection{Inventory structure}
 
@@ -210,15 +308,130 @@ To remove a piece of old equipment run, from the python-tools folder, the comman
 
 If the piece of equipment is currently listed as part of the equipment list for a current lab the script will prompt you to make sure that you know this. Ideally the equipment list in the lab repository should be updated first before removing the equipment. This will help to keep the lab equipment lists and the equipment database in sync. 
 
+\chapter{Misc}
+
 \section{Schedules}
 
-\noindent The name of the current schedules should be
+\begin{enumerate}
 
+\item Create spreadsheet of schedules for the semester. (ex, schedule-WI2019.xlsx)
+
+\item Create a PDF of the experiment schedule. (ex, schedule-WI2019.pdf)
+
+\item Create a PDF of the lab room schedule. (ex, rooms-WI2019.pdf)
+
+\item Place spreadsheet and PDFs in to folder /pjl-web/data/schedules
+
+\item Copy /pjl-web/data/schedule-WI2019.pdf to /pjl-web/data/schedule-current.pdf
+
+\item Copy /pjl-web/data/rooms-WI2019.pdf to /pjl-web/data/rooms-current.pdf
+
+\item Add the previous schedule (ex, schedule-FA2018.pdf) to schedule archive
+
+\begin{lstlisting}
+nano /pjl-web/data/schedules/schedule-index.html       
+\end{lstlisting}
+
+Paste the code...
+\begin{lstlisting}
+          <a href="/data/schedules/schedule-FA2018.pdf" target="_blank">
+            <div class="schedule-download" >
+              <i class="far fa-calendar" style="font-size: 20px;" aria-hidden=true></i> 
+              <div>
+                <p>Experiment Schedule - Fall 2018</p>  <!-- description -->
+              </div>
+            </div>
+          </a>
+\end{lstlisting}
+
+...directly before the similar code that exist for the two semesters ago.
+
+\item Add the previous schedule (ex, schedule-FA2018.pdf) to schedule archive
+
+\begin{lstlisting}
+nano /pjl-web/data/schedules/room-index.html       
+\end{lstlisting}
+
+Paste the code...
+\begin{lstlisting}
+          <a href="/data/schedules/rooms-FA2018.pdf" target="_blank">
+            <div class="schedule-download" >
+              <i class="far fa-calendar" style="font-size: 20px;" aria-hidden=true></i> 
+              <div>
+                <p>Rooms Schedule - Fall 2018</p>  <!-- description -->
+              </div>
+            </div>
+          </a>
+\end{lstlisting}
+
+...directly before the similar code that exist for the two semesters ago.
+
+\end{enumerate}
+
+
+\chapter{Preparing Experiment Documents}
+
+\section{Introduction}
 \begin{itemize}
-\item schedule-current.pdf
-\item rooms-current.pdf
+\item All tex in one file (lab and companion guide)
+\item standard preamble file
+\item pjldoc script for compiling documents
+\item documents prepared with a root directory of "under-construction"
+\item document editing timeline
 \end{itemize}
 
+
+\section{Preparing the Documents}
+
+The following instructions where made specifically for physics 325 in winter 2019. Adjust the names for course and semester.
+
+\begin{enumerate}
+\item Create folder for course named in the form similary to {\bf PHYS325WI2019}.
+
+\item Inside course folder place a sub folder for each lab named in the form {\bf 0078-PHYS325WI2019}.
+
+\item Inside each lab folder there should be...
+	\begin{itemize}
+	\item tex file which include student version and companion 	guide. Name in the form { \bf NAME-FULL-WI2019.tex All edits are made to this file}
+	\item Any documents referenced in the tex file which are need for compiling
+	\item Folder called {\bf Support\_Docs} that contain any important documents that are not needed to compile pdfs, such as sample data.
+	\item File called {\bf standard-preamble.tex}
+	
+	\end{itemize}
+\item Inside main course folder make a text file called {\bf physics325-lab-order}. Inside this folder list the id numbers of each experiment in the order it should appear in the manual. Be careful not to leave a black line at the end of the file.
+\end{enumerate}
+
+\section{Compiling Manuals and PDFs}
+
+All compiling of standard lab documents can be done with the script {\bf pjldoc.py}.
+
+\subsection{Generating Student PDFs}
+
+To compile all of the student PDFs
+
+\begin{lstlisting}
+pjldoc.py PHY325WI2019 -s -c -i 0        
+\end{lstlisting}
+
+
+To compile individual PDF of the second lab listed in physics325-lab-order
+
+\begin{lstlisting}
+pjldoc.py PHY325WI2019 -s -c -i 2
+\end{lstlisting}
+
+\chapter{Safety}
+
+\section{Orientation}
+\begin{itemize}
+\item Located in /pjl-web/data/safety/lab-safety-manual/
+\item Edit latest tex file and call it Orientation-WI2019.tex (adjusted for current semester and year)
+\item Overwrite file called Orientation.tex with updated version. 
+\item Compile Orientation.tex
+\item {\bf THERE IS A SYMLINK IN PARENT DIRECTORY. WHICH FILE DOES PJLDOCS LOOK FOR?}
+\end{itemize}
+
+\chapter{Code}
 
 \section{Scripts}
 
@@ -235,6 +448,10 @@ If the piece of equipment is currently listed as part of the equipment list for 
 \lstinputlisting[label = addnNew, language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/repositoryEdit.py}
 
 \lstinputlisting[label = liveUpdate, language=python, backgroundcolor = \color{light-gray}, basicstyle = \footnotesize, xleftmargin = -3cm, xrightmargin = -3cm]{/usr/local/master/pjl-web/dev/python-tools/liveUpdate.py}
+
+
+
+
 
 %\end{lstlisting}
 

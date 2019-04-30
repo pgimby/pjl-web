@@ -158,7 +158,7 @@ def getOriginalPdf(dir):
 	'''
 	validPath = False
 	while not validPath:
-		pdfName = input("Enter the name of the lab pdf: ")
+		pdfName = input("Enter the name of the student version pdf: ")
 		if os.path.isfile(dir + pdfName):
 			validPath = True	
 		else:
@@ -815,16 +815,11 @@ def moveVersionDir(info,root):
 	'''
 	versionDir = root + info["directory"]
 	if not os.path.isdir(versionDir):
-		print("E1")
 		os.system("mkdir " + versionDir)
-		print("E2")
-		os.system("echo rsync -avz --exclude Support_Docs " + info["originalDir"] + " " + versionDir)
+		#os.system("echo rsync -avz --exclude Support_Docs " + info["originalDir"] + " " + versionDir)
 		os.system("sudo rsync -avz --exclude Support_Docs " + info["originalDir"] + " " + versionDir)
-		print("E3")
 	else: 
-		print("E4")
 		print("Lab folder " + versionDir + " Already Exists.")
-		print("E5")
 		print("Exiting...")
 		exit()
 
@@ -843,16 +838,13 @@ def addSupportFolder(info,root):
 		none
 	'''
 	originDir = info["originalDir"] + "Support_Docs"
-	print("F1")
 	destinationDir = root + info["labFolder"] + "Support_Docs"
 	if os.path.isdir(originDir):
 		if not os.path.isdir(destinationDir):
 			print("Support_Docs Folder does not exist. Adding new folder " + destinationDir)
 			os.system("mkdir " + destinationDir)
-			print("A1")
 		if os.path.isdir(destinationDir):
 			os.system("rsync -avz " + originDir + "/ " + destinationDir)
-			print("A2")
 		else:
 			print("Something when wrong. Exiting...")
 			exit()
@@ -1088,7 +1080,16 @@ semesterKeys = {"Winter": "WI", "Spring": "SP", "Summer": "SU", "Fall": "FA"}
 
 
 '''Define user options'''
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(
+	formatter_class=argparse.RawDescriptionHelpFormatter,
+	epilog='''
+Know bugs and other important information:
+------------------
+	A) Blank Topics or Discplies was causing issures. I think
+	B) Spaces in the names of folders does not work.
+	C) Review does not include software.
+	D) Cannot add additional docs.
+''')
 parser.add_argument('-a', '--add', help='Add a new version to an existing lab.".', action='store_true')
 parser.add_argument('-e', '--edit', help='Edit the details of a lab.', action='store_true')
 parser.add_argument('-n', '--new', help='Add a brand new lab.".', action='store_true')
@@ -1098,7 +1099,6 @@ parser.add_argument('-v', '--version', help='Print current verion of script.', a
 args = parser.parse_args()
 testMode = args.test
 validate = args.validate
-print(validate)
 
 '''Paths for  files'''
 root = "/usr/local/master/pjl-web"
@@ -1156,17 +1156,11 @@ if args.add:
 	print("Adding new lab version.")
 	lab = getLabObject(labdb)
 	versionInfo = getVersionInfo(lab,validCourses,validSemesters,semesterKeys,eqdb,disciplineSource,topicSource,softwareSource,testMode)
-	print("A")
 	confirmEntry(versionInfo)
-	print("B")
 	if validDB(versionInfo,lab,labdb) and validDir(versionInfo,root):
-		print("C")
 		labdb.save(destXML, ignore_validation=validate, error_log=True)
-		print("D")
 		if not testMode:
-			print("E")
 			moveVersionDir(versionInfo,root)
-			print("F")
 			addSupportFolder(versionInfo,root)
 	else:
 		print("something when wrong")
@@ -1186,13 +1180,10 @@ if args.new:
 			moveVersionDir(newLabInfo,root)
 			addSupportFolder(newLabInfo,root)
 			labdb.addLab(lab)
-			print(validate)
-			#labdb.save(destXML, ignore_validation=False, error_log=True)
 			labdb.save(destXML, ignore_validation=validate, error_log=True)
 		else:
 			os.system("echo mkdir " + newLabInfo["labFolder"])
 			labdb.addLab(lab)
-			print(validate)
 			labdb.save(destXML, ignore_validation=validate, error_log=True)
 
 

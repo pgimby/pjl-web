@@ -545,6 +545,7 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 	let links = {"pjl-regress": "/",
 				 "pjl-lab-schedule": "/data/schedules/schedule-current.pdf",
 				 "pjl-rooms-schedule": "/data/schedules/rooms-current.pdf",
+				 "pjl-tech-schedule": "/data/schedules/internal/tech-hours-current.pdf",
 				 "pjl-archive-room-schedule": "/data/schedules/room-index.html",
 				 "pjl-archive-experiment-schedule": "/data/schedules/schedule-index.html",
 				 "pjl-geiger": "/",

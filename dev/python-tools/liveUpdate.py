@@ -6,6 +6,8 @@
 
 
 import os, subprocess, argparse, filecmp, time
+startTime = time.process_time()
+
 
 '''define folder locations'''
 root = "/usr/local/master/"
@@ -32,7 +34,6 @@ group = "pjl_admins"
 apacheUser = "www-data"
 devhost=["slug","fry"]
 webserver="watt.pjl.ucalgary.ca"
-#webserver="136.159.54.155"
 
 def testHost(host):
     thishost = os.uname()[1]
@@ -71,13 +72,10 @@ def incrementFiles(files,dest,key,source,osTest):
         os.system(osTest + "mv " + dest + "/" + files[i] + " " + dest + "/" + f)
     os.system(osTest + "mv " + dest + "/" + key + ".xml " + dest + "/" + key + "-0.xml")
     os.system(osTest + "cp " + source + "/" + key + ".xml " + dest + "/" + key + ".xml")
-    #os.system(osTest + "rm " + dest + "/" + key + "-8.xml")
-
 
 def wheel(dest,key,source,osTest):
     print("updating equipmentDB.xml")
     dbFiles = getDbFiles(dest,key)
-    #print(dbFiles)
     incrementFiles(list(reversed(dbFiles)),dest,key,source,osTest)
 
 # def wheel(dbFile,source,dest,key,osTest):
@@ -86,9 +84,12 @@ def wheel(dest,key,source,osTest):
 #     #incrementFiles(list(reversed(dbFiles)),dest,key,source,osTest)
 
 def changePerm(varDir,owner,group,filePerm,options,osTest):
+    processStart = time.process_time()
+    
     print("changing permissions of " + varDir + " with find" + options + ". This may take a minute.")
     os.system(osTest + "find " + varDir + options + " -exec chmod " + filePerm + " {} \;")
     os.system(osTest + "find " + varDir + options + " -exec chown " + owner + "." + group + " {} \;")
+    print("chargePerm Time: " + str(time.process_time() - processStart))
 
 def gracefullExit(mountInfo):
     for i in mountInfo:
@@ -198,5 +199,7 @@ changePerm(webMount + "/data" ,"root","www-data","775"," -type d -name \'data\'"
 '''unmounts folders used for syncing files'''
 umountFolder(webMount)
 umountFolder(labMount)
+
+print("Total Time: " + str(time.process_time() - startTime))
 
 print("...and then there will be cake")
