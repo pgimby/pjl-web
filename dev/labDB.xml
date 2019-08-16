@@ -1,4 +1,4 @@
- <Labs>
+<Labs>
   <Lab labId="0050">
     <Name>Magnetic Force between Current-Carrying Wires</Name>
     <Disciplines>
@@ -1161,6 +1161,13 @@
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0044-Capacitors/0044-PHYS259SP2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0044-Capacitors/0044-PHYS259WI2019/Phys259-Labatorial06-Capacitors-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0044-Capacitors/0044-PHYS259WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0024">
@@ -1537,6 +1544,13 @@
         <Course>PHYS 323</Course>
         <Directory>/data/repository/0033-Gauss-Law/0033-PHYS323FA2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0033-Gauss-Law/0033-PHYS259WI2019/Phys259-Labatorial04-Gauss-Law-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0033-Gauss-Law/0033-PHYS259WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment/>
     <Type>Labatorial</Type>
@@ -1834,6 +1848,13 @@
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259SP2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259WI2019/Phys259-Labatorial03-Moving-Charges-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0052-Motion-of-Electric-Charges-in-Electric-Fields/0052-PHYS259WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0024">
@@ -2038,6 +2059,20 @@
         <Year>2017</Year>
         <Course>PHYS 365</Course>
         <Directory>/data/repository/0090-Standing-Waves/0090-PHYS365FA2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0090-Standing-Waves/0090-PHYS369FA2018/Standing-Waves-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0090-Standing-Waves/0090-PHYS369FA2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0090-Standing-Waves/0090-PHYS365FA2018/Standing-Waves-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0090-Standing-Waves/0090-PHYS365FA2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -2985,6 +3020,13 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0014-Ideal-Gas-Law/0014-PHYS223SU2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0014-Ideal-Gas-Law/0014-PHYS223WI2019/Phys223-Labatorial07-Ideal-Gas-Law-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0014-Ideal-Gas-Law/0014-PHYS223WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0075">
@@ -3282,6 +3324,20 @@
         <Course>PHYS 369</Course>
         <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2017</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2018/Simple-Harmonic-Oscillations-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS365FA2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2018/Simple-Harmonic-Oscillations-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0089-Simple-Harmonic-Oscillations/0089-PHYS369FA2018/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0024">
@@ -3425,6 +3481,13 @@
         <Year>2018</Year>
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259SP2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259WI2019/Phys259-Labatorial01-Charges-and-Forces-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0045-Electric-Charges-and-the-Forces-between-them/0045-PHYS259WI2019/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -3810,6 +3873,13 @@
         <Year>2017</Year>
         <Course>PHYS 365</Course>
         <Directory>/data/repository/0088-Hydrogen-Balmer-Series/0088-PHYS365FA2017</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0088-Hydrogen-Balmer-Series/0088-PHYS365FA2018/Hydrogen-Balmer-Series-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0088-Hydrogen-Balmer-Series/0088-PHYS365FA2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -4507,6 +4577,13 @@
         <Year>2018</Year>
         <Course>PHYS 375</Course>
         <Directory>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS375FA2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS369FA2018/Thin-Lenses-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0061-Thin-Lenses-and-Optical-Instruments/0061-PHYS369FA2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -5879,6 +5956,13 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223SU2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223WI2019/Phys223-Labatorial08-First-Law-of-Thermodynamics-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0019-The-First-Law-of-Thermodynamics/0019-PHYS223WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0293">
@@ -6208,6 +6292,10 @@
       <Item id="0003">
         <Name>set of connecting leads</Name>
         <Amount>3</Amount>
+      </Item>
+      <Item id="0262">
+        <Name>Rex rheostat</Name>
+        <Amount>1</Amount>
       </Item>
     </Equipment>
     <Type>Lab</Type>
@@ -6553,6 +6641,13 @@
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0046-Electric-Potential/0046-PHYS259SP2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0046-Electric-Potential/0046-PHYS259WI2019/Phys259-Labatorial05-Electric-Potential-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0046-Electric-Potential/0046-PHYS259WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0024">
@@ -6856,6 +6951,13 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223SU2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223WI2019/Phys223-Labatorial02-Electric-Fields-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0012-Electric-Fields-and-Motion-of-Charged-Particles/0012-PHYS223WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment/>
     <Type>Labatorial</Type>
@@ -7061,6 +7163,13 @@
         <Year>2019</Year>
         <Course>PHYS 255</Course>
         <Directory>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS255WI2019/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS259WI2019/Phys259-Labatorial02-Electric-Fields-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0035-Electric-Fields-of-Charge-Configurations/0035-PHYS259WI2019/</Directory>
       </Version>
     </Versions>
     <Equipment/>
@@ -7605,6 +7714,13 @@
         <Year>2018</Year>
         <Course>PHYS 323</Course>
         <Directory>/data/repository/0053-Concave-Mirrors/0053-PHYS323FA2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0053-Concave-Mirrors/0053-PHYS369FA2018/Concave-Mirrors-FA2018.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0053-Concave-Mirrors/0053-PHYS369FA2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -8408,6 +8524,13 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0013-Equipotential-Lines/0013-PHYS223SU2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0013-Equipotential-Lines/0013-PHYS223WI2019/Phys223-Labatorial03-Equipotential-Lines-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0013-Equipotential-Lines/0013-PHYS223WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0001">
@@ -8613,6 +8736,13 @@
         <Year>2018</Year>
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0011-Electric-Charges-and-Forces/0011-PHYS223SU2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0011-Electric-Charges-and-Forces/0011-PHYS223WI2019/Phys223-Labatorial01-Electric-Charges-and-Forces-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0011-Electric-Charges-and-Forces/0011-PHYS223WI2019/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -9072,6 +9202,13 @@
         <Year>2018</Year>
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223SU2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223WI2019/Phys223-Labatorial04-Electric-Circuits-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0015-Introduction-to-Electric-Circuits/0015-PHYS223WI2019/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -9579,6 +9716,20 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS223SU2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS223WI2019/Phys223-Labatorial05-Magnetic-Field-in-a-Slinky-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS223WI2019/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS259WI2019/Phys259-Labatorial09-Magnetic-Fields-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0016-Magnetic-Field-in-a-Slinky/0016-PHYS259WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0032">
@@ -9893,6 +10044,13 @@
         <Year>2018</Year>
         <Course>PHYS 259</Course>
         <Directory>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259SP2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2019/Phys259-Labatorial07-Play-Doh-Resistors-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0047-Electric-Resistivity-of-Play-Doh/0047-PHYS259WI2019/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -11338,6 +11496,10 @@
         <Name>right angle clamp</Name>
         <Amount>1</Amount>
       </Item>
+      <Item id="0673">
+        <Name>black body oven holder</Name>
+        <Amount>1</Amount>
+      </Item>
     </Equipment>
     <Type>Lab</Type>
     <SupportDocs/>
@@ -11508,6 +11670,13 @@
         <Year>2019</Year>
         <Course>PHYS 325</Course>
         <Directory>/data/repository/0068-Electron-Diffraction/0068-PHYS325WI2019/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0068-Electron-Diffraction/0068-PHYS365FA2018/main.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0068-Electron-Diffraction/0068-PHYS365FA2018/</Directory>
       </Version>
     </Versions>
     <Equipment>
@@ -16142,6 +16311,20 @@
         <Course>PHYS 223</Course>
         <Directory>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS223SU2018/</Directory>
       </Version>
+      <Version>
+        <Path>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS223WI2019/Phys223-Labatorial06-Charge to mass ratio-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 223</Course>
+        <Directory>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS223WI2019/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS259WI2019/Phys259-Labatorial08-Charge to mass ratio-WI2019.pdf</Path>
+        <Semester>Winter</Semester>
+        <Year>2019</Year>
+        <Course>PHYS 259</Course>
+        <Directory>/data/repository/0187-Charge-to-Mass-Ratio-of-the-Electron/0187-PHYS259WI2019/</Directory>
+      </Version>
     </Versions>
     <Equipment>
       <Item id="0535">
@@ -16371,6 +16554,20 @@
         <Year>2018</Year>
         <Course>PHYS 323</Course>
         <Directory>/data/repository/0191-Uncertainty-in-the-Pendulum/0191-PHYS323FA2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0191-Uncertainty-in-the-Pendulum/0191-PHYS365FA2018/main.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 365</Course>
+        <Directory>/data/repository/0191-Uncertainty-in-the-Pendulum/0191-PHYS365FA2018/</Directory>
+      </Version>
+      <Version>
+        <Path>/data/repository/0191-Uncertainty-in-the-Pendulum/0191-PHYS369FA2018/main.pdf</Path>
+        <Semester>Fall</Semester>
+        <Year>2018</Year>
+        <Course>PHYS 369</Course>
+        <Directory>/data/repository/0191-Uncertainty-in-the-Pendulum/0191-PHYS369FA2018/</Directory>
       </Version>
     </Versions>
     <Equipment>

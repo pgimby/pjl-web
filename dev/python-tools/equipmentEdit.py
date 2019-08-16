@@ -561,16 +561,19 @@ if args.images:
 			print(equip.thumbnail)
 		eqdb.addItem(equip)
 
+'''calls functions for updateing manuals for equipment'''
 if args.manuals:
 	print("adding manuals")
 	listOfIDs = equipWithMan(manualDir)
 	print(listOfIDs)
 	for i in listOfIDs:
-		equipManuals,eqID = manInfo(i,manualDir,"/" + manualLocal)
+		equipManuals,eqID = manInfo(i,manualDir,manualLocal)
+		#equipManuals,eqID = manInfo(i,manualDir,"/" + manualLocal)
+		print(equipManuals,eqID)
 		equip = eqdb.getItem(idnum=eqID)
 		equip.documents = equipManuals
 		print(equip.documents)
-		#eqdb.addItem(equip)
+		eqdb.addItem(equip)
 # db.save("../updatedequipmentDB.xml", ignore_validation=False, error_log=True)
 
 '''saves new xml file'''

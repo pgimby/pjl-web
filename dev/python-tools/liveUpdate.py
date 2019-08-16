@@ -196,6 +196,11 @@ for i in webFiles:
 changePerm(webMount + "/data" ,"root","www-data","660"," -type f -name equipmentDB.xml",osTest)
 changePerm(webMount + "/data" ,"root","www-data","775"," -type d -name \'data\'",osTest)
 
+'''replace .xml files in /dev folder with the ones in the /data folder'''
+'''
+Code still neeeded
+'''
+
 '''unmounts folders used for syncing files'''
 umountFolder(webMount)
 umountFolder(labMount)

@@ -1,0 +1,32 @@
+\contentsline {chapter}{\numberline {1}Lab Information Hub}{5}
+\contentsline {section}{\numberline {1.1}Introduction}{5}
+\contentsline {subsection}{\numberline {1.1.1}High Level Structure}{5}
+\contentsline {section}{\numberline {1.2}Making Changes to Website}{6}
+\contentsline {subsection}{\numberline {1.2.1}Testing changes before updating live version}{6}
+\contentsline {subsection}{\numberline {1.2.2}Sync Live Version and Development Space}{6}
+\contentsline {chapter}{\numberline {2}Experiment Documents}{7}
+\contentsline {section}{\numberline {2.1}Introduction}{7}
+\contentsline {subsection}{\numberline {2.1.1}Criteria for adding document}{7}
+\contentsline {subsection}{\numberline {2.1.2}Directory structure}{7}
+\contentsline {section}{\numberline {2.2}Adding a new lab to the repository}{8}
+\contentsline {section}{\numberline {2.3}Adding new version of an existing lab}{8}
+\contentsline {section}{\numberline {2.4}Editing Experiment Documents}{10}
+\contentsline {subsection}{\numberline {2.4.1}Introduction}{10}
+\contentsline {subsection}{\numberline {2.4.2}Repository xml template}{10}
+\contentsline {chapter}{\numberline {3}Equipment}{13}
+\contentsline {subsection}{\numberline {3.0.1}Inventory structure}{13}
+\contentsline {subsection}{\numberline {3.0.2}Adding New Equipment}{13}
+\contentsline {subsection}{\numberline {3.0.3}Adding photos of equipment}{13}
+\contentsline {subsection}{\numberline {3.0.4}Deleting Old Equipment}{14}
+\contentsline {chapter}{\numberline {4}Misc}{15}
+\contentsline {section}{\numberline {4.1}Schedules}{15}
+\contentsline {chapter}{\numberline {5}Preparing Experiment Documents}{17}
+\contentsline {section}{\numberline {5.1}Introduction}{17}
+\contentsline {section}{\numberline {5.2}Preparing the Documents}{17}
+\contentsline {section}{\numberline {5.3}Compiling Manuals and PDFs}{17}
+\contentsline {subsection}{\numberline {5.3.1}Generating Student PDFs}{18}
+\contentsline {chapter}{\numberline {6}Safety}{19}
+\contentsline {section}{\numberline {6.1}Orientation}{19}
+\contentsline {chapter}{\numberline {7}Code}{21}
+\contentsline {section}{\numberline {7.1}Scripts}{21}
+\contentsline {subsection}{\numberline {7.1.1}Add New Lab - addNewLab.py}{21}
