@@ -548,6 +548,7 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-tech-schedule": "/data/schedules/internal/tech-hours-current.pdf",
 				 "pjl-archive-room-schedule": "/data/schedules/room-index.html",
 				 "pjl-archive-experiment-schedule": "/data/schedules/schedule-index.html",
+				 "pjl-archive-tech-schedule": "/data/schedules/internal/tech-index.html",
 				 "pjl-geiger": "/",
 				 "pjl-repository": "/repository",
 				 "pjl-linearization": "/",
@@ -560,16 +561,28 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-tikz-examples-dl": "/data/landingpage/tikz_examples.zip",
 				 "pjl-inventory": "/staffresources/equipment",
 				 "pjl-github": "https://github.com/pgimby/pjl-web",
-				 "pjl-lab-rules": "/data/safety/lab-rules/Lab-Rules.pdf",
-				 "pjl-rad-safety": "/data/safety/training/Radiation-Safety/Radiation-Safety.pdf",
-				 "pjl-orientation": "/data/safety/training/Orientation.pdf",
-				 "pjl-hacf-pjl": "/data/safety/HACFs/HACF-PJL.pdf",
-				 "pjl-hacf-adv": "/data/safety/HACFs/HACF-TA-ADV.pdf",
-				 "pjl-hacf-std": "/data/safety/HACFs/HACF-TA-STD.pdf",
-				 "pjl-laser-safety": "/data/safety/lab-safety-manual/uofclasersafetymanual.pdf",
-				 "pjl-581": "/data/landingpage/physics581.zip",
-				 "pjl-481": "/data/landingpage/physics481.zip",
-				 "pjl-381": "/data/landingpage/physics381.zip",
+				 "pjl-lab-toc": "/data/safety/lab-safety-manual/current/Lab-Safety-Manual-ToC.pdf",
+				 "pjl-lab-intro": "/data/safety/lab-safety-manual/current/laboratory_safety_manual_introduction.pdf",
+				 "pjl-lab-hacf-staff": "/data/safety/lab-safety-manual/current/HACF-PJL.pdf",
+				 "pjl-lab-hacf-adv": "/data/safety/lab-safety-manual/current/HACF-TA-Advanced.pdf",
+				 "pjl-lab-hacf-stand": "/data/safety/lab-safety-manual/current/HACF-TA-Standard.pdf",
+				 "pjl-orientation": "/data/safety/lab-safety-manual/Orientation.pdf",
+				 "pjl-lab-rad": "/data/safety/lab-safety-manual/current/closed/Radiation-Safety.pdf",
+				 "pjl-lab-laser": "/data/safety/lab-safety-manual/current/uofclasersafetymanual.pdf",
+				 "pjl-lab-emerg": "/data/safety/lab-safety-manual/current/Emergency-Procedures-Placard.pdf",
+				 "pjl-lab-oars": "/data/safety/lab-safety-manual/current/oarsworksheet.pdf",
+				 "pjl-lab-rules-placard": "/data/safety/lab-safety-manual/current/lab-rules-placard.pdf",
+				 "pjl-lab-rules": "/data/safety/lab-safety-manual/current/laboratorysafetyrules_0.pdf",
+				 "pjl-lab-hazard-move": "/data/safety/lab-safety-manual/current/movementofhazardousmaterialswithinbuildings.pdf",
+				 "pjl-lab-after-hrs": "/data/safety/lab-safety-manual/current/afterhours-completed.pdf",
+				 "pjl-lab-unattend": "/data/safety/lab-safety-manual/current/unattended-completed.pdf",
+				 "pjl-lab-alone": "/data/safety/lab-safety-manual/current/workingaloneguidelines.pdf",
+				 "pjl-lab-comp-gas-hand": "/data/safety/lab-safety-manual/current/compressedgascylinderusehandlingandstoragestandard.pdf",
+				 "pjl-lab-comp-regulator": "/data/safety/lab-safety-manual/current/compressedgascylinderregulatorinstallationsop.pdf",
+				 "pjl-lab-chem-storage": "/data/safety/lab-safety-manual/current/chemicalstorage.pdf",
+				 "pjl-lab-fire": "/data/safety/lab-safety-manual/current/labaccessegressfiresafetyrequirements.pdf",
+				 "pjl-lab-fumehood": "/data/safety/lab-safety-manual/current/laboratoryfumehooduserstandard.pdf",
+				 "pjl-orientation-present": "/data/safety/training/Orientation-Presentations/index.html",
 				 "pjl-downloads": "/data/downloads",
 				 "pjl-standard-procedures": "/staffresources/procedures/procedure-index.html",
 				 "pjl-docs": "/doc/index.html"};
@@ -731,7 +744,7 @@ function getLabEquipmentList(lab, selection) {
 	let items = equipnode.getElementsByTagName("Item");
 	selection.append("p").classed("equipment-label", true).html("<span>Equipment: </span>");
 	for (let i = items.length - 1; i >= 0; i--) {
-		let alt = (Boolean(items[i].getElementsByTagName("Alt")[0]) ? {name: items[i].getElementsByTagName("Alt")[0].childNodes[0].nodeValue, id: items[i].getAttribute("id")} : null);
+		let alt = (Boolean(items[i].getElementsByTagName("Alt")[0]) ? {name: items[i].getElementsByTagName("Alt")[0].childNodes[0].nodeValue, id: items[i].getElementsByTagName("Alt")[0].getAttribute("id")} : null);
 		let item = {};
 		item.name = items[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 		item.id = items[i].getAttribute("id");

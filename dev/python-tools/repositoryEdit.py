@@ -13,6 +13,7 @@ Adding a brand new lab to repository
 import pjlDB
 import os, argparse, re
 
+version = "1.2"
 
 
 #Fucntion that preform safety checks
@@ -253,7 +254,7 @@ def validExistingDirectory(new_version,lab,semesterKeys):
 	semester = semesterKeys[new_version["semester"]]
 	courseNum = new_version["course"].split(" ")[-1]
 	year = new_version["year"]
-	directory = labFolder + lab.id_num + "-PHYS" + courseNum + semester + year + "/"
+	directory = labFolder + lab.id_num + "-PHYS" + courseNum + semester + year
 	return directory,labFolder
 
 def validPdfPath(new_version):
@@ -271,7 +272,7 @@ def validPdfPath(new_version):
 		pdfName = new_version["pdf"]
 		if os.path.isfile(new_version["originalDir"] + pdfName):
 			validPath = True	
-			path = new_version["directory"] + pdfName
+			path = new_version["directory"] + "/" + pdfName
 		else:
 			print("PDF does not exist. Please try again.")
 	return path
@@ -983,7 +984,7 @@ def versionFolder(info,semesterKeys):
 	'''
 	semester = semesterKeys[info["semester"]]
 	courseNum = info["course"].split(" ")[-1]
-	directory = info["labFolder"] + "/" + info["idnum"] + "-PHYS" + courseNum + semester + info["year"] + "/"
+	directory = info["labFolder"] + "/" + info["idnum"] + "-PHYS" + courseNum + semester + info["year"] 
 	return directory
 
 def validNewLab(info,lab,labdb):
@@ -1069,8 +1070,6 @@ def printEquipList(equipList):
 		print(i["id"] +": " + i["name"] + " (" + i["amount"] + "), " + i["alt-id"] + ": " +  i["alt-name"])
 
 #Main Script
-
-version = "1.1"
 
 
 '''List of valid courses and semesters'''

@@ -1,10 +1,16 @@
-\documentclass[justified]{pjlProcessDocs}
+%\created by:	Peter Gimby		created on: Aug 27, 2019
 
-\Logo{logo.jpg}
-\Title{Physics Teaching Laboratory Website Manual}
-\Author{Peter Gimby}
-\Version{0.3}
+
+\documentclass[justified]{LabArx1_5}
+%\documentclass[justified]{pjlProcessDocs}
+
+%\Author{Peter Gimby}
+\Version{0.4}
 \begin{document}
+\Logo{logo.jpg}
+%\Title{Physics Teaching Laboratory Website Manual}
+\TitleVar{Physics Teaching Laboratory Website Manual}{18}{22}
+
 
 %\layout
 
@@ -20,13 +26,13 @@
 %\today
 %\begin{adjustwidth}{}{-153pt}
 
-\chapter{Lab Information Hub Website}
+\section{Lab Information Hub Website}
 
-\section{Introduction}
+\subsection{Introduction}
 
 The purposes of the pjl website is to be the central information hub for the educational physics labs. It is a base of knowledge from which the department can work collaboratively on building the future of education physics labs.
 
-\subsection{Guiding Principles}
+\subsubsection{Guiding Principles}
 
 \begin{itemize}
 \item Documents must be accompanied by code required to generate the document.
@@ -239,7 +245,7 @@ All changes should be made to the fill with the word ``FULL" in the title. This 
 \end{itemize}
 
 
-\subsection{Preparing the Documents}
+\subsection{Preparing the Documents}\label{prepDocs}
 
 The following instructions where made specifically for physics 325 in winter 2019. Adjust the names for course and semester.
 
@@ -261,7 +267,16 @@ The following instructions where made specifically for physics 325 in winter 201
 
 \subsection{Compiling Manuals and PDFs}
 
-All compiling of standard lab documents can be done with the script {\bf pjldoc.py}.
+Any set of documents that have been prepared as laid out in section \ref{prepDocs} can be compiled in different configurations with the script {\bf pjldoc.py}.
+
+\subsubsection{Help Section for pjldoc.py}
+
+A full list of flags and uses of the pjldocs.py script can be found by running 
+
+\begin{lstlisting}
+pjldoc.py --help       
+\end{lstlisting}
+
 
 \subsubsection{Generating Student PDFs}
 
@@ -276,6 +291,14 @@ To compile individual PDF of the second lab listed in physics325-lab-order
 
 \begin{lstlisting}
 pjldoc.py PHY325WI2019 -s -c -i 2
+\end{lstlisting}
+
+\subsubsection{Generating Companion Guides for TA}
+
+To compile all of the Companion Guide PDFs
+
+\begin{lstlisting}
+pjldoc.py PHY325WI2019 -t -c -i 0        
 \end{lstlisting}
 
 
@@ -449,7 +472,7 @@ When taking photos note that they will require editing before they are added to 
 	./equipmentEdit.py -i
 	\end{lstlisting}
 
-to update the images in the equipmentDB.xmlFor specifics on how to make changes to the repository see Chapter \ref{chap:equip}.
+to update the images in the equipmentDB.xml.
 
 \item Check local version of website, and once the photos are acceptable remove all photos from /usr/local/master/rawimages so that they are not added with the next batch of photos.
 

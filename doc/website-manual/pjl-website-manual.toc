@@ -1,11 +1,11 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Lab Information Hub Website}{4}
-\contentsline {section}{\numberline {1.1}Introduction}{4}
-\contentsline {subsection}{\numberline {1.1.1}Guiding Principles}{4}
+\contentsline {section}{\numberline {1.1}Lab Information Hub Website}{4}
+\contentsline {subsection}{\numberline {1.1.1}Introduction}{4}
+\contentsline {subsubsection}{Guiding Principles}{4}
 \contentsline {subsection}{\numberline {1.1.2}Goals}{4}
 \contentsline {subsection}{\numberline {1.1.3}How Instructors Can Use the Hub}{4}
-\contentsline {subsection}{\numberline {1.1.4}How Technicians Can Use the Hub}{5}
-\contentsline {section}{\numberline {1.2}Definitions}{5}
+\contentsline {subsection}{\numberline {1.1.4}How Technicians Can Use the Hub}{4}
+\contentsline {section}{\numberline {1.2}Definitions}{4}
 \contentsline {chapter}{\numberline {2}Process for Editing the Website}{6}
 \contentsline {section}{\numberline {2.1}Introduction}{6}
 \contentsline {section}{\numberline {2.2}Overview of Editing Process}{6}
@@ -24,7 +24,9 @@
 \contentsline {subsection}{\numberline {3.3.1}Introduction}{11}
 \contentsline {subsection}{\numberline {3.3.2}Preparing the Documents}{11}
 \contentsline {subsection}{\numberline {3.3.3}Compiling Manuals and PDFs}{11}
-\contentsline {subsubsection}{Generating Student PDFs}{11}
+\contentsline {subsubsection}{Help Section for pjldoc.py}{11}
+\contentsline {subsubsection}{Generating Student PDFs}{12}
+\contentsline {subsubsection}{Generating Companion Guides for TA}{12}
 \contentsline {section}{\numberline {3.4}Adding new version of an existing lab}{12}
 \contentsline {section}{\numberline {3.5}Adding a new lab to the repository}{13}
 \contentsline {chapter}{\numberline {4}Inventory Content}{15}

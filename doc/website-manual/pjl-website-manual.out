@@ -1,6 +1,30 @@
-\BOOKMARK [1][-]{section*.2}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{}% 1
-\BOOKMARK [1][-]{section*.3}{\376\377\000M\000a\000k\000i\000n\000g\000\040\000C\000h\000a\000n\000g\000e\000s\000\040\000t\000o\000\040\000W\000e\000b\000s\000i\000t\000e}{}% 2
-\BOOKMARK [1][-]{section*.5}{\376\377\000R\000e\000p\000o\000s\000i\000t\000o\000r\000y}{}% 3
-\BOOKMARK [1][-]{section*.9}{\376\377\000I\000n\000v\000e\000n\000t\000o\000r\000y}{}% 4
-\BOOKMARK [1][-]{section*.13}{\376\377\000S\000c\000h\000e\000d\000u\000l\000e\000s}{}% 5
-\BOOKMARK [1][-]{section*.14}{\376\377\000S\000c\000r\000i\000p\000t\000s}{}% 6
+\BOOKMARK [0][-]{Doc-Start}{Physics Teaching Laboratory Website Manual}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Lab Information Hub Website}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Definitions}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Process for Editing the Website}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Overview of Editing Process}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Sync Testing Version with Live Version}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{Make Changes to the Website}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.5}{Testing the Changes}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.6}{Sync Live Version with Testing Version}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Repository Content}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Editing Experiment Documents}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Preparing Experiment Document Content}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Adding new version of an existing lab}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.5}{Adding a new lab to the repository}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{Inventory Content}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Inventory structure}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{Adding New Equipment}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.3}{Adding Photos of Equipment}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.4}{Adding Equipment Manuals}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.5}{Deleting Old Equipment}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Miscellaneous Content}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Schedules}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{Safety}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.3}{Procedural Documents}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.4}{Templates}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{Code}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Scripts}{chapter.6}% 30
