@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Live Stream Test Site</title>
+</head>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XBPjVzSoepo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yy79tmWWOF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=rgGNdnIgj5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320">Video2</iframe>
+-->
+<body data-gr-c-s-loaded="true">
+
+
+<br>
+<b>8081</b>
+<br>
+<!-- <a href="http://136.159.54.70:8081"> -->
+	<img src="http://136.159.54.70:8081/" border="0" width="100%>
+</a>
+<br>
+
+
+<!--
+
+
+<br>
+<b>8081</b>
+<br>
+<a href="http://136.159.54.70:8081">
+	<img src="http://136.159.54.70:8081/" border="0" width="25%>
+</a>
+<br>
+
+<br>
+<b>embeded 8081</b>
+<br>
+<embed type="video/webm" src="http://136.159.54.70:8081" width="400" height="300"></embed>
+<br>
+
+
+<br>
+<b>iframe 8081</b>
+<iframe width="640" height="480" src="http://136.159.54.70:8081" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video</iframe>
+<br>
+
+
+<br>
+<b>42315</b>
+<br>
+<a href="https://136.159.54.70:42315">
+	<img src="https://136.159.54.70:42315/" border="0" width="25%>
+</a>
+<br>
+
+<br>
+<b>embeded 42315</b>
+<embed type="video/webm" src="https://136.159.54.70:42315" width="400" height="300"></embed>
+<br>
+
+<br>
+<b>iframe 42315</b>
+<iframe width="320" height="240" src="https://136.159.54.70:42315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video</iframe>
+<br>
+-->
+  </body>
+</html>

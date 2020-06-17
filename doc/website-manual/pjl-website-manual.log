@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  6 SEP 2019 07:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.2)  3 MAR 2020 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **pjl-website-manual.tex
 (./pjl-website-manual.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 9 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./LabArx1_5.cls
 Document Class: LabArx1_5 20/08/2019, v1.5
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -2290,7 +2290,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2339,19 +2339,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40])
-[41] (/usr/local/master/pjl-web/dev/python-tools/equipmentEdit.py [42
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43])
+[44] (/usr/local/master/pjl-web/dev/python-tools/equipmentEdit.py [45
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
@@ -2361,6 +2361,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
 Overfull \hbox (272.76003pt too wide) in paragraph at lines 507--525
 [][][] 
  []
@@ -2368,17 +2377,17 @@ Overfull \hbox (272.76003pt too wide) in paragraph at lines 507--525
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49])
-(/usr/local/master/pjl-web/dev/python-tools/convertImg.py [50])
+ [52])
+(/usr/local/master/pjl-web/dev/python-tools/convertImg.py [53])
 (/usr/local/master/pjl-web/dev/python-tools/repWheel.py)
 Underfull \vbox (badness 4416) has occurred while \output is active []
 
- [51]
+ [54]
 (/usr/local/master/pjl-web/dev/python-tools/eqWheel.py)
-(/usr/local/master/pjl-web/dev/python-tools/linkCheck.py [52])
+(/usr/local/master/pjl-web/dev/python-tools/linkCheck.py [55])
 
 AED: lastpage setting LastPage
-[53] (./pjl-website-manual.aux)
+[56] (./pjl-website-manual.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2387,12 +2396,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 33559 strings out of 494805
- 661955 string characters out of 6177999
- 1117798 words of memory out of 5000000
- 36306 multiletter control sequences out of 15000+600000
- 544787 words of font info for 110 fonts, out of 8000000 for 9000
- 81 hyphenation exceptions out of 8191
+ 33576 strings out of 492982
+ 662195 string characters out of 6134897
+ 1122330 words of memory out of 5000000
+ 36553 multiletter control sequences out of 15000+600000
+ 544889 words of font info for 112 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
  62i,12n,77p,10429b,1840s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
@@ -2407,10 +2416,10 @@ onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on pjl-website-manual.pdf (53 pages, 375562 bytes).
+Output written on pjl-website-manual.pdf (56 pages, 386308 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 246 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26130 words of extra memory for PDF output out of 29859 (max. 10000000)
 

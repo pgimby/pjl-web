@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Magnetic Field of a Slinky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #displayBench {
+	  margin: auto;
+	  display:none;
+    }
+
+    #content {
+	  width: 800px;
+	  min-width: 800px;
+    }
+	
+    .sidebar {
+	  position: absolute;
+      width: 200px;
+	  height: 1000px;
+	  top: 10px;
+	  left: 810px;
+	  background-color:#eee;
+	  padding: 5px
+    }
+	
+	.roundedBox {
+      border-radius: 10px;
+	  border: 1px solid black;
+      background-color: white;
+      padding: 5px;
+      font-size: 16px;
+	}
+
+	.photoBox {
+      border-radius: 5px;
+	  z-index: 5;
+	  position: absolute;
+	  border: 1px solid black;
+      background-color: white;
+      padding: 2px;
+      font-size: 16px;
+	  display:none;
+	}
+  </style>
+</head>
+
+<body>
+
+<!-- First screen: choose machine and user name -->
+<div id="chooseMachine">
+  Choose your lab bench:
+  <select name="machineInput" id="machineInput">
+    <option value="http://mole.pjl.ucalgary.ca:4444" data-video="http://136.159.54.70:8081/">
+	   ST030 Bench 1 - mole</option>,
+    <option value="http://franklin.pjl.ucalgary.ca:4444" data-video="http://136.159.54.70:8081/">
+	   ST030 Bench 2 - franklin</option>,
+  </select>
+  <br><br>
+  Enter a user name will be displayed to other users at the lab bench (e.g. your first name):<br>
+  <input type="text" id="userIDInput" name="userIDInput"
+         onkeyup="this.value=this.value.replace(/[^a-z0-9.]/i, '');
+		          if(this.value.length > 2) setBenchButton.disabled=false;
+				  else setBenchButton.disabled=true;">
+  <br><br>
+  <button type="button" onclick="setBench()" id="setBenchButton" disabled>Go</button>
+  <div id="userIDInputErrorDiv"></div>
+</div>
+
+
+<!-- Second screen: lab bench display -->
+<div id="displayBench" style="">
+   <!-- Left hand side: photo and graph -->
+   <div id="content">
+	  <img src="schematic.png" width="800px" id="viewImg" style="position:absolute; top:10px;left:10px; z-index: 0;">
+	  <div id="B2" class="photoBox" style="top:50px;left:15px;">B2 magnetometer<br>[off image to left]</div>
+	  <div id="B1" class="photoBox" style="left:310px;top:475px;">B1 magnetometer</div>
+	  <div id="adj" class="photoBox" style="left:110px;top:255px;">Current adjustment</div>
+	  <div id="Vm" class="photoBox" style="left:650px;top:50px;">Voltmeter</div>
+	  <div id="Am" class="photoBox" style="left:650px;top:150px;">Ammeter</div>
+	  <div id="messagesDiv" width="800px" height="200px" style="top:620px;position:absolute;" class="roundedBox">System Messages</div>
+      <div id="chartElement" width="800px" height="300px" style="top:820px;position:absolute;"></div>
+   </div>
+   
+   <!-- Right hand sidebar -->
+   <div class="sidebar">
+      <p id="machineID"></p>
+	  View:
+      <select id="viewSelect" onchange="changeView()">
+         <option value="schematic.png">Schematic</option>,
+         <option value="static_view.jpg">Overview Photo</option>,
+<!--         <option value="slinky1.png">Slinky #1</option>,
+         <option value="slinky2.png">Slinky #2</option>,
+-->
+         <option value="live_view">Live Video</option>,
+      </select>
+	  <br><br><br>
+	  <div class="roundedBox">
+          Users at this bench:
+          <p id="userList"></p>
+      </div>
+      <br>
+      <div id="voltageControl" class="roundedBox">
+         Voltage setting (0-9):
+         <input type="number" id="voltage" name="voltage" min="0" max="9" value="0">
+         <button type="button" onclick="setVoltage()">Set Voltage</button>
+         <p id="voltageControlResponse"></p>
+      </div>
+	  <br><br>
+   </div>
+</div>
+
+
+
+<!--   Deprecated feature: retrieve a photo from the lab computer
+<div id="photoControl">
+  <img id="photoData">
+  <button type="button" onclick="getPhoto()">Get Photo</button>
+</div>
+-->
+
+</body>
+
+<!-- Plotly library - required for graphing -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+
+<script>
+
+///////////////
+//   Setup
+var dataGateway = "http://watt.pjl.ucalgary.ca/staffresources/dev/lab_computer_redirect_0.3.php";
+var updateDataInterval = 1000;    // data refresh rate - milliseconds
+var updateUsersInterval = 5234;   // user info refresh rate - milliseconds
+var updateMessageInterval = 1234; // message info refresh rate - milliseconds
+var plotHistoryLen = 20.0;        // seconds of data to keep in history
+var messagesLength = 4;           // messages to keep
+///////////////
+
+// Global variables
+var B1data = {x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B1'};
+var B2data = {x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B2'};
+var plotLayout = {xaxis:{title : 'Time [s]'},yaxis:{title : 'Magnetic Field [mT]'}};
+var sysMessages = {lastMessageTime:0.0,message:[]};
+var lastDataTime = 0.0;
+var dataUpdateTimer = null;
+var labMachine = '';
+var userID = ''
+
+// Functions
+function setBench(){
+  // Called when the user is done with the first screen.
+  // Advances to the next screen.
+
+  // Validate the user name
+  if ((userIDInput.value.length > 20) || (userIDInput.value.length < 3)) {
+    userIDInputErrorDiv.innerHTML = "User name must be 3-20 characters.";
+    return;
+  }
+  regex = /[^a-zA-Z0-9.]/g
+  if (regex.test(userIDInput.value)) {
+    userIDInputErrorDiv.innerHTML = "User name may only contain upper or lowercase letters, numbers and periods.";
+    return;
+  }
+  
+  // Set the machine and user ID
+  labMachine = machineInput.value;
+  userID = userIDInput.value;
+  document.getElementById("machineID").innerHTML = "<b>"+machineInput.options[machineInput.selectedIndex].text+"</b>";
+  
+  // Hide/display appropriate part of page
+  displayBench.style.display = "block";
+  chooseMachine.style.display = "none";
+  updateUsers();
+  
+  // Initialize the graph, start updating the data every second
+  Plotly.plot('chartElement',{data:[B1data],layout:plotLayout});
+  setInterval(updateUsers, updateUsersInterval);
+  setInterval(updateMessages, updateMessageInterval);
+  updateUsers();
+}
+
+function changeView(){
+  // Called when the user changes the lab bench view drop down selector.
+  // Changes the view (schematic/photo/live/etc)
+ 
+  // Stop updating the data
+  if (dataUpdateTimer != null){
+    clearInterval(dataUpdateTimer);
+    dataUpdateTimer = null;
+  }
+ 
+  // Change the view
+  var boxes = document.querySelectorAll('.photoBox');
+  switch(viewSelect.value) {
+    case "static_view.jpg":  // Static setup photo
+	  // Change image source
+	  viewImg.src = viewSelect.value;
+	  
+	  // Set text and show photo boxes
+	  document.getElementById("B2").innerHTML ="B2 magnetometer<br>[off image to left]";
+	  document.getElementById("B1").innerHTML ="B1 magnetometer";
+	  document.getElementById("adj").innerHTML ="Current adjustment";
+	  document.getElementById("Vm").innerHTML ="Voltmeter";
+	  document.getElementById("Am").innerHTML ="Ammeter";
+      for(var i=0; i< boxes.length; i++)
+	    boxes[i].style.display="block";
+	  
+      break;
+    case "live_view":        // Live view
+	  // Change image source: first to the "loading" image and then to the actual stream
+	  viewImg.onload=function () {
+              viewImg.src = machineInput[machineInput.options.selectedIndex].dataset.video;
+              viewImg.onload='';
+              viewImg.onerror=function () {
+                      viewImg.src = "failed_live.png";
+                      viewImg.onerror='';
+              }
+      }
+	  viewImg.src = "loading_live.png";	 
+	  
+	  // Set text and show photo boxes
+	  document.getElementById("B2").innerHTML ="B2 data:<br>pending";
+	  document.getElementById("B1").innerHTML ="B1 data:<br>pending";
+	  document.getElementById("adj").innerHTML ="Current adjustment<br>[Controls in sidebar]";
+	  document.getElementById("Vm").innerHTML ="Voltmeter";
+	  document.getElementById("Am").innerHTML ="Ammeter";
+      for(var i=0; i< boxes.length; i++)
+	    boxes[i].style.display="block";
+		
+	  // Start updating the data
+      dataUpdateTimer=setInterval(updateData, updateDataInterval);
+      break;
+    default:
+      viewImg.src = viewSelect.value;
+      for(var i=0; i< boxes.length; i++)
+	    boxes[i].style.display="none";
+  }  
+  
+}
+
+
+function setVoltage() {
+  // Called when the user presses the "Set Voltage" button.
+  // Sends the request to the appropriate lab computer
+ 
+ // Get voltage from the input box and validate it
+  var voltage = document.getElementById("voltage").value;
+  if (voltage > 9){
+    voltage = 9;
+    document.getElementById("voltage").value = "9";
+  }
+  if (voltage < 0){
+    voltage = 0;
+    document.getElementById("voltage").value = "0";
+  }
+
+  // Send as a POST request to the server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+        // This function is called once the server responds.
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("voltageControlResponse").innerHTML = this.responseText;
+        }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=cmd&p1="+voltage);
+  document.getElementById("voltageControlResponse").innerHTML = "POST request sent.";
+}
+
+
+function updateData(){
+  // Called on a timer to update the data.
+  // Sends the data request to the lab computer.
+  // Sets a callback function updateDataCallback to handle the data when it comes.
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=updateDataCallback;
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=data&p1="+lastDataTime);
+}
+
+
+function updateDataCallback(){
+  // callback function for updateData -- runs when the data request has returned
+  // updates the graph and text boxes
+  if (this.readyState == 4){
+    if (this.status == 200) {
+      if (this.responseText == '') return;
+      if (dataUpdateTimer == null) return;   
+      try{
+        var dataObj = JSON.parse(this.responseText);
+		// Parse the data
+        for (var i=0;i<dataObj.data.length;i++){
+		  var splitData = dataObj.data[i].split(':');
+		  if (splitData[0] == 'B1') {
+            if (!(dataObj.time[i] <= B1data.t[B1data.t.length-1])){
+              B1data.t = B1data.t.concat(dataObj.time[i]);
+              B1data.y = B1data.y.concat(parseFloat(splitData[1].split('(')[0]));
+              lastDataTime = dataObj.time[i];
+            }
+          } else if (splitData[0] == 'B2') {
+            if (!(dataObj.time[i] <= B2data.t[B2data.t.length-1])){
+			  B2data.t = B2data.t.concat(dataObj.time[i]);
+              B2data.y = B2data.y.concat(parseFloat(splitData[1].split('(')[0]));
+              lastDataTime = dataObj.time[i];
+	        }
+          } else console.log('Unrecognized data: '+dataObj.data[i]);
+        }
+
+        // discard old data
+        var i=0;
+        while (B1data.t[i] < (B1data.t[B1data.t.length-1] - plotHistoryLen)) i++;
+        B1data.t = B1data.t.slice(i);
+        B1data.y = B1data.y.slice(i);
+        while (B2data.t[i] < (B2data.t[B2data.t.length-1] - plotHistoryLen)) i++;
+        B2data.t = B2data.t.slice(i);
+        B2data.y = B2data.y.slice(i);
+	  
+        // Update the text boxes and graph
+        document.getElementById("B2").innerHTML ="B2 data:<br>"+B2data.y[B2data.y.length-1]+" mT";
+        document.getElementById("B1").innerHTML ="B1 data:<br>"+B1data.y[B1data.y.length-1]+" mT";
+        updateGraph();
+	  } catch {
+         console.log("updateData failed. Server response: "+this.responseText);
+	  }
+    } else {
+	  console.log("updateData failed. server returned status "+this.status);
+    }
+  }
+}
+
+function updateGraph(){
+  // Updates the graph when new data is available
+  // called from updateDataCallback
+  
+  // Find last minute tick
+  var lastMin = B1data.t[0] - (B1data.t[0] % 60);
+  var lastMinDateObj = new Date(lastMin*1000);
+
+  // update x values for graph
+  B1data.x = B1data.t.map(x => x - lastMin);
+  B2data.x = B2data.t.map(x => x - lastMin);
+
+  // update graph
+  if (lastMinDateObj.getMinutes() < 10)
+    plotLayout.xaxis.title = 'Time [seconds since '+lastMinDateObj.getHours()+':0'+lastMinDateObj.getMinutes()+':00 ]';
+  else
+    plotLayout.xaxis.title = 'Time [seconds since '+lastMinDateObj.getHours()+':'+lastMinDateObj.getMinutes()+':00 ]';
+  Plotly.react('chartElement',{data:[B1data,B2data],layout:plotLayout});
+}
+
+
+function updateUsers(){
+  // Called on a timer to update the message data
+  // Sends the request to the lab computer
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    // Runs when the request is ready
+	// Updates the text box
+    if (this.readyState == 4 && this.status == 200) {
+	  if (this.responseText.search("Data POST failed.") == -1)
+        document.getElementById("userList").innerHTML = this.responseText;
+	  else
+	    console.log("updateUsers: "+this.responseText);
+    }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=listUsers");
+}
+
+function updateMessages(){
+  // Called on a timer to update the message data
+  // Sends the request to the lab computer
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    // Runs when the request is ready
+	// Updates the text box
+    if (this.readyState == 4){
+      if (this.status == 200) {
+	    if (this.responseText == '') return;
+          try{
+	          // parse the messages in the response
+              var dataObj = JSON.parse(this.responseText);
+		      for (var i=0;i<dataObj.time.length;i++){
+                if (dataObj.time[i] > sysMessages.lastMessageTime)  sysMessages.lastMessageTime = dataObj.time[i];
+	            var DateObj = new Date(dataObj.time[i]*1000);
+			    if (DateObj.getMinutes() < 10)
+				  timestamp = '['+DateObj.getHours()+':0'+DateObj.getMinutes()+':';
+				else
+				  timestamp = '['+DateObj.getHours()+':'+DateObj.getMinutes()+':';
+			    if (DateObj.getSeconds() < 10)
+				  timestamp += '0'+DateObj.getSeconds() + '] '
+				else
+				  timestamp += DateObj.getSeconds() + '] ';
+                sysMessages.message = sysMessages.message.concat(timestamp+dataObj.message[i]+"<br>");
+              }
+              if (sysMessages.message.length > messagesLength){
+		        sysMessages.message = sysMessages.message.slice(-messagesLength)
+		      }
+              // Update the text box
+		      txt="Sytem Messages:<br>"
+              for (var i=0;i<sysMessages.message.length;i++) txt=txt+sysMessages.message[i];
+              document.getElementById("messagesDiv").innerHTML = txt;
+	      } catch {
+             console.log("updateMessages failed. Server response: "+this.responseText);
+          }
+      } else {
+        console.log("updateMessages failed. server returned status "+this.status);
+      }
+	}
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=messages&p1="+sysMessages.lastMessageTime);  
+}
+
+function getPhoto(){
+  // Called when the user selects the "Get Photo" button (deprecated)
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    if (this.readyState == 4 && this.status == 200) {
+          var imageURL = window.URL.createObjectURL(this.response);
+      document.getElementById("photoData").src = imageURL;
+    }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.responseType = 'blob';
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=photo");
+}
+
+</script>
+</html>

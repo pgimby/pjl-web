@@ -1,0 +1,80 @@
+% Version Control Log. Please make an entry bellow when editing.
+%
+% Created  on:  Oct 7, 2019        	Created  by:  Peter Gimby
+
+
+
+% Jupyter instructions%----------------------------------------------------------------
+% Document initialization
+%----------------------------------------------------------------
+
+\documentclass{../../../assets/LabArx-Dev} 	% PJL lab class
+
+\begin{document}
+
+\Logo{../../../assets/logo.jpg}
+\Version{1.2}
+%----------------------------------------------------------------
+% start document body - DO NOT REMOVE THIS LINE
+%----------------------------------------------------------------
+
+%----------------------------------------------------------------
+% Title Page and Experiment Information 
+%----------------------------------------------------------------
+
+\TitleVar{Running Jupyter on Kubuntu 18}{24}{30}
+\maketitle
+\fancyfoot{}
+%\turnOffFooter{nofoot}
+%----------------------------------------------------------------
+% Main Body
+%----------------------------------------------------------------
+ 
+\begin{enumerate}
+
+\item {\bf Starting Jupyter}
+	
+	Open up a command console (ie, konsole or yakuake) and run one 		of the following commands.
+	\begin {itemize}
+		\item jupyter-notebook
+		\item jupyter notebook
+		\item jupyter-lab
+		\item jupyter lab
+	\end{itemize}
+	Alternatively, you can click on the background and type any of the above commands. This will open jupyter from an application search bar.  
+
+\item{\bf Installing python modules.}
+	
+	All modules must be installed by the system administrator. To 		request a new package be added email phas.edulabs@ucalgary.ca 		with as much the following information as possible.
+
+	\begin{itemize}
+		\item{Name of package.}
+		\item{Very basic example of code you want to run with the 			module.}
+	\end{itemize}
+	
+	We will get the package installed as soon as possible.
+	
+\item {\bf Note on vpython.}
+
+	A vpython notebook must be complied in google chrome.\\If the 		notebook opens in firefox.
+	
+	\begin{itemize}
+		\item In the output in the command console used to start 			jupyter there will be a line that looks like.\\
+
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+Or copy and paste one of these URLs:
+    http://localhost:8889/ token=cb14eee9a5226cec0c9748245beec636cc2315ca2444922c
+	\end{lstlisting}
+
+		\item Copy the url from the console into google chrome.
+		\item It will as for a password which will be everything 			after "token=" in the url.
+		\item For this example the password is
+
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+ cb14eee9a5226cec0c9748245beec636cc2315ca2444922c
+\end{lstlisting}
+	\end{itemize}
+
+\end{enumerate}
+
+\end{document}

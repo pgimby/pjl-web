@@ -433,7 +433,7 @@ version = "1.3"
 
 
 '''List of valid rooms and semesters '''
-validRooms = ["ST009","ST017","ST020","ST025","ST029","ST030","ST032","ST034","ST036","ST037","ST038","ST039","ST042","ST046","ST048","ST050","ST068","ES002", "Chem Store", "SA 2nd Floor"]
+validRooms = ["ST009","ST017","ST020","ST025","ST029","ST030","ST032","ST034","ST036","ST037","ST038","ST039","ST042","ST046","ST048","ST050","ST068","ES002", "Chem Store", "SA 2nd Floor", "unknown"]
 
 '''dictionary of greek characters with matching unicode '''
 greek = {"alpha": "\u03B1", "micro": "\u03BC"}

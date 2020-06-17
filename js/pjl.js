@@ -543,6 +543,7 @@ $(document).on("mouseleave", ".resource-dropdown", function(e) {
 
 $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-dropdown-content", function(e) {
 	let links = {"pjl-regress": "/",
+				 "pjl-video-analysis": "/data/tools/video-analysis/pjlVideoAnalysis.html",
 				 "pjl-lab-schedule": "/data/schedules/schedule-current.pdf",
 				 "pjl-rooms-schedule": "/data/schedules/rooms-current.pdf",
 				 "pjl-tech-schedule": "/data/schedules/internal/tech-hours-current.pdf",
@@ -566,7 +567,7 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-lab-hacf-staff": "/data/safety/lab-safety-manual/current/HACF-PJL.pdf",
 				 "pjl-lab-hacf-adv": "/data/safety/lab-safety-manual/current/HACF-TA-Advanced.pdf",
 				 "pjl-lab-hacf-stand": "/data/safety/lab-safety-manual/current/HACF-TA-Standard.pdf",
-				 "pjl-orientation": "/data/safety/lab-safety-manual/Orientation.pdf",
+				 "pjl-orientation": "/data/safety/lab-safety-manual/current/Orientation.pdf",
 				 "pjl-lab-rad": "/data/safety/lab-safety-manual/current/closed/Radiation-Safety.pdf",
 				 "pjl-lab-laser": "/data/safety/lab-safety-manual/current/uofclasersafetymanual.pdf",
 				 "pjl-lab-emerg": "/data/safety/lab-safety-manual/current/Emergency-Procedures-Placard.pdf",
@@ -585,7 +586,16 @@ $(document).on("click touch", ".resource-dropdown-content, .mobile-resource-drop
 				 "pjl-orientation-present": "/data/safety/training/Orientation-Presentations/index.html",
 				 "pjl-downloads": "/data/downloads",
 				 "pjl-standard-procedures": "/staffresources/procedures/procedure-index.html",
-				 "pjl-docs": "/doc/index.html"};
+				 "pjl-221-downloads": "/data/downloads/PHYS221/index.html",
+				 "pjl-229-downloads": "/data/downloads/PHYS229/index.html",
+				 "pjl-397-downloads": "/data/downloads/PHYS397/index.html",
+				 "pjl-481-downloads": "/data/downloads/PHYS481/index.html",
+				 "pjl-docs": "/doc/index.html",
+				 "pjl-linuxPrinting": "/doc/it/linuxPrinting/linuxPrinting.pdf",
+				 "pjl-jupyterHelp": "/doc/it/jupyterHelp/jupyterHelp.pdf",
+				 "pjl-errorReporting": "/doc/it/errorReporting/errorReporting.pdf",
+				 "pjl-dev-space": "/staffresources/dev/index.html"
+				};
 
 	let buttonid = $(e.target).attr("id");
 	window.location = links[buttonid];
@@ -1821,6 +1831,7 @@ function collectFiles2Zip(doALL, doPDF, doTEX, doTMP, doMED, doEXTRA) {
 	//There is no graceful way to bail from this from a website functionality perspective.
 	//If this promise fails the website should be considered broken so a simple console log is printed.
 	deferredFileList.fail(function() {console.log("File collection failed: Unable to locate files for selection.")});
+	console.log("Exiting CollectFiles2Zip");
 }
 
 

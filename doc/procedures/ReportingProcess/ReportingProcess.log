@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  13 SEP 2019 07:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  17 SEP 2019 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (./ReportingProcess.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 9 language(s) loaded.
-(../../../assets/LabArx1_5.cls
+(../../../assets/LabArx-Dev.cls
 
-LaTeX Warning: You have requested document class `../../../assets/LabArx1_5',
+LaTeX Warning: You have requested document class `../../../assets/LabArx-Dev',
                but the document class provides `LabArx1_5'.
 
 Document Class: LabArx1_5 20/08/2019, v1.5
@@ -1784,6 +1784,19 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks37
 \@floatcapt=\box64
 )
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ALC@unique=\count301
+\c@ALC@line=\count302
+\c@ALC@rem=\count303
+\c@ALC@depth=\count304
+\ALC@tlm=\skip62
+\algorithmicindent=\skip63
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -1794,9 +1807,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count301
-\Gm@cntv=\count302
-\c@Gm@tempcnt=\count303
+\Gm@cnth=\count305
+\Gm@cntv=\count306
+\c@Gm@tempcnt=\count307
 \Gm@bindingoffset=\dimen274
 \Gm@wd@mp=\dimen275
 \Gm@odd@mp=\dimen276
@@ -1821,19 +1834,19 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen287
 \caption@hangindent=\dimen288
 )
-\c@ContinuedFloat=\count304
+\c@ContinuedFloat=\count308
 Package caption Info: float package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count305
-\c@subtable=\count306
+\c@subfigure=\count309
+\c@subtable=\count310
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box65
-\beforetitleunit=\skip62
-\aftertitleunit=\skip63
+\beforetitleunit=\skip64
+\aftertitleunit=\skip65
 \ttl@plus=\dimen289
 \ttl@minus=\dimen290
 \ttl@toksa=\toks39
@@ -1844,55 +1857,55 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip64
-\cftbeforetoctitleskip=\skip65
-\cftaftertoctitleskip=\skip66
-\cftbeforepartskip=\skip67
-\cftpartnumwidth=\skip68
-\cftpartindent=\skip69
-\cftbeforechapskip=\skip70
-\cftchapindent=\skip71
-\cftchapnumwidth=\skip72
-\cftbeforesecskip=\skip73
-\cftsecindent=\skip74
-\cftsecnumwidth=\skip75
-\cftbeforesubsecskip=\skip76
-\cftsubsecindent=\skip77
-\cftsubsecnumwidth=\skip78
-\cftbeforesubsubsecskip=\skip79
-\cftsubsubsecindent=\skip80
-\cftsubsubsecnumwidth=\skip81
-\cftbeforeparaskip=\skip82
-\cftparaindent=\skip83
-\cftparanumwidth=\skip84
-\cftbeforesubparaskip=\skip85
-\cftsubparaindent=\skip86
-\cftsubparanumwidth=\skip87
-\cftbeforeloftitleskip=\skip88
-\cftafterloftitleskip=\skip89
-\cftbeforefigskip=\skip90
-\cftfigindent=\skip91
-\cftfignumwidth=\skip92
-\c@lofdepth=\count307
-\c@lotdepth=\count308
-\cftbeforelottitleskip=\skip93
-\cftafterlottitleskip=\skip94
-\cftbeforetabskip=\skip95
-\cfttabindent=\skip96
-\cfttabnumwidth=\skip97
+\cftparskip=\skip66
+\cftbeforetoctitleskip=\skip67
+\cftaftertoctitleskip=\skip68
+\cftbeforepartskip=\skip69
+\cftpartnumwidth=\skip70
+\cftpartindent=\skip71
+\cftbeforechapskip=\skip72
+\cftchapindent=\skip73
+\cftchapnumwidth=\skip74
+\cftbeforesecskip=\skip75
+\cftsecindent=\skip76
+\cftsecnumwidth=\skip77
+\cftbeforesubsecskip=\skip78
+\cftsubsecindent=\skip79
+\cftsubsecnumwidth=\skip80
+\cftbeforesubsubsecskip=\skip81
+\cftsubsubsecindent=\skip82
+\cftsubsubsecnumwidth=\skip83
+\cftbeforeparaskip=\skip84
+\cftparaindent=\skip85
+\cftparanumwidth=\skip86
+\cftbeforesubparaskip=\skip87
+\cftsubparaindent=\skip88
+\cftsubparanumwidth=\skip89
+\cftbeforeloftitleskip=\skip90
+\cftafterloftitleskip=\skip91
+\cftbeforefigskip=\skip92
+\cftfigindent=\skip93
+\cftfignumwidth=\skip94
+\c@lofdepth=\count311
+\c@lotdepth=\count312
+\cftbeforelottitleskip=\skip95
+\cftafterlottitleskip=\skip96
+\cftbeforetabskip=\skip97
+\cfttabindent=\skip98
+\cfttabnumwidth=\skip99
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip98
-\f@nch@O@elh=\skip99
-\f@nch@O@erh=\skip100
-\f@nch@O@olh=\skip101
-\f@nch@O@orh=\skip102
-\f@nch@O@elf=\skip103
-\f@nch@O@erf=\skip104
-\f@nch@O@olf=\skip105
-\f@nch@O@orf=\skip106
+\f@nch@headwidth=\skip100
+\f@nch@O@elh=\skip101
+\f@nch@O@erh=\skip102
+\f@nch@O@olh=\skip103
+\f@nch@O@orh=\skip104
+\f@nch@O@elf=\skip105
+\f@nch@O@erf=\skip106
+\f@nch@O@olf=\skip107
+\f@nch@O@orf=\skip108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
@@ -1906,7 +1919,7 @@ Package: tracklang 2018/02/21 v1.3.5 (NLCT) Track Languages
 (/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count309
+\etb@tempcnta=\count313
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
@@ -1916,7 +1929,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks40
 \XKV@tempa@toks=\toks41
 )
-\XKV@depth=\count310
+\XKV@depth=\count314
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/datetime2-english/datetime2-english.ld
@@ -1927,26 +1940,26 @@ File: datetime2-english.ldf 2016/03/09 v1.04 (NLCT)
 se.ldf
 File: datetime2-english-base.ldf 2016/03/09 v1.04 (NLCT)
 )))
-\c@questionCounter=\count311
-\c@procedureCounter=\count312
+\c@questionCounter=\count315
+\c@procedureCounter=\count316
  (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count313
+\lst@mode=\count317
 \lst@gtempboxa=\box66
 \lst@token=\toks42
-\lst@length=\count314
+\lst@length=\count318
 \lst@currlwidth=\dimen294
-\lst@column=\count315
-\lst@pos=\count316
+\lst@column=\count319
+\lst@pos=\count320
 \lst@lostspace=\dimen295
 \lst@width=\dimen296
-\lst@newlines=\count317
-\lst@lineno=\count318
+\lst@newlines=\count321
+\lst@lineno=\count322
 \lst@maxwidth=\dimen297
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count319
-\lst@skipnumbers=\count320
+\c@lstnumber=\count323
+\lst@skipnumbers=\count324
 \lst@framebox=\box67
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1957,23 +1970,23 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/lstaddons/lstautogobble.sty
 Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
 ings'
-\lstag@spacecount=\count321
+\lstag@spacecount=\count325
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks43
-\MT@count=\count322
+\MT@count=\count326
 LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen298
 LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
-\MT@listname@count=\count323
+\MT@listname@count=\count327
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 913.
 LaTeX Info: Redefining \lslig on input line 913.
-\MT@outer@space=\skip107
+\MT@outer@space=\skip109
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -1998,16 +2011,16 @@ LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count324
+\scratchcounter=\count328
 \scratchdimen=\dimen299
 \scratchbox=\box68
-\nofMPsegments=\count325
-\nofMParguments=\count326
+\nofMPsegments=\count329
+\nofMParguments=\count330
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count327
+\MPscratchCnt=\count331
 \MPscratchDim=\dimen300
-\MPnumerator=\count328
-\makeMPintoPDFobject=\count329
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2121,7 +2134,7 @@ Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 17.
-\c@lstlisting=\count330
+\c@lstlisting=\count334
 LaTeX Info: Redefining \microtypecontext on input line 17.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -2136,7 +2149,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\c__siunitx_mathsf_int=\count331
+\c__siunitx_mathsf_int=\count335
 LaTeX Font Info:    Try loading font information for U+msa on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -2157,7 +2170,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count332
+\c__siunitx_mathtt_int=\count336
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2165,19 +2178,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 <../../../assets/logo.jpg, id=4, 380.42125pt x 94.3525pt>
 File: ../../../assets/logo.jpg Graphic file (type jpg)
 <use ../../../assets/logo.jpg>
-Package pdftex.def Info: ../../../assets/logo.jpg  used on input line 31.
+Package pdftex.def Info: ../../../assets/logo.jpg  used on input line 32.
 (pdftex.def)             Requested size: 190.21014pt x 47.17612pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 31.
+(Font)              using `OT1/cmr/bx/n' instead on input line 32.
 
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 71--103
+ [][] 
+ []
+
 
 AED: lastpage setting LastPage
 [1
@@ -2189,22 +2207,22 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 32549 strings out of 494805
- 648183 string characters out of 6177999
- 795010 words of memory out of 5000000
- 35421 multiletter control sequences out of 15000+600000
- 535581 words of font info for 49 fonts, out of 8000000 for 9000
+ 32729 strings out of 494805
+ 650493 string characters out of 6177999
+ 799904 words of memory out of 5000000
+ 35583 multiletter control sequences out of 15000+600000
+ 535781 words of font info for 53 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 62i,11n,56p,10427b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,56p,10427b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on ReportingProcess.pdf (1 page, 89272 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on ReportingProcess.pdf (1 page, 89816 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 12306 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 13842 words of extra memory for PDF output out of 14400 (max. 10000000)
 

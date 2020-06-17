@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online lab control form</title>
+</head>
+
+<body>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yy79tmWWOF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div id="voltageControl">
+  Voltage setting (0-9):
+  <input type="number" id="voltage" name="voltage" min="0" max="9" value="0">
+  <button type="button" onclick="setVoltage()">Set Voltage</button>
+</div>
+<p id="voltageControlResponse"></p>
+<div id="photoControl">
+  <img id="photoData">
+  <button type="button" onclick="getPhoto()">Get Photo</button>
+</div>
+<p id="dataElement"></p>
+<div id="chartElement"></div>
+
+</body>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+
+function setVoltage() {
+  // Get voltage from the input box and validate it
+  var voltage = document.getElementById("voltage").value;
+  if (voltage > 9){
+    voltage = 9;
+    document.getElementById("voltage").value = "9";
+  }
+  if (voltage < 0){
+    voltage = 0;
+    document.getElementById("voltage").value = "0";
+  }
+
+  // Send as a POST request to the serial server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("voltageControlResponse").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("voltage="+voltage);
+  document.getElementById("voltageControlResponse").innerHTML = "POST request sent.";
+}
+
+
+function getPhoto(){
+  // Send as a POST request to the serial server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var imageURL = window.URL.createObjectURL(this.response);
+      document.getElementById("photoData").src = imageURL;
+    }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.responseType = 'blob';
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("photo");
+}
+function updateData(){
+  // Send as a POST request to the serial server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=updateDataCallback;
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("magData="+lastDataTime);
+}
+
+function updateDataCallback(){
+  // callback function for updateData -- runs once the data request has returned
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("dataElement").innerHTML = this.responseText;
+	var dataObj = JSON.parse(this.responseText);
+	var firstNewPt=0;
+	for (var i=0;i<dataObj.data.length;i++){
+	  dataObj.data[i] = parseFloat(dataObj.data[i].split('(')[0]);  // convert from string
+	  if (dataObj.time[i] <= lastDataTime) firstNewPt++;            // find first new data pt
+	}
+	if(firstNewPt < dataObj.data.length) {                          // only plot new data points
+      lastDataTime = dataObj.time[dataObj.time.length-1];
+      updateGraph(dataObj.time.slice(firstNewPt),dataObj.data.slice(firstNewPt));
+	}
+  }
+}
+
+
+function updateGraph(time,chartData){
+
+  // update data
+  timeData = timeData.concat(time);
+  plotTrace.y = plotTrace.y.concat(chartData);
+  
+  // discard old data
+  var i=0;
+  while (timeData[i] < (timeData[timeData.length-1] - plotHistoryLen)) i++;
+  timeData = timeData.slice(i);
+  plotTrace.y = plotTrace.y.slice(i);
+
+  // Find last minute tick
+  var lastMin = timeData[0] - (timeData[0] % 60);
+  var lastMinDateObj = new Date(lastMin*1000);
+
+  // update graph
+  plotTrace.x = timeData.map(x => x - lastMin);
+  if (lastMinDateObj.getMinutes() < 10)
+    plotLayout.xaxis.title = 'Time [seconds since '+lastMinDateObj.getHours()+':0'+lastMinDateObj.getMinutes()+':00 ]';
+  else
+    plotLayout.xaxis.title = 'Time [seconds since '+lastMinDateObj.getHours()+':'+lastMinDateObj.getMinutes()+':00 ]';
+  Plotly.react('chartElement',{data:[plotTrace],layout:plotLayout});
+}
+
+///////////////
+//   Setup   //
+///////////////
+var dataGateway = "http://watt.pjl.ucalgary.ca/staffresources/dev/lab_computer_redirect_0.2.php";
+                //"http://localhost:4444";
+var updateInterval = 1000;   // milliseconds
+var plotHistoryLen = 20.0; // seconds of data to keep in history
+///////////////
+
+
+// Init graph
+var plotTrace = {x:[],y:[],type:'scatter',mode:'lines'};
+var plotLayout = {xaxis:{title : 'Time [s]'},yaxis:{title : 'Magnetic Field [\u03BCT]'}};
+var lastDataTime = 0.0;
+var timeData = [];
+Plotly.plot('chartElement',{data:[plotTrace],layout:plotLayout});
+
+
+// Update the data every second
+setInterval(updateData, updateInterval);
+
+</script>
+</html>

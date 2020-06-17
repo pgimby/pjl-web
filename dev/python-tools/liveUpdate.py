@@ -21,7 +21,7 @@ devEquipXML = webSource + "/dev/equipmentDB.xml"
 dataEquipXML = webSource + "/data/equipmentDB.xml"
 liveEquipXML = webMount + "/data/equipmentDB.xml"
 
-labFolders = ["downloads", "equipimg", "equipman", "landingpage", "repository", "safety", "schedules", "web-security"]
+labFolders = ["downloads", "equipimg", "equipman", "landingpage", "repository", "safety", "schedules", "web-security","tools"]
 webFolders = ["css", "data", "dev", "doc", "fonts", "img", "js", "php", "repository", "staffresources"]
 webFiles = ["index.html", "README.md"]
 webFileReverse = ["equipmentDB.xml"]
@@ -32,7 +32,7 @@ mountInfo = [{"source": webSource, "mountPt": webMount}, {"source": labSource, "
 owner = "pgimby"
 group = "pjl_admins"
 apacheUser = "www-data"
-devhost=["slug","fry"]
+devhost=["slug","fry","scruple"]
 webserver="watt.pjl.ucalgary.ca"
 
 def testHost(host):

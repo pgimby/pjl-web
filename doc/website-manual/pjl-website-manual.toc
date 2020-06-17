@@ -45,8 +45,8 @@
 \contentsline {section}{\numberline {6.1}Scripts}{20}
 \contentsline {subsection}{\numberline {6.1.1}Uploading Data to Live Website - liveUpdate.py}{20}
 \contentsline {subsection}{\numberline {6.1.2}Modifying the Lab Document Database - repositoryEdit.py}{24}
-\contentsline {subsection}{\numberline {6.1.3}Modifying the Inventory Database - equipmentEdit.py}{42}
-\contentsline {subsection}{\numberline {6.1.4}Convert Images for Inventory Database - convertImg.py}{50}
-\contentsline {subsection}{\numberline {6.1.5}Rotate Repository Database Version - repWheel.py}{51}
-\contentsline {subsection}{\numberline {6.1.6}Rotate Inventory Database Version - eqWheel.py}{52}
-\contentsline {subsection}{\numberline {6.1.7}Check Website Links - linkCheck.py}{52}
+\contentsline {subsection}{\numberline {6.1.3}Modifying the Inventory Database - equipmentEdit.py}{45}
+\contentsline {subsection}{\numberline {6.1.4}Convert Images for Inventory Database - convertImg.py}{53}
+\contentsline {subsection}{\numberline {6.1.5}Rotate Repository Database Version - repWheel.py}{54}
+\contentsline {subsection}{\numberline {6.1.6}Rotate Inventory Database Version - eqWheel.py}{55}
+\contentsline {subsection}{\numberline {6.1.7}Check Website Links - linkCheck.py}{55}

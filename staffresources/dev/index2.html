@@ -1,0 +1,218 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- if you change the title then also change the function 'isEquipmentDatabase' in pjl.js -->
+    <title>Physics Junior Laboratory - Equipment Database</title>
+    <link rel="icon" href="/img/pjl_icon_112x.png">
+    <link rel="stylesheet" href="/css/site-wide.css">
+    <link rel="stylesheet" href="/css/equipment.css">
+    <link rel="stylesheet" href="/css/repo.css">
+    <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/jszip.min.js"></script>
+    <script src="/js/FileSaver.js"></script>
+    <script src="/js/pjl.js"></script>
+
+
+
+    <meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<!-- PJL document dump -->
+<!-- Created by P. Gimby and W. Kyle -->
+<!-- June 2017, University of Calgary -->
+<!-- Despite the lack of rubber duckies -->
+<!-- Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code -->
+
+
+
+
+
+
+
+
+  <body onload=initEquipmentPage()>
+
+
+
+
+
+
+
+    <header>
+      <div id="header-baseline">
+        <div class="wrap">
+          <a id="pjl-logo" href="/">PJL</a>
+          <div class="need-help">
+            <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
+            <p class="need-help-text">report bug</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+    <main>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XBPjVzSoepo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j5mJrCVmCeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rgGNdnIgj5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<!-- <iframe width="560" height="315" src="udp://136.159.54.70:1234" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<video src="udp://136.159.54.70:1234" > video</video>
+<!-- Put stuff here-->
+
+
+
+      <div class="wrap">
+
+
+        <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
+
+        <div class="hero">
+          <div class="title-flex">
+            <h1 id="title">Department of Physics and Astronomy</h1>
+            <h1 id="subtitle">Remote Lab Test Site</h1>
+          </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER CONTENT -->
+
+
+    <footer>
+
+
+      <div class="wrap">
+
+        <div id="footer-left">
+          <h1 class="footer-title" id="footer-pjl-title">The PJL</h1>
+          <p>University of Calgary</p>
+          <p>2500 University Dr. NW</p>
+          <p>Calgary, Alberta, Canada</p>
+          <p>T2N 1N4</p>
+          <p style="visibility: hidden">UofC's copyright</p>
+          <a href="http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf"> privacy policy</a>
+        </div> <!-- end footer left -->
+
+
+        <div id="footer-mid">
+          <h1 class="footer-title" id="footer-staff-title">Staff</h1>
+
+          <div id="staff-members">
+            <!-- Staff member - Peter -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-gimby">Peter Gimby</h3>
+                <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-5403</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A" target="_blank">Science Theatres 068A</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Staff member - Wes -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-ernst">Wesley Ernst</h3>
+                <h4 class="staff-title">Laboratory Technician</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-7401</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68" target="_blank">Science Theatres 068</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Staff member - Zain -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-ahmed">Zain Ahmed</h3>
+                <h4 class="staff-title">Laboratory Technician</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-8641</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68" target="_blank">Science Theatres 068</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:wernst@ucalgary.ca">zain.ahmed2@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>  <!-- end footer mid -->
+
+
+
+        <div id="footer-right">
+          <h1 class="footer-title" id="footer-resources-title">Resources</h1>
+          <a href="/data/schedules/schedule-current.pdf" target="_blank">Laboratory Schedule</a>
+          <a href="/data/schedules/rooms-current.pdf" target="_blank">Room Assignments</a>
+          <a href="http://www.phas.ucalgary.ca/teaching_learning/demonstrations" target="_blank">Demonstrations</a>
+          <a href="/" target="_blank">Staff Resources</a>
+        </div>  <!-- end footer right -->
+
+      </div>  <!-- end footer wrap -->
+
+      <div id="footer-baseline"></div>
+
+    </footer>
+
+
+
+
+
+
+  </body>
+
+</html>

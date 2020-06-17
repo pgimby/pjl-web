@@ -1,1 +1,0 @@
-/home/pgimby/TemplateDevelopment/templates/TemplateSP2019-Current/LabArx1_5.cls
