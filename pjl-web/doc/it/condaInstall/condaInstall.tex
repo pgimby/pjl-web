@@ -1,0 +1,83 @@
+% Version Control Log. Please make an entry bellow when editing.
+%
+% Created  on:  Oct 7, 2019        	Created  by:  Peter Gimby
+
+
+
+% Conda install instructions%----------------------------------------------------------------
+% Document initialization
+%----------------------------------------------------------------
+
+\documentclass{../../../assets/LabArx-Dev} 	% PJL lab class
+
+\begin{document}
+
+\Logo{../../../assets/logo.jpg}
+\Version{1.0}
+%----------------------------------------------------------------
+% start document body - DO NOT REMOVE THIS LINE
+%----------------------------------------------------------------
+
+%----------------------------------------------------------------
+% Title Page and Experiment Information 
+%----------------------------------------------------------------
+
+\TitleVar{Installing Conda on Kubuntu 18}{24}{30}
+\maketitle
+\fancyfoot{}
+%\turnOffFooter{nofoot}
+%----------------------------------------------------------------
+% Main Body
+%----------------------------------------------------------------
+Conda is an user local program used to install python related software such as jupyter or ipython. Conda must be installed by each user individually. The lines in gray are commands that must be run in order to install Conda.
+
+\begin{enumerate}
+
+\item {\bf Open up a command console (ie, konsole or yakuake).}
+\item {\bf Download the Conda installer by runnning the command.}
+
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+\end{lstlisting}
+
+\item{\bf Install conda with the command.}
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+bash Miniconda3-latest-Linux-x86_64.sh
+\end{lstlisting}
+\begin{itemize}
+\vspace{-1em}
+\item press ``q" to exit license agreement
+\item enter ``yes" when asked to accept license agreement
+\item press ``enter" to accept default install location
+\end{itemize}
+
+\item {\bf Change into newly install Conda folder.}
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+cd miniconda3/bin
+\end{lstlisting}
+
+\item{\bf Ensure that Conda is up to date.}
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+./conda update conda
+\end{lstlisting}
+\begin{itemize}
+\vspace{-1em}
+\item enter ``yes" when asked if you wish to proceed.
+\end{itemize}
+
+\item{\bf Install python packages.}
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+./conda install numpy matplotlib scipy ipython spyder jupyter
+\end{lstlisting}
+\begin{itemize}
+\vspace{-1em}
+\item enter ``yes" when asked if you wish to proceed.
+\end{itemize}
+
+\item {\bf Launch the jupyter notebook kernel from command console or start menu.} 
+\begin{lstlisting}[backgroundcolor = \color{light-gray}]
+jupyter notebook
+\end{lstlisting}
+\end{enumerate}
+
+\end{document}

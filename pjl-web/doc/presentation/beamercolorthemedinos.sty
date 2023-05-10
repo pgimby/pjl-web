@@ -1,0 +1,73 @@
+% Beamer Color Theme "dinos'', for use at the University of Calgary
+% Adapted from beamercolorthemecambirgeUK by Philipp Hennig
+% Dennis Storoshenko, 2013
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+
+
+
+\mode<presentation>
+
+%% RGB definition of Calgary (dino) colours as in visual standards manual updated Sept 2013. 
+
+
+\definecolor{dinored}{RGB}{227,39,38}
+\definecolor{dinoyellow}{RGB}{255,210,0} %"Gold" in the manual
+\definecolor{dinorange}{RGB}{251,176,49}
+\definecolor{dinodarkorange}{RGB}{244,124,0}
+\definecolor{dinoburgundy}{RGB}{174,38,38}
+\definecolor{dinobrown}{RGB}{109,51,33}
+\definecolor{dinolightgrey}{RGB}{221,209,193}
+\definecolor{dinodarkgrey}{RGB}{150,137,122}
+\definecolor{dinoblack}{RGB}{35,31,32}
+
+
+
+
+\setbeamercolor{normal text}{fg=dinoblack,bg=white}
+\setbeamercolor{structure}{fg=dinored}
+
+\setbeamercolor{alerted text}{fg = dinored}
+\setbeamercolor{example text}{fg = dinoblack}
+
+\setbeamercolor{item projected}{use=item,fg=white,bg = dinodarkgrey}
+
+\setbeamercolor*{palette primary}{fg=white,bg=dinored}
+\setbeamercolor*{palette secondary}{parent=palette primary,use=palette primary,fg=white,bg=dinored}
+\setbeamercolor*{palette tertiary}{parent=palette primary,use=palette primary,fg=white,bg=dinored}
+\setbeamercolor*{palette quaternary}{parent=palette primary,use=palette primary,bg=dinored}
+
+\setbeamercolor*{block body}{bg=dinolightgrey, fg = dinoblack}
+\setbeamercolor*{block body example}{bg=dinolightgrey, fg=dinoblack}
+\setbeamercolor*{block title}{parent=structure,bg=dinoburgundy,fg=white}
+\setbeamercolor*{block title example}{bg=dinorange,fg=white}
+
+\setbeamercolor*{sidebar}{parent=palette primary}
+
+\setbeamercolor*{palette sidebar primary}{fg=dinored}
+\setbeamercolor*{palette sidebar secondary}{fg=dinoblack}
+\setbeamercolor*{palette sidebar tertiary}{fg=white}
+\setbeamercolor*{palette sidebar quaternary}{fg=dinoblack}
+
+\setbeamercolor{frametitle}{bg=dinored,fg=white} 
+\setbeamercolor{frametitle right}{bg=white}
+\setbeamercolor{framesubtitle}{fg=white}
+\setbeamercolor{title}{bg=dinolightgrey,fg=dinoblack}
+\setbeamercolor{subtitle}{fg=dinored}
+
+\setbeamercolor{block title}{parent=structure}
+\setbeamercolor{block title example}{parent=example text}
+\setbeamercolor{block body}{}
+\setbeamercolor{block body alerted}{}
+\setbeamercolor{block body example}{}
+
+\setbeamercolor*{titlelike}{parent=structure}
+
+\mode
+<all>

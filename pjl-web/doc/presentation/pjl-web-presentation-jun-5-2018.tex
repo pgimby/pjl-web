@@ -1,0 +1,152 @@
+\makeatletter\let\ifGm@compatii\relax\makeatother 
+%The above line may be needed depending on your .tex distribution
+\documentclass{beamer} %Preserves overlays
+%\documentclass[handout]{beamer} %Ignores overlays 
+
+\usepackage[absolute,overlay]{textpos} %Necessary for the logo placement
+\usepackage{comment}
+%Definition of function \TitleLogo. Add this command to every frame to add a white UCalgary logo in the upper right. Beware that long slide titles will run into the logo, so you will need to add a line break in the \frametitle command. 
+\newcommand{\TitleLogo}{
+ \setlength{\TPHorizModule}{1080pt}
+ \setlength{\TPVertModule}{900pt}
+ %\setlength{\TPHorizModule}{364pt}
+ %\setlength{\TPVertModule}{273pt}
+
+ \begin{textblock}{1}(0.820,0.01)
+ \includegraphics[width=0.9in]{CalgLogoWhite.eps}
+ \end{textblock}
+}
+
+\usetheme{Dinos}
+\titlegraphic{\includegraphics[width=1.25in]{uc-vert-cmyk.eps}} 
+\title[Lab Information Hub]{The Physics Educational Information Hub}
+\author{Peter Gimby}
+\institute[UCalgary]{University of Calgary}
+\date{June 5$^{th}$, 2018}
+
+
+
+
+
+\begin{document}
+
+%\maketitle
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{Overview}
+	\begin{itemize}
+		\item{The Original Problems}
+		\item{The Solutions}
+		\item{Use Cases}
+		\item{Moving Forward}
+	\end{itemize}
+\end{frame}
+	
+\begin{frame}
+\frametitle{The Original Problems}\color{black}
+	\begin{itemize}
+    		\item Educational laboratory resources are restricted, disorganized, and 							disappearing from memory.
+		\item Significant risk that a significant amount of intellectual 									resources could be lost permanently.
+		\item Limited physical storage space.
+	\end{itemize}
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{The Original Problems}\color{black}
+%	\begin{itemize}
+%		\item Restricted access to experiment documents.
+%		\item Disorganized experiment documents.
+%		\item Experiments disappearing from memory.
+%		\item Equipment stored in 16 different rooms.
+%		\item Equipment with unknown purpose taking up valuable space.
+%	\end{itemize}
+%\end{frame}
+
+\begin{frame}
+\frametitle{The Solutions}\color{black}
+	\begin{itemize}
+		\item Organized Lab Documents - Archive.
+		\item Department Wide Access to Information.
+		\item Transferable Knowledge.
+		\item Platform for Collaboration.
+		\item Foundation for Future Development.
+		\item Room to Grow.
+		\item Tools for Ease of Upkeep.
+		\item Mobile friendly.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Use Cases}
+\href{https://pjl.ucalgary.ca}{\beamergotobutton{New Education Labs Website}}
+\end{frame}
+
+
+\begin{comment}
+\begin{frame}
+\frametitle{Technical Staff Use Cases}
+	\item Where is the equipment for lab kept?
+	\item What is this equipment for?
+	\item How often is this equipment used?
+	\item What is broken and needs fixing?
+	\item What is the calibration procedure?
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Instructor Use Cases}
+    \begin{itemize}
+    		\item What did the last instructor do?
+	    \item Do we have a lab that deals with Wave Mechanics?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lab Developer Use Cases}
+    \begin{itemize}
+    		\item I want to make some changes to the current labs?
+    		\item Is there information on where this lab came from?
+		    \item I want to build a brand new lab?
+    		\item How did you make those diagrams?
+    \end{itemize}
+\end{frame}
+\end{comment}
+
+\begin{frame}
+\frametitle{Developing a new Experiment}
+    \begin{itemize}
+    		\item Download templates.
+    		\item Build new experiment.
+    		\item Save papers used in development.
+    		\item Save sample data.
+    		\item List topics covered, and math skills required.
+    		\item List equipment.
+    		\item Final product is added to repository.
+    		\item Experiment is now available for next developer.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Keeping it Relevant}
+	\begin{itemize}
+		\item Built with popular languages (javascript, html, xml, python, css, php).
+		\item Built back-end tools for updating and validating?
+		\item Requires buy in from all stakeholders?
+		\item Requires that documents are added before the lab runs?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Future Work}
+	\begin{itemize}
+		\item Continue to populate disciplines and topics.
+		%\item Authentication.
+		\item Administration manual.
+		\item Host simulations.
+		\item Host demonstrations.
+	\end{itemize}
+\end{frame}
+
+\end{document}

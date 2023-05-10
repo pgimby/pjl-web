@@ -1,0 +1,60 @@
+    * {
+      box-sizing: border-box;
+    }
+    #displayBench {
+	  margin: auto;
+	  display:none;
+    }
+    #content {
+	  width: 800px;
+	  min-width: 800px;
+    }
+	
+    .sidebar {
+	  position: absolute;
+      width: 200px;
+	  height: 1000px;
+	  top: 10px;
+	  left: 810px;
+	  background-color:#eee;
+	  padding: 5px
+    }
+	
+	.roundedBox {
+      border-radius: 10px;
+	  border: 1px solid black;
+      background-color: white;
+      padding: 5px;
+      font-size: 16px;
+	}
+	.photoBox {
+      border-radius: 5px;
+	  z-index: 5;
+	  position: absolute;
+	  border: 1px solid black;
+      background-color: white;
+      padding: 2px;
+      font-size: 16px;
+	  display:none;
+	}
+	
+	.demoBox {
+      border-radius: 5px;
+	  z-index: 5;
+	  position: absolute;
+	  border: 1px solid black;
+      background-color: white;
+      padding: 2px;
+      font-size: 16px;
+	  display:none;
+	}
+
+  .photoDataBox {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 10px;
+    left: 1010px;
+    background-color: white;
+    padding: 2px
+    }

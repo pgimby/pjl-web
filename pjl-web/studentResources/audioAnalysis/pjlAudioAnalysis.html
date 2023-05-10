@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+
+<!---------------------------------------------------------------------
+ Audio Analysis Tool for University of Calgary Physics Labs
+ Created by Christopher Cully
+ 2020 Sept 30
+
+ version 1.0
+ last revision 2020 Oct 3
+
+ Copyright 2020, Christopher Cully
+ This file is licensed under Creative Commons Attribution 4.0.
+ If you find this software useful, please let me know:
+ cmcully@ucalgary.ca
+--------------------------------------------------------------------->
+
+<head>
+  <meta charset="UTF-8">
+  <title>University of Calgary Physics Labs Audio Analysis</title>
+  <style>
+	* {
+	  box-sizing: border-box;}
+    a {
+	  line-height: 1.3em;
+	  margin: 2px 10px;
+	  padding: 2px;
+	  font-size: .9em;
+	  font-family: 'Proxima Nova', sans-serif;
+	  text-decoration: none;
+      color: #454565;
+    }
+	a:hover {
+		transition: all .3s ease;
+		color: #0000EE;
+	}
+    html, body {
+	  height: 100%;
+	  margin: 0; }
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;}
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;}	
+	.uploadBtnWrapper {
+      position: relative;
+	  margin:auto;
+      overflow: hidden;
+      display: inline-block;}
+    .btn {
+      border: 2px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;}
+    .btn2 {
+      border: 1px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 2px 2px;
+      border-radius: 5px;
+      font-size: 12px;
+	  user-select:none;
+      font-weight: bold;}
+    .uploadBtnWrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;}
+    .resultsDiv{ 
+      width:90%;
+      margin:20px 10px; 
+	  z-index: 2;
+	  user-select:all;
+	  display:none;
+	  position:relative;}
+	</style>
+</head>
+
+<body>
+
+<!--    <a href="https://pjl.ucalgary.ca/data/tools/video-analysis/Video_Analysis_Tutorial.mp4">[ Instructions ]</a>
+	<br><br>
+-->
+
+    <div class="uploadBtnWrapper" id="uploadBtnWrapper">
+      <button class="btn" id="fileButton">Open audio file</button>
+	  <input type="file" id="fileSelector" accept="audio/*" class="fileSelector" />
+    </div>
+
+
+	
+  <div id="resultsDiv" class="resultsDiv">
+    <div id="waveformElement"></div>
+    <div id="spectrumElement"></div>
+	<button class="btn2" onclick="exportCSV()">Export table</button>
+ 	<table id="resultsTable">
+		<tr>
+		<th>Frequency (Hz)</th>
+		<th>Power (arbitrary units)</th>
+		</tr>
+	</table>
+  </div>
+
+
+</body>
+
+<!-- Plotly library for graphing -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- dsp.js library for fft -->
+<script src="dsp.js"></script>
+
+<script>
+// State variables
+audioState={audioContext:null, audioBuffer:null, filename:null, specPlotted:false};
+
+// Add event listener for "Open audio file" button
+document.querySelector('#fileSelector').addEventListener('change', loadAudio, false);
+
+// Triggered by user button push, read the audio file into the buffer 
+function loadAudio(){ 
+  // Set up audio context
+  if (audioState.audioContext == null) {
+	console.log('Setting up context.');
+    try {
+      // For legacy browsers:
+      window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
+      audioState.audioContext = new AudioContext();
+    } catch (err) {
+      alert('Your browser does not support AudioContext. You will not be able to use this web app.');
+      console.log(err);
+      return;
+	}
+  }
+  
+  // Blank the spectrum plot
+  if (audioState.specPlotted) {
+    var data = {x:[],y:[],type:'scatter',mode:'lines',name:'waveform',hovermode:'x unified'};
+    var plotLayout = {title:'Click on the waveform to plot a power spectrum.'};
+    Plotly.react('spectrumElement',{data:[data],layout:plotLayout});
+  }
+
+  // Read in the file by first setting the onload function...
+  var reader = new FileReader();
+  reader.onload = function() {
+    console.log('Decoding.');
+	try {
+		audioState.audioContext.decodeAudioData(reader.result).then(function(decodedData){
+			audioState.audioBuffer=decodedData;
+			displayWaveform();
+		});
+	} catch (err) {
+      alert('Failed to decode audio file.');
+	  console.log(err);
+	  return;
+    }
+	
+  };
+  //... then start the file read
+  console.log('Starting file read.');
+  try {
+	if (fileSelector.files[0]==null) return;
+    audioState.filename=fileSelector.files[0].name;
+    reader.readAsArrayBuffer(fileSelector.files[0]);
+  } catch(err) {
+	console.log(err);
+    alert('Not a valid file.');
+	return;
+  }
+  
+  // Make the output divs visible
+  resultsDiv.style.display = "block";
+}
+
+// Called from loadAudio to display the waveform plot
+function displayWaveform(){
+  console.log('Displaying the waveform.');
+  
+  // Display waveform data 
+  var plotLayout = {xaxis:{title : 'Time [s]'},yaxis:{title : 'Pressure [arbitrary units]'},title:audioState.filename};
+  var data = {x:Array.from(Array(audioState.audioBuffer.length), (e,i)=>i/audioState.audioBuffer.sampleRate),
+              y:audioState.audioBuffer.getChannelData(0),
+		      type:'scatter',mode:'lines',name:'waveform',hovermode:'closest'};
+  Plotly.react('waveformElement',{data:[data],layout:plotLayout});
+    
+  // Set up callback to plot the FFT on click
+  waveformElement.on('plotly_click',function (clickEvent){
+	plotSpectrum(clickEvent.points[0]);
+  });
+}
+
+// Plot the spectrum
+function plotSpectrum(pointsData){
+  console.log('Plotting the spectrum.');
+  
+  // Get the index for the points nearest the click point
+  var bufferSize = 4096;
+  var i1=pointsData.pointNumber - bufferSize/2;
+  var i2=i1+bufferSize;
+  if(i1 < 0){i1=0; i2=bufferSize;}
+  if(i2 > (pointsData.data.y.length-1)){i1=pointsData.data.y.length-bufferSize; i2=pointsData.data.y.length;}
+  var signal=pointsData.data.y.slice(i1,i2);
+      
+  // Compute fft
+  windowFunc = new WindowFunction(DSP.BARTLETT);
+  signal=windowFunc.process(signal);
+
+  var fft = new RFFT(bufferSize, audioState.audioBuffer.sampleRate);
+  fft.forward(signal);
+  var freq=new Float64Array(fft.spectrum.length);
+  for(var i=0;i<fft.spectrum.length;i++) freq[i]=fft.getBandFrequency(i);
+  var power=new Float64Array(fft.spectrum.length);
+  for(var i=0;i<fft.spectrum.length;i++) power[i]=fft.spectrum[i]*fft.spectrum[i];
+  
+  // Display spectrum data 
+  var plotLayout = {xaxis:{title : 'Frequency [Hz]'},
+                    yaxis:{title : 'Power [arbitrary units]',type: 'log',autorange:true},
+					title:'Power spectrum centered at time t='+pointsData.data.x[i1+bufferSize/2]+' s'};
+  var data = {x:freq,
+              y:power,
+		      type:'scatter',mode:'lines',name:'waveform',hovermode:'x unified'};
+  Plotly.react('spectrumElement',{data:[data],layout:plotLayout});  
+  audioState.specPlotted=true;
+  
+  // Print out to table:
+  //   First clear the table
+  var nRows=resultsTable.rows.length
+  for(var i=1;i<nRows;i++) resultsTable.deleteRow(1);
+  //   Then populate it
+  for(var i=1;i<fft.spectrum.length;i++) {
+    var row = resultsTable.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = freq[i];
+    cell2.innerHTML = fft.spectrum[i];
+  }
+}
+
+// Called when "Export to CSV" button pressed
+function exportCSV(){
+  if (resultsTable.rows.length > 1){
+	// Create CSV string
+    var csv = [];
+    for (var i = 0; i < resultsTable.rows.length; i++) {
+        var row = [];
+		var cols = resultsTable.rows[i].querySelectorAll("td, th");
+        for (var j = 0; j < cols.length; j++) 
+            row.push(cols[j].innerText);
+        csv.push(row.join(","));        
+    }
+	csv=csv.join("\n");
+    
+    // Create CSV file, attach to (hidden) download link and click it
+	var csvFile, downloadLink;
+    csvFile = new Blob([csv], {type: "text/csv"});
+    downloadLink = document.createElement("a");
+    downloadLink.download = "spectrum.csv";
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+  }
+}
+</script>
+</html>

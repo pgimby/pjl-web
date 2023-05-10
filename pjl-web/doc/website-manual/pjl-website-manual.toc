@@ -1,0 +1,52 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1.1}Lab Information Hub Website}{4}
+\contentsline {subsection}{\numberline {1.1.1}Introduction}{4}
+\contentsline {subsubsection}{Guiding Principles}{4}
+\contentsline {subsection}{\numberline {1.1.2}Goals}{4}
+\contentsline {subsection}{\numberline {1.1.3}How Instructors Can Use the Hub}{4}
+\contentsline {subsection}{\numberline {1.1.4}How Technicians Can Use the Hub}{4}
+\contentsline {section}{\numberline {1.2}Definitions}{4}
+\contentsline {chapter}{\numberline {2}Process for Editing the Website}{6}
+\contentsline {section}{\numberline {2.1}Introduction}{6}
+\contentsline {section}{\numberline {2.2}Overview of Editing Process}{6}
+\contentsline {section}{\numberline {2.3}Sync Testing Version with Live Version}{6}
+\contentsline {section}{\numberline {2.4}Make Changes to the Website}{7}
+\contentsline {section}{\numberline {2.5}Testing the Changes}{7}
+\contentsline {section}{\numberline {2.6}Sync Live Version with Testing Version}{8}
+\contentsline {chapter}{\numberline {3}Repository Content}{9}
+\contentsline {section}{\numberline {3.1}Introduction}{9}
+\contentsline {subsection}{\numberline {3.1.1}Criteria for adding document}{9}
+\contentsline {subsection}{\numberline {3.1.2}Directory structure}{9}
+\contentsline {section}{\numberline {3.2}Editing Experiment Documents}{10}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{10}
+\contentsline {subsection}{\numberline {3.2.2}Repository xml template}{10}
+\contentsline {section}{\numberline {3.3}Preparing Experiment Document Content}{11}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{11}
+\contentsline {subsection}{\numberline {3.3.2}Preparing the Documents}{11}
+\contentsline {subsection}{\numberline {3.3.3}Compiling Manuals and PDFs}{11}
+\contentsline {subsubsection}{Help Section for pjldoc.py}{11}
+\contentsline {subsubsection}{Generating Student PDFs}{12}
+\contentsline {subsubsection}{Generating Companion Guides for TA}{12}
+\contentsline {section}{\numberline {3.4}Adding new version of an existing lab}{12}
+\contentsline {section}{\numberline {3.5}Adding a new lab to the repository}{13}
+\contentsline {chapter}{\numberline {4}Inventory Content}{15}
+\contentsline {section}{\numberline {4.1}Inventory structure}{15}
+\contentsline {section}{\numberline {4.2}Adding New Equipment}{15}
+\contentsline {section}{\numberline {4.3}Adding Photos of Equipment}{15}
+\contentsline {section}{\numberline {4.4}Adding Equipment Manuals}{16}
+\contentsline {section}{\numberline {4.5}Deleting Old Equipment}{17}
+\contentsline {chapter}{\numberline {5}Miscellaneous Content}{18}
+\contentsline {section}{\numberline {5.1}Schedules}{18}
+\contentsline {section}{\numberline {5.2}Safety}{19}
+\contentsline {subsection}{\numberline {5.2.1}Orientation}{19}
+\contentsline {section}{\numberline {5.3}Procedural Documents}{19}
+\contentsline {section}{\numberline {5.4}Templates}{19}
+\contentsline {chapter}{\numberline {6}Code}{20}
+\contentsline {section}{\numberline {6.1}Scripts}{20}
+\contentsline {subsection}{\numberline {6.1.1}Uploading Data to Live Website - liveUpdate.py}{20}
+\contentsline {subsection}{\numberline {6.1.2}Modifying the Lab Document Database - repositoryEdit.py}{24}
+\contentsline {subsection}{\numberline {6.1.3}Modifying the Inventory Database - equipmentEdit.py}{45}
+\contentsline {subsection}{\numberline {6.1.4}Convert Images for Inventory Database - convertImg.py}{53}
+\contentsline {subsection}{\numberline {6.1.5}Rotate Repository Database Version - repWheel.py}{54}
+\contentsline {subsection}{\numberline {6.1.6}Rotate Inventory Database Version - eqWheel.py}{55}
+\contentsline {subsection}{\numberline {6.1.7}Check Website Links - linkCheck.py}{55}

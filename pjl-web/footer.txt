@@ -1,0 +1,106 @@
+  <div class="wrap">
+
+        <div id="footer-left">
+          <h1 class="footer-title" id="footer-pjl-title">The PJL</h1>
+          <p>University of Calgary</p>
+          <p>2500 University Dr. NW</p>
+          <p>Calgary, Alberta, Canada</p>
+          <p>T2N 1N4</p>
+          <p style="visibility: hidden">UofC's copyright</p>
+          <a href="http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf"> privacy policy</a>
+        </div> <!-- end footer left -->
+
+
+        <div id="footer-mid">
+          <h1 class="footer-title" id="footer-staff-title">Staff</h1>
+
+          <div id="staff-members">
+            <!-- Staff member - Peter -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-gimby">Peter Gimby</h3>
+                <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-5403</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=SB&Room=612" target="_blank">Science B 612</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Staff member - Wes -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-ernst">Wesley Ernst</h3>
+                <h4 class="staff-title">Laboratory Technician</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-7401</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=SB&Room=612" target="_blank">Science B 612</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Staff member - Courtney -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-ahmed">Courtney Kruschel</h3>
+                <h4 class="staff-title">Laboratory Technician</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-8641</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=SB&Room=612" target="_blank">Science B 612</a>
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:clkrusch@ucalgary.ca">clkrusch@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>  <!-- end footer mid -->
+
+
+
+        <div id="footer-right">
+          <h1 class="footer-title" id="footer-resources-title">Resources</h1>
+          <a href="/data/schedules/schedule-current.pdf" target="_blank">Laboratory Schedule</a>
+          <a href="/data/schedules/rooms-current.pdf" target="_blank">Room Assignments</a>
+          <a href="http://www.phas.ucalgary.ca/teaching_learning/demonstrations" target="_blank">Demonstrations</a>
+          <a href="/" target="_blank">Staff Resources</a>
+        </div>  <!-- end footer right -->
+
+      </div>  <!-- end footer wrap -->
+
+      <div id="footer-baseline"></div>
+
+
+      <div id=zip-progress-bar>
+        <div id="zip-progress-header">
+          <h2 id="file-prep">Preparing files...</h2>
+          <div class="modal-close-button" id="cancel-download">
+          </div>
+        </div>
+        <progress value="0" max="1"></progress>
+      </div>

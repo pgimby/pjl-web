@@ -1,0 +1,623 @@
+
+
+/*Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code*/
+
+
+
+
+/*TEXT AROUND SEARCH OPTIONS*/
+
+#or {
+	font-size: 2em;
+	margin: 20px 10px;
+	font-weight: 400
+}
+
+#search-results {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+#num-results, #num-unmasked-results {
+	font-size: 1.5em;
+	color: #555555;
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#search-help-button {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-size: .6em;
+	top: 49px;
+	left: 8px;
+	color: #456545;
+	transition: all .3s ease;
+}
+
+	#search-help-button:hover {
+		color: #009900;/*#0000EE;*/
+		cursor: pointer;
+		transition: all .3s ease;
+	}
+
+	#search-help-button:active {
+		opacity: .7;
+		transition: none;
+	}
+
+.search-help-opened {
+	margin-bottom: 200px;
+}
+
+#search-help {
+	display: none;
+	width: 490px;
+	padding: 20px 20px;
+	border: 1px solid #D0CFCE;
+	border-radius: 0 0 4px 4px;
+	background-color: rgba(0,0,0,.02);
+	border-top: 0;
+	top: 46px;
+	position: absolute;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	z-index: -1;
+}
+
+	#search-help p:not(:first-child) {
+		font-size: 12px;
+		color: #555555;
+	}
+
+	#search-help p:nth-child(2) {
+		margin-left: 0;
+	}
+
+	#search-help #tips {
+		position: relative;
+		left: -16px;
+	}
+
+	#search-help .code {
+		border: 1px solid #D0CFCE;
+		background-color: #FFFFFF;
+		padding: 1px;
+		border-radius: 3px;
+		font-size: 12px;
+		font-family: 'Gotham Book', sans-serif;
+		color: #222222;
+	}
+
+	#search-help .example {
+		border: 1px solid #D0CFCE;
+		background-color: rgba(0,0,0,.03);
+		padding: 10px;
+		border-radius: 3px;
+		position: relative;
+		margin: 5px 40px 0 40px;
+		box-shadow: 0 0 3px 1px #444 inset;
+	}
+
+	#search-help #help-ex {
+		position: absolute;
+		left: -41px;
+		top: -8px;
+		margin: 0;
+	}
+
+
+
+
+
+
+
+/*DATABASE FILTERS*/
+
+.filter {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 35px 0;
+    max-width: 800px;
+}
+
+select {
+	width: auto;
+	margin: 5px 10px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	background-color: rgba(0,0,0,.15);
+	border-radius: 4px;
+}
+
+	select option {
+		font-weight: 600;
+	}
+
+	select option:hover {
+		color: #FFFFFF;
+		cursor: pointer;
+		transition: all .1s ease;
+	}
+
+#filter-mod-buttons {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#clear-filters-button,
+#show-recent-button {
+	display: block;
+	padding: 3px;
+	margin: 0;
+	position: relative;
+	top: 30px;
+	font-size: .6em;
+	height: 12px;
+	color: #456545;
+	transition: all .3s ease;
+}
+
+	#clear-filters-button:hover,
+	#show-recent-button:hover {
+		cursor: pointer;
+		color: #009900;
+		transition: all .3s ease;
+	}
+
+	#clear-filters-button:active,
+	#show-recent-button:active {
+		opacity: .7;
+		transition: none;
+	}
+
+
+
+
+
+
+
+/*HEADER ABOVE RECORDS DISPLAY*/
+
+#zip-icon {
+	display: none;
+	background: url("../img/zip-icon-fill.png");
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 38px;
+	cursor: pointer;
+	float: right;
+	border-radius: 4px;
+	position: relative;
+	z-index: 1;
+	right: 4px;
+}
+
+	#zip-icon:hover {
+		box-shadow: 0 0 3px 1px rgba(0,0,0,.1) inset;
+		transform: translateY(1px);
+	}
+
+	#zip-icon:active {
+		box-shadow: 0 0 3px 1px rgba(0,0,0,.2) inset;
+		transform: translateY(2px);
+	}
+
+#zip-icon.active {
+	background: url("../img/zip-icon-active.png");
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+}
+
+#records-header {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+	background-color: #424242;
+	position: relative;
+	top: -14px;
+	z-index: 0;
+	height: inherit;
+	border-radius: 3px 3px 0 0;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+	#records-header p {
+		flex: 1;
+		color: #BBBBBB;
+		line-height: 1.1;
+		font-weight: 600;
+	}
+
+	#records-header #sort-name {
+		flex: 2;
+	}
+
+	#records-header span:hover {
+		color: #FFFFFF;
+		cursor: pointer;
+	}
+
+.sort-span-mobile {
+	display: none;
+}
+
+#expand-all-button {
+	padding: 3px;
+	margin: 0;
+	position: relative;
+	top: 8px;
+	font-size: .6em;
+	height: 12px;
+	color: #456545;
+	right: 13px;
+	float: right;
+	transition: all .3s ease;
+}
+
+	#expand-all-button:hover {
+		cursor: pointer;
+		color: #009900;
+		transition: all .3s ease;
+	}
+
+	#expand-all-button:active {
+		opacity: .7;
+		transition: none;
+	}
+
+
+
+
+
+/*LAB RECORD LIST DISPLAY*/
+
+#record-list-box {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    margin-top: -15px;
+    position: relative;
+}
+
+.lab-record-flex {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+	border: solid 1px;
+    border-radius: 4px;
+    margin: 2px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+	.lab-record-flex.masked {
+		display: none !important;
+	}
+
+.lab-record-simple-flex {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+	.lab-record-simple-flex p {
+	    flex: 1;
+	}
+
+	.lab-record-simple-flex .lab-title {
+		flex: 2;
+	}
+
+
+
+.lab-record-simple-flex .fa-circle {
+	display: none;
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	left: -12px;
+	text-shadow: 0 0 0 2px #090;
+	color: #060;
+	font-size: 8px;
+	line-height: 0;
+}
+
+.lab-record-simple-flex .fa-circle.selected {
+	display: inline-block;
+}
+
+.record-click-mask {
+	display: -webkit-flex;
+	display: flex;
+	flex: 1;
+}
+
+.record-click-mask:hover {
+	cursor: pointer;
+}
+
+.lab-details-drop-icon-flex {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	border-left: solid 1px;
+	padding: 6px 8px;
+	cursor: pointer;
+}
+
+	.lab-details-drop-icon-flex:hover {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,.4) inset;
+	}
+
+	.lab-details-drop-icon-flex:active {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,.6) inset;
+		padding-top: 5px;
+	}
+
+.lab-details-drop-icon {
+	max-height: 21px;
+	margin: auto auto;
+	pointer-events: none;
+	-webkit-user-select: none; /*this is to prevent drop icon highlighting (user selecting)*/
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.lab-record-detailed-flex {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-top: solid 1px;
+	border-left: 6px solid #555;
+}
+
+	.lab-record-detailed-flex span:not(.equip-item) {
+		font-weight: 600;
+		color: #777777;
+	}
+
+.download-icon {
+	display: none;
+	padding: 4px 6px;
+	margin-right: 6px;
+}
+
+.extra-docs {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.lab-data-equipment {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10px;
+}
+
+.equipment-label {
+	margin-left: 0;
+}
+
+.equip-item {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: flex-start;
+	white-space: nowrap;
+}
+
+.equip-item:not(:last-child):after {
+	content: ",";
+	padding-right: 3px;
+	bottom: -3px;
+	position: relative;
+	margin-left: -3px;
+}
+
+.equip-item * {
+	margin: 0;
+}
+
+.equip-item-alt {
+	color: #999;
+}
+
+
+.equip-item-primary:hover, .equip-item-alt:hover {
+	color: #fff;
+	background-color: #555;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+#show-all-button {
+	padding: 3px;
+	margin: 0;
+	position: relative;
+	bottom: 200px;
+	right: -4px;
+	float: left;
+	font-size: .9em;
+	height: 12px;
+	color: #456545;
+	transition: all .3s ease;
+}
+
+	#show-all-button:hover {
+		cursor: pointer;
+		color: #009900;
+		transition: all .3s ease;
+	}
+
+	#show-all-button:active {
+		opacity: .7;
+		transition: none;
+	}
+
+
+
+.courses, .version-semester, .lab-title {
+	pointer-events: none;
+}
+
+
+
+
+.record-not-rendered {
+	display: none;
+}
+
+.record-rendered {
+	display: -webkit-flex;
+	display: flex;
+}
+
+
+
+
+
+
+
+
+/*******************************************************************/
+/*    MEDIA QUERIES FOR SCREEN SIZE STYLE MODIFICATIONS            */
+/*******************************************************************/
+
+
+@media screen and (max-width: 630px) {
+	h2 {
+		font-size: .9em;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+		width: 90%;
+		position: relative;
+	}
+
+	.hero {
+		flex-direction: column;
+	}
+
+	.filter {
+		width: 100%;
+	}
+
+	.lab-record-detailed-flex {
+		text-align: left;
+	}
+
+	.lab-record-simple-flex .courses {
+		display: none;
+	}
+
+	.download-icon {
+		display: inline-block;
+	}
+
+		.download-icon:hover {
+			cursor: pointer;
+			transform: translateY(1px);
+		}
+
+		.download-icon:active {
+			transform: translateY(2px);
+		}
+
+	a.version-path {
+		display: none;
+	}
+
+	#records-header a, #records-header p {
+		margin: 0;
+		width: 10px;
+		padding-left: 15px;
+	}
+
+	#expand-all-button {
+		display: none;
+	}
+
+
+	.search-box {
+		margin: 5px;
+	}
+
+
+
+	#search-results {
+		margin-left: 0;
+		font-size: .8em;
+	}
+		#search-results span {
+			font-size: 1.2em;
+		}
+
+	#title {
+		font-size: 1.4em;
+		text-align: center;
+	}
+
+	#subtitle {
+		font-size: .9em;
+		text-align: center;
+	}
+
+	#or {
+		position: relative;
+		padding: 0;
+		font-size: 1.4em;
+		width: 90%;
+	}
+
+	#search-help-button,
+	#search-help {
+		display: none;
+	}
+
+	#sort-course {
+		display: none;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 880px) {
+	.sort-span-desktop {
+		display: none;
+	}
+
+	.sort-span-mobile {
+		display: inline;
+	}
+}
+
+
+
+
+
+
+

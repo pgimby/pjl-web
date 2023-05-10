@@ -1,0 +1,70 @@
+     <div class="wrap">
+       <div id="footer-mid">
+          <h1 class="footer-title" id="footer-staff-title">Staff</h1>
+
+          <div id="staff-members">
+            <!-- Staff member - Peter -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-gimby">Peter Gimby</h3>
+                <h4 class="staff-title">Physics Junior Labs Supervisor</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-5403</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=SB&Room=612" targ$
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:pgimby@ucalgary.ca">pgimby@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Staff member - Wes -->
+            <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-ernst">Wesley Ernst</h3>
+                <h4 class="staff-title">Laboratory Technician</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-7401</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=SB&Room=612" targ$
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:wernst@ucalgary.ca">wernst@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Staff member - Zain -->
+<!--        <div class="staff-member">
+              <div class="staff-details">
+                <h3 class="staff-name" id="staff-name-ahmed">Zain Ahmed</h3>
+                <h4 class="staff-title">Laboratory Technician</h4>
+                <div class="staff-phone staff-small-detail">
+                  <img class="contact-icon" src="/img/phone-icon.png"/>
+                  <p>+1 (403) 220-8641</p>
+                </div>
+                <div class="staff-office staff-small-detail">
+                  <img class="contact-icon" src="/img/location-icon.png"/>
+                  <a href="http://ucmapspro.ucalgary.ca/RoomFinder/?Building=SB&Room=612" targ$
+                </div>
+                <div class="staff-email staff-small-detail">
+                  <img class="contact-icon" src="/img/email-icon.png"/>
+                  <a href="mailto:wernst@ucalgary.ca">zain.ahmed2@ucalgary.ca</a>
+                </div>
+              </div>
+            </div>
+-->
+
+          </div>
+        </div> 

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>University of Calgary PHYS 211/221 Video Analysis</title>
+  <style>
+	* {
+	  box-sizing: border-box;}
+    html, body {
+	  height: 100%;
+	  margin: 0; }
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;}
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;}	
+	.outsideWrapper{ 
+      width:90%; height:80%; 
+	  display:none;
+      margin:0px 10px; 
+      border:1px black;
+	  z-index: 0;
+	  position:relative;}
+	.insideWrapper{ 
+      width:100%; height:100%; 
+	  z-index: 1;
+      position:relative;}
+    .coveredVideo{ 
+      width:100%; height:100%;
+	  object-fit: contain;
+	  z-index: 1;
+      position:absolute; top:0px; left:0px;}
+    .coveringCanvas{ 
+      width:100%; height:100%; 
+      position:absolute; top:0px; left:0px;
+	  z-index: 2;
+      background-color: rgba(0,0,0,0);}
+    .controlsCanvas{ 
+      width:100%; height:40px; 
+      position:absolute; top:0px; left:0px;
+	  z-index: 5;
+      background-color: rgba(0,0,0,0);}
+    .controlsWrapper{ 
+      width:90%; height:40px;  
+	  display:none;
+      margin:0px 10px; 
+ 	  z-index: 4;
+	  position:relative;}
+	.uploadBtnWrapper {
+      position: relative;
+	  margin:auto;
+      overflow: hidden;
+      display: inline-block;}
+    .btn {
+      border: 2px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;}
+    .btn2 {
+      border: 1px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 2px 2px;
+      border-radius: 5px;
+      font-size: 12px;
+	  user-select:none;
+      font-weight: bold;}
+    .uploadBtnWrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;}
+    .resultsDiv{ 
+      width:90%;
+      margin:20px 10px; 
+	  z-index: 2;
+	  user-select:all;
+	  display:none;
+	  position:relative;}
+    .tooltip {
+      position: absolute;
+      display: inline-block;
+      opacity: 0.8;
+      z-index:8;}
+   .tooltip .tooltiptext {
+      width: 120px; height: 30px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 8;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -60px;}
+	</style>
+</head>
+
+<body>
+	<div class="uploadBtnWrapper" id="uploadBtnWrapper">
+      <button class="btn" id="fileButton">Open video</button>
+	  <input type="file" id="fileSelector" accept="video/*" class="fileSelector" />
+    </div>
+
+	<div id="outsideWrapper" class="outsideWrapper">
+     <div id="insideWrapper" class="insideWrapper">
+        <video id="myVideo" class="coveredVideo"></video>
+        <canvas id="myCanvas" class="coveringCanvas"></canvas>
+ 	    <div id="tooltip" class="tooltip">
+	      <span id="tooltiptext" class="tooltiptext">Tooltip</span>
+        </div>
+      </div>
+    </div>
+	<div id="controlsWrapper" class="controlsWrapper">
+      <canvas id="controlsCanvas" class="controlsCanvas"></canvas>
+    </div>
+	
+ 	<div id="resultsDiv" class="resultsDiv">
+ 	<table id="resultsTable">
+		<tr>
+		<th>Time (s)</th>
+		<th>X (pixels)</th>
+		<th>Y (pixels)</th>
+		</tr>
+	</table>
+    </div>
+
+	
+ 	<div id="resultsActionsDiv" class="resultsDiv">
+	<button class="btn2" onclick="removeRow()">Remove last row</button>
+	<button class="btn2" onclick="exportCSV()">Export table</button>
+    </div>
+
+<script src="px_picker_v1_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+\BOOKMARK [1][-]{section.1.1}{Lab Information Hub Website}{}% 1
+\BOOKMARK [2][-]{subsection.1.1.1}{Introduction}{section.1.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.2}{Goals}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.3}{How Instructors Can Use the Hub}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.4}{How Technicians Can Use the Hub}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Definitions}{}% 6
+\BOOKMARK [1][-]{section.1.3}{Acronyms}{}% 7
+\BOOKMARK [0][-]{chapter.2}{Process for Editing the Website}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Overview of Editing Process}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Sync Testing Version with Live Version}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Make Changes to the Website}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{Testing the Changes}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.6}{Sync Live Version with Testing Version}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Repository Content}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.1.1}{Criteria for adding document}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.2}{Directory structure}{section.3.1}% 18
+\BOOKMARK [1][-]{section.3.2}{Editing Experiment Documents}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{Introduction}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.2}{Repository xml template}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Preparing Experiment Document Content}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Introduction}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Preparing the Documents}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{Compiling Manuals and PDFs}{section.3.3}% 25
+\BOOKMARK [1][-]{section.3.4}{Adding new version of an existing lab}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.5}{Adding a new lab to the repository}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Inventory Content}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Inventory structure}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Adding New Equipment}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{Adding Photos of Equipment}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{Adding Equipment Manuals}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.5}{Deleting Old Equipment}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.6}{Updating Equipment with Website GUI - Not Functional}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.6.1}{Editing the Live Version - Not Functional}{section.4.6}% 35
+\BOOKMARK [2][-]{subsection.4.6.2}{Editing the Development Space - Not Functional}{section.4.6}% 36
+\BOOKMARK [0][-]{chapter.5}{Student Resources}{}% 37
+\BOOKMARK [0][-]{chapter.6}{Miscellaneous Content}{}% 38
+\BOOKMARK [1][-]{section.6.1}{Schedules}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{Safety}{chapter.6}% 40
+\BOOKMARK [2][-]{subsection.6.2.1}{Orientation}{section.6.2}% 41
+\BOOKMARK [1][-]{section.6.3}{Procedural Documents}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.4}{Templates}{chapter.6}% 43
+\BOOKMARK [0][-]{chapter.7}{Future Ideas}{}% 44
+\BOOKMARK [0][-]{chapter.8}{Code}{}% 45

@@ -1,0 +1,158 @@
+%Created on:  	Jun 15, 2016  	Created by: P. Gimby
+
+
+\documentclass[justified]{tufte-book}
+%\usepackage{graphicx} % allow embedded images
+%\usepackage{fancyvrb} % extended verbatim environments
+%\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+%\usepackage{amsmath}  % extended mathematics
+%\usepackage{booktabs} % book-quality tables
+%\usepackage{units}    % non-stacked fractions and better unit spacing
+%\usepackage{multicol} % multiple column layout facilities
+%\fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+\usepackage{tikz} %for drawing nice pictures
+\usepackage{pgfplots}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{soul}
+\usepackage{lastpage}
+%\usepackage[normalem]{ulem}
+
+\fancypagestyle{fullpage}{%
+\fancyhf{} % clear all header and footer fields
+
+\fancyheadoffset{0pt}
+\fancyfootoffset{0pt}
+\fancyfoot[R]{\thepage \ of  \pageref{LastPage}}
+\fancyfoot[L]{\itshape\nouppercase\leftmark}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+\usepackage{latexsym}
+
+\begin{document}
+\def\Item{\item[$\Box$]}
+\newgeometry{margin=1in}
+\pagestyle{fullpage}
+
+\chapter{Annual Laboratory Safety Procedures}\label{chp:ciLabInspections}
+%\fancyfoot[R]{\ref{chp:puldhp}}
+%\rhead{Physics Undergraduate Lab Document Handling Policy}
+%%%start document%%% DO NOT REMOVE THIS LINE
+\vspace{-1cm}
+%\minitoc
+\noindent Revised \today %June 20$^{th}$, 2016
+
+\subsection{\bf General Comments}
+This document covers instructions on how to take care of lab safety items that need to be completed once a year. The activities outlined in this document rely heavily on chematix chemical management system https://ucalgary.chematix.com/Chematix/
+
+\section{\bf Processes Covered by Document}
+\begin{enumerate}
+	\item Hazardous Waste Disposal.
+	\item Reconciling Chemical Inventory.
+	\item Hazard Assessment Control Form (HACF) Review.
+	\item Laboratory Self Inspections.
+\end{enumerate}
+
+\section{\bf Hazardous Waste Disposal}
+\subsection{Requirements}
+\begin{itemize}
+	\Item Store liquid waste stored in $1000$ mL Polypropylene bottle (ie VWR PT\# 				$414004-183$). 
+	\Item Liquid waste marked with contents and activity if radioactive.
+	\begin{itemize}
+		\item For radium experiment bottles should be labeled with "5.476 Bq/mL $^{226}				$Radium 	Salt".
+	\end{itemize}
+	\Item Solid waste stored in zip-lock bags.
+	\Item Solid waste containers labeled with contents including any contaminants.
+	\begin{itemize}
+		\item For radium experiment bags this would be "Debris Contaminated with $^{226}				$Radium	Salt".
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Procedure}
+\begin{enumerate}
+	\item Enter Chematix.
+	\item Click on "Waste" under the main header
+	\item Click on "Create Waste Pickup Worksheet"
+	\item Select location for pickup from drop down menu.
+	\item Add instructions in comment box indicating how HAZMAT can gain access to room for 		pickup.
+	\item Create chemical waste card(s).
+	\begin{enumerate}
+		\item Click on "Add more waste"
+		\item Select "Contaminated Materials Waste Card"
+		\item Indicate location on drop down menu
+		\item Check "Radioactive" under "Contamination Type"
+		\item Report quantity, size, and contaminate of containers. Containers with identical 		contaminates can be entered on the same waste card.
+		\item Print and sign waste card and leave it with disposal. HAZMAT will need this.
+	\end{enumerate}
+	\item Once all waste cards are added click "Submit Waste for Pickup" 
+\end{enumerate}
+
+
+\section{\bf Reconciling Chemical Inventory}
+\subsection{Requirements}
+\begin{itemize}
+	\Item Every chemical has a bar code, or is on the undeclared list.
+	\Item Every chemical's amount remaining is up to date.
+	\Item Every chemical is in it's designated storage unit.
+	\Item Every storage unit has a bar code.
+	\Item Every chemical that is not needed is disposed of.
+	\Item All chemical waste has been removed by HAZMAT.
+	\Item Chemical inventory has been reconciled through Chematix.
+\end{itemize}
+
+\subsection{Procedure}
+\begin{enumerate}
+	\item Enter Chematix.
+	\item Update amounts remaining of  all chemical.
+	\begin{enumerate}
+		\item Click "Inventory" under main header.
+		\item Click "Manage My Inventory" under "Manage Lab Inventory"
+		\item Click on "Toggle" button to select all labs, and click "Search Active Lab 				Inventory"
+		\item Click on "Barcode" of each line item and confirm that the "Content Size" is 			accurate.
+		\item Adjust "Content Size"
+		\begin{enumerate}
+			\item From main inventory page click "Adjust Container Quantity" under "Add Items 			to Inventory"
+			\item Search barcode of container to adjust
+			\item Enter amount removed from original content size into the box labeled 					"Removed	 Content Size/Units
+			\item Select the correct units and "Commit Modification"
+		\end{enumerate}
+	\end{enumerate}
+	\item Obtain a bar code scatter from PHAS main office
+	\item Follow scanner guide for scanning chemicals. Remember to scan storage container and 	then individual containers.
+	\item Input barcodes
+	\item RECONCILE
+	\begin{enumerate}
+		\item Click "Inventory" under main header.
+		\item Click "Reconcile Multiple Laboratory Inventories" under "Inventory Reconciliation"
+		\item Select all rooms to reconcile.
+		\item Click on "Reconcile Selected Laboratories"
+		\item Adjust "Content Size"
+		\item Click 
+	\end{enumerate}
+\end{enumerate}
+
+
+
+\newpage
+\section{\bf HACF Review}
+\subsection{Requirements}
+\begin{itemize}
+	\Item Review Hazard Assessment Control Form
+	\begin{itemize}
+		\Item Staff HACF
+		\Item Standard TA HACF
+		\Item Advanced TA HACF
+	\end{itemize}
+	\Item Update HACFs in Safety Binders
+	\Item Submit updated HACFs to EH\&S
+\end{itemize}
+
+\section{\bf Laboratory Self Inspection}
+\subsection{Requirements}
+\begin{itemize}
+	\Item Lab Inspections for $09,\ 17,\ 29,\ 39,\ 48/50$ entered in chematix
+	\Item Administrative inspections for ST $25,\ 26,\ 30,\ 32,\ 34,\ 36,\ 37,\ 38,\ 42,\ 68$
+\end{itemize}
+\end{document}

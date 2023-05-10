@@ -1,0 +1,50 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1.1}Lab Information Hub Website}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Introduction}{2}{subsection.1.1.1}%
+\contentsline {subsubsection}{Guiding Principles}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Goals}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}How Instructors Can Use the Hub}{2}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}How Technicians Can Use the Hub}{2}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Definitions}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Acronyms}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Process for Editing the Website}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Overview of Editing Process}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Sync Testing Version with Live Version}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Make Changes to the Website}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Testing the Changes}{5}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Sync Live Version with Testing Version}{6}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Repository Content}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Criteria for adding document}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Directory structure}{7}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Editing Experiment Documents}{8}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Repository xml template}{8}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Preparing Experiment Document Content}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Preparing the Documents}{9}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Compiling Manuals and PDFs}{9}{subsection.3.3.3}%
+\contentsline {subsubsection}{Help Section for pjldoc.py}{9}{subsection.3.3.3}%
+\contentsline {subsubsection}{Generating Student PDFs}{10}{lstnumber.-10.1}%
+\contentsline {subsubsection}{Generating Companion Guides for TA}{10}{lstnumber.-12.1}%
+\contentsline {section}{\numberline {3.4}Adding new version of an existing lab}{10}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Adding a new lab to the repository}{11}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Inventory Content}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Inventory structure}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Adding New Equipment}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Adding Photos of Equipment}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Adding Equipment Manuals}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Deleting Old Equipment}{15}{section.4.5}%
+\contentsline {section}{\numberline {4.6}\leavevmode {\color {red}Updating Equipment with Website GUI - Not Functional}}{15}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Editing the Live Version - Not Functional}{15}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Editing the Development Space - Not Functional}{15}{subsection.4.6.2}%
+\contentsline {chapter}{\numberline {5}Student Resources}{16}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Miscellaneous Content}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Schedules}{17}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Safety}{18}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Orientation}{18}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Procedural Documents}{18}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Templates}{18}{section.6.4}%
+\contentsline {chapter}{\numberline {7}\leavevmode {\color {blue}Future Ideas}}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Code}{20}{chapter.8}%

@@ -1,0 +1,211 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- if you change the title then also change the function 'isEquipmentDatabase' in pjl.js -->
+    <title>Physics Junior Laboratory - Equipment Database</title>
+    <link rel="icon" href="/img/pjl_icon_112x.png">
+    <link rel="stylesheet" href="/css/site-wide.css">
+    <link rel="stylesheet" href="/css/equipment.css">
+    <link rel="stylesheet" href="/css/repo.css">
+    <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/jszip.min.js"></script>
+    <script src="/js/FileSaver.js"></script>
+    <script src="/js/pjl.js"></script>
+
+
+
+    <meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<!-- PJL document dump -->
+<!-- Created by P. Gimby and W. Kyle -->
+<!-- June 2017, University of Calgary -->
+<!-- Despite the lack of rubber duckies -->
+<!-- Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code -->
+
+
+
+
+
+
+
+
+  <body onload=initEquipmentPage()>
+
+
+
+
+
+
+
+    <header>
+      <div id="header-baseline">
+        <div class="wrap">
+          <a id="pjl-logo" href="/">PJL</a>
+          <div class="need-help">
+            <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
+            <p class="need-help-text">report bug</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <main>
+
+      <div class="wrap">
+
+
+        <!-- THE HERO CONTAINS THE TITLE ELEMENTS -->
+
+        <div class="hero">
+          <div class="title-flex">
+            <h1 id="title">Department of Physics and Astronomy</h1>
+            <h1 id="subtitle">Physics Junior Laboratory Equipment Inventory</h1>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- SEARCH BAR WITH SEARCH HELP DROPDOWN -->
+
+        <h2>Find equipment by search term</h2>
+
+        <div class="search-container">
+        <form class="search-box">
+          <input type="text" id="search-bar" placeholder="Equipment name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Equipment name...'" list="equipment-datalist" autocomplete="off">
+          <datalist id="equipment-datalist"></datalist>
+          <a><img class="search-icon" src="/img/search-icon.png"></a> <!-- may I see your silly walk? -->
+        </form>
+        </div>
+
+
+
+        <span>
+          <h2 id="or">OR</h2>
+          <h2>Find equipment by filtering the database</h2>
+        </span>
+
+
+
+
+
+
+
+        <!-- LAB RECORDS FILTER SELECTIONS - FILLED DYNAMICALLY -->
+
+        <div class="filter">
+          <div id="manufacturer-filter">
+            <h3>Manufacturer</h3>
+            <select id="manufacturer-select" multiple="multiple">
+            </select>
+          </div>
+          <div id="room-filter">
+            <h3>Room</h3>
+            <select id="room-select" multiple="multiple">
+            </select>
+          </div>
+          <div id="storage-filter">
+            <h3>Storage</h3>
+            <select id="storage-select" multiple="multiple">
+            </select>
+          </div>
+          <div id="repair-filter">
+            <h3>Repair Backlog</h3>
+            <select id="backlog-select" size="4">
+              <option value="0">0</option>
+              <option value="1-2">1-2</option>
+              <option value="3-5">3-5</option>
+              <option value=">5">&gt;5</option>
+            </select>
+          </div>
+          <div id="filter-mod-buttons">
+            <p id="clear-filters-button">clear filters</p>
+            <!-- <p id="edit-mode-button">edit mode</p> -->
+          </div>
+        </div>
+
+
+
+
+        <!-- SEARCH RESULTS COUNTER WITH ZIP ICON -->
+
+
+        <p id="search-results">Showing <span id="num-unmasked-results"></span> of <span id="num-results"></span> search results</p>
+
+
+
+
+
+        <!-- LAB RECORDS DISPLAY AND HEADER FOR SORTING FUNCTIONALITY -->
+
+
+        <div id="records-header">
+            <p class="record-header-button" id="sort-eq-id" sorted="false"><span>ID #</span></p>
+            <p class="record-header-button" id="sort-eq-make" sorted="false"><span>Manufacturer</span></p>
+            <p class="record-header-button" id="sort-eq-model" sorted="false"><span>Model</span></p>
+            <p class="record-header-button" id="sort-eq-name" sorted="false"><span>Name</span></p>
+            <p class="record-header-button" id="sort-eq-date" sorted="false"><span>Last Modified</span></p>
+          </div>
+
+        <div id="record-list-box">
+
+        </div>
+        <p id="show-all-button">show all</p></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>  <!-- close main wrap -->
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER CONTENT -->
+
+
+<footer>
+<script language="javascript" type="text/javascript">
+fetch("../../../..//footer.txt")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });
+</script>
+</footer>
+
+
+</body>
+
+</html>

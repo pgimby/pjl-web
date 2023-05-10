@@ -1,0 +1,485 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Physics Junior Laboratory</title>
+    <meta property="og:image" content="/img/pjl_icon_256x.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <!--<meta name="description" content="Physics Junior Laboratory at the University of Calgary"> -->
+    <meta name="description" content="Physics Educational Information Hub at the University of Calgary">
+    <meta name="keywords" content="ucalgary,physics,laboratory,labs,university,calgary,science">
+    <meta name="author" content="Peter Gimby and Wes Kyle">
+    <link rel="icon" href="/img/pjl_icon_112x.png">
+    <link rel="stylesheet" href="/css/site-wide.css">
+    <link rel="stylesheet" href="/css/repo.css">
+    <script src="https://use.fontawesome.com/59ed6512fd.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/jquery.mobile.custom.min.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/pjl.js"></script>
+    <script>
+      $(window).on("swipeleft", hideMobileNav);
+      $(window).on("swiperight", showMobileNav);
+    </script>
+
+
+
+    <meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<!-- PJL document dump -->
+<!-- Created by P. Gimby and W. Kyle -->
+<!-- June 2017, University of Calgary -->
+<!-- Despite the lack of rubber duckies -->
+<!-- Do __NOT__ change classes or ids without checking jQuery and D3 selectors in the JS code -->
+
+
+
+
+
+
+
+
+  <body onload=initLandingPage()>
+
+
+
+    <div class="mobile-landing-nav">
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Students</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <!-- <p id="pjl-remoteLab0016">Magnetic Field in a Slinky Remote Lab</p> -->
+        <p id="pjl-remote-lab-lp">Remote Labs</p>
+        <p id="pjl-video-analysis">Video Analysis</p>
+        <p id="pjl-audio-analysis">Audio Analysis</p>
+      </div>
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Instructors</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id="pjl-repository">Repository</p>
+        <p id="pjl-lab-schedule">Experiment Schedule</p>
+        <p id="pjl-rooms-schedule">Lab Room Schedule</p>
+        <p id="pjl-latex-template">Lab LaTeX template</p>
+        <p id="pjl-tikz-examples-view">Tikz LaTeX example - view</p>
+        <p id="pjl-tikz-examples-dl">Tikz LaTeX example - download</p>
+      </div>
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Staff</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id="pjl-repository">Repository</p>
+        <p id="pjl-inventory">Inventory</p>
+        <p id="pjl-lab-schedule">Experiment Schedule</p>
+        <p id="pjl-rooms-schedule">Lab Room Schedule</p>
+        <p id="pjl-tech-schedule">Technician Schedule</p>
+        <p id="pjl-standard-procedures">Standard Procedures</p>
+        <p id="pjl-orientation-present">Physics Lab Orientation Presentations</p>
+        <p id="pjl-archive-experiment-schedule">Archived Experiment Schedules</p>
+        <p id="pjl-archive-room-schedule">Archived Lab Room Schedules</p>
+        <p id="pjl-archive-tech-schedule">Archived Technician Schedules</p>
+        <p id="pjl-github">PJLWeb GitHub</p>
+        <p id="pjl-downloads">Downloads</p>
+        <p id="pjl-docs">Documents</p>
+        <p id="pjl-dev-space">Development Space</p>
+
+      </div>
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Safety in the Labs</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id= "pjl-lab-toc">Safety Binder Table of Contents</p>
+        <p id= "pjl-lab-intro">Laboratory Safety Manual Introduction</p>
+        <p id= "pjl-lab-hacf-staff">HACF - Staff</p>
+        <p id= "pjl-lab-hacf-adv">HACF - Advanced TAs</p>
+        <p id= "pjl-lab-hacf-stand">HACF - Standard TAs</p>
+        <p id= "pjl-orientation">Physics Educational Labs Orientation</p>
+        <p id= "pjl-lab-rad">Radiation Safety</p>
+        <p id= "pjl-lab-laser">Laser Safety</p>
+        <p id= "pjl-sop-sander">SOP - Belt Sander</p>
+        <p id= "pjl-sop-dremel">SOP - Dremel</p>
+        <p id= "pjl-sop-mill">SOP - Milling Machine</p>
+        <p id= "pjl-lab-emerg">Emergency Procedures</p>
+        <p id= "pjl-lab-oars">OARS Worksheet</p>
+        <p id= "pjl-lab-spills">Spill Response Procedure</p>
+        <p id= "pjl-lab-eyes">Emergency Shower and Eyewash Standard</p>
+        <p id= "pjl-lab-rules-placard">Lab Safety Rules - Placard</p>
+        <p id= "pjl-lab-rules">Lab Safety Rules - Expanded</p>
+        <p id= "pjl-lab-hazard-move">Movement of Hazardous Materials</p>
+        <p id= "pjl-lab-after-hrs">After Hours Operations Policy</p>
+        <p id= "pjl-lab-unattend">Unattended Operations Policy</p>
+        <p id= "pjl-lab-unattend-guide">Unattended Operations Guidelines</p>
+        <p id= "pjl-lab-alone">Working Alone Guidelines</p>
+        <p id= "pjl-lab-comp-gas-hand">Handeling Compressed Gases</p>
+        <p id= "pjl-lab-comp-regulator">Compressed Gas Cylinder Regulator Installation</p>
+        <p id= "pjl-lab-chem-storage">Chemical Storate Bulletin</p>
+        <p id= "pjl-lab-chem-storage-sup">Chemical Storate Bulletin - Supplemental</p>
+        <p id= "pjl-lab-fire">Fire Safety Requirements</p>
+        <p id= "pjl-lab-fumehood">Fume Hood User</p>
+        <p id= "pjl-lab-waste">Hazardouse Waste Disposal Containers</p>
+      </div>   
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">Downloads</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <!--<p id="pjl-lab-schedule">Experiment schedule</p>
+        <p id="pjl-rooms-schedule">Lab room schedule</p>
+        <p id="pjl-regress">Linear regression</p>
+        <p id="pjl-581">physics 581</p>
+        <p id="pjl-481">physics 481</p>
+        <p id="pjl-381">physics 381</p>
+        <p id="pjl-linearization">Linearization of experimental data</p>
+        <p id="pjl-compare-two">Procedure for comparing two values</p>
+        <p id="pjl-uncertainty">Uncertainty analysis</p>
+        <p id="pjl-graphing">Graphing experimental data</p>
+        <p id="pjl-geiger">How Geiger counters work</p>
+        <p id="pjl-scint">How scintillation counters work</p>-->
+        <p id="pjl-221-downloads">Physics 211/221 Downloads</p>
+        <p id="pjl-229-downloads">Physics 229 Downloads</p>
+        <p id="pjl-397-downloads">Physics 397 Downloads</p>
+        <p id="pjl-481-downloads">Physics 481 Downloads</p>
+      </div>
+
+      <div class="mobile-resource-button">
+        <p class="mobile-resource-button-text">IT Support</p>
+      </div>
+      <div class="mobile-resource-dropdown-content">
+        <p id="pjl-linuxPrinting">Printing from Kubuntu</p>
+        <p id="pjl-jupyterHelp">Running Jupyter on Kubuntu</p>
+        <p id="pjl-errorReporting">Reporting Technical Issues</p>
+      </div>
+    </div>
+
+    <header>
+      <div id="header-baseline">
+      <div class="wrap">
+        <i id="mobile-nav-button" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        <a id="pjl-logo" href="/">PJL</a>
+        <div class="need-help">
+          <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
+          <p class="need-help-text">report bug</p>
+        </div>
+      </div>
+
+      </div>
+
+    </header>
+
+
+
+
+
+
+
+
+    <main>
+    	<div id="landing-hero">
+    		<div class="wrap">
+	    		<h1 id="landing-hero-welcome">Welcome</h1>
+	    		<!--<h1 id="landing-hero-pjl">Physics Junior Laboratory</h1>-->
+          <h1 id="landing-hero-pjl">Physics Educational Laboratory Information Hub</h1>
+    		</div>
+    		<img src="/img/chalkphysalpha.png">
+    	</div>
+    	<div class="hero-bottom">
+        <div class="wrap" id="resource-buttons">
+          <div class="resource-button"></div>
+
+          <div class="resource-button">
+            <p class="resource-button-text">Students</p>
+            <div class="resource-dropdown">
+              <div class="resource-dropdown-content">
+                <!-- <p id="pjl-remoteLab0016">Magnetic Field in a Slinky Remote Lab</p>-->
+                <p id="pjl-remote-lab-lp">Remote Labs</p>
+                <p id="pjl-video-analysis">Video Analysis</p>
+                <p id="pjl-audio-analysis">Audio Analysis</p>
+              </div>
+            </div>
+          </div>
+          <div class="resource-button">
+            <p class="resource-button-text">Instructors</p>
+            <div class="resource-dropdown">
+              <div class="resource-dropdown-content">
+                <p id="pjl-repository">Repository</p>
+                <p id="pjl-lab-schedule">Experiment Schedule</p>
+                <p id="pjl-rooms-schedule">Lab Room Schedule</p>
+                <p id="pjl-latex-template">Lab LaTeX template</p>
+                <p id="pjl-tikz-examples-view">Tikz LaTeX example - view</p>
+                <p id="pjl-tikz-examples-dl">Tikz LaTeX example - download</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resource-button">
+            <p class="resource-button-text">Staff</p>
+            <div class="resource-dropdown">
+              <div class="resource-dropdown-content">
+                <p id="pjl-repository">Repository</p>
+                <p id="pjl-inventory">Inventory</p>
+      	        <p id="pjl-lab-schedule">Experiment Schedule</p>
+                <p id="pjl-rooms-schedule">Lab Room Schedule</p>
+                <p id="pjl-tech-schedule">Technician Schedule</p>
+                <p id="pjl-standard-procedures">Standard Procedures</p>
+                <p id="pjl-orientation-present">Physics Lab Orientation Presentations</p>
+                <p id="pjl-archive-experiment-schedule">Archived Experiment Schedules</p>
+                <p id="pjl-archive-room-schedule">Archived Lab Room Schedules</p>
+                <p id="pjl-archive-tech-schedule">Archived Technician Schedules</p>
+                <p id="pjl-github">PJLWeb GitHub</p>
+                <p id="pjl-docs">Documents</p>
+	        <p id="pjl-dev-space">Development Space</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resource-button">
+            <p class="resource-button-text">Safety in the Labs</p>
+            <div class="resource-dropdown">
+              <div class="resource-dropdown-content">
+                <p id= "pjl-lab-toc">Safety Binder Table of Contents</p>
+                <p id= "pjl-lab-intro">Laboratory Safety Manual Introduction</p>
+                <p id= "pjl-lab-hacf-staff">HACF - Staff</p>
+                <p id= "pjl-lab-hacf-adv">HACF - Advanced TAs</p>
+                <p id= "pjl-lab-hacf-stand">HACF - Standard TAs</p>
+                <p id= "pjl-orientation">Physics Educational Labs Orientation</p>
+                <p id= "pjl-lab-rad">Radiation Safety</p>
+                <p id= "pjl-lab-laser">Laser Safety</p>
+                <p id= "pjl-sop-sander">SOP - Belt Sander</p>
+                <p id= "pjl-sop-dremel">SOP - Dremel</p>
+                <p id= "pjl-sop-mill">SOP - Milling Machine</p>
+                <p id= "pjl-lab-emerg">Emergency Procedures</p>
+                <p id= "pjl-lab-oars">OARS Worksheet</p>
+                <p id= "pjl-lab-spills">Spill Response Procedure</p>
+                <p id= "pjl-lab-eyes">Emergency Shower and Eyewash Standard</p>
+                <p id= "pjl-lab-rules-placard">Lab Safety Rules - Placard</p>
+                <p id= "pjl-lab-rules">Lab Safety Rules - Expanded</p>
+                <p id= "pjl-lab-hazard-move">Movement of Hazardous Materials</p>
+                <p id= "pjl-lab-after-hrs">After Hours Operations Policy</p>
+                <p id= "pjl-lab-unattend">Unattended Operations Policy</p>
+                <p id= "pjl-lab-unattend-guide">Unattended Operations Guidelines</p>
+                <p id= "pjl-lab-alone">Working Alone Guidelines</p>
+                <p id= "pjl-lab-comp-gas-hand">Handeling Compressed Gases</p>
+                <p id= "pjl-lab-comp-regulator">Compressed Gas Cylinder Regulator Installation</p>
+                <p id= "pjl-lab-chem-storage">Chemical Storate Bulletin</p>
+                <p id= "pjl-lab-chem-storage-sup">Chemical Storate Bulletin - Supplemental</p>
+                <p id= "pjl-lab-fire">Fire Safety Requirements</p>
+                <p id= "pjl-lab-fumehood">Fume Hood User</p>
+                <p id= "pjl-lab-waste">Hazardouse Waste Disposal Containers</p>
+              </div>
+            </div>
+          </div>      
+          
+          <div class="resource-button">
+            <p class="resource-button-text">Downloads</p>
+            <div class="resource-dropdown">
+              <div class="resource-dropdown-content">
+                <!--<p id="pjl-lab-schedule">Experiment schedule</p>
+                <p id="pjl-rooms-schedule">Lab room schedule</p>
+                <p id="pjl-regress">Linear regression</p>
+                <p id="pjl-581">physics 581</p>
+                <p id="pjl-481">physics 481</p>
+                <p id="pjl-381">physics 381</p>
+                <p id="pjl-linearization">Linearization of experimental data</p>
+                <p id="pjl-compare-two">Procedure for comparing two values</p>
+                <p id="pjl-uncertainty">Uncertainty analysis</p>
+                <p id="pjl-graphing">Graphing experimental data</p>
+                <p id="pjl-geiger">How Geiger counters work</p>
+                <p id="pjl-scint">How scintillation counters work</p>-->
+                <p id="pjl-221-downloads">Physics 211/221 Downloads</p>
+                <p id="pjl-229-downloads">Physics 229 Downloads</p>
+                <p id="pjl-397-downloads">Physics 397 Downloads</p>
+                <p id="pjl-481-downloads">Physics 481 Downloads</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resource-button">
+            <p class="resource-button-text">IT Support</p>
+            <div class="resource-dropdown">
+              <div class="resource-dropdown-content">
+                <p id="pjl-linuxPrinting">Printing from Kubuntu</p>
+                <p id="pjl-jupyterHelp">Running Jupyter on Kubuntu</p>
+                <p id="pjl-errorReporting">Reporting Technical Issues</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    	<div class="wrap" id="landing-intro-container">
+
+        <div class="landing-heading-box">
+          <h1 class="landing-heading landing-heading-desktop">Undergraduate Physics Labs</h1>
+          <h1 class="landing-heading landing-heading-mobile">Physics Labs</h1>
+          <h1 class="landing-sub-heading">The Department of Physics and Astronomy believes in giving its students a generously wide variety of different introductory laboratory experiences. Physics and astrophysics majors perform more than forty different hands-on experiments in the laboratory in the first two years of their program.</h1>
+        </div>
+
+        <h1 class="landing-heading-2">Students gain experience with a broad range of laboratory equipment.</h1>
+
+        <div class="landing-icon-grid" id="landing-grid-1">
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/elementary-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Introductory</h1>
+            <h1 class="landing-icon-sub-heading">Power supplies, Vernier calipers, and thermometers.</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/intermediate-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Intermediate</h1>
+            <h1 class="landing-icon-sub-heading">Geiger counters, thermocouples, and oscilloscopes.</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/advanced-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Advanced</h1>
+            <h1 class="landing-icon-sub-heading">Optical pyrometers, x-ray spectrometers, and pulse height analyzers.</h1>
+            </div>
+          </div>
+        </div>
+
+
+
+        <h1 class="landing-heading-2">Our experiments give students practical experience in a variety of fundamental physics topics.</h1>
+
+        <div class="landing-icon-grid" id="landing-grid-2">
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/classical-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Classical Mechanics</h1>
+            <h1 class="landing-icon-sub-heading">The study of motion: How things move (kinematics) and the forces and movements of energy that give rise to those movements (dynamics and statics).</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/complexity-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Complex Systems</h1>
+            <h1 class="landing-icon-sub-heading">The interactions within complex systems often give rise to unexpected and non-trivial behaviour making these systems more than the sum of their constituents.</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/data-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Data Analysis</h1>
+            <h1 class="landing-icon-sub-heading">Data collected through experimentation needs to be cleaned and analyzed with careful attention to error and uncertainty.</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/em-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Electricity and Magnetism</h1>
+            <h1 class="landing-icon-sub-heading">The relationship between electro static and dynamic phenomena and magnetism is understood via the overarching framework of electromagnetism.</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/fluid-mech-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Fluid Mechanics</h1>
+            <h1 class="landing-icon-sub-heading">The study of fluid mechanics has allowed us to accurately model the behaviour of everything from flow in pipelines to the aerodynamics of spacecraft and the performance of their engines.</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/atom-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Thermal and Atomic Physics</h1>
+            <h1 class="landing-icon-sub-heading">Understanding the interaction between energy, heat, and atomic structure. Thermionic emission of electrons forms the basis for many experiments probing quantum phenomena.</h1>
+            </div>
+          </div>
+          <div class="landing-icon-box">
+            <img class="landing-icon" src="/img/waves-icon-512x.png">
+            <div>
+            <h1 class="landing-icon-heading">Vibrations and Waves</h1>
+            <h1 class="landing-icon-sub-heading">The study of the dynamics of waves has found far reaching applications in classical mechanics, electromagnetism, and quantum mechanics.</h1>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <h1 class="landing-heading landing-heading-desktop">Physics Demonstrations</h1>
+        <h1 class="landing-heading landing-heading-mobile">Physics Demos</h1>
+        <h1 class="landing-sub-heading">The Department of Physics and Astronomy has developed a range of lecture demonstrations to correspond with the development of new lectures as well as to bring new approaches to instructing well-established courses.</h1>
+
+
+
+        <div class="video-container">
+          <h1 class="video-title">Refraction Tank</h1>
+          <video controls poster="/data/landingpage/6a42_20_refraction_tank_pic1.jpg">
+            <source src="/data/landingpage/6A42_20_Refraction_Tank.mp4" type="video/mp4">
+          </video>
+          <div class="video-desc">
+            <p id="video-desc-text">The refraction tank is a glass tank with a light source which shines light at various different angles.  When the tank is filled with water, some rays of light will pass through the surface of the water and others will be internally reflected. This demonstrates how all incident rays past the critical angle will be internally reflected.</p>
+            <p id="video-see-more">see more demos</p>
+          </div>
+        </div>
+
+
+    	</div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER CONTENT -->
+
+<footer>
+<script language="javascript" type="text/javascript">
+fetch("../../../..//footer.txt")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });
+</script>
+</footer>
+
+
+  </body>
+
+</html>

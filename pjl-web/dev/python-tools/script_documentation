@@ -1,0 +1,64 @@
+Script:
+linkCheck
+
+Usage:
+$ ./linkCheck
+
+Example output:
+STATUS: 200       for link http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68
+STATUS: 200       for link http://www.phas.ucalgary.ca/teaching_learning/demonstrations
+STATUS: 200       for link http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68
+STATUS: 200       for link http://www.phas.ucalgary.ca/teaching_learning/demonstrations
+STATUS: 200       for link http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68
+STATUS: 200       for link http://www.phas.ucalgary.ca/teaching_learning/demonstrations
+STATUS: 200       for link http://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68A
+STATUS: 200       for link http://ucmapspro.ucalgary.ca/RoomFinder/?Building=ST&Room=68
+STATUS: 200       for link http://www.phas.ucalgary.ca/teaching_learning/demonstrations
+Failed to read file:  ../../fonts/webfonts_Flipside-BRK/example.html
+759 forbidden requests
+
+Description:
+Reads all the html files in the top level folder (pjlweb) and down (recursive) and makes HTTP requests on all URLs found within. Reports any broken links. Because most of our database files are protected with .htaccess this script merely provides a summary of the number of 401 (forbidden) requests.
+
+
+
+
+Script:
+getEquip
+
+Usage:
+$ ./getEquip 0004
+
+Example output:
+Lab: Electron Gas in Metals (0069)                          Item: Neva mains rectifier (0004)       
+Lab: Charge to Mass Ratio of the Electron (0031)            Item: Neva mains rectifier (0004)       
+Lab: Electron Diffraction (0068)                            Item: Neva mains rectifier (0004)       
+
+Found 3 equipment records in /home/wes/pjlweb/dev/labDB.xml
+
+Description:
+This script will return instances of an equipment item, specified by its 4-digit ID number, in the lab database XML file (labDB.xml). It was used in development to identify equipment items yet to be standardized, i.e., having the ID 0000.
+
+
+
+
+Script:
+validateDB
+
+Usage:
+$ ./validateDB
+
+Example output:
+Equipment ID "0095" has multiple names.
+Equipment ID "0212" has multiple names.
+Equipment ID "0353" has multiple names.
+
+Description:
+This script will use the pjlDB.py module to run a full validation on both equipment and lab databases. It will print the error log to the screen.

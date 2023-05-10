@@ -1,0 +1,475 @@
+<!DOCTYPE HTML> <html> <head>
+  <meta charset="UTF-8">
+  <title>Hall Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/remote-lab.css">
+<!--
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    #displayBench {
+	  margin: auto;
+	  display:none;
+    }
+    #content {
+	  width: 800px;
+	  min-width: 800px;
+    }
+	
+    .sidebarwide {
+	  position: absolute;
+      width: 300px;
+	  height: 1000px;
+	  top: 10px;
+	  left: 810px;
+	  background-color:#eee;
+	  padding: 5px
+    }
+	
+	.roundedBox {
+    border-radius: 10px;
+	  border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+	}
+	.photoBox {
+      border-radius: 5px;
+	  z-index: 5;
+	  position: absolute;
+	  border: 1px solid black;
+      background-color: white;
+      padding: 2px;
+      font-size: 16px;
+	  display:none;
+	}
+	
+	.demoBox {
+      border-radius: 5px;
+	  z-index: 5;
+	  position: absolute;
+	  border: 1px solid black;
+      background-color: white;
+      padding: 2px;
+      font-size: 16px;
+	  display:none;
+	}
+
+  .photoDataBox {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 10px;
+    left: 1010px;
+    background-color: white;
+    padding: 2px
+    }
+
+  .sideButton {
+    margin: 2px 2px 2px 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 128px;
+  }
+
+  .adminButton {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #F1948A;
+    margin: 2px 2px 2px 2px;
+    width: 128px;
+  }
+
+  </style>
+</head> --><body>
+ <!-- First screen: choose machine and user name --> <div id="chooseMachine">
+  Choose your lab bench:
+  <select name="machineInput" id="machineInput">
+    <option bench="branstock" value="http://branstock.pjl.ucalgary.ca:4444" data-video="http://136.159.54.23:8081/" data-cal="K = 1.70 T/V <br> u(K) = 0.03 T/V" >
+    Bench 1 - branstock</option>,
+    <option value="http://bifrost.pjl.ucalgary.ca:4444" data-video="http://136.159.54.22:8081/" data-cal="K = 1.48 T/V <br> u(K) = 0.03 T/V">
+    Bench 2 - bifrost</option>,
+    <option value="http://baldur.pjl.ucalgary.ca:4444" data-video="http://136.159.54.21:8081/"  data-cal="K = 1.46 T/V <br> u(K) = 0.03 T/V">
+    Bench 3 - baldur</option>,
+    <option value="http://asgard.pjl.ucalgary.ca:4444" data-video="http://136.159.54.20:8081/"  data-cal="K = 2.06 T/V <br> u(K) = 0.03 T/V">
+    Bench 4 - asgard</option>
+    <option value="http://hugin.pjl.ucalgary.ca:4444" data-video="http://136.159.54.28:8081/" data-cal="K = 1.54 T/V <br> u(K) = 0.03 T/V" >
+    Bench 5 - hugin</option>,
+    <option value="http://nagifar.pjl.ucalgary.ca:4444" data-video="http://136.159.54.30:8081/" data-cal="K = 1.50 T/V <br> u(K) = 0.03 T/V">
+    Bench 6 - nagifar</option>
+    <option value="http://embla.pjl.ucalgary.ca:4444" data-video="http://136.159.54.35:8081/" data-cal="K = 1.48 T/V <br> u(K) = 0.03 T/V">
+    Bench 7 - embla</option>
+  </select>
+  <br><br>
+  Enter your first name. This will be displayed to other users at the lab bench.<br>
+  <input type="text" id="userIDInput" name="userIDInput"
+         onkeyup="this.value=this.value.replace(/[^a-z0-9.]/i, '');
+		          if(this.value.length > 2) setBenchButton.disabled=false;
+				  else setBenchButton.disabled=true;">
+  <br><br>
+  <button type="button" onclick="setBench()" id="setBenchButton" disabled>Go</button>
+  <div id="userIDInputErrorDiv"></div> </div> <!-- Second screen: lab bench display --> <div id="displayBench" 
+style="">
+
+   <!-- Left hand side: photo and graph -->
+
+<div id="content">
+	<img src="static_view.jpg" width="800px" id="viewImg" style="position:absolute; top:10px;left:10px; z-index: 0;">
+    <div id="M1" class="photoBox" style="left:650px;top:110px;">Electromagnet <br> Current (A) </div>
+    <div id="M2" class="photoBox" style="left:650px;top:220px;">Hall Probe <br> Current (mA)</div>
+    <div id="M2" class="photoBox" style="left:650px;top:350px;">Hall Probe <br> Voltage (mV) </div>
+  <div id="messagesDiv" width="800px" height="200px" class="roundedBox" style="position:absolute; top:600px; width:800px"><b>System Messages</b>
+  </div> 
+
+
+</div>
+   
+   <!-- Right hand sidebar -->
+<div class="sidebar" id="sidebar">
+  <p id="machineID"></p>
+  View:
+  <select id="viewSelect" onchange="changeView()">
+    <!-- <option value="schematic.png">Schematic</option>, -->
+    <option value="static_view.jpg">Overview Photo</option>,
+    <option value="live_view">Live Video</option>,
+  </select>
+	<div class="roundedBox">
+    <b text-align: center>Users at this bench:<b><br>
+    <p id="userList"></p>
+  </div>
+
+  <div class="roundedBox">
+    <b text-align: center>Calibration Factor:<b><br>
+    <p id="calibrationText"></p>
+  </div>
+
+  <div id="powerControl" class="roundedBox">
+    <b text-align: center>Circuit Control:</b><br><br>
+    <button class="adminButton" onclick="sendCommand('i','powerResponse')">Power On</button>
+    <button class="adminButton" onclick="sendCommand('j','powerResponse')">Power Off</button>
+    <p id="powerResponse"></p>
+  </div>
+
+  <div id="voltageControl" class="roundedBox">
+    Electromagnet Current setting (0-9):<br>
+    <input type="number" style="-moz-user-select: none;-webkit-user-select: none;" class="inputBox" id="voltage" name="voltage" min="0" max="9" value="0"><br>
+    <button class="sideButton" onclick="setVoltage()">Set Current</button><br>
+    <button class="sideButton" onclick="sendCommand('a','voltageControlResponse')">Reverse Current</button><br>
+    <p id="voltageControlResponse"></p> 
+  </div>
+
+	<!-- <div id="electromagnetControl" class="roundedBox" style="display:block">
+    <b text-align: center>Electromagnet Current:</b><br><br>
+    <button class="sideButton" onclick="sendCommand('a','electromagnetResonse')">Current Down</button>
+    <button class="sideButton" onclick="sendCommand('b','electromagnetResonse')">Current Down</button><br>
+    <p id="electromagnetResonse"></p>
+  </div> -->
+  <div id="probeCurrent" class="roundedBox" style="display:block">
+    <b text-align: center>Probe Current:</b><br><br>
+    <button class="sideButton" onclick="sendCommand('c','probeResponse')">Current Up</button>
+    <button class="sideButton" onclick="sendCommand('d','probeResponse')">Current Down</button><br>
+    <p id="probeResponse"></p>
+
+  </div>
+
+</div> 
+
+<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>  -->
+
+<script> 
+/////////////// 
+// Setup 
+var adminPage = true;
+var dataGateway = "https://pjl.ucalgary.ca/php/lab_computer_redirect_1.5.php"; 
+var updateDataInterval = 1000; // data refresh rate - milliseconds 
+var updateUsersInterval = 5234; // user info refresh rate - milliseconds 
+var updateMessageInterval = 1234; // message info refresh rate - milliseconds 
+var plotHistoryLen = 300.0; // seconds of data to keep in history 
+var messagesLength = 4; // messages to keep 
+
+/////////////// 
+// Global variables 
+var plotData = {B1:{x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B1'},
+                B2:{x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B2'},
+                B3:{x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B3'},
+                B4:{x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B4'},
+                B5:{x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B5'},
+                B6:{x:[],t:[],y:[],type:'scatter',mode:'lines',name:'B6'},
+                Am:{x:[],t:[],y:[],type:'scatter',mode:'lines',name:'Am'}}; 
+var plotLayout = {xaxis:{title : 'Time [s]'},yaxis:{title : 'Current [A]'}}; 
+var sysMessages = {lastMessageTime:0.0,message:[]}; 
+var lastDataTime = 0.0; 
+var dataUpdateTimer = null; 
+var labMachine = ''; 
+var userID = ''; 
+var demoPlot = false; 
+
+var commandDict = {"i": " Power On",
+                  "ri": " Power On",
+                  "j": " Power Off", 
+                  "rj": " Power Off", 
+                  "a": " Electromagnet Current Reversed", 
+                  "neg": " Electromagnet Current - Negative", 
+                  "pos": " Electromagnet Current - Positive",
+                  "iError": " ERROR - Electromagnet current direction can only be reversed when current is at position 0",
+                  "c": " Hall Probe Current Up",
+                  "rc": " Hall Probe Current Up",
+                  "d": " Hall Probe Current Down",
+                  "rd": " Hall Probe Current Down",
+                  "1": " Current 1",
+                  "2": " Current 2",
+                  "3": " Current 3",
+                  "4": " Current 4",
+                  "5": " Current 5",
+                  "6": " Current 6",
+                  "7": " Current 7",
+                  "8": " Current 8",
+                  "9": " Current 9",
+                  "0": " Current 0"
+                  };
+
+//Functions 
+function setBench(){
+  // Called when the user is done with the first screen.
+  // Advances to the next screen.
+  // Validate the user name
+  if ((userIDInput.value.length > 20) || (userIDInput.value.length < 3)) {
+    userIDInputErrorDiv.innerHTML = "User name must be 3-20 characters.";
+    return;
+  }
+  regex = /[^a-zA-Z0-9.]/g
+  if (regex.test(userIDInput.value)) {
+    userIDInputErrorDiv.innerHTML = "User name may only contain upper or lowercase letters, numbers and periods.";
+    return;
+  }
+  
+  // Set the machine and user ID
+  labMachine = machineInput.value;
+  userID = userIDInput.value;
+    
+  // Hide/display appropriate part of page
+  displayBench.style.display = "block";
+  chooseMachine.style.display = "none";
+  calibrationText.innerHTML = machineInput[machineInput.options.selectedIndex].dataset.cal;
+
+  // show admin controls if this is the admin version (set by boolean in setup)
+  if(adminPage == true){
+    powerControl.style.dispaly = "block";
+  } else {
+    powerControl.style.display = "none";
+  }
+
+  // Check if this is the demo bench or not
+  if(machineInput[machineInput.options.selectedIndex].dataset.demo == 'y'){
+    // Demo bench.
+    demoSetup();
+  } else {
+  
+    // Not demo bench. Set the title in the sidebar
+    document.getElementById("machineID").innerHTML = "<b>"+
+	           machineInput.options[machineInput.selectedIndex].text+"</b>";
+  
+    // Initialize the graph, start updating the data every second
+    /*Plotly.plot('chartElement',{data:[plotData.B1],layout:plotLayout});*/
+    setInterval(updateUsers, updateUsersInterval);
+    setInterval(updateMessages, updateMessageInterval);
+    updateUsers();
+  }
+}
+function changeView(){
+  // Called when the user changes the lab bench view drop down selector.
+  // Changes the view (schematic/photo/live/etc)
+  console.log("Changing View")
+  // Stop updating the data
+  if (dataUpdateTimer != null){
+    clearInterval(dataUpdateTimer);
+    dataUpdateTimer = null;
+  }
+ 
+  // Change the view
+  var boxes = document.querySelectorAll('.photoBox');
+  switch(viewSelect.value) {
+    case "static_view.jpg": // Static setup photo
+	  // Change image source
+	  console.log(viewSelect.value);
+    viewImg.src = viewSelect.value;
+          for(var i=0; i< boxes.length; i++)
+      boxes[i].style.display="none";
+      break;
+	  
+    case "live_view": // Live view
+	  // Change image source: first to the "loading" image and then to the actual stream
+	  viewImg.onload=function () {
+              viewImg.src = machineInput[machineInput.options.selectedIndex].dataset.video;
+              viewImg.onload='';
+              viewImg.onerror=function () {
+                      viewImg.src = "failed_live.png";
+                      viewImg.onerror='';
+              }
+      }
+      viewImg.src = "loading_live.png";
+
+		// Set text and show photo boxes
+    //document.getElementById("B2").innerHTML ="B2 data:<br>pending";
+    //document.getElementById("B1").innerHTML ="B1 data:<br>pending";
+      for(var i=0; i< boxes.length; i++)
+      boxes[i].style.display="block";
+          break;
+
+    default:
+      viewImg.src = viewSelect.value;
+      for(var i=0; i< boxes.length; i++)
+      boxes[i].style.display="none";
+  }  
+  
+}
+
+function setVoltage() {
+  // Called when the user presses the "Set Voltage" button.
+  // Sends the request to the appropriate lab computer
+ 
+ // Get voltage from the input box and validate it
+  var voltage = document.getElementById("voltage").value;
+  if (voltage > 9){
+    voltage = 9;
+    document.getElementById("voltage").value = "9";
+  }
+  if (voltage < 0){
+    voltage = 0;
+    document.getElementById("voltage").value = "0";
+  }
+  // Send as a POST request to the server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+        // This function is called once the server responds.
+        if (this.readyState == 4 && this.status == 200) {
+          if (this.responseText.search("accepted") > 0)
+            document.getElementById("voltageControlResponse").innerHTML = this.responseText;
+        else
+            document.getElementById("voltageControlResponse").innerHTML = "Control command failed.<br>Please contact your TA.";
+        }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=cmd&p1="+voltage);
+  document.getElementById("voltageControlResponse").innerHTML = "POST request sent.";
+}
+
+
+function sendCommand() {
+  // Called when the user presses one of the "Circuit Control" buttons.
+  // Sends the request to the appropriate lab computer
+ 
+ // Get voltage from the input box and validate it
+ var circuit = arguments[0];
+ var responseID = arguments[1];
+ // Send as a POST request to the server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+        // This function is called once the server responds.
+        if (this.readyState == 4 && this.status == 200) {
+          if (this.responseText.search("accepted") > 0)
+            document.getElementById(responseID).innerHTML = this.responseText;
+        else
+            document.getElementById(responseID).innerHTML = "Control command failed.<br>Please contact your TA.";
+        }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=cmd&p1="+circuit);
+  document.getElementById(responseID).innerHTML = "POST request sent.";
+}
+
+function updateData(){
+  // Called on a timer to update the data.
+  // Sends the data request to the lab computer.
+  // Sets a callback function updateDataCallback to handle the data when it comes.
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=updateDataCallback;
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=data&p1="+lastDataTime);
+}
+
+function updateUsers(){
+  // Called on a timer to update the message data
+  // Sends the request to the lab computer
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    // Runs when the request is ready
+	// Updates the text box
+    if (this.readyState == 4 && this.status == 200) {
+	  if (this.responseText.search("Data POST failed.") == -1)
+        document.getElementById("userList").innerHTML = this.responseText;
+	  else
+	    console.log("updateUsers failed. Lab computer may not be responding.A");
+    }
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=listUsers");
+}
+
+function updateMessages(){
+  // Called on a timer to update the message data
+  // Sends the request to the lab computer
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    // Runs when the request is ready
+	// Updates the text box
+    if (this.readyState == 4){
+      if (this.status == 200) {
+	    if (this.responseText == '') return;
+          try{
+	          // parse the messages in the response
+              var dataObj = JSON.parse(this.responseText);
+		      for (var i=0;i<dataObj.time.length;i++){
+                if (dataObj.time[i] > sysMessages.lastMessageTime) sysMessages.lastMessageTime = dataObj.time[i];
+	            var DateObj = new Date(dataObj.time[i]*1000);
+			    if (DateObj.getMinutes() < 10)
+				  timestamp = '['+DateObj.getHours()+':0'+DateObj.getMinutes()+':';
+				else
+				  timestamp = '['+DateObj.getHours()+':'+DateObj.getMinutes()+':';
+			    if (DateObj.getSeconds() < 10)
+				  timestamp += '0'+DateObj.getSeconds() + '] '
+				else
+				  timestamp += DateObj.getSeconds() + '] ';
+                //var outgoingMessage = customMessage(dataObj.message[i]);
+                textNoEOL = dataObj.message[i].replace(/(\r\n|\n|\r)/gm, "");
+                var outgoingMessage = customMessage(textNoEOL);
+                sysMessages.message = sysMessages.message.concat(timestamp+outgoingMessage+"<br>");
+              }
+              if (sysMessages.message.length > messagesLength){
+		        sysMessages.message = sysMessages.message.slice(-messagesLength)
+		      }
+              // Update the text box
+		      txt="Sytem Messages:<br>"
+              for (var i=0;i<sysMessages.message.length;i++) txt=txt+sysMessages.message[i];
+              document.getElementById("messagesDiv").innerHTML = txt;
+	      } catch {
+             console.log("updateMessages failed. Lab computer may not be responding.");
+          }
+      } else {
+        console.log("updateMessages failed. server returned status "+this.status);
+      }
+	}
+  };
+  xhttp.open("POST", dataGateway, true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhttp.send("machine="+labMachine+"&userID="+userID+"&action=messages&p1="+sysMessages.lastMessageTime);
+}
+
+function customMessage(outCommand){
+  tmpMessage = outCommand.split(" ");
+  cmdKey = tmpMessage[tmpMessage.length - 1];
+  messageStart = tmpMessage.slice(0, -1).join(" ");
+  cmdTxt = commandDict[cmdKey];
+  newCommand = messageStart.concat(cmdTxt);
+  return newCommand;
+}
+
+</script>
+</html>

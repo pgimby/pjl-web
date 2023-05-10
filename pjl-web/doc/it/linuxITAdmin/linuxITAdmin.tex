@@ -1,0 +1,50 @@
+% Version Control Log. Please make an entry bellow when editing.
+%
+% Created  on:  Oct 7, 2019        	Created  by:  Peter Gimby
+
+
+
+% Linux printing instructions%----------------------------------------------------------------
+% Document initialization
+%----------------------------------------------------------------
+
+\documentclass{../../../assets/LabArx-Dev} 	% PJL lab class
+
+\begin{document}
+
+\Logo{../../../assets/logo.jpg}
+\Version{1.0}
+%----------------------------------------------------------------
+% start document body - DO NOT REMOVE THIS LINE
+%----------------------------------------------------------------
+
+%----------------------------------------------------------------
+% Title Page and Experiment Information 
+%----------------------------------------------------------------
+
+\TitleVar{PJL Admin Help - 2019 Build}{24}{30}
+\maketitle
+\fancyfoot{}
+%\turnOffFooter{nofoot}
+%----------------------------------------------------------------
+% Main Body
+%----------------------------------------------------------------
+
+The following are steps to take when trying to fix some common IT problems encountered in the physics educational labs. All text with grey background are commands to be run in a terminal.
+
+\section*{Linux Student/Client Machines} 
+
+\subsection{Student Machine Locked}
+\begin{lstlisting}
+sudo systemctl restart sddm
+\end{lstlisting}
+
+\subsection{Student Virtual Machine not Accessible}
+When a user opens a virtualbox machine it will be given ownership of that machine. When they log out, a script runs to set the permissions of the virtual machine to 777 so that the next user can gain ownership of the virtual machine. Sometimes this script will not get run (ie the last user didn't log out properly). 
+
+If the permissions fail to reset, and the windows 10 vernier virtual machine is not accessible from the virtualbox menu, then run the command.\begin{lstlisting}
+sudo chmod 777 /vms/Windows\ 10\ -\ Vernier/Windows\ 10\ -\ Vernier.v* 
+\end{lstlisting}
+
+
+\end{document}

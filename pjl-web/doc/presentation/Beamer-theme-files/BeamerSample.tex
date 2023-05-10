@@ -1,0 +1,52 @@
+\makeatletter\let\ifGm@compatii\relax\makeatother 
+%The above line may be needed depending on your .tex distribution
+\documentclass{beamer} %Preserves overlays
+%\documentclass[handout]{beamer} %Ignores overlays 
+
+\usepackage[absolute,overlay]{textpos} %Necessary for the logo placement
+
+%Definition of function \TitleLogo. Add this command to every frame to add a white UCalgary logo in the upper right. Beware that long slide titles will run into the logo, so you will need to add a line break in the \frametitle command. 
+\newcommand{\TitleLogo}{
+ \setlength{\TPHorizModule}{364pt}
+ \setlength{\TPVertModule}{273pt}
+ \begin{textblock}{1}(0.820,0.01)
+ \includegraphics[width=0.9in]{CalgLogoWhite.eps}
+ \end{textblock}
+}
+
+\usetheme{Dinos}
+
+\titlegraphic{\includegraphics[width=1.25in]{CalgLogo.eps}} 
+\title[ShortTitle]{Long Title}
+\author{Author Name}
+\institute[UCalgary]{University of Calgary}
+\date{Date}
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{Frame title}
+\TitleLogo
+
+\begin{itemize}
+\item Bullets are grey
+\item Alert text is \alert{red}
+\end{itemize}
+
+\begin{block}{Plain Block}
+
+\end{block}
+
+\begin{example}[]
+Plain Example
+\end{example}
+
+
+
+\end{frame}
+
+
+
+\end{document}

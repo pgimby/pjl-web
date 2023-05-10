@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+
+<!---------------------------------------------------------------------
+ Video Analysis Tool for University of Calgary Physics Labs
+ Created by Christopher Cully
+ 2020 May 07
+
+ version 1.6
+ last revision 2020 Aug 25
+ 
+
+ Copyright 2020, Christopher Cully
+ This file is licensed under Creative Commons Attribution 4.0.
+ If you find this software useful, please let me know:
+ cmcully@ucalgary.ca
+--------------------------------------------------------------------->
+
+<head>
+  <meta charset="UTF-8">
+  <title>University of Calgary Physics Labs Video Analysis</title>
+  <style>
+	* {
+	  box-sizing: border-box;}
+    a {
+	  line-height: 1.3em;
+	  margin: 2px 10px;
+	  padding: 2px;
+	  font-size: .9em;
+	  font-family: 'Proxima Nova', sans-serif;
+	  text-decoration: none;
+      color: #454565;
+    }
+	a:hover {
+		transition: all .3s ease;
+		color: #0000EE;
+	}
+    html, body {
+	  height: 100%;
+	  margin: 0; }
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;}
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;}	
+	.outsideWrapper{ 
+      width:90%; height:80%; 
+	  display:none;
+      margin:0px 10px; 
+      border:1px black;
+	  z-index: 0;
+	  position:relative;}
+	.insideWrapper{ 
+      width:100%; height:100%; 
+	  z-index: 1;
+      position:relative;}
+    .coveredVideo{ 
+      width:100%; height:100%;
+	  object-fit: contain;
+	  z-index: 1;
+      position:absolute; top:0px; left:0px;}
+    .coveringCanvas{ 
+      width:100%; height:100%; 
+      position:absolute; top:0px; left:0px;
+	  z-index: 2;
+      background-color: rgba(0,0,0,0);}
+    .controlsCanvas{ 
+      width:100%; height:40px; 
+      position:absolute; top:0px; left:0px;
+	  z-index: 5;
+      background-color: rgba(0,0,0,0);}
+    .controlsWrapper{ 
+      width:90%; height:40px;  
+	  display:none;
+      margin:0px 10px; 
+ 	  z-index: 4;
+	  position:relative;}
+	.uploadBtnWrapper {
+      position: relative;
+	  margin:auto;
+      overflow: hidden;
+      display: inline-block;}
+    .btn {
+      border: 2px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;}
+    .btn2 {
+      border: 1px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 2px 2px;
+      border-radius: 5px;
+      font-size: 12px;
+	  user-select:none;
+      font-weight: bold;}
+    .uploadBtnWrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;}
+    .resultsDiv{ 
+      width:90%;
+      margin:20px 10px; 
+	  z-index: 2;
+	  user-select:all;
+	  display:none;
+	  position:relative;}
+    .tooltip {
+      position: absolute;
+      display: inline-block;
+      opacity: 0.8;
+      z-index:8;}
+   .tooltip .tooltiptext {
+      width: 120px; height: 30px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 8;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -60px;}
+	</style>
+</head>
+
+<body>
+
+    <a href="https://pjl.ucalgary.ca/data/tools/video-analysis/Video_Analysis_Tutorial.mp4">[ Instructions ]</a>
+	<br><br>
+
+    <div class="uploadBtnWrapper" id="uploadBtnWrapper">
+      <button class="btn" id="fileButton">Open video</button>
+	  <input type="file" id="fileSelector" accept="video/*" class="fileSelector" />
+    </div>
+
+	<br><br><a onClick="toggleOptions()" id="optionsLink"><b>&#9654 OPTIONS</b></a>
+    <div id="optionsWrapper">
+      <br>
+	  Data included in output table:
+	  <select name="dataTypeSelected" id="dataTypeSelected">
+        <option value="txy">Time,x,y [Most labs use this option]</option>,
+        <option value="txyxyII">Time,x1,y1,x2,y2,I0,I1 [Malus's Law lab]</option>,
+      </select> <br>
+	  
+	  <input type="checkbox" id="forceRotate">
+         <label for="forceRotate">Rotate zoomed video 90 degrees <small>[May be required with older browsers or Firefox]</small></label><br>
+	  <input type="checkbox" id="manualFramerate" onClick="manualFPS.disabled=!this.checked;">
+         <label for="manualFramerate">Set frame rate manually to
+	     <input type="text" id="manualFPS" disabled value="30.0"
+            onkeyup="this.value=this.value.replace(/[^0-9.]/i, '');">
+		 frames per second <small>[May be required with older browsers]</small>
+		 </label><br>
+    </div>
+
+	<div id="outsideWrapper" class="outsideWrapper">
+     <div id="insideWrapper" class="insideWrapper">
+        <video id="myVideo" class="coveredVideo"></video>
+        <canvas id="myCanvas" class="coveringCanvas"></canvas>
+ 	    <div id="tooltip" class="tooltip">
+	      <span id="tooltiptext" class="tooltiptext">Tooltip</span>
+        </div>
+      </div>
+    </div>
+	<div id="controlsWrapper" class="controlsWrapper">
+      <canvas id="controlsCanvas" class="controlsCanvas"></canvas>
+    </div>
+	
+ 	<div id="resultsDiv" class="resultsDiv">
+ 	<table id="resultsTable">
+		<tr>
+		<th>Time (s)</th>
+		<th>X1 (pixels)</th>
+		<th>Y1 (pixels)</th>
+		</tr>
+	</table>
+    </div>
+
+	
+ 	<div id="resultsActionsDiv" class="resultsDiv">
+	<button class="btn2" onclick="removeRow()">Remove last row</button>
+	<button class="btn2" onclick="exportCSV()">Export table</button>
+    </div>
+
+	<div id="framerateText">Frame rate has not been calculated yet.</div>
+
+
+<script src="px_picker_v1_6.js"></script>
+</body>
+</html>
